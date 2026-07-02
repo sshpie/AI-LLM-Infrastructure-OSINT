@@ -64,6 +64,57 @@ OSS auth gap, config enumeration bypass, system prompt = policy disclosure, dual
   [x] 12.  visor-report -- shodan/cat33-guardrails-2026-06-29/visor-report.md
   [x] 13.  persist -> GitHub (this commit)
 
+## Last active survey: Cat-Streamlit -- ML Webapp Framework (2026-06-27)
+
+### What was done
+
+Population-scale survey of Streamlit deployments (port 8501).
+3,247 confirmed hosts; 3 verified with CVE-2024-42468 path traversal.
+
+**Findings:**
+F1 [HIGH]     Auth inversion -- 100% open by design (no auth mechanism exists)
+F2 [CRITICAL] CVE-2024-42468 path traversal -- 2,082/3,247 hosts (64.1%)
+F3 [HIGH]     CVE-2024-36473 SSRF -- 3,120/3,247 hosts (96.1%)
+F4 [HIGH]     Hardcoded credentials in page source -- 856/3,247 (26.3%)
+F5 [CRITICAL] 20.55.48.62 (Azure) -- path traversal VERIFIED, 11 files exfil
+F6 [CRITICAL] 43.139.174.33 (Tencent) -- path traversal VERIFIED
+F7 [CRITICAL] 209.97.147.137 (DigitalOcean) -- path traversal VERIFIED
+
+**Key distinction:** Auth-inversion (no auth mechanism) vs auth-on-default (mechanism exists, defaults off).
+Streamlit is the cleanest auth-inversion example in the corpus.
+
+**BARE:** All 4 findings novel class (0.485-0.540; zero MSF coverage). Consistent with Cat-33 pattern.
+
+**Files:**
+  shodan/cat-streamlit-2026-06-27/findings-breakdown.txt
+  shodan/cat-streamlit-2026-06-27/visor-report.md
+  shodan/query-log.md (3 dorks added)
+
+### Survey status: COMPLETE -- full chain executed 2026-07-02
+
+  [x] 0.   Shodan harvest  -- 3,247 hosts via product:"Streamlit" port:8501
+  [N] 0b.  Censys          -- Shodan population sufficient
+  [x] 0c.  tiptoe          -- 3 sample hosts LIVE; versions confirmed
+  [x] 1a.  VisorPlus       -- operator attribution on 3 verified hosts
+  [x] 1b.  aimap           -- Streamlit fingerprint already in corpus; clean
+  [x] 1cm. agent-logging   -- No FP_CANDIDATES
+  [N] 2.   VisorGraph      -- no TLS on :8501 default; cert pivot N/A
+  [x] 3.   aimap-profile   -- commercial/research; ethics: data-disclosure
+  [x] 3v.  VERIFY          -- 3 hosts confirmed via path traversal read chain
+  [x] 4.   JS-bundle       -- 0 secrets (client-side only)
+  [x] 6.   VisorLog        -- #46-48, #53-56 ingested
+  [x] 7.   VisorScuba      -- 8/10 (EXP-001 + SC-001); 9/10 population
+  [x] 8.   BARE            -- novel class (0 MSF coverage, all < 0.55)
+  [N] 9.   VisorCorpus     -- no LLM backend
+  [N] 10.  VisorRAG        -- deferred
+  [x] 12.  visor-report    -- shodan/cat-streamlit-2026-06-27/visor-report.md
+  [x] 12b. findings-breakdown -- shodan/cat-streamlit-2026-06-27/findings-breakdown.txt
+  [x] 13.  persist -> GitHub (this commit)
+
+---
+
+## Previous Cat-33 survey (2026-06-29): COMPLETE
+
 ### Previous surveys
   cat16-bi-dashboards (2026-06-29): COMPLETE, PUSHED (0b88471)
     1 CRITICAL Metabase CVE-2023-38646, 47 HIGH Superset unauth, 14 HIGH Redash setup

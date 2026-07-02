@@ -1161,4 +1161,7 @@ Phase 2 (new dorks from OSINT agent intel):
 | `http.html:"LlamaFirewall" port:8000` | 0 | Meta OSS; low adoption |
 | `http.html:"guardrails" http.html:"rails/configs"` | 0 | NeMo path; body filter |
 | `http.html:"Guardrails Server API"` | 0 | NeMo title; no port filter = still 0 |
+| 2026-06-27 | `product:"Streamlit" port:8501` | 3,247 | cat-streamlit-2026-06-27 | Primary Streamlit dork; 3,247 confirmed hosts |
+| 2026-06-27 | `http.title:"Streamlit" port:8501` | 2,814 | cat-streamlit-2026-06-27 | Title anchor; subset of product dork |
+| 2026-06-27 | `product:"Streamlit" port:8501 http.html:"CVE-2024-42468"` | 0 | cat-streamlit-2026-06-27 | CVE tag not in HTML; version-based discrimination via tiptoe |
 
