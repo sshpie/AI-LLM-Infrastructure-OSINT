@@ -366,22 +366,34 @@ CHAIN COMPLETION STATUS
 [x] -1.  OSINT Platoon         -- 4 agents (aa3fccf6, a57334cac, a6d3c77a, a7511a55e)
                                    13 platforms researched; Chinese market gap confirmed
 [x] 0.   Shodan harvest        -- 28 dorks executed; 8 positive; all logged
-[ ] 0b.  Censys                -- Not run (credit gate)
-[ ] 0c.  scanner               -- TODO: tiptoe against 5 verified IPs
-[~] 0d.  FP check              -- 176.31.122.22 FP identified (Nuxt, not Arthur)
-[ ] 1a.  VisorPlus             -- TODO
-[ ] 1b.  aimap                 -- TODO (port 8000 for LLM Guard/NeMo)
-[ ] 1cm. agent-logging-system  -- TODO (post-aimap)
-[ ] 1d.  VisorCAS              -- TODO
-[ ] 2.   VisorGraph            -- TODO
-[ ] 2b.  dev-browser           -- TODO
-[ ] 3.   aimap-profile         -- TODO
-[x] 3v.  VERIFY                -- G1/G2/G3/G4 verified, see above
-[ ] 4.   JS-bundle             -- TODO (NeMo chat UI has Next.js bundle)
-[ ] 6.   VisorLog              -- TODO
-[ ] 7.   VisorScuba            -- TODO
-[ ] 8.   BARE                  -- TODO
-[ ] 9-13. remaining            -- TODO
+[N] 0b.  Censys                -- skipped (credit gate, 0 credits remaining)
+[x] 0c.  scanner               -- tiptoe 2026-07-02: all 5 hosts LIVE; G4:11434 VERIFIED_UNAUTH HIGH
+[x] 0d.  FP check              -- 176.31.122.22 FP (Nuxt); agent-logging-system FP pass on aimap:
+                                   Chatterbox TTS/ZenML/Kubelet/RTP-LLM/Khoj/Kokoro-FastAPI/Zep stripped
+[x] 1a.  VisorPlus             -- G1: nextcomm.tech (BR, llmguard.nextcomm.tech, 16 passive DNS)
+                                   G2: vibewebsite.eu (EU, 72 passive DNS, n8n/vibe-coding)
+                                   G4: no passive DNS (Tencent CN, expected)
+[x] 1b.  aimap 1.9.55          -- 20 services found, 2 CRIT confirmed: Ollama + NeMo Guardrails
+                                   LLM Guard fingerprinted on 3 hosts; FPs stripped by 1cm
+[x] 1cm. agent-logging-system  -- FP_CANDIDATES flagged: Chatterbox TTS (5/5), ZenML (3/3),
+                                   LLM Guard enumerator (3/3 errors -- deep-enum fails, fingerprint valid)
+[N] 1d.  VisorCAS              -- observe-only mode, no new signatures triggered
+[N] 2.   VisorGraph            -- not run (no cert pivot available for these hosts)
+[N] 2b.  dev-browser           -- not run (Shodan API dead; operator CNs resolved via VisorPlus passive DNS)
+[N] 3.   aimap-profile         -- not run (operators non-critical, no ethics flag needed)
+[x] 3v.  VERIFY                -- G1/G2/G3/G4 verified; G5 stale (0 live Arthur instances)
+[x] 4.   JS-bundle             -- NeMo Next.js (chatbot-ui fork): 0 secrets, 0 internal endpoints
+                                   serverSideApiKeyIsSet:false confirms no hardcoded key
+[x] 6.   VisorLog              -- findings #40-#44 ingested (nuclide.db)
+[x] 7.   VisorScuba            -- G4: 6/10 (AI.C1 + exposure); G1/G2/G3: 9/10 (exposure only)
+                                   null-guardrail + config-enum not in baseline -- VisorScuba gap noted
+[x] 8.   BARE                  -- all 4 findings no_high_confidence_match (scores 0.47-0.51)
+                                   OSS guardrail attack class has 0 Metasploit coverage -- novel class confirmed
+[N] 9.   VisorCorpus           -- deferred (no LLM backend on G1/G2 for live corpus test)
+[N] 10.  VisorRAG              -- deferred
+[N] 11.  VisorAgent            -- ethical-stop (controlled targets only)
+[x] 12.  visor-report          -- generated: shodan/cat33-guardrails-2026-06-29/visor-report.md
+[x] 13.  persist -> GitHub     -- 2026-07-02 (this commit)
 
 ============================================================
 INSIGHT CANDIDATES

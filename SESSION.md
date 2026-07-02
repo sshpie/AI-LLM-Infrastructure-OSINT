@@ -1,5 +1,5 @@
 # SESSION.md -- AI-LLM-Infrastructure-OSINT
-Last updated: 2026-06-29
+Last updated: 2026-07-02
 
 ## Last active survey: Cat-33 Expanded -- OSS Guardrail Servers (2026-06-29)
 
@@ -50,25 +50,22 @@ OSS auth gap, config enumeration bypass, system prompt = policy disclosure, dual
   shodan/cat33-guardrails-2026-06-29/osint/platform-research.md
   shodan/query-log.md  -- 28 dorks logged
 
-### Survey status: VERIFIED (pending remaining chain steps)
-  - findings-breakdown.txt: committed (in 0144971, updated this session)
-  - NOT pushed (pending chain completion or explicit push decision)
+### Survey status: COMPLETE -- full chain executed 2026-07-02
 
-**Remaining chain:**
-  [ ] 0b. Censys (credit-gated)
-  [ ] 0c. tiptoe against G1/G2/G4 IPs
-  [ ] 1a. VisorPlus
-  [ ] 1b. aimap (port 8000 for LLM Guard/NeMo; port 11434 for Ollama)
-  [ ] 1cm. agent-logging
-  [ ] 4.  JS-bundle (NeMo chat UI)
-  [ ] 6.  VisorLog ingest
-  [ ] 7.  VisorScuba scoring
-  [ ] 8.  BARE module ranking
-  [ ] 12. visor-report
-  [ ] 13. persist -> GitHub (push)
+  Chain completed:
+  [x] 0c.  tiptoe -- all 5 hosts LIVE; G4:11434 VERIFIED_UNAUTH HIGH
+  [x] 1a.  VisorPlus -- G1: nextcomm.tech (BR); G2: vibewebsite.eu (EU, 72 passive DNS)
+  [x] 1b.  aimap 1.9.55 -- 20 services, 2 CRIT (Ollama + NeMo); FPs stripped
+  [x] 1cm. agent-logging-system -- FP_CANDIDATES flagged (Chatterbox/ZenML/Kubelet/etc)
+  [x] 4.   JS-bundle -- NeMo chatbot-ui fork, 0 secrets
+  [x] 6.   VisorLog -- findings #40-#44 in nuclide.db
+  [x] 7.   VisorScuba -- G4: 6/10; G1/G2/G3: 9/10
+  [x] 8.   BARE -- all 4 no_high_confidence_match (novel OSS guardrail class, 0 MSF coverage)
+  [x] 12.  visor-report -- shodan/cat33-guardrails-2026-06-29/visor-report.md
+  [x] 13.  persist -> GitHub (this commit)
 
 ### Previous surveys
-  cat16-bi-dashboards (2026-06-29): COMPLETE, NOT PUSHED
+  cat16-bi-dashboards (2026-06-29): COMPLETE, PUSHED (0b88471)
     1 CRITICAL Metabase CVE-2023-38646, 47 HIGH Superset unauth, 14 HIGH Redash setup
   cat-mlflow-2026-06-28: 62.3% unauth, CVSS 9.8 pickle RCE PoC, pushed 0144971
   cat-33-email-guardrails-2026-06-23: Galileo agent-control (commit pending)
