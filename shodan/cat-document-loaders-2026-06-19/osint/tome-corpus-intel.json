@@ -1,0 +1,283 @@
+{
+  "category": "document_loader",
+  "generated": "2026-06-19",
+  "source": "tome corpus",
+  "platforms": {
+    "apache-tika": {
+      "display_name": "Apache Tika Server",
+      "default_ports": [
+        9998
+      ],
+      "auth_default": "off",
+      "shodan_dorks": {
+        "basic": "port:9998 http.html:\"Tika Server\"",
+        "strict": "port:9998 \"This is Tika Server\"",
+        "version": "port:9998 product:\"Apache Tika\""
+      },
+      "fingerprint": {
+        "passive": [
+          "product:\"Apache Tika\"",
+          "port:9998 http.html:\"Tika Server\"",
+          "port:9998 http.html:\"This is Tika Server\"",
+          "http.headers:\"X-Tika-OCR\"",
+          "port:9998"
+        ],
+        "active_probe": {
+          "path": "/tika",
+          "method": "GET",
+          "response_markers": [
+            "This is Tika Server",
+            "Please PUT"
+          ],
+          "false_positive_check": "Response body must contain exact string 'This is Tika Server. Please PUT' \u2014 any other response body is FP"
+        }
+      },
+      "api_paths": [
+        "/tika",
+        "/meta",
+        "/rmeta",
+        "/unpack",
+        "/detect/stream",
+        "/language/stream",
+        "/language/string",
+        "/mime-types",
+        "/detectors",
+        "/parsers",
+        "/parsers/details",
+        "/status"
+      ],
+      "vulnerabilities": [
+        "CVE-2025-66516: XXE via XFA embedded in PDF; tika-core 1.13-3.2.1, tika-pdf-module 2.0.0-3.2.1, tika-parsers 1.13-1.28.5; CVSS 9.8 (NIST)/8.4 (Apache CNA); enables arbitrary file read, SSRF, conditional RCE; fixed in 3.2.2",
+        "CVE-2025-54988: predecessor advisory for same XFA/PDF XXE; superseded by CVE-2025-66516 which identified tika-core as root cause",
+        "CVE-2021-44228 (Log4Shell): Tika 2.0.0-BETA through 2.1.0 used vulnerable log4j2; JNDI lookup RCE; fixed in Tika 2.2.0",
+        "CVE-2021-44832: log4j2 JDBC Appender RCE; Tika 2.0.0-BETA through 2.2.1; lower severity (requires config modify); fixed in Tika 2.2.1",
+        "CVE-2019-10094: StackOverflow in RecursiveParserWrapper via self-referencing archive quine; Tika 1.7-1.21; CVSS 7.8 HIGH; fixed in 1.22",
+        "CVE-2018-1335: command injection via X-Tika-OCR* HTTP headers passed to TesseractOCRParser/ProcessBuilder; Tika 1.7-1.17; CVSS HIGH; fixed in 1.18",
+        "CVE-2018-1339: infinite loop in ChmParser via crafted CHM file; Tika before 1.18; CVSS 5.5 MEDIUM; fixed in 1.18",
+        "CVE-2018-1338: infinite loop in BPGParser via crafted BPG file; Tika before 1.18; CVSS 5.5 MEDIUM; fixed in 1.18",
+        "CVE-2016-6809: Java RCE via deserialization in MATLAB (.mat) parser using jmatio; Tika 1.6-1.13; CVSS 9.8 CRITICAL; fixed in 1.14",
+        "CVE-2016-4434: XXE in OOXML spreadsheet and PDF XMP metadata parsers due to improper XML parser init; Tika 0.10-1.12; CVSS 7.8 HIGH; fixed in 1.13",
+        "CVE-2022-30973: ReDoS in StandardsExtractingContentHandler; Tika before 1.28.3; CVSS 5.5 MEDIUM; only affects non-default handler; fixed in 1.28.3"
+      ],
+      "pivot_paths": [
+        "CVE-2025-66516 XXE via malicious PDF (XFA payload) -> file:///etc/passwd read or SSRF -> cloud IMDS at 169.254.169.254",
+        "CVE-2018-1335 (<=1.17): PUT /meta with X-Tika-OCRTesseractPath header -> OS command execution on server",
+        "PUT /rmeta with recursive archive (quine) -> CVE-2019-10094 StackOverflow -> DoS or process crash",
+        "PUT /unpack -> extract embedded files -> enumerate document structure / exfil embedded payloads",
+        "GET /parsers/details -> full parser inventory -> identify which file types trigger dangerous code paths"
+      ],
+      "misconfig_patterns": [
+        "Bound to 0.0.0.0 by default \u2014 no auth, no firewall = full parse surface exposed",
+        "Docker deployments commonly expose 9998 publicly without network policy",
+        "Tika 1.x still in production in RAG pipelines; versions 1.7-1.17 carry CVE-2018-1335 command injection",
+        "tika-core 1.13-3.2.1 vulnerable to CVE-2025-66516 XXE via XFA-in-PDF",
+        "-enableFileUrl flag (removed in 2.x) allowed arbitrary file:// URL reads when present in 1.x",
+        "No version endpoint \u2014 version only visible in startup log; operators unaware of running version"
+      ]
+    },
+    "docling-serve": {
+      "display_name": "Docling Serve (IBM document parser API)",
+      "default_ports": [
+        5001
+      ],
+      "auth_default": "off",
+      "shodan_dorks": {
+        "basic": "port:5001 http.html:\"docling\"",
+        "strict": "port:5001 \"docling-serve\"",
+        "version": "port:5001 http.html:\"docling\" http.html:\"/v1/convert\""
+      },
+      "fingerprint": {
+        "passive": [
+          "port:5001 http.html:\"docling\"",
+          "port:5001 http.title:\"docling\""
+        ],
+        "active_probe": {
+          "path": "/health",
+          "method": "GET",
+          "response_markers": [
+            "docling",
+            "ok",
+            "healthy"
+          ],
+          "false_positive_check": "GET /version must return JSON containing 'docling' version string; /docs must reference /v1/convert paths"
+        }
+      },
+      "api_paths": [
+        "/v1/convert/source",
+        "/v1/chunk/source",
+        "/docs",
+        "/ui",
+        "/health",
+        "/version"
+      ],
+      "vulnerabilities": [],
+      "pivot_paths": [
+        "POST /v1/convert/source with arbitrary PDF -> full Markdown extraction without auth when DOCLING_API_KEY unset",
+        "GET /docs -> full API schema enumeration without auth regardless of key config",
+        "GET /version or /health -> version disclosure; version-correlate to known upstream Docling CVEs"
+      ],
+      "misconfig_patterns": [
+        "DOCLING_API_KEY not set by default -- conversion endpoints open to unauthenticated callers",
+        "Health and version endpoints always exempt from auth even when API key is configured",
+        "UI playground (DOCLING_SERVE_ENABLE_UI=1) exposes full document conversion surface in browser with no auth",
+        "FastAPI /docs Swagger UI endpoint accessible by default -- enumerates all routes and schema"
+      ]
+    },
+    "gotenberg": {
+      "display_name": "Gotenberg (document-to-PDF API)",
+      "default_ports": [
+        3000
+      ],
+      "auth_default": "off",
+      "shodan_dorks": {
+        "basic": "port:3000 http.headers:\"Gotenberg-Trace\"",
+        "strict": "port:3000 http.html:\"gotenberg\"",
+        "version": "port:3000 \"Gotenberg-Trace\""
+      },
+      "fingerprint": {
+        "passive": [
+          "port:3000 http.html:\"gotenberg\"",
+          "port:3000 http.headers:\"Gotenberg-Trace\""
+        ],
+        "active_probe": {
+          "path": "/health",
+          "method": "GET",
+          "response_markers": [
+            "status",
+            "details"
+          ],
+          "false_positive_check": "Response headers must contain Gotenberg-Trace header; /version endpoint returns JSON with gotenberg version string"
+        }
+      },
+      "api_paths": [
+        "/forms/chromium/convert/url",
+        "/forms/chromium/convert/html",
+        "/forms/chromium/convert/markdown",
+        "/forms/libreoffice/convert",
+        "/forms/pdfengines/merge",
+        "/forms/pdfengines/split",
+        "/forms/pdfengines/flatten",
+        "/forms/pdfengines/write/metadata",
+        "/health",
+        "/version"
+      ],
+      "vulnerabilities": [
+        "CVE-2026-40281: ExifTool newline injection in metadata write endpoint; newline in metadata value splits ExifTool input stream -> rename/move/overwrite files including /etc/passwd; unauthenticated; CVSS 10.0; affected <=8.30.1; fixed 8.32.0",
+        "CVE-2026-42589: ExifTool -if flag injection via newline in metadata key -> arbitrary Perl expression execution -> OS command execution; CVSS 9.8; unauthenticated; fixed 8.32.0",
+        "CVE-2026-42596: SSRF via case-sensitive regex deny-list bypass in downloadFrom and webhook; IPv6 notation bypasses filter; CVSS 9.4; unauthenticated; affected all pre-8.32.0; fixed 8.32.0",
+        "CVE-2026-42595: SSRF via Chromium URL-to-PDF endpoint; attacker-controlled URL reaches internal network/cloud metadata; CVSS 8.6; unauthenticated; affected all pre-8.32.0; fixed 8.32.0"
+      ],
+      "pivot_paths": [
+        "CVE-2026-42596 SSRF: POST /forms/chromium/convert/url with downloadFrom URL using IPv6 notation http://[::ffff:127.0.0.1]:PORT -> reach internal services; unauthenticated; fixed in 8.32.0",
+        "CVE-2026-42595 SSRF: POST /forms/chromium/convert/url with internal URL -> access cloud IMDS or internal APIs; affects all pre-8.32.0",
+        "CVE-2026-40281 ExifTool injection: POST /forms/pdfengines/write/metadata with newline in metadata key -> split ExifTool input stream -> arbitrary file write in container; CVSS 10.0; fixed in 8.32.0",
+        "CVE-2026-42589 ExifTool -if injection: newline in metadata key -> inject Perl expression -> OS command execution; CVSS 9.8; fixed in 8.32.0"
+      ],
+      "misconfig_patterns": [
+        "Basic auth disabled by default -- --api-enable-basic-auth must be explicitly set to true",
+        "Binds to 0.0.0.0 by default -- any reachable caller can trigger PDF conversion",
+        "downloadFrom feature allows server to fetch URLs during conversion -- SSRF surface when accessible",
+        "Webhook feature allows server to POST results to caller-specified URL -- SSRF vector"
+      ]
+    },
+    "grobid": {
+      "display_name": "GROBID (academic PDF parser service)",
+      "default_ports": [
+        8070,
+        8071
+      ],
+      "auth_default": "off",
+      "shodan_dorks": {
+        "basic": "port:8070 http.html:\"grobid\"",
+        "strict": "port:8070 \"GROBID\"",
+        "version": "port:8070 http.html:\"grobid\" http.html:\"isalive\""
+      },
+      "fingerprint": {
+        "passive": [
+          "port:8070 http.html:\"GROBID\"",
+          "port:8070 http.html:\"grobid\"",
+          "port:8070 http.html:\"isalive\""
+        ],
+        "active_probe": {
+          "path": "/api/isalive",
+          "method": "GET",
+          "response_markers": [
+            "true"
+          ],
+          "false_positive_check": "GET /api/isalive must return plain text 'true' with HTTP 200; GET /api/version must return version string in grobid tag format (e.g. 0.9.x)"
+        }
+      },
+      "api_paths": [
+        "/api/version",
+        "/api/isalive",
+        "/api/health",
+        "/api/processHeaderDocument",
+        "/api/processFulltextDocument",
+        "/api/processReferences",
+        "/api/processCitation",
+        "/api/referenceAnnotations",
+        "/api/annotatePDF",
+        "/api/modelTraining",
+        "/api/trainingResult"
+      ],
+      "vulnerabilities": [],
+      "pivot_paths": [
+        "POST /api/processFulltextDocument with arbitrary PDF -> full TEI XML extraction of document content without auth",
+        "GET /api/health at port 8071 -> engine pool metrics -> infer internal processing capacity",
+        "POST /api/modelTraining -> trigger compute-intensive training job without auth -> resource exhaustion",
+        "GET /metrics/prometheus at port 8071 -> system metrics without auth"
+      ],
+      "misconfig_patterns": [
+        "No authentication mechanism documented or supported by default",
+        "CORS enabled by default for all origins -- any browser can call the API cross-origin",
+        "Admin console at port 8071 exposes metrics, heartbeat, and Prometheus metrics without auth",
+        "/api/modelTraining endpoint allows initiating model training operations without auth",
+        "Processes full-text academic PDFs -- document content (including unpublished research) readable by server operator"
+      ]
+    },
+    "unstructured-api": {
+      "display_name": "Unstructured API (self-hosted)",
+      "default_ports": [
+        8000
+      ],
+      "auth_default": "off",
+      "shodan_dorks": {
+        "basic": "port:8000 http.html:\"unstructured\"",
+        "strict": "port:8000 \"unstructured-api-key\"",
+        "version": "port:8000 http.html:\"unstructured\" http.html:\"/general/v0/general\""
+      },
+      "fingerprint": {
+        "passive": [
+          "port:8000 http.html:\"unstructured\"",
+          "port:8000 http.title:\"unstructured\""
+        ],
+        "active_probe": {
+          "path": "/general/v0/general",
+          "method": "GET",
+          "response_markers": [
+            "405",
+            "Method Not Allowed",
+            "unstructured"
+          ],
+          "false_positive_check": "GET to /general/v0/general must return HTTP 405; confirm response body or header references 'unstructured-api-key' auth scheme"
+        }
+      },
+      "api_paths": [
+        "/general/v0/general",
+        "/general/{api_version}/general"
+      ],
+      "vulnerabilities": [],
+      "pivot_paths": [
+        "POST /general/v0/general with arbitrary PDF/DOCX -> full text extraction -> exfil document content without auth",
+        "Submit specially crafted document -> trigger parser memory exhaustion via UNSTRUCTURED_MEMORY_FREE_MINIMUM_MB bypass",
+        "If Swagger /docs exposed -> enumerate all routes and schema without auth"
+      ],
+      "misconfig_patterns": [
+        "UNSTRUCTURED_API_KEY not set by default -- any caller can submit documents for processing without auth",
+        "Port 8000 is a high-collision port (also Django dev, other Python services) -- FP rate elevated on Shodan",
+        "Document content submitted to /general/v0/general is processed in-memory on the server -- PII in uploaded docs transits unauthenticated",
+        "Parallel PDF processing mode can be triggered by unauthenticated callers to exhaust compute"
+      ]
+    }
+  }
+}

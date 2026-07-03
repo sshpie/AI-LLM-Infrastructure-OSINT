@@ -1,0 +1,2918 @@
+[
+  {
+    "ip": "159.89.109.221",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.48.3.115",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "145.239.94.99",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "129.153.77.123",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "202.61.206.80",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)"
+  },
+  {
+    "ip": "192.81.217.227",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.228.205.141",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "178.248.211.42",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "79.137.64.66",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "212.132.120.170",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.243.53.212",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.157.223.228",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.20.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.192.96.123",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.28.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "167.172.110.245",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.135.38.33",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "172.237.116.69",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "54.37.229.53",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "94.23.189.62",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.14.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "217.154.170.190",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "201.183.251.90",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.20.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 503
+  },
+  {
+    "ip": "144.217.55.87",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "49.13.72.216",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.244.219.128",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "203.128.246.222",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.18.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "138.68.73.78",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)"
+  },
+  {
+    "ip": "5.189.140.23",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "159.69.26.226",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.22.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 503
+  },
+  {
+    "ip": "177.185.250.3",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "195.26.255.163",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "68.183.96.231",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.15.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.161.240.238",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.28.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.68.224.191",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.215.165.165",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.161.62.217",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "188.34.189.105",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "167.172.146.27",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "193.70.75.118",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "8.148.27.40",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "165.22.78.129",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "167.235.50.214",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "104.200.21.228",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)"
+  },
+  {
+    "ip": "165.22.214.191",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "212.90.120.232",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.197.195.133",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "82.165.231.214",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "50.85.193.8",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.163.158.205",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "157.245.32.119",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.161.114.111",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "65.108.142.181",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "174.138.71.10",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "128.140.116.89",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.17.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "161.97.93.0",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "170.205.30.132",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "128.199.171.155",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.9.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "134.122.114.128",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "193.31.26.234",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "112.46.193.78",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.7.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "161.97.100.157",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.193.246.131",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.19.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.180.189.254",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "85.190.98.242",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "104.219.41.184",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "95.216.232.198",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "49.255.223.198",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "95.216.232.201",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.15.78.210",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "202.61.246.175",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "31.222.235.136",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "132.220.165.123",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "37.120.191.175",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "128.199.59.216",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "47.106.131.130",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.146.166.109",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "159.194.211.115",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.15.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "129.146.126.206",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "147.182.157.31",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "84.247.20.197",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "79.137.101.172",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.163.140.250",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.163.149.168",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "109.169.25.55",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "41.196.93.98",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.234.69.154",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.28.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "82.157.25.206",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.207.250.146",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "185.216.26.122",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.163.170.31",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "43.143.225.222",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "159.203.101.209",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.83.192.146",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "64.23.240.71",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "49.12.19.65",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "188.68.54.27",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.9.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 503
+  },
+  {
+    "ip": "178.248.208.57",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.9.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "116.203.50.44",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "134.199.202.26",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "87.148.80.147",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)"
+  },
+  {
+    "ip": "20.175.179.50",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "94.237.27.104",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.11.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "139.180.153.43",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "64.227.96.252",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "37.59.99.93",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.38.40.166",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.20.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "134.122.20.168",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "52.138.100.108",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "178.208.99.241",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "198.46.226.175",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "103.80.243.148",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "129.151.226.236",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "20.88.248.203",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "161.97.72.7",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "81.200.119.131",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "20.126.190.44",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.138.135.192",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "64.226.76.50",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.224.193.224",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "152.53.105.70",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.77.150.247",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.159.149.88",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "159.223.2.128",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.20.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "158.101.45.239",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.173.29.56",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "91.151.16.170",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "102.203.200.82",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "178.73.217.109",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.17.3",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.77.210.190",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.14.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "128.199.132.133",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "207.180.249.172",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.15.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "42.96.13.9",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.178.141.59",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.101.185.52",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "207.180.219.107",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.7.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "34.31.197.21",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "135.181.81.219",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.155.171.7",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.28.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "144.126.222.2",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "37.98.153.2",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "180.93.136.231",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "82.223.24.194",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.7.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "194.182.77.228",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "210.71.253.60",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "195.26.253.51",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "157.230.78.22",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.68.173.76",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "62.171.187.224",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.28.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.149.77.19",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "91.134.132.141",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "92.205.58.74",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "128.140.48.93",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.9.2",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.161.242.254",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.234.112.114",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "47.251.70.175",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "217.146.78.55",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "20.13.224.214",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.17.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "146.59.198.219",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)"
+  },
+  {
+    "ip": "54.38.12.230",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "142.93.138.150",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "131.145.54.108",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "144.91.82.241",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "144.202.12.125",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "159.65.158.139",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "67.217.245.142",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "213.142.141.54",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.5.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "152.53.104.221",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.26.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "94.237.100.40",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.23.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "158.220.125.104",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "46.224.186.113",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "14.136.86.230",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "64.176.16.76",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "134.199.152.159",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.24.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "3.232.129.143",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "168.110.207.102",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.25.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "20.219.205.252",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.20.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "188.165.192.25",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "164.68.107.25",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.19.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "137.184.136.149",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.5.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "172.245.184.99",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.12.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "45.79.37.75",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "165.1.121.43",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "173.212.217.208",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.27.0",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "64.23.223.65",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "8.21.1",
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "116.203.143.217",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "51.178.58.174",
+    "port": 3000,
+    "platform": "gotenberg",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "header Gotenberg-Trace present",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": null,
+    "cve": "CVE-2026-40281(10.0 RCE)/42595/42596(SSRF->IMDS)",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "54.37.183.120",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.9.1",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "47.98.138.30",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "20.106.77.166",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.7.3",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "52.248.37.112",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.7.3",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "192.172.226.108",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "123.155.188.10",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface"
+  },
+  {
+    "ip": "45.79.200.209",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.9.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "87.76.130.173",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "140.115.54.162",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.9.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "39.100.51.211",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "120.92.88.223",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.3",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "193.140.63.27",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.3",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "130.79.150.69",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface"
+  },
+  {
+    "ip": "35.188.185.191",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "103.241.171.246",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "147.46.215.228",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "REFUTED",
+    "reasons": [
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface"
+  },
+  {
+    "ip": "86.48.1.142",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "14.116.172.182",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.9.1",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "113.98.55.19",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "152.42.219.246",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "141.95.98.72",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.7.3",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "65.109.77.21",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.9.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "149.165.168.75",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "35.199.48.217",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.0",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "15.235.12.163",
+    "port": 8070,
+    "platform": "grobid",
+    "verdict": "CONFIRMED-OPEN",
+    "reasons": [
+      "marker substrings present + 200",
+      "catch-all guard PASSED (nonce 404)"
+    ],
+    "version": "0.8.2",
+    "cve": "none cataloged; unauth /api/modelTraining = DoS surface",
+    "scheme": "http",
+    "marker_status": 200
+  },
+  {
+    "ip": "5.223.58.29",
+    "port": 5001,
+    "platform": "docling-serve",
+    "verdict": "REFUTED",
+    "reasons": [
+      "marker substrings missing",
+      "no scheme responded"
+    ],
+    "version": null,
+    "cve": "CVE-2026-24009(8.1 PyYAML RCE via core)",
+    "scheme": "http",
+    "marker_status": 200
+  }
+]
