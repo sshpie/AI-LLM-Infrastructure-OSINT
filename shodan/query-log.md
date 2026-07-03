@@ -1165,3 +1165,14 @@ Phase 2 (new dorks from OSINT agent intel):
 | 2026-06-27 | `http.title:"Streamlit" port:8501` | 2,814 | cat-streamlit-2026-06-27 | Title anchor; subset of product dork |
 | 2026-06-27 | `product:"Streamlit" port:8501 http.html:"CVE-2024-42468"` | 0 | cat-streamlit-2026-06-27 | CVE tag not in HTML; version-based discrimination via tiptoe |
 
+
+## 2026-07-02 — Cat-AnythingLLM
+
+| Dork | Hits | Notes |
+|------|------|-------|
+| `http.title:"AnythingLLM"` | 1,022 | Primary. Web UI limit = 92 IPs harvested (100-result cap). Near-zero FP. |
+| `port:3001 http.html:"AnythingLLM" http.html:"workspace"` | 0 | html: filter SPA-body-only, React bundle not indexed — expected null |
+| `http.title:"AnythingLLM" port:3001` | TBD | Not run — would narrow to port:3001 subset |
+
+**Harvest:** 92 unique IPs → `data/cat-anythingllm/ips.txt`
+**Total indexed population:** 1,022 (Shodan web UI 2026-07-02)

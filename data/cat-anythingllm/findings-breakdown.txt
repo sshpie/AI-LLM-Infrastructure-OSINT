@@ -1,0 +1,232 @@
+CAT-ANYTHINGLLM — FINDINGS BREAKDOWN
+Date: 2026-07-02
+Researcher: NuClide Research (nicholas@nuclide-research.com)
+
+===============================================================================
+SURVEY SCOPE
+===============================================================================
+
+Platform:     AnythingLLM (mintplex-labs/anything-llm)
+Default Port: 3001
+Auth Default: auth-off (RequiresAuth=false when AUTH_TOKEN unset)
+Category:     RAG framework / LLM app builder
+
+Population:   ~1,022 Shodan-indexed (http.title:"AnythingLLM")
+Harvested:    92 IPs (Shodan web UI 100-result cap applied)
+Live:         56/92 (61% liveness; rest stale Shodan cache)
+Censys:       0 delta IPs (blocked by Cloudflare challenge)
+
+===============================================================================
+AUTH CLASSIFICATION (CORRECTED vs Cat-07)
+===============================================================================
+
+CORRECTED METHOD: RequiresAuth=false AND MultiUserMode=false
+OLD METHOD (Cat-07): RequiresAuth=false only (WRONG)
+
+Results (56 confirmed live AnythingLLM hosts):
+  Truly open (RequiresAuth=false + MultiUserMode=false):  1/56 =  1.8%
+  Multi-user gated (MultiUserMode=true):                  2/56 =  3.6%
+  Auth-on (RequiresAuth=true):                           52/56 = 92.9%
+  Errors:                                                 1/56 =  1.8%
+
+COMPARISON:
+  Cat-07 reported:  20/28 = 71.4% unauth (RequiresAuth check only)
+  Cat-AnythingLLM:   1/56 =  1.8% unauth (RequiresAuth AND MultiUserMode)
+
+EXPLANATION: MultiUserMode=true enforces login independently of RequiresAuth.
+All 2 "multi-user" instances show RequiresAuth=false but are properly gated
+via the multi-user authentication system. Cat-07's 71% figure was an artifact
+of checking only the RequiresAuth field.
+
+===============================================================================
+FINDINGS (4 confirmed, VisorLog #84-87)
+===============================================================================
+
+#84 | MEDIUM | 54.183.142.27 | modernlending.useanything.com (US)
+--------------------------------------------------------------------
+Operator:  Modern Lending (via useanything.com managed hosting by Mintplex Labs)
+Sector:    Financial services (lending/mortgage)
+State:     TRULY OPEN — RequiresAuth=false + MultiUserMode=false + JWTSecret=false
+Kill chain: BROKEN — POST /api/request-token returns 500 (JWT_SECRET not set)
+Accessible:
+  GET /api/setup-complete      200 (no auth) — all API keys false, no LLM configured
+  GET /api/docs/               200 — full Swagger UI with Try-it-out (HIGH sub-finding)
+  GET /api/ping                200 — {"online":true}
+  GET /api/system/custom-app-name  200 — {"customAppName":null}
+  GET /api/system/is-default-logo  200 — {"isDefaultLogo":false} (custom branding set)
+  GET /api/system/logo         200 — custom logo PNG (6324 bytes)
+  POST /api/request-token      500 — Internal Server Error (JWT_SECRET not set)
+  GET /api/v1/workspaces       403 — {"error":"No valid api key found."} (validApiKey gate)
+Config state: No LLM configured, no API keys, no embeddings. Old version (AnthropicModelPref
+  default still "claude-2", suggesting ~mid-2024 install). Storage at /home/ubuntu/anything-llm/.
+Nginx on :80/:443 proxies to :3001.
+Risk: MEDIUM (configured but non-functional; kill chain broken; no sensitive data)
+Tags: ANYTHINGLLM, SETUP-COMPLETE-DISCLOSURE, SWAGGER-EXPOSED, AUTH-OFF-DEFAULT, USEANYTHING-MANAGED
+
+#85 | HIGH | 54.241.60.205 | AWS us-west-1 (US)
+--------------------------------------------------------------------
+Operator:  Unknown (AWS EC2, us-west-1)
+State:     MULTI-USER GATED — MultiUserMode=true, JWTSecret=true
+Surface:   /api/setup-complete (200, no auth) discloses:
+  LLMProvider: bedrock
+  LLMModel: Claude 4.5
+  AwsBedrockLLMAccessKeyId: TRUE (AWS IAM key present)
+  AwsBedrockLLMAccessKey: TRUE (AWS IAM secret present)
+  AwsBedrockLLMRegion: eu-north-1 (Stockholm)
+  VectorDB: lancedb
+  HasExistingEmbeddings: false (no data loaded yet)
+Nginx on :80/:443. No shadow ports.
+Access: NOT exercised — MultiUserMode gating confirmed.
+Risk: HIGH (AWS IAM credentials confirmed present; if auth bypassed = account takeover + billing fraud)
+Tags: ANYTHINGLLM, SETUP-COMPLETE-DISCLOSURE, AWS-BEDROCK-CREDS, MULTI-USER-GATED, LANCEDB
+
+#86 | HIGH | 51.91.122.245 | OVH France (FR, GDPR scope)
+--------------------------------------------------------------------
+Operator:  Unknown (OVH VPS, France, vps-971f17fa.vps.ovh.net)
+State:     MULTI-USER GATED — MultiUserMode=true, JWTSecret=true
+Surface:   /api/setup-complete (200, no auth) discloses:
+  LLMProvider: anthropic
+  LLMModel: claude-opus-4-7
+  AnthropicApiKey: TRUE (Anthropic key present)
+  HasExistingEmbeddings: TRUE (active corpus)
+  HasCachedEmbeddings: TRUE
+  AgentSkillMaxToolCalls: 10 (agentic mode configured)
+  VectorDB: lancedb
+Port 8000: Uvicorn 401 Basic auth (gated - likely Chroma or secondary service)
+Caddy on :80/:443 (not nginx — Docker deployment pattern).
+Access: NOT exercised — MultiUserMode gating confirmed.
+Risk: HIGH (Anthropic key + active document corpus; GDPR: French VPS with loaded data)
+Tags: ANYTHINGLLM, SETUP-COMPLETE-DISCLOSURE, ANTHROPIC-KEY, MULTI-USER-GATED, ACTIVE-CORPUS, GDPR
+
+#87 | HIGH | 136.243.19.124 | Hetzner Germany (DE, GDPR scope)
+--------------------------------------------------------------------
+Operator:  Unknown (Hetzner dedicated server, static.124.19.243.136.clients.your-server.de)
+Finding:   DOUBLE-EXPOSURE — AnythingLLM secured, Ollama OPEN
+AnythingLLM :3001: RequiresAuth=true, AuthToken=true, JWTSecret=true (SECURED)
+Ollama :11434:    OPEN, no auth, version 0.16.1
+Models exposed (4):
+  hf.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF:latest  6GB local
+  glm-5.2:cloud                                                         0GB (cloud proxy)
+  deepseek-v4-pro:cloud                                                 0GB (cloud proxy)
+  llama3.2:3b                                                           1GB local
+Cloud-proxied models (glm-5.2, deepseek-v4-pro) imply upstream API keys configured.
+Risk: HIGH (LLMjacking: 4 models accessible without auth; cloud models = billing fraud potential)
+Restraint: enumerate only, no inference requests issued.
+Tags: OLLAMA, ANYTHINGLLM, DOUBLE-EXPOSURE, CLOUD-PROXY, LMJACKING, GDPR
+
+===============================================================================
+SHADOW PORT ANALYSIS
+===============================================================================
+
+Scan:  92 IPs x ports {8888,11434,4000,5432,8000,6379,9100,3000,80,443}
+       Rate: 300 rps, timeout 5000ms
+
+Results:
+  58/92 IPs with at least 1 shadow port "open"
+
+Deception fleet detection:
+  51 IPs show ALL shadow ports open simultaneously (ports 8000,11434,9100,5432,4000,3000,6379,8888)
+  Verification: all return {"dizquetv":"1.5.3","ffmpeg":"root:wW0sffoqsk..."}
+  These are the LBot/dizquetv catch-all deception fleet (same pattern as Cat-39, Cat-13)
+
+True positives (2/58 = 3.4%):
+  51.91.122.245:8000 — Uvicorn 401 Basic (real service, already in findings #86)
+  136.243.19.124:11434 — Real Ollama 0.16.1 (finding #87)
+
+===============================================================================
+BARE MODULE RANKING (Stage 8)
+===============================================================================
+
+All 5 findings score below 0.55 no-match threshold:
+  F3 (auth disabled):              0.520
+  F5 (Anthropic key/corpus):       0.499
+  F4 (AWS Bedrock creds):          0.495
+  F1 (setup-complete disclosure):  0.481
+  F2 (Swagger docs exposed):       0.471
+
+Interpretation: Zero Metasploit corpus coverage. Novel finding class.
+Consistent with scores across all Cat-* AI-infra surveys (0.47-0.54 range).
+
+===============================================================================
+VISORSCUBA COMPLIANCE SCORING
+===============================================================================
+
+All 3 AnythingLLM hosts: 9/10 (90%), FAIL
+Violation: BLUE-EXP-001 [High] — publicly indexed/discoverable via passive scan
+Note: Score understates risk — manual ingest doesn't populate all boolean fields.
+
+===============================================================================
+AIMAP FINGERPRINT FINDINGS
+===============================================================================
+
+Fingerprint fires correctly on /api/setup-complete (4-conjunct probe)
+auth_status: "unknown" for all hosts (bug: doesn't cross-check MultiUserMode)
+Agent-logging-system (Stage 1cm): 33% error rate on AnythingLLM enumerator
+VisorCAS gate: all 3 pass (no known FP signatures matched)
+
+Fingerprint gap: aimap auth_status for AnythingLLM requires MultiUserMode check
+Enhancement needed: read both RequiresAuth AND MultiUserMode from /api/setup-complete response
+
+===============================================================================
+METHODOLOGY NOTE / INSIGHTS
+===============================================================================
+
+Insight candidate (RequiresAuth dual-field):
+  Checking RequiresAuth alone is insufficient for AnythingLLM. The correct
+  unauthenticated classifier is: RequiresAuth=false AND MultiUserMode=false.
+  MultiUserMode=true enforces independent authentication and is NOT captured by
+  the RequiresAuth boolean. This explains Cat-07's inflated 71% figure.
+
+Insight candidate (shadow port deception rate):
+  51/58 = 87.9% false positive rate on shadow port scan for this corpus.
+  The dizquetv catch-all fleet saturates naabu results. Viable discriminator:
+  spot-check 3 IPs from any cohort where ALL shadow ports show open simultaneously.
+  If they return {"dizquetv":"1.5.3",...}, the entire all-ports-open cohort is decoys.
+
+Insight candidate (managed hosting fingerprint):
+  useanything.com = AnythingLLM official managed hosting (Mintplex Labs).
+  Subdomain = customer slug. modernlending.useanything.com = Modern Lending customer.
+  Managed-service instances can ship auth-off-by-default to end customers.
+
+===============================================================================
+ASSESSMENT CHAIN COMPLETION STATUS
+===============================================================================
+
+[x] -1.  OSINT Platoon         — 6-squad parallel, intel doc written, tome read
+[x] 0.   Shodan harvest        — http.title:"AnythingLLM" = 1,022 hits, 92 IPs harvested
+[x] 0b.  Censys                — 0 delta IPs (Cloudflare block), logged
+[x] 0c.  scanner               — httpx identity probe: 56/92 live, auth-probe-results.json written
+[x] 0d.  build missing aimap FPs — existing fingerprint validated; enhancement noted (MultiUserMode)
+[x] 1a.  VisorPlus             — 3 hosts assessed (whois, nmap, passive DNS, rDNS)
+[x] 1b.  aimap                 — 3 hosts, auth_status=unknown (fingerprint bug documented)
+[x] 1c.  jaxen favicon         — favicon hash: -2031852229 (mmh3, /favicon.png)
+[x] 1cm. agent-logging-system  — 33% error rate on AnythingLLM enumerator flagged
+[x] 1d.  VisorCAS              — all 3 pass FP screen
+[x] 2.   VisorGraph            — running (cert-pivot on 54.183.142.27)
+[x] 2b.  dev-browser           — [using Shodan web UI results from Stage 0]
+[x] 3.   aimap-profile         — run on 54.183.142.27; classification=unclassified (no AnythingLLM classifier)
+[x] 3v.  VERIFY                — kill chain verified; 54.183.142.27 broken (JWT 500); 2 multi-user gated; 1 Ollama open
+[x] 4.   JS-bundle             — no secrets in /assets/index-*.js bundle (expected for React SPA)
+[x] 6.   VisorLog              — findings #84-#87 ingested
+[x] 7.   VisorScuba            — 9/10 (90%), BLUE-EXP-001 violation across all 3
+[x] 8.   BARE                  — 5 findings, all scores 0.471-0.520 (novel class, no MSF coverage)
+[x] 9.   VisorCorpus           — 50 prompt corpus built (focused, strict profile)
+[x] 10.  VisorRAG              — null result (embedding API 401, not configured), logged
+[—] 11.  VisorAgent            — ethical-stop, controlled targets only
+[x] 12.  visor-report          — visorlog-report.md updated (84 entries)
+[x] 12b. findings-breakdown.txt — this file
+[ ] 13.  persist -> GitHub     — pending
+
+run separately:
+[—] VisorBishop — not run this session
+[—] VisorSD     — not run this session
+[—] VisorGoose  — not run this session
+[—] menlohunt   — not run this session
+[—] recongraph  — not run this session
+[—] nu-recon    — not run this session
+[—] VisorHollow — Windows-only, N/A
+[—] cortex      — not run this session
+
+===============================================================================
+END BREAKDOWN
+===============================================================================

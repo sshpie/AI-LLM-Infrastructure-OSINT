@@ -156,3 +156,11 @@ surveys/agent-platforms-2026-06-19/ips-all.txt
 **/httpx.log
 **/naabu.log
 **/aimap-full.pid
+
+# Cat-AnythingLLM — raw recon IP lists and scan output (pre-verification candidate pools)
+data/cat-anythingllm/ips.txt
+data/cat-anythingllm/live-ips.txt
+data/cat-anythingllm/auth-probe-results.json
+data/cat-anythingllm/httpx-setup-complete.jsonl
+data/cat-anythingllm/naabu-shadow.jsonl
+data/cat-anythingllm/visorplus-*.json
