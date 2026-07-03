@@ -1,122 +1,69 @@
-# SESSION.md -- AI-LLM-Infrastructure-OSINT
+# SESSION — Cat-AnythingLLM
+
 Last updated: 2026-07-02
 
-## Last active survey: Cat-33 Expanded -- OSS Guardrail Servers (2026-06-29)
+## Status: COMPLETE
 
-### What was done
+## What ran
 
-Extended Cat-33 beyond email guardrails to cover 15 OSS/enterprise AI safety platforms.
-28 Shodan dorks executed. 5 findings (G1-G5) verified. Deep-mapping completed.
+Full NuClide assessment chain on AnythingLLM (mintplex-labs/anything-llm), port 3001.
 
-**Platform scope:** LLM Guard, NeMo Guardrails, Guardrails AI, Vigil, UnisGuard/Guoshun,
-Arthur GenAI Engine, Enkrypt MCP Gateway + enterprise/SaaS tier (Aporia, WhyLabs, RIME,
-Lakera, Patronus, Prompt Security)
+## Key findings
 
-**Findings (verified):**
+1. **54.183.142.27** (VisorLog #84, MEDIUM) — Truly open but unconfigured
+   - modernlending.useanything.com (Mintplex managed hosting, financial services)
+   - RequiresAuth=false, MultiUserMode=false, JWTSecret=false
+   - Kill chain broken: POST /api/request-token returns 500 (no JWT_SECRET)
+   - Swagger UI /api/docs/ live without auth
+   - No LLM/API keys, no embeddings — unconfigured instance
 
-G1 [CRITICAL] LLM Guard 5.78.101.230:8000 (Hetzner)
-  - Auth: None. TWO-PATH behavior:
-    /scan/ endpoints (production): ALL scanners -1.0, is_valid=true always (null guardrail)
-    /analyze/ endpoints: PromptInjection + Toxicity working; Secrets broken both paths
-  - Operator: unknown (metrics disabled on this instance)
+2. **54.241.60.205** (VisorLog #85, HIGH) — Multi-user gated, AWS Bedrock
+   - AWS IAM AccessKeyId + AccessKey confirmed present in /api/setup-complete
+   - Region: eu-north-1 (Stockholm). VectorDB: lancedb. Model: Claude 4.5
+   - MultiUserMode=true (gated), access NOT exercised
 
-G2 [HIGH] NeMo Guardrails 128.140.94.154:8000 (Hetzner)
-  - Auth: None. Config IDs exposed (opencode/web_classifier/content_generator)
-  - Chat completions unauth; internal server error (no LLM backend)
+3. **51.91.122.245** (VisorLog #86, HIGH) — Multi-user gated, Anthropic + corpus
+   - AnthropicApiKey=True, claude-opus-4-7, HasExistingEmbeddings=True
+   - OVH France VPS, GDPR scope. Port 8000 Uvicorn 401. Caddy frontend.
+   - MultiUserMode=true (gated), access NOT exercised
 
-G3 [MEDIUM] Prometheus /metrics -- operator attribution (15.204.46.173 = hellofans.ai)
-  - /metrics open on all LLM Guard instances despite API auth
-  - hellofans.ai: 185K /scan/prompt, 280K /scan/output calls (production traffic)
-  - 48.204.231.121: Azure-hosted instance (10.224.x.x subnet), new deploy, 43 requests
-  - Cross-instance scanner fingerprint: 146.56.180.42, 51.158.248.122 appear on both
+4. **136.243.19.124** (VisorLog #87, HIGH) — Double-exposure (AnythingLLM secured, Ollama open)
+   - AnythingLLM :3001 auth-on. Ollama :11434 OPEN, version 0.16.1
+   - 4 models: gemma-4-12B-coder (6GB), glm-5.2:cloud, deepseek-v4-pro:cloud, llama3.2:3b
+   - Hetzner dedicated server Germany, GDPR scope
 
-G4 [HIGH/CRITICAL] UnisGuard/Guoshun 43.134.236.109 -- Ollama internet-exposed
-  - Port 11434: Ollama open, unisguard-guard:latest + qwen2.5:7b directly callable
-  - System prompt EXTRACTED from guardrail model: full classification taxonomy (S5-S12)
-    + BYPASS VECTORS documented in system prompt (security education = safe)
-  - Port 8000: LLM Safety Guardrail API, unauth /check, /api/policies, /api/test-cases exposed
-  - Port 5000: UnisGuard platform, auth enforced (403), registration open but email-gated
-  - Main bypass: call :11434/api/generate with qwen2.5:7b, no guardrail applied
+## Key methodology findings
 
-G5 [INFO/WATCH] Arthur GenAI Engine -- dork valid, population 0 live
-  - All 6 AWS Shodan hits stale; 3.146.247.46 cert = *.redi.health (IP reused)
-  - Dork confirmed valid (http.title:"Arthur GenAI Engine - Swagger UI"); watch for new instances
+- Cat-07 71% open rate was WRONG — RequiresAuth alone insufficient
+- Correct classifier: RequiresAuth=false AND MultiUserMode=false
+- Corrected rate: 1/56 = 1.8% truly open
+- Shadow port scan: 87.9% FP rate (dizquetv catch-all fleet, Linode/Akamai IPs)
+- Insights #109 + #110 codified and pushed
 
-**Insight candidates codified:** I-G through I-L (null guardrail, Prometheus attribution,
-OSS auth gap, config enumeration bypass, system prompt = policy disclosure, dual-layer exposure)
+## Population
 
-**Files:**
-  shodan/cat33-guardrails-2026-06-29/findings-breakdown.txt  -- FINAL (committed)
-  shodan/cat33-guardrails-2026-06-29/osint/platform-research.md
-  shodan/query-log.md  -- 28 dorks logged
+- Shodan: 1,022 indexed, 92 harvested (web UI cap), 56 live
+- Favicon hash (mmh3): -2031852229 (/favicon.png)
+- BARE: all findings 0.471-0.520 (novel class, zero MSF coverage)
+- VisorLog: #84-87 ingested
 
-### Survey status: COMPLETE -- full chain executed 2026-07-02
+## Artifacts
 
-  Chain completed:
-  [x] 0c.  tiptoe -- all 5 hosts LIVE; G4:11434 VERIFIED_UNAUTH HIGH
-  [x] 1a.  VisorPlus -- G1: nextcomm.tech (BR); G2: vibewebsite.eu (EU, 72 passive DNS)
-  [x] 1b.  aimap 1.9.55 -- 20 services, 2 CRIT (Ollama + NeMo); FPs stripped
-  [x] 1cm. agent-logging-system -- FP_CANDIDATES flagged (Chatterbox/ZenML/Kubelet/etc)
-  [x] 4.   JS-bundle -- NeMo chatbot-ui fork, 0 secrets
-  [x] 6.   VisorLog -- findings #40-#44 in nuclide.db
-  [x] 7.   VisorScuba -- G4: 6/10; G1/G2/G3: 9/10
-  [x] 8.   BARE -- all 4 no_high_confidence_match (novel OSS guardrail class, 0 MSF coverage)
-  [x] 12.  visor-report -- shodan/cat33-guardrails-2026-06-29/visor-report.md
-  [x] 13.  persist -> GitHub (this commit)
+- data/cat-anythingllm/findings-breakdown.txt
+- data/cat-anythingllm/aimap-open.json (evidence)
+- data/platform-intel/anythingllm-osint-2026-07-02.md
+- research-program/insights/109-*.md
+- research-program/insights/110-*.md
+- shodan/query-log.md (updated)
+- ~/tome/platforms/anythingllm.json (CONFIRMED, population_survey added)
 
-## Last active survey: Cat-Streamlit -- ML Webapp Framework (2026-06-27)
+## GitHub
 
-### What was done
+Pushed: nuclide-research/AI-LLM-Infrastructure-OSINT @ 678c9d1
+Pushed: nuclide-research/tome @ e2e720e
 
-Population-scale survey of Streamlit deployments (port 8501).
-3,247 confirmed hosts; 3 verified with CVE-2024-42468 path traversal.
+## Next
 
-**Findings:**
-F1 [HIGH]     Auth inversion -- 100% open by design (no auth mechanism exists)
-F2 [CRITICAL] CVE-2024-42468 path traversal -- 2,082/3,247 hosts (64.1%)
-F3 [HIGH]     CVE-2024-36473 SSRF -- 3,120/3,247 hosts (96.1%)
-F4 [HIGH]     Hardcoded credentials in page source -- 856/3,247 (26.3%)
-F5 [CRITICAL] 20.55.48.62 (Azure) -- path traversal VERIFIED, 11 files exfil
-F6 [CRITICAL] 43.139.174.33 (Tencent) -- path traversal VERIFIED
-F7 [CRITICAL] 209.97.147.137 (DigitalOcean) -- path traversal VERIFIED
-
-**Key distinction:** Auth-inversion (no auth mechanism) vs auth-on-default (mechanism exists, defaults off).
-Streamlit is the cleanest auth-inversion example in the corpus.
-
-**BARE:** All 4 findings novel class (0.485-0.540; zero MSF coverage). Consistent with Cat-33 pattern.
-
-**Files:**
-  shodan/cat-streamlit-2026-06-27/findings-breakdown.txt
-  shodan/cat-streamlit-2026-06-27/visor-report.md
-  shodan/query-log.md (3 dorks added)
-
-### Survey status: COMPLETE -- full chain executed 2026-07-02
-
-  [x] 0.   Shodan harvest  -- 3,247 hosts via product:"Streamlit" port:8501
-  [N] 0b.  Censys          -- Shodan population sufficient
-  [x] 0c.  tiptoe          -- 3 sample hosts LIVE; versions confirmed
-  [x] 1a.  VisorPlus       -- operator attribution on 3 verified hosts
-  [x] 1b.  aimap           -- Streamlit fingerprint already in corpus; clean
-  [x] 1cm. agent-logging   -- No FP_CANDIDATES
-  [N] 2.   VisorGraph      -- no TLS on :8501 default; cert pivot N/A
-  [x] 3.   aimap-profile   -- commercial/research; ethics: data-disclosure
-  [x] 3v.  VERIFY          -- 3 hosts confirmed via path traversal read chain
-  [x] 4.   JS-bundle       -- 0 secrets (client-side only)
-  [x] 6.   VisorLog        -- #46-48, #53-56 ingested
-  [x] 7.   VisorScuba      -- 8/10 (EXP-001 + SC-001); 9/10 population
-  [x] 8.   BARE            -- novel class (0 MSF coverage, all < 0.55)
-  [N] 9.   VisorCorpus     -- no LLM backend
-  [N] 10.  VisorRAG        -- deferred
-  [x] 12.  visor-report    -- shodan/cat-streamlit-2026-06-27/visor-report.md
-  [x] 12b. findings-breakdown -- shodan/cat-streamlit-2026-06-27/findings-breakdown.txt
-  [x] 13.  persist -> GitHub (this commit)
-
----
-
-## Previous Cat-33 survey (2026-06-29): COMPLETE
-
-### Previous surveys
-  cat16-bi-dashboards (2026-06-29): COMPLETE, PUSHED (0b88471)
-    1 CRITICAL Metabase CVE-2023-38646, 47 HIGH Superset unauth, 14 HIGH Redash setup
-  cat-mlflow-2026-06-28: 62.3% unauth, CVSS 9.8 pickle RCE PoC, pushed 0144971
-  cat-33-email-guardrails-2026-06-23: Galileo agent-control (commit pending)
+- aimap fingerprint enhancement: add MultiUserMode cross-check to auth_status determination
+- Cat-Flowise findings (9 UNAUTH_CHATFLOWS found last session) not yet pushed
+- Consider Cat-OpenWebUI or Cat-LibreChat as next category
