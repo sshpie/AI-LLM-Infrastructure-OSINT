@@ -1,0 +1,36 @@
+By severity: {'high': 71, 'medium': 46, 'critical': 23}
+
+By platform (finding count): {'InfluxDB': 91, 'Prometheus': 4, 'QuestDB': 45}
+
+('InfluxDB', 'high') 46
+('InfluxDB', 'medium') 45
+('Prometheus', 'high') 3
+('Prometheus', 'medium') 1
+('QuestDB', 'critical') 23
+('QuestDB', 'high') 22
+
+Cat-TSDB Survey Findings Breakdown — 2026-07-28
+=================================================
+Population sampled: 195 IPs across InfluxDB/VictoriaMetrics/Prometheus/QuestDB (TimescaleDB/M3DB null-logged, no confirmed live population)
+Unauthenticated: 72/79 fingerprinted services (91%)
+Total findings: 140 (23 critical, 71 high, 46 medium, 0 low/info)
+
+By platform:
+  InfluxDB    91 findings (46 high, 45 medium) — SHOW DATABASES + measurement schema, 46 hosts
+  QuestDB     45 findings (23 critical, 22 high) — unauth /exec SQL + table enum, 24 hosts
+  Prometheus   4 findings (3 high, 1 medium) — full config dump + scrape-target topology, 3 hosts
+  VictoriaMetrics: 0 findings — no enumerator built this pass; Step 3v spot-check showed MIXED auth
+                   posture (3/5 gated, 1/5 unauth-confirmed) — thesis does NOT hold cleanly here,
+                   unlike the other 3 platforms which were 100% unauth wherever confirmed.
+
+Standout: 122.51.93.92 (QuestDB) — 693 tables disclosed unauth, single highest-count host.
+Attribution: probayes.net (VictoriaMetrics host, French AI/robotics firm, 12-host footprint confirmed
+             via cert-CN + VisorGraph); floatas.net/activeforks.net (QuestDB 693-table host, live
+             DevOps stack co-located — Portainer/registry/logs).
+
+Tool gaps surfaced this pass:
+  - No enumVictoriaMetrics enumerator in aimap (identity-only match)
+  - No BARE corpus module for QuestDB (SQLi-proximity match used instead)
+  - vampire.py (tool-inventory-listed) not present on disk
+  - VisorScuba aimap-adapter under-scores category severity (90% uniform, doesn't see unauth-data findings)
+  - VisorRAG embedding API key dead (401) — recall step blocked
