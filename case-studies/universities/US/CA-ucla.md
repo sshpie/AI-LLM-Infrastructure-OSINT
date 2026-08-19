@@ -1,6 +1,6 @@
 # UCLA: Multi-Service AI Stack on `ai.idre.ucla.edu` — Open WebUI Signup-Open + LDAP + LiteLLM Dual-Exposed
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

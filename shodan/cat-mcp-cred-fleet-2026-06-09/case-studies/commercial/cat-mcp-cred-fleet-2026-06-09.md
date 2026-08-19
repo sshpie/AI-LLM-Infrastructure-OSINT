@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-09
 **Origin:** Cat-Tabby + Devstral session, Lane B regression-test escape
-**Researcher:** Nicholas Kloster, NuClide Research
+**Researcher:** , 
 **Cohort:** 66 AWS EC2 IPs on port 9090
 **Disclosure:** routing groundwork only; not sent
 
@@ -82,7 +82,7 @@ Honeypot infrastructure is the parsimonious explanation. Multi-region AWS spread
 |---|---|---|
 | AWS infrastructure abuse | abuse@amazonaws.com (Trust & Safety) | Single channel covers all 66 hosts; AWS handles tenant identification internally. |
 | Country CERT — regional | US-CERT, ENISA member CSIRTs (DE/FR/IE/IT/SE/CH), JPCERT, KrCERT, AusCERT, MOCERT, ZA CERT, BR CERT, IN CERT, MX SCT | If AWS abuse is non-responsive, region-by-region CERTs per /16 block ASN regional assignment. |
-| Honeypot/research operator (if identified via abuse) | direct researcher contact | Conditional on AWS abuse identifying the customer; not a NuClide-side step. |
+| Honeypot/research operator (if identified via abuse) | direct researcher contact | Conditional on AWS abuse identifying the customer; not a -side step. |
 | MCP protocol working group | modelcontextprotocol.io editors | Generic concern: tool-name normalization as a sensitive-capability signal in MCP discovery clients. |
 
 **Routing groundwork only. No disclosure decisions are made in this case study.**

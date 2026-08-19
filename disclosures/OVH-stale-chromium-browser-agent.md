@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.net
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 146.59.207.61, 149.202.180.146, 162.19.241.59
 institution: OVH SAS, 3 customer hosts running unauth Chrome DevTools Protocol on multi-year-stale Chromium versions
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@ovh.net
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** 3× unauthenticated browser-control endpoints on multi-year-stale Chromium (browser-RCE chained-CVE surface), OVH customer hosts
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering three OVH customer hosts that share the same exposure class.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering three OVH customer hosts that share the same exposure class.
 
 A parallel notification covering 2 hosts on Linode/Akamai is being sent separately to `abuse@akamai.com` + `abuse@linode.com`.
 
@@ -42,7 +42,7 @@ Three OVH customer VPSes are running headless-browser automation backends, Chrom
 | `149.202.180.146` | 3000 | Browserless | **HeadlessChrome 99.0.4844** | March 2022 (~4 years stale) | (no rDNS) |
 | `162.19.241.59` | 9222 | Browserless | HeadlessChrome 119.0.6045 | Oct 2023 (~2 years stale; borderline) | `vps-d0408c67.vps.ovh.net` |
 
-Found during NuClide Research's cross-cloud browser-agent survey (2026-05-04). Full case study:
+Found during 's cross-cloud browser-agent survey (2026-05-04). Full case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/browser-agent-cloud-survey-2026-05.md (Section "F4, Multi-year-stale Chromium on 5+ exposed CDP hosts")
 
 ---
@@ -105,11 +105,11 @@ docker run -p 3000:3000 -e TOKEN=<random-128bit> browserless/chrome
 Full technical detail (per-host CDP fingerprints, browser-version distribution table, chained-CVE threat model):
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/browser-agent-cloud-survey-2026-05.md
 
-The `fo-design.com` cert pivot on `146.59.207.61` may be the operator-attribution path, a courtesy notification to a likely operator-side contact at that domain may accelerate remediation. NuClide can perform that secondary outreach upon OVH's confirmation that the IP is in active use.
+The `fo-design.com` cert pivot on `146.59.207.61` may be the operator-attribution path, a courtesy notification to a likely operator-side contact at that domain may accelerate remediation.  can perform that secondary outreach upon OVH's confirmation that the IP is in active use.
 
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

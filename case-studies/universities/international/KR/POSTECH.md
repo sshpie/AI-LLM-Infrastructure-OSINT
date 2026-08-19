@@ -1,6 +1,6 @@
 # POSTECH: 11-Node Cluster, 18+ Cloud Subscriptions, 6 Account Takeovers + Synchrotron Beamline + Essential AI Model
 
-_NuClide Research · 2026-05-01, Updated 2026-05-03_
+_ · 2026-05-01, Updated 2026-05-03_
 
 ---
 

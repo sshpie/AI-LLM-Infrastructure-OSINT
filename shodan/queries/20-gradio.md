@@ -10,7 +10,7 @@ Port 7860 is Gradio's default but is heavily shared with other ML tools (Stable 
 
 **CVE watch:**
 - `CVE-2024-36420` — Flowise (not Gradio; shares port patterns) pre-auth RCE.
-- `CVE-2026-33017` — Langflow: unauth code execution via flow execution endpoint (observed in NuClide CVE-research-lab finding 2026-05-03).
+- `CVE-2026-33017` — Langflow: unauth code execution via flow execution endpoint (observed in  CVE-research-lab finding 2026-05-03).
 - No current Shodan-level CVE for base Gradio; risk is compute-theft and embedded API key exposure.
 
 ---

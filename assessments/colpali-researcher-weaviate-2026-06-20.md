@@ -154,6 +154,6 @@ Node ID ae5952d0dff9 matches Docker short-ID format (12-char hex). If the Docker
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan
 
 Unauthenticated Weaviate enumeration: schema walk, class object extraction, GraphQL query execution, RWD surface confirmation.

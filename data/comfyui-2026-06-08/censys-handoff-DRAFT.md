@@ -1,7 +1,7 @@
 # Censys ARC hand-off — ComfyUI / GHOST extension data
 
 **To:** research@censys.com (and/or the Censys ARC contact form)
-**From:** Nicholas Kloster <nicholas@nuclide-research.com> — NuClide Research
+**From:**  <> — 
 **Date:** 2026-06-08
 **Subject:** GHOST campaign tracker — 186-host current measurement + 3 fresh likely-GHOST hosts (extension to your Apr 7 disclosure)
 
@@ -13,7 +13,7 @@
 
 Censys ARC's April 7, 2026 disclosure on the GHOST cryptominer/proxy botnet
 targeting unauthenticated ComfyUI deployments is the canonical public record
-of the campaign. NuClide Research ran an independent population measurement
+of the campaign.  ran an independent population measurement
 of the same surface on **2026-06-08** and would like to hand off the delta
 to extend the ARC tracker.
 
@@ -130,19 +130,19 @@ deep-pending-queue at probe time). The suspect list is in
 - `verify.ndjson` — full per-host verification record (verdict + system metadata)
 - `deepen.ndjson` — per-host `/object_info` + `/queue` + rDNS enrichment
 - `ghost-detect.ndjson` — per-host GHOST classifier output (clean / suspect / likely_ghost)
-- `findings-breakdown.txt` — the public NuClide breakdown for context
+- `findings-breakdown.txt` — the public  breakdown for context
 - Case study (public, already pushed):
-  https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/comfyui-population-survey-2026-06-08.md
+  https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/comfyui-population-survey-2026-06-08.md
 
 Detector source (public, MIT):
-`~/garlic/comfyui_ghost_detect.py` — to be published in `nuclide-research` namespace.
+`~/garlic/comfyui_ghost_detect.py` — to be published in `` namespace.
 
 ---
 
 ## Methodology contribution we'd appreciate any feedback on
 
 The 31× yield delta between our June Shodan-pass and the prior 2026-05-04
-NuClide masscan-pass (76 tier-2 /16s + 25 Hetzner /16s, 5.25M IPs scanned,
+ masscan-pass (76 tier-2 /16s + 25 Hetzner /16s, 5.25M IPs scanned,
 6 unauth found) is the methodological lesson we plan to write up as
 "Insight #88 — passive Shodan beats active broadcast scan for
 title-indexable platforms." If ARC has used a hybrid approach we'd be
@@ -159,8 +159,8 @@ gradient at the same scale.
 ---
 
 Best regards,
-Nicholas Kloster
-NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+
+
+
+https://
 CISA disclosures: CVE-2025-4364, ICSA-25-140-11

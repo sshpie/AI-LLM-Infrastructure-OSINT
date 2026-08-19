@@ -21,7 +21,7 @@ import json, sys, socket, ssl, urllib.request, urllib.error, random, string, re
 from concurrent.futures import ThreadPoolExecutor
 
 TIMEOUT = 8
-UA = "nuclide-research/doc-loaders (authorized assessment)"
+UA = "/doc-loaders (authorized assessment)"
 
 # marker path, marker substrings (ALL must appear), version path, version regex
 PLATFORMS = {

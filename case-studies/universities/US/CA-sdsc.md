@@ -1,6 +1,6 @@
 # San Diego Supercomputer Center: Public Ollama on `compute.cloud.sdsc.edu` — 53-Model Inventory + `:cloud`-suffix Cloud-Proxy Class
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 
@@ -169,13 +169,13 @@ Data-membership (actual unauthorized model invocation, actual quota consumption,
 
 ## Pattern observation — academic supercomputing centers
 
-This is the first NuClide-surveyed supercomputing-center-administered Ollama in the .edu population. The pattern worth tracking: NSF-funded HPC consortia (SDSC, NCSA, TACC, PSC, NERSC, etc.) increasingly stand up institutional LLM-serving alongside their traditional batch-compute services. The deployment posture of those services merits its own survey lane. SDSC's `compute.cloud.sdsc.edu` naming convention may be a discovery handle for the broader pattern — variants like `compute.cloud.{ncsa|tacc|psc}.edu` are worth a follow-up dork.
+This is the first -surveyed supercomputing-center-administered Ollama in the .edu population. The pattern worth tracking: NSF-funded HPC consortia (SDSC, NCSA, TACC, PSC, NERSC, etc.) increasingly stand up institutional LLM-serving alongside their traditional batch-compute services. The deployment posture of those services merits its own survey lane. SDSC's `compute.cloud.sdsc.edu` naming convention may be a discovery handle for the broader pattern — variants like `compute.cloud.{ncsa|tacc|psc}.edu` are worth a follow-up dork.
 
 ---
 
 ## Candidate Insight (queued): shared Ollama Connect cloud-subscription portfolios across .edu deployments
 
-SDSC's 19-model `:cloud` portfolio is **near-identical** to two other .edu Ollama deployments documented in the NuClide ledger:
+SDSC's 19-model `:cloud` portfolio is **near-identical** to two other .edu Ollama deployments documented in the  ledger:
 
 | Host | `:cloud`-suffix model count | Common entries |
 |---|---|---|

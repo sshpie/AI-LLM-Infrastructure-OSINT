@@ -1,5 +1,5 @@
 # Session Retrospective — Cat-Tabby + Devstral re-validation
-_NuClide Research · 2026-06-09 · Lane-A/B/C/D parallel-agent run_
+_ · 2026-06-09 · Lane-A/B/C/D parallel-agent run_
 
 ## TL;DR
 
@@ -84,12 +84,12 @@ Free / passive engines that overlap with the Censys role at Stage 0b cross-popul
 | **CT logs direct** (`crt.sh`, `Censys CT`) | unlimited | cert-pivot equivalent | only the cert layer, no service banner |
 | **alienvault OTX / Pulsedive** | free | threat intel + IP enrichment | not service-discovery primary |
 
-NuClide's existing toolchain choice: route Stage 0b through **FOFA web UI via chrome-devtools MCP browser** (same Cloudflare workaround as Shodan), or **crt.sh CT-log direct for the cert-pivot delta**.
+'s existing toolchain choice: route Stage 0b through **FOFA web UI via chrome-devtools MCP browser** (same Cloudflare workaround as Shodan), or **crt.sh CT-log direct for the cert-pivot delta**.
 
 ## External tool ecosystems (per directive)
 
 ### SANS tools (https://www.sans.org/tools)
-Surveyed list to integrate. Curated below by use-case mapping to NuClide chain stages.
+Surveyed list to integrate. Curated below by use-case mapping to  chain stages.
 
 - **DShield** — IP attack-data feed. Stage 3 attribution (operator-attack-history cross-ref) and Stage 7 (honeypot signature classification). Free + API.
 - **Internet Storm Center handlers' diary** — daily incident-response reports. Stage 2 (cert-pivot context) and Stage 4 (classify by observed-malware-family).
@@ -99,7 +99,7 @@ Surveyed list to integrate. Curated below by use-case mapping to NuClide chain s
 
 ### GitHub-sourced tools to integrate (proposed)
 
-| Tool | GitHub | NuClide chain stage | Use |
+| Tool | GitHub |  chain stage | Use |
 |---|---|---|---|
 | **nuclei** | projectdiscovery/nuclei | Stage 1d / 3v | template-driven verify; complements aimap |
 | **httpx** | projectdiscovery/httpx | Stage 0c | active banner alternative to scanner for HTTP-only sweeps |

@@ -259,7 +259,7 @@ python3 analyze.py attributions.csv attributions-extra.csv attributions-pass3.cs
 python3 build_disclosure_batch.py --class healthcare --template disclosure-template-healthcare.md
 ```
 
-When Pass 3 lands, merge all attribution CSVs, run analyze.py for full-corpus numbers, build disclosure batches per class, and ingest verified attributions into nuclide.db.
+When Pass 3 lands, merge all attribution CSVs, run analyze.py for full-corpus numbers, build disclosure batches per class, and ingest verified attributions into .db.
 
 ---
 
@@ -269,7 +269,7 @@ When Pass 3 lands, merge all attribution CSVs, run analyze.py for full-corpus nu
 |---|---|---|
 | L1 | Analysis reconstructed from session notes (SESSION.md). Execution trace timestamps are approximate. | Minor sequencing uncertainty |
 | L2 | Pass 2 killed at 974/10,388 hosts; Pass 3 launched but not complete at session end | Final population numbers not available; attribution rates are provisional |
-| L3 | Butterfly2Sea decay: whether closure was in response to NuClide probing or a scheduled rotation is unknown | Remediation-candidate classification is provisional |
+| L3 | Butterfly2Sea decay: whether closure was in response to  probing or a scheduled rotation is unknown | Remediation-candidate classification is provisional |
 | L4 | Russian healthcare operator (88.99.214.110) found mid-pass; v1.9.15 classifier was not run against the Pass 1 cohort | Some Pass 1 unprocessed hosts may have been missed by western-centric classifier |
 | L5 | 84% of candidates failed (863 timeout, 809 not-Docker-Registry, 479 empty catalog, 262 offline) | Actual Docker Registry population is a small fraction of Shodan product-dork hits |
 | L6 | Insight #35 yield gap calibrated on 2,878-host partial; final yield requires full 12,297-host pass | 0.035% attribution rate is provisional |
@@ -337,4 +337,4 @@ http.html:"v2/_catalog"
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 21 · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 21 · 2026-05-19*

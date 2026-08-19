@@ -92,4 +92,4 @@
 
 ## Research-program relevance
 
-Indirect. 441 operates the network plane NuClide enumerates from the outside. Tasks T0160 (patch network vulnerabilities) and T0035 (configure routers/switches) frame what *should* close the surface NuClide finds. When a host shows port open / no app data (Shodan-dark, SYN-ACK-only), the responsible operator is typically a 441 who left the inner service reachable but the edge ACL permissive. Knowledge of CIDR (S0162), routing (S0035), and bandwidth management (K0050) is mirror-image of NuClide's recon enumeration discipline.
+Indirect. 441 operates the network plane  enumerates from the outside. Tasks T0160 (patch network vulnerabilities) and T0035 (configure routers/switches) frame what *should* close the surface  finds. When a host shows port open / no app data (Shodan-dark, SYN-ACK-only), the responsible operator is typically a 441 who left the inner service reachable but the edge ACL permissive. Knowledge of CIDR (S0162), routing (S0035), and bandwidth management (K0050) is mirror-image of 's recon enumeration discipline.

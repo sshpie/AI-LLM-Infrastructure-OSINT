@@ -4,7 +4,7 @@
 **Session:** (date-only)
 **Classification:** Internal / Research Use Only
 **Toolchain:** glance v0.1.1, constellation v0.1.0, verify_chroma_campaign.py, verify_chroma_version.py, verify_vm_unauth.py, verify_prom_unauth.py, verify_agentmem.py, aimap v1.9.x, visorplus, visorgraph, visorlog, visorscuba, BARE, tome, syllabus, scanner, Shodan API (Freelance tier, user-authorized this session), MCP Playwright
-**Repos updated:** nuclide-research/AI-LLM-Infrastructure-OSINT (be62a07), nuclide-research/glance (7c8a1f7)
+**Repos updated:** /AI-LLM-Infrastructure-OSINT (be62a07), /glance (7c8a1f7)
 
 ---
 
@@ -391,4 +391,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session date 2026-06-08*
+*Prepared by  ( + Claude Sonnet 4.6) · Session date 2026-06-08*

@@ -1,6 +1,6 @@
 # Indonesia Government Cluster: 5-Node Survey, 2 Account Takeovers
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

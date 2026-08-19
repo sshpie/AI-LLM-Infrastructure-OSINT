@@ -4,7 +4,7 @@ type: multi-host
 
 # Brazilian Banking-Compliance AI Consultant: Unauthenticated Qdrant with BCB / LGPD Methodology Corpus
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -34,7 +34,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 | `case_drafts` | 0 | 0 |
 | `attachments` | 0 | 0 |
 
-The platform is now actively in use, light volume (consistent with pilot or single-customer usage) but real records present. The `messages` and `compliance_knowledge` collections are the most likely to contain operator/customer PII or proprietary regulatory content. NuClide has not extracted payload contents; only the existence and counts have been confirmed.
+The platform is now actively in use, light volume (consistent with pilot or single-customer usage) but real records present. The `messages` and `compliance_knowledge` collections are the most likely to contain operator/customer PII or proprietary regulatory content.  has not extracted payload contents; only the existence and counts have been confirmed.
 
 ---
 

@@ -103,7 +103,7 @@ Step  Tool              Status    Result
 3     aimap-profile     DONE      OVH, no honeypot, 10 Shodan ports
 3v    VERIFY            DONE      200-with-data confirmed on all findings
 4     JS-bundle         DONE      NPM SPA: no secrets
-6     VisorLog          DONE      1 event ingested to nuclide.db
+6     VisorLog          DONE      1 event ingested to .db
 7     VisorScuba        DONE      6/10, AI.C1+BLUE-EXP-001
 8     BARE              FAIL      Schema version type mismatch
 9     VisorCorpus       DONE      100-item corpus at /tmp/corpus-ollama-*.json

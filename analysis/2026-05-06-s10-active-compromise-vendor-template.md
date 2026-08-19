@@ -3,7 +3,7 @@
 **Date:** 2026-05-06
 **Session:** 10
 **Classification:** Internal / Research Use Only
-**Toolchain:** Shodan, aimap, nuclide-contact, VisorLog, visor-chain-runner.sh (created this session), BARE, VisorGraph
+**Toolchain:** Shodan, aimap, -contact, VisorLog, visor-chain-runner.sh (created this session), BARE, VisorGraph
 **Repos updated:** AI-LLM-Infrastructure-OSINT (commits c720209–c93a34a)
 
 ---
@@ -45,8 +45,8 @@ Single orchestrator session. Subagent dispatch for parallel host probes. Forensi
 | aimap | Stage-1 fingerprint on all reachable hosts | Jupyter, MLflow, LiteLLM fingerprints |
 | Jupyter kernel API | Read-only process enumeration + attacker artifact collection | `GET /api/kernels`, `GET /api/sessions`, `GET /api/contents` |
 | Jupyter kernel execute | Kill attacker shells on Ulm host (live response, not OSINT) | `POST /api/kernels/{id}/execute` — `kill` syscall only |
-| nuclide-contact | Disclosure recipient resolution for Ulm, Tencent, Akamai C2 | WHOIS + SOA-RNAME + RIPE lookup |
-| VisorLog | Ledger ingest for all findings | nuclide.db |
+| -contact | Disclosure recipient resolution for Ulm, Tencent, Akamai C2 | WHOIS + SOA-RNAME + RIPE lookup |
+| VisorLog | Ledger ingest for all findings | .db |
 | BARE | Metasploit module ranking against Jupyter/MLflow findings | Offline semantic search |
 | visor-chain-runner.sh | Chain orchestration | Created this session; hardcoded date bug introduced (fixed in session 12) |
 
@@ -78,7 +78,7 @@ Applied Insight #10 framing retroactively: two-of-two reachable hosts compromise
 
 ### Safeguards
 
-No data exfiltrated. Notebook content read only to confirm attacker payloads (hash values, filenames, command strings). No credentials used. On `134.60.110.66`: attacker processes killed via Jupyter kernel execute to stop active harm. Incident notice dropped at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt`. On `101.34.81.166`: evidence preserved only, no active shells to kill. WellCalf ML data-class corrected from "pediatric medical" to "livestock behavior ML" after full run-record review.
+No data exfiltrated. Notebook content read only to confirm attacker payloads (hash values, filenames, command strings). No credentials used. On `134.60.110.66`: attacker processes killed via Jupyter kernel execute to stop active harm. Incident notice dropped at `/tmp/-INCIDENT-NOTICE-2026-05-06.txt`. On `101.34.81.166`: evidence preserved only, no active shells to kill. WellCalf ML data-class corrected from "pediatric medical" to "livestock behavior ML" after full run-record review.
 
 ---
 
@@ -91,7 +91,7 @@ No data exfiltrated. Notebook content read only to confirm attacker payloads (ha
 | T+0:35 | Probed `134.60.110.66` `/api/kernels` | Live Jupyter, no token. Kernel state shows attacker processes |
 | T+0:40 | Read `/api/contents/` on `134.60.110.66` | Attacker notebooks: `Untitled.ipynb` (2026-04-29), `/tmp/Hilix.x86_64` payload, `Miniforge-ARM64` installer fetching |
 | T+0:50 | Probed `101.34.81.166` `/api/kernels` | Live Jupyter, no token. Prior-session tools: `_recon.py` (2026-03-24), AF_ALG kernel exploit (2026-05-04), DDoS payload `2.js` |
-| T+1:00 | nuclide-contact on both hosts | Recipients: `it-sicherheit@uni-ulm.de` + DFN-CERT; `abuse@tencent.com`; `abuse@akamai.com` / `abuse@linode.com` (C2 host) |
+| T+1:00 | -contact on both hosts | Recipients: `it-sicherheit@uni-ulm.de` + DFN-CERT; `abuse@tencent.com`; `abuse@akamai.com` / `abuse@linode.com` (C2 host) |
 | T+1:10 | Kill attacker shells on `134.60.110.66` | PIDs 18370 (`socat` reverse shell) + 18372 (`bash -i`) killed via Jupyter kernel execute |
 | T+1:20 | Disclosure drafted and sent (3-channel: CERT, IT-sec, abuse) | Multi-channel takedown initiated for Ulm + Tencent |
 | T+1:40 | Cortical Labs CL1 vendor advisory drafted | Port-80 dashboard: no auth. Port-8888 Jupyter: `--no-token`. Support VPN: on by default |
@@ -114,7 +114,7 @@ No data exfiltrated. Notebook content read only to confirm attacker payloads (ha
 |---|---|
 | **Name/ID** | `134.60.110.66` / `labdevice.medizin.uni-ulm.de` |
 | **Type** | Embedded research instrument (Cortical Labs CL1 biological computer) |
-| **Evidence** | Live attacker processes PID 18370 + 18372 at probe time. `Hilix.x86_64` payload in `/tmp`. `Miniforge-ARM64` installer staged. Reverse shell to `172.233.96.208:3053` (Akamai/Linode). `NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` dropped to confirm kill |
+| **Evidence** | Live attacker processes PID 18370 + 18372 at probe time. `Hilix.x86_64` payload in `/tmp`. `Miniforge-ARM64` installer staged. Reverse shell to `172.233.96.208:3053` (Akamai/Linode). `-INCIDENT-NOTICE-2026-05-06.txt` dropped to confirm kill |
 | **Observed exposure** | Unauthenticated Jupyter on port 8888 (`--no-token`), unauthenticated dashboard on port 80, support VPN admin-on by default |
 | **Severity** | CRITICAL — live attacker presence, active shell, mining setup in progress |
 
@@ -262,7 +262,7 @@ bash ~/AI-LLM-Infrastructure-OSINT/data/visor-chain-runner.sh vendor-template
 | L3 | Cortical Labs CL1 fleet size unknown | Cannot estimate total exposed population without vendor cooperation |
 | L4 | Write-tier operations not tested on MLflow hosts | CVE-2023-1177 confirmed accessible, execution not attempted |
 | L5 | Tencent host: no live shell to interrupt | Attacker persistence state unknown as of session end |
-| L6 | WellCalf data-class correction retroactively applied | Prior nuclide.db entry #339 was stale for a period |
+| L6 | WellCalf data-class correction retroactively applied | Prior .db entry #339 was stale for a period |
 
 ---
 
@@ -313,4 +313,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 10 · 2026-05-06*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 10 · 2026-05-06*

@@ -51,14 +51,14 @@ Shodan API key provided by Nick mid-session. SHODAN_API_KEY was not in environme
 | Python urllib | OCI config blob pull from Docker Registry | 89 vars (gun site), 97 vars (CannaQuest) — credentials confirmed |
 | JS-bundle extract | Fetch and parse /assets/index-DN1bLbBx.js from Twenty CRM | MCP: 0 refs; API paths: /auth, /auth/google, /auth/microsoft, /graphql; no secrets |
 | Direct HTTP probes | GraphQL introspection, /api/users/, Beszel API, Coolify API, Campfire redirect | Auth states resolved per host |
-| send_drafts_api.py | Gmail API disclosure send | Delivered to admin@thegunsite.com.au from nicholas@nuclide-research.com |
+| send_drafts_api.py | Gmail API disclosure send | Delivered to admin@thegunsite.com.au from  |
 | JAXEN (empire.db) | No harvest against this target; SSL pivot only | 0 new assets in empire.db |
 | [—] VisorHollow | Windows-only | Not applicable |
 | [x] VisorAgent | Ethical-stop — not fired at operator hosts | N/A |
 | [—] VisorGoose | CT-log/gov-TLD sweep | Not run — target is commercial AU, not gov-TLD |
 | [—] menlohunt | GCP EASM | Not run — all hosts are Linode, not GCP |
 | [—] VisorPlus | Orchestrator chain | Not run — single known host, not a corpus |
-| [—] VisorScuba | Compliance scoring | Not run — no nuclide.db ingest this session |
+| [—] VisorScuba | Compliance scoring | Not run — no .db ingest this session |
 | [—] BARE | Metasploit semantic ranking | Not run — no scanner findings to rank |
 | [—] VisorCorpus | Adversarial corpus | Not run — no confirmed LLM surface |
 | [—] VisorRAG | Agentic LLM confirmation | Not run — no unauth LLM endpoint found |
@@ -105,7 +105,7 @@ No database connections attempted. No credentials used. No Zoom meetings accesse
 | Time (CDT) | Action | Outcome / Decision |
 |---|---|---|
 | 14:00 | Session start; read METHODOLOGY.md + MEMORY.md | Loaded prior context from Cat-32 and Data Labeling surveys |
-| 14:05 | User handed over findings on 192.46.220.113 (Label Studio, Docker Registry, Twenty, MCP) | Invoked nuclide skill; posted arsenal checklist |
+| 14:05 | User handed over findings on 192.46.220.113 (Label Studio, Docker Registry, Twenty, MCP) | Invoked  skill; posted arsenal checklist |
 | 14:10 | `GET /v2/_catalog` on :5000 | 200, 11 repos, no auth challenge — CRITICAL confirmed |
 | 14:12 | WHOIS 192.46.220.113 + thegunsite.com.au + binoolean.com in parallel | RIPE NCC block; thegunsite registrant = APEIROGON TECHNOLOGIES PTY LTD, Karl Farrow; binoolean = Domain Privacy |
 | 14:15 | Label Studio /api/users/ probe; Twenty HTML + GraphQL probe | Label Studio: 401 (auth-on). Twenty: JS config leaks crm.binoolean.com; GraphQL introspection disabled |
@@ -122,7 +122,7 @@ No database connections attempted. No credentials used. No Zoom meetings accesse
 | 15:10 | VisorSD with provided API key — /20 CIDR + "apeirogon" org | 0/21 both sweeps — Cloudflare masks all HTTPS origin certs |
 | 15:15 | JAXEN ssl:"binoolean.com" | 0 hits — same Cloudflare masking |
 | 15:20 | JS-bundle extract from crm.binoolean.com | 3.97MB bundle; API paths: /auth, /graphql; MCP: 0 refs; no secrets |
-| 15:30 | send_drafts_api.py — disclosure draft written and sent | Sent from nicholas@nuclide-research.com to admin@thegunsite.com.au, CC abuse@linode.com |
+| 15:30 | send_drafts_api.py — disclosure draft written and sent | Sent from  to admin@thegunsite.com.au, CC abuse@linode.com |
 | 15:42 | Full PDF report generated to ~/Desktop | apeirogon-report.pdf (101KB) |
 | 15:47 | Pamphlet v1 generated | apeirogon-pamphlet.pdf (54KB) — too dense |
 | 15:55 | Pamphlet v2 — simplified | apeirogon-pamphlet.pdf (34KB) — landscape A4 trifold |
@@ -405,4 +405,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-06-01*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-06-01*

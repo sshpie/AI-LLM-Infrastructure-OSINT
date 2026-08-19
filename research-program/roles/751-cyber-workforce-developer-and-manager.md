@@ -73,4 +73,4 @@ Broad: 211, 212, 221, 411, 421, 422, 431, 441, 451, 461, 511, 521, 531, 541, 612
 
 ## Research-program relevance
 
-Not directly applicable to active assessment chains. Tangentially relevant when NuClide's published case studies and codified Insights inform broader workforce-curriculum decisions (K0233 NICE Framework knowledge maps cleanly onto how we taxonomize findings against work-role accountability gaps). The role's competency C019 (External Awareness) is the formal version of NuClide's research-program posture: leveraging external best practices/findings to inform internal workforce capability.
+Not directly applicable to active assessment chains. Tangentially relevant when 's published case studies and codified Insights inform broader workforce-curriculum decisions (K0233 NICE Framework knowledge maps cleanly onto how we taxonomize findings against work-role accountability gaps). The role's competency C019 (External Awareness) is the formal version of 's research-program posture: leveraging external best practices/findings to inform internal workforce capability.

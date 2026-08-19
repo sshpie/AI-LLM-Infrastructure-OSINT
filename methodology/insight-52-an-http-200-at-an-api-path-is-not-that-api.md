@@ -86,4 +86,4 @@ The lesson also ships as code, the same day it was codified, in the verification
 
 ---
 
-*Codified by Nuclide Research (Nicholas Kloster + Claude) 2026-05-21 from the global university LLM-exposure map per-host arsenal triage. Methodology per `~/.claude/nuclide-internal/METHODOLOGY.md`.*
+*Codified by  ( + Claude) 2026-05-21 from the global university LLM-exposure map per-host arsenal triage. Methodology per `~/.claude/-internal/METHODOLOGY.md`.*

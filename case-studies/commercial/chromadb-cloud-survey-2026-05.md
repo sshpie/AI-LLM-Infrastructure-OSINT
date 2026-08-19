@@ -4,7 +4,7 @@ type: survey
 
 # ChromaDB on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -399,7 +399,7 @@ The ChromaDB documentation does mention authentication, but the default configur
 
 ## Disclosure Posture
 
-48 instances, 22 populated, multiple jurisdictions (US, EU, LatAm, Asia, MENA, Russia), most with no immediate operator attribution from the IP alone. NuClide is not initiating individual disclosure to all 48, that is well past triage capacity. The high-value individual writeups (where operator identity can be inferred from collection content) will receive targeted disclosure where possible. Operators reading this who recognize their instance: enable token auth and firewall port 8000.
+48 instances, 22 populated, multiple jurisdictions (US, EU, LatAm, Asia, MENA, Russia), most with no immediate operator attribution from the IP alone.  is not initiating individual disclosure to all 48, that is well past triage capacity. The high-value individual writeups (where operator identity can be inferred from collection content) will receive targeted disclosure where possible. Operators reading this who recognize their instance: enable token auth and firewall port 8000.
 
 ---
 
@@ -409,19 +409,19 @@ The `nanosecond heartbeat` body match is the necessary and sufficient ChromaDB f
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
-The 48 confirmed instances were processed end-to-end through the NuClide AI/LLM security toolchain:
+The 48 confirmed instances were processed end-to-end through the  AI/LLM security toolchain:
 
 | Stage | Tool | Output |
 |---|---|---|
 | Discovery | masscan + custom heartbeat probe | `/tmp/chroma-confirmed.jsonl` (48 instances) |
 | Enumeration | custom v2 deep-prober | `/tmp/chroma-deep.jsonl` (collections + counts + samples) |
-| Findings ledger | VisorLog | 48 events ingested into `data/nuclide.db` (commercial sector, severity-tiered) |
+| Findings ledger | VisorLog | 48 events ingested into `data/.db` (commercial sector, severity-tiered) |
 | Compliance scoring | VisorScuba | All 48 score 0/10, 100% AI.C1 (unauth-baseline) violations. Report: `data/scuba-report-2026-05-03.html` |
 | Adversarial corpus | VisorCorpus | 137 adversarial test cases generated for downstream RAG/LLM red-team, `data/visorcorpus-chromadb-rag-adversarial-2026-05.json`. Categories: kb_exfiltration (18), prompt_injection (16), tenant_cross_leak (15), system_prompt (15), jailbreak (15), config_secrets (13), infra_discovery (15) |
 
-This is the discovery → ledger → score → adversarial-corpus pipeline that closes the loop: each finding is logged with normalized severity, scored against the NuClide AI Security Baseline (OPA/Rego), and paired with an adversarial corpus an operator can run against their own frontend to verify the defensive posture *upstream* of the exposed vector store.
+This is the discovery → ledger → score → adversarial-corpus pipeline that closes the loop: each finding is logged with normalized severity, scored against the  AI Security Baseline (OPA/Rego), and paired with an adversarial corpus an operator can run against their own frontend to verify the defensive posture *upstream* of the exposed vector store.
 
 ---
 
@@ -430,4 +430,4 @@ This is the discovery → ledger → score → adversarial-corpus pipeline that 
 - ChromaDB authentication: https://docs.trychroma.com/production/administration/auth
 - v1 → v2 API migration: https://docs.trychroma.com/docs/run-chroma/client-server (default tenant/database structure)
 - Cross-survey index: [../commercial/index.md](index.md)
-- NuClide pipeline: VisorPlus (orchestrator), VisorSD, VisorLog, VisorScuba, VisorCorpus
+-  pipeline: VisorPlus (orchestrator), VisorSD, VisorLog, VisorScuba, VisorCorpus

@@ -35,7 +35,7 @@ import urllib.request, urllib.error
 
 TIMEOUT = 8
 THREADS = 8
-UA = "NuClide-Research/kubecost-opencost-probe (read-only verification; contact@nuclide-research.com)"
+UA = "/kubecost-opencost-probe (read-only verification; contact@)"
 
 # Port sets per #66 — survey-driven, widest-first.
 KUBECOST_PORTS = [80, 443, 9090]      # nginx frontend proxies /model/*

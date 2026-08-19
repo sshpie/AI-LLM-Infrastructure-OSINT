@@ -10,7 +10,7 @@ toolchain: herald v0.1.2
 
 # LibreChat Population Survey — 412/1,565 Open Registration (26.3%)
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -33,7 +33,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 LibreChat's `registrationEnabled` flag is exposed unauthenticated via `GET /api/config` alongside the application's `appTitle`, `serverDomain`, and `buildInfo.branch`. When the flag is `true`, any internet user can register an account on the operator's deployment. The data layer (chat history, configured models, API keys) is gated behind the registration, but registration alone provides a foothold into a personally-branded LLM deployment running on the operator's infrastructure.
 
-**The 26.3% rate is the first measured case in the 2026 NuClide survey program of a platform in the middle of correction.** Langfuse / RAGFlow / Phoenix (87-89%) represent the uncorrected cohort. Open WebUI (11.8%) and AnythingLLM (0%) represent the corrected cohort. LibreChat sits between, with **strong within-platform version-cohort evidence of the correction in progress**.
+**The 26.3% rate is the first measured case in the 2026  survey program of a platform in the middle of correction.** Langfuse / RAGFlow / Phoenix (87-89%) represent the uncorrected cohort. Open WebUI (11.8%) and AnythingLLM (0%) represent the corrected cohort. LibreChat sits between, with **strong within-platform version-cohort evidence of the correction in progress**.
 
 Notable findings: 4 legal-AI deployments, 1 mental-health AI (Santepair.fr), University of California Berkeley, a 20-instance "Capitol AI Chat Agent" fleet on AWS.
 
@@ -221,7 +221,7 @@ Step 3v:   Manual cohort validation against LibreChat v0.8.x release notes
 Step 12b:  This document
 ```
 
-Tool: **herald** v0.1.2 (`github.com/nuclide-research/herald`). LibreChat platform config added with two probes.
+Tool: **herald** v0.1.2 (`github.com/sshpie/herald`). LibreChat platform config added with two probes.
 
 ---
 

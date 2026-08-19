@@ -1,6 +1,6 @@
 # VeroTX evidence manifest
 # Generated: 2026-05-08T02:14:00Z (final)
-# Researcher: Nicholas Kloster / NuClide Research
+# Researcher:  / 
 # Target: 34.60.153.0 (auth.verotx.com / platform.verotx.com)
 # Severity: CRITICAL — Kong Enterprise Admin API + FastAPI backend bypass + MCP exposure
 #

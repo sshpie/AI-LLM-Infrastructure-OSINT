@@ -7,7 +7,7 @@
 **Host:** 117.50.80.181 (China)
 **Ports:** 80 (nginx), 8000 (TCI Assessment System v1.0.0), 8001 (TCI ASR Service v3.0.0), 9000 (MinIO)
 
-_NuClide Research · 2026-05-22 · Survey 17 companion to the [Pantaflow](../commercial/pantaflow-live-transcription-2026-05-22.md) finding — the second voice/audio host where the exposed system is the operator's own production product._
+_ · 2026-05-22 · Survey 17 companion to the [Pantaflow](../commercial/pantaflow-live-transcription-2026-05-22.md) finding — the second voice/audio host where the exposed system is the operator's own production product._
 
 ---
 

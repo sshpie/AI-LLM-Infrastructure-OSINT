@@ -1,6 +1,6 @@
 ---
 to: abuse@sci.am
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 37.26.168.19
 institution: Institute for Informatics and Automation Problems, NAS Armenia (resend per session-7 forward-resolution dead-letter)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@sci.am
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated AI inference endpoint, IIAP NAS Armenia (37.26.168.19) [resend via Armenian-academy abuse contact]
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
 
 **Note on previous attempt:** I sent this disclosure on 2026-05-04 to `ipia@ipia.sci.am`; the message was forwarded to `iiap.sci.am` where the local-part `ipia` was rejected as user-unknown, looks like a stale mail-forwarding rule. RIPE WHOIS lists `abuse@sci.am` as the registered abuse-mailbox for the Armenian Academy of Sciences network, resending here. Apologies for the noise if this reaches the wrong inbox.
 
@@ -90,6 +90,6 @@ Full case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/AM/armenian-academy.md
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

@@ -1,6 +1,6 @@
 # Insight #93 — Pre-Assessment Squad Port Assumption Causes Systematic Population Under-Count (Candidate)
 
-_NuClide Research · 2026-06-09 · Origin: Cat-Tabby survey, four-platform code-assistant straggler._
+_ · 2026-06-09 · Origin: Cat-Tabby survey, four-platform code-assistant straggler._
 
 ---
 

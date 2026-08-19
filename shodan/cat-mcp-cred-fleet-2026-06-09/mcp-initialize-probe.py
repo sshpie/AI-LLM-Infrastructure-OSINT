@@ -50,7 +50,7 @@ INIT_BODY = {
     "params": {
         "protocolVersion": "2024-11-05",
         "capabilities": {},
-        "clientInfo": {"name": "nuclide-survey", "version": "0.1"},
+        "clientInfo": {"name": "-survey", "version": "0.1"},
     },
 }
 LIST_BODY = {"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}}
@@ -67,7 +67,7 @@ def _http_post(url, body, accept="application/json, text/event-stream"):
         headers={
             "Content-Type": "application/json",
             "Accept": accept,
-            "User-Agent": "nuclide-mcp-probe/0.1",
+            "User-Agent": "-mcp-probe/0.1",
         },
     )
     ctx = ssl._create_unverified_context()

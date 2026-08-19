@@ -10,7 +10,7 @@ methodology: extending VisorBishop fingerprint coverage to 3 adjacent AI-observa
 
 # VisorBishop iter-4 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

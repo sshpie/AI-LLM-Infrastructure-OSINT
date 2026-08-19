@@ -8,7 +8,7 @@ tags: [scylladb, cassandra-cql, database, fintech, logistics, saas, unauth, cat-
 
 # Unidentified Fintech/Logistics SaaS: ScyllaDB Production Cluster Open on Port 9042 and 10000
 
-_NuClide Research · 2026-05-28 · Operator unknown. Internal namespace: `nyovenn`. GCP europe-west4. Production ScyllaDB cluster with no authentication on CQL (9042) and REST API (10000)._
+_ · 2026-05-28 · Operator unknown. Internal namespace: `nyovenn`. GCP europe-west4. Production ScyllaDB cluster with no authentication on CQL (9042) and REST API (10000)._
 
 ## Summary
 

@@ -3,13 +3,13 @@ type: survey
 category: ray-dashboard
 platform: anyscale-ray
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 companion: oligo ShadowRay 2.0 disclosure (Nov 2025)
 ---
 
 # ShadowRay 2.0 in Motion: 463 Attacker-Fleet Ray Dashboards Identified by 5-Signal IoC Pattern
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 ---
 

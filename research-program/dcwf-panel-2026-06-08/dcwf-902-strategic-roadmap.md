@@ -1,6 +1,6 @@
 # Strategic Roadmap: Post-VictoriaMetrics Research Direction (2026-06-08)
 
-_DCWF AI Work Role 902 (AI Innovation Leader) audit · NuClide Research panel · Programmatic direction for the 6–8 weeks following the VictoriaMetrics survey (1,176 hosts, Insights #88 + #89)._
+_DCWF AI Work Role 902 (AI Innovation Leader) audit ·  panel · Programmatic direction for the 6–8 weeks following the VictoriaMetrics survey (1,176 hosts, Insights #88 + #89)._
 
 The VictoriaMetrics survey did two things at once. It confirmed the auth-off-default thesis at a new substrate tier, and it introduced two structural moves the program had not previously codified: scrape-topology as an org-chart disclosure class (Insight #88), and framework-level auth bypass propagating to population scale (Insight #89). Sections 1–6 below convert those into the next research cycle.
 

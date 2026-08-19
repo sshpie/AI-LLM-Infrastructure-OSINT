@@ -3,13 +3,13 @@ type: survey
 category: cat-tabby
 slug: cat-tabby-2026-06-09
 date: 2026-06-09
-researcher: nuclide
+researcher: 
 status: in-progress
 ---
 
 # Cat-Tabby — Code-Assistant Stragglers — 2026-06-09 Survey
 
-_NuClide Research · 2026-06-09 · 4-platform survey: Tabby + Sourcegraph + Continue.dev + Devstral_
+_ · 2026-06-09 · 4-platform survey: Tabby + Sourcegraph + Continue.dev + Devstral_
 
 ## Wardrobe + syllabus stance
 
@@ -63,7 +63,7 @@ The 3v verify script (`stage3v-verify.py`) implements Lane D restraint at code l
 
 ## Methodology
 
-The Cat-Tabby survey ran the standard NuClide chain on four code-assistant platforms (Tabby + Continue.dev + Sourcegraph/Cody + Devstral). Stage -1 dispatched four parallel research squads via the Agent tool — one per platform — producing pre-assessment intelligence + tome platform JSONs before any active probe.
+The Cat-Tabby survey ran the standard  chain on four code-assistant platforms (Tabby + Continue.dev + Sourcegraph/Cody + Devstral). Stage -1 dispatched four parallel research squads via the Agent tool — one per platform — producing pre-assessment intelligence + tome platform JSONs before any active probe.
 
 ### Pre-assessment intelligence outcomes (Stage -1, four squads)
 
@@ -94,7 +94,7 @@ Population revealed via shodan-fetch in-page `Promise.all` (web-UI SSR, 0 query 
 
 scanner v1.x ran 75 IPs × 21 ports → 53/75 live (**70.7% live rate**, 2.4× the Insight #77 ~29% population baseline). This is the second methodology codify candidate:
 
-**Codify candidate (Insight #77 sharpening):** the ~29% live-rate floor is the *population average over rolling Shodan crawl staleness*; for survey cohorts harvested within ~7 days of a recent crawl, live rates run 2-3× higher. NuClide Cat-Tabby's 70.7% vs the 29% expected.
+**Codify candidate (Insight #77 sharpening):** the ~29% live-rate floor is the *population average over rolling Shodan crawl staleness*; for survey cohorts harvested within ~7 days of a recent crawl, live rates run 2-3× higher.  Cat-Tabby's 70.7% vs the 29% expected.
 
 ### Stage 0d — aimap fingerprint scaffolded for Tabby
 
@@ -184,7 +184,7 @@ The Sourcegraph 100% is by design (locked-cohort = enumerator returns empty). dc
 
 3. **Insight candidate C:** "A pre-assessment squad's port assumption baked into every dork variant systematically under-counts alt-port deployments." Mandatory fix: include at least one dork variant without `port:N` constraint. Tabby is the canonical example — squad-1 fixated on :8080, missed :9090 (the real dominant port at 42.6% of population).
 
-4. **Insight candidate D:** "Active-banner live-rate floor (Insight #77, ~29%) is the population average over rolling Shodan crawl staleness; survey cohorts harvested within ~7 days of a recent crawl run 2-3× higher." NuClide Cat-Tabby's 70.7% vs the 29% baseline.
+4. **Insight candidate D:** "Active-banner live-rate floor (Insight #77, ~29%) is the population average over rolling Shodan crawl staleness; survey cohorts harvested within ~7 days of a recent crawl run 2-3× higher."  Cat-Tabby's 70.7% vs the 29% baseline.
 
 5. **Insight candidate E (sharper version of #16):** "An auth-on-default Tier-C platform with explicit auth-off-by-design endpoints (Tabby's `/v1/health`, `/v1beta/models`, `/v1beta/server_setting` are always-open even on webserver-enabled v0.11.0+) creates a hybrid Tier-A*/C surface that escapes the existing tier vocabulary."
 

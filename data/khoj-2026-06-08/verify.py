@@ -72,7 +72,7 @@ def probe(ip: str, port: int) -> dict:
                 timeout=TIMEOUT,
                 verify=False,
                 allow_redirects=True,
-                headers={"User-Agent": "Mozilla/5.0 (NuClide-survey/khoj)"}
+                headers={"User-Agent": "Mozilla/5.0 (-survey/khoj)"}
             )
             base = url
             result["scheme"] = sch

@@ -2,8 +2,8 @@
 """
 send_drafts.py — Send disclosure emails from _gmail_drafts.json via Gmail SMTP.
 
-Identity: From: Nicholas Michael Kloster <nicholas@nuclide-research.com>
-Auth: Gmail App Password (16-char) read from ~/.config/nuclide/nicholas-gmail-app-password
+Identity: From: Nicholas Michael Kloster <>
+Auth: Gmail App Password (16-char) read from ~/.config//nicholas-gmail-app-password
 Transport: smtp.gmail.com:587 STARTTLS
 
 Modes:
@@ -28,9 +28,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DRAFTS_JSON = ROOT / "_gmail_drafts.json"
 SENT_LOG = ROOT / "_sent.json"
-APP_PW_PATH = Path.home() / ".config" / "nuclide" / "nicholas-gmail-app-password"
+APP_PW_PATH = Path.home() / ".config" / "" / "nicholas-gmail-app-password"
 
-FROM_ADDR = "nicholas@nuclide-research.com"
+FROM_ADDR = ""
 FROM_NAME = "Nicholas Michael Kloster"
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
@@ -72,7 +72,7 @@ def build_message(to_addr: str, cc: str | None, subject: str, body: str) -> MIME
         msg["Cc"] = cc
     msg["Subject"] = subject
     msg["Date"] = formatdate(localtime=True)
-    msg["Message-ID"] = make_msgid(domain="nuclide-research.com")
+    msg["Message-ID"] = make_msgid(domain="")
     msg["Reply-To"] = FROM_ADDR
     msg.attach(MIMEText(body, "plain", "utf-8"))
     return msg
@@ -137,10 +137,10 @@ def send_test(addr: str):
     test_msg = build_message(
         addr,
         None,
-        "[NuClide test] SMTP relay verification",
+        "[ test] SMTP relay verification",
         "This is a test message confirming the Gmail SMTP relay for "
-        "nicholas@nuclide-research.com is working.\n\n"
-        "If you see this with From: Nicholas Michael Kloster <nicholas@nuclide-research.com> "
+        " is working.\n\n"
+        "If you see this with From: Nicholas Michael Kloster <> "
         "and no 'via gmail.com' indicator, the alias and app-password setup is correct.\n\n"
         "Safe to delete.\n",
     )

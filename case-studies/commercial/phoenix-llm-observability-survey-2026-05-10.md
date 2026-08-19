@@ -10,7 +10,7 @@ methodology: shodan-driven + GraphQL enumeration + VisorGraph attribution + BARE
 
 # Arize AI Phoenix LLM-observability survey · 2026-05-10
 
-NuClide Research · 2026-05-10
+ · 2026-05-10
 
 ## Summary
 
@@ -325,7 +325,7 @@ Running BARE's MiniLM encoder over the 376 host banners against the Metasploit c
 
 ## Vendor-template implications
 
-Phoenix's threat profile maps cleanly to NuClide's [Methodology Insight #10](../../methodology/insight-10-vendor-template-default-no-auth.md):
+Phoenix's threat profile maps cleanly to 's [Methodology Insight #10](../../methodology/insight-10-vendor-template-default-no-auth.md):
 
 > Default-no-auth on embedded web management is a vendor-choice, not an operator misconfiguration. Population-scale exposure tracks the shipping default.
 

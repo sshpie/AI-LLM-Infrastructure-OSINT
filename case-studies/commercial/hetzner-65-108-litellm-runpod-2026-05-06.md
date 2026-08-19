@@ -10,7 +10,7 @@ methodology: cross-survey-correlation
 
 # Hetzner LiteLLM gateway: full router config + virtual key leaked, RunPod-backed GPU compute fully burnable
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
@@ -32,7 +32,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 The proxy's admin endpoints (`/v1/model/info`, `/v1/models`, `/user/info`, `/global/spend`, `/spend/tags`) are all reachable without authentication. **Functional inference confirmed**, single-token probe to `qwen25-14b` returned a valid completion. The exposure burns operator's RunPod GPU minutes on every authenticated GPU model call.
 
-This finding was surfaced via the AI Gateway & Observability cross-survey-correlation probe on 2026-05-06 (Methodology Insight #9, probing the existing nuclide.db ledger IPs on adjacent ports for stacked exposures). The host was already in the ledger as event id 521 (`ollama-cloud-survey-2026-05`, severity `high`, tagged `OLLAMA_CLOUD_MODELS` + `BILLING_THEFT_RISK`); the LiteLLM proxy on port 4000 is the *additional* layer not previously surveyed.
+This finding was surfaced via the AI Gateway & Observability cross-survey-correlation probe on 2026-05-06 (Methodology Insight #9, probing the existing .db ledger IPs on adjacent ports for stacked exposures). The host was already in the ledger as event id 521 (`ollama-cloud-survey-2026-05`, severity `high`, tagged `OLLAMA_CLOUD_MODELS` + `BILLING_THEFT_RISK`); the LiteLLM proxy on port 4000 is the *additional* layer not previously surveyed.
 
 ## What's exposed
 
@@ -121,7 +121,7 @@ User-Agent: undici (Node.js)                 1 request
 - **Platform:** Docker Compose or K8s with at least one Ollama-CPU service named `ollama-cpu`, plus the LiteLLM proxy as the public-facing service
 - **Compute fleet:** 4 RunPod GPU pods (probably warm-tier on-demand, not always-on, RunPod's `/v2/<pod-id>/openai/v1` route)
 - **Activity period:** 2026-02-23 to 2026-03-15+ active virtual-key updates; `/spend/tags` shows recent traffic, gateway is in production
-- **Sister IP `65.108.32.167`** also runs LiteLLM Proxy on port 4000 (`/health/liveness` returns alive), but `/model/info` returns 0 models, admin endpoints are gated on that one. Suggests the operator has *partially* secured one droplet but left this one open. Both already in nuclide.db (id 295 vllm-cloud-survey-2026-05 + id 521 ollama-cloud-survey-2026-05). Likely the same operator running prod + staging or active + warm-spare.
+- **Sister IP `65.108.32.167`** also runs LiteLLM Proxy on port 4000 (`/health/liveness` returns alive), but `/model/info` returns 0 models, admin endpoints are gated on that one. Suggests the operator has *partially* secured one droplet but left this one open. Both already in .db (id 295 vllm-cloud-survey-2026-05 + id 521 ollama-cloud-survey-2026-05). Likely the same operator running prod + staging or active + warm-spare.
 
 ## Threat classes
 
@@ -161,7 +161,7 @@ Disclosure draft: [`disclosures/HETZNER-65-108-197-157-litellm-runpod.md`](../..
 ```
 Step 0   Custom probe - gateway-obs-cross-probe.py (5 platforms × 723 ledger IPs)
          → 4 LiteLLM hits, 0 Helicone/Portkey/LangSmith/TruLens
-Step 1   ledger cross-check  → all 4 IPs already in nuclide.db (Class B operators)
+Step 1   ledger cross-check  → all 4 IPs already in .db (Class B operators)
 Step 2   curl /v1/models     → 8 model aliases returned
 Step 3   curl /model/info    → full router config
 Step 4   curl /user/info     → leaked virtual key
@@ -169,7 +169,7 @@ Step 5   curl /spend/tags    → user-agent log = active production traffic
 Step 6   curl /global/spend  → spend tracking enabled, no budget set
 Step 7   curl POST /v1/chat/completions {model:"qwen25-14b","max_tokens":1}
          → "Hello" returned (functional inference confirmed)
-Step 8   nuclide-contact     → abuse@hetzner.com (provider; opaque operator)
+Step 8   -contact     → abuse@hetzner.com (provider; opaque operator)
 ```
 
 ## Methodology Insight #11 candidate

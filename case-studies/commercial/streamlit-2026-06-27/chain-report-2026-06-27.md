@@ -452,6 +452,6 @@ Streamlit inverts the auth-on-default thesis: the platform ships with zero authe
 ---
 
 **Report generated:** 2026-06-27  
-**Operator:** Nicholas Kloster (nicholas@nuclide-research.com)  
+**Operator:**  ()  
 **Authorization:** Signed engagement on file  
 **Classification:** Authorized security assessment

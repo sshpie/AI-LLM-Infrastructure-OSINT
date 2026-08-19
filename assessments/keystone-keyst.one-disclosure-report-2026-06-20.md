@@ -6,7 +6,7 @@
 | **IP** | 43.153.169.169 (Tencent Cloud) |
 | **Date** | 2026-06-20 |
 | **Severity** | Critical |
-| **Researcher** | Nicholas Kloster, NuClide Research, nicholas@nuclide-research.com |
+| **Researcher** | , ,  |
 | **Classification** | CWE-306 Missing Authentication for Critical Function (primary), CWE-284 Improper Access Control (secondary), OWASP LLM Top 10 2025 LLM04 Data and Model Poisoning |
 | **Status** | Confirmed |
 
@@ -28,7 +28,7 @@ The exposed host backs a customer-facing AI chatbot. The chatbot answers questio
 
 We discovered the host through infrastructure reconnaissance for exposed AI and vector-database services. We attributed it to Keystone from the data itself: collection names `keystone_knowledge_base` and `keystone_article_style`, content that references the Keystone product line, source URLs pointing at `blog.keyst.one`, and the chatbot's own persona prompt, which opens every answer as "Keystone official customer service."
 
-This work was conducted under NuClide Research's responsible-disclosure practice. We enumerated the exposed surface, confirmed each finding with the minimum action needed to prove it, and reversed every change we made. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both handled through CISA.
+This work was conducted under 's responsible-disclosure practice. We enumerated the exposed surface, confirmed each finding with the minimum action needed to prove it, and reversed every change we made. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both handled through CISA.
 
 ---
 
@@ -81,9 +81,9 @@ Those 100 records in `guide/seed_phrase` and `guide/security` are the ones the c
 
 **The embedding-model documentation error.** The collection schema labels the embedding model as `paraphrase-multilingual-MiniLM-L12-v2` at 384 dimensions. That label is wrong. The live dimension is 1024, and our PoC confirmed the operator runs `intfloat/multilingual-e5-large`. Embeddings from that model match the corpus and writes succeed. A write also succeeds with a plain zero vector, so reproducing the operator's model is not even required to add a record. The mislabel is a documentation error, not a control.
 
-We read all 6,907 records without credentials. We then proved write by inserting one record, clearly marked as a NuClide Research canary, into the store. We deleted that record and confirmed by a follow-up read that it was absent. We also proved infrastructure-level write by creating a tenant named `nuclide-poc-tenant` and a database named `poc-db`, then removing them. Every test object we created we removed.
+We read all 6,907 records without credentials. We then proved write by inserting one record, clearly marked as a  canary, into the store. We deleted that record and confirmed by a follow-up read that it was absent. We also proved infrastructure-level write by creating a tenant named `-poc-tenant` and a database named `poc-db`, then removing them. Every test object we created we removed.
 
-A note on identifiers, so a triager can reproduce cleanly. Our standalone PoC targets `keystone_knowledge_base` (collection `8ea8b4cb-ec2d-463f-a2bd-a335e1c98d27`) with the marked record `nuclide-research-poc-001`, carrying a real `multilingual-e5-large` embedding. An earlier manual confirmation used `keystone_article_style` (collection `001c74f8-135d-4455-9ce6-cc096755b649`) with the canary `nuclide-canary-2026` and a zero vector. Both writes were unauthenticated, both were deleted, and both deletions were verified by a follow-up read returning an empty `ids` list. Use the PoC identifiers as the load-bearing reference.
+A note on identifiers, so a triager can reproduce cleanly. Our standalone PoC targets `keystone_knowledge_base` (collection `8ea8b4cb-ec2d-463f-a2bd-a335e1c98d27`) with the marked record `-poc-001`, carrying a real `multilingual-e5-large` embedding. An earlier manual confirmation used `keystone_article_style` (collection `001c74f8-135d-4455-9ce6-cc096755b649`) with the canary `-canary-2026` and a zero vector. Both writes were unauthenticated, both were deleted, and both deletions were verified by a follow-up read returning an empty `ids` list. Use the PoC identifiers as the load-bearing reference.
 
 **Evidence.** Write returned success on a marked record. Delete returned `{"deleted": 1}`. The verifying read returned an empty `ids` list, confirming the record was gone.
 
@@ -99,7 +99,7 @@ curl -s -X POST "$BASE/collections/$COLL/get" \
 # VERIFY DELETE: after removing the canary, this returns ids: []
 curl -s -X POST "$BASE/collections/$COLL/get" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-research-poc-001"]}'
+  -d '{"ids": ["-poc-001"]}'
 ```
 
 ### Finding 2: Live RAG console and LLM execution as Keystone official support (port 5050)
@@ -298,12 +298,12 @@ The economics are lopsided. The attacker spends about thirty seconds and one req
 
 **One script, eight steps, every primitive confirmed and cleaned up.** Full source: `data/poc-keystone-rag-poison.py`.
 
-The PoC uses the Python standard library plus `sentence-transformers` to produce matching 1024-dimension embeddings. It verifies unauthenticated read, exercises tenant and database creation and deletion, captures a baseline retrieval, writes a clearly marked research record, reads back its retrieval rank through the open console, runs the live DeepSeek answer, and deletes the record. The injected record states in its own text that it is a NuClide Research security-research notice and is removed in the final step.
+The PoC uses the Python standard library plus `sentence-transformers` to produce matching 1024-dimension embeddings. It verifies unauthenticated read, exercises tenant and database creation and deletion, captures a baseline retrieval, writes a clearly marked research record, reads back its retrieval rank through the open console, runs the live DeepSeek answer, and deletes the record. The injected record states in its own text that it is a  security-research notice and is removed in the final step.
 
 | What | Result | Evidence |
 |------|--------|----------|
 | Read collections, no credentials | 2 collections, 6,907 records | ChromaDB v2 collections endpoint |
-| Tenant and database creation | `nuclide-poc-tenant`, `poc-db` created, then deleted | PoC step 2 |
+| Tenant and database creation | `-poc-tenant`, `poc-db` created, then deleted | PoC step 2 |
 | Live retrieval | Score 0.844 for "seed phrase recovery" | PoC step 4 |
 | Write a marked canary | Accepted, 1024-dim embedding | PoC step 5 |
 | Read back retrieval rank via 5050 | Injected record surfaces in ranked results | PoC step 6 |
@@ -324,12 +324,12 @@ curl -s -X POST "http://43.153.169.169:5050/api/search" \
 # Tenant creation, infrastructure-level write, no auth (removed after)
 curl -s -X POST "http://43.153.169.169:8000/api/v2/tenants" \
   -H "Content-Type: application/json" \
-  -d '{"name": "nuclide-poc-tenant"}'
+  -d '{"name": "-poc-tenant"}'
 
 # Delete a record, no auth (returns {"deleted": 1})
 curl -s -X POST "$BASE/collections/$COLL/delete" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-research-poc-001"]}'
+  -d '{"ids": ["-poc-001"]}'
 ```
 
 We did not paste the embedding and tuning logic here. The full, runnable script is in the referenced file.
@@ -385,11 +385,11 @@ That is what gives this finding reach beyond one operator. The fix for Keystone 
 
 We enumerated the three exposed services and confirmed each finding with the minimum action that proved it: unauthenticated read of 6,907 records, a write proved with one clearly marked research canary, a delete confirmed by a follow-up read that showed the canary gone, tenant and database creation that we then removed, and the live RAG-plus-DeepSeek pipeline confirmed with a single query. Every object we created, we deleted. The seed-phrase-theft end state in this report is a capability built from those confirmed primitives. We did not run it against anyone, and no customer was harmed.
 
-We offer to help. NuClide Research will assist with remediation and verify the fix at no cost, on Keystone's timeline. There is no deadline and no demand attached to this report.
+We offer to help.  will assist with remediation and verify the fix at no cost, on Keystone's timeline. There is no deadline and no demand attached to this report.
 
 This report should reach the Keystone security team. We recommend confirming the correct intake channel before sending, for example a published `security@` address or a `security.txt` file on keyst.one. We do not assert a specific contact address as known.
 
-Contact: Nicholas Kloster, NuClide Research, nicholas@nuclide-research.com.
+Contact: , , .
 
 ---
 
@@ -440,13 +440,13 @@ Contact: Nicholas Kloster, NuClide Research, nicholas@nuclide-research.com.
 | 6 | `/api/collections` on 5050 confirms the same 2 collections |
 | 7 | `/api/writing-history` on 5050: full article history, including a piece on a Korean government seed-phrase leak ($4.8M), proving live production use |
 | 8 | Write: marked record accepted with a 1024-dimension embedding (PoC step 5); zero-vector write also accepted in manual confirmation |
-| 9 | Tenant and database creation: `nuclide-poc-tenant`, `poc-db` created and removed (PoC step 2) |
+| 9 | Tenant and database creation: `-poc-tenant`, `poc-db` created and removed (PoC step 2) |
 | 10 | Closed-loop read-back: retrieval rank read through 5050 after injection (PoC step 6) |
 | 11 | Delete: record removed, unauthenticated, verified absent on follow-up read (PoC step 8) |
 | 12 | Port sweep: exactly four open ports confirmed |
 
 ### D. Tool Reference
 
-**chromascan**: unauthenticated ChromaDB enumeration with canary write and delete verification. https://github.com/nuclide-research/chromascan
+**chromascan**: unauthenticated ChromaDB enumeration with canary write and delete verification. https://github.com/sshpie/chromascan
 
 Standalone proof-of-concept: `data/poc-keystone-rag-poison.py` (eight steps, Python standard library plus sentence-transformers).

@@ -1,6 +1,6 @@
 ---
 to: info@blutspende.net
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 37.60.255.27
 institution: "blutspende.net — German blood donation organization. Internal IT documentation including plaintext server credentials, internal IP addresses, server names, BitLocker PINs, and blood donation operational data exposed in an unauthenticated Weaviate vector database at gpt.sergogram.com."
@@ -10,19 +10,19 @@ date: 2026-05-25
 ---
 
 **To:** info@blutspende.net
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** CRITICAL: Ihre IT-Zugangsdaten und interne Serverinfrastruktur sind öffentlich zugänglich — sofortiger Handlungsbedarf / Your IT credentials and internal server infrastructure are publicly accessible — immediate action required
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-25
 
 ---
 
-This is an unsolicited good-faith disclosure under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: **CRITICAL**. Recommend immediate action — this is not a standard 90-day window issue. Your internal IT credentials are accessible to any internet user right now.
+This is an unsolicited good-faith disclosure under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: **CRITICAL**. Recommend immediate action — this is not a standard 90-day window issue. Your internal IT credentials are accessible to any internet user right now.
 
 I am contacting info@blutspende.net because I could not find a published security contact. Please forward this to your IT security team immediately.
 
@@ -81,11 +81,11 @@ If you cannot reach the service provider, Contabo GmbH (the hosting provider at 
 
 ---
 
-## About NuClide Research
+## About 
 
-NuClide Research is an independent security research organization based in Denver, Colorado, USA. We publish responsible disclosures and work with organizations to resolve exposures. This notification is sent in good faith with no commercial intent. We have not shared or published this data and will not do so while remediation is in progress.
+ is an independent security research organization based in Denver, Colorado, USA. We publish responsible disclosures and work with organizations to resolve exposures. This notification is sent in good faith with no commercial intent. We have not shared or published this data and will not do so while remediation is in progress.
 
 Nicholas Michael Kloster
-nicholas@nuclide-research.com
-nuclide-research.com
+
+
 CISA CVE-2025-4364, ICSA-25-140-11

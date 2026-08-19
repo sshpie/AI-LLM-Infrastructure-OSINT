@@ -1,6 +1,6 @@
 # CEFET/RJ (Centro Federal de Educação Tecnológica Celso Suckow da Fonseca): 17-Model Brazilian Portuguese AI Stack
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

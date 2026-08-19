@@ -4,7 +4,7 @@ type: survey
 
 # Voice-Cloning Population Survey: Shodan-Reachable Slice (2026-05-15)
 
-_NuClide Research · 2026-05-15 (late evening, third survey of the day)_
+_ · 2026-05-15 (late evening, third survey of the day)_
 _Closes: Survey 17 batch 2 (voice-cloning leg)_
 _Companion to: [`ollama-population-survey-2026-05-15.md`](ollama-population-survey-2026-05-15.md), [`llamacpp-population-survey-2026-05-15.md`](llamacpp-population-survey-2026-05-15.md)_
 
@@ -136,7 +136,7 @@ Adds the following to the methodology roadmap (already shipped in aimap v1.9.4-s
 1. fast_enum_voicecloning.py (conjunctive markers) →  0 confirmed (Shodan-dark)
 2. broad probe (title + voice-term regex)          →  12 real voice-related hosts, 37 FPs
 3. /voices + /details enumeration on 5 Coqui      →  base TTS models only (tacotron2-DDC-fr, vits-fr, vits-de×2)
-4. fast_enum_to_ndjson + visorlog ingest          →  11 events into nuclide.db (1 deduped)
+4. fast_enum_to_ndjson + visorlog ingest          →  11 events into .db (1 deduped)
 5. cross-survey diff vs Ollama + llama.cpp        →  zero overlap (different operator demographics)
 ```
 

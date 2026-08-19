@@ -65,7 +65,7 @@ The university-hunt findings also fed a service-verification pass. menlohunt had
 | VisorGraph | Cert-pivot (embedding host) | HTTP-only on both ports; no TLS cert; no pivot surface |
 | aimap-profile | Target classification (embedding host) | `unclassified`; bare VPS; research or personal deployment |
 | BARE | Metasploit semantic ranking (embedding host) | No specific embedding module in corpus (closest 0.448) |
-| VisorLog | Ledger ingest → nuclide.db | Session 26 entries committed in nuclide.db |
+| VisorLog | Ledger ingest → .db | Session 26 entries committed in .db |
 | VisorScuba | Compliance scoring | Post-ingest node assessment |
 | VisorCorpus | Adversarial corpus generation (embedding host) | RAG-adjacent surface present |
 | VisorSD | [—] not run — Shodan credits exhausted | |
@@ -129,7 +129,7 @@ No brute forcing, no privilege escalation, no data exfiltration, no write-tier o
 | ~11:40 | attribute.py runs Hipo institution attribution | Findings bound to institutions; per-country tally built |
 | ~12:00 | geo-enrich.py + build-findings-json.py | Lane B: 1,970 findings / 55 countries. Merged total 2,710 / 71 countries / 206 institutions |
 | ~12:20 | build-findings-public.py — anonymized feed rebuilt | Host / IP / institution stripped; lat/lon jittered approx 38km |
-| ~12:40 | Globe feed redeployed to nuclide-research.com/map/universities/ | 71-country dot map live with Lane B data |
+| ~12:40 | Globe feed redeployed to /map/universities/ | 71-country dot map live with Lane B data |
 | ~13:00 | menlohunt findings on university host set triaged | 113 inflated `port_open` CRITICAL/HIGH; 147 `gcp_metadata` CRITICAL/HIGH; 4 `firebase_public` CRITICAL flagged for verification |
 | ~13:30 | svc-verify.py: one protocol handshake per port candidate | 74 candidates resolved; 1 VERIFIED_UNAUTH (NTU Redis 7.4.9), 14 VERIFIED_AUTH, rest refuted/filtered/version-only |
 | ~14:00 | gcp_metadata findings checked — all 147 evidence bodies are HTML | 0% precision; the target's own web server, not the metadata API |
@@ -145,7 +145,7 @@ No brute forcing, no privilege escalation, no data exfiltration, no write-tier o
 | ~17:20 | Port 9000 probe: OpenVINO Model Server backend | `/v1/config` → bge-m3 status; `/v2/` → version 2026.0.0 with git hash |
 | ~17:30 | Candidate Insight #50 formulated — OVMS backend co-location | FastAPI wrapper and OVMS backend both exposed on separate ports |
 | ~17:45 | aimap batch dispatched: 6,273 IPs × 39 ports, 50 threads | Background job; results deferred to the embedding-survey resume |
-| ~18:00 | Lane B commit d23c273 written | OVERVIEW + index + 3 case studies + TX dorks + nuclide.db |
+| ~18:00 | Lane B commit d23c273 written | OVERVIEW + index + 3 case studies + TX dorks + .db |
 | ~18:10 | Embedding survey staged; runbook drafted | Carry-forward: parse aimap batch, run full arsenal on any new host |
 
 ---
@@ -194,7 +194,7 @@ No finding is labelled CRITICAL this session. No verified data-in-hand exposure 
 | **Observed exposure** | Unauthenticated Redis reachable from the public internet on a university host |
 | **Severity** | HIGH — verified unauthenticated access to a data-tier service via a protocol handshake. Not labelled CRITICAL: no data was read, data class is unknown |
 
-**Potential impact:** An unauthenticated Redis instance permits read, write, and `CONFIG` operations to any caller. On a university host this can mean session-cache exposure, key enumeration, or `CONFIG SET dir` write-primitive abuse. NuClide verified only the absence of the auth gate (`PING` → `+PONG`); no keyspace was touched.
+**Potential impact:** An unauthenticated Redis instance permits read, write, and `CONFIG` operations to any caller. On a university host this can mean session-cache exposure, key enumeration, or `CONFIG SET dir` write-primitive abuse.  verified only the absence of the auth gate (`PING` → `+PONG`); no keyspace was touched.
 
 ### MED
 
@@ -422,4 +422,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 27 · 2026-05-20*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 27 · 2026-05-20*

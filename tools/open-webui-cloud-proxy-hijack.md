@@ -1,6 +1,6 @@
 # Open WebUI: Cloud Proxy Model Quota Hijacking
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

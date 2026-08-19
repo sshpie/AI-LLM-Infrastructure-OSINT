@@ -1,6 +1,6 @@
 # Arizona State University: Langfuse Unauthenticated User Registration (CSE 240)
 
-_NuClide Research · 2026-06-07_
+_ · 2026-06-07_
 
 ---
 

@@ -75,7 +75,7 @@ VER_PATTERNS = [
 # asset reference in the index html
 ASSET_RE = re.compile(r'(?:src|href)=["\'](/assets/[^"\']+\.(?:js|json))["\']')
 
-UA="nuclide-verify/stage4 (read-only AI-infra research; metadata-only)"
+UA="-verify/stage4 (read-only AI-infra research; metadata-only)"
 
 def fetch(base, path, want_bytes=400_000):
     refuse("GET", path)

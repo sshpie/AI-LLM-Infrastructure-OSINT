@@ -1,5 +1,5 @@
 # Cat-32: AI Gateways
-_NuClide Research · survey initiated 2026-06-01_
+_ · survey initiated 2026-06-01_
 
 Platforms: Portkey, Kong AI Gateway, Bifrost (maximhq), one-api, new-api, sub2api, TensorZero, Helicone, Envoy AI Gateway
 

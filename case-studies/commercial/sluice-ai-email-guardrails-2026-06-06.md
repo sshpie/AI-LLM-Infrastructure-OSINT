@@ -6,7 +6,7 @@ _Survey date: 2026-06-06. Category: AI Email Guardrails (NEW, category founder).
 
 ## TL;DR
 
-Sluice (`sluice.email`) is a hosted SaaS that sits between AI agents and their recipients, scanning every outbound LLM-drafted email against 10 configurable safety guardrails before delivery. The product is the **MTA-layer outbound** counterpart to inbox-side phishing detection (Abnormal, Sublime, Material). Architecture is a single-VM Docker Compose stack (Haraka MTA + Next.js app + nginx) on Hetzner Helsinki. Domain registered 2026-03-11 via Ascio DK. Public footprint near-zero outside `docs.sluice.email`. Operator security posture is hardened (Cloudflare front, HSTS preload, locked CSP, current OpenSSH, fresh LE certs). One low-severity hygiene gap on the operator's own DNS (DMARC `p=none`, no SPF/MTA-STS/TLSRPT). **No actionable finding.** The value of this case study is **category founding**: it opens a new NuClide subcategory and establishes the methodology for surveying siblings.
+Sluice (`sluice.email`) is a hosted SaaS that sits between AI agents and their recipients, scanning every outbound LLM-drafted email against 10 configurable safety guardrails before delivery. The product is the **MTA-layer outbound** counterpart to inbox-side phishing detection (Abnormal, Sublime, Material). Architecture is a single-VM Docker Compose stack (Haraka MTA + Next.js app + nginx) on Hetzner Helsinki. Domain registered 2026-03-11 via Ascio DK. Public footprint near-zero outside `docs.sluice.email`. Operator security posture is hardened (Cloudflare front, HSTS preload, locked CSP, current OpenSSH, fresh LE certs). One low-severity hygiene gap on the operator's own DNS (DMARC `p=none`, no SPF/MTA-STS/TLSRPT). **No actionable finding.** The value of this case study is **category founding**: it opens a new  subcategory and establishes the methodology for surveying siblings.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage
@@ -109,7 +109,7 @@ For a vendor selling email safety, `sluice.email`'s own sender-authentication fo
 | `_smtp._tls.sluice.email` TXT (TLSRPT) | not published |
 | `_bimi.sluice.email` TXT | not published |
 
-**Severity: LOW / advisory.** Sluice is a relay for *customer*-domain mail, not primarily a sender of its own domain — so the immediate impact is small. But the operator should publish DMARC `p=quarantine` or `p=reject`, SPF, MTA-STS, and TLSRPT on `sluice.email` to model the discipline they sell. Friendly fix, low effort. No disclosure recommendation here (per NuClide policy); flagged for the operator's own awareness if they ask.
+**Severity: LOW / advisory.** Sluice is a relay for *customer*-domain mail, not primarily a sender of its own domain — so the immediate impact is small. But the operator should publish DMARC `p=quarantine` or `p=reject`, SPF, MTA-STS, and TLSRPT on `sluice.email` to model the discipline they sell. Friendly fix, low effort. No disclosure recommendation here (per  policy); flagged for the operator's own awareness if they ask.
 
 ## Category Position
 
@@ -147,7 +147,7 @@ Closest public benchmark: **LLMail-Inject** (arXiv 2506.09956) — adaptive prom
 
 ## Insight Box
 
-★ **Category founding.** This is the first NuClide platform in the AI-Email-Guardrails class. The category is emerging (Sluice domain ~12 weeks old at survey time) and the next 12-18 months will determine whether MTA-relay or API-gateway architecture wins. NuClide should track both lanes.
+★ **Category founding.** This is the first  platform in the AI-Email-Guardrails class. The category is emerging (Sluice domain ~12 weeks old at survey time) and the next 12-18 months will determine whether MTA-relay or API-gateway architecture wins.  should track both lanes.
 
 ★ **Docker Compose project-name leak via Haraka EHLO** is a reusable fingerprint pattern. Haraka's stock greeting includes the operator's `HELO` value, which is typically the container hostname. When run under docker-compose, that's `<service-name>-<index>.<project-name>_<network>`. Useful for operator attribution and cert-pivot anchors.
 

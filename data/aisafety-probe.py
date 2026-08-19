@@ -63,7 +63,7 @@ def http_get(url: str, timeout: float = TIMEOUT_S) -> tuple[int, dict, bytes]:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "nuclide-aisafety-probe/0.1 (research; security@nuclide-research.com)",
+            "User-Agent": "-aisafety-probe/0.1 (research; security@)",
             "Accept": "application/json,text/html",
         },
     )

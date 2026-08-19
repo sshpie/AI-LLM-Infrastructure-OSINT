@@ -4,7 +4,7 @@ type: multi-host
 
 # Unknown Operator: Pingu Crypto Trading AI + Nova Molecular Optimization: Live Strategy IP Exposed via Unauthenticated Qdrant
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

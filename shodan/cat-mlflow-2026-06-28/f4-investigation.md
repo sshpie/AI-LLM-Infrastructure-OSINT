@@ -123,8 +123,8 @@ This is a framework demo image, not production workload.
 ### Push Surface -- CONFIRMED
 
 ```
-POST /v2/nuclide-probe/blobs/uploads/ -> 202 Accepted
-Location: /v2/nuclide-probe/blobs/uploads/<session-uuid>
+POST /v2/-probe/blobs/uploads/ -> 202 Accepted
+Location: /v2/-probe/blobs/uploads/<session-uuid>
 ```
 
 Registry accepts unauthenticated blob uploads. Session opened to new namespace
@@ -167,7 +167,7 @@ cycling color display, 5-second hold, exits 1337.
 **This image is a deliberate honeypot.** Dreher.in published an intentionally exposed
 Docker image to catch scanners who pull and run images from open registries.
 
-**NuClide extraction method:** Pulled layer blobs directly via registry blob API
+** extraction method:** Pulled layer blobs directly via registry blob API
 (`GET /v2/www.dreher.in/blobs/<digest>`). The DNS canary is in the entrypoint, which
 only fires on container execution. We extracted layers without running the container.
 **Dreher was NOT alerted.** DNS canary was NOT triggered.
@@ -212,7 +212,7 @@ only fires on container execution. We extracted layers without running the conta
 3. Extract pipeline.py from application layer
 4. Modify pipeline.py: add reverse shell / exfil / backdoor
 5. Build thin tar layer with modified file (3KB vs 2GB full rebuild)
-6. POST /v2/nuclide-probe/blobs/uploads/ -> upload new blob
+6. POST /v2/-probe/blobs/uploads/ -> upload new blob
 7. PATCH+PUT -> finalize blob
 8. PUT /v2/mlflow_example_pipeline/manifests/latest -> overwrite :latest tag
 9. Any user who pulls mlflow_example_pipeline:latest now runs attacker code

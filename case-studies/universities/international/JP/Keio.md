@@ -1,6 +1,6 @@
 # Keio University: Unauthenticated Ollama, Dual Cloud Proxy, 122B Model
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

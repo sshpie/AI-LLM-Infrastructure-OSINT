@@ -10,7 +10,7 @@ featured: true
 # False Assurance: When AI Guardrails Silently Fail
 
 **Date:** 2026-07-02
-**Author:** NuClide Research
+**Author:** 
 **Classification:** Auth-on-default failure class, guardrail layer
 **Status:** Verified 2026-06-29 through 2026-07-02 against live deployments. All operator-identifying information redacted.
 

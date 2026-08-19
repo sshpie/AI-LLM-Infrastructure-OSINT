@@ -15,8 +15,8 @@ outcome: pending
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-13
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification. No engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification. No engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
 
 On 2026-05-13 my external research identified that a host at 78.135.66.61 (PENTECH BILISIM, Turkey) exposes a recommendation-system product branded "SmartShop AI" at api.amazonrec.space, plus the full MLOps pipeline behind it, to the public Internet without any authentication.
 
@@ -90,9 +90,9 @@ I will publish a redacted technical writeup on 2026-05-27 per standard coordinat
 Full technical detail and remediation notes are in the public research repository:
 https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13.md
 
-Reply-to for any clarifying questions or coordination: nicholas@nuclide-research.com.
+Reply-to for any clarifying questions or coordination: .
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+Nicholas Michael Kloster / 
+
+https://

@@ -2,7 +2,7 @@
 
 _Last updated: 2026-05-28_
 
-Platforms found correctly secured across NuClide surveys. Evidence for the auth-on-default thesis: what works vs what fails.
+Platforms found correctly secured across  surveys. Evidence for the auth-on-default thesis: what works vs what fails.
 
 ---
 

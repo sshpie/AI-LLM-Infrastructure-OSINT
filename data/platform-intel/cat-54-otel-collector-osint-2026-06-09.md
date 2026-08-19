@@ -2,7 +2,7 @@
 
 **Slug:** `cat-54-opentelemetry-collector`
 **Tier:** Observability substrate (telemetry-ingest + distributed-tracing backends)
-**Researcher:** Nicholas Kloster / NuClide
+**Researcher:**  / 
 **Wardrobe outfit:** `ai-infra-hunt` (13 atoms; T0028 / T0188 / K0342 / S0001 / S0051 / T0247 / K0107 / K0118)
 **DCWF roles:** 672 (AI T&E) + 733 (AI Risk / Ethics)
 **Thesis target:** auth-on-default thesis — substrate-monitoring tier, Insight #88 generalization (scrape-topology = operator org chart).
@@ -13,7 +13,7 @@
 
 The substrate-monitoring tier (Cat-46c VictoriaMetrics, Cat-46d Prometheus, Cat-02 Chroma) has produced **#88 (scrape topology = operator org chart)** and **#87 (canary persistence)**. The tracing tier is the next test case: if the same auth-off-default pattern reproduces in the OTel / Jaeger / Tempo / SigNoz / Zipkin substrate, the insight generalizes from scrape-config to trace-graph.
 
-NuClide priors on this corpus:
+ priors on this corpus:
 - OTel Collector — **auth-off across every receiver and extension** by code design. Three CVEs on the binary itself; only ~one population-scale public mention (the CVE-2024-36129 blog) and **no published Census/Shodan/Hadrian survey**. Greenfield.
 - Jaeger — **zero built-in auth**; documented as a reverse-proxy concern. No CVE filed for "ships unauth" because it is intentional. **No population-scale unauth survey known.**
 - Grafana Tempo — `multitenancy_enabled: false` default; multitenancy is a routing label, not auth. CVE-2026-28377 confirms `/status/config` as a credential-leak surface.
@@ -123,7 +123,7 @@ Zipkin:
 1. **Insight #88 generalization test** — does scrape-topology-as-org-chart hold on the trace tier? `/api/services` (Jaeger), `/status/services` (Tempo), `/api/v2/services` (Zipkin), `/api/v1/services` (SigNoz) all return service-graph topology unauth-by-default. Predicted: yes, the topology-leak pattern generalizes; the unit shifts from scrape-config to service-list, but the operator-org-chart property is the same.
 2. **Cross-platform storage-backend co-deployment** — does the storage backend (ES, ClickHouse, Cassandra) ship unauth on the same IP when the front-door tracer ships unauth? Predicted: yes, at non-trivial rate, because the network-layer reasoning is identical (operator who exposes 16686 publicly is the operator who exposed 9200 publicly).
 3. **OTel Collector identity-by-metric-prefix** — `otelcol_*` Prometheus prefix as a single-string identification primitive that survives every receiver/extension being off. Most economical single-string ID across the population.
-4. **Open registration window as a verification state** — SigNoz's `setup_completed:false` is the first NuClide-observed example of an auth-state machine where the verification primitive reads a *temporal* state (window open NOW), not a binary unauth/auth. Distinct from `signUpDisabled:false` (Airflow) because Airflow is "anyone can register"; SigNoz is "first to register wins admin."
+4. **Open registration window as a verification state** — SigNoz's `setup_completed:false` is the first -observed example of an auth-state machine where the verification primitive reads a *temporal* state (window open NOW), not a binary unauth/auth. Distinct from `signUpDisabled:false` (Airflow) because Airflow is "anyone can register"; SigNoz is "first to register wins admin."
 5. **OTel collector front-door + Tempo/Jaeger back-door inversion** — predicted overlap rate where one host runs both the ingest tier (4317/4318) and the storage tier (3200/16686) — the all-in-one quickstart pattern. If common, the finding's blast radius is the full inference-instrumented data path on that host.
 
 ---

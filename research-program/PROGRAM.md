@@ -40,18 +40,18 @@ Three observability/RAG platforms surveyed same day at 74.5–88.9%. Two chat/ap
 
 Discover → Fingerprint → **Verify** → Attribute → Classify → Ledger → Score → Codify. The verification stage is load-bearing: 18 of 21 codified insights are verification-stage failures. A scanner produces *candidates*; verification produces *findings*. At population scale, skipped verification fails systematically — confident, reproducible, wrong numbers. The restraint ethic governs every survey: enumerate metadata, do not exfiltrate; names ARE the finding; sample payloads minimally only to confirm severity.
 
-Full methodology in `~/.claude/nuclide-internal/METHODOLOGY.md`. Numbered insights in `insights/INDEX.md`.
+Full methodology in `~/.claude/-internal/METHODOLOGY.md`. Numbered insights in `insights/INDEX.md`.
 
 ## Tooling stack
 
 The 19-tool arsenal is documented in `~/.claude/CLAUDE.md`. Tool design notes that *belong to this research program* (not the general methodology) live in `tools/`. As of 2026-06-06:
 
-- **herald** (built today) — declarative HTTP auth-probe tool. 8 platforms, public at `github.com/nuclide-research/herald`. Validated against same-day Python probe baselines.
+- **herald** (built today) — declarative HTTP auth-probe tool. 8 platforms, public at `github.com/sshpie/herald`. Validated against same-day Python probe baselines.
 - aimap, scanner, VisorLog, VisorCAS, VisorGraph, VisorBishop, VisorSD, et al. — full inventory in `tools/INDEX.md`.
 
 ## Disclosure pipeline
 
-State-tracked in `disclosures/INDEX.md`. Disclosures are **never** sent autonomously; they are queued here and proceed only on Nicholas Kloster's explicit instruction. Per NuClide protocol: disclosure preparation is not a recommendation; the analyst surfaces findings and the researcher decides what to do with them.
+State-tracked in `disclosures/INDEX.md`. Disclosures are **never** sent autonomously; they are queued here and proceed only on 's explicit instruction. Per : disclosure preparation is not a recommendation; the analyst surfaces findings and the researcher decides what to do with them.
 
 ## Research-program identity
 

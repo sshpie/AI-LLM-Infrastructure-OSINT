@@ -1,6 +1,6 @@
 ---
 to: abuse@digitalocean.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 138.197.152.103
 institution: DigitalOcean, orthodontic-AI startup ("AIPOD") MLflow 2.2.1 actively exploited via CVE-2023-1177; 3-year persistent exposure
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@digitalocean.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Actively-exploited MLflow 2.2.1 (CVE-2023-1177) on DigitalOcean droplet running orthodontic-AI R&D stack, 138.197.152.103
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -166,6 +166,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mlflow-cloud-surve
 Happy to coordinate verification, or to extract the additional attacker UUIDs and timestamps needed for incident response.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

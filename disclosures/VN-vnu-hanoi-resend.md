@@ -1,6 +1,6 @@
 ---
 to: hostmaster@vnu.edu.vn
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 112.137.129.161
 institution: Vietnam National University Hanoi (resend per security@vnu.edu.vn user-unknown bounce)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** hostmaster@vnu.edu.vn
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated AI inference endpoint, VNU Hanoi (112.137.129.161) [resend via DNS hostmaster contact]
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
 
 **Note on previous attempt:** I sent this disclosure on 2026-05-04 to `security@vnu.edu.vn`; the address bounced with `550 5.1.1` user-unknown. Resending to `hostmaster@vnu.edu.vn` per the SOA RNAME record for `vnu.edu.vn`. Please forward to the appropriate IT-security team. Apologies for the noise.
 
@@ -70,6 +70,6 @@ Full case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/VN/vnu-hanoi.md
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

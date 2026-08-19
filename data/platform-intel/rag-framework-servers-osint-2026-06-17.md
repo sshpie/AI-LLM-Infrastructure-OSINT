@@ -7,7 +7,7 @@ status: stage-minus-1-complete
 
 # Cat-RAG-Framework-Servers: Stage -1 Pre-Assessment OSINT
 
-_NuClide Research · 2026-06-17 · slug `rag-framework-servers`_
+_ · 2026-06-17 · slug `rag-framework-servers`_
 
 The RAG **framework** tier (LlamaIndex, Haystack, LightRAG, Microsoft GraphRAG) is
 the pipeline ABOVE the vector DBs. Distinct from Cat-34 RAG-**builders**

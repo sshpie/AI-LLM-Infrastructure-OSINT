@@ -4,7 +4,7 @@ type: survey
 
 # Whisper ASR Population Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15 (late evening, sixth survey of the day)_
+_ · 2026-05-15 (late evening, sixth survey of the day)_
 _Closes: Survey 17 batch 1 (Whisper ASR leg). Survey 17 now fully closed across all 3 batches_
 
 ---

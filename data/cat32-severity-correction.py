@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-cat32-severity-correction.py — NuClide Research, 2026-06-02
+cat32-severity-correction.py — , 2026-06-02
 
 WHY THIS EXISTS
 The cat32-visorlog.ndjson feed was generated with one-api and new-api tagged
@@ -43,7 +43,7 @@ corrected = 0
 with open(SRC) as fin, open(DST, "w") as fout:
     for line in fin:
         r = json.loads(line)
-        tags = r.get("nuclide.tags", [])
+        tags = r.get(".tags", [])
         sev = r.get("event.severity")
         before[sev] += 1
         if ("ONE-API" in tags or "NEW-API" in tags) and sev == "critical":

@@ -70,7 +70,7 @@ def build(rows):
         for k in [k for k in h if k.startswith('_')]: del h[k]
     nconf = sum(1 for r in rows if r.get('confirmed'))
     nopen = sum(1 for r in rows if r.get('confirmed') and r.get('auth_state') == 'OPEN_API')
-    meta = {"org": "NuClide Research", "kind": "// Field Survey", "date": "2026-05-29",
+    meta = {"org": "", "kind": "// Field Survey", "date": "2026-05-29",
             "title_html": "The safety layer ships <span class='em'>auth-off</span>, too.",
             "subtitle_html": "LLM guardrail engines (LLM Guard, Guardrails AI, NeMo, Vigil) almost all ship with auth off by default and assume a trusted network. This survey verified the handful that are internet-exposed. The category is Shodan-thin; the finding is what happens when a <b>security control itself</b> is the unauthenticated service.",
             "stats": [{"value": len(rows), "label": "harvested", "style": ""},

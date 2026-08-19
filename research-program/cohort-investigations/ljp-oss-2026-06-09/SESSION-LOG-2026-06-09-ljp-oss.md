@@ -12,7 +12,7 @@
 - **CT log mining via crt.sh** works free, returned 154 OpenClaw certs, 48 dealonhorizon, 20 sub2api, 16 vacelight, 7 umom
 - **Operator-domain WHOIS** worked — surfaced Wikk Zheng (Los Angeles, CA) as US-resident operator for dealonhorizon.us
 - **HackerTarget reverse-IP** (50/day free) gave 5-15x multiplier per shared-VPS operator IP
-- **GitHub gh search** auth'd successfully as `nuclide-research`; found supply chain (chenyme, Wei-Shaw, ReinerBRO, cnitlrt, qixing-jk, touwaeriol)
+- **GitHub gh search** auth'd successfully as ``; found supply chain (chenyme, Wei-Shaw, ReinerBRO, cnitlrt, qixing-jk, touwaeriol)
 
 ### Verification (9-layer null cohort verification across 491 IPs)
 - **Team Cymru bulk ASN WHOIS** (1 connection, instant): 0 gov/edu/mil/bank ASN org-name matches
@@ -62,8 +62,8 @@
 - **Defensive operator playbook** — for the 4 hard-evidence Class B commercial storefronts
 
 ### Methodology gaps
-- **No prior NuClide survey done discovery at 12K+ scale** with Shodan UI pagination broken (rate-limited + 200-link cap)
-- **No prior NuClide survey did per-IP investigation orchestrator** running 7-tool chain per host across thousands
+- **No prior  survey done discovery at 12K+ scale** with Shodan UI pagination broken (rate-limited + 200-link cap)
+- **No prior  survey did per-IP investigation orchestrator** running 7-tool chain per host across thousands
 - **Insight #15 (~50% dork-marker rule)** suggests true Sub2API count is 6K-8K not 12,577
 
 ## What Wasted Time

@@ -1,6 +1,6 @@
 # Master Port / Vendor Registry
 
-Collected 2026-06-05 from the nuclide-research GitHub repos. Single source of
+Collected 2026-06-05 from the  GitHub repos. Single source of
 truth for vendor -> port -> fingerprint -> dork mapping across the research project.
 
 ## Files
@@ -27,7 +27,7 @@ supplementary_notes, sources`
   `unauth-on-default` / `auth-on-default` / `mixed` / `trust-network-only`.
   Bracketed qualifiers carry the default-cred tell, e.g.
   `unauth-on-default [OFF (minioadmin:minioadmin)]`.
-- `auth_evidence` — empirical backing from the nuclide.db event ledger
+- `auth_evidence` — empirical backing from the .db event ledger
   (29,404 events), e.g. `ledger 2176/2176 unauth`. Format = `unauth/total surveyed`.
   Blank where the vendor was not surveyed.
 - `has_enumerator` — aimap ships a deep enum_*.go for this vendor.

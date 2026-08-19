@@ -4,7 +4,7 @@ type: survey
 
 # n8n on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -117,6 +117,6 @@ Pattern: **orchestration tools have hardened; data layer tools haven't.**
 
 ## Discoverer
 
-NuClide Research, nicholas@nuclide-research.com
+, 
 
 No data was accessed, modified, or exfiltrated. All instances probed only on documented endpoints to determine auth posture.

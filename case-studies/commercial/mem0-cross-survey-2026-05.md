@@ -4,7 +4,7 @@ type: survey
 
 # Mem0 Agent Long-Term Memory: Cross-Survey of Exposed Instances
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -233,13 +233,13 @@ For the three new identifiable-individual findings (F1-F3), operator identificat
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Tool | Notes |
 |---|---|---|
 | Discovery | Cross-reference of prior Qdrant + ChromaDB sweeps | No new network probes; Mem0 is a content fingerprint |
 | Sampling | Direct Qdrant `/points/scroll` on 3 newly-identified instances | 3 records per collection, sufficient for content classification |
-| Findings ledger | VisorLog | Will be ingested into `data/nuclide.db` (Mem0 tag) |
+| Findings ledger | VisorLog | Will be ingested into `data/.db` (Mem0 tag) |
 | Compliance scoring | VisorScuba | All instances fail AI.C1 (unauth-baseline) |
 | Adversarial corpus | Existing `data/visorcorpus-chromadb-rag-adversarial-2026-05.json` applies, kb_exfiltration + prompt_injection categories transfer to Mem0-based agents |
 

@@ -173,7 +173,7 @@ No auth required.
 - CVE-2025-11201 (ZeroPath, 2025) -- RCE dir traversal
 - RAXE-2026-030 (RAXE Labs, Feb 2026) -- chained auth bypass + RCE
 - April 2026 vulnerability digest notes "auth gap continues pattern"
-- No prior population-scale survey published (NuClide would be first)
+- No prior population-scale survey published ( would be first)
 
 **Sources:**
 - https://hackers-arise.com/hacking-artificial-intelligence-ai-reconnaissance-on-ai-infrastructure/
@@ -222,4 +222,4 @@ http.title:"MLflow" port:5001
 - Primary deployment vector is `mlflow server --host 0.0.0.0` in Docker Compose; official templates ship this configuration with no auth flag
 - Unauthenticated API surface exposes experiment names, model names, run parameters, metrics, and cloud artifact storage URIs (S3/GCS/Azure bucket names)
 - CVE landscape is severe: 7 published CVEs 2024-2026, ALL requiring no authentication; two active RCE chains (CVE-2025-11201, CVE-2026-2033+2635)
-- No prior population-scale survey published; NuClide would be first; population estimated in low thousands based on Docker Hub pull signal and comparable platforms
+- No prior population-scale survey published;  would be first; population estimated in low thousands based on Docker Hub pull signal and comparable platforms

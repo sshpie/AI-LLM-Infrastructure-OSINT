@@ -3,12 +3,12 @@ type: survey
 category: vector-db-search
 platform: meilisearch
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 ---
 
 # Meilisearch Population Survey: 282 Unauth Hosts, 780 GB Exposed, Hong Kong Spam Botnet
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 _Related: [`comfyui-population-survey-2026-06-08.md`](comfyui-population-survey-2026-06-08.md) (sibling auth-gradient evidence point)_
 
 ---

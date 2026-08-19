@@ -42,7 +42,7 @@ Orchestrator + subagent pattern throughout. Parallel lanes for: JAXEN harvest, a
 | aimap v1.9.8 | Stage-1 fingerprint + Stage-2 verify | Known dcm4chee catchall FP (Insight #22) still present; 38 ASP.NET/Express FPs expected |
 | VisorBishop | Re-prober + IP-shadow | -ip-shadow enabled; adjacent-port sweep for stacked services |
 | VisorGraph | Cert-pivot, operator attribution | 11 named operators re-verified same-day |
-| VisorLog | Ledger ingest | 192 events ingested to nuclide.db (127 need lifecycle update to archived) |
+| VisorLog | Ledger ingest | 192 events ingested to .db (127 need lifecycle update to archived) |
 | VisorScuba | Compliance scoring | 192/192 AI.C1 Critical — over-counts the 127 FPs; re-scope queued |
 | BARE | Metasploit semantic ranking | Sourcegraph hit 0.799 against graphql introspection scanner |
 | VisorCorpus | Adversarial corpus generation | Ran against controlled lab only |
@@ -295,4 +295,4 @@ RESPONSE (FP — generated app):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 18 · 2026-05-18*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 18 · 2026-05-18*

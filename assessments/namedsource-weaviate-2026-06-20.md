@@ -111,8 +111,8 @@ curl -s -X POST http://5.78.177.119:8080/v1/objects \
     "class": "FakeIndex",
     "id": "66db8bac-3d70-4c13-b076-9741bbaedd53",
     "properties": {
-      "url": "https://canary.test/nuclide-rwd-probe",
-      "explanation": "canary -- nuclide security research 2026-06-20"
+      "url": "https://canary.test/-rwd-probe",
+      "explanation": "canary --  security research 2026-06-20"
     }
   }' | jq '.id'
 ```
@@ -173,4 +173,4 @@ Live runs Weaviate `1.37.0-rc.1` -- a release candidate. RC versions may carry u
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan

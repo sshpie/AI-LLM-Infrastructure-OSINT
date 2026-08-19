@@ -504,7 +504,7 @@ Expected output structure:
   profile/                   # aimap-profile classifications
   platoon/                   # SALUTE reports for HIGH+/CRITICAL operators
     <ip>-salute.txt
-  contact/                   # nuclide-contact disclosure seeds
+  contact/                   # -contact disclosure seeds
   findings.ndjson            # visorlog ingest file
   bare/                      # BARE module rankings
 ```

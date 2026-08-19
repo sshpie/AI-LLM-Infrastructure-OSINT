@@ -25,21 +25,21 @@ The 2026-06-06 cs* literature corpora cover the precedent attacks on traditional
 
 ## Current survey instances
 
-NuClide has not yet exercised LLM03 findings on the 2026-06-06 sweep set. The class is **enabled** by current findings but not directly probed:
+ has not yet exercised LLM03 findings on the 2026-06-06 sweep set. The class is **enabled** by current findings but not directly probed:
 
 - A Flowise instance with an open chatflow API and a Pinecone connection means the **upstream Pinecone index** is reachable with whatever credentials the operator embedded — supply-chain-adjacent. See `surveys/2026-06-06-flowise.md`.
 - A LiteLLM instance proxying to Anthropic / Bedrock / Vertex with no master_key is the **distribution-stage** compromise — the operator's API key is the supply-chain link being abused. See `surveys/2026-06-06-litellm.md`.
-- aimap-profile (NuClide tool) classifies hosts by their dependencies (Docker image tags, package manifests when exposed). This produces LLM03-aware findings when a host is running a flagged version of a known-compromised package.
+- aimap-profile ( tool) classifies hosts by their dependencies (Docker image tags, package manifests when exposed). This produces LLM03-aware findings when a host is running a flagged version of a known-compromised package.
 
 ## MCP supply-chain frontier
 
-The Model Context Protocol (MCP) is mentioned in `~/.claude/CLAUDE.md` Assessment Protocol as a frontier sub-platform area. MCP server packages distributed via PyPI/npm/Docker Hub create a new supply-chain attack surface that the 2025 OWASP revision doesn't fully address yet (MCP launched late 2024). NuClide's MCP survey (prior session: 89 unauth findings) is the empirical baseline for this emerging class.
+The Model Context Protocol (MCP) is mentioned in `~/.claude/CLAUDE.md` Assessment Protocol as a frontier sub-platform area. MCP server packages distributed via PyPI/npm/Docker Hub create a new supply-chain attack surface that the 2025 OWASP revision doesn't fully address yet (MCP launched late 2024). 's MCP survey (prior session: 89 unauth findings) is the empirical baseline for this emerging class.
 
 ## Defensive controls
 
 - Model card + dataset provenance verification (Hugging Face datasheets, model cards)
 - Package supply-chain hardening (cryptographic signing, SBOM, vendor pinning)
-- Dependency scanning for ML libraries (the NuClide `BARE` tool semantically ranks scanner findings against an embedded module corpus — see `tools/INDEX.md`)
+- Dependency scanning for ML libraries (the  `BARE` tool semantically ranks scanner findings against an embedded module corpus — see `tools/INDEX.md`)
 - LoRA / adapter checksum verification at deploy time
 
 ## Related NICE roles

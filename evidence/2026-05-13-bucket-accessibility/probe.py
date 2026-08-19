@@ -24,7 +24,7 @@ EVID = WORKDIR / "evidence"
 RAW.mkdir(exist_ok=True)
 EVID.mkdir(exist_ok=True)
 
-UA = "NuClide-VisorBishop-Phase5b/1.0 (research; read-only; nicholas@nuclide-research.com)"
+UA = "-VisorBishop-Phase5b/1.0 (research; read-only; )"
 TIMEOUT = 6
 CTX = ssl.create_default_context()
 

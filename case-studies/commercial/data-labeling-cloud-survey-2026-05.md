@@ -4,7 +4,7 @@ type: survey
 
 # Data Labeling / Annotation Servers: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (in progress)_
+_ · 2026-05-04 (in progress)_
 
 > **Status:** Discovery + deep-probe complete (2026-05-04). **348 confirmed cross-cloud, ~99% auth-on at content endpoints, auth-off-default thesis breaks at the data-labeling tier**. Single-platform dominance: every confirmed instance is `doccano`.
 
@@ -174,7 +174,7 @@ Likely a mix of (1) and (2). LabelStudio commercial-cloud is heavily promoted; C
 
 ## Disclosure plan
 
-For each unauthenticated instance with high-risk content classes (healthcare, financial, biometric, government), draft coordinated-disclosure email per the standard NuClide template, routed via WHOIS-derived institution identification (per the contact-resolver rule from the Buffalo State misroute lesson).
+For each unauthenticated instance with high-risk content classes (healthcare, financial, biometric, government), draft coordinated-disclosure email per the standard  template, routed via WHOIS-derived institution identification (per the contact-resolver rule from the Buffalo State misroute lesson).
 
 ---
 

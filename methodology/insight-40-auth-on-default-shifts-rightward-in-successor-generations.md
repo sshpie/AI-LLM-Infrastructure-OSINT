@@ -94,4 +94,4 @@ For the auth-on-default thesis:
 
 ---
 
-*Codified by Nuclide Research (Nicholas Kloster + Claude) 2026-05-19 from the sub2api population survey. Methodology per `~/.claude/nuclide-internal/METHODOLOGY.md`.*
+*Codified by  ( + Claude) 2026-05-19 from the sub2api population survey. Methodology per `~/.claude/-internal/METHODOLOGY.md`.*

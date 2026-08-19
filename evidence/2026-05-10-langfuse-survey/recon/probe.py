@@ -64,7 +64,7 @@ def _probe_one(url, ip=None, host_header=None):
         results = {}
         for path in ['/api/public/health', '/api/public/projects']:
             try:
-                conn.request('GET', path, headers={'Host': host, 'User-Agent': 'nuclide-research/2026-05-10'})
+                conn.request('GET', path, headers={'Host': host, 'User-Agent': '/2026-05-10'})
                 resp = conn.getresponse()
                 body = resp.read(500).decode('utf-8', errors='replace')
                 results[path] = {

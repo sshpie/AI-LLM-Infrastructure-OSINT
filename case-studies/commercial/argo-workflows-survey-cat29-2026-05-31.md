@@ -10,7 +10,7 @@ verification_rung: inner-A / outer-2 (population fingerprinted + auth-classified
 
 # Argo Workflows Population Survey — Cat-29 (2026-05-31)
 
-_NuClide Research · 2026-05-31_
+_ · 2026-05-31_
 
 ---
 
@@ -52,7 +52,7 @@ aimap v1.9.40 scanned all 119 IPs on ports 443, 2746, 80, 8080, 8443. Phase 1 (p
 
 The 0 Argo fingerprints is expected: the `ssl:` dork captures IP addresses behind Kubernetes ingress controllers, which route traffic by `Host:` header. Bare-IP probing hits the default backend or an IAP wall rather than the Argo service.
 
-**CVAT matches — RETRACTED as non-reproducible false positive.** aimap's CVAT fingerprint requires `status_code:200 AND body_contains:"cvat"`. On re-verification, all three IPs (`136.110.132.36`, `34.111.151.62`, `34.149.216.212`) return `HTTP 302, "Invalid IAP credentials: empty token"` (36 bytes) at `/api/server/about` — a GCP IAP wall containing neither a 200 nor the string "cvat". A second aimap run on just these three IPs returned `services_found: 0`. The original 119-host scan caught a transient/nondeterministic IAP response (IAP intermittently returning a 200 under scan concurrency). nuclide.db entries #36121-36123 archived as FP. **No accessible CVAT confirmed in this corpus.** This is logged as a recurring-FP candidate for the aimap CVAT fingerprint: `body_contains:"cvat"` is a single-keyword match (Insight #6 class) that should be anchored to a CVAT-specific JSON field (e.g. `json_field:"version"` on the `/api/server/about` object).
+**CVAT matches — RETRACTED as non-reproducible false positive.** aimap's CVAT fingerprint requires `status_code:200 AND body_contains:"cvat"`. On re-verification, all three IPs (`136.110.132.36`, `34.111.151.62`, `34.149.216.212`) return `HTTP 302, "Invalid IAP credentials: empty token"` (36 bytes) at `/api/server/about` — a GCP IAP wall containing neither a 200 nor the string "cvat". A second aimap run on just these three IPs returned `services_found: 0`. The original 119-host scan caught a transient/nondeterministic IAP response (IAP intermittently returning a 200 under scan concurrency). .db entries #36121-36123 archived as FP. **No accessible CVAT confirmed in this corpus.** This is logged as a recurring-FP candidate for the aimap CVAT fingerprint: `body_contains:"cvat"` is a single-keyword match (Insight #6 class) that should be anchored to a CVAT-specific JSON field (e.g. `json_field:"version"` on the `/api/server/about` object).
 
 ---
 
@@ -155,7 +155,7 @@ The etcd chain is commodity-executable once Argo unauth grants pod execution. Th
 
 ## Shadow Finds
 
-**CVAT — none. The 3 apparent CVAT matches were retracted as non-reproducible false positives** (see Fingerprinting). nuclide.db #36121-36123 archived. No accessible co-located service confirmed on the corpus.
+**CVAT — none. The 3 apparent CVAT matches were retracted as non-reproducible false positives** (see Fingerprinting). .db #36121-36123 archived. No accessible co-located service confirmed on the corpus.
 
 ---
 

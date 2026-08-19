@@ -1,4 +1,4 @@
-# Raw IP-level data per nuclide-public-repo-redaction.
+# Raw IP-level data per -public-repo-redaction.
 # Public repo carries case study, methodology insight, and breakdown counts;
 # per-host IP rows + raw probe payloads stay local.
 

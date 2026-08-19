@@ -2,7 +2,7 @@
 """
 OpenHands deep-dive probe — 2026-05-28
 8 selected hosts from cat09-2026-05-26 survey
-Authorized security research — NuClide Research
+Authorized security research — 
 """
 
 import asyncio

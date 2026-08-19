@@ -4,7 +4,7 @@ type: survey
 
 # Streamlit Data Apps on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -25,7 +25,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 Streamlit ships without built-in authentication, the framework expects operators to put a reverse proxy in front of it. The 100% unauth result here is therefore expected: any Streamlit found on the public internet on its default port has no auth in front. The novel finding shape is **what people are running on top of Streamlit unauth**, production trading dashboards, dark-web OSINT tools, admin portals, etc., often with embedded API keys, LLM access, file-upload PII pipelines, and internal data exposed to every visitor.
 
-This is the largest "long-tail" sample in the NuClide commercial-AI series and the broadest cross-section of how AI/data tooling actually gets deployed in 2026.
+This is the largest "long-tail" sample in the  commercial-AI series and the broadest cross-section of how AI/data tooling actually gets deployed in 2026.
 
 ---
 
@@ -47,7 +47,7 @@ streamlit-render-probe.py (Playwright sample, 100 random instances)
   → 98 successfully rendered, 84 unique custom titles
 ```
 
-NuClide deliberately did not interact with the Streamlit apps (no form input, no file upload, no button clicks). Title + first-render snapshot only.
+ deliberately did not interact with the Streamlit apps (no form input, no file upload, no button clicks). Title + first-render snapshot only.
 
 ---
 
@@ -161,7 +161,7 @@ This is a **complete MLOps stack exposure** for one operator: training (MLflow) 
 - No probing of `st.secrets`-style endpoints
 - No identification of embedded API keys (would require deeper interaction)
 
-The Playwright render captured the public-facing first-screen state only. Many apps likely have richer surfaces behind the home page, login screens, admin tabs, file-upload forms, that NuClide did not exercise.
+The Playwright render captured the public-facing first-screen state only. Many apps likely have richer surfaces behind the home page, login screens, admin tabs, file-upload forms, that  did not exercise.
 
 ---
 
@@ -201,7 +201,7 @@ streamlit run app.py --server.address=127.0.0.1
 
 ## Disclosure Posture
 
-NuClide is not opening 551 individual disclosure threads. The ~85% custom-titled fraction means several hundred operator-attributable apps. Disclosure priorities by class:
+ is not opening 551 individual disclosure threads. The ~85% custom-titled fraction means several hundred operator-attributable apps. Disclosure priorities by class:
 
 - **Trading bots / finance dashboards**, operator-specific where the brand is identifiable. PBGUI and similar open-source bots = community awareness only. Branded Trading Bot Dashboards = direct operator contact.
 - **Admin portals (Fair Skies, Quetzality, MITEC, OZON)**, operator-attributable; direct disclosure to brand contact.
@@ -210,14 +210,14 @@ NuClide is not opening 551 individual disclosure threads. The ~85% custom-titled
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
 | Discovery | masscan port 8501 → 1,389 IPs |
 | Fingerprint | `streamlit-probe.py`, `/_stcore/host-config` shape match |
 | Render sample | `streamlit-render-probe.py`, Playwright on 100 random instances; 98 successful |
-| Findings ledger | Top-titled instances ingested into `data/nuclide.db` |
+| Findings ledger | Top-titled instances ingested into `data/.db` |
 | What was NOT done | No app interaction, no file uploads, no form fills, no probing of internal pages |
 
 ---

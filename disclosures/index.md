@@ -1,6 +1,6 @@
 # Disclosure Email Queue
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 Drafts generated from case studies. Send CRITICAL first, then HIGH, then LOW.
 Update Status column as emails are sent / acknowledged.

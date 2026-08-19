@@ -48,7 +48,7 @@ def ctx_with(aimap=None, empire_sql=None, db_events=None, vg=None):
         con.executescript(empire_sql)
         con.commit()
         empire = con
-    dbp = os.path.join(d, "nuclide.db")
+    dbp = os.path.join(d, ".db")
     con = sqlite3.connect(dbp)
     con.execute("CREATE TABLE events(id INTEGER PRIMARY KEY, host_ip TEXT, source TEXT, tags TEXT, lifecycle_status TEXT)")
     for ip, src in (db_events or []):

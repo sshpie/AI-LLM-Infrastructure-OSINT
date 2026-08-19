@@ -1,9 +1,9 @@
 #!/bin/bash
-# cron-sync-clickhouse.sh — cron entrypoint for the nuclide.db -> ClickHouse
+# cron-sync-clickhouse.sh — cron entrypoint for the .db -> ClickHouse
 # delta sync (see reference/olap-migration.md §4.2).
 #
 # Sources the credentials env, invokes sync-clickhouse.py --execute, appends
-# stdout/stderr to ~/.config/nuclide/clickhouse-sync.log with a UTC timestamp
+# stdout/stderr to ~/.config//clickhouse-sync.log with a UTC timestamp
 # bracketing each run.
 #
 # Suggested crontab entry (every 10 min):
@@ -14,8 +14,8 @@
 
 set -euo pipefail
 
-CREDS=$HOME/.config/nuclide/clickhouse-credentials.env
-LOG=$HOME/.config/nuclide/clickhouse-sync.log
+CREDS=$HOME/.config//clickhouse-credentials.env
+LOG=$HOME/.config//clickhouse-sync.log
 PYTHON=$HOME/security-tools/bin/python3
 SCRIPT=$HOME/AI-LLM-Infrastructure-OSINT/data/sync-clickhouse.py
 

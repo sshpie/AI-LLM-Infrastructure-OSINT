@@ -2,7 +2,7 @@
 
 ## How we found 2,423 hours of cloned voice output, eight A100 GPUs, and a complete face-and-voice deepfake pipeline running unauthenticated on a single Changsha box
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 ---
 
@@ -61,7 +61,7 @@ The reference-audio-URL field is what makes this finding load-bearing. Anyone wi
 
 This is functionally a public, unauthenticated, free voice-cloning service of the same class as ElevenLabs's commercial tier, running on hardware that the United States Bureau of Industry and Security has prohibited for export to China since October 2022.
 
-We did not test the endpoint. We did not submit any clone job. The restraint discipline that governs NuClide's surveys does not unlock for finding-quality reasons. The capability is documented from the `/health` telemetry and the FastAPI auto-generated OpenAPI document; the cloning is something we know the box does without our needing to make it do so.
+We did not test the endpoint. We did not submit any clone job. The restraint discipline that governs 's surveys does not unlock for finding-quality reasons. The capability is documented from the `/health` telemetry and the FastAPI auto-generated OpenAPI document; the cloning is something we know the box does without our needing to make it do so.
 
 ---
 
@@ -116,9 +116,9 @@ This is what we mean by **infrastructure-scanner-dark, web-OSINT-dark**: invisib
 
 8× A100-SXM4-80GB is the original, unconstrained A100 part. The United States Bureau of Industry and Security has restricted export of this exact part to PRC end users since October 7, 2022. NVIDIA produced the China-spec H800 and A800 to fill the gap; those were restricted by the October 2023 follow-up rule; and the current China-spec part is the H20.
 
-A complete 8× A100-SXM4-80GB cluster operating in Changsha in June 2026 was acquired by one of three paths: pre-ban procurement (2022-Q3 or earlier), gray-market import through Singapore or Malaysia or Hong Kong shell entities, or cloud resale from a non-PRC tenant. NuClide does not engage in BIS or Commerce reporting; the export-control question is recorded as observed context and the disclosure routing remains in cyber-incident channels.
+A complete 8× A100-SXM4-80GB cluster operating in Changsha in June 2026 was acquired by one of three paths: pre-ban procurement (2022-Q3 or earlier), gray-market import through Singapore or Malaysia or Hong Kong shell entities, or cloud resale from a non-PRC tenant.  does not engage in BIS or Commerce reporting; the export-control question is recorded as observed context and the disclosure routing remains in cyber-incident channels.
 
-The substrate provider is China Telecom's Hunan Changsha IDC, abuse contact `anti-spam@chinatelecom.cn`. The national CERT is CNCERT/CC. A draft notification template, marked DO NOT SEND, is staged in NuClide's assessments directory pending review.
+The substrate provider is China Telecom's Hunan Changsha IDC, abuse contact `anti-spam@chinatelecom.cn`. The national CERT is CNCERT/CC. A draft notification template, marked DO NOT SEND, is staged in 's assessments directory pending review.
 
 ---
 
@@ -158,7 +158,7 @@ If you find a job-count number larger than the number of jobs you yourself have 
 
 ## The catalog
 
-This is the fifth finding NuClide is publishing in our 2026-06-08 population sweep. The earlier four are queued or already linked from our OSINT repository.
+This is the fifth finding  is publishing in our 2026-06-08 population sweep. The earlier four are queued or already linked from our OSINT repository.
 
 - ComfyUI default-port re-measurement of the GHOST surface Censys ARC published in April
 - Meilisearch unauthenticated cluster including the 66-host Hong Kong SEO content-spam fleet
@@ -171,4 +171,4 @@ This is what the modern AI infrastructure exposure surface looks like, this mont
 
 ---
 
-_NuClide Research is an independent security-research lab. Our case studies, surveys, and tooling are public at_ `github.com/nuclide-research`. _Contact:_ `nicholas@nuclide-research.com`. _Prior published research includes CISA-coordinated disclosures CVE-2025-4364 and ICSA-25-140-11._
+_ is an independent security-research lab. Our case studies, surveys, and tooling are public at_ `github.com/sshpie`. _Contact:_ ``. _Prior published research includes CISA-coordinated disclosures CVE-2025-4364 and ICSA-25-140-11._

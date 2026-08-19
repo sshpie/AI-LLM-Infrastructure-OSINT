@@ -10,7 +10,7 @@ toolchain: manual probe
 
 # LangGraph Studio Population Survey — Local Dev Tool Misdeployed to Public AWS at 90.9%
 
-_NuClide Research · 2026-06-07_
+_ · 2026-06-07_
 
 ---
 

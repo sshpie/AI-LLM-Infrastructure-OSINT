@@ -4,7 +4,7 @@ type: case-study
 
 # Adya AI: WandB workspace exfil via unauth FastAPI proxy (vanijmcp.adya.ai)
 
-_NuClide Research, 2026-05-17_
+_, 2026-05-17_
 _Part of the training-observability survey._
 
 ---

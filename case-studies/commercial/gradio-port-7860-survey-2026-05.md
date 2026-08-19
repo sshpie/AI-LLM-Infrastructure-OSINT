@@ -4,7 +4,7 @@ type: survey
 
 # Gradio / Stable Diffusion / Langflow on port 7860: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -28,7 +28,7 @@ Findings split:
 - **1 Stable Diffusion WebUI (Automatic1111)** with 4 models installed
 - **6 generic Gradio apps** including 2 operator-attributable branded LLMs and 1 ByteDance Ark commercial-API tester
 
-This is the smallest survey in the NuClide commercial-AI series, but it adds a new finding shape: **CVE-research labs discoverable on the public internet**. The single fully-unauth Langflow (`157.90.168.61`) is a security researcher's CVE-2026-33017 lab, not a careless production operator. Documented for completeness but excluded from disclosure pack.
+This is the smallest survey in the  commercial-AI series, but it adds a new finding shape: **CVE-research labs discoverable on the public internet**. The single fully-unauth Langflow (`157.90.168.61`) is a security researcher's CVE-2026-33017 lab, not a careless production operator. Documented for completeness but excluded from disclosure pack.
 
 ---
 
@@ -85,7 +85,7 @@ The Langflow upstream community shipped LANGFLOW_AUTO_LOGIN gating in v1.5; eigh
 
 1. **Free image generation on operator's GPU.** A1111's `/sdapi/v1/txt2img` endpoint accepts arbitrary prompts and produces images using the operator's compute. No auth in front of it.
 2. **Model identification + supply-chain pivot.** The hash suffix `[9aba26abdf]` is a SafeTensors content fingerprint; `dreamshaper_8` is a popular community-trained checkpoint. Whoever manages this VPS has a specific creative-AI use case (community checkpoints + LoRAs).
-3. **Loras / embeddings / upscalers exposure.** A1111 exposes `/sdapi/v1/loras`, `/sdapi/v1/embeddings`, `/sdapi/v1/upscalers`, all the operator's added components are listable. (NuClide did not enumerate these in detail; counts only.)
+3. **Loras / embeddings / upscalers exposure.** A1111 exposes `/sdapi/v1/loras`, `/sdapi/v1/embeddings`, `/sdapi/v1/upscalers`, all the operator's added components are listable. ( did not enumerate these in detail; counts only.)
 4. **Model exfiltration via the model repository API.** A1111's HTTP API includes endpoints that allow the operator to download model files; whether those endpoints are exposed at this instance was not tested.
 
 A1111 has no built-in auth. The operator-recommended fix is launching with `--api-auth user:pass` (HTTP Basic) or fronting with nginx auth.
@@ -110,9 +110,9 @@ The flows on this instance are **not a production AI workload**. The 19 custom u
 
 **This is almost certainly a peer security researcher's working environment.** The CVE-naming pattern + Nuclei template work + iterative `poc-flow (1-5)` versioning + dated lab snapshots (Feb 19, Mar 11, Mar 18-19, Mar 28, Apr 28) match the pattern of someone reproducing a Langflow vulnerability and developing detection signatures.
 
-NuClide is not extracting flow contents from this instance. Other researchers' WIP work warrants the same professional courtesy a private repo does. The instance is documented here for completeness of the survey; **it is excluded from the disclosure pack** for this survey class.
+ is not extracting flow contents from this instance. Other researchers' WIP work warrants the same professional courtesy a private repo does. The instance is documented here for completeness of the survey; **it is excluded from the disclosure pack** for this survey class.
 
-If the operator finds this case study and wants the IP redacted, NuClide will redact on request.
+If the operator finds this case study and wants the IP redacted,  will redact on request.
 
 ---
 
@@ -171,7 +171,7 @@ The orchestration-UI tier remains auth-on-default. The image-gen tier (A1111, Co
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|

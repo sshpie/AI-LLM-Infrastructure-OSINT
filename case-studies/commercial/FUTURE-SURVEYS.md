@@ -4,7 +4,7 @@ type: operational
 
 # Future Surveys: AI/ML Infrastructure Categories Not Yet Covered
 
-_NuClide Research · 2026-05-04 — last updated 2026-06-02_
+_ · 2026-05-04 — last updated 2026-06-02_
 _Companion to: [`SYNTHESIS-2026-05.md`](SYNTHESIS-2026-05.md)_
 
 ---
@@ -17,7 +17,7 @@ The 2026-05/06 survey series covers 35+ platform classes. Several adjacent categ
 - **Risk class** if exposed
 - **Status** (planned / partial / not-yet)
 
-Anyone running NuClide's tier-2 cloud range list (`/tmp/tier2-all-ranges.txt`, Scaleway 7, OVH 33, Linode 36 = 3.55M IPs) can pick a category and run the survey using the same masscan-then-probe pattern documented in the existing case studies.
+Anyone running 's tier-2 cloud range list (`/tmp/tier2-all-ranges.txt`, Scaleway 7, OVH 33, Linode 36 = 3.55M IPs) can pick a category and run the survey using the same masscan-then-probe pattern documented in the existing case studies.
 
 ---
 
@@ -331,7 +331,7 @@ These categories were surveyed after this doc was last updated (2026-05-04) and 
 
 | Category | Survey date | Key finding | Case study |
 |---|---|---|---|
-| **AI Gateways** (Cat-32: Portkey, Kong, Bifrost, one-api, new-api, LiteLLM, TensorZero, Helicone, Envoy, sub2api) | 2026-06-01 | 87 Envoy admin interfaces CRITICAL (unauth `/config_dump` leaks all upstream API keys); 13,456 new-api instances; 1,786 surface-open total. Insight #74 (gateway as master-key multiplier), #75 (HTTP admin ports kill cert-pivot). | `data/findings-breakdown-ai-gateways-2026-06-01.txt`; nuclide.db #36255-#36848 |
+| **AI Gateways** (Cat-32: Portkey, Kong, Bifrost, one-api, new-api, LiteLLM, TensorZero, Helicone, Envoy, sub2api) | 2026-06-01 | 87 Envoy admin interfaces CRITICAL (unauth `/config_dump` leaks all upstream API keys); 13,456 new-api instances; 1,786 surface-open total. Insight #74 (gateway as master-key multiplier), #75 (HTTP admin ports kill cert-pivot). | `data/findings-breakdown-ai-gateways-2026-06-01.txt`; .db #36255-#36848 |
 | **Service Mesh introspection planes** (Cat-33: Kiali, Linkerd, Cilium Hubble, Istio) | 2026-05-31 | Kiali anonymous strategy: 4/4 reachable = full namespace topology unauth. Cilium Hubble metrics unauth (9 Hubble UI exposed). Insight #71 (network-placement-as-auth). | `service-mesh-survey-2026-05-31.md` |
 | **Auth Gateways** (OPA, Authentik, Authelia, Keycloak self-hosted) | 2026-05-29 | Survey complete; coverage in `auth-gateway-survey-2026-05-29.md`. | `auth-gateway-survey-2026-05-29.md` |
 | **ML Governance / Data Catalog** (DataHub, Amundsen, Marquez, Atlas) | 2026-05-29 | 31 violations fixed; ML governance surfaces assessed. Insight series codified. | `ml-governance-survey-2026-05-29.md` |
@@ -351,7 +351,7 @@ The auth-on-default thesis predicts: **for any framework that ships without auth
 1. **Confirm the thesis** on a new platform class (extends the evidence base)
 2. **Falsify the thesis** if a platform with auth-off-default ships ~0% unauth at population scale (would be a meaningful counter-example, none observed yet)
 
-The list also acts as a roadmap for any contributor who wants to add coverage. NuClide's tooling (`aimap`, `recongraph`, `BARE`) already covers many of the fingerprints above; running them at population scale on tier-2 cloud ranges is the work product.
+The list also acts as a roadmap for any contributor who wants to add coverage. 's tooling (`aimap`, `recongraph`, `BARE`) already covers many of the fingerprints above; running them at population scale on tier-2 cloud ranges is the work product.
 
 ---
 

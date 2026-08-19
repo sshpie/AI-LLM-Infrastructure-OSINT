@@ -201,7 +201,7 @@ Delete (schema)trivial    NO           3 curl commands wipes everything
 ## Tool Reference
 
 Found with **weavscan** -- first confirmed production use.  
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan
 
 Scan command used:
 ```bash

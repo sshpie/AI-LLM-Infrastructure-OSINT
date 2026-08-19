@@ -43,7 +43,7 @@ Orchestrator-driven. Multiple masscan processes dispatched in background lanes b
 | data/vllm-probe.py | Stage-1 deep fingerprint | /v1/models, /metrics, /pause endpoint, inference test (read-only) |
 | aimap | Stage-1 service confirm | Platform identification cross-check |
 | VisorGraph | Cert-pivot / operator attribution | Run on NTU CSIE node |
-| VisorLog | Ledger ingest | nuclide.db updated with 9 new nodes |
+| VisorLog | Ledger ingest | .db updated with 9 new nodes |
 | VisorScuba | Compliance scoring | Run on confirmed nodes |
 | BARE | Exploit ranking | Null result (vLLM-specific CVEs not in Metasploit at time of scan) |
 | VisorCorpus | Adversarial corpus | Run on course-AI finding (endpoint-specific) |
@@ -326,4 +326,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 6 · 2026-05-03*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 6 · 2026-05-03*

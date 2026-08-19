@@ -1,6 +1,6 @@
 # University of Washington: Streamlit app on `D4-084.ce.washington.edu:8501` (Civil Engineering dept; framework confirmed)
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

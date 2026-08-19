@@ -202,7 +202,7 @@ trigger and remediation urgency does not either.
   `401`. JAXEN, VisorSD, VisorGoose and VisorPlus `hunt` are Shodan-gated and
   were blocked. The "6 title hits / 10 cert-CN hits" counts in the briefing came
   from a Shodan session with working access; they are unverified here.
-- **The ledger held no fallback corpus.** `nuclide.db` had zero PromptLayer or
+- **The ledger held no fallback corpus.** `.db` had zero PromptLayer or
   `34.95.65.63` rows before this run, so the Insight #9 ledger-substrate
   discovery move had nothing to work with.
 - **`recongraph` returned 0 nodes / 0 edges.** Its passive sources yielded
@@ -265,7 +265,7 @@ in client-delivered code) would let this finding score honestly.
 [x] recongraph     0 nodes / 0 edges — no passive seed without Shodan host record
 [x] nu-recon       simulated mode (no Shodan); overall_risk low; reported port 22 "exposed" — contradicted by direct TCP probe (22 closed); trust the probe
 [~] VisorPlus      orchestrator — components run by hand (methodology §5 permits); hunt path Shodan-blocked
-[x] VisorLog       finding #35925 ingested into nuclide.db (high, tags WEBHOOK-LEAK,LLMJACKING,SPA,GCS)
+[x] VisorLog       finding #35925 ingested into .db (high, tags WEBHOOK-LEAK,LLMJACKING,SPA,GCS)
 [x] VisorScuba     ran — AI.C1 fired as FALSE POSITIVE (see Section 6); tool gap codified
 [x] BARE           PL-1 webhook leak 0.443 < 0.55 → no msf coverage (first-party design fault, not a CVE chain)
 [x] VisorCorpus    adversarial corpus built (baseline variant) for the LLM-adjacent surface

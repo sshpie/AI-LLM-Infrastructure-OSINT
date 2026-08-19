@@ -3,12 +3,12 @@ type: survey
 category: data-labeling-platform
 platform: argilla
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 ---
 
 # Argilla at Population Scale: 100 Percent Auth-Gated, the New Ceiling on the Auth-Friction Gradient
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 ---
 
@@ -18,11 +18,11 @@ Population-scale survey of **Argilla** (the Hugging Face open-source RLHF data-l
 
 **The thesis-class result.** **0 of 23 LIVE Argilla hosts (0 percent) returned an unauthenticated `/api/v1/me` or `/api/me`.** All 23 were auth-gated, all 7 default-API-key probes (`X-Api-Key: argilla.apikey` and `X-Api-Key: owner.apikey`) were rejected, 7 hosts were Shodan-title false positives, and 13 were dead. Of LIVE Argilla hosts in the sample, **100 percent are auth-gated.**
 
-Argilla ships with a mandatory API-key flow on first run, and the well-known default keys cannot be left in place by accident; the install wizard surfaces them in plaintext and instructs operators to rotate. Combined with the auth-gated `/api/_info` banner (the version itself is behind auth on the modern release line), this is the strictest auth-on-default posture in the NuClide measurement set.
+Argilla ships with a mandatory API-key flow on first run, and the well-known default keys cannot be left in place by accident; the install wizard surfaces them in plaintext and instructs operators to rotate. Combined with the auth-gated `/api/_info` banner (the version itself is behind auth on the modern release line), this is the strictest auth-on-default posture in the  measurement set.
 
 This survey extends the thesis from Cat-49 Label Studio (99.75 percent auth-gated, 1/407 unauth). The platform-cohort distribution now spans from 88.9 percent (Langfuse, open signup by default) to **0 percent (Argilla, mandatory API key + auth-gated version banner)**, with Label Studio (0.2 percent) and AnythingLLM (0 percent on a 137-host sample) bracketing Argilla.
 
-The headline: the two most strictly auth-gated platforms in the NuClide program are the two purpose-built RLHF labeling platforms. The data-labeling domain has internalized the lesson that the labeled training corpus is the asset.
+The headline: the two most strictly auth-gated platforms in the  program are the two purpose-built RLHF labeling platforms. The data-labeling domain has internalized the lesson that the labeled training corpus is the asset.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage

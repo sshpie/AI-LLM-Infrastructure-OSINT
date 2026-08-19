@@ -36,7 +36,7 @@ sidenotes:
 
 # Bears Furniture: Unauthenticated Read, Write, and Delete on a Retail AI Search Index
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -114,4 +114,4 @@ Canary UUID `b887ad5a-4e9e-473d-b99e-1ed0876ecc31`. Written, confirmed, deleted,
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

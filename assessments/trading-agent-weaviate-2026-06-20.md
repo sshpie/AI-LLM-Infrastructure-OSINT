@@ -219,4 +219,4 @@ curl -X DELETE http://165.22.230.132:8080/v1/schema/AgentMemory
 ## Tool Reference
 
 Found with **weavscan**.  
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

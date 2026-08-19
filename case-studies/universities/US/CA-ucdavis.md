@@ -1,6 +1,6 @@
 # UC Davis: Large Local Models + Claude 4.6 Opus-Distilled
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

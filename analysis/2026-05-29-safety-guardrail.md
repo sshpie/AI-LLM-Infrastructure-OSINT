@@ -30,7 +30,7 @@ VisorLog, BARE, cortex. Documented non-runs: VisorSD/recongraph/nu-recon/VisorPl
 VisorBishop (no guardrail fingerprint, gap), JS-bundle (no CDN-SPA).
 
 ### Notable Configuration
-aimap v1.9.39 (no LLM Guard fingerprint, gap). nuclide.db at ~/visorlog/nuclide.db.
+aimap v1.9.39 (no LLM Guard fingerprint, gap). .db at ~/visorlog/.db.
 Workspace ~/recon/safety-guardrail-2026-05-29/.
 
 ## 3. Methodology
@@ -67,7 +67,7 @@ bypass attempted.
 10. aimap lean 8 hosts -> only Grafana (no LLM Guard fingerprint, gap)
 11. menlohunt IP-shadow on 5.78.101.230 -> MongoDB + Redis + MySQL + Postgres + Docker reg, 6 chains
 12. Primary-source Redis 7.2.10 PING+PONG+INFO (Linux 5.4, 17d); MongoDB TCP open (not queried)
-13. VisorLog: 8 aimap + 2 manual events -> nuclide.db
+13. VisorLog: 8 aimap + 2 manual events -> .db
 14. aimap-profile, BARE (no MSF), arsenal accounting
 15. Wrote case study, query-file append, findings-breakdown, this analysis
 ```

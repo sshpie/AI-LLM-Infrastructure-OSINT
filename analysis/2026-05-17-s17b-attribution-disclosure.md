@@ -149,7 +149,7 @@ No data exfiltration from operator hosts. Ransom-note read restricted to the sin
 | **Type** | Automated database extortion campaign targeting unauth Elasticsearch |
 | **Evidence** | Wallet addresses, email contacts, note schema shapes, blockchain tx history: Actor A (130/150 hosts, 5 paid, 0.018 BTC), Actor B (12/150, 0 paid), Actor C (1/150, 0 paid) |
 | **Observed exposure** | Actor A: `bc1q38rjul6gdamfflf6p4ukz0ymtvfgfv2j9saf6r` / `wendy.etabw@gmx.com`. Per-host code `0SH7HH1Q72JL` is identical across all hosts (template lie). paste.sh page China-victim-aware |
-| **Severity** | OBSERVED (attacker characterization; no NuClide-controlled systems compromised) |
+| **Severity** | OBSERVED (attacker characterization; no -controlled systems compromised) |
 
 **Potential impact:** 4,411 hosts targeted by Actor A alone; pay rate ~0.11% (5/4,411). Roughly $1,800 swept to date. The China-victim-awareness in the paste.sh content matches the Tencent/Aliyun/Huawei Cloud skew of the wiped host population. The note claims data is stored on the actor's cluster; this is a lie. Meow / Indexrm deletes and stores nothing. Operators who pay recover nothing.
 
@@ -383,4 +383,4 @@ Demand per host: 0.0041 BTC (~$400)
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 17b · 2026-05-17*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 17b · 2026-05-17*

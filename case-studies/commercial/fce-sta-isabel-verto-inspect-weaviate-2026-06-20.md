@@ -138,9 +138,9 @@ curl -s -X POST http://147.93.180.34:8080/v1/objects \
     "class": "DB_Schema",
     "id": "90a88cf5-29f6-426a-b035-cc2a19f0d2b1",
     "properties": {
-      "object_name": "CANARY_nuclide_2026_06_20",
+      "object_name": "CANARY__2026_06_20",
       "object_type": "CANARY",
-      "description": "Security research canary -- nuclide-research.com"
+      "description": "Security research canary -- "
     }
   }' | jq '.id'
 ```
@@ -188,6 +188,6 @@ Agent-to-agent conversation logs in `ProjectArchive` expose the full system arch
 ---
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan
 
 Weaviate schema enumeration and unauth access prober. Outputs class list, object counts, property schemas, and sample records. Canary write/delete cycle confirms RWD without credentials.

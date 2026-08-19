@@ -22,7 +22,7 @@ from collections import Counter
 from pathlib import Path
 
 TIMEOUT = 8
-HEADERS = {"User-Agent": "NuClide-Research/comfyui-deepen-2026-06-08"}
+HEADERS = {"User-Agent": "/comfyui-deepen-2026-06-08"}
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE

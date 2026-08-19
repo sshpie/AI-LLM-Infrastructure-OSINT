@@ -1,6 +1,6 @@
 # Vietnam National University Ho Chi Minh City: final-exploit-v1 + gpt-oss Cloud Proxy
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

@@ -4,7 +4,7 @@ type: survey
 
 # ClickHouse Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 7 of the day's 10-category batch, largest single survey)_
+_ · 2026-05-16 (Survey 7 of the day's 10-category batch, largest single survey)_
 _Closes: category 02 / specialty data layers. ClickHouse half_
 
 ---
@@ -130,7 +130,7 @@ Operator pattern hypothesis: hosts running SigNoz (21 instances) likely have Cli
 2. operator-DB enumeration via SHOW DATABASES FORMAT JSON → ~10K user-DB-name samples
 3. AI-stack marker filter (25-substring list) → 6 explicit AI-stack hosts
 4. operator-attribution from DB names → scentedai, ai_hedge_fund, vllm_service, qinghai_platform
-5. (queued) visorlog ingest → 1,832 events into nuclide.db source='clickhouse-survey-2026-05-16'
+5. (queued) visorlog ingest → 1,832 events into .db source='clickhouse-survey-2026-05-16'
 6. (queued) BARE module ranking → ClickHouse has CVE-2021-43304/05/08 (heap-buffer-overflow + integer overflow) but unauth-RCE class is small — risk class is intel-disclosure, not RCE
 ```
 

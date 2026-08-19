@@ -14,7 +14,7 @@ lane: D
 
 ## Claim
 
-NuClide's restraint vocabulary built up through Categories 1-X-1 was anchored on a *compute-exfil* DO_NOT_CALL set: completions endpoints, GraphQL mutations, /api/kernels/<id>/execute, repo-write operations, model-pull. The Cat-X-ROS Robotics survey demonstrates a *distinct second class* the existing vocabulary did not cover: motor-command endpoints that **cause physical movement of physical objects** when called.
+'s restraint vocabulary built up through Categories 1-X-1 was anchored on a *compute-exfil* DO_NOT_CALL set: completions endpoints, GraphQL mutations, /api/kernels/<id>/execute, repo-write operations, model-pull. The Cat-X-ROS Robotics survey demonstrates a *distinct second class* the existing vocabulary did not cover: motor-command endpoints that **cause physical movement of physical objects** when called.
 
 The two classes are not nested; they are orthogonal. A platform can require:
 - compute-exfil restraint only (vector DB, LLM endpoint, MLflow)
@@ -37,7 +37,7 @@ These are not "loud" software requests. They cause a robot arm to swing, a mobil
 
 ## Operational implication
 
-The DO_NOT_CALL constant in `stage3v-verify.py` is *not* a stricter version of the Cat-Tabby DO_NOT_CALL; it is a parallel set covering a different harm class. NuClide's restraint vocabulary needs a second axis:
+The DO_NOT_CALL constant in `stage3v-verify.py` is *not* a stricter version of the Cat-Tabby DO_NOT_CALL; it is a parallel set covering a different harm class. 's restraint vocabulary needs a second axis:
 
 | Axis | Harm class | Example endpoints | Restraint mechanism |
 |---|---|---|---|

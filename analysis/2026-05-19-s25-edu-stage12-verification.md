@@ -3,7 +3,7 @@
 **Date:** 2026-05-19
 **Session:** 25
 **Classification:** Internal / Research Use Only
-**Toolchain:** All 19 NuClide tools (16 with signal, 3 N/A by protocol) · aimap v1.9.22 · VisorBishop · visorgoose · VisorGraph · VisorScuba · BARE · VisorCorpus · VisorSD · nu-recon · menlohunt · recongraph · cortex · JS-bundle · VisorLog · aimap-profile · VisorRAG (ethical-stop) · VisorAgent (ethical-stop) · VisorHollow (Windows-only)
+**Toolchain:** All 19  tools (16 with signal, 3 N/A by protocol) · aimap v1.9.22 · VisorBishop · visorgoose · VisorGraph · VisorScuba · BARE · VisorCorpus · VisorSD · nu-recon · menlohunt · recongraph · cortex · JS-bundle · VisorLog · aimap-profile · VisorRAG (ethical-stop) · VisorAgent (ethical-stop) · VisorHollow (Windows-only)
 **Repos updated:** AI-LLM-Infrastructure-OSINT (65cab05, 714fb72, fd60c81, 4575c2d) · 12 fix branches across VisorSD/nu-recon/VisorGraph/Tools/recongraph/visorlog/BARE/visor-rag/cortex-framework/VisorBishop/menlohunt/visorscuba/visorgoose
 
 ---
@@ -50,7 +50,7 @@ Orchestrator + subagent pattern. Three concurrent workstreams ran in parallel te
 | aimap-profile | Target classification + ethics flags | `~/.local/bin/aimap-profile` wrapper installed |
 | VisorBishop | Productized re-prober | G5 fix validated: signup-open critical on 4 confirmed hosts |
 | VisorGraph | Cert-pivot → operator attribution | Run on wave-1 corpus; cert chains surfaced |
-| VisorLog | Ledger ingest → nuclide.db | Wave-1 hosts ingested |
+| VisorLog | Ledger ingest → .db | Wave-1 hosts ingested |
 | VisorScuba | Compliance scoring (OPA/Rego) | G-series tool gaps logged |
 | BARE | Metasploit semantic ranking | Run on wave-1; no critical MSF matches |
 | VisorCorpus | Adversarial corpus generation | Built for wave-1 platform classes |
@@ -335,4 +335,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 25 · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 25 · 2026-05-19*

@@ -12,8 +12,8 @@ so the relationship is stated in the summary and additional info.
 
 ## Contact Details
 
-Contact Name(s): Nicholas Kloster (NuClide Research)
-Contact Email(s): nicholas@nuclide-research.com
+Contact Name(s):  ()
+Contact Email(s): 
 
 ## Technique Details
 
@@ -72,6 +72,6 @@ Technique Summary:
   where content is placed in an indexed location and later retrieved. Neither involves
   a query-time ranking oracle. This sub-technique fills that gap: it names the
   iterative oracle-feedback loop that makes targeted retrieval deterministic rather
-  than probabilistic. NuClide observed this method against an internet-exposed RAG
+  than probabilistic.  observed this method against an internet-exposed RAG
   stack and can provide a sanitized case study under responsible disclosure once the
   affected operator is notified and the exposure closed.

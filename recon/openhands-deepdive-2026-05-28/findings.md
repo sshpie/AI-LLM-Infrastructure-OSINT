@@ -202,4 +202,4 @@ The exception is directory-listing hosts like 40.160.235.43 where raw files are 
 
 ---
 
-*Survey: 2026-05-28. Authorized security research — NuClide Research.*
+*Survey: 2026-05-28. Authorized security research — .*

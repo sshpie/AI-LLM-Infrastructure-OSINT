@@ -1,7 +1,7 @@
 # Shodan Dork Guide — Cat-06 Agent Frameworks
-## 2026-06-26 — NuClide Research Session
+## 2026-06-26 —  Session
 
-**Author:** NuClide (Nick + Claude)  
+**Author:**  (Nick + Claude)  
 **Date:** 2026-06-26  
 **Session:** Variant mining + raw data exploration  
 **Total queries tested:** 40+  
@@ -418,7 +418,7 @@ Censys crawls `/info`, `/health`, `/api/version` endpoints that Shodan misses.
 
 ---
 
-## Part 12: Integration with NuClide Arsenal
+## Part 12: Integration with  Arsenal
 
 ### Data Flow
 

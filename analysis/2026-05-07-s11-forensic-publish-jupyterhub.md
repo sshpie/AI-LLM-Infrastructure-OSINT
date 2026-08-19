@@ -3,7 +3,7 @@
 **Date:** 2026-05-07
 **Session:** 11
 **Classification:** Internal / Research Use Only
-**Toolchain:** JAXEN, aimap, aimap-profile, nuclide-contact, VisorLog, Gmail API, subfinder, VirusTotal API, MalwareBazaar API
+**Toolchain:** JAXEN, aimap, aimap-profile, -contact, VisorLog, Gmail API, subfinder, VirusTotal API, MalwareBazaar API
 **Repos updated:** AI-LLM-Infrastructure-OSINT (commits 8ca03d2–3f9d6f7)
 
 ---
@@ -17,7 +17,7 @@ Three objectives: (1) publish forensic evidence from the Ulm/Tencent active-comp
 ### Scope and Constraints
 
 - **Target domains/IPs:** JupyterHub instances on academic TLDs (.edu, .ac.uk, .edu.au, others); Eonix C2 host `173.232.146.173` / `zknotes.com`; Uirusu/2.0 and Hilix binary artifacts from session 10
-- **Allowed techniques:** passive Shodan, banner grab, safe HTTP GET, VirusTotal/MalwareBazaar public submission (binary hashes only), JAXEN harvest, aimap fingerprint, aimap-profile classification, nuclide-contact WHOIS resolution
+- **Allowed techniques:** passive Shodan, banner grab, safe HTTP GET, VirusTotal/MalwareBazaar public submission (binary hashes only), JAXEN harvest, aimap fingerprint, aimap-profile classification, -contact WHOIS resolution
 - **Ethical limitations:**
   - No data exfiltration — metadata and schema enumeration only
   - No destructive API calls
@@ -39,14 +39,14 @@ Orchestrator pattern with two parallel tracks: forensic publishing and JupyterHu
 | Tool | Role | Config notes |
 |---|---|---|
 | VirusTotal API | Forensic submission: Hilix.x86_64 + Uirusu/2.0 | First public submission of both samples. SHA256 manifest built |
-| MalwareBazaar API | Forensic submission | Reporter: `nuclide`. `dropped_by_sha256` relationship graph established |
+| MalwareBazaar API | Forensic submission | Reporter: ``. `dropped_by_sha256` relationship graph established |
 | OTS (OpenTimestamps) | SHA256 manifest timestamp | Establishes provenance record for both binaries |
 | JAXEN | Stage-0: JupyterHub academic TLD harvest | `jaxen import --no-lookup` on Shodan export |
 | aimap | Stage-1 fingerprint on JupyterHub candidates | JupyterHub fingerprint |
 | aimap-profile | Target classification + ethics flags | Academic institution classification |
-| nuclide-contact | Disclosure recipient resolution | WHOIS SOA-RNAME + institutional security contact lookup |
-| VisorLog | Ledger ingest | nuclide.db |
-| Gmail API | Bulk disclosure send pipeline | `disclosures/send_drafts_api.py`, nicholas@nuclide-research.com |
+| -contact | Disclosure recipient resolution | WHOIS SOA-RNAME + institutional security contact lookup |
+| VisorLog | Ledger ingest | .db |
+| Gmail API | Bulk disclosure send pipeline | `disclosures/send_drafts_api.py`,  |
 
 *VisorAgent: ethical-stop. VisorHollow: Windows-only binary. VisorGraph not run this session (deferred to session 12).*
 
@@ -86,7 +86,7 @@ No data exfiltrated from JupyterHub instances. Forensic binary submissions used 
 |---|---|---|
 | T+0:00 | Extract SHA256 for Hilix.x86_64 and Uirusu/2.0 from session-10 evidence | SHA256 manifest built at `evidence/hilix-2026-05-07/` |
 | T+0:15 | Submit to VirusTotal | First public submission confirmed. Detection rate not recorded |
-| T+0:20 | Submit to MalwareBazaar | Reporter: `nuclide`. `dropped_by_sha256` graph links Hilix parent to Uirusu/2.0 |
+| T+0:20 | Submit to MalwareBazaar | Reporter: ``. `dropped_by_sha256` graph links Hilix parent to Uirusu/2.0 |
 | T+0:30 | OTS timestamp on SHA256 manifest | Provenance timestamp anchored |
 | T+0:40 | Uirusu/2.0 attribution analysis | Multi-actor convergence: Uirusu/2.0 IoT botnet + Hilix miner targeting same Jupyter:8888 class. Eonix C2 at `173.232.146.173` / `zknotes.com` identified |
 | T+0:55 | Eonix C2 disclosure drafted | DMCA-style takedown request to Eonix for `173.232.146.173` |
@@ -98,7 +98,7 @@ No data exfiltrated from JupyterHub instances. Forensic binary submissions used 
 | T+2:45 | Two Ollama Claude-Desktop disclosures drafted | Threat model expansion: model-routing pivot via Claude Desktop bridge |
 | T+3:00 | Vendor-template adjacent-vendor dork catalog written | Secondary deployments: Triton, TorchServe, BentoML, Ray co-located with fingerprinted vendor templates |
 | T+3:20 | JupyterHub academic-TLD sweep | JAXEN harvest, aimap fingerprint, aimap-profile classification. 6 institutional disclosures drafted |
-| T+4:00 | Gmail API pipeline executed | 83 disclosures sent from nicholas@nuclide-research.com. `_sent.json` updated |
+| T+4:00 | Gmail API pipeline executed | 83 disclosures sent from . `_sent.json` updated |
 
 ---
 
@@ -112,7 +112,7 @@ No data exfiltrated from JupyterHub instances. Forensic binary submissions used 
 |---|---|
 | **Name/ID** | Hilix.x86_64 (miner payload), Uirusu/2.0 (IoT botnet) |
 | **Type** | Malware artifacts from session-10 active compromise |
-| **Evidence** | SHA256 manifest with OTS timestamp. VirusTotal first-submission confirmed. MalwareBazaar reporter: nuclide. Dropped-by relationship established |
+| **Evidence** | SHA256 manifest with OTS timestamp. VirusTotal first-submission confirmed. MalwareBazaar reporter: . Dropped-by relationship established |
 | **Observed exposure** | Multi-actor targeting same Jupyter:8888 exposure class. Two independent campaigns, one victim host (Ulm CL1) |
 | **Severity** | OBSERVED — publication artifact, not a new exposure |
 
@@ -278,4 +278,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 11 · 2026-05-07*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 11 · 2026-05-07*

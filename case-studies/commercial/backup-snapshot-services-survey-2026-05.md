@@ -4,7 +4,7 @@ type: survey
 
 # Backup & Snapshot Services on Public AI Infrastructure: Survey
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Cross-survey companion to: [`qdrant-cloud-survey-2026-05.md`](qdrant-cloud-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](qdrant-tier2-cloud-survey-2026-05.md)_
 
 ---
@@ -54,7 +54,7 @@ The snapshot file format is a Qdrant-specific binary archive containing the full
 
 **Key auth-posture observation:** the `service.api_key` setting governs the entire HTTP API uniformly. If api_key is unset (84.9% of tier-2 Qdrant), the snapshot endpoints are reachable without auth alongside `/collections` and `/points/search`. Operators who manually pre-create snapshots for their own backup workflow are creating bulk-exfil endpoints by accident.
 
-Survey result: **16 of 663 unauth tier-2 Qdrant hosts have pre-created snapshots accessible**. Empty `/snapshots` list (operator hasn't created any) on the other 647, but those operators *can have one created remotely* via `POST /snapshots`, which writes to operator disk and exposes the same vector. NuClide did not POST to create snapshots; that crosses the line from passive reconnaissance into modifying operator state.
+Survey result: **16 of 663 unauth tier-2 Qdrant hosts have pre-created snapshots accessible**. Empty `/snapshots` list (operator hasn't created any) on the other 647, but those operators *can have one created remotely* via `POST /snapshots`, which writes to operator disk and exposes the same vector.  did not POST to create snapshots; that crosses the line from passive reconnaissance into modifying operator state.
 
 ---
 
@@ -202,7 +202,7 @@ The Qdrant snapshot pattern is the most concrete in this survey because Qdrant i
 
 ## Disclosure posture
 
-NuClide has identified 10 of 16 snapshot-exposing operators via TLS cert pivots on port 443 of the same host. Operator identities are redacted in this public document until either (a) the operator has remediated, or (b) a 30-day coordinated-disclosure window has elapsed. Per-operator disclosures are drafted separately and tracked in `~/recon/<operator-slug>-disclosure-2026-05/`.
+ has identified 10 of 16 snapshot-exposing operators via TLS cert pivots on port 443 of the same host. Operator identities are redacted in this public document until either (a) the operator has remediated, or (b) a 30-day coordinated-disclosure window has elapsed. Per-operator disclosures are drafted separately and tracked in `~/recon/<operator-slug>-disclosure-2026-05/`.
 
 Disclosure priorities by content sensitivity:
 
@@ -229,12 +229,12 @@ qdrant-snapshot-probe.py (100-thread)
   → 269 GB total exposed
 ```
 
-Read-only metadata enumeration only. NuClide did not:
+Read-only metadata enumeration only.  did not:
 - Download any snapshot file
 - POST to create new snapshots
 - Submit `/points/search` queries against indexed collections
 
-The snapshot **listings** are what's reported. The actual snapshot **file contents** were not retrieved by NuClide.
+The snapshot **listings** are what's reported. The actual snapshot **file contents** were not retrieved by .
 
 ---
 

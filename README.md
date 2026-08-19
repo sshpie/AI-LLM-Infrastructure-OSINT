@@ -3,8 +3,8 @@
 <h4 align="center">Population-scale survey program of exposed AI and ML infrastructure on the public internet.</h4>
 
 <p align="center">
-  <a href="https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license"></a>
-  <a href="https://nuclide-research.com"><img src="https://img.shields.io/badge/by-NuClide-blue?style=flat-square" alt="NuClide"></a>
+  <a href="https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="license"></a>
+  <a href="https://"><img src="https://img.shields.io/badge/by--blue?style=flat-square" alt=""></a>
 </p>
 
 <p align="center">
@@ -14,15 +14,15 @@
   <a href="#numbered-category-catalogue">Categories</a> •
   <a href="#methodology">Methodology</a> •
   <a href="#articles">Articles</a> •
-  <a href="#nuclide-toolchain">Toolchain</a> •
+  <a href="#-toolchain">Toolchain</a> •
   <a href="#restraint-discipline">Restraint</a>
 </p>
 
 ---
 
-This repository is the NuClide Research catalogue of how the modern AI and ML stack exposes itself to the public internet by default. A living archive of Shodan queries, population-scale surveys, per-instance case studies, methodology insights, IR hand-off packages, and disclosure outcomes.
+This repository is the  catalogue of how the modern AI and ML stack exposes itself to the public internet by default. A living archive of Shodan queries, population-scale surveys, per-instance case studies, methodology insights, IR hand-off packages, and disclosure outcomes.
 
-It is the primary published record of the NuClide survey program. The work is done. The surveys are published. The methodology is open. The toolchain that produced this work lives in its own repos and is linked under [NuClide Toolchain](#nuclide-toolchain).
+It is the primary published record of the  survey program. The work is done. The surveys are published. The methodology is open. The toolchain that produced this work lives in its own repos and is linked under [ Toolchain](#-toolchain).
 
 ---
 
@@ -49,7 +49,7 @@ The program runs continuously and ships fresh measurements monthly. The most rec
 
 ## The thesis under test
 
-NuClide is a research program, not a one-shot scan. The work has a falsifiable thesis, and every survey either strengthens or breaks it.
+ is a research program, not a one-shot scan. The work has a falsifiable thesis, and every survey either strengthens or breaks it.
 
 **Insight #76, auth-permissive cohort default.** A new generation of OSS AI/ML infrastructure platforms (vector databases, RAG knowledge-base engines, agent orchestrators, observability platforms, model gateways, LLM workflow builders) ships with auth-permissive defaults. Registration is open, the data layer requires no authentication, and configuration disclosure on public endpoints is the norm. Operators deploy these into production, including at universities, hospitals, national research institutes, and Fortune 500 enterprises, without re-configuring the defaults.
 
@@ -117,7 +117,7 @@ The full program brief is at `research-program/PROGRAM.md`. The synthesis paper-
 │   └── papers/                     Drafts of synthesis papers
 ├── reference/                      Port catalog, terminology, category taxonomy, OLAP architecture notes
 ├── tools/                          Attack-surface research docs, PoC scripts, survey utilities
-├── assurance/                      Blue-team OPA/Rego policies + NuClide task bindings (v1, v2, v3)
+├── assurance/                      Blue-team OPA/Rego policies +  task bindings (v1, v2, v3)
 ├── categories/                     Per-category deep briefs (currently: Cat-33 AI Email Guardrails)
 ├── data/                           Scan outputs (sensitive fields gitignored; .db files not tracked)
 ├── docs/                           Superpowers skill files
@@ -277,13 +277,13 @@ A meta-finding about this portfolio is captured as Insight #86: the disclosure p
 | `bypass-prompts.json` | System-prompt bypass corpus |
 | `epoch_lookup.py` | Epoch AI timestamp lookup |
 
-These are point-in-time research artifacts, not maintained attack tooling. The continuously-developed tools live in the NuClide toolchain repos.
+These are point-in-time research artifacts, not maintained attack tooling. The continuously-developed tools live in the  toolchain repos.
 
 ---
 
-## NuClide toolchain
+##  toolchain
 
-The surveys run end-to-end through the NuClide tool stack. Each stage is its own repo under `github.com/nuclide-research`.
+The surveys run end-to-end through the  tool stack. Each stage is its own repo under `github.com/sshpie`.
 
 | Stage | Tool | What it does |
 |---|---|---|
@@ -337,7 +337,7 @@ The 463 likely-ShadowRay attacker IPs and the 2,423-hour-of-output Changsha deep
 ## Quick start
 
 ```bash
-git clone https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT
+git clone https://github.com/sshpie/AI-LLM-Infrastructure-OSINT
 cd AI-LLM-Infrastructure-OSINT
 
 # Browse Shodan queries by category
@@ -383,6 +383,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). The bar:
 
 ## License
 
-MIT. Part of the NuClide toolchain. Contact: [nuclide-research.com](https://nuclide-research.com), `nicholas@nuclide-research.com`.
+MIT. Part of the  toolchain. Contact: [](https://), ``.
 
 Prior published research includes CISA-coordinated disclosures CVE-2025-4364 and ICSA-25-140-11.

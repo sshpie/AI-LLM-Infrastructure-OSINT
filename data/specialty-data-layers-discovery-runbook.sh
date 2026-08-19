@@ -150,9 +150,9 @@ echo "  Cleaned IP lists: $RECON_DIR/ips-{http,cql}-clean.txt"
 echo "  aimap report:     $RECON_DIR/aimap-report.json"
 echo "  CQL banners:      $RECON_DIR/cql-banners.json"
 echo
-echo "Next: ingest into VisorLog -> nuclide.db"
+echo "Next: ingest into VisorLog -> .db"
 echo "  jq -c '.services[]' $RECON_DIR/aimap-report.json | \\"
-echo "    visorlog --db ~/AI-LLM-Infrastructure-OSINT/data/nuclide.db ingest --format ndjson"
+echo "    visorlog --db ~/AI-LLM-Infrastructure-OSINT/data/.db ingest --format ndjson"
 echo
 echo "Then: re-score via VisorScuba"
-echo "  visorscuba --db ~/AI-LLM-Infrastructure-OSINT/data/nuclide.db assess"
+echo "  visorscuba --db ~/AI-LLM-Infrastructure-OSINT/data/.db assess"

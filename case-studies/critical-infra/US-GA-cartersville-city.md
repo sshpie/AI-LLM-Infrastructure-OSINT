@@ -1,6 +1,6 @@
 # City of Cartersville, GA: Local Government Ollama + Cloud Proxy Credential Leak
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

@@ -1,5 +1,5 @@
 findings-breakdown.txt — Cat-DF: Dify Population Survey
-NuClide Research | 2026-06-06 | Analyst: Nicholas Kloster
+ | 2026-06-06 | Analyst: 
 
 ════════════════════════════════════════════════════════════════════
 SURVEY SCOPE

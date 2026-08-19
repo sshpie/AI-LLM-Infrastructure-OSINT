@@ -4,7 +4,7 @@ type: osint-brief
 
 # Argo Workflows — Pre-Assessment OSINT Brief (2026-05-27)
 
-_NuClide Research · 2026-05-27_
+_ · 2026-05-27_
 _Status: OSINT complete. Survey chain: pending._
 _6-agent parallel research. Sources: primary docs, source code, CVE databases, published prior research._
 
@@ -143,7 +143,7 @@ This is the same probe E.V.A Security used to find ~3,000 unauth instances in No
 | Source | Count | Date | Method |
 |---|---|---|---|
 | E.V.A Security | ~3,000 unauth | Nov 2024 | Internet-wide scan via `/api/v1/userinfo` |
-| NuClide Argo CD parallel | 4,577 confirmed from ~10,900 Shodan candidates | 2026-05-16 | Full chain (Argo CD, not Workflows) |
+|  Argo CD parallel | 4,577 confirmed from ~10,900 Shodan candidates | 2026-05-16 | Full chain (Argo CD, not Workflows) |
 | Estimated Argo Workflows total (auth+unauth) | 5,000–15,000 | — | Based on Argo CD order of magnitude, Workflows more commonly behind ingress |
 
 E.V.A scan is ~6 months old. Population has likely grown.
@@ -232,7 +232,7 @@ The `status.nodes` section of a completed workflow contains resolved output valu
 | Component | Port(s) | Auth posture |
 |---|---|---|
 | Argo Workflows (argo-server) | **2746** (primary) | Tier A* — see above |
-| Argo CD | 8080 (HTTP), 443 (HTTPS) | Tier C — auth-on-default, 99.93% hold posture (NuClide survey 2026-05-16) |
+| Argo CD | 8080 (HTTP), 443 (HTTPS) | Tier C — auth-on-default, 99.93% hold posture ( survey 2026-05-16) |
 | Argo Events (eventsource webhook) | 12000 | Per-eventsource; no fixed port |
 | Argo Rollouts dashboard | 3100 | HTTP; local kubectl plugin or NodePort |
 
@@ -240,11 +240,11 @@ The `status.nodes` section of a completed workflow contains resolved output valu
 
 | Port | Service | Priority | Notes |
 |---|---|---|---|
-| 2379 | etcd | **HIGHEST** | Open etcd → `/registry/secrets/` → SA tokens for every namespace → cluster takeover. One confirmed host found with `/registry/` K8s control-plane data root accessible (NuClide etcd survey). Argo unauth + etcd open = cluster-takeover class, not data-exposure class. |
+| 2379 | etcd | **HIGHEST** | Open etcd → `/registry/secrets/` → SA tokens for every namespace → cluster takeover. One confirmed host found with `/registry/` K8s control-plane data root accessible ( etcd survey). Argo unauth + etcd open = cluster-takeover class, not data-exposure class. |
 | 9090 | Prometheus | HIGH | `/api/v1/status/config` leaks full scrape_configs: K8s API URL, etcd endpoints, every internal service name. |
 | 9100 | node_exporter | HIGH | `/metrics` — OS, HW, BIOS, kernel. Nuclei: `node-exporter-metrics.yaml`. Typically world-reachable. |
 | 6379 | Redis | HIGH | Argo uses Redis for DAG state offload. No-auth default common in Helm installs. |
-| 9000/9001 | MinIO | HIGH | Artifact repository. Prior NuClide survey baseline. |
+| 9000/9001 | MinIO | HIGH | Artifact repository. Prior  survey baseline. |
 | 10250 | kubelet | HIGH | Rare; unauth kubelet = cluster-wide RCE. |
 | 8080 | Argo CD | MED | Co-deployed; same cluster, same operator. Auth-on-default but OIDC tenant IDs disclosed via `/api/v1/settings`. |
 | 3000 | Grafana | MED | kube-prometheus-stack companion. Default `admin:admin` until v9.x. |

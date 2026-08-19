@@ -146,7 +146,7 @@ observed from outside.
 2   VisorGraph    -ip ... -sandbox-check ; TRAEFIK DEFAULT CERT, no operator-domain pivot
 3   aimap-profile --mode fast ; unclassified (Shodan-degraded) -> manual sector=university
 4   JS-bundle     KubeSphere window.globals -> version + default encryptKey + preset users
-5   VisorLog      add x4 -> nuclide.db #36158-36161
+5   VisorLog      add x4 -> .db #36158-36161
 6   VisorScuba    assess --org NCKU ; 0/0 vacuous pass (no K8s-control-plane control)
 7   BARE          KubeSphere -> multi/kubernetes/exec 0.532 ; Django/MikroTik below coverage
 +   VisorBishop   4 URLs + IP-shadow ; no AI platform confirmed, no new shadow ports
@@ -154,4 +154,4 @@ observed from outside.
 +   nu-recon      simulated output, discarded (no key)
 ```
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude) · 2026-05-31*
+*Prepared by  ( + Claude) · 2026-05-31*

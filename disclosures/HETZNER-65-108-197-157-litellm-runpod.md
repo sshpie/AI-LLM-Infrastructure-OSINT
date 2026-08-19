@@ -1,6 +1,6 @@
 ---
 to: abuse@hetzner.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 65.108.197.157
 institution: Hetzner DE, unauthenticated LiteLLM proxy fronting internal Ollama + 4 RunPod GPU pods; admin endpoints + virtual key leaked
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@hetzner.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated LiteLLM Proxy on Hetzner customer host (65.108.197.157), 8 model aliases, internal Ollama hostname leaked, RunPod-backed GPU compute fully burnable, virtual-key disclosed
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -52,7 +52,7 @@ A LiteLLM virtual key was disclosed via `/user/info`:
 
 This key was observed in the public response, not used for authentication. The key should be rotated regardless.
 
-The host has been in NuClide's ledger since the original Ollama Cloud survey (2026-05-02) as a billing-theft target; the LiteLLM proxy was surfaced today via cross-survey-correlation probing of port 4000 across the existing ledger IPs. Full case study at:
+The host has been in 's ledger since the original Ollama Cloud survey (2026-05-02) as a billing-theft target; the LiteLLM proxy was surfaced today via cross-survey-correlation probing of port 4000 across the existing ledger IPs. Full case study at:
 
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/hetzner-65-108-litellm-runpod-2026-05-06.md
 
@@ -91,7 +91,7 @@ $ curl -s -X POST -H 'Content-Type: application/json' \
              "message":{"content":"Hello","role":"assistant"}}]}
 ```
 
-The single completion above is the only inference call NuClide made. No further requests against the GPU-backed models were issued. The disclosure-PoC consumed the operator's local Ollama CPU for ~35 prompt + 1 completion token.
+The single completion above is the only inference call  made. No further requests against the GPU-backed models were issued. The disclosure-PoC consumed the operator's local Ollama CPU for ~35 prompt + 1 completion token.
 
 ## Why this matters
 
@@ -139,12 +139,12 @@ POST /key/regenerate -H 'Authorization: Bearer <master-key>'
 LiteLLM auth documentation: https://docs.litellm.ai/docs/proxy/virtual_keys
 LiteLLM master-key setup: https://docs.litellm.ai/docs/proxy/quick_start#step-2-make-a-test-request
 
-NuClide LLM Gateways cross-cloud survey context (1,899 confirmed unauth gateways across DO/Hetzner/Vultr/Scaleway/OVH/Linode):
+ LLM Gateways cross-cloud survey context (1,899 confirmed unauth gateways across DO/Hetzner/Vultr/Scaleway/OVH/Linode):
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud-survey-2026-05.md
 
 Happy to coordinate verification or extract additional traffic-pattern detail if Hetzner abuse needs it for the customer notification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

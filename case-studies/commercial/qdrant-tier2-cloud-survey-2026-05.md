@@ -4,7 +4,7 @@ type: survey
 
 # Qdrant on Tier-2 Cloud: Auth Posture Survey (Scope Expansion)
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Companion to: [`qdrant-cloud-survey-2026-05.md`](qdrant-cloud-survey-2026-05.md) (DO/Hetzner/Vultr baseline)_
 _Cross-cloud sibling to: [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md)_
 
@@ -31,7 +31,7 @@ The thesis still holds: Qdrant ships auth-off-default and 84.9% of operators nev
 
 The notable findings:
 
-1. **`facts_v1` on Scaleway 51.158.59.156, 79.8 MILLION points.** A 24-shard / 2-replica production Qdrant cluster running an OpenAlex-Works-keyed paper-claim/question RAG (~20M scientific papers covered). Largest unauth Qdrant payload observed in any NuClide survey to date. No payload PII, but the operator is exposing a serious commercial/academic IP asset.
+1. **`facts_v1` on Scaleway 51.158.59.156, 79.8 MILLION points.** A 24-shard / 2-replica production Qdrant cluster running an OpenAlex-Works-keyed paper-claim/question RAG (~20M scientific papers covered). Largest unauth Qdrant payload observed in any  survey to date. No payload PII, but the operator is exposing a serious commercial/academic IP asset.
 
 2. **84.9% of tier-2 Qdrant instances are still unauth.** Even with 118 operators configuring API keys, the population-scale failure mode reproduces. Scaleway 86.3% unauth, OVH 84.9% unauth, Linode 84.0% unauth, the rate is consistent across operator cultures.
 
@@ -54,7 +54,7 @@ qdrant-probe.py (200-thread fingerprint)
   → 781 confirmed Qdrant instances (663 unauth + 118 authed)
 ```
 
-Read-only metadata enumeration only. NuClide:
+Read-only metadata enumeration only. :
 - Did NOT submit `/points/upsert` writes
 - Did NOT submit `/points/search` semantic queries against the operator's index
 - DID submit `/points/scroll?limit=1-10` against 3 specific hosts to characterize payload schema for case-study writeup. Scrolling 1-10 points to read payload **keys** (e.g., "this collection has fields `text`, `country`, `year`") is the minimum sample needed to identify the data class without exfiltrating bodies.

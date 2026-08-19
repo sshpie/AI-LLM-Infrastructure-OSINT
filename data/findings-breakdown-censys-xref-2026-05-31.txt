@@ -13,7 +13,7 @@ cencli IS authenticated. PAT stored in cencli keyring/db, NOT in the printed con
   view/censeye/aggregate: per-asset, 1 credit each, services + decoders returned on Free.
   search (population):     403 on Free (needs org-id). Population sweeps stay web-UI/Playwright.
   Spend this session:      17 credits (24 -> 7).
-SESSION.md note "no PAT configured" and METHODOLOGY line "token nuclide-cencli configured"
+SESSION.md note "no PAT configured" and METHODOLOGY line "token -cencli configured"
 were both partly wrong/stale. Corrected in memory.
 
 VIEW LOG (the query log; host -> result, 1 credit each)

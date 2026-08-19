@@ -8,7 +8,7 @@ tags: [supertokens, authentik, authelia, keycloak, casdoor, zitadel, kong, tyk, 
 
 # Auth and API Gateway Platforms: Population Survey
 
-_NuClide Research · 2026-05-28 · Population sweep of 13 auth/gateway platforms deployed at internet-facing scope. These platforms sit in front of AI stacks. An exposed admin interface bypasses the entire auth layer protecting downstream LLM, vector DB, and agent infrastructure._
+_ · 2026-05-28 · Population sweep of 13 auth/gateway platforms deployed at internet-facing scope. These platforms sit in front of AI stacks. An exposed admin interface bypasses the entire auth layer protecting downstream LLM, vector DB, and agent infrastructure._
 
 ## Summary
 

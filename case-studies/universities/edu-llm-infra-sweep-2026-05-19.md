@@ -11,7 +11,7 @@ session: 24
 
 # .edu LLM Infrastructure Dork-Map — Stage 0 Sweep
 
-_NuClide Research, 2026-05-19. Sub-survey of Session 24._
+_, 2026-05-19. Sub-survey of Session 24._
 
 ## TL;DR
 

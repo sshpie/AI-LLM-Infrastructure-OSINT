@@ -1,6 +1,6 @@
 ---
 to: security@vt.edu
-cc: abuse@vt.edu, abuse@nuclide-research.com
+cc: abuse@vt.edu, abuse@
 severity: HIGH
 ip: 128.173.51.43
 institution: "Virginia Polytechnic Institute and State University, JupyterHub on `waingram418808.lib.vt.edu` served over HTTP-only with credentials in plaintext on every login; running version 4.0.2 (3 unpatched CVEs)"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** security@vt.edu
-**Cc:** abuse@vt.edu, abuse@nuclide-research.com
+**Cc:** abuse@vt.edu, abuse@
 **Subject:** JupyterHub on waingram418808.lib.vt.edu (128.173.51.43). HTTP-only login form transmits credentials in plaintext + 3 unpatched CVEs in 4.0.2
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
 
 ---
 
@@ -84,7 +84,7 @@ Beyond credentials, the entire post-auth session, notebook content, model output
 2. **Upgrade to JupyterHub 5.4.4+.** This is the most recent patched release as of 2026-05-07 and addresses all three of the CVEs listed.
 3. **Optional: add HSTS** via the reverse proxy once HTTPS is in place, to prevent downgrade attacks.
 
-NuClide will not re-probe this host without coordination. We do not run automated re-probes; this is a one-time disclosure.
+ will not re-probe this host without coordination. We do not run automated re-probes; this is a one-time disclosure.
 
 ## IOCs
 
@@ -107,6 +107,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/methodology/insight-04-whois-driven-contac
 Happy to coordinate on disclosure timeline or hand off the chain output for VT IT's records.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

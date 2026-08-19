@@ -22,7 +22,7 @@ This makes FL the cleanest test yet of the auth-on-default thesis. Where prior s
 - Xu et al. USENIX Security 2024 - *ACE: A Model Poisoning Attack on Contribution Estimation*. Targets the contribution-scoring layer specifically.
 - Gu et al. USENIX Security 2025 - *DP-BREM: Differentially-Private and Byzantine-Robust*. The recent state of defenses, implicitly enumerating the attack surface they have to cover.
 
-**Verification stance (NuClide).** **Inner-A only.** We confirm by reading the coordinator's source/config that the auth mode is `insecure`/`no-tls`/`POC`/`AUTH_ENABLED=False` and that the gRPC/HTTP submit-update endpoint is reachable. We do not submit gradients. We do not join a round. "Coordinator accepts unauthenticated client connections" is the finding, framed as *integrity surface open, integrity not exercised* on the verification-rung grid (Insight #68).
+**Verification stance ().** **Inner-A only.** We confirm by reading the coordinator's source/config that the auth mode is `insecure`/`no-tls`/`POC`/`AUTH_ENABLED=False` and that the gRPC/HTTP submit-update endpoint is reachable. We do not submit gradients. We do not join a round. "Coordinator accepts unauthenticated client connections" is the finding, framed as *integrity surface open, integrity not exercised* on the verification-rung grid (Insight #68).
 
 ### T2 - Gradient inversion / training-data reconstruction (CRITICAL)
 
@@ -46,7 +46,7 @@ This makes FL the cleanest test yet of the auth-on-default thesis. Where prior s
 - Du et al. USENIX Security 2025 - *SoK: On Gradient Leakage*, §5 (metadata as auxiliary signal).
 - The Cat-47 Mem0/Zep/Letta survey (2026-06-08) established the operational principle: 27 user-session UUIDs were the finding; the conversation contents were not read. Same principle here.
 
-**Verification stance.** **Standard NuClide enumerate-only.** Pull the round-state JSON, the participant list, the job/task names. Class the operator from those. Honor the restraint ethic.
+**Verification stance.** **Standard  enumerate-only.** Pull the round-state JSON, the participant list, the job/task names. Class the operator from those. Honor the restraint ethic.
 
 ### T4 - Cross-platform attribution via cert pivot (METHODOLOGY)
 
@@ -140,7 +140,7 @@ These are predictions, not findings. Stage 2 verification decides.
 
 ## See also
 
-- `~/.claude/nuclide-internal/METHODOLOGY.md` §3 (verification rungs, Insight #68 grid)
+- `~/.claude/-internal/METHODOLOGY.md` §3 (verification rungs, Insight #68 grid)
 - `~/AI-LLM-Infrastructure-OSINT/case-studies/commercial/SYNTHESIS-2026-05.md`
 - Cat-47 Agent Memory case study (2026-06-08) - the metadata-as-finding pattern this survey inherits
 - Cat-46c VictoriaMetrics / Cat-46d Prometheus surveys - the framework-default-propagation pattern (Insight #89) is the analogue for FL coordinator defaults

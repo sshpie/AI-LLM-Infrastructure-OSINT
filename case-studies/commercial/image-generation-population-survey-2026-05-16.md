@@ -4,7 +4,7 @@ type: survey
 
 # Image-Generation Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (first survey in the 4-category batch)_
+_ · 2026-05-16 (first survey in the 4-category batch)_
 _Closes: category 08 (image-generation). The first population-survey on this modality_
 
 ---
@@ -213,7 +213,7 @@ Detection of Manager presence is a v1.9.6 fingerprint gap (the probe used `GET /
 4. GPU-distribution + version-distribution aggregation  →  549 hosts (top: RTX 3050 Laptop, RTX 4090, L40S, RTX 5090)
 5. multi-instance operator detection (adjacent ports)   →  10 L40S instances on 103.192.253.237/.238 same operator
 6. country attribution via Shodan location metadata     →  CN 39% / RU 25% / US 11% — distinct from LLM-tier demographics
-7. (queued) visorlog ingest                             →  548 events → nuclide.db source='imagegen-survey-2026-05-16'
+7. (queued) visorlog ingest                             →  548 events → .db source='imagegen-survey-2026-05-16'
 8. (queued) visorscuba scoring                          →  per-host AI.C1 critical (unauth service)
 ```
 

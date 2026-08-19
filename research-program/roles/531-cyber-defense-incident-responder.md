@@ -95,4 +95,4 @@
 
 ## Research-program relevance
 
-This is the role NuClide disclosures land on at the receiving organization. When an exposed Weaviate, Langfuse, or MLflow with PII is reported, the 531 is who triages, collects log artifacts, performs damage assessment, and decides whether to engage law enforcement. The KSA set (cloud incident response limits K0230, malware/attack stages, security event correlation) maps directly to the defender-side workflow our case studies trigger. Useful framing for disclosure narratives — write to make this person's triage faster.
+This is the role  disclosures land on at the receiving organization. When an exposed Weaviate, Langfuse, or MLflow with PII is reported, the 531 is who triages, collects log artifacts, performs damage assessment, and decides whether to engage law enforcement. The KSA set (cloud incident response limits K0230, malware/attack stages, security event correlation) maps directly to the defender-side workflow our case studies trigger. Useful framing for disclosure narratives — write to make this person's triage faster.

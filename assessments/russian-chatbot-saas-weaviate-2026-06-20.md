@@ -201,4 +201,4 @@ Wipe all classes across both clusters = all customers lose their chatbot knowled
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

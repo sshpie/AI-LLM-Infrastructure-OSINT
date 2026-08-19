@@ -1,6 +1,6 @@
 # University of Žilina: Student Laptop with 3 Free-Tier Cloud Proxies (200 OK)
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

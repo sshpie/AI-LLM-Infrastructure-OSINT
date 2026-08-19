@@ -1,6 +1,6 @@
 ---
 to: info@verotx.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 34.60.153.0
 institution: "VeroTX, Inc., AI-powered enterprise procurement platform. Kong Enterprise Admin API publicly exposed without authentication on 34.60.153.0:8001, FastAPI ai-agent-server backend bypasses gateway auth on :8050, MCP server tool surface enumerable on :8051, PostgreSQL on :5432, ~11-month exposure window per Kong /license/report request counters"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** info@verotx.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** VeroTX (34.60.153.0 / auth.verotx.com), CRITICAL: Kong Admin API publicly exposed + AI-agent backend bypass + MCP server exposure, recommend immediate action
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: **CRITICAL**. Recommend immediate-action remediation timeline rather than the standard 90-day window. See below.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: **CRITICAL**. Recommend immediate-action remediation timeline rather than the standard 90-day window. See below.
 
 I'm reaching `info@verotx.com` because I could not find a published `security@verotx.com`, `security.txt`, or VDP. Please forward to your security/engineering lead immediately. Happy to coordinate with whoever owns the gateway and platform infrastructure.
 
@@ -38,13 +38,13 @@ Three separate CRITICAL exposures on `34.60.153.0` (the GCP host serving `auth.v
 
 Plus two HIGH and one MEDIUM additional issues (postgres on :5432, Keycloak admin console on :3000, GCP project number leakage via internal Cloud Run URL).
 
-A published Metasploit module, `exploits/multi/http/kong_gateway_admin_api_rce`, directly aligns with finding 1. NuClide BARE semantic-corpus search ranks it as the top match (score 0.673).
+A published Metasploit module, `exploits/multi/http/kong_gateway_admin_api_rce`, directly aligns with finding 1.  BARE semantic-corpus search ranks it as the top match (score 0.673).
 
 ---
 
 ## Why "immediate action" rather than 90-day
 
-Kong's own `/license/report` endpoint reports request counters per month going back to 2025-06. The gateway has been receiving traffic since at least mid-2025, with a major customer ramp in 2026-03 (254,597 requests that month vs ~23K the prior month). The exposure window covering real customer-data traffic is approximately the last two months; the exposure window covering this gateway being internet-reachable at all is approximately eleven months. The longer this stays open, the higher the likelihood that a threat actor with less benign goals than NuClide has already pulled the same data we did.
+Kong's own `/license/report` endpoint reports request counters per month going back to 2025-06. The gateway has been receiving traffic since at least mid-2025, with a major customer ramp in 2026-03 (254,597 requests that month vs ~23K the prior month). The exposure window covering real customer-data traffic is approximately the last two months; the exposure window covering this gateway being internet-reachable at all is approximately eleven months. The longer this stays open, the higher the likelihood that a threat actor with less benign goals than  has already pulled the same data we did.
 
 Customer-data-handling B2B platforms (procurement / vendor / contract data) carry distinct contractual obligations to customers around exposure, so I expect your team will want to triage faster than the standard window.
 
@@ -181,10 +181,10 @@ The bundle is held privately pending your remediation; we are not publishing it.
 
 ---
 
-P.S.. I noticed Rick Bradley wears one of Jerry Garcia's silk neckties (the Grateful Dead-licensed line). Good taste. If your team prefers an out-of-band channel for the evidence handoff, that's the visual recognition cue we can use; otherwise plain email at `nicholas@nuclide-research.com` is fine.
+P.S.. I noticed Rick Bradley wears one of Jerry Garcia's silk neckties (the Grateful Dead-licensed line). Good taste. If your team prefers an out-of-band channel for the evidence handoff, that's the visual recognition cue we can use; otherwise plain email at `` is fine.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+Nicholas Michael Kloster / 
+
+https://
 AI-LLM-Infrastructure-OSINT

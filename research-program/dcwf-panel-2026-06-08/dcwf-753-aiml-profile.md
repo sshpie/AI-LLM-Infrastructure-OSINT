@@ -1,8 +1,8 @@
 # AI/ML Workload Profile: VictoriaMetrics Survey 2026-06-08
 
-_DCWF AI Work Role 753 audit · NuClide Research panel_
+_DCWF AI Work Role 753 audit ·  panel_
 
-NuClide Research surveyed 1,176 internet-exposed VictoriaMetrics hosts and recovered unauthenticated `/api/v1/targets` bodies from 960 of them (the vmagent population). Those bodies leak per-target scrape configuration. This profile filters that population for AI/ML workloads vs. general infrastructure, written from a DCWF AI Work Role 753 (DoD AI/ML Specialist) lens.
+ surveyed 1,176 internet-exposed VictoriaMetrics hosts and recovered unauthenticated `/api/v1/targets` bodies from 960 of them (the vmagent population). Those bodies leak per-target scrape configuration. This profile filters that population for AI/ML workloads vs. general infrastructure, written from a DCWF AI Work Role 753 (DoD AI/ML Specialist) lens.
 
 ---
 
@@ -72,7 +72,7 @@ A general-infrastructure metric leak is reconnaissance fuel. The delta when the 
 
 The unifying delta: **traditional infra-monitoring leaks compromise the operator's situational awareness; AI-monitoring leaks compromise the operator's automated decisions**. Control loops sitting on top of GPU and model metrics are first-class production logic. Auth-off-default on the metric collector is therefore auth-off-default on the control plane it feeds.
 
-## Why this matters to the NuClide research program
+## Why this matters to the  program
 
 The auth-off-default thesis predicts any newly-popular infrastructure category ships with permissive defaults until disclosure pressure forces a shift. VictoriaMetrics fits the pattern at the substrate layer. The AI-specific subset extends the thesis: **the auth-off-default failure on AI-monitoring infrastructure is downstream-coupled to autonomous control loops in a way ordinary monitoring is not**. A RunPod tenant exposing their DCGM stream is not just exposing GPU temperatures — they are exposing the input side of orchestration logic and (via the un-tested write path) the trigger side. The 57-host RunPod subset is the AI-specific case for treating metric-pipe auth as a Cat-46c-AI category in its own right.
 

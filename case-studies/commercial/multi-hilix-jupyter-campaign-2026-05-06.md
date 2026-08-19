@@ -10,7 +10,7 @@ methodology: shodan-driven + active forensic preservation + intervention
 
 # Hilix-class botnet campaign: Jupyter Notebook port 8888 → multi-victim foothold
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
@@ -37,7 +37,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 | **Privilege escalation** | not needed (labuser had useful sudo) | **AF_ALG kernel exploit ran 2026-05-04, returned `uid=0(root)`** |
 | **Active foothold at probe** | `socat → 172.233.96.208:3053` reverse shell still alive (24h post-injection) + `/tmp/bash` interactive shell | no active kernel; persistent dropped tools awaiting re-execution |
 | **Operational use** | mining setup in progress (Miniforge ARM64) + sudo recon of CL1 capabilities + read Cortical Labs support-VPN config | DDoS-for-hire (`2.js` HTTP/2 attack on `a.intincity.promo`, 10K req × 32 threads) + Hilix scanner for more router victims |
-| **NuClide intervention** | Killed `/tmp/bash` (PID 18370), `bash -i` (PID 18372) via Jupyter kernel; dropped notice file at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` | Evidence preservation only, no live shell to kill |
+| ** intervention** | Killed `/tmp/bash` (PID 18370), `bash -i` (PID 18372) via Jupyter kernel; dropped notice file at `/tmp/-INCIDENT-NOTICE-2026-05-06.txt` | Evidence preservation only, no live shell to kill |
 
 Disclosures sent to: `it-sicherheit@uni-ulm.de` + DFN-CERT (Ulm victim), `abuse@tencent.com` (Tencent victim), `abuse@akamai.com` + `abuse@linode.com` (C2 takedown), `abuse@cogentco.com` (malware-host).
 
@@ -92,16 +92,16 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge
 
 **Smoking-gun observation: this Cortical Labs CL1 device was ALREADY infected by another miner before the Hilix attacker landed.** The `pkill kworker` + `ps aux | grep -E 'xmr|miner'` sequence is the classic "kill rival cryptominer" pattern, `kworker` is a common XMRig process-name spoof. The host has been a botnet recruitment battleground for an unknown duration prior to the Hilix attempt.
 
-**Active processes at NuClide intervention:**
+**Active processes at  intervention:**
 
 ```
 labuser   4899  4797  May05  [socat] <defunct>      ← original reverse-shell zombie
 labuser  18352     1  May06  [kworker/0:2]          ← masqueraded process (suspected miner)
-labuser  18370 18352  May06  /tmp/bash              ← attacker interactive bash (NuClide killed)
-labuser  18372 18370  May06  bash -i                ← interactive subshell (NuClide killed)
+labuser  18370 18352  May06  /tmp/bash              ← attacker interactive bash ( killed)
+labuser  18372 18370  May06  bash -i                ← interactive subshell ( killed)
 ```
 
-The masquerading `[kworker/0:2]` PID 18352 is owned by `labuser` (real kernel workers are root-owned), almost certainly the surviving cryptominer. NuClide's kill targeted the `/tmp/bash` pattern; the kworker masquerade survived. Operator must kill PID 18352 manually.
+The masquerading `[kworker/0:2]` PID 18352 is owned by `labuser` (real kernel workers are root-owned), almost certainly the surviving cryptominer. 's kill targeted the `/tmp/bash` pattern; the kworker masquerade survived. Operator must kill PID 18352 manually.
 
 Load average at probe: `5.19, 5.17, 5.11` on a likely-4-core ARM Xilinx Zynq UltraScale+, sustained CPU consistent with active mining workload.
 
@@ -207,7 +207,7 @@ The Tencent host completed steps 1–7; the Ulm host stuck at step 5 (architectu
 | Disclosure | Recipient | Sent | Notes |
 |---|---|---|---|
 | Ulm victim warning (initial) | `it-sicherheit@uni-ulm.de` + `dfn-cert@dfn-cert.de` | 2026-05-06 | Standard urgent-disclosure |
-| Ulm follow-up (post-forensic) | same | 2026-05-06 | Includes forensic gather, attacker bash history, NuClide kill action, residual PID 18352 to kill |
+| Ulm follow-up (post-forensic) | same | 2026-05-06 | Includes forensic gather, attacker bash history,  kill action, residual PID 18352 to kill |
 | C2 takedown | `abuse@akamai.com` + `abuse@linode.com` | 2026-05-06 | Linode customer 172.233.96.208 |
 | Malware-distro | `abuse@cogentco.com` | 2026-05-06 | Cogent customer 38.87.117.84 / `velonodes.in` |
 | Tencent victim warning | `abuse@tencent.com` | 2026-05-06 | Includes binary SHA256s + corrected operator-vs-attacker classification |

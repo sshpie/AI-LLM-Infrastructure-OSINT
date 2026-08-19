@@ -4,7 +4,7 @@ type: survey
 
 # Ollama on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -46,7 +46,7 @@ ollama-probe.py (200-thread fingerprint)
   → 342 confirmed Ollama instances
 ```
 
-NuClide did not submit any prompt to `/api/generate`, `/api/chat`, or `/api/embeddings`. Inference would have used the operator's compute (and for `:cloud` models, would have spent the operator's Ollama Cloud credits). Model-list enumeration alone is sufficient to characterize the exposure.
+ did not submit any prompt to `/api/generate`, `/api/chat`, or `/api/embeddings`. Inference would have used the operator's compute (and for `:cloud` models, would have spent the operator's Ollama Cloud credits). Model-list enumeration alone is sufficient to characterize the exposure.
 
 ---
 
@@ -193,7 +193,7 @@ Beyond the cloud and uncensored clusters, the long tail includes:
 2. **Class A (`:cloud` quota theft)**, operator-direct contact where IP is identifiable. For unattributable IPs, hosting-provider abuse channel routing.
 3. The general body of 342 unauth Ollamas, informational; Ollama Inc. would need to ship an auth-by-default change upstream for the population to fix at scale (same path Flowise + n8n took).
 
-NuClide is not opening 342 individual disclosure threads.
+ is not opening 342 individual disclosure threads.
 
 ---
 
@@ -208,13 +208,13 @@ The model-list capture is metadata-only.
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
 | Discovery | masscan port 11434 → 882 IPs |
 | Fingerprint | `ollama-probe.py`, `Ollama is running` text match + `/api/tags` for model list |
-| Findings ledger | 174 high-impact instances (cloud-quota + abliterated) ingested into `data/nuclide.db` |
+| Findings ledger | 174 high-impact instances (cloud-quota + abliterated) ingested into `data/.db` |
 | What was NOT done | No inference, no model downloads |
 
 ---

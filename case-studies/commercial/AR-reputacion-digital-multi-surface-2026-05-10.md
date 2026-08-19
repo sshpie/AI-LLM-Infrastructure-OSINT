@@ -10,7 +10,7 @@ methodology: shodan-driven + visorgraph + ct-log subdomain enum + per-port auth-
 
 # reputacion.digital: multi-surface chained exposure · 2026-05-10
 
-NuClide Research · 2026-05-10
+ · 2026-05-10
 
 ## Summary
 

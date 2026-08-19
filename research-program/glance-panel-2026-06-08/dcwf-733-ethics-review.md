@@ -9,7 +9,7 @@
 
 ## 1. Category Dictionary Diversity Audit
 
-The dictionary is overwhelmingly Anglophone, US/UK-coded, and tilted toward Western enterprise vocabulary. This is a population-bias defect: at NuClide's stated population scale (1,000+ host corpora, global), under-coverage outside the Anglosphere produces systematic false negatives that look like clean corpora. The corpora are not clean; the dictionary is blind.
+The dictionary is overwhelmingly Anglophone, US/UK-coded, and tilted toward Western enterprise vocabulary. This is a population-bias defect: at 's stated population scale (1,000+ host corpora, global), under-coverage outside the Anglosphere produces systematic false negatives that look like clean corpora. The corpora are not clean; the dictionary is blind.
 
 **PII (high gap).** Covers English identifier words and US-specific instruments (`ssn`, `passport`). Misses: `documento_identidad` / `dni` / `nie` (ES, LATAM), `cpf` / `rg` (BR), `aadhaar` / `pan_no` (IN), `mykad` (MY), `nric` (SG), `cedula` (CO/VE/EC), `numero_carnet`, `personnummer` (SE/NO), `bsn` (NL), `tckn` (TR), `身份证` / `shenfenzheng` (CN), `nationalRegistrationNumber` (BE).
 
@@ -37,7 +37,7 @@ The dictionary is overwhelmingly Anglophone, US/UK-coded, and tilted toward West
 
 **Use 1 (defender).** An ops team aims `glance` at their own Chroma / VictoriaMetrics export to audit exposure before publishing dashboards. Beneficial; this is the canonical case.
 
-**Use 2 (NuClide research).** Survey ingest characterizes a sealed corpus to make a category-level disclosure routing decision (PHI -> HHS OCR path, finance -> sector regulator) without violating the no-content-read discipline. Beneficial under the methodology's restraint ethic.
+**Use 2 ().** Survey ingest characterizes a sealed corpus to make a category-level disclosure routing decision (PHI -> HHS OCR path, finance -> sector regulator) without violating the no-content-read discipline. Beneficial under the methodology's restraint ethic.
 
 **Use 3 (attacker, the triple-use case).** An adversary who has already exfiltrated data points `glance` at the loot to triage which dump is most valuable. The tool acts as a stolen-data grader: a 50TB dump becomes a sorted hit list ("PHI: 41,000 hits, FINANCE: 12,000 hits, DEFENSE_GOV: 84 hits — sell the third one first"). This is materially worse than a generic grep: the named categories map directly onto market segments (dark-web buyers price PHI vs PII vs payment cards differently), so `glance` operates as a pricing oracle for stolen corpora. The category dictionary is the value; the binary is irrelevant.
 
@@ -50,7 +50,7 @@ The dictionary is overwhelmingly Anglophone, US/UK-coded, and tilted toward West
 - *(c) Watermark outputs.* Trivially stripped. Not effective.
 - *(d) Refuse to run on corpora over N hosts.* Defenders run at the same scale as attackers. Not effective.
 
-**Recommended posture: accept publication risk with documented rationale.** The dictionary's substantive content (`patient`, `payment`, `iban`, `scada`) is general knowledge already encoded in dozens of DLP products (Microsoft Purview, Google DLP, Macie). `glance` adds organizational convenience, not novel capability. The marginal uplift to an attacker who already possesses an exfiltrated corpus is small relative to grep + a wordlist they could assemble in an hour. The marginal uplift to defenders and to NuClide research is large, because the integration into the sealed-mode workflow is the actual product. Publish with an explicit dual-use clause in the README and a logged-use audit in the JSON output so accidental misuse leaves a trace.
+**Recommended posture: accept publication risk with documented rationale.** The dictionary's substantive content (`patient`, `payment`, `iban`, `scada`) is general knowledge already encoded in dozens of DLP products (Microsoft Purview, Google DLP, Macie). `glance` adds organizational convenience, not novel capability. The marginal uplift to an attacker who already possesses an exfiltrated corpus is small relative to grep + a wordlist they could assemble in an hour. The marginal uplift to defenders and to  is large, because the integration into the sealed-mode workflow is the actual product. Publish with an explicit dual-use clause in the README and a logged-use audit in the JSON output so accidental misuse leaves a trace.
 
 What does need mitigation is the *attacker convenience* layer — specifically the `--include-samples` flag (see §4) and the leakage of geographically distinctive TLDs (see §4 again).
 
@@ -72,7 +72,7 @@ Several patterns name specific operators rather than category-generic vocabulary
 | FINANCE L71 | `sql_cache_.*_(?:head_office\|branch\|finance)` | Same — looks lifted from a specific bank's schema. Operator-attributing if anyone recognizes it. |
 | PHI L63 | `doc_(?:hypertension\|diabetes\|cancer\|cardio\|neuro\|onco)` | Looks lifted from a specific medical-collection naming convention. Possible operator attribution. |
 
-**Proposed remediation:** split CATEGORIES into a `CATEGORIES_GENERIC` (compiled in, ships in the binary, no operator names) and a `CATEGORIES_OPERATOR_DERIVED` (loaded from an optional external YAML, defaulting to empty, with a comment block explaining each entry's provenance). The binary stays publishable; the operator-derived rules stay private to NuClide's internal copy.
+**Proposed remediation:** split CATEGORIES into a `CATEGORIES_GENERIC` (compiled in, ships in the binary, no operator names) and a `CATEGORIES_OPERATOR_DERIVED` (loaded from an optional external YAML, defaulting to empty, with a comment block explaining each entry's provenance). The binary stays publishable; the operator-derived rules stay private to 's internal copy.
 
 ---
 

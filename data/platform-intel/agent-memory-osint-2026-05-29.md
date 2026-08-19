@@ -7,7 +7,7 @@ status: pre-assessment (Stage -1) complete; harvest pending
 
 # Agent-Memory Layer: Pre-Assessment OSINT
 
-_NuClide Research, 2026-05-29. Stage -1 intelligence for the agent-memory survey._
+_, 2026-05-29. Stage -1 intelligence for the agent-memory survey._
 
 The agent-memory layer is the persistence tier of the modern agent stack. It
 stores long-term user memory by design: names, preferences, conversation-derived

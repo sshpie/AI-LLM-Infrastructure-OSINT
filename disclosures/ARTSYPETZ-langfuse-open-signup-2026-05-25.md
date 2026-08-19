@@ -1,6 +1,6 @@
 ---
 to: cjjohanson@gmail.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: MEDIUM
 ip: 147.182.219.125
 institution: "ArtsyPetz / CJ Johanson — Langfuse 3.88.1 LLM observability open self-registration on port 3001. ClickHouse 25.7.1.3997 version-disclosed. Multiple services publicly fingerprinted."
@@ -11,13 +11,13 @@ note: "Contact email unconfirmed — no public email found for cjjohanson. Try c
 ---
 
 **To:** [contact via artsypetz.com / cjlovesdata.com — no public email confirmed]
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** ArtsyPetz stack (147.182.219.125) MEDIUM: Langfuse LLM observability open registration, service stack version-disclosed
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-25
 
@@ -56,11 +56,11 @@ Set `LANGFUSE_DISABLE_REGISTRATION=true` in your Langfuse environment variables 
 
 ---
 
-## About NuClide Research
+## About 
 
 Independent security research, Denver CO. Good faith only. We confirmed the registration surface and stopped.
 
 Nicholas Michael Kloster
-nicholas@nuclide-research.com
-nuclide-research.com
+
+
 CISA CVE-2025-4364, ICSA-25-140-11

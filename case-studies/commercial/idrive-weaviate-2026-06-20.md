@@ -36,7 +36,7 @@ sidenotes:
 
 # IDrive: Unauthenticated Read, Write, and Delete on the Support Chatbot Knowledge Base
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -110,4 +110,4 @@ Canary UUID `4d6eb750-cf8d-40a2-9c48-0c70b6c99b23`. Written, confirmed, deleted,
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

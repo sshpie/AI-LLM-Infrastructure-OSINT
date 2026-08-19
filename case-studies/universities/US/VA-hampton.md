@@ -1,6 +1,6 @@
 # Hampton University: JupyterHub 2.0.0 End-of-Life with Unpatched CVEs
 
-_NuClide Research · 2026-05-07_
+_ · 2026-05-07_
 
 ---
 

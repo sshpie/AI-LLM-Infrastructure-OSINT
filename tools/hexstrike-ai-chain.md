@@ -27,7 +27,7 @@ Step 2: parent_model + brand search
             47 MCP tools: pacu, metasploit, hydra, generate_exploit_from_cve, ...
 
 Step 3: /api/create model injection (POC D)
-         └─ nuclide-probe:latest injected using hexstrike-ai as base
+         └─ -probe:latest injected using hexstrike-ai as base
             zero bytes downloaded, ~512 bytes written (manifest + system layer)
             confirmed in /api/tags + /api/show → deleted clean
 

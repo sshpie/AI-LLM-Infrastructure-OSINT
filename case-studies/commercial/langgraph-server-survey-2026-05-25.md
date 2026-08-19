@@ -4,7 +4,7 @@ type: survey
 
 # LangGraph Server Population Survey (2026-05-25)
 
-_NuClide Research · 2026-05-25_
+_ · 2026-05-25_
 _Category 06: Agent-framework stragglers. First survey of LangGraph Server tier._
 
 ---
@@ -179,7 +179,7 @@ CORS header: `Access-Control-Allow-Origin: *`. The `/threads/:threadId/runs/stre
 | VisorGraph | 16/16 processed. Cert attribution on 2 hosts (allergiescleanedbowled, aiweather.top) |
 | aimap-profile | 7 profiles. All bare-IP TencentCloud/DO/Hetzner, no Shodan passive (API key expired) |
 | JS-bundle | Skipped for batch. Flutter SPA on 20.193.252.230:80 noted (no hidden API surface) |
-| VisorLog | 66 events ingested to nuclide.db |
+| VisorLog | 66 events ingested to .db |
 | VisorScuba | 22,020 Critical nodes (full DB assessment, not survey-specific) |
 | BARE | 9 findings ranked. Top match: `exploits_multi_http_langflow_rce_cve_2026_27966` (score 0.364). BARE has no LangGraph-specific module; Langflow modules match semantically (LangChain-family) |
 | VisorCorpus | 26KB corpus built. Profile: strict, type: baseline, includes kb_exfiltration/system_prompt/config_secrets |

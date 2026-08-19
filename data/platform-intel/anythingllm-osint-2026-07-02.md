@@ -6,7 +6,7 @@ status: pre-assessment
 ---
 
 # AnythingLLM — Pre-Assessment OSINT
-_NuClide Research · 2026-07-02 · Cat-AnythingLLM_
+_ · 2026-07-02 · Cat-AnythingLLM_
 _6-squad OSINT Platoon output. Informs dorks, verification probes, aimap fingerprint, shadow sweep._
 
 ---

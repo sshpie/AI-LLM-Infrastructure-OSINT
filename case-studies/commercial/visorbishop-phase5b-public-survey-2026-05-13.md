@@ -11,7 +11,7 @@ visibility: public
 
 # VisorBishop Phase 5b · 2026-05-13
 
-NuClide Research · 2026-05-13
+ · 2026-05-13
 
 ## Summary
 
@@ -68,7 +68,7 @@ Per-provider probes (read-only, anonymous):
 
 Each probe issued sequentially with 0.4s pacing, 6-second timeout,
 6KB response cap, identifying User-Agent
-(`NuClide-VisorBishop-Phase5b/1.0 (research; read-only)`).
+(`-VisorBishop-Phase5b/1.0 (research; read-only)`).
 
 Tooling: `probe.py`, stdlib only, ~300 lines.
 

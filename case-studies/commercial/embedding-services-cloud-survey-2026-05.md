@@ -4,7 +4,7 @@ type: survey
 
 # Embedding Services: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 > **Status:** Discovery + Shodan query sweep complete (2026-05-09). aimap Phase 1 + asyncio fingerprinting complete (Phase 2 hung on slow responders, replaced with focused asyncio probe). Shodan host enrichment on AI-tagged / port-7997 subset complete. 818 unique IPs surfaced; 667 with ≥1 open port confirmed active; **93 services live-confirmed** on the 440-IP priority subset. **Two HIGH-severity disclosure-warranted findings** (Klinikken.ai medical AI auth bypass, GraphRAG Process Safety stack on Scaleway FR). Full auth-off pattern holds across all platform classes observed.
 

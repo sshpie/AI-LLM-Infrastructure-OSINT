@@ -10,7 +10,7 @@ methodology: scaling VisorBishop coverage to six adjacent platform classes; docu
 
 # VisorBishop iter-8 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

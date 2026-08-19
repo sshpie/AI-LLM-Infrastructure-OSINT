@@ -53,4 +53,4 @@ T0220 resolve policy conflicts; T0223 audit IT programs; T0302 contract language
 
 ## Research-program relevance
 
-Not directly applicable to active assessment chains. Upstream relevance: contract-language requirements (T0415) and procurement-stage cybersecurity enforcement (T0277) are the prevention layer for the class of unauth AI/ML service exposures NuClide finds downstream. When an exposed service traces back to a vendor's misconfigured default, the Portfolio Manager owns the remediation through contract amendments and supply-chain RM.
+Not directly applicable to active assessment chains. Upstream relevance: contract-language requirements (T0415) and procurement-stage cybersecurity enforcement (T0277) are the prevention layer for the class of unauth AI/ML service exposures  finds downstream. When an exposed service traces back to a vendor's misconfigured default, the Portfolio Manager owns the remediation through contract amendments and supply-chain RM.

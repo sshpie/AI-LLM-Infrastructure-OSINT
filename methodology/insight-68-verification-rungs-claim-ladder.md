@@ -21,7 +21,7 @@ quietly assumes "more validation" and "more scanning" are the same direction of
 progress. They are not. "Live vs code" (depth) and "one host vs many" (breadth)
 are independent. Collapsing them forces some combinations to look like they sit
 "between" others when they are actually incomparable, and it erases the one state
-that defines how NuClide works.
+that defines how  works.
 
 ## The grid
 
@@ -58,7 +58,7 @@ request was exercised against the live in-scope host.
 **Depth and breadth are independent, and that independence is a stance.** We may
 increase depth without increasing breadth, confirming a condition in the binary
 while declining to scan the public internet for it. This is intentional restraint,
-not a gap. "NuClide mode" is high-depth, low-breadth by design (inner A or B,
+not a gap. " mode" is high-depth, low-breadth by design (inner A or B,
 outer 0): the behavior is real in the product, and we are consciously not mapping
 it onto the internet. On a linear ladder that looks like an unfinished step; on
 the grid it is a chosen position. This encodes the restraint ethic (enumerate, do

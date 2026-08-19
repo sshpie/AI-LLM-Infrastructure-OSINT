@@ -3,7 +3,7 @@
 **Date:** 2026-06-04
 **Arc:** Cat-01 methodology applied to Cat-02 as round 3. Stage -1 intel doc (never existed) ->
 resolve the load-bearing verification 06-03 deferred -> live re-verify -> attribution -> ledger.
-Mid-session: the NuClide methodology was promoted to default operating logic across Claude (CLAUDE.md v2.5).
+Mid-session: the  methodology was promoted to default operating logic across Claude (CLAUDE.md v2.5).
 
 ## 1. Overview
 06-03 ran the full arsenal on 233 vector-DB hosts but (a) hedged its verification to "32 candidate-real,
@@ -16,7 +16,7 @@ enum data, re-verified a live sample, and added attribution. Censys expansion wa
   (~22-vendor universe, auth posture, verification endpoints, SHODAN-DARK map, matcher rules, FP catalog).
 - **aimap v1.9.46** live re-verify (7 standouts, threads=5, congestion-controlled for home uplink).
 - **Dev-browser** (Playwright MCP) Shodan host-page attribution (0 credits).
-- **aimap-to-findings.py** -> **VisorLog** ingest (602 events into data/nuclide.db).
+- **aimap-to-findings.py** -> **VisorLog** ingest (602 events into data/.db).
 - **VisorScuba** assess (ledger-wide score).
 - **Censys** — BLOCKED (1 credit balance, search=5cr, resets 2026-06-08). Logged, not skipped.
 

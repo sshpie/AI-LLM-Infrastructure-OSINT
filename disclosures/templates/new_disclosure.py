@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-new_disclosure.py — render NuClide disclosure emails from frontmatter source.
+new_disclosure.py — render  disclosure emails from frontmatter source.
 
 Input:  a single .md file with YAML frontmatter (the routing-header fields)
         and a structured body (findings table, fix block, etc.) in normal markdown.
@@ -84,7 +84,7 @@ SEVERITY_COLORS = {
 }
 
 DEFAULT_STANDING = (
-    "I'm an independent security researcher (NuClide Research). I hold "
+    "I'm an independent security researcher (). I hold "
     "CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct "
     "good-faith AI-infrastructure research. This is a coordinated, unsolicited "
     "disclosure — no engagement exists with your organization, and I have "
@@ -387,7 +387,7 @@ def render(md_path: Path, output_dir: Path) -> tuple[Path, Path]:
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Render NuClide disclosure templates")
+    ap = argparse.ArgumentParser(description="Render  disclosure templates")
     ap.add_argument("paths", nargs="*", help=".md draft(s) to render")
     ap.add_argument("--all", metavar="DIR", help="Render every .md in DIR")
     ap.add_argument("--out", default=str(RENDERED), help="Output directory (default: _rendered/)")

@@ -6,7 +6,7 @@
 <title>Security advisory — unauthenticated production API and ML pipeline on api.amazonrec.space (78.135.66.61)</title>
 </head>
 <!--
-  NuClide Research — Security Disclosure Bulletin
+   — Security Disclosure Bulletin
   Static, inline-styled, email-safe rendering of the claude.ai/design
   prototype (email-handoff bundle, 2026-05). Table-based layout, all
   inline styles, no external fonts/images/CSS/JS. Font stacks degrade to
@@ -14,7 +14,7 @@
 
   Placeholders filled by new_disclosure.py:
     Security advisory — unauthenticated production API and ML pipeline on api.amazonrec.space (78.135.66.61) 13 MAY 2026 info@salutegroup.com.tr api.amazonrec.space  ·  78.135.66.61 Coordinated vulnerability disclosure  ·  no click required
-    <p style="margin:4px 0 0 0;text-align:justify;">NuClide Research studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.</p> <p style="margin:4px 0 0 0;text-align:justify;">The host at <span style="font-family:'Courier New',Courier,monospace;font-size:13px;">api.amazonrec.space</span> (<span style="font-family:'Courier New',Courier,monospace;font-size:13px;">78.135.66.61</span>) is exposing a full AI/ML stack to the public internet: a model API branded &quot;SmartShop AI&quot;, an experiment tracker, an in-memory store, a workflow scheduler, and a database. The inference and experiment-tracking layers accept anonymous calls. Right now, anyone on the internet can call the recommendation API and read the experiment metadata without a password.</p>
+    <p style="margin:4px 0 0 0;text-align:justify;"> studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.</p> <p style="margin:4px 0 0 0;text-align:justify;">The host at <span style="font-family:'Courier New',Courier,monospace;font-size:13px;">api.amazonrec.space</span> (<span style="font-family:'Courier New',Courier,monospace;font-size:13px;">78.135.66.61</span>) is exposing a full AI/ML stack to the public internet: a model API branded &quot;SmartShop AI&quot;, an experiment tracker, an in-memory store, a workflow scheduler, and a database. The inference and experiment-tracking layers accept anonymous calls. Right now, anyone on the internet can call the recommendation API and read the experiment metadata without a password.</p>
   <p style="margin:12px 0 0 0;text-align:justify;">The reason we are contacting Salute Group: this host runs the mail server for your brand Nadorawear (<span style="font-family:'Courier New',Courier,monospace;font-size:13px;">mail.nadorawear.com</span> resolves to <span style="font-family:'Courier New',Courier,monospace;font-size:13px;">78.135.66.61</span>), the <span style="font-family:'Courier New',Courier,monospace;font-size:13px;">nadorawear.com</span> domain WHOIS lists <span style="font-family:'Courier New',Courier,monospace;font-size:13px;">domain@salutegroup.com.tr</span>, and the SmartShop AI deployment shares the same hosting and DNS posture. If SmartShop AI is a Salute Group product or a Salute Group client&#x27;s project, you are best placed to forward this report to the right team. If it is not, please let us know and we will route it elsewhere.</p>
   <p style="margin:12px 0 0 0;text-align:justify;">You weren&#x27;t targeted. We don&#x27;t pick specific companies; our tooling watches the public internet for AI infrastructure that has been accidentally left open, and this host turned up in a routine review. Nothing here costs anything. This is a heads-up.</p> <p style="margin:4px 0 0 0;text-align:justify;">We scan the public internet (the same kind of survey that powers Shodan and Censys) for hosts whose visible services look like an AI or machine-learning system. When a host carries those services and also exposes things that should never be reachable from the open internet, like a passwordless experiment tracker or a database with no firewall in front of it, we flag it for a human to look at.</p>
   <p style="margin:12px 0 0 0;text-align:justify;">Our probes are read-only. We look at the public banner information each service hands out to anyone who connects, the same thing your own admin would see. We did not access, copy, or store any of the data those services hold. This host was reviewed by hand on 2026-05-13. Nothing in this bulletin came from authenticated access.</p>
@@ -45,13 +45,13 @@ $ curl -sI http://78.135.66.61:5000/ | head -1
 HTTP/1.1 200 OK   # MLflow UI, no auth
 
 [ probes were read-only; no writes, no enumeration beyond the first page of each listing ] <p style="margin:4px 0 0 0;text-align:justify;">You shouldn&#x27;t have to take our word for any of this. Every URL in the Findings and Evidence sections is a live link to a piece of your own infrastructure. Click one and it will open the exposed dashboard or status page in your browser, with no login prompt. The two findings that aren&#x27;t reachable in a browser, Redis and PostgreSQL, carry a one-line terminal command you can paste into any machine. None of those checks send anything back to us.</p>
-  <p style="margin:12px 0 0 0;text-align:justify;">You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on NuClide Research being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.</p> <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">01</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Put api.amazonrec.space behind a login.</span> <span style="color:#4a4234;">Your FastAPI spec already declares a global security scope; flipping that to require an actual scheme (API key header, OAuth, or Cloudflare Access) is a small change in the app initialization.</span></td></tr>
+  <p style="margin:12px 0 0 0;text-align:justify;">You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on  being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.</p> <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">01</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Put api.amazonrec.space behind a login.</span> <span style="color:#4a4234;">Your FastAPI spec already declares a global security scope; flipping that to require an actual scheme (API key header, OAuth, or Cloudflare Access) is a small change in the app initialization.</span></td></tr>
     <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">02</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Lock down MLflow.</span> <span style="color:#4a4234;">Turn on authentication and TLS, keep model-artifact storage off any internet-routable path, and rotate any tokens that have lived in plaintext on the tracker.</span></td></tr>
     <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">03</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Lock down Redis.</span> <span style="color:#4a4234;">Set requirepass, define ACLs, leave protected-mode on, and upgrade off the end-of-life branch to a currently-supported release.</span></td></tr>
     <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">04</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Lock down PostgreSQL.</span> <span style="color:#4a4234;">Restrict pg_hba.conf to internal CIDR ranges only, and audit any accounts created during the exposure window.</span></td></tr>
     <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">05</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Upgrade Airflow.</span> <span style="color:#4a4234;">Move to a currently-supported release and apply the eleven outstanding advisories that map to the observed version.</span></td></tr>
     <tr><td style="width:34px;font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.1em;color:#8a7d5e;font-weight:700;vertical-align:top;padding:8px 0 0 0;">06</td><td style="vertical-align:top;padding:8px 0;font-size:14px;line-height:1.5;color:#1a1612;"><span style="font-weight:600;">Decide on Postfix.</span> <span style="color:#4a4234;">Decommission the mail daemon if outbound mail is not in active use on this host, or restrict it to internal submission only. This also affects mail.nadorawear.com.</span></td></tr>
-    contact@nuclide-research.com nuclide-research.com
+    contact@ 
 -->
 <body style="margin:0;padding:0;background:#d9d2bc;">
 <table cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#d9d2bc;">
@@ -63,7 +63,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
   <!-- LETTERHEAD -->
   <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
     <td style="vertical-align:bottom;width:62%;">
-      <div style="font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-size:36px;line-height:1.02;font-style:italic;letter-spacing:-0.005em;color:#1a1612;">NuClide Research</div>
+      <div style="font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-size:36px;line-height:1.02;font-style:italic;letter-spacing:-0.005em;color:#1a1612;"></div>
     </td>
     <td style="vertical-align:bottom;text-align:right;">
       <div style="font-family:'Courier New',Courier,monospace;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;color:#8a7d5e;">Issued</div>
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
   <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:18px;">
     <tr>
       <td style="width:86px;padding:3px 0;vertical-align:top;"><span style="font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.16em;color:#8a7d5e;font-weight:700;">FROM</span></td>
-      <td style="padding:3px 0;vertical-align:top;"><span style="font-family:'Courier New',Courier,monospace;font-size:13px;color:#1a1612;">NuClide Research &nbsp;·&nbsp; nuclide-research.com</span></td>
+      <td style="padding:3px 0;vertical-align:top;"><span style="font-family:'Courier New',Courier,monospace;font-size:13px;color:#1a1612;"> &nbsp;·&nbsp; </span></td>
     </tr>
     <tr>
       <td style="width:86px;padding:3px 0;vertical-align:top;"><span style="font-family:'Courier New',Courier,monospace;font-size:11px;letter-spacing:0.16em;color:#8a7d5e;font-weight:700;">TO</span></td>
@@ -103,7 +103,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
     <td style="border-top:1px solid #1a1612;padding-top:8px;vertical-align:top;"><span style="font-family:'Courier New',Courier,monospace;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:#1a1612;"><span style="color:#8a7d5e;font-weight:400;margin-right:8px;">§ I</span>Who we are</span></td>
     <td style="border-top:1px solid #1a1612;padding-top:8px;vertical-align:top;text-align:right;"><span style="font-family:'Courier New',Courier,monospace;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;color:#8a7d5e;">01 / 08</span></td>
   </tr></table>
-  <p style="margin:4px 0 0 0;text-align:justify;"><p style="margin:4px 0 0 0;text-align:justify;">NuClide Research studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.</p></p>
+  <p style="margin:4px 0 0 0;text-align:justify;"><p style="margin:4px 0 0 0;text-align:justify;"> studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.</p></p>
 
   <!-- § II — WHAT WE FOUND -->
   <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:28px;margin-bottom:10px;"><tr>
@@ -188,7 +188,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
     <td style="border-top:1px solid #1a1612;padding-top:8px;vertical-align:top;text-align:right;"><span style="font-family:'Courier New',Courier,monospace;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;color:#8a7d5e;">07 / 08</span></td>
   </tr></table>
   <p style="margin:4px 0 0 0;text-align:justify;">You shouldn&#x27;t have to take our word for any of this. Every URL in the Findings and Evidence sections is a live link to a piece of your own infrastructure. Click one and it will open the exposed dashboard or status page in your browser, with no login prompt. The two findings that aren&#x27;t reachable in a browser, Redis and PostgreSQL, carry a one-line terminal command you can paste into any machine. None of those checks send anything back to us.</p>
-  <p style="margin:12px 0 0 0;text-align:justify;">You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on NuClide Research being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.</p>
+  <p style="margin:12px 0 0 0;text-align:justify;">You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on  being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.</p>
 
   <!-- § VIII — RECOMMENDED FIX -->
   <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:28px;margin-bottom:10px;"><tr>
@@ -207,7 +207,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
   <!-- SIGN-OFF -->
   <div style="margin-top:36px;">
     <p style="margin:0;font-style:italic;font-size:14px;color:#1a1612;">Thanks for your time,</p>
-    <div style="margin-top:14px;font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-style:italic;font-size:22px;color:#1a1612;letter-spacing:-0.005em;">NuClide Research</div>
+    <div style="margin-top:14px;font-family:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;font-style:italic;font-size:22px;color:#1a1612;letter-spacing:-0.005em;"></div>
   </div>
 
   <!-- FOOTER -->
@@ -215,8 +215,8 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
   <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:14px;"><tr>
     <td style="vertical-align:top;">
       <div style="font-family:'Courier New',Courier,monospace;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;font-weight:400;color:#8a7d5e;margin-bottom:6px;">Sender</div>
-      <div style="font-size:13.5px;color:#1a1612;line-height:1.5;">NuClide Research</div>
-      <div style="margin-top:6px;font-family:'Courier New',Courier,monospace;font-size:12px;color:#1a1612;line-height:1.6;">contact@nuclide-research.com &nbsp;·&nbsp; nuclide-research.com</div>
+      <div style="font-size:13.5px;color:#1a1612;line-height:1.5;"></div>
+      <div style="margin-top:6px;font-family:'Courier New',Courier,monospace;font-size:12px;color:#1a1612;line-height:1.6;">contact@ &nbsp;·&nbsp; </div>
     </td>
   </tr></table>
   <div style="margin-top:22px;padding-top:10px;border-top:1px solid #8a7d5e;">

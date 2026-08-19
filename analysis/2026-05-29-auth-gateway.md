@@ -28,7 +28,7 @@ VisorPlus (Shodan-blocked), VisorGoose (gov/edu), VisorCorpus/VisorAgent/VisorRA
 JS-bundle (JSON/React, no bundle).
 
 ### Notable Configuration
-aimap v1.9.39 (no OPA/Casdoor fingerprint). nuclide.db at ~/visorlog/nuclide.db.
+aimap v1.9.39 (no OPA/Casdoor fingerprint). .db at ~/visorlog/.db.
 Workspace ~/recon/auth-gateway-2026-05-29/.
 
 ## 3. Methodology

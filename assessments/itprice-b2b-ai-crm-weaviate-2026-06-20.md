@@ -94,7 +94,7 @@ curl -s -X POST "http://47.238.237.94:8080/v1/objects" \
     "properties": {
       "conversation_id": 999999,
       "text": null,
-      "history": "NUCLIDE-CANARY-2026-06-20"
+      "history": "-CANARY-2026-06-20"
     }
   }'
 ```
@@ -145,4 +145,4 @@ Order number format `SL-MOT-260105-CIS` reveals the internal naming convention. 
 
 ## Tool Reference
 
-**weavscan** -- https://nuclide-research.com/tools/weavscan
+**weavscan** -- https:///tools/weavscan

@@ -1,6 +1,6 @@
 # COMSATS University: Medical AI Models, Kimi Cloud Proxy
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

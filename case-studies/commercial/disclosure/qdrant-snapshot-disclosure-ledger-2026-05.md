@@ -1,6 +1,6 @@
 # Qdrant Snapshot/Unauth: Disclosure Ledger
 
-_NuClide Research · started 2026-05-04_
+_ · started 2026-05-04_
 _Companion to: [`backup-snapshot-services-survey-2026-05.md`](../backup-snapshot-services-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](../qdrant-tier2-cloud-survey-2026-05.md)_
 
 ---
@@ -20,7 +20,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 <!-- ksat-tag:auto-generated:end -->
 
-The redaction is the same coordinated-disclosure courtesy NuClide extends in every disclosure: name the IP and the role/sector, never the operator, until the window is complete.
+The redaction is the same coordinated-disclosure courtesy  extends in every disclosure: name the IP and the role/sector, never the operator, until the window is complete.
 
 ---
 
@@ -93,7 +93,7 @@ For each identified operator above:
 
 - **663 unauth Qdrant instances** identified across the tier-2 cloud survey
 - **16 of 663** have pre-built snapshot files = direct bulk-exfiltration vectors
-- **All 663** are vulnerable to remote-snapshot-creation-and-download via `POST /snapshots` (NuClide did not exercise this, but the surface exists)
+- **All 663** are vulnerable to remote-snapshot-creation-and-download via `POST /snapshots` ( did not exercise this, but the surface exists)
 - **22 disclosure-priority operators identified** via TLS cert pivots, disclosure drafts staged for all
 - **Highest-impact targets surfaced beyond the snapshot subset:** government-class international organization (OIF/Francophonie, 1.1M points, 88-member-state observatory), Polish accounting firm (692K client chat-messages), French notary platform (JudiLibre custom RAG), Brazilian education tech (1.35M points), subscription financial-regulation analytics SaaS (subscriber-content business-model leak)
 

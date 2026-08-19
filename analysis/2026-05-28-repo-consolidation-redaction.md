@@ -4,11 +4,11 @@
 
 ## What was done
 
-Moved the NuClide repo estate from the `Nicholas-Kloster` personal account to the
-`nuclide-research` account, redacted sensitive data that had been committed to public
+Moved the  repo estate from the `Nicholas-Kloster` personal account to the
+`` account, redacted sensitive data that had been committed to public
 repos, and made the Go toolchain `go install`-able under the new owner.
 
-### Repository transfers (21 repos -> nuclide-research)
+### Repository transfers (21 repos -> )
 - `AI-LLM-Infrastructure-OSINT` (already there; verified)
 - `aimap`, `JAXEN`, `VisorPlus`
 - Visor family (12): `visor`, `VisorAgent`, `VisorBishop`, `VisorCorpus`, `VisorGoose`,
@@ -17,7 +17,7 @@ repos, and made the Go toolchain `go install`-able under the new owner.
 - Transfers from a User account (not an org) create PENDING transfers that the recipient
   account must accept. Nick accepted them.
 - Left in place deliberately: `Nicholas-Kloster.github.io` (live website, separate repo,
-  serves nuclide-research.com), `Nicholas-Kloster` (profile README), `jaxen-blindbox`
+  serves ), `Nicholas-Kloster` (profile README), `jaxen-blindbox`
   (private gift app).
 
 ### Security redaction (the load-bearing work)
@@ -27,7 +27,7 @@ repos, and made the Go toolchain `go install`-able under the new owner.
   account or the browser. Nick flipped visibility himself.
 - Purged 91 raw-data artifacts from full OSINT history (git-filter-repo): `ollama-*-state.json`
   (fields: creds / account_takeover / system_prompts / cred_hunted), `operator-tokens.json`,
-  `nuclide.db` / `visorlog.db` / `empire.db` ledgers, aimap scan JSON, openapi/HTTP captures,
+  `.db` / `visorlog.db` / `empire.db` ledgers, aimap scan JSON, openapi/HTTP captures,
   shodan-raw dumps, target/dork lists. Force-pushed. Verified 0 refs across 483 commits.
 - Hardened `.gitignore` with globs so scan-state files can't be re-tracked.
 - `recongraph`: 10 accidental `runs/*.json` recon outputs (live-target provenance graphs)
@@ -39,10 +39,10 @@ repos, and made the Go toolchain `go install`-able under the new owner.
 
 ### Go module paths + installability
 - Repointed `go.mod` module path on 13 Go repos: `github.com/Nicholas-Kloster/X` ->
-  `github.com/nuclide-research/X`. All build clean.
+  `github.com/sshpie/X`. All build clean.
 - Made all Go tools `go install`-able (aimap + 13). Required per-repo tagging since the
   path-fix commits were untagged (so `@latest` would otherwise resolve to a pre-fix tag).
-- aimap: module was bare `module aimap` -> `github.com/nuclide-research/aimap`, tagged
+- aimap: module was bare `module aimap` -> `github.com/sshpie/aimap`, tagged
   v1.9.38 then v1.9.39 (version.go bumped 1.9.37 -> 1.9.39 to match tag).
 
 ## What was found (verified)
@@ -51,18 +51,18 @@ repos, and made the Go toolchain `go install`-able under the new owner.
   Azure account data in `operator-tokens.json`, on .gov and healthcare third-party hosts.
   0 forks (good), but treat all exposed credentials as compromised regardless — public for
   weeks, crawlers/archives may hold copies.
-- `nuclide.db` itself was clean of literal secrets (25,709 rows scanned) — the risk was the
+- `.db` itself was clean of literal secrets (25,709 rows scanned) — the risk was the
   state JSON files, not the ledger.
 - Pre-transfer adversarial audit (6 arsenal repos, workflow): 0 real secrets in any. The 2
   data-artifact flags (BARE sample, recongraph runs) were target lists, not credentials.
 
 ## What changed (infra)
-- Owner of 21 repos: Nicholas-Kloster -> nuclide-research (old paths redirect).
+- Owner of 21 repos: Nicholas-Kloster ->  (old paths redirect).
 - OSINT repo visibility: public -> private.
-- 14 Go tools now `go install`-able under nuclide-research.
+- 14 Go tools now `go install`-able under .
 
 ## Go install reference (for READMEs later)
-Root-package: `go install github.com/nuclide-research/<repo>@latest`
+Root-package: `go install github.com/sshpie/<repo>@latest`
   aimap, JAXEN, VisorPlus, VisorAgent, VisorHollow, tiptoe, VisorGoose, VisorLog, VisorScuba
 Subpath (main in cmd/):
   visor/cmd/visor, VisorBishop/cmd/visorbishop, VisorGraph/cmd/visorgraph,
@@ -71,7 +71,7 @@ VisorCorpus ships 5 commands: visorcorpus, attack-sim, corpus-dump, visorfail, v
 
 ## What's next (open threads)
 - Decide whether OSINT repo goes public again. If yes, the redaction makes it safe; flip
-  from the nuclide-research account. If staying private, no action.
+  from the  account. If staying private, no action.
 - Optional: update tool READMEs with the `go install` one-liners above.
 - Optional: bump non-aimap tool version strings to match their new tags; tag-history gaps
   exist (e.g. aimap tags reached v1.9.21 while code was at 1.9.37 — many bumps untagged).
@@ -89,7 +89,7 @@ VisorCorpus ships 5 commands: visorcorpus, attack-sim, corpus-dump, visorfail, v
    AND an older bare_output.json AND would've survived if only the 2 audited paths were purged.
    Use --replace-text on the value set (the IPs), not just --invert-paths on filenames, when
    the same data is scattered.
-3. **Owner-transfer != name-fix.** Rewriting `Nicholas-Kloster -> nuclide-research` in go.mod
+3. **Owner-transfer != name-fix.** Rewriting `Nicholas-Kloster -> ` in go.mod
    fixes the owner segment but not name-segment mismatches (visorgoose vs VisorGoose). Both
    must match the actual repo path for `go install`.
 4. **main-in-cmd/ repos need the subpath** in the install command; bare-repo install fails

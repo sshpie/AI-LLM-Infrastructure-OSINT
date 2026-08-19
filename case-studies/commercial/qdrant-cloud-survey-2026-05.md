@@ -4,7 +4,7 @@ type: survey
 
 # Qdrant on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -175,6 +175,6 @@ Unlike Flowise (which stores API keys), Qdrant stores the **data that AI systems
 
 ## Discoverer
 
-NuClide Research, nicholas@nuclide-research.com
+, 
 
 No data was modified or exfiltrated beyond minimal payload sampling (2 records per collection) to confirm severity. Scroll was used only to prove data accessibility.

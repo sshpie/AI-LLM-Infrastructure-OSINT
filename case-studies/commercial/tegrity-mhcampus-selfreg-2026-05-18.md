@@ -4,7 +4,7 @@
 **Operator:** McGraw-Hill Education (MHE) — McGraw-Hill Campus / Tegrity lecture-capture lineage
 **Target:** `tegrity.com`
 **Severity:** HIGH (combined customer-facing service outage + information disclosure)
-**Ledger:** VisorLog #34551 (high), #34552 + #34553 (info) in `data/nuclide.db`
+**Ledger:** VisorLog #34551 (high), #34552 + #34553 (info) in `data/.db`
 **VDP:** `https://hackerone.com/mcgrawhill` (public, anonymous submissions accepted)
 
 ---
@@ -271,7 +271,7 @@ What this survey cannot see:
 | 9 | recongraph | passive | crt.sh returned 502; VisorGraph already covered the CT-log axis. Null. |
 | 10 | nu-recon | active | Reported ports 22/80/443 but flagged `(simulated)` — host not in Shodan free tier. |
 | 11 | VisorPlus | passive | `assess` on 54.144.236.205 — whois, port-1000 nmap, passive DNS (1 AWS rDNS hostname) |
-| 12 | VisorLog | ingest | 3 findings → `data/nuclide.db` (#34551 high, #34552 + #34553 info) |
+| 12 | VisorLog | ingest | 3 findings → `data/.db` (#34551 high, #34552 + #34553 info) |
 | 13 | VisorScuba | policy-eval | AI Security Baseline does not classify ASP.NET YSOD info disclosure. Passing 0/0. Null is honest. |
 | 14 | BARE | semantic match | nmap → adapter → BARE; top match `windows/proxy/qbik_wingate_wwwproxy` at score 0.39 — noise, AWS ELB has no MSF exploit class |
 | 15 | VisorCorpus | build | 100-case strict baseline corpus generated |

@@ -126,10 +126,10 @@ curl -s -X POST http://157.173.121.77:8080/v1/objects \
     "class": "Lesson",
     "id": "bf635515-e378-45c2-9da9-7fb2db27aaa0",
     "properties": {
-      "title": "canary -- nuclide security research 2026-06-20",
+      "title": "canary --  security research 2026-06-20",
       "subject": "CANARY",
       "classroom": "0",
-      "notes": "nuclide rwd probe",
+      "notes": " rwd probe",
       "answers": ["canary answer"]
     }
   }' | jq '.id'
@@ -185,4 +185,4 @@ Weaviate 1.35.2 is two minor versions behind current stable. Review release note
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan

@@ -3,7 +3,7 @@
 **Date:** 2026-06-08
 **Classification:** Internal / Research Use Only
 **Toolchain:** shodan-CLI · python verifiers · `~/garlic/comfyui_ghost_detect.py` (new) · `~/garlic/shadowray_detect.py` (new) · visorlog · tome · wardrobe + syllabus stance · Agent subagents (general-purpose + DCWF role personas) · gh CLI
-**Repos updated:** `nuclide-research/AI-LLM-Infrastructure-OSINT` (v0.5.0 release + 9 new case studies + 3 IR hand-off packages + 3 articles + README full rewrite) · `nuclide-research/tome` (4 new platform JSONs + 1 fingerprint correction) · `nuclide-research/AI-LLM-Infrastructure-OSINT` again (Cats 48/49/50/51/52 same day)
+**Repos updated:** `/AI-LLM-Infrastructure-OSINT` (v0.5.0 release + 9 new case studies + 3 IR hand-off packages + 3 articles + README full rewrite) · `/tome` (4 new platform JSONs + 1 fingerprint correction) · `/AI-LLM-Infrastructure-OSINT` again (Cats 48/49/50/51/52 same day)
 
 ---
 
@@ -56,8 +56,8 @@ Orchestrator session for the day, with three specific subagent dispatches:
 | wardrobe (ai-infra-hunt outfit) | NICE/DCWF role stance | 13 atoms across 17 NICE roles |
 | syllabus | Threat-class literature anchor | PoisonedRAG (USENIX '25), Topic-FlipRAG, RAG-Extraction Dual-Path |
 | Playwright MCP | 5 screenshots of ComfyUI canvases + Medium editor open | Behind Mullvad us-sjc |
-| gh CLI | GitHub repo admin: description, topics, homepage, v0.5.0 release | Pushed to nuclide-research org |
-| Agent (general-purpose) subagents | 3 parallel end-to-end survey runners + 4 DCWF role personas | All restraint-bounded; one agent triggered a "push to main bypasses PR review" security warning that is the standing NuClide workflow |
+| gh CLI | GitHub repo admin: description, topics, homepage, v0.5.0 release | Pushed to  org |
+| Agent (general-purpose) subagents | 3 parallel end-to-end survey runners + 4 DCWF role personas | All restraint-bounded; one agent triggered a "push to main bypasses PR review" security warning that is the standing  workflow |
 | WebSearch | Public-record cross-references | Censys ARC GHOST disclosure (Apr 2026), Oligo ShadowRay 2.0 (Nov 2025), CVE-2023-48022, CVE-2025-67303 |
 
 Tools not run this session: VisorPlus, VisorSD, VisorGoose, VisorGraph, recongraph, nu-recon, menlohunt, VisorScuba, BARE, VisorCorpus, VisorRAG, VisorAgent, VisorHollow, cortex. The chain was abbreviated to the orchestrator + verifier + ledger + commit pattern because the survey day prioritized breadth (8 categories) over deep per-host orchestration.
@@ -68,7 +68,7 @@ Tools not run this session: VisorPlus, VisorSD, VisorGoose, VisorGraph, recongra
 - Shodan API ~9000 query credits at session start; ~9000 at session end (downloads consumed minimal credits because most populations were under 5k).
 - Censys credits exhausted from prior sessions; substituted Shodan InternetDB on the Changsha deep dive.
 - Python verifiers ran at 200-300 worker concurrency without rate-limiting issues from upstream platforms.
-- `nuclide-stance` skill saved at `~/.claude/skills/nuclide-stance/` (togglable, opt-in via `/nuclide-stance`).
+- `-stance` skill saved at `~/.claude/skills/-stance/` (togglable, opt-in via `/-stance`).
 
 ---
 
@@ -113,7 +113,7 @@ For the Changsha deepfake rig specifically: zero `/tts` POST requests, zero `/pr
 
 | Time | Action | Outcome / Decision |
 |---|---|---|
-| 07:30 | Session opened on "find exposed AI/LLM infrastructure" mandate. Wardrobe outfit `ai-infra-hunt` loaded; syllabus brief pulled on vector-DB threat class. | Stance established as togglable session pattern (later saved as `/nuclide-stance` skill). |
+| 07:30 | Session opened on "find exposed AI/LLM infrastructure" mandate. Wardrobe outfit `ai-infra-hunt` loaded; syllabus brief pulled on vector-DB threat class. | Stance established as togglable session pattern (later saved as `/-stance` skill). |
 | 08:00 | Cat-46 ComfyUI default-port survey: 821 Shodan hits, 808 IPs harvested, verified via `/system_stats`. | 186 confirmed unauth, 77.5% of LIVE on default port 8188. |
 | 08:30 | Public-record check: Censys ARC disclosed GHOST cryptominer/proxy botnet on this surface April 7. Methodology lesson #1 codified: search public record before publishing population finding on known surface. | Case study revised to lead with cross-reference. |
 | 09:00 | Built `~/garlic/comfyui_ghost_detect.py` (6-signal classifier). Ran across 186 hosts. | 3 likely-GHOST identified: `47.239.252.9` + `47.83.192.121` Alibaba HK pair (ComfyUI 0.12.2, deep-pending queues, miner profile) + `64.247.196.123` Massed Compute. Censys ARC hand-off package staged. |
@@ -124,12 +124,12 @@ For the Changsha deepfake rig specifically: zero `/tts` POST requests, zero `/pr
 | 13:00 | Single-host deep dive on `113.240.68.47` (8x A100 cluster on China Telecom Hunan). Four DCWF role agents dispatched in parallel. | Five open ports (Shodan saw two). TCP/20111 = "Edge Runtime API" voice-cloning TTS with 616,898 jobs / 2,423 hours of generated audio. Plus complete face-ID stack (PuLID + InstantID + InsightFace + Wan-2.2-Animate-14B). Turnkey deepfake-production pipeline, free-to-use, unauthenticated. |
 | 14:30 | Medium article drafted (`articles/medium-2026-06-08-changsha-deepfake-rig.md`). Medium editor opened in browser. X-post on HK Meilisearch botnet drafted. | Articles staged for publication. |
 | 15:00 | README full rewrite from accurate repo audit. GitHub repo description + topics + homepage updated via `gh repo edit`. | Live: 33 categories, 247 case studies (later 254 + 5 new today = 259), 88 insights, 134 disclosures. Description and topics refreshed. |
-| 16:00 | Tagged v0.5.0 release with full notes (`/tmp/release-notes-v0.5.0.md`). | https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT/releases/tag/v0.5.0 |
+| 16:00 | Tagged v0.5.0 release with full notes (`/tmp/release-notes-v0.5.0.md`). | https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/releases/tag/v0.5.0 |
 | 17:00 | Cat-48 Kubeflow Pipelines: 619 IPs verified via `/pipeline/apis/v1beta1/experiments`. | 5 confirmed unauth, 0.8% of population. Headline: 2 GCP hosts (`35.212.46.10` + `35.212.83.172`) sharing 11 customer experiment names, 557 total experiments, B2B retail-execution AI SaaS customer book disclosed (BAT, Bacardi, Coremark, Eurpac, Kenvue J&J, Kellanova, Mondelez, Nutrabolt, Pierre Fabre, SIGMA, Tienda Neto, Alsuper, Peñafiel). |
 | 17:30 | README full rewrite v2 — first rewrite was stale on insight count and missing whole sections. Audited the filesystem and rewrote against accurate numbers (88 insights numbered 01-89 gap at 48; 376 case studies total). | Committed as `c333f6d`. |
 | 18:00 | Cat-49 Label Studio: 500 IPs sampled from 1,646 population. Initial verifier returned 0 unauth from 500 (wrong). Manual probe revealed `/version` JSON wrapped in `<pre>...</pre>` HTML. | Methodology lesson #3: HTML-wrapping of API responses defeats naive JSON parsers. Strip canonical wrappers. Post-fix: 1 unauth + 404 auth-gated = 99.75% auth-gated, the strongest auth-on-default measurement in the program. |
 | 18:30 | Three parallel survey agents dispatched: Cat-50 Chainlit, Cat-51 Argilla, Cat-52 Khoj. | Cat-50: 4 unauth / 5 LIVE (small n, 80%). Cat-51: 0 unauth / 23 LIVE (100% auth-gated, new ceiling). Cat-52: 1 unauth (anonymous-mode Khoj at `obsidian.the-judsons.com` Oracle Cloud, 5 active chat sessions). |
-| 19:30 | Session close: nuclide-close skill invoked. | This document. |
+| 19:30 | Session close: -close skill invoked. | This document. |
 
 ---
 
@@ -164,7 +164,7 @@ For the Changsha deepfake rig specifically: zero `/tts` POST requests, zero `/pr
 | Observed exposure | Voice-clone `/tts` endpoint accepts arbitrary `text` + arbitrary `reference_audio_url` (any HTTP/HTTPS URL pointing at an audio sample). Face-identity model stack and animation models present on the same box. ComfyUI-Manager 3.38.1 installed (CVE-2025-67303 RCE surface present, not exercised). |
 | Severity | **CRITICAL** — turnkey deepfake-production pipeline (target voice + target face + scripted text + animated mouth) operating at industrial scale on the public internet, unauthenticated, on BIS-export-controlled hardware. |
 
-**Potential impact:** Anyone with the URL can clone any voice with a public reference audio sample, generate face-conditioned video, or use the rig as compute substrate for deepfake content production. Combined with the ComfyUI-Manager RCE surface, the operator's box is reachable for code execution as well. Hardware acquired through pre-ban / gray-market / cloud-resale channels (8x A100-SXM4-80GB BIS-restricted to PRC since October 2022). Disclosure routing in case study restricted to cyber-incident channels (CNCERT/CC + China Telecom abuse `anti-spam@chinatelecom.cn`); BIS notification deliberately out of NuClide's lane.
+**Potential impact:** Anyone with the URL can clone any voice with a public reference audio sample, generate face-conditioned video, or use the rig as compute substrate for deepfake content production. Combined with the ComfyUI-Manager RCE surface, the operator's box is reachable for code execution as well. Hardware acquired through pre-ban / gray-market / cloud-resale channels (8x A100-SXM4-80GB BIS-restricted to PRC since October 2022). Disclosure routing in case study restricted to cyber-incident channels (CNCERT/CC + China Telecom abuse `anti-spam@chinatelecom.cn`); BIS notification deliberately out of 's lane.
 
 #### 5.2 `35.212.46.10` + `35.212.83.172` — Kubeflow Pipelines B2B SaaS customer book disclosed
 
@@ -300,7 +300,7 @@ The Changsha rig exposes voice-cloning capability against any public reference-a
 
 ### Integrity
 
-POSTable surfaces present on every unauth host but not exercised by NuClide:
+POSTable surfaces present on every unauth host but not exercised by :
 
 - ComfyUI: `POST /prompt` accepts arbitrary workflow JSON (compute theft + output writes)
 - ComfyUI: `POST /upload/image` arbitrary file write
@@ -369,7 +369,7 @@ Mandatory first-run signup (Label Studio) beats complex OIDC (Kubeflow Dex+Istio
 | 3 | The Changsha operator (`113.240.68.47`) and the Kubeflow GCP SaaS operator are not identified by name. The Khoj host is identified by rDNS (personal-device policy: no outreach). | Disclosure routing depends on substrate provider abuse channels (China Telecom, GCP, Oracle Cloud, Lambda Labs, Massed Compute). |
 | 4 | Three IR hand-off packages drafted but not sent (Censys ARC + Oligo Security + Anyscale, plus Cat-04 research bundle). Send decision deferred to Nick per disclosure-routing protocol. | Operators remain exposed pending hand-off send. |
 | 5 | The auth-friction gradient (Insight #88 candidate, not yet numbered) is a synthesis statement from session memory; the actually-filed `methodology/insight-88-*.md` is a different finding ("scrape topology as operator org chart"). Filing the gradient as a numbered insight is owed. | Citation drift if propagated downstream. README rewrite already corrected. |
-| 6 | One sub-agent triggered a "push to main bypasses PR review" security warning. The standing NuClide OSINT workflow is direct-push-to-main; the warning is policy-default, not a NuClide policy violation. | None for this session; flag for future workflow audit. |
+| 6 | One sub-agent triggered a "push to main bypasses PR review" security warning. The standing  OSINT workflow is direct-push-to-main; the warning is policy-default, not a  policy violation. | None for this session; flag for future workflow audit. |
 | 7 | Censys credits exhausted from prior sessions; Censys cross-population delta not computed for any of the eight surveys. | Population estimates miss whatever Censys would have added that Shodan did not see. |
 | 8 | DCWF role panel agents on the Changsha deep dive operated under instructions but their reports were synthesized by the orchestrator; agent-side restraint compliance was self-reported. | Trust-but-verify standard; orchestrator confirmed no payload reads after synthesis. |
 
@@ -397,7 +397,7 @@ RESPONSE:
   }
 ```
 
-PoC reads `/health` only. The voice-cloning capability is documented from the FastAPI auto-generated OpenAPI document at `/docs` and the `/health` telemetry. No `/tts` POST was sent. No audio was cloned by NuClide. The capability is something we know the box does without having to make it do it.
+PoC reads `/health` only. The voice-cloning capability is documented from the FastAPI auto-generated OpenAPI document at `/docs` and the `/health` telemetry. No `/tts` POST was sent. No audio was cloned by . The capability is something we know the box does without having to make it do it.
 
 ### 9.2 Kubeflow GCP SaaS — customer-book disclosure via experiment names
 
@@ -493,4 +493,4 @@ Same shape across all 66 hosts in `177.210.106.x`. Operator-attribution via inde
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Opus 4.7) · 2026-06-08*
+*Prepared by  ( + Claude Opus 4.7) · 2026-06-08*

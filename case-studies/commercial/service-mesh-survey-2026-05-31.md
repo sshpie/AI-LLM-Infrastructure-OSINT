@@ -1,7 +1,7 @@
 # Service Mesh Control Planes: when exposure is the authentication failure
 
 _Network Perimeter / Service Mesh survey. 2026-05-31. New platform class._
-_Findings: nuclide.db #36200-36216. Insight #71. Breakdown: data/findings-breakdown-service-mesh-2026-05-31.txt._
+_Findings: .db #36200-36216. Insight #71. Breakdown: data/findings-breakdown-service-mesh-2026-05-31.txt._
 
 ## Why this category
 
@@ -151,7 +151,7 @@ The chain ran by hand, in order, all tools, results recorded (null is a result).
 - **VisorGraph**: cert-pivot, thin (bare cloud IPs; Huawei default cert `eapp610.huawei.com`); confirmed `/kiali/` path-prefix and `public_intended` exposure.
 - **aimap-profile**: 34.151.222.47 -> Google LLC / GKE.
 - **Censys (cencli view)**: 34.151.222.47 -> Sao Paulo, Brazil, GCP, 1 service (no curated-scan blind spot here). 1 credit left; population-delta sweep deferred.
-- **VisorLog**: #36200-36216 ingested to nuclide.db (4 high, 2 medium, 11 low), per-host verified severities (not a blind aimap ingest).
+- **VisorLog**: #36200-36216 ingested to .db (4 high, 2 medium, 11 low), per-host verified severities (not a blind aimap ingest).
 - **VisorScuba**: 0/0 vacuous pass. AI baseline has no control for service-mesh / cluster-introspection planes (tool gap, same as KubeSphere).
 - **BARE**: Kiali -> kubecost/k8s-enum/k8s-exec recon class (0.572/0.558/0.528); Cilium metrics + Hubble UI NO-MATCH (first-party, novel).
 - **VisorBishop**: ip-shadow on 16 confirmed IPs, 27 ports each, 0 adjacent unauth (managed cloud does not co-expose the data tier; contrast self-hosted Phoenix 27%).

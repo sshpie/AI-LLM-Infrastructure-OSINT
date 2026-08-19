@@ -44,7 +44,7 @@ Single session. Orchestrator posture. aimap v1.9.8 built during the session with
 | Tool | Role | Config notes |
 |---|---|---|
 | aimap v1.9.8 | Stage-2 deep enumeration: enumElasticsearch + enumClickHouse | Shipped mid-session; replaces fast_enum scripts for future surveys |
-| VisorLog | Ledger ingest → nuclide.db | +3,666 events; 3,597 ES wiped → lifecycle archived; 84 AI-stack upgraded |
+| VisorLog | Ledger ingest → .db | +3,666 events; 3,597 ES wiped → lifecycle archived; 84 AI-stack upgraded |
 | BARE | Metasploit semantic ranking | 95/95 ES 2.9.x hosts → CVE-2014-3120 Groovy RCE top-ranked |
 | fast_enum_es.py | Initial ES re-probe before aimap productization | Retired after aimap v1.9.8 ships |
 | fast_enum_clickhouse.py | Initial CH re-probe | Retired after aimap v1.9.8 ships |
@@ -386,4 +386,4 @@ Rank 3: exploits_multi_elasticsearch_dynamic_script
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 17 · 2026-05-17*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 17 · 2026-05-17*

@@ -1,5 +1,5 @@
 # Raw recon data — do NOT commit to public repo (operator-identifying IPs).
-# Per memory `nuclide-public-repo-redaction` and `feedback-github-pii`.
+# Per memory `-public-repo-redaction` and `feedback-github-pii`.
 # Tracked safe-to-publish artifacts: findings-breakdown.txt, dorks.txt, query-log.md,
 # SESSION-RETROSPECTIVE.md, *.py scripts, *.md case-study fragments.
 *.jsonl

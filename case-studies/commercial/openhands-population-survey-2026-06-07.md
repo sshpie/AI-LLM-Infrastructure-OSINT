@@ -10,7 +10,7 @@ toolchain: herald v0.1.4
 
 # OpenHands Population Survey — Autonomous Agent Task History + LLM Config Exposed at Scale
 
-_NuClide Research · 2026-06-07_
+_ · 2026-06-07_
 
 ---
 
@@ -137,11 +137,11 @@ The most active conversation set in the reachable population. Most titles are au
 
 `/proc/self/environ` on Linux returns the process's environment variables — which on an OpenHands container would typically include: configured LLM API keys, GitHub/GitLab access tokens, Anthropic / OpenAI / Azure / Bedrock credentials, internal infrastructure URLs.
 
-The exact phrasing "show me /proc/self/environ" appearing across three geographically-distinct hosts strongly suggests **scripted reconnaissance using the same attack prompt against a list of unauth OpenHands instances**. The attacker is likely walking the same Shodan dork that NuClide used today.
+The exact phrasing "show me /proc/self/environ" appearing across three geographically-distinct hosts strongly suggests **scripted reconnaissance using the same attack prompt against a list of unauth OpenHands instances**. The attacker is likely walking the same Shodan dork that  used today.
 
-The status field for these conversations was "STOPPED" — suggesting the attack either completed or was terminated. NuClide did not retrieve the conversation content (restraint); whether API keys were successfully exfiltrated cannot be determined from the public surface.
+The status field for these conversations was "STOPPED" — suggesting the attack either completed or was terminated.  did not retrieve the conversation content (restraint); whether API keys were successfully exfiltrated cannot be determined from the public surface.
 
-**This is the in-flight LLM06 Excessive Agency exploitation NuClide's methodology has predicted but not previously observed at population scale.** It is the canonical demonstration of why unauthenticated autonomous agents are a critical class.
+**This is the in-flight LLM06 Excessive Agency exploitation 's methodology has predicted but not previously observed at population scale.** It is the canonical demonstration of why unauthenticated autonomous agents are a critical class.
 
 ---
 
@@ -243,6 +243,6 @@ OpenHands fills the **autonomous-coding-agent cohort slot** in the cohort hypoth
 
 The maintainer-culture cohort hypothesis is **strengthened** by OpenHands joining the demo-first cluster. The category-broadening from chat-UI / observability / RAG to autonomous-agent confirms the cluster is not category-specific.
 
-The `/proc/self/environ` attack visibility on multiple hosts also raises an **operational question for the research program**: when NuClide observes an in-flight attack against an operator who has not yet been notified, should the disclosure be expedited?
+The `/proc/self/environ` attack visibility on multiple hosts also raises an **operational question for the research program**: when  observes an in-flight attack against an operator who has not yet been notified, should the disclosure be expedited?
 
-This is a methodology question that has not been previously triggered. The restraint ethic governs the **NuClide methodology** — it does not govern the disclosure-timeline decision when a third party is already exploiting the same finding. The decision-point belongs to Nicholas Kloster, not the analyst.
+This is a methodology question that has not been previously triggered. The restraint ethic governs the ** methodology** — it does not govern the disclosure-timeline decision when a third party is already exploiting the same finding. The decision-point belongs to , not the analyst.

@@ -4,7 +4,7 @@
 **Session:** single-target, handed-over IP
 **Classification:** Internal / Research Use Only
 **Toolchain:** aimap 1.9.41, VisorGraph, aimap-profile 0.1, VisorLog, VisorScuba, BARE, VisorBishop 0.1.7, recongraph, nu-recon, Censys platform (web)
-**Repos updated:** AI-LLM-Infrastructure-OSINT (case study + this analysis); nuclide.db (#36158-36161)
+**Repos updated:** AI-LLM-Infrastructure-OSINT (case study + this analysis); .db (#36158-36161)
 
 ---
 
@@ -12,7 +12,7 @@
 
 ### Objective
 
-Assess a single handed-over IP (140.116.247.125) with the full NuClide arsenal.
+Assess a single handed-over IP (140.116.247.125) with the full  arsenal.
 The thesis question (does an auth-off-default AI layer ship unauthenticated at
 scale) was not directly testable here because the host exposes no AI service.
 The session instead became a test of the methodology's negative-space discipline:
@@ -46,7 +46,7 @@ Playwright after an orphaned browser-profile lock was cleared.
 | aimap 1.9.41 | Fingerprint | 3 AI-ports open, 0 AI fingerprints (honest negative) |
 | VisorGraph | Cert-pivot | TRAEFIK DEFAULT CERT, no domain pivot |
 | aimap-profile | Classify | Shodan-degraded, unclassified; manual sector=university |
-| VisorLog | Ledger | 4 findings to nuclide.db |
+| VisorLog | Ledger | 4 findings to .db |
 | VisorScuba | Compliance | 0/0 vacuous pass, no K8s-control-plane control |
 | BARE | MSF semantic rank | KubeSphere to multi/kubernetes/exec 0.532 |
 | VisorBishop 0.1.7 | Re-prober + IP-shadow | No AI platform confirmed |
@@ -232,4 +232,4 @@ was attempted.
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude) · 2026-05-31*
+*Prepared by  ( + Claude) · 2026-05-31*

@@ -1,7 +1,7 @@
 # BentoML — Shodan Dork Catalog
 
 **Date:** 2026-06-27
-**Researcher:** NuClide Research
+**Researcher:** 
 
 ---
 

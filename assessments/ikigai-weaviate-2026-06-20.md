@@ -223,4 +223,4 @@ Three schema deletes destroy the entire Ikigai job platform data layer. `lastSna
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

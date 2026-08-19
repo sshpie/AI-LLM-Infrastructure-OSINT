@@ -4,7 +4,7 @@ type: survey
 
 # Milvus on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -264,13 +264,13 @@ After enabling, create a root password, then non-root users with read-only or re
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Tool | Output |
 |---|---|---|
 | Discovery | masscan + custom REST probe | `/tmp/milvus-confirmed.jsonl` (33 instances) |
 | Schema enumeration | custom REST `describe` probe | `/tmp/milvus-deep.jsonl` (per-collection schemas) |
-| Findings ledger | VisorLog | To be ingested into `data/nuclide.db` |
+| Findings ledger | VisorLog | To be ingested into `data/.db` |
 | Compliance scoring | VisorScuba | Will fail AI.C1 (unauth-baseline) for all 33 |
 | Adversarial corpus | VisorCorpus | Existing chromadb adversarial corpus applies, categories `kb_exfiltration`, `tenant_cross_leak`, `prompt_injection` transfer |
 

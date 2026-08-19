@@ -51,7 +51,7 @@ Orchestrator plus parallel subagents. Six concurrent aimap passes launched on th
 | aimap v1.9.22 | Stage-1 fingerprint + Stage-2 verify | `-scan-all-fingerprints` flag required for reverse-proxy-dominant populations (n8n, new-api) |
 | VisorBishop | IP-shadow sweep on 50-host Ollama sample | `-ip-shadow` flag; 180s timeout insufficient for 200-URL batch — timeout reduced batch size |
 | VisorGraph | Cert-pivot → operator attribution | Sub-session 2 TLS-CN sweep; 40-brand × 4 dorks |
-| VisorLog | Ledger ingest → nuclide.db | 19 events appended from cat-01 re-run |
+| VisorLog | Ledger ingest → .db | 19 events appended from cat-01 re-run |
 | VisorScuba | Compliance scoring | 21,514 nodes evaluated; 0/10 avg score |
 | BARE | Metasploit module ranking | Applied to stacked-exposure finding class |
 | VisorCorpus | Adversarial corpus | Cat-01 corpus generation |
@@ -349,4 +349,4 @@ async def check(session, host, port):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 23a · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 23a · 2026-05-19*

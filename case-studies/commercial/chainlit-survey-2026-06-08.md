@@ -3,12 +3,12 @@ type: survey
 category: llm-chat-framework
 platform: chainlit
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 ---
 
 # Chainlit at Population Scale: 80 Percent Anonymous Chat on a Framework That Ships Auth-Off
 
-_NuClide Research . 2026-06-08_
+_ . 2026-06-08_
 
 ---
 
@@ -143,7 +143,7 @@ The Shodan body-text dork `"chainlit"` matches any HTML containing the literal s
 
 GET only. No prompts submitted. No chat threads opened. No file uploads. No history reads.
 
-The 4 unauth hosts would be appropriate disclosure candidates under the standard NuClide protocol. No disclosure is being initiated from this survey per the policy of leaving disclosure decisions to the principal researcher.
+The 4 unauth hosts would be appropriate disclosure candidates under the standard . No disclosure is being initiated from this survey per the policy of leaving disclosure decisions to the principal researcher.
 
 The names "Renovis", "POC AI Assistant", "Gefuhlsfreund", "Assistant" all came from the public HTML `<title>` tag. Substrate attribution came from Shodan's WHOIS-derived `org` field. Nothing on the chat side was touched.
 
@@ -151,7 +151,7 @@ The names "Renovis", "POC AI Assistant", "Gefuhlsfreund", "Assistant" all came f
 
 ## Toolchain provenance
 
-- shodan CLI v1.31 (Shodan API, NuClide Freelance tier, US-made, ~9075 query credits at start of survey).
+- shodan CLI v1.31 (Shodan API,  Freelance tier, US-made, ~9075 query credits at start of survey).
 - Python 3.12 with `requests` 2.x for the verifier. `urllib3` warnings disabled for self-signed TLS. Single-file, ~200 lines.
 - `verify.py` source: `~/AI-LLM-Infrastructure-OSINT/data/chainlit-2026-06-08/verify.py`.
 - Verifier output: `verify-results.json` in the same directory.
@@ -171,4 +171,4 @@ The verifier was rewritten once after the initial run revealed the pre-v1 endpoi
 | Argilla (Cat-49 sibling) | auth-on (mandatory API key) | 0% | argilla-survey-2026-06-08 |
 | **Chainlit (Cat-50)** | **auth-off** | **80% (4/5, small n)** | this survey |
 
-The framework default sets the policy at population scale. Operators do not flip the switch. Chainlit's 80 percent unauth rate at n=5 is small-sample but directionally consistent with the auth-off-default cohort. The labeling cohort (Label Studio + Argilla) remains the strictest auth posture in the NuClide measurement set; the chat-UI cohort (Ollama + Chainlit) remains the most permissive.
+The framework default sets the policy at population scale. Operators do not flip the switch. Chainlit's 80 percent unauth rate at n=5 is small-sample but directionally consistent with the auth-off-default cohort. The labeling cohort (Label Studio + Argilla) remains the strictest auth posture in the  measurement set; the chat-UI cohort (Ollama + Chainlit) remains the most permissive.

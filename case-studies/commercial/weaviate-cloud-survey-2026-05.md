@@ -4,7 +4,7 @@ type: survey
 
 # Weaviate on Public Cloud: Auth Posture and Enterprise Tenant Exposure Survey
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 ---
 
@@ -151,7 +151,7 @@ Named tenants include UK brands: Harrogate Spring (mineral water), Heck (food), 
 
 Weaviate ships with `AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true` by default. The operator must explicitly set `AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=false` and configure an auth method (API key, OIDC, or both) to restrict access. This is the same opt-out posture as ChromaDB (pre-0.6) and early Qdrant deployments.
 
-The 259 auth-gated instances (37%) represent operators who actively configured auth. A better ratio than ChromaDB (0% auth-gated in both NuClide surveys) but still a majority unauthenticated.
+The 259 auth-gated instances (37%) represent operators who actively configured auth. A better ratio than ChromaDB (0% auth-gated in both  surveys) but still a majority unauthenticated.
 
 **OpenAI key exposure path:** Weaviate's `/v1/modules/text2vec-openai` endpoint returns module configuration including whether a key is configured (the key value itself is not returned in the config endpoint per Weaviate's design). However, any unauthenticated caller on a Weaviate with `text2vec-openai` active can issue embedding and generative queries that consume the operator's OpenAI API quota at their own cost. This is effectively LLM compute theft via the semantic search layer, not direct key extraction.
 
@@ -159,7 +159,7 @@ The 259 auth-gated instances (37%) represent operators who actively configured a
 
 ## Discovery Context
 
-Survey conducted 2026-05-09 as part of NuClide Research vector database exposure series. Shodan pull on `http.html:"weaviate" port:8080`, asyncio probe with per-endpoint timeout enforcement (2s connect / 4s read / 8s host deadline, 80 concurrent). Total probe time: 12 seconds for 852 hosts.
+Survey conducted 2026-05-09 as part of  vector database exposure series. Shodan pull on `http.html:"weaviate" port:8080`, asyncio probe with per-endpoint timeout enforcement (2s connect / 4s read / 8s host deadline, 80 concurrent). Total probe time: 12 seconds for 852 hosts.
 
 Port 8080 is Weaviate's default through v1.x. Weaviate Cloud Service and newer managed deployments front on 443; the direct-8080 exposure set represents self-hosted instances, the majority of which are not behind a reverse proxy with auth.
 

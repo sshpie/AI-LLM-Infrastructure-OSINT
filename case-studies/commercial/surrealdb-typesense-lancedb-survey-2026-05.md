@@ -4,7 +4,7 @@ type: survey
 
 # SurrealDB, Typesense, and LanceDB: Exposure Survey
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 ---
 

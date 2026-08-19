@@ -1,6 +1,6 @@
 # National Taiwan University: CSIE MVNL Lab, Llama-3.3-70B vLLM (FP8, 2-Engine)
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

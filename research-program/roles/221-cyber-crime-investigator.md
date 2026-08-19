@@ -86,4 +86,4 @@
 
 ## Research-program relevance
 
-Pure law-enforcement role (OPM 1811 at 94%) focused on judicial-grade evidence collection and prosecution support. Not invoked in NuClide's recon/assessment workflow — operates after a crime is established and a prosecution is in motion. Includes interviews, interrogations, and trial counsel support (T0031, T0386) that fall well outside the research program's restraint ethic. Indexed for completeness; the dark-web navigation KSA (A0174) is the one technical overlap with passiveV2 OSINT methodology, but the context is investigatory not assessment.
+Pure law-enforcement role (OPM 1811 at 94%) focused on judicial-grade evidence collection and prosecution support. Not invoked in 's recon/assessment workflow — operates after a crime is established and a prosecution is in motion. Includes interviews, interrogations, and trial counsel support (T0031, T0386) that fall well outside the research program's restraint ethic. Indexed for completeness; the dark-web navigation KSA (A0174) is the one technical overlap with passiveV2 OSINT methodology, but the context is investigatory not assessment.

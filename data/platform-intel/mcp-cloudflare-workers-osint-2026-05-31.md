@@ -7,7 +7,7 @@ status: pre-assessment (Stage -1) complete; harvest pending
 
 # MCP on Cloudflare Workers: Pre-Assessment OSINT
 
-_NuClide Research, 2026-05-31. Stage -1 intelligence for Workers-hosted MCP server survey._
+_, 2026-05-31. Stage -1 intelligence for Workers-hosted MCP server survey._
 _Sources: Cloudflare Agents docs (primary), GitHub source, CVE databases, MCP registry APIs, security research (Knostic). No live probing._
 
 ---
@@ -24,7 +24,7 @@ Two deployment packages are in scope:
 
 ## THE HARD PROBLEM: Enumeration Vectors
 
-`*.workers.dev` is a Cloudflare-owned wildcard: one shared cert covers all `*.workers.dev` subdomains. crt.sh and Censys CT-log searches return nothing useful for individual worker subdomains. Shodan indexes Cloudflare-fronted hosts as Cloudflare infrastructure, not the origin Worker. Standard NuClide enumeration chains (cert-pivot, banner-grab-Shodan, TLS SAN sweep) do not apply here.
+`*.workers.dev` is a Cloudflare-owned wildcard: one shared cert covers all `*.workers.dev` subdomains. crt.sh and Censys CT-log searches return nothing useful for individual worker subdomains. Shodan indexes Cloudflare-fronted hosts as Cloudflare infrastructure, not the origin Worker. Standard  enumeration chains (cert-pivot, banner-grab-Shodan, TLS SAN sweep) do not apply here.
 
 ### Ranked Enumeration Vectors
 
@@ -193,7 +193,7 @@ The MCP `tools/list` response exposes the full tool schema including parameter n
 
 **Note on CVE-2026-23744** (MCP server memory corruption): sourced from a secondary aggregator with no primary advisory found. Flag as unverified; treat as unresolvable without primary CVE record.
 
-**Knostic MCP scanner** (`github.com/knostic/MCP-Scanner`): independent research team mapped 1,862 MCP servers via Shodan in 2025 using 100+ filters. Their tooling and published dorks are the most developed prior art for MCP discovery at population scale. The NuClide survey should diff against their population.
+**Knostic MCP scanner** (`github.com/knostic/MCP-Scanner`): independent research team mapped 1,862 MCP servers via Shodan in 2025 using 100+ filters. Their tooling and published dorks are the most developed prior art for MCP discovery at population scale. The  survey should diff against their population.
 
 ---
 

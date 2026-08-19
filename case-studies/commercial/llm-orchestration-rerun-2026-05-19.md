@@ -52,7 +52,7 @@ The two dominant platforms (n8n and Ollama) grew ~70-80% in 19 days. The `http.t
 | `http.title:"Open WebUI" port:8080` | shodan download | 2,803 | 1,000 → 1,000 unique IPs (all :8080) |
 | `http.html:"Ollama is running" -port:443` | JAXEN hunt | 47,441 | 50 |
 | `http.title:"NewAPI"` | JAXEN hunt | 40 | 40 |
-| prior 2026-05-15 Ollama confirmed-unauth (Stage-5 substrate) | nuclide.db `ollama-population-survey-2026-05-15` | n/a | 4,990 — sampled 50 for the productize-and-re-run side-channel test |
+| prior 2026-05-15 Ollama confirmed-unauth (Stage-5 substrate) | .db `ollama-population-survey-2026-05-15` | n/a | 4,990 — sampled 50 for the productize-and-re-run side-channel test |
 
 Total candidate corpus this re-run: **2,808 unique IPs across 6 platform classes** plus the 50-host prior-corpus substrate. Shodan query credits: 6,290 → 6,262 (28 used).
 
@@ -139,9 +139,9 @@ Docker Registry side-channel (Insight #33): zero `/v2/_catalog` exposures on the
 
 ## 9. Stage 6 — Ledger / score / rank / corpus
 
-**VisorLog ingest:** 19 events written to `nuclide.db` (sector=commercial, source=`01-llm-orchestration-rerun-2026-05-19`). Lifecycle: open. 0 deduped against prior ledger entries.
+**VisorLog ingest:** 19 events written to `.db` (sector=commercial, source=`01-llm-orchestration-rerun-2026-05-19`). Lifecycle: open. 0 deduped against prior ledger entries.
 
-**VisorScuba assess:** ran across 21,514 nodes in the full nuclide.db ledger. Average score: 0/10 (0% compliant). The result is dominated by the existing population, but the ingest from this survey did not shift the average — the existing ledger was already at 0/10.
+**VisorScuba assess:** ran across 21,514 nodes in the full .db ledger. Average score: 0/10 (0% compliant). The result is dominated by the existing population, but the ingest from this survey did not shift the average — the existing ledger was already at 0/10.
 
 **BARE semantic exploit rank:** 10 Stage-5 finding classes encoded and ranked against the 3,904-module Metasploit corpus. **Only 1 finding crossed the 0.6 first-party-CVE threshold:**
 
@@ -181,7 +181,7 @@ Docker Registry side-channel (Insight #33): zero `/v2/_catalog` exposures on the
 | **recongraph** | `[—] ran on built-in test seed list, not the 01-rerun corpus` | recongraph's `upgraded_runs.py` uses a hardcoded seed list. Did not re-route to this survey's confirmed hosts. Carry-forward: parameterize recongraph entry point. |
 | **nu-recon** | `[x] ran on 91.241.49.112 + 127.0.0.1` | TR / Genc BT confirmation; 8 open ports; service stack captured. |
 | **VisorPlus** | `[~] partial run on 91.241.49.112` | Reached Step 2/6 (nmap top-1000) before tool-state notes timed out. Output continued in background. |
-| **VisorLog** | `[x] ran` | 19 events ingested into `nuclide.db`. |
+| **VisorLog** | `[x] ran` | 19 events ingested into `.db`. |
 | **VisorScuba** | `[x] ran` | 21,514 nodes assessed; 0/10 avg score (0% compliant). |
 | **BARE** | `[x] ran` | 10 Stage-5 findings → top-3 Metasploit modules each. 1 crosses 0.6 commodity-CVE threshold. |
 | **VisorCorpus** | `[x] ran` | 100-case orchestration baseline corpus built. |

@@ -15,8 +15,8 @@ date: 2026-05-04
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
 
 **Note:** I originally routed this disclosure to `dts-cybersecurity@newcastle.edu.au` earlier today; that address auto-replied indicating it is no longer monitored and pointed me at this address. Resending here per the auto-response.
 
@@ -86,6 +86,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/AU-newcastle.md
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

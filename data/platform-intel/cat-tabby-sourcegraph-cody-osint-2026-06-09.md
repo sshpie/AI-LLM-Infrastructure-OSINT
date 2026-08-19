@@ -1,6 +1,6 @@
 # Cat-Tabby: Sourcegraph (self-hosted) + Cody backend — Stage -1 OSINT brief
 
-- Researcher: NuClide research squad 3 of 4
+- Researcher:  squad 3 of 4
 - Date: 2026-06-09
 - Status: CANDIDATE (no operator probing performed)
 - Tier hypothesis: **Tier-C (auth-on-default)**, with one explicit research-gap toggle (`auth.public: true`) and a thin unauth introspection surface on `/.api/graphql`.
@@ -9,7 +9,7 @@
 
 Sourcegraph self-hosted ships **no default auth provider**. Site config requires explicit `auth.providers[]`. Supported: builtin password, GitHub OAuth, GitLab OAuth, Bitbucket Cloud/Server OAuth, Gerrit (Beta), SAML, OIDC (Google Workspace / Okta / Auth0 / Azure AD), HTTP auth proxy (oauth2_proxy header).
 
-The fresh-install flow is **first-admin-wins**: the docker quickstart docs say "navigate to port 7080, create the admin account, then you'll be guided through setup." There is a small window after `docker run` and before admin creation where the install is unauthenticated — a race condition with finite human-attention cost (one of the recurring NuClide attack-surface classes: install-state-races).
+The fresh-install flow is **first-admin-wins**: the docker quickstart docs say "navigate to port 7080, create the admin account, then you'll be guided through setup." There is a small window after `docker run` and before admin creation where the install is unauthenticated — a race condition with finite human-attention cost (one of the recurring  attack-surface classes: install-state-races).
 
 **Public toggle (research-gap-grade):** `auth.public` (default `false`). Setting to `true` allows anonymous users to access and use the instance without signing in. This is the canonical anonymous-mode switch.
 

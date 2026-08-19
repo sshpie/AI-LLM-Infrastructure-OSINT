@@ -5,16 +5,16 @@ date: 2026-05-07
 class: institutional-deployment
 category: transport-security + version-currency + adjacent-finding
 status: triage-complete
-methodology: Shodan dorking + visor-chain-runner (jaxen + visorplus + aimap + visorgraph + aimap-profile + nuclide-contact) + auth-state probe
+methodology: Shodan dorking + visor-chain-runner (jaxen + visorplus + aimap + visorgraph + aimap-profile + -contact) + auth-state probe
 ---
 
 # JupyterHub on .edu networks, Shodan-driven exposure survey
 
-NuClide Research, 2026-05-07
+, 2026-05-07
 
 ## TL;DR
 
-Shodan dork `hostname:*.edu JupyterHub` returned **252 publicly-discoverable JupyterHub instances** worldwide. A 13-host seed sample (drawn from the lowercase `jupyter` variant + 2 specifically-named JupyterHubs from manual recon) was run through the full canonical chain (`jaxen import → visorplus assess → aimap → visorgraph → aimap-profile → nuclide-contact`) and triaged via auth-state probe.
+Shodan dork `hostname:*.edu JupyterHub` returned **252 publicly-discoverable JupyterHub instances** worldwide. A 13-host seed sample (drawn from the lowercase `jupyter` variant + 2 specifically-named JupyterHubs from manual recon) was run through the full canonical chain (`jaxen import → visorplus assess → aimap → visorgraph → aimap-profile → -contact`) and triaged via auth-state probe.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage
@@ -105,7 +105,7 @@ MIT 6004hub / rosettai    :443  /hub/api/info    → timeout       FILTERED to r
 
 Five JupyterHub auth-intact hosts → finding tier is "version currency" + "transport security", not "unauth-kernel-exec". This is materially different from the Cortical Labs CL1 incident where the kernel-API exec primitive was wide open.
 
-### Step 3-5: aimap-profile + nuclide-contact
+### Step 3-5: aimap-profile + -contact
 
 Aimap-profile classified all 13 hosts under `Educational institution. CFAA exposure; prefer institutional CSIRT disclosure` ethics flag. Disclosure routing (Methodology Insight #4 derived) per host above.
 

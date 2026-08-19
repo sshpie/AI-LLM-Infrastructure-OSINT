@@ -1,7 +1,7 @@
-# Censys Platform — Operator Reference (NuClide)
+# Censys Platform — Operator Reference ()
 
 _Authored 2026-06-04 from live exploration of the authenticated Platform UI + CLI.
-Account: nuclide-research, **Starter** plan, org `e9655161-8792-440c-916e-d19d30957a55`._
+Account: , **Starter** plan, org `e9655161-8792-440c-916e-d19d30957a55`._
 
 The legacy `search.censys.io` v2 API is deprecated for us; this documents the
 **new Censys Platform** (`platform.censys.io` / `cencli`). Supersedes the
@@ -17,7 +17,7 @@ the paid (Starter) entitlement.
 
 ```bash
 # token (once):
-printf '<PAT>' | cencli config auth add --name nuclide --value-file -
+printf '<PAT>' | cencli config auth add --name  --value-file -
 # org-id MUST be passed on every command (config activate did NOT stick in testing):
 cencli search '<query>' --org-id e9655161-8792-440c-916e-d19d30957a55 -O json
 cencli org credits --org-id e9655161-8792-440c-916e-d19d30957a55
@@ -97,7 +97,7 @@ the same dork return *different* counts (Coze: 301 hosts vs 428 web-properties v
 - Service History, Event History, Related Assets, **Raw Data (JSON)**, "Summarize Host" (AI).
 - CVEs panel (shows 0 on Starter — **CVE data is Enterprise-gated**).
 
-**Why this matters for NuClide:** one host `view` replaces Stage 2 (VisorGraph
+**Why this matters for :** one host `view` replaces Stage 2 (VisorGraph
 cert-pivot — the Subject DN is right there), the IP-direct shadow-port sweep
 (Insight #12 — the full service list incl. MySQL/Redis/Mongo is right there), and
 data-tier auth reads (the decoders) — all with **no packets from our network**.
@@ -164,7 +164,7 @@ classification (complements aimap/VisorCAS honeypot screening, Insight #1).
 
 ---
 
-## 7. How Censys slots into the NuClide chain
+## 7. How Censys slots into the  chain
 
 - **Stage 0b (cross-population, Insight #69):** run each platform dork against
   host + web-property collections, take the DELTA vs the Shodan corpus — Censys's

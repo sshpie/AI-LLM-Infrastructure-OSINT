@@ -2,7 +2,7 @@
 
 _Companion to: [`reference/realtime-olap-architecture.md`](realtime-olap-architecture.md) and [`reference/olap-schema-clickhouse.sql`](olap-schema-clickhouse.sql)._
 
-These tools are **additive** to the existing per-finding tools (`get_findings`, `aimap_fingerprint`, `nuclide_contact`, `bare_rank`, `visorscuba_score`, `visorcorpus_generate`, `draft_disclosure`, `cluster_find`). They sit on top of ClickHouse and let humans and LLM agents reason over **populations**: rates over time, cross-operator patterns, framework-level harm rankings.
+These tools are **additive** to the existing per-finding tools (`get_findings`, `aimap_fingerprint`, `_contact`, `bare_rank`, `visorscuba_score`, `visorcorpus_generate`, `draft_disclosure`, `cluster_find`). They sit on top of ClickHouse and let humans and LLM agents reason over **populations**: rates over time, cross-operator patterns, framework-level harm rankings.
 
 The agent now picks tool by question shape:
 - *"What about IP X?"* → per-finding tools (existing).
@@ -341,7 +341,7 @@ If ClickHouse is down or lagging beyond the sync SLO:
 
 - Per-finding tools and disclosures continue from SQLite without degradation.
 - These OLAP-backed tools return a structured `{"unavailable": true, "reason": "...", "fallback": "..."}` rather than stale data, so the LLM agent can route around them rather than reason on stale aggregates.
-- The fallback for hot queries is to run the same SQL shape against `nuclide.db` directly via DuckDB's `sqlite_scanner` extension. Slower but correct.
+- The fallback for hot queries is to run the same SQL shape against `.db` directly via DuckDB's `sqlite_scanner` extension. Slower but correct.
 
 The orchestrator's first job after a fallback is recorded in the run log so the operator can see when OLAP was bypassed and re-warm the cache.
 

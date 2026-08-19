@@ -4,7 +4,7 @@ category: cat-lmdeploy
 target_class: OSS LLM inference serving (OpenMMLab / Shanghai AI Lab)
 target: LMDeploy (port 23333, auth_default=none)
 date: 2026-06-10
-researcher: Nuclide (Nick + Claude)
+researcher:  (Nick + Claude)
 status: METHODOLOGY-FINDING + Insight #95 reconfirmed at survey scale + Insight #101 + #102 candidates codified
 restraint_violations: 0
 findings_disclosure: none drafted (population estimate UNKNOWN, no live LMDeploy in tested cohort)
@@ -23,7 +23,7 @@ LMDeploy is OpenMMLab / Shanghai AI Lab's OpenAI-compatible inference server (de
 
 ## Methodology
 
-DCWF role-scoped 4-lane parallel dispatch using the lane-prompt shells at `~/.claude/skills/nuclide-stance/lane-prompts/`. Each lane received a parameterized prompt with `{CAT_SLUG}=cat-lmdeploy`, `{YYYY-MM-DD}=2026-06-10`, and a lane-specific mission spec. Orchestrator held the cross-lane reconcile until all 4 lanes landed, per the rule codified after the Cat-Tabby + Devstral 2026-06-09 incident.
+DCWF role-scoped 4-lane parallel dispatch using the lane-prompt shells at `~/.claude/skills/-stance/lane-prompts/`. Each lane received a parameterized prompt with `{CAT_SLUG}=cat-lmdeploy`, `{YYYY-MM-DD}=2026-06-10`, and a lane-specific mission spec. Orchestrator held the cross-lane reconcile until all 4 lanes landed, per the rule codified after the Cat-Tabby + Devstral 2026-06-09 incident.
 
 ### Lane A — NICE 541 Pentester (Recon + Harvest)
 - **Stage -1 OSINT:** tome platform record already canonical at `~/tome/platforms/lmdeploy.json` (23 paths, auth_default=none, 4 passive-dork variants + 1 strict).
@@ -89,7 +89,7 @@ Next-dispatch options:
 2. **Serialize the Stage 0 phase.** Run Stage 0 alone first, then dispatch the 4 lanes in parallel against the harvested IP list.
 3. **Bring up a third browser MCP** with its own profile dir so 2 simultaneous in-page fetches can run.
 
-Recommendation: option 1. The lane-prompt shells should be amended to make this explicit. Will update `~/.claude/skills/nuclide-stance/lane-prompts/` after this case study lands.
+Recommendation: option 1. The lane-prompt shells should be amended to make this explicit. Will update `~/.claude/skills/-stance/lane-prompts/` after this case study lands.
 
 ## Restraint discipline
 

@@ -1,6 +1,6 @@
 # TANet Abliterated Model Cluster: `gemma4-crack-fixed`, Multiple Safety-Bypassed Models
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

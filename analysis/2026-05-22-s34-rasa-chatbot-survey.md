@@ -423,4 +423,4 @@ Raw LLM system prompt returned in response body without sanitization or authenti
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Opus 4.7 (1M context)) · Session 34 · 2026-05-22*
+*Prepared by  ( + Claude Opus 4.7 (1M context)) · Session 34 · 2026-05-22*

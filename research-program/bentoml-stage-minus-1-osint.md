@@ -1,6 +1,6 @@
 # BentoML — Stage -1 OSINT Brief
 
-Researcher: Nuclide | Date: 2026-06-09 | Source: read-only (gh, NVD)
+Researcher:  | Date: 2026-06-09 | Source: read-only (gh, NVD)
 
 ## 1. Platform Identification
 
@@ -67,4 +67,4 @@ Researcher: Nuclide | Date: 2026-06-09 | Source: read-only (gh, NVD)
 
 ## Verdict
 
-**Worth a full cohort survey.** Auth-off-by-default on a `0.0.0.0:3000` listener, a 14-CVE history dominated by RCE/deserialization, a claimable Yatai `/setup?token=` admin surface, and 0 prior NuClide coverage — this maps cleanly onto the auth-on-default thesis and likely yields a small-but-high-severity cohort (target band 200-900, RCE-class CVEs gating most of it). Add BentoML to tome, build aimap fingerprint, run the chain.
+**Worth a full cohort survey.** Auth-off-by-default on a `0.0.0.0:3000` listener, a 14-CVE history dominated by RCE/deserialization, a claimable Yatai `/setup?token=` admin surface, and 0 prior  coverage — this maps cleanly onto the auth-on-default thesis and likely yields a small-but-high-severity cohort (target band 200-900, RCE-class CVEs gating most of it). Add BentoML to tome, build aimap fingerprint, run the chain.

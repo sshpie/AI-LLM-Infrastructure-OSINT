@@ -1,6 +1,6 @@
 # Institut Teknologi Bandung (ITB): 22 Models, Custom Indonesian Education AI
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

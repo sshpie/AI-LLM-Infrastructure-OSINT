@@ -80,7 +80,7 @@ Per Insight #68 (Depth A/B × Breadth 0/1/2) — apply once Lane A's filtered co
 - **Outer (Breadth):** **1** — per-host claim, never population-wide. Each surviving IP carries its own evidence; no cohort-level "all 1,217 are real" claim is permitted. **0** (single anchor) is too thin for a public artifact; **2** (cross-corpus replication) is the right escalation only if a second collection (Censys CT-log cross-pop, or a non-Mullvad routing snapshot) confirms the host independently.
 
 **Final rung pair for Lane A's promoted findings: A / 1.**
-NuClide restraint stance preserved: high-depth, narrow-breadth, by choice.
+ restraint stance preserved: high-depth, narrow-breadth, by choice.
 
 ---
 

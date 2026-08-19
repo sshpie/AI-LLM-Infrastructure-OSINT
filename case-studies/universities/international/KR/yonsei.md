@@ -1,6 +1,6 @@
 # Yonsei University: 17 Cloud Subscriptions on Non-Standard Port, Free-Tier 200 OK
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

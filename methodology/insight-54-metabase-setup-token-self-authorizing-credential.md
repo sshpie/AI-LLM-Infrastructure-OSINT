@@ -102,4 +102,4 @@ The self-authorizing-credential framing is wrong if:
 
 ---
 
-*Codified by Nuclide Research (Nicholas Kloster + Claude) 2026-05-21 from the embedding-tier2-2026-05-21 OVH/Scaleway sweep. Methodology per `~/.claude/nuclide-internal/METHODOLOGY.md`.*
+*Codified by  ( + Claude) 2026-05-21 from the embedding-tier2-2026-05-21 OVH/Scaleway sweep. Methodology per `~/.claude/-internal/METHODOLOGY.md`.*

@@ -70,4 +70,4 @@ T0072 monitor/measure risk; T0207 problem-solving; T0220 conflict resolution; T0
 
 ## Research-program relevance
 
-Tangentially relevant. T0553 (apply cyber functions like encryption, access control, IdM to reduce exploitation) is the upstream version of every NuClide unauth-finding remediation. K0164/K0148 (functionality and import/export controls on supply items) ties to how foreign-attribution findings on AI/ML services get routed for procurement re-evaluation. This is a recipient-side role on disclosure routing, not a tool we reach for during assessment.
+Tangentially relevant. T0553 (apply cyber functions like encryption, access control, IdM to reduce exploitation) is the upstream version of every  unauth-finding remediation. K0164/K0148 (functionality and import/export controls on supply items) ties to how foreign-attribution findings on AI/ML services get routed for procurement re-evaluation. This is a recipient-side role on disclosure routing, not a tool we reach for during assessment.

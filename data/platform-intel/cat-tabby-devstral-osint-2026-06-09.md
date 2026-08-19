@@ -70,7 +70,7 @@ nuclei templates: existing Ollama/vLLM detection templates apply (no Devstral-sp
 Population estimate (cross-reference):
 - HuggingFace last-month downloads: 5,738 (Devstral-Small-2505) + 8,784 (Devstral-2-123B-Instruct-2512) = ~14.5K/month.
 - Ollama Library pulls: 956.5K (devstral) + 234.8K (devstral-2) = ~1.19M cumulative pulls.
-- Internet-exposed serving stacks with Devstral loaded: low-thousands range expected (Ollama exposed population per recent NuClide Ollama walk = 16,473 hosts; even a 1-2% Devstral-loaded share gives 150-300 hosts. vLLM and llama.cpp add more).
+- Internet-exposed serving stacks with Devstral loaded: low-thousands range expected (Ollama exposed population per recent  Ollama walk = 16,473 hosts; even a 1-2% Devstral-loaded share gives 150-300 hosts. vLLM and llama.cpp add more).
 
 ---
 
@@ -118,7 +118,7 @@ Insight #67 / VisorAgent ethics: **no completion endpoint is called** under the 
 
 Prior research on Devstral-the-model: HuggingFace card, Mistral blog (May 2025), Spheron deployment guides, OpenHands integration docs. No public population survey of internet-exposed Devstral-loaded hosts as of 2026-06-09.
 
-**Gap:** No prior NuClide-style survey of *which* model families are loaded across the exposed Ollama / vLLM populations. Devstral is a clean test case because the model ID is unique to Mistral and has a stable string match.
+**Gap:** No prior -style survey of *which* model families are loaded across the exposed Ollama / vLLM populations. Devstral is a clean test case because the model ID is unique to Mistral and has a stable string match.
 
 ---
 

@@ -19,7 +19,7 @@ tags:
 
 # Chinese commercial Claude-reseller ecosystem: claude-relay-service population survey
 
-_NuClide Research · 2026-05-19 · Six publicly-indexed `claude-relay-service` instances pool 32 paid Anthropic accounts and resell Claude inference through customer-facing LiteLLM storefronts in the same Chinese commercial cloud netblocks._
+_ · 2026-05-19 · Six publicly-indexed `claude-relay-service` instances pool 32 paid Anthropic accounts and resell Claude inference through customer-facing LiteLLM storefronts in the same Chinese commercial cloud netblocks._
 
 ## Summary
 

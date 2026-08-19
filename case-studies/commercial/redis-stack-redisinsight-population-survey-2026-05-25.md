@@ -4,7 +4,7 @@ type: survey
 
 # Redis Stack / RedisInsight Population Survey (2026-05-25)
 
-_NuClide Research · 2026-05-25_
+_ · 2026-05-25_
 _Category 02: Vector DB stragglers. First survey of Redis Stack + RedisInsight tier._
 
 ---
@@ -199,7 +199,7 @@ Redis Stack is used across AI and non-AI workloads. The RediSearch vector module
 | VisorGraph | 190.217.28.217 → qa.simonmovilidad.com → Let's Encrypt cert; CSP leaks finanzauto.com.co |
 | aimap-profile | Simón Movilidad confirmed (title: "Simon Movilidad - Home") |
 | JS-bundle | N/A — no web UI on Redis Stack port 6379 |
-| VisorLog | 4 findings added (IDs 59–62) to nuclide.db |
+| VisorLog | 4 findings added (IDs 59–62) to .db |
 | VisorScuba | All 4 hosts scored 0/10 — AI.C1 violation (unauthenticated service) |
 | BARE | Top match: `auxiliary_gather_redis_extractor` (0.575) — exact MSF module for Redis data extraction |
 | VisorCorpus | Adversarial corpus built (focused/strict, kb_exfiltration + config_secrets) |

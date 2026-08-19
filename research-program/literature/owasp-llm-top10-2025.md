@@ -1,6 +1,6 @@
 # OWASP Top 10 for Large Language Model Applications (2025)
 
-The current canonical taxonomy of LLM application security risks. Every NuClide AI/LLM survey finding is mapped to one or more of these categories.
+The current canonical taxonomy of LLM application security risks. Every  AI/LLM survey finding is mapped to one or more of these categories.
 
 **Source:** OWASP LLM AI Security & Governance Top 10 (2025 update).
 **Background:** "AI-Native LLM Security" (Packt, December 2025) Appendix A documents the 2023 → 2025 evolution.
@@ -22,7 +22,7 @@ The current canonical taxonomy of LLM application security risks. Every NuClide 
 
 (LLM10:2023 Model Theft was absorbed into LLM02 Sensitive Information Disclosure — model weights are intellectual property and unauthorized access is a data breach.)
 
-## How NuClide surveys map to OWASP LLM Top 10 (2025)
+## How  surveys map to OWASP LLM Top 10 (2025)
 
 ### LLM01:2025 Prompt Injection
 
@@ -57,7 +57,7 @@ The current canonical taxonomy of LLM application security risks. Every NuClide 
 
 ### LLM08:2025 Vector and Embedding Weaknesses (NEW in 2025)
 
-- **RAGFlow**: a registered tenant with knowledge-base creation rights can affect the shared embedding model behavior across tenants depending on configuration. NuClide has not exercised this; the class is documented as enabled.
+- **RAGFlow**: a registered tenant with knowledge-base creation rights can affect the shared embedding model behavior across tenants depending on configuration.  has not exercised this; the class is documented as enabled.
 - **Pinecone** (in Flowise FDA case): an unauthenticated Flowise instance with a configured Pinecone API key means anyone can read or write to the operator's Pinecone index.
 
 ### LLM09:2025 Misinformation
@@ -73,7 +73,7 @@ The current canonical taxonomy of LLM application security risks. Every NuClide 
 
 The 2025 revision reflects "shifts in the threat landscape based on documented incidents." The promotions of LLM02 (#6 → #2) and LLM03 (#5 → #3) tell us that **enterprise AI is leaking sensitive information at scale, and that supply-chain attacks against AI infrastructure are now concrete, not hypothetical**.
 
-The two new entries (LLM07 System Prompt Leakage, LLM08 Vector and Embedding Weaknesses) reflect the RAG-architecture shift: 2023 was about standalone LLM API calls; 2025 is about RAG + agent ecosystems. The NuClide survey program covers exactly this attack surface (RAG: RAGFlow, Pinecone, Weaviate; observability: Langfuse, Phoenix; agent: Flowise, LangGraph queued).
+The two new entries (LLM07 System Prompt Leakage, LLM08 Vector and Embedding Weaknesses) reflect the RAG-architecture shift: 2023 was about standalone LLM API calls; 2025 is about RAG + agent ecosystems. The  survey program covers exactly this attack surface (RAG: RAGFlow, Pinecone, Weaviate; observability: Langfuse, Phoenix; agent: Flowise, LangGraph queued).
 
 ## Threat-class detail files
 

@@ -1,6 +1,6 @@
 # BentoML — Platform Intelligence Brief
 
-**Researcher:** NuClide Research
+**Researcher:** 
 **Date:** 2026-06-27
 **Sources:** GitHub (bentoml/BentoML, bentoml/Yatai), NVD, GitHub Security Advisories
 **Prior work:** research-program/bentoml-stage-minus-1-osint.md (2026-06-09)

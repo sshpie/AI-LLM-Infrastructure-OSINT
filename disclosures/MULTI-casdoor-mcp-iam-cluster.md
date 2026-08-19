@@ -1,6 +1,6 @@
 ---
 to: abuse@akamai.com, abuse@ovh.net
-cc: support@casdoor.org, abuse@nuclide-research.com
+cc: support@casdoor.org, abuse@
 severity: HIGH
 ip: 139.162.50.110, 141.95.127.178, 51.195.82.158
 institution: Casdoor MCP recurring exposure, 3 instances across Linode + OVH
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@akamai.com, abuse@ovh.net
-**Cc:** support@casdoor.org, abuse@nuclide-research.com
+**Cc:** support@casdoor.org, abuse@
 **Subject:** Three unauthenticated Casdoor MCP servers (OAuth application-CRUD) across providers, recurring template-auth-off pattern
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -30,7 +30,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification routed to:
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification routed to:
 
 1. **Akamai abuse** (for the Linode-hosted instance)
 2. **OVH abuse** (for the two OVH-hosted instances)
@@ -40,7 +40,7 @@ I'm an independent security researcher conducting good-faith AI infrastructure r
 
 ## Summary
 
-Three instances of `Casdoor MCP Server v1.0.0` were independently identified during NuClide Research's MCP cross-cloud survey (2026-05-04). All three return identical responses to JSON-RPC `initialize` and expose 5 tools without authentication:
+Three instances of `Casdoor MCP Server v1.0.0` were independently identified during 's MCP cross-cloud survey (2026-05-04). All three return identical responses to JSON-RPC `initialize` and expose 5 tools without authentication:
 
 ```
 get_applications, get_application, add_application,
@@ -55,7 +55,7 @@ Casdoor is an OAuth 2.0 / SSO identity-as-a-service platform (`casdoor.org`). Th
 
 That all three operators independently deployed the same template with the same auth-off-default suggests the upstream Casdoor MCP template ships without auth on `tools/list` invocation. Three is a small sample but the pattern is striking enough to warrant Casdoor maintainers reviewing the template's default auth posture.
 
-Found during NuClide Research's MCP cross-cloud survey. Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F7, Casdoor MCP Server").
+Found during 's MCP cross-cloud survey. Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F7, Casdoor MCP Server").
 
 ## Confirmed exposure (each host)
 
@@ -88,6 +88,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2
 I'm happy to answer questions or assist with verification on any of the three hosts.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

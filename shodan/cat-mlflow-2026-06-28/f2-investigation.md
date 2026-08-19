@@ -212,7 +212,7 @@ writes a file to /etc/cron.d/c51fda5721954759ade3a16694cf28e0/artifacts/<filenam
 On any standard Linux system, the cron daemon reads all files in /etc/cron.d at the next
 minute boundary. A file with valid cron syntax executes as root.
 
-NuClide restraint: we confirmed the run record exists and is RUNNING. We did NOT log
+ restraint: we confirmed the run record exists and is RUNNING. We did NOT log
 an artifact. Whether Actor E successfully wrote a payload into /etc/cron.d, or whether
 the MLflow process lacks write permissions there, is unknown -- we have not verified
 the write outcome.

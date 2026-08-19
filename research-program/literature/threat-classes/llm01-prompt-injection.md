@@ -14,7 +14,7 @@ The 2025 revision emphasizes:
 
 ## Academic citations
 
-From the NuClide aisecure literature corpora:
+From the  aisecure literature corpora:
 
 - Greshake et al. **"Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection"** (2023) — indexed across multiple cs598-fall2021 + later course supplements.
 - Earlier "intriguing properties of neural networks" (Szegedy et al., `arxiv_1312.6199`) lineage and FGSM (Goodfellow et al., `arxiv_1412.6572`) — the conceptual ancestors of input-space adversarial manipulation, transposed to text in modern prompt-injection work.
@@ -31,7 +31,7 @@ From the NuClide aisecure literature corpora:
 
 ## Why this is hard to find at population scale
 
-Prompt injection findings require **invoking the LLM**, which crosses NuClide restraint policy at population scale (consumes operator's inference budget; produces detectable activity). NuClide finds the **enabling conditions** for LLM01 (open chat interfaces, public agent endpoints) but does not exercise the injection itself.
+Prompt injection findings require **invoking the LLM**, which crosses  restraint policy at population scale (consumes operator's inference budget; produces detectable activity).  finds the **enabling conditions** for LLM01 (open chat interfaces, public agent endpoints) but does not exercise the injection itself.
 
 The Flowise case is unusual because the operator has **published the injection canary themselves** in the chatflow definition — so the finding is from configuration inspection, not from active probing.
 
@@ -46,4 +46,4 @@ The Flowise case is unusual because the operator has **published the injection c
 
 - **541 Vulnerability Assessment Analyst** — finds the enabling exposure
 - **661 R&D Specialist** — builds the test harness (VisorCorpus = adversarial prompt corpus for controlled-target testing)
-- **VisorAgent** (NuClide tool) — controlled-target only; never fired at survey set per ethical-stop policy
+- **VisorAgent** ( tool) — controlled-target only; never fired at survey set per ethical-stop policy

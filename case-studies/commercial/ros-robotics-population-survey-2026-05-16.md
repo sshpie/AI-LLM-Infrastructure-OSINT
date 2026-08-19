@@ -4,7 +4,7 @@ type: survey
 
 # ROS Robotics Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 5 of the day's 10-category batch)_
+_ · 2026-05-16 (Survey 5 of the day's 10-category batch)_
 _Closes: category 28 (medical-edge-ai / robotics leg). ROS master / rosbridge / Jetson edge_
 
 ---

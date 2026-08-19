@@ -8,7 +8,7 @@ tags: [...]
 
 # <Title>
 
-_NuClide Research · <date> · <one-line sub-header — what the case study covers>._
+_ · <date> · <one-line sub-header — what the case study covers>._
 
 ## Summary
 
@@ -108,7 +108,7 @@ verification tier — what is verified vs inferred vs not exercised.>
 
 ```
 <linear or tree representation of the chain that produced the case study —
-already a NuClide convention, retained as the survey-level summary even when
+already a  convention, retained as the survey-level summary even when
 per-finding tables are present>
 ```
 

@@ -109,7 +109,7 @@ No accounts created. No POST with valid email/password submitted. Source audit r
 | ~11:15 | VisorScuba run | AI.C1 false positive on auth-enforced Agenta; 0/10 across board |
 | ~11:30 | BARE on 3 representative hosts | 0/3 MSF matches; novel authn class; no existing module |
 | ~11:45 | VisorCorpus | 50-item focused corpus built |
-| ~11:50 | VisorLog ingest | #53–#58 in nuclide.db; SIGNUP_OPEN medium classification |
+| ~11:50 | VisorLog ingest | #53–#58 in .db; SIGNUP_OPEN medium classification |
 | ~12:00 | Insight #55 formulated and committed | Auth-gated API + open signup = uncontrolled account creation |
 | ~12:15 | Toolchain gaps documented | aimap/VisorBishop: no Agenta fingerprint; VisorScuba: AI.C1 FP; aimap needs registration-open probe |
 | ~12:30 | Carry-forward written | Langfuse port:5432, PromptLayer, Evidently; push OSINT repo + aimap PR |
@@ -332,4 +332,4 @@ VisorGraph cert analysis:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 30 · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 30 · 2026-05-22*

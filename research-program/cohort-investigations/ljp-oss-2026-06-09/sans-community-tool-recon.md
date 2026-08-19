@@ -101,7 +101,7 @@ pip install -r requirements.txt && python3 ioc_pivot.py -i 1.2.3.4
 - **pybinaryedge** (`Te-k`, 2023) — works, but BinaryEdge free tier is severely throttled now; not worth integrating without a paid key.
 - **The 15+ "favicon hash for shodan" repos** — all 1-page snippets; favihunter (multi-engine) supersedes, or use the 4-line mmh3 idiom inline.
 - **fofa_viewer** (`wgpsec`, 1.8k stars) — JavaFX desktop, paid FOFA required. Reference for query syntax only.
-- **"openai/anthropic key abuse" searches** — zero usable tooling exists. **Confirms NuClide is in unmapped territory; the LJP-OSS detection gap is real.**
+- **"openai/anthropic key abuse" searches** — zero usable tooling exists. **Confirms  is in unmapped territory; the LJP-OSS detection gap is real.**
 
 ## Immediate next steps
 

@@ -314,7 +314,7 @@ VisorBishop is the automation answer, and it was built this session. The loop is
 # which operators went offline, which new exposures appeared
 visorbishop -i known-population.txt -ip-shadow-all -c 32 -timeout 4s \
   -json sweep-$(date +%F).json -csv sweep-$(date +%F).csv
-# Pipe the JSON into the NuClide findings ledger
+# Pipe the JSON into the  findings ledger
 visorlog ingest sweep-$(date +%F).json
 ```
 
@@ -394,4 +394,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-05-11 to 2026-05-12 · VisorBishop productization + observability Phase 2*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-05-11 to 2026-05-12 · VisorBishop productization + observability Phase 2*

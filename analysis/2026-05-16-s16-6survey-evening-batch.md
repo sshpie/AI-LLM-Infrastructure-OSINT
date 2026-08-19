@@ -50,7 +50,7 @@ Continuation of the afternoon session; treated as a separate session for analysi
 | aimap v1.9.6→v1.9.7 | Stage-1 fingerprint + Stage-2 verify | v1.9.7 shipped mid-session; 11 new fingerprints, Manager-probe fix |
 | fast_enum_clickhouse.py | ClickHouse mass-probe | threads=250, ~35 min; SHOW DATABASES via HTTP GET |
 | fast_enum_es.py | Elasticsearch mass-probe | threads=120, ~12 min; /_cat/indices endpoint |
-| VisorLog | Ledger ingest → nuclide.db | +6,869 high-severity events; cumulative 12,284 |
+| VisorLog | Ledger ingest → .db | +6,869 high-severity events; cumulative 12,284 |
 | VisorAgent | Active LLM exploitation | Ethical-stop. Not run. |
 | VisorHollow | Windows process-injection benchmark | Not applicable — Windows-only binary |
 
@@ -110,7 +110,7 @@ No brute forcing. No privilege escalation. No data exfiltration. ClickHouse prob
 | ~19:42 | Elasticsearch probe completes | 5,037 confirmed unauth (54% real-rate). 12 AI-stack index markers found |
 | ~20:00 | Version aggregation on ES + CH populations | Single-version dominance pattern confirmed on both. Insight #27 drafted |
 | ~20:15 | Experiment-tracking stragglers | 1,096 candidates; 2 Aim (demo mode) confirmed. ClearML / W&B / Comet: Tier-C holds |
-| ~20:30 | VisorLog ingest | +6,869 high-severity events into nuclide.db |
+| ~20:30 | VisorLog ingest | +6,869 high-severity events into .db |
 | ~20:45 | aimap v1.9.7 shipped | ComfyUI-Manager probe + 11 fingerprints. 27c91c0 pushed |
 | ~21:00 | Insight #27 codified | Docker-image-template version dominance — Solr / ClickHouse / Elasticsearch same-day cases |
 | ~21:15 | SESSION.md updated; bc64efd commit | Session 16 entry written and pushed |
@@ -361,4 +361,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 16 · 2026-05-16*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 16 · 2026-05-16*

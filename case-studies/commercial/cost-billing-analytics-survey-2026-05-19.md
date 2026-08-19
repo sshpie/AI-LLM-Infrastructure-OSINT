@@ -9,7 +9,7 @@ status: complete
 
 # AI Cost / Billing / Usage Analytics population survey
 
-_NuClide Research · 2026-05-19 · 2,573 unique candidates harvested across 6 dork batches (vendor-name, creative-side-channel, niche-JSON-shape, tech-architecture, critical-key-exposure, niche-tier-platforms). 4 critical Langfuse secret-key exposures verified. Phoenix self-hosted population mapped. Dokploy frontend-secret-leak class identified._
+_ · 2026-05-19 · 2,573 unique candidates harvested across 6 dork batches (vendor-name, creative-side-channel, niche-JSON-shape, tech-architecture, critical-key-exposure, niche-tier-platforms). 4 critical Langfuse secret-key exposures verified. Phoenix self-hosted population mapped. Dokploy frontend-secret-leak class identified._
 
 ## Summary
 

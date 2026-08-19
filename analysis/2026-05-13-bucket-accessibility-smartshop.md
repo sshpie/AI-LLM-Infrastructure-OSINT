@@ -3,7 +3,7 @@
 **Date:** 2026-05-13
 **Session:** unnumbered (retroactive analysis)
 **Classification:** Internal / Research Use Only
-**Toolchain:** VisorBishop Phase 5b probe.py, aimap v1.0.0/v1.8.3, aimap-profile v0.1, VisorGraph, BARE (corpus 3,904 modules), nrich, geonet, VisorCorpus, nuclide-contact, JS-bundle extract, disclosure bulletin renderer
+**Toolchain:** VisorBishop Phase 5b probe.py, aimap v1.0.0/v1.8.3, aimap-profile v0.1, VisorGraph, BARE (corpus 3,904 modules), nrich, geonet, VisorCorpus, -contact, JS-bundle extract, disclosure bulletin renderer
 **Repos updated:** AI-LLM-Infrastructure-OSINT (c01c2bf, c3c0bce, 8aa6a71, 5952ae3, 810cd51)
 
 ---
@@ -44,7 +44,7 @@ Orchestrator session with parallel-lane delegation. The session ran two distinct
 
 The bucket-accessibility pass was a single sequential tool: `probe.py` walked the 49-bucket target list one probe at a time with 0.4-second pacing. No fan-out there. The probe is deliberately slow and polite because the target population is third-party operator infrastructure.
 
-The SmartShop AI deep-dive used the arsenal-fanout pattern. Multiple tool lanes ran concurrently against one host corpus. The fanout evidence directory holds eight lanes: aimap-profile, BARE, geonet, nrich, nuclide-contact, operator-pivot, Shodan host pull, VisorCorpus, and VisorGraph. Each lane is an independent subagent task with a defined output file. Total wall time was the slowest lane, not the sum. The orchestrator integrated the lane outputs into one host record and one case study.
+The SmartShop AI deep-dive used the arsenal-fanout pattern. Multiple tool lanes ran concurrently against one host corpus. The fanout evidence directory holds eight lanes: aimap-profile, BARE, geonet, nrich, -contact, operator-pivot, Shodan host pull, VisorCorpus, and VisorGraph. Each lane is an independent subagent task with a defined output file. Total wall time was the slowest lane, not the sum. The orchestrator integrated the lane outputs into one host record and one case study.
 
 No model-tier switching. The session stayed at one model and delegated scoped lanes to subagents.
 
@@ -60,7 +60,7 @@ No model-tier switching. The session stayed at one model and delegated scoped la
 | nrich | Shodan-record enrichment of the MLflow anchor set | CPE and CVE rollup across the Phase 5b anchor IPs |
 | geonet | Geolocation of the anchor host set | one lane of the arsenal fanout |
 | VisorCorpus | Adversarial corpus for the MLflow-tracker class | `mlflow-tracker-adversarial.json`, ~2,500-entry corpus |
-| nuclide-contact | WHOIS-based disclosure-recipient resolution | run on 78.135.66.61, amazonrec.space, nadorawear.com, pendns.net |
+| -contact | WHOIS-based disclosure-recipient resolution | run on 78.135.66.61, amazonrec.space, nadorawear.com, pendns.net |
 | JS-bundle extract | SmartShop AI Vite bundle → headless API URL | 335KB `smartshop-main.js`; surfaced `https://api.amazonrec.space/api/v1` |
 | operator-pivot | Bucket-name → operator-token derivation | parsed 49 bucket names into guessed operator tokens |
 | disclosure bulletin renderer | `render_bulletin.py` + `bulletin_template.html` | built this session; fills the 8-section layout, emits HTML + plaintext, `--draft` mode |
@@ -73,7 +73,7 @@ The bucket prober is stateless and idempotent. Each probe is single-shot per URL
 
 aimap was at v1.0.0 when the SmartShop host was first scanned and emitted only one "AI service found" against a host running a full ML pipeline. That undercount drove the v1.8.3 release mid-session, which adds the data-tier adjacency classifier and was live-validated against the same host the same day.
 
-The disclosure sender configuration changed this session. `FROM_ADDR` moved to `contact@nuclide-research.com`. The Gmail OAuth scope moved from `gmail.send` to `gmail.compose`, because the send scope alone cannot create drafts. The new `--draft` mode calls `drafts().create()` instead of `messages().send()`, so a rendered disclosure lands in the Drafts folder and is never transmitted.
+The disclosure sender configuration changed this session. `FROM_ADDR` moved to `contact@`. The Gmail OAuth scope moved from `gmail.send` to `gmail.compose`, because the send scope alone cannot create drafts. The new `--draft` mode calls `drafts().create()` instead of `messages().send()`, so a rendered disclosure lands in the Drafts folder and is never transmitted.
 
 ---
 
@@ -133,7 +133,7 @@ Timestamps are approximate. This session was not assigned a session number; the 
 | ~11:30 | Inspected the one `public-list`: `model-storage@blobimgstore.blob.core.windows.net` | Container empty at probe time (`<Blobs />`); per-experiment prefix `101/` also empty. Stopped — no further probing of third-party operator |
 | ~11:35 | Classified 49-bucket result, derived Insight #18 | 97.96% storage-tier hygiene; reframed Phase 5 "second-order disclosure" from data-exfil to metadata-disclosure |
 | ~11:40 | Pivoted to host 78.135.66.61 from the Phase 5 corpus | Launched the arsenal-fanout: 8 parallel tool lanes against the PENTECH host and anchor set |
-| ~11:48 | Arsenal-fanout lanes completed | aimap-profile, BARE, geonet, nrich, nuclide-contact, operator-pivot, Shodan, VisorCorpus, VisorGraph evidence written |
+| ~11:48 | Arsenal-fanout lanes completed | aimap-profile, BARE, geonet, nrich, -contact, operator-pivot, Shodan, VisorCorpus, VisorGraph evidence written |
 | ~11:55 | Extracted `smartshop-main.js` (335KB Vite bundle) from the amazonrec.space Vercel SPA | Bundle calls `https://api.amazonrec.space/api/v1`; subdomain resolves to 78.135.66.61, different ASN than Vercel — the soft target |
 | ~11:59 | aimap-profile classified the PENTECH IP and amazonrec.space | /29 PTR sweep found siblings `tr5.timeadjust.org`, `server.emersoft.com.tr`; multi-tenant ethics flag set |
 | ~12:34 | Built `disclosure_template.html` / `.txt` + `new_disclosure.py` + `preview_gallery.py` | The earlier minimalist disclosure template and renderer |
@@ -404,7 +404,7 @@ STEP 2 — list the named container, anonymously
 REQUEST:
   GET /<container>?restype=container&comp=list&maxresults=10 HTTP/1.1
   Host: <account>.blob.core.windows.net
-  User-Agent: NuClide-VisorBishop-Phase5b/1.0 (research; read-only)
+  User-Agent: -VisorBishop-Phase5b/1.0 (research; read-only)
 
 RESPONSE (the one public-list case):
   HTTP/1.1 200 OK
@@ -459,4 +459,4 @@ RESPONSE (relevant fragment):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-05-13 · bucket-accessibility survey + SmartShop disclosure*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-05-13 · bucket-accessibility survey + SmartShop disclosure*

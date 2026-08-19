@@ -48,7 +48,7 @@ Orchestrator + subagent delegation throughout. Stage -1 ran four parallel OSINT 
 | aimap-profile | Target classification + ethics flags | passive; 5 finding hosts profiled |
 | JS-bundle extract | SPA secret + route-table read on app.babbid.com | caught the F6 framework mislabel |
 | BARE | Semantic module ranking | findings fed via adapter |
-| VisorLog | Ledger ingest -> nuclide.db | |
+| VisorLog | Ledger ingest -> .db | |
 | VisorScuba | Compliance scoring | |
 | recongraph | Seed-polymorphic recon over finding hosts | |
 
@@ -372,4 +372,4 @@ aimap v1.9.54  target 52.69.81.89
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Opus 4.8) · Cat-RAG-Framework-Servers · 2026-06-17 to 2026-06-18.*
+*Prepared by  ( + Claude Opus 4.8) · Cat-RAG-Framework-Servers · 2026-06-17 to 2026-06-18.*

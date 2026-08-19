@@ -1,7 +1,7 @@
 # Disclosure: morphEUS Qdrant Exposure
 # Status: SENT 2026-06-21
 # To: morpheus@phoenix.edu | CC: Privacy@phoenix.edu
-# From: nicholas@nuclide-research.com
+# From: 
 # Gmail messageId: 19ee9f68e835aa87
 
 ---
@@ -64,7 +64,7 @@ GET http://54.191.150.157/collections HTTP/1.1
 Write access confirmed via canary (inserted then deleted, no credentials):
 ```
 PUT http://54.191.150.157/collections/usd_articles/points
-{"points":[{"id":99999,"vector":[...],"payload":{"nuclide_canary":true}}]}
+{"points":[{"id":99999,"vector":[...],"payload":{"_canary":true}}]}
 -> {"result":{"operation_id":...,"status":"completed"},"status":"ok"}
 
 POST http://54.191.150.157/collections/usd_articles/points/delete
@@ -91,6 +91,6 @@ I published CVE-2025-4364 and ICSA-25-140-11 (CISA advisory) earlier this year. 
 
 I can answer technical questions about the exposure. If you have a security team, feel free to forward this to them.
 
-Nicholas Kloster
-nicholas@nuclide-research.com
-nuclide-research.com
+
+
+

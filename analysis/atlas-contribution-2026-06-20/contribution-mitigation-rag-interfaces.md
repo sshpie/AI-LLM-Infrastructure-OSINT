@@ -8,8 +8,8 @@ matching field, then click Create File and attach the resulting .yaml to the ema
 
 ## Contact Details
 
-Contact Name(s): Nicholas Kloster (NuClide Research)
-Contact Email(s): nicholas@nuclide-research.com
+Contact Name(s):  ()
+Contact Email(s): 
 
 ## Mitigation Details
 
@@ -68,6 +68,6 @@ Mitigation Summary:
   AML.T0070 currently lists zero mitigations. This contribution proposes the first.
   It is drawn from field assessment of internet-exposed RAG stacks where the vector
   database, its admin UI, and a retrieval search console were all reachable without
-  authentication on the same host. NuClide can provide a sanitized real-world case
+  authentication on the same host.  can provide a sanitized real-world case
   study demonstrating the oracle-tuned variant under responsible disclosure once the
   affected operator has been notified and the exposure closed.

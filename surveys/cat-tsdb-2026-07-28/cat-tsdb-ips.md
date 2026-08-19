@@ -242,11 +242,11 @@ Fetched `qdb.*.js` (202 KB) + `vendor.*.js` (5.7 MB, Monaco editor) from `177.91
 
 ## Step 6 — VisorLog Ledger Ingest
 
-`visorlog --db ~/visorlog/nuclide.db ingest --from cat-tsdb-aimap-report.json --format aimap --sector cat-tsdb` → **148 events ingested, 58 deduped** (already present from an earlier session touching some of the same IPs). Ledger status: `cat-tsdb` sector now shows 76 high / 69 info / 3 medium open. Note: the aimap→VisorLog severity mapping does not cleanly preserve aimap's own critical/high/medium split (23/71/46 at source) — worth a follow-up methodology note on adapter fidelity, not fixed this pass.
+`visorlog --db ~/visorlog/.db ingest --from cat-tsdb-aimap-report.json --format aimap --sector cat-tsdb` → **148 events ingested, 58 deduped** (already present from an earlier session touching some of the same IPs). Ledger status: `cat-tsdb` sector now shows 76 high / 69 info / 3 medium open. Note: the aimap→VisorLog severity mapping does not cleanly preserve aimap's own critical/high/medium split (23/71/46 at source) — worth a follow-up methodology note on adapter fidelity, not fixed this pass.
 
 ## Step 7 — VisorScuba Compliance Scoring
 
-`visorscuba assess --json` scored all 148 cat-tsdb ledger nodes against the NuClide AI Security Baseline: **uniform 90% compliance, 0/148 passing**, single violation type across the board — `BLUE-EXP-001` (publicly indexed/discoverable AI/ML service).
+`visorscuba assess --json` scored all 148 cat-tsdb ledger nodes against the  AI Security Baseline: **uniform 90% compliance, 0/148 passing**, single violation type across the board — `BLUE-EXP-001` (publicly indexed/discoverable AI/ML service).
 
 **Adapter-fidelity gap, logged honestly:** VisorScuba's Node schema (`unauth_inference_api`, `default_credentials`, `dangerous_endpoint_exposed`, etc.) shows `false` across all 148 cat-tsdb nodes despite the Step 1b enumerators having directly confirmed unauth SQL exec (QuestDB), unauth database/measurement disclosure (InfluxDB), and full-config credential exposure (Prometheus) on many of these same hosts. The aimap→VisorScuba mapping doesn't yet understand TSDB-specific finding categories, so the 90%-uniform score **under-represents actual severity for this category** — it's scoring "is this indexed" (true for all 148) rather than "is data actually readable" (true for ~72/79 per Step 1b). Flagging as a real gap for the compliance-scoring layer, not fixing this pass.
 

@@ -388,7 +388,7 @@ CONSENSUS CONCLUSION
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                    NUCLIDE METHODOLOGY: PHASES EXECUTED                    │
+│                     METHODOLOGY: PHASES EXECUTED                    │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 ✓ COMPLETED

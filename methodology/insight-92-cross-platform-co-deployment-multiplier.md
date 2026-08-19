@@ -1,6 +1,6 @@
 # Insight #92 — Cross-Platform Co-Deployment Multiplies Exposure (Candidate)
 
-_NuClide Research · 2026-06-08 · Origin: cross-corpus operator hunt against today's three surveys._
+_ · 2026-06-08 · Origin: cross-corpus operator hunt against today's three surveys._
 
 ---
 

@@ -4,7 +4,7 @@ type: survey
 
 # ComfyUI Image-Generation Workflow Tool: Auth Posture Survey
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Sibling tier-2 expansions: [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](qdrant-tier2-cloud-survey-2026-05.md), [`speech-audio-cloud-survey-2026-05.md`](speech-audio-cloud-survey-2026-05.md)_
 
 ---
@@ -73,7 +73,7 @@ Read-only metadata enumeration only:
 - `GET /history` (count + class_type schema; **NOT the prompt text or output images**)
 - `GET /object_info` (custom-node count + module prefixes)
 
-NuClide did not:
+ did not:
 - Read actual prompt text from `/history` (user content)
 - Download generated images via `/view/<filename>`
 - Submit any `/prompt` payload (would consume operator GPU and write outputs to operator disk)
@@ -114,7 +114,7 @@ The most-used workflow on this host is the canonical Stable Diffusion text-to-im
 KSampler → CheckpointLoaderSimple → EmptyLatentImage → CLIPTextEncode (positive) → CLIPTextEncode (negative) → VAEDecode → SaveImage
 ```
 
-This is the default ComfyUI starter workflow. The operator's `CheckpointLoaderSimple` parameter (which model file is loaded) is part of the history payload, visible to anyone hitting `/history`. The actual prompt text and generated images are also visible (NuClide did not retrieve them).
+This is the default ComfyUI starter workflow. The operator's `CheckpointLoaderSimple` parameter (which model file is loaded) is part of the history payload, visible to anyone hitting `/history`. The actual prompt text and generated images are also visible ( did not retrieve them).
 
 ---
 

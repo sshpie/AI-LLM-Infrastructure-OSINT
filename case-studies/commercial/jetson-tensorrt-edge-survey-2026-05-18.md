@@ -8,7 +8,7 @@ tags: [edge-ai, jetson, nvr, frigate, codeproject-ai, deepstack, motioneye, dock
 
 # Jetson, TensorRT, and edge-AI: a population survey of NVR and inference exposure
 
-_NuClide Research · 2026-05-18 · 10,224 candidates harvested, 296 verified-unauth across 9 platform classes, two deception fleets identified (598 hosts)._
+_ · 2026-05-18 · 10,224 candidates harvested, 296 verified-unauth across 9 platform classes, two deception fleets identified (598 hosts)._
 
 ## Summary
 
@@ -270,7 +270,7 @@ takes one full upgrade cycle plus operator action to propagate."
 | 2 Verify | `verify_frigate.py` (custom probe; aimap deep-enum for Frigate is in v1.10 roadmap) | `GET /api/config`, parse YAML, check for `rtsp://` substring and `:.*@` credential pattern |
 | 3 Attribute | VisorGraph | WHOIS + ASN per host; no cert pivots (Frigate is HTTP, no TLS by default on this class) |
 | 4 Classify | aimap-profile | `commercial/residential` per WHOIS; 15 hosts flagged `clinical-tier urgency` due to camera feed access |
-| 5 Ledger | VisorLog | 894 events ingested to `nuclide.db`, 15 with severity=`critical`, tags `NVR FRIGATE UNAUTH RTSP-CREDS-LEAK CAMERA-ACCESS` |
+| 5 Ledger | VisorLog | 894 events ingested to `.db`, 15 with severity=`critical`, tags `NVR FRIGATE UNAUTH RTSP-CREDS-LEAK CAMERA-ACCESS` |
 | 6 Score | VisorScuba | 894/894 "passing" against AI Security Baseline. 0 violations recorded. Methodology gap noted: NVR and edge-AI apps do not carry the LLM / INFERENCE / VECTOR-DB tags the Rego policies check for. The Rego baseline must add an NVR / camera-feed policy class for Frigate-tier findings to be scored as violations |
 | 6 Exploit-rank | BARE | Top match `tp_link_ncxxx_bonjour_command_injection` at 0.515. Below the 0.6 first-party-authz threshold. No commodity-CVE chain applies; the exposure is shipping-default and operator-config, not a CVE class |
 | 6 Adversarial corpus | VisorCorpus | 137 cases built for the survey, including kb_exfiltration (18), prompt_injection (16), infra_discovery (15), tenant_cross_leak (15). The Frigate-RTSP class contributed to the kb_exfiltration and infra_discovery sets |
@@ -405,7 +405,7 @@ Stage 2 Verify      custom probes + aimap   296 verified-unauth, 2 deception fle
                      verify_scrypted.py, verify_shinobi.py, verify_triton.py)
 Stage 3 Attribute   VisorGraph              ASN, WHOIS, jurisdiction per host
 Stage 4 Classify    aimap-profile           tier per-finding (CRIT/HIGH/MED/LOW/INFO)
-Stage 5 Ledger      VisorLog                894 events ingested to nuclide.db (0 deduped)
+Stage 5 Ledger      VisorLog                894 events ingested to .db (0 deduped)
 Stage 6 Score       VisorScuba              894/894 passing (gap noted, no NVR Rego policy)
 Stage 6 Exploit     BARE                    max 0.598 motionEye Bavision-IP-cam; all under first-party-authz threshold; no commodity-CVE chain
 Stage 6 Corpus      VisorCorpus             137 cases (77 HIGH, 26 MED, 19 LOW, 15 CRIT)

@@ -4,7 +4,7 @@ type: survey
 
 # Voice-Agent Population Survey: LiveKit-dominant (2026-05-15)
 
-_NuClide Research · 2026-05-15 (late evening, fourth survey of the day)_
+_ · 2026-05-15 (late evening, fourth survey of the day)_
 _Closes: Survey 17 batch 3 (voice-agent leg)_
 
 ---

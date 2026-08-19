@@ -1,6 +1,6 @@
 # Thailand Ministry of Public Health: Unauthenticated Inference, Vision Models
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

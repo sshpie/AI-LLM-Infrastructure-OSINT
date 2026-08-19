@@ -10,7 +10,7 @@ methodology: shodan-driven
 
 # Compute Orchestration / Training: cloud survey 2026-05-06
 
-NuClide Research
+
 
 ## Summary
 
@@ -41,7 +41,7 @@ Population-tier severity breakdown:
 | **Low** | 2 | Apache Airflow `/api/v1/version` + `/health` only (component visibility, not admin) |
 
 Single-day end-to-end execution: Shodan dork → fast-probe fingerprint → VisorGraph
-cert-pivot → aimap-profile classification → nuclide-contact disclosure resolution
+cert-pivot → aimap-profile classification → -contact disclosure resolution
 → VisorLog ledger ingest → VisorScuba compliance scoring → BARE Metasploit-module
 ranking → VisorCorpus adversarial corpus.
 
@@ -167,7 +167,7 @@ below).
 
 **Attribution:** `visorgraph` cert-pivot per host produced operator-side
 attribution where TLS was on; `aimap-profile --mode fast` provided
-classification. `nuclide-contact` chained WHOIS abuse + DNS SOA + security.txt
+classification. `-contact` chained WHOIS abuse + DNS SOA + security.txt
 + pattern-guess+MX for disclosure recipient resolution per critical host.
 
 **Severity scoring:** classify-and-ingest.py produces NDJSON in VisorLog ECS
@@ -184,10 +184,10 @@ shape; severity rules:
 - Spark Master OR Application UI alone → **high**
 - Spark Worker only → **medium**
 
-**Ledger ingest:** 118 findings written to `data/nuclide.db` via
+**Ledger ingest:** 118 findings written to `data/.db` via
 `visorlog ingest --format ndjson`.
 
-**Compliance scoring:** `visorscuba assess --db data/nuclide.db` evaluated
+**Compliance scoring:** `visorscuba assess --db data/.db` evaluated
 all 742 ledger nodes; our 118 produced 236 violations (118 × `AI.C1`
 "AI services must not be publicly accessible without authentication" + 118
 × `AI.H1`). Note: VisorScuba's policy templates are Ollama-tuned, the
@@ -279,9 +279,9 @@ fast-probe.py                 →  126 confirmed unauth
 visorgraph (per host)         →  attribution graphs
 aimap-profile --mode fast     →  ethics + classification
 classify-and-ingest.py        →  ECS NDJSON, 118 ledger events
-visorlog ingest               →  data/nuclide.db updated
+visorlog ingest               →  data/.db updated
 visorscuba assess             →  236 violations
-nuclide-contact (per critical)→  disclosure recipients (12)
+-contact (per critical)→  disclosure recipients (12)
 bare --top 3                  →  3 rank-1 Metasploit modules
 visorcorpus build             →  137-case adversarial corpus
 ```

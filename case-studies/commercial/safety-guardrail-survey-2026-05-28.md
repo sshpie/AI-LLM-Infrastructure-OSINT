@@ -8,7 +8,7 @@ tags: [llm-guard, prometheus, metrics-leak, topology-leak, safety-guardrail, pro
 
 # LLM Guard survey: guardrail platforms Shodan-dark except /metrics side-channel
 
-_NuClide Research · 2026-05-28 · Category survey: LLM safety and guardrail engines. 19-dork harvest across 12 platforms. Two confirmed LLM Guard v0.0.10 instances. Category-level finding: guardrail scan endpoints are auth-on in both observed deployments; the open surface is Prometheus /metrics leaking operator identity, request volume, and stack topology._
+_ · 2026-05-28 · Category survey: LLM safety and guardrail engines. 19-dork harvest across 12 platforms. Two confirmed LLM Guard v0.0.10 instances. Category-level finding: guardrail scan endpoints are auth-on in both observed deployments; the open surface is Prometheus /metrics leaking operator identity, request volume, and stack topology._
 
 ## Summary
 

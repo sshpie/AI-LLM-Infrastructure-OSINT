@@ -10,7 +10,7 @@ verification_rung: inner-B / outer-2 (AnythingLLM auth-state read from the API i
 
 # RAG Framework Servers Population Survey — Cat-07 (2026-05-31)
 
-_NuClide Research · 2026-05-31_
+_ · 2026-05-31_
 
 ---
 
@@ -195,6 +195,6 @@ The Shodan HTML dorks returned **0** usable LightRAG (the SPA renders no name to
 
 VisorLog #36164-36199. **This raises the Cat-07 confirmed-unauth total from 33 to 69** — the 36 LightRAG instances were completely invisible to the Shodan-based survey.
 
-**Methodological proof:** this is the first NuClide finding sourced entirely from Censys reaching a population Shodan structurally cannot index. It validates Censys as a standing arsenal complement (Insight #69 + the dork-population-substitution lesson): for SPA/JSON-API platforms whose name never renders to a crawler, Shodan returns 0 and Censys returns the real population. The other Cat-07 Shodan-dark platforms (R2R 7272, Cognita/Verba 8000) are now reachable the same way — `host.services.port=<p> and host.services.software.product="uvicorn"` then verify.
+**Methodological proof:** this is the first  finding sourced entirely from Censys reaching a population Shodan structurally cannot index. It validates Censys as a standing arsenal complement (Insight #69 + the dork-population-substitution lesson): for SPA/JSON-API platforms whose name never renders to a crawler, Shodan returns 0 and Censys returns the real population. The other Cat-07 Shodan-dark platforms (R2R 7272, Cognita/Verba 8000) are now reachable the same way — `host.services.port=<p> and host.services.software.product="uvicorn"` then verify.
 
 **Censys account note:** Free tier (100 credits/mo); `host.services.banner` and advanced protocols are Starter-gated, but `port` + `software.product` + faceting are available and sufficient to isolate candidates. No PAT/API — manual web UI, same posture as Shodan.

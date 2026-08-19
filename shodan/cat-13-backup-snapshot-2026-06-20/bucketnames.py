@@ -53,7 +53,7 @@ def http_get_root(ip, port):
             ctx.check_hostname = False
             ctx.verify_mode = ssl.CERT_NONE
             s = ctx.wrap_socket(raw, server_hostname=ip)
-        req = ("GET / HTTP/1.1\r\nHost: %s\r\nUser-Agent: nuclide-cat13-verify\r\n"
+        req = ("GET / HTTP/1.1\r\nHost: %s\r\nUser-Agent: -cat13-verify\r\n"
                "Accept: */*\r\nConnection: close\r\n\r\n" % ip).encode()
         s.sendall(req)
         s.settimeout(READ_T)

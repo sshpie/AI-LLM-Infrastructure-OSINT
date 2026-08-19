@@ -4,7 +4,7 @@ type: survey
 
 # MLflow Tracking Server on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -261,7 +261,7 @@ For the 2 already-compromised instances: assume root compromise, rotate all SSH 
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|

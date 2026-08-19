@@ -107,7 +107,7 @@ def build(rows):
     for h in hosts.values():
         for k in [k for k in h if k.startswith('_')]: del h[k]
     spend = round(sum(r.get('agg_cost_1d') for r in rows if isinstance(r.get('agg_cost_1d'),(int,float)) and r.get('agg_cost_1d')>0))
-    meta = {"org":"NuClide Research","kind":"// Field Survey","date":"2026-05-29",
+    meta = {"org":"","kind":"// Field Survey","date":"2026-05-29",
             "title_html":"Unauthenticated FinOps cost APIs<br>hand attackers a <span class='em'>free cluster map</span>.",
             "subtitle_html":"Kubecost and OpenCost ship with auth off. Exposed on a public LoadBalancer, the cost-model API is not a billing page, it is a <b>reconnaissance oracle</b>: full namespace topology, the cluster's own security tooling named outright, and a dollar-ranked target list. Click a finding to drill in. Click a host to go deeper.",
             "stats":[{"value":len(rows),"label":"instances","style":""},

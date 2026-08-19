@@ -4,7 +4,7 @@ type: survey
 
 # Vault (HashiCorp) Population Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15 (eighth survey of the day. Late night)_
+_ · 2026-05-15 (eighth survey of the day. Late night)_
 _Category 12. Containers & orchestration; secrets-store tier_
 _Built on aimap v1.9.5 Vault fingerprint (parallel-session, shipped 2026-05-15)_
 

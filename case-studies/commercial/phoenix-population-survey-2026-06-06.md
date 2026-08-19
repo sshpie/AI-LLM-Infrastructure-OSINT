@@ -10,7 +10,7 @@ toolchain: herald v0.1.1
 
 # Arize Phoenix Population Survey — 41/55 Unauthenticated Project Disclosure
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -49,7 +49,7 @@ Notable institutional findings: Northeastern University (Boston, USA), SENAI (Br
 
 The probes use `array_nonempty` matching: if the response contains a non-empty `data` array, the finding fires. Phoenix returns `{"data": [], "next_cursor": null}` when authenticated routes are queried without credentials in instances where auth is configured — so a non-empty `data` array is the unauth signal.
 
-NuClide restraint: account count is the only `/v1/users` field consumed by herald. Schema/PII details were not extracted, per the restraint ethic — names ARE the finding.
+ restraint: account count is the only `/v1/users` field consumed by herald. Schema/PII details were not extracted, per the restraint ethic — names ARE the finding.
 
 ---
 
@@ -179,7 +179,7 @@ Step 3v:   Endpoint semantics verified against Arize/phoenix v6.x source
 Step 12b:  This document
 ```
 
-Tool: **herald** v0.1.1 (`github.com/nuclide-research/herald`). Phoenix config added with three probes covering the LLM02-class disclosure surface.
+Tool: **herald** v0.1.1 (`github.com/sshpie/herald`). Phoenix config added with three probes covering the LLM02-class disclosure surface.
 
 ---
 

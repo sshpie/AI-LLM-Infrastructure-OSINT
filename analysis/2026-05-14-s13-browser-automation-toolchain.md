@@ -14,7 +14,7 @@
 
 Survey the browser-automation backend tier: Chrome DevTools Protocol (CDP), Selenium Grid, Browserless, Splash, Selenoid, and Playwright. This category sits adjacent to the AI/ML infrastructure corpus — browser-automation backends are the execution substrate for web-scraping AI agents, LLM orchestration pipelines, and automated testing systems.
 
-Secondary objective: ship the structural fix for repeated toolchain-discipline failures. The full NuClide arsenal was not being used by default, and bespoke scripts were appearing in sessions where Visor tools covered the use case.
+Secondary objective: ship the structural fix for repeated toolchain-discipline failures. The full  arsenal was not being used by default, and bespoke scripts were appearing in sessions where Visor tools covered the use case.
 
 ### Scope and Constraints
 
@@ -465,4 +465,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 13 · 2026-05-14*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 13 · 2026-05-14*

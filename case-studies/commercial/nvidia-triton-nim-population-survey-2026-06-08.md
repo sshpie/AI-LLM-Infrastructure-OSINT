@@ -1,7 +1,7 @@
 # NVIDIA NIM + Triton population survey + Docker-Registry LLM-image-catalog finding
 
 **Date:** 2026-06-08
-**Lead:** NuClide Research
+**Lead:** 
 **Survey dir:** `surveys/nvidia-nim-2026-06-08/`
 **Status:** Primary target (exposed NIM/Triton API surface) = NULL. Variant pivot uncovered **48 unauthenticated Docker registries leaking LLM-stack image catalogs** across China, US, EU.
 

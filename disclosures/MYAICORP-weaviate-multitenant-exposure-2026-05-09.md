@@ -102,4 +102,4 @@ curl http://91.98.226.57:8080/v1/schema | python3 -m json.tool | grep '"class"'
 
 ## Discovery Context
 
-Found during NuClide Research Weaviate exposure survey 2026-05-09. Host `188.245.173.135` matched `http.html:"weaviate" port:8080` in Shodan. TLS cert (`*.myaicorp.com`) identified operator. Both Hetzner instances share identical schema. Confirmed production/staging pair for the same platform.
+Found during  Weaviate exposure survey 2026-05-09. Host `188.245.173.135` matched `http.html:"weaviate" port:8080` in Shodan. TLS cert (`*.myaicorp.com`) identified operator. Both Hetzner instances share identical schema. Confirmed production/staging pair for the same platform.

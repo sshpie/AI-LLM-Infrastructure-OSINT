@@ -4,7 +4,7 @@ type: survey
 
 # Open WebUI on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -164,13 +164,13 @@ Branded-fork operators (Lexa, Chatty AI, InsightERA CorpGPT): cross-check that f
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
 | Discovery | Reused 20,581 port-3000 IPs from flowise-cloud-survey-2026-05 |
 | Fingerprint | `openwebui-probe.py`, `/api/version` shape + `/api/config` features |
-| Findings ledger | To be ingested into `data/nuclide.db` |
+| Findings ledger | To be ingested into `data/.db` |
 | What was NOT done | No account registration attempted; no `/api/v1/auths/signup` POSTs; no usage of operator's Ollama/OpenAI-compat backend |
 
 ---

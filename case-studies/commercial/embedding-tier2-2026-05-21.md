@@ -104,7 +104,7 @@ Auth: none
 - Port 8001: `auxiliary_server_capture_imap` (0.448), `auxiliary_scanner_openvas_openvas_otp_login` (0.439) — no specific embedding API module in corpus
 - Port 9000: `exploits_linux_http_ollama_rce_cve_2024_37032` (0.369) — inference backend analogy match
 
-**VisorScuba:** 37 nodes assessed in nuclide.db post-ingest.
+**VisorScuba:** 37 nodes assessed in .db post-ingest.
 
 **VisorCorpus:** 26KB adversarial corpus built (kb_exfiltration, system_prompt, config_secrets).
 

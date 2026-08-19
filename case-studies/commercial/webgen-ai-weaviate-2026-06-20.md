@@ -36,7 +36,7 @@ sidenotes:
 
 # WebGen AI: Unauthenticated Read, Write, and Delete on an AI Web-Design Platform
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -115,4 +115,4 @@ Canary UUID `3f81599b-e47e-4c15-aaec-e4450bd0fb7d`. Written, confirmed, deleted,
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

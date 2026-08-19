@@ -36,7 +36,7 @@ sidenotes:
 
 # NetEase Weaviate: Unauthenticated Read, Write, and Delete on a 20,298-Record Facial Recognition Store
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -133,4 +133,4 @@ The two internal ID namespaces (`wwm_facedata` and `yysls_facedata`) map to two 
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

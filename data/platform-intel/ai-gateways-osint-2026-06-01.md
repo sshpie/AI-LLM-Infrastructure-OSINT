@@ -1,5 +1,5 @@
 # AI Gateways OSINT -- Stage -1
-_NuClide Research · 2026-06-01_
+_ · 2026-06-01_
 
 Survey category: AI Gateways (threat model: API key aggregation + request routing)
 Platforms in scope: 9 (Portkey, Kong AI, Bifrost, one-api, new-api, sub2api, TensorZero, Helicone, Envoy AI Gateway)

@@ -102,6 +102,6 @@ Move full configuration to a separate authenticated endpoint (e.g. `/api/status`
 
 ## Reporter
 
-Nicholas Kloster — Nuclide Research (nicholas@nuclide-research.com)
+ —  ()
 Independent security researcher. CISA disclosures: CVE-2025-4364, ICSA-25-140-11.
 Discovered during population-scale survey of deployed AI/RAG infrastructure.

@@ -58,7 +58,7 @@ Admin@1234567890!) were rejected on all tested instances.
 
 WHAT THIS MEANS
 The internet-exposed OpenMetadata population has configured authentication and changed
-default passwords. This is positive evidence for the NuClide thesis that governance
+default passwords. This is positive evidence for the  thesis that governance
 platforms — because of their deployment complexity — attract operators who have already
 navigated non-trivial configuration and are more likely to have addressed basic security.
 Zero auth-off instances were found.

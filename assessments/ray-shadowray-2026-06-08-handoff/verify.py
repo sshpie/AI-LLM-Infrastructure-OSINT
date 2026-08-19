@@ -19,7 +19,7 @@ MooBot, KmsdBot — they submit jobs via the Jobs API. We do not read job
 payloads; we only count visible job entries (the count alone is a signal,
 deep job lists with no recent operator history look like attacker fleet).
 
-NuClide restraint: cluster metadata only. NO job submission, NO job
+ restraint: cluster metadata only. NO job submission, NO job
 payload reads (we list IDs and a count), NO worker-node interaction.
 """
 import concurrent.futures as cf
@@ -32,7 +32,7 @@ import urllib.error
 from pathlib import Path
 
 TIMEOUT = 6
-HEADERS = {"User-Agent": "NuClide-Research/ray-dashboard-2026-06-08"}
+HEADERS = {"User-Agent": "/ray-dashboard-2026-06-08"}
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE

@@ -1,6 +1,6 @@
 # National Chengchi University: Taiwan National AI Models (TAIDE) Exposed on V100×4 Server
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

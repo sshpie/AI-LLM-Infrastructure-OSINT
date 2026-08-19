@@ -1,5 +1,5 @@
 FINDINGS BREAKDOWN — Cat-32: AI Gateways
-NuClide Research · 2026-06-01
+ · 2026-06-01
 =====================================
 
 SURVEY SCOPE

@@ -9,7 +9,7 @@ status: complete
 
 # Service mesh + workflow-orchestration population surveys
 
-_NuClide Research · 2026-05-19 · Two parallel population surveys covering the network mesh / zero-trust proxy tier and the workflow-orchestration tier. Sourced from the FUTURE-SURVEYS roadmap gaps "Network Perimeter & Service Mesh" and "Workflow & Event Orchestration (LLM lifecycle)." 893 unique candidates across 80+ dorks; 660 verified-classified hosts._
+_ · 2026-05-19 · Two parallel population surveys covering the network mesh / zero-trust proxy tier and the workflow-orchestration tier. Sourced from the FUTURE-SURVEYS roadmap gaps "Network Perimeter & Service Mesh" and "Workflow & Event Orchestration (LLM lifecycle)." 893 unique candidates across 80+ dorks; 660 verified-classified hosts._
 
 ## Summary
 

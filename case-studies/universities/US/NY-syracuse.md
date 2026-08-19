@@ -1,6 +1,6 @@
 # Syracuse University: IST R640 Server, Free-Tier Cloud Proxy on Port 12345
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

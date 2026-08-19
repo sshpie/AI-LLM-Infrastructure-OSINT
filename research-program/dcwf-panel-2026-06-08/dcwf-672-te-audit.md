@@ -1,6 +1,6 @@
 # T&E Audit: VictoriaMetrics Survey 2026-06-08
 
-_DCWF AI Work Role 672 audit · NuClide Research panel_
+_DCWF AI Work Role 672 audit ·  panel_
 
 ## Methodology of the audit
 

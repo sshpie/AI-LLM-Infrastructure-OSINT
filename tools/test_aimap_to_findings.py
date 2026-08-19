@@ -54,19 +54,19 @@ def test_dotted_keys_and_categories():
     by_ip = {e["host.ip"]: e for e in events}
     # Dotted ECS keys present (the bug fix).
     e = by_ip["198.51.100.5"]
-    for k in ("host.ip", "event.severity", "nuclide.tags", "nuclide.source", "lifecycle.status"):
+    for k in ("host.ip", "event.severity", ".tags", ".source", "lifecycle.status"):
         check(k in e, f"missing dotted key {k}")
     check(e["host.ip"] == "198.51.100.5", "host.ip wrong")
     # exfil_credential -> EXFIL-CREDENTIAL
-    check("EXFIL-CREDENTIAL" in e["nuclide.tags"], f"EXFIL-CREDENTIAL missing: {e['nuclide.tags']}")
-    check("LANGFUSE" in e["nuclide.tags"], "platform tag missing")
-    check("UNAUTH" in e["nuclide.tags"], "auth_status=none should yield UNAUTH")
+    check("EXFIL-CREDENTIAL" in e[".tags"], f"EXFIL-CREDENTIAL missing: {e['.tags']}")
+    check("LANGFUSE" in e[".tags"], "platform tag missing")
+    check("UNAUTH" in e[".tags"], "auth_status=none should yield UNAUTH")
     check(e["event.severity"] == "critical", f"severity should be critical, got {e['event.severity']}")
     # Langflow: auth required -> AUTH; flows -> FLOWS
     lf = by_ip["198.51.100.6"]
-    check("AUTH" in lf["nuclide.tags"], f"401 should yield AUTH: {lf['nuclide.tags']}")
-    check("FLOWS" in lf["nuclide.tags"], f"flows -> FLOWS: {lf['nuclide.tags']}")
-    check("LANGFLOW" in lf["nuclide.tags"], "service tag LANGFLOW missing")
+    check("AUTH" in lf[".tags"], f"401 should yield AUTH: {lf['.tags']}")
+    check("FLOWS" in lf[".tags"], f"flows -> FLOWS: {lf['.tags']}")
+    check("LANGFLOW" in lf[".tags"], "service tag LANGFLOW missing")
 
 
 def test_favicon_merge():
@@ -90,11 +90,11 @@ def test_favicon_merge():
     events = a2f.convert(SAMPLE, "s", "sec", fav)
     by_ip = {e["host.ip"]: e for e in events}
     lf = by_ip["198.51.100.6"]
-    check("FAVICON-PRESENT" in lf["nuclide.tags"], "FAVICON-PRESENT tag missing")
-    check(any(t.startswith("DEFAULT-FAVICON") for t in lf["nuclide.tags"]),
-          f"DEFAULT-FAVICON tag missing: {lf['nuclide.tags']}")
-    check("FAVICON-PRESENT" in by_ip["198.51.100.5"]["nuclide.tags"], "present-only host missing FAVICON-PRESENT")
-    check(not any(t.startswith("DEFAULT-FAVICON") for t in by_ip["198.51.100.5"]["nuclide.tags"]),
+    check("FAVICON-PRESENT" in lf[".tags"], "FAVICON-PRESENT tag missing")
+    check(any(t.startswith("DEFAULT-FAVICON") for t in lf[".tags"]),
+          f"DEFAULT-FAVICON tag missing: {lf['.tags']}")
+    check("FAVICON-PRESENT" in by_ip["198.51.100.5"][".tags"], "present-only host missing FAVICON-PRESENT")
+    check(not any(t.startswith("DEFAULT-FAVICON") for t in by_ip["198.51.100.5"][".tags"]),
           "present-only host must not have DEFAULT-FAVICON")
     os.unlink(db)
 

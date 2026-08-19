@@ -10,7 +10,7 @@ toolchain: herald v0.1.0
 
 # Langfuse Population Survey — 816/918 Open Registration (88.9%)
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -31,7 +31,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 `signUpDisabled: false` is Langfuse's default deployment posture. The flag is embedded in the server-side rendered `/auth/sign-in` page within the Next.js `__NEXT_DATA__` props block — readable without authentication via any HTTP GET. When this flag is false, any internet user can create an account on the instance. Workspace and project access is governed by separate org-membership policy, so registration alone does not always equal trace data access — but it does provide a foothold for further enumeration of the instance's organizational structure, invitation flows, and any leaked invitation tokens.
 
-The 88.9% rate is the highest auth-permissive default measured across any platform NuClide has surveyed in 2026. Comparison: Open WebUI 11.8%, Dify 0.9%, Flowise 68.7% chatflow API exposure. Langfuse is the strongest empirical example of Insight #40 in reverse — a platform that has not yet been corrected by upstream disclosure pressure.
+The 88.9% rate is the highest auth-permissive default measured across any platform  has surveyed in 2026. Comparison: Open WebUI 11.8%, Dify 0.9%, Flowise 68.7% chatflow API exposure. Langfuse is the strongest empirical example of Insight #40 in reverse — a platform that has not yet been corrected by upstream disclosure pressure.
 
 Notable institutional findings: Harvard University, Arizona State University, UC Santa Barbara, Taiwan Ministry of Education Computer Center.
 

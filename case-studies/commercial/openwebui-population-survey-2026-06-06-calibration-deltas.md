@@ -8,7 +8,7 @@ status: calibration-pass
 
 # Cat-OW Calibration Deltas — 5 Named Findings Re-Verified
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 A spot-check verification pass on five named-institution findings in the
 Open WebUI population survey, applying the attribution hierarchy from

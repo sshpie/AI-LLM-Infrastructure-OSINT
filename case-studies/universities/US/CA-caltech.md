@@ -1,6 +1,6 @@
 # California Institute of Technology (Caltech): GPT-OSS 120B, RAG Pipeline
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""binding-runner.py — execute the NuClide red/blue task bindings.
+"""binding-runner.py — execute the  red/blue task bindings.
 
-Reads nuclide-task-bindings-v3.yaml and classifies each runnable task as
+Reads -task-bindings-v3.yaml and classifies each runnable task as
 finding / control_held / inconclusive, then reports per-task results.
 
 Two modes:
   * PASSIVE (default): read the chain-runner's already-collected artifacts
-    (aimap-report.json, empire.db, visorgraph/*.json, nuclide.db) and apply the
+    (aimap-report.json, empire.db, visorgraph/*.json, .db) and apply the
     parse rules. No new probing — safe to re-run any time after a survey.
   * ACTIVE (--active --target/--targets-file): additionally run the bindings
     that need a fresh probe (flowise_probe, visorbishop, visor). Gated.
@@ -36,8 +36,8 @@ except ImportError:
     sys.exit("PyYAML required: pip install pyyaml")
 
 DEFAULT_BINDINGS = os.path.expanduser(
-    "~/AI-LLM-Infrastructure-OSINT/assurance/nuclide-task-bindings-v3.yaml")
-DEFAULT_DB = os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/data/nuclide.db")
+    "~/AI-LLM-Infrastructure-OSINT/assurance/-task-bindings-v3.yaml")
+DEFAULT_DB = os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/data/.db")
 
 # aimap finding categories that mean unauth exec / flow-build / access.
 EXEC_ACCESS_CATS = {
@@ -229,7 +229,7 @@ def p_sc001(ctx):  # aimap: known-vulnerable service severity
 def p_det001(ctx):  # visorlog: findings attributable in the ledger
     db = ctx["db"]
     if not os.path.exists(db):
-        return NA(f"nuclide.db not found at {db}")
+        return NA(f".db not found at {db}")
     con = sqlite3.connect(db)
     try:
         n = con.execute(
@@ -353,10 +353,10 @@ REGISTRY = {
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Execute NuClide red/blue task bindings.")
+    ap = argparse.ArgumentParser(description="Execute  red/blue task bindings.")
     ap.add_argument("--bindings", default=DEFAULT_BINDINGS)
     ap.add_argument("--recon-dir", default="", help="chain-runner output dir (artifacts for passive mode)")
-    ap.add_argument("--db", default=DEFAULT_DB, help="nuclide.db (for RED-DET-001)")
+    ap.add_argument("--db", default=DEFAULT_DB, help=".db (for RED-DET-001)")
     ap.add_argument("--active", action="store_true", help="also run probe-requiring tasks")
     ap.add_argument("--target", default="", help="single target for active tasks")
     ap.add_argument("--targets-file", default="", help="targets file for flowise_probe")
@@ -433,7 +433,7 @@ def _summarize(results):
 
 
 def _print(report):
-    print("\n=== NuClide binding-runner ===")
+    print("\n===  binding-runner ===")
     print(f"bindings: {report['bindings']}  recon-dir: {report['recon_dir']}  active: {report['active']}")
     glyph = {"finding": "[FINDING]", "control_held": "[held]   ",
              "inconclusive": "[inconcl]", "not_evaluated": "[n/a]    ",

@@ -10,7 +10,7 @@ methodology: source-level audit + cross-version posture + extended IP-direct-sha
 
 # Langfuse deep-dive · 2026-05-10 (Phase 2)
 
-NuClide Research · 2026-05-10
+ · 2026-05-10
 
 ## Summary
 

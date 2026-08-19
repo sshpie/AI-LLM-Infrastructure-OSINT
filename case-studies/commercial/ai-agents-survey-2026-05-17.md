@@ -4,7 +4,7 @@ type: synthesis
 
 # AI agent framework population survey, 2026-05-17
 
-_NuClide Research, 2026-05-17 (late evening pass)_
+_, 2026-05-17 (late evening pass)_
 _Survey #20 in the AI infrastructure series._
 
 ---

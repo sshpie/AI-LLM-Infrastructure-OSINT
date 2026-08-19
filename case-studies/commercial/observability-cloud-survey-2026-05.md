@@ -4,7 +4,7 @@ type: survey
 
 # LLM Observability + Training Telemetry: Auth Posture Survey
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Sibling tier-2 expansions: [`comfyui-cloud-survey-2026-05.md`](comfyui-cloud-survey-2026-05.md), [`speech-audio-cloud-survey-2026-05.md`](speech-audio-cloud-survey-2026-05.md)_
 
 ---
@@ -60,7 +60,7 @@ observability-probe.py (200-thread, fingerprint-strict)
     GET /data/plugin/scalars/tags → exposed scalar metric names
 ```
 
-NuClide did not submit any data to either platform.
+ did not submit any data to either platform.
 
 ---
 
@@ -147,7 +147,7 @@ For unauth LLM observability + ML training telemetry:
 
 1. **Loss-curve exfiltration**, full training history, validation metrics, model architecture
 2. **Hyperparameter sweep history**, `hp_metric` exposes the operator's HPO choices (which combinations of LR, batch size, warmup, optimizer they tried)
-3. **Training-data sample disclosure**, TensorBoard's image/text/audio summaries can include actual training samples. NuClide didn't pull these (PII risk if real data) but the surface exists.
+3. **Training-data sample disclosure**, TensorBoard's image/text/audio summaries can include actual training samples.  didn't pull these (PII risk if real data) but the surface exists.
 4. **Model architecture leak**, TensorBoard graph view exposes the full model graph, layer-by-layer.
 
 ---

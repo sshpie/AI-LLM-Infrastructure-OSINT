@@ -31,8 +31,8 @@ Non-runs: VisorSD/recongraph/nu-recon/VisorPlus (Shodan-blocked), VisorGoose
 VisorBishop (menlohunt covered shadow), JS-bundle (React/SPA, no bundle).
 
 ### Notable Configuration
-aimap v1.9.39 (no AnythingLLM/RAGFlow fingerprint, gap). nuclide.db at
-~/visorlog/nuclide.db. Workspace ~/recon/rag-stragglers-2026-05-29/.
+aimap v1.9.39 (no AnythingLLM/RAGFlow fingerprint, gap). .db at
+~/visorlog/.db. Workspace ~/recon/rag-stragglers-2026-05-29/.
 
 ## 3. Methodology
 

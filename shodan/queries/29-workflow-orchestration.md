@@ -1,6 +1,6 @@
 # 29. Workflow Orchestration (K8s-Native)
 
-_NuClide Research · 2026-05-27_
+_ · 2026-05-27_
 _Pre-assessment OSINT complete. Survey: IN PROGRESS._
 
 K8s-native workflow orchestration platforms expose REST APIs and UI dashboards that carry full pipeline state, resolved parameters (including credentials), artifact access, and in misconfigured deployments, unauthenticated container execution.
@@ -132,7 +132,7 @@ Dominant user orgs: Intuit (creator/4,000+ engineers), BlackRock, TripAdvisor, A
 - Argo auth mode docs: https://argo-workflows.readthedocs.io/en/latest/argo-server-auth-mode/
 - Practical hardening guide: https://blog.argoproj.io/practical-argo-workflows-hardening-dd8429acc1ce
 - Nuclei template: `http/misconfiguration/argo-workflows-unauth.yaml`
-- NuClide pre-assessment brief: `case-studies/commercial/argo-workflows-osint-pre-assessment-2026-05-27.md`
+-  pre-assessment brief: `case-studies/commercial/argo-workflows-osint-pre-assessment-2026-05-27.md`
 
 ---
 

@@ -4,7 +4,7 @@ type: synthesis
 
 # Training observability survey, 2026-05-17
 
-_NuClide Research, 2026-05-17_
+_, 2026-05-17_
 _Survey #18 in the AI infrastructure series._
 
 ---

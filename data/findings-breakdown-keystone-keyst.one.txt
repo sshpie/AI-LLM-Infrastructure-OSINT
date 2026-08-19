@@ -2,7 +2,7 @@ FINDINGS BREAKDOWN
 Operator: Keystone (keyst.one)
 Host: 43.153.169.169 (Tencent Cloud)
 Date: 2026-06-20
-Researcher: Nicholas Kloster / NuClide Research
+Researcher:  / 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 OPERATOR PROFILE
@@ -239,7 +239,7 @@ EVIDENCE
   [5] /api/collections at :5050 -- Flask app confirms same 2 collections
   [6] Port sweep -- nmap confirms exactly 4 open ports
   [7] Write access -- record upsert with correct 1024d embeddings (PoC step 5)
-  [8] Tenant creation -- nuclide-poc-tenant + poc-db created and deleted (PoC step 2)
+  [8] Tenant creation -- -poc-tenant + poc-db created and deleted (PoC step 2)
   [9] Closed-loop tuning -- retrieval rank verified via :5050 post-injection (PoC step 6)
   [10] Full pipeline -- DeepSeek fired as Keystone support persona (PoC step 7)
   [11] Delete confirmed unauthenticated -- PoC cleanup step 8

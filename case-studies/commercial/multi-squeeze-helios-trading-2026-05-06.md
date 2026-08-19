@@ -10,7 +10,7 @@ methodology: chain-revisit + post-chain-deep-dive
 
 # Squeeze / Helios: short-squeeze trading platform's entire architecture leaked
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
@@ -94,7 +94,7 @@ The combination `storage_type: "inmem"` + `t: 1, n: 1` Shamir + sealed=false is 
 The exposure here is:
 - **dev-mode-in-production anti-pattern**, Vault is the operator's intended secrets store but they've configured it with the dev defaults
 - **Architecture leakage via cluster_id and version**
-- **Bruteforce surface**, if the root token is guessable (e.g. `root` is the default), an attacker has full access. NuClide did NOT attempt to guess or use the root token.
+- **Bruteforce surface**, if the root token is guessable (e.g. `root` is the default), an attacker has full access.  did NOT attempt to guess or use the root token.
 
 If the root token has been set via env var or config file rather than the `vault` CLI default, this is much less serious. Verification requires operator-side check.
 
@@ -133,7 +133,7 @@ Not CRITICAL because:
 
 ## Disclosure routing
 
-- **Provider:** `abuse@digitalocean.com` (rank-1 from nuclide-contact)
+- **Provider:** `abuse@digitalocean.com` (rank-1 from -contact)
 - **Operator-direct:** opaque, no public-facing domain identified
 
 Disclosure draft: [`disclosures/DIGITALOCEAN-159-203-110-202-squeeze-helios.md`](../../disclosures/DIGITALOCEAN-159-203-110-202-squeeze-helios.md)
@@ -145,7 +145,7 @@ Step 0   chain runner ran on (138.197.152.103, 159.203.110.202) earlier in sessi
 Step 1a  visorplus assess  → DigitalOcean WHOIS, nmap top-1000 (5 open ports), GreyNoise: benign
 Step 1b  aimap -list       → no fingerprint match (Vault not in aimap; Prometheus is but only on port 9090 default which here it IS at)
 Step DD  direct REST enum  → MLflow /api/2.0/mlflow/experiments/search; Vault /v1/sys/seal-status; Prometheus /api/v1/targets
-Step 5   nuclide-contact   → abuse@digitalocean.com (operator opaque)
+Step 5   -contact   → abuse@digitalocean.com (operator opaque)
 Step 6   visorlog          → existing event ID for 159.203.110.202 from mlflow-cloud-survey-2026-05; this case study is the post-revisit deep-dive
 Step 7   visorscuba assess → AI.C1 critical violation (already in ledger from initial survey)
 Step 9   visorcorpus build → 46-case adversarial corpus (kb_exfiltration + system_prompt + config_secrets) shared with AIPOD case
@@ -155,7 +155,7 @@ Step 9   visorcorpus build → 46-case adversarial corpus (kb_exfiltration + sys
 
 **Prometheus is a more powerful operator-IP exfil endpoint than any of the dedicated AI/ML platforms.** When operators expose Prometheus unauth on port 9090, the `/api/v1/targets` and `/api/v1/label/__name__/values` endpoints reveal the *full architecture* (every service, every internal hostname, every metric name). Job + instance labels alone (`squeeze_finra_regsho`, `helios-redis-master:6379`) tell more about the operator's product than any ML metadata leak.
 
-For future surveys, **always probe port 9090 on any confirmed Tier-A operator IP and pull the targets list**, it's the highest-information-density operator-IP exfil endpoint in the standard cloud-native stack. NuClide's existing observability survey (port 6006 Phoenix + TensorBoard) covered LLM-trace observability but not the operator-architecture observability layer.
+For future surveys, **always probe port 9090 on any confirmed Tier-A operator IP and pull the targets list**, it's the highest-information-density operator-IP exfil endpoint in the standard cloud-native stack. 's existing observability survey (port 6006 Phoenix + TensorBoard) covered LLM-trace observability but not the operator-architecture observability layer.
 
 This insight is candidate for inclusion in [SYNTHESIS-2026-05.md](SYNTHESIS-2026-05.md) Methodology Insights section.
 

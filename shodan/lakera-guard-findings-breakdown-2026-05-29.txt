@@ -1,5 +1,5 @@
 LAKERA GUARD — SHODAN PATTERN HUNT — FINDINGS BREAKDOWN
-Date: 2026-05-29  | Survey: guardrail (Lakera deep-dive)  | Operator: NuClide
+Date: 2026-05-29  | Survey: guardrail (Lakera deep-dive)  | Operator: 
 =================================================================================
 
 THESIS (proven end-to-end)

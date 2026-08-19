@@ -1,6 +1,6 @@
 ---
 to: abuse@akamai.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 172.235.117.122
 institution: Akamai Technologies (Linode customer; 172-235-117-122.ip.linodeusercontent.com)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@akamai.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated multi-provider LLM gateway burning Anthropic + OpenAI quotas, 172.235.117.122:4000
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -34,7 +34,7 @@ I'm an independent security researcher conducting good-faith AI infrastructure r
 
 A Linode customer at `172.235.117.122:4000` is running an unauthenticated **OpenAI-compatible LLM gateway** fronting commercial API keys for 10 distinct upstream providers. An unauthenticated `POST /v1/chat/completions` call to model `claude-4.5-haiku` returned 56 Anthropic API tokens of completion, confirming the operator's Anthropic API key is **functional and burnable by any unauthenticated internet caller**.
 
-Found during NuClide Research's cross-cloud LLM Gateway survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud-survey-2026-05.md
+Found during 's cross-cloud LLM Gateway survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud-survey-2026-05.md
 
 ---
 
@@ -95,6 +95,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/evidence/llm-gateway-tier2-2026-05-04/llm-
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

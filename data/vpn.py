@@ -150,7 +150,7 @@ def verify() -> dict:
     """
     req = urllib.request.Request(
         'https://am.i.mullvad.net/json',
-        headers={'User-Agent': 'nuclide-recon/1.0'}
+        headers={'User-Agent': '-recon/1.0'}
     )
     try:
         with urllib.request.urlopen(req, timeout=8) as resp:
@@ -221,7 +221,7 @@ def get_relays(country_code: Optional[str] = None, city_code: Optional[str] = No
     """
     req = urllib.request.Request(
         'https://api.mullvad.net/www/relays/all/',
-        headers={'User-Agent': 'nuclide-recon/1.0'}
+        headers={'User-Agent': '-recon/1.0'}
     )
     with urllib.request.urlopen(req, timeout=10) as resp:
         relays = json.loads(resp.read())

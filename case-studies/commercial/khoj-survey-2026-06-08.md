@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-08
 **Category:** Cat-52 — Personal RAG / Self-Hosted AI Assistants
-**Surveyor:** NuClide Research
+**Surveyor:** 
 **Methodology:** Shodan harvest -> verifier (GET only) -> verdict bucket -> codify
 
 ---

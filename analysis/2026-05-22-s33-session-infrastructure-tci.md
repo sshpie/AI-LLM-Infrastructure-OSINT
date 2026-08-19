@@ -41,7 +41,7 @@ Orchestrator pattern. Parallel Agent subagents dispatched for analysis writing a
 
 | Tool | Role | Config notes |
 |---|---|---|
-| Bash | Skill file creation via heredoc; git operations | `~/.claude/skills/nuclide-close/SKILL.md` via `cat > path << 'EOF'` |
+| Bash | Skill file creation via heredoc; git operations | `~/.claude/skills/-close/SKILL.md` via `cat > path << 'EOF'` |
 | Agent (subagent) | Parallel analysis writing — wave 1 (26 analyses) + wave 2 (8 analyses) | 34 total subagents |
 | Write / Edit / Read | Case study, README, SESSION.md file operations | |
 | git | Commit + push 3 change waves | b56e06d · e182f1c · 709b2c2 |
@@ -114,8 +114,8 @@ No child audio file retrieved. No voiceprint prototype read. No transcript expor
 | Time | Action | Outcome / Decision |
 |---|---|---|
 | ~18:20 | Session resumed from compaction | Prior session state recovered from summary |
-| ~18:25 | nuclide-close skill written via Bash heredoc | Write tool blocked on ~/.claude/ — 199-line skill at `~/.claude/skills/nuclide-close/SKILL.md` |
-| ~18:30 | hookify rule written | `~/.claude/hookify.nuclide-close.local.md` — regex triggers nuclide-close on session-end phrases |
+| ~18:25 | -close skill written via Bash heredoc | Write tool blocked on ~/.claude/ — 199-line skill at `~/.claude/skills/-close/SKILL.md` |
+| ~18:30 | hookify rule written | `~/.claude/hookify.-close.local.md` — regex triggers -close on session-end phrases |
 | ~18:35 | Session analysis archive audit — git log vs README vs evidence dirs | Found 8 sessions with no analysis file; wave-1 list (26 analyses) compiled |
 | ~18:45 | Wave 1: 26 subagents dispatched in parallel | 26 analyses written covering sessions 6–32 for 2026-05-03 through 2026-05-22 |
 | ~19:30 | Wave 1 committed: b56e06d | 26 new files pushed to main |
@@ -126,8 +126,8 @@ No child audio file retrieved. No voiceprint prototype read. No transcript expor
 | ~20:15 | Sibling Pantaflow case study read for style reference | Voice/audio same-day sibling |
 | ~20:30 | TCI case study written: `case-studies/k12/CN-tci-kindergarten-asr.md` | 218-line case study; cross-link filename error corrected before commit |
 | ~20:40 | Committed 709b2c2 | "case-studies: add TCI kindergarten ASR (117.50.80.181) — Survey 17" |
-| ~20:45 | User: "ok ending this session" | nuclide-close invoked; context compacted |
-| (next window) | nuclide-close continues in continuation session | This analysis written |
+| ~20:45 | User: "ok ending this session" | -close invoked; context compacted |
+| (next window) | -close continues in continuation session | This analysis written |
 
 ---
 
@@ -263,7 +263,7 @@ Never return raw ffmpeg stderr to the caller. On ffmpeg failure, return a generi
 
 ```bash
 # Candidate aimap enumerator for the ffmpeg-path-oracle class:
-# 1. POST {"path": "/nonexistent_probe_nuclide"} → record error string
+# 1. POST {"path": "/nonexistent_probe_"} → record error string
 # 2. POST {"path": "/etc/hostname"} → record error string  
 # 3. If strings differ → flag as path-injection oracle candidate
 # Carry-forward: add TCI ASR Service + Pantaflow to aimap fingerprint set
@@ -326,10 +326,10 @@ REQUEST (nonexistent path):
   Host: 117.50.80.181:8001
   Content-Type: application/json
 
-  {"path": "/nuclide_probe_nonexistent_path", "language": "zh"}
+  {"path": "/_probe_nonexistent_path", "language": "zh"}
 
 RESPONSE:
-  {"error": "Audio file not found: /nuclide_probe_nonexistent_path", ...}
+  {"error": "Audio file not found: /_probe_nonexistent_path", ...}
 
 ---
 
@@ -348,4 +348,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 33 · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 33 · 2026-05-22*

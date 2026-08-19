@@ -1,6 +1,6 @@
 # Tools
 
-NuClide tool family. Each tool has its own design-notes file in this directory linking to the source repo and documenting research-program-relevant design decisions.
+ tool family. Each tool has its own design-notes file in this directory linking to the source repo and documenting research-program-relevant design decisions.
 
 The full 19-tool arsenal is canonical in `~/.claude/CLAUDE.md` Tool Inventory section. This index covers the subset relevant to the AI/LLM infrastructure research program, plus newly built tools.
 
@@ -10,15 +10,15 @@ The full 19-tool arsenal is canonical in `~/.claude/CLAUDE.md` Tool Inventory se
 |---|---|---|---|
 | **aimap** | L4 TCP/TLS fingerprinting + service deep enum | `github.com/Nicholas-Kloster/aimap` | [aimap.md](aimap.md) |
 | **aimap-profile** | L7 target classification + ethics flags | `github.com/Nicholas-Kloster/aimap` (subpath) | [aimap-profile.md](aimap-profile.md) |
-| **scanner** | L5 liveness + banner + version | (NuClide internal) | [scanner.md](scanner.md) |
-| **herald** | L7 HTTP application-layer auth probe | `github.com/nuclide-research/herald` | [herald.md](herald.md) |
-| **VisorLog** | Ledger ingest (nuclide.db) | (NuClide internal) | [visorlog.md](visorlog.md) |
+| **scanner** | L5 liveness + banner + version | ( internal) | [scanner.md](scanner.md) |
+| **herald** | L7 HTTP application-layer auth probe | `github.com/sshpie/herald` | [herald.md](herald.md) |
+| **VisorLog** | Ledger ingest (.db) | ( internal) | [visorlog.md](visorlog.md) |
 | **VisorCAS** | False-positive ledger (CAS + bloom) | `~/visorcas/` | [visorcas.md](visorcas.md) |
 | **VisorGraph** | Cert pivot + operator attribution | `~/go-engine/` | [visorgraph.md](visorgraph.md) |
 | **BARE** | Semantic exploit module ranking | `github.com/Nicholas-Kloster/BARE` | [bare.md](bare.md) |
-| **VisorPlus** | 6-phase passive recon per host | (NuClide internal) | (tbd) |
-| **VisorRAG** | Prior findings recall per host | (NuClide internal) | (tbd) |
-| **VisorCorpus** | Adversarial prompt corpus build | (NuClide internal) | (tbd) |
+| **VisorPlus** | 6-phase passive recon per host | ( internal) | (tbd) |
+| **VisorRAG** | Prior findings recall per host | ( internal) | (tbd) |
+| **VisorCorpus** | Adversarial prompt corpus build | ( internal) | (tbd) |
 | **agent-logging-system** | Post-aimap per-enumerator FP-candidate scan | `~/agent-logging-system/` | (tbd) |
 
 ## Reference platforms (third-party, studied)
@@ -26,7 +26,7 @@ The full 19-tool arsenal is canonical in `~/.claude/CLAUDE.md` Tool Inventory se
 | Tool | Why studied | Path |
 |---|---|---|
 | **PentAGI** | Multi-agent pentest orchestrator architecture reference | `~/Tools/web-pentest/pentagi/` |
-| **menlohunt** | GCP/AWS EASM tool — used in chain step | (NuClide-adjacent) |
+| **menlohunt** | GCP/AWS EASM tool — used in chain step | (-adjacent) |
 | **recongraph** | Seed-polymorphic recon engine — typed provenance graphs | `~/Videos/jax/recongraph/` |
 
 ## Tool-family architecture

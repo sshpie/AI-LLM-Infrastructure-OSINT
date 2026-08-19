@@ -10,7 +10,7 @@ methodology: cross-platform Shodan sweep + source-level auth audits + IP-direct-
 
 # AI observability tier: cross-platform synthesis · 2026-05-10
 
-NuClide Research · 2026-05-10
+ · 2026-05-10
 
 ## TL;DR
 

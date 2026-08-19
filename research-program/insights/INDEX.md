@@ -1,6 +1,6 @@
 # Insights
 
-Numbered methodology insights codified during the research program. The full canonical list lives in `~/.claude/nuclide-internal/` (insight-*.md files); this directory holds research-program-specific insights and the index that ties them to surveys.
+Numbered methodology insights codified during the research program. The full canonical list lives in `~/.claude/-internal/` (insight-*.md files); this directory holds research-program-specific insights and the index that ties them to surveys.
 
 ## Active candidate insights
 
@@ -24,7 +24,7 @@ Numbered methodology insights codified during the research program. The full can
 | #79 | LLM-Jacking Productized OSS Proxy Ecosystem (Cat-XX founding); 12,577-host population, 50% US-hosted, X.ai/OpenAI/Anthropic/Gemini upstream laundering | syllabus wandb sweep follow-up | Codified |
 | #78 | Identity surface vs auth-bearing surface; classify access only on the surface the platform gates by design | Syllabus reverify + Cambridge near-miss | Codified (Candidate) |
 | #70 | label=identity vs decoder=auth-state | Censys credit study | Codified |
-| #68 | Findings = Depth(A/B) x Breadth(0/1/2) pair; NuClide restraint = high-depth/low-breadth by choice | Verification rung grid | Codified |
+| #68 | Findings = Depth(A/B) x Breadth(0/1/2) pair;  restraint = high-depth/low-breadth by choice | Verification rung grid | Codified |
 | #60–#76 | Various — see canonical insight files | 2026-05-12 to 2026-06-06 | Codified |
 | #49 | 3 .edu shared Ollama Connect cloud portfolio | 2026-05-15 | Codified (Candidate) |
 | #40 | Auth-on-default strengthens across OSS generations under disclosure pressure | Multi-survey | Codified |
@@ -33,7 +33,7 @@ Numbered methodology insights codified during the research program. The full can
 | #12 | Operator who ships one service auth-off ships others auth-off (stacked catastrophe) | Cat-05 UQConnect | Codified |
 | #8 | signUpDisabled:false = anyone registers (effective unauth) | Langfuse survey precursor | Codified |
 
-(Earlier insights #1–#76 are in `~/.claude/nuclide-internal/`. This index focuses on research-program-active ones.)
+(Earlier insights #1–#76 are in `~/.claude/-internal/`. This index focuses on research-program-active ones.)
 
 ## Detail files in this directory
 

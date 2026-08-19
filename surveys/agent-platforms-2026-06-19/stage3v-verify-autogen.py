@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Stage-3v VERIFY harness — AutoGen Studio candidate 47.109.195.240.
-NuClide Lane C (DCWF 672 T&E). Cat-Tabby canonical template.
+ Lane C (DCWF 672 T&E). Cat-Tabby canonical template.
 
 Discipline (load-bearing):
   - Insight #16: a 200 is identity, not auth state. Every 200 gets a
@@ -73,7 +73,7 @@ def http_get(host_ip: str, port: int, path: str, tls: bool, host_hdr: str,
         else:
             sock = raw
         req = (f"GET {path} HTTP/1.1\r\nHost: {host_hdr}\r\n"
-               f"User-Agent: nuclide-verify/1.0\r\nAccept: */*\r\n"
+               f"User-Agent: -verify/1.0\r\nAccept: */*\r\n"
                f"Connection: close\r\n\r\n").encode()
         sock.sendall(req)
         sock.settimeout(timeout)

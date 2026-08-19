@@ -4,7 +4,7 @@ type: survey
 
 # Model Context Protocol (MCP) Servers: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (in progress)_
+_ · 2026-05-04 (in progress)_
 
 > **Status:** Cross-cloud discovery complete (Scaleway + OVH + Linode tier-2 = 1,017 prefixes / ~6.33M IPs). 95 confirmed MCP servers, 28 with non-empty `tools/list`. Synthesis below.
 
@@ -300,7 +300,7 @@ Five distinct patterns emerge across the 95-host snapshot:
 
 ## Disclosure plan
 
-For each unauthenticated MCP server with high-risk tool classes (shell, filesystem, database, credential-baked cloud-API), draft a coordinated-disclosure email per the standard NuClide template. Where the server's tool-list reveals operator identity (e.g., `slack_send_to_<workspace>`), pursue direct operator contact via WHOIS / cert-pivot.
+For each unauthenticated MCP server with high-risk tool classes (shell, filesystem, database, credential-baked cloud-API), draft a coordinated-disclosure email per the standard  template. Where the server's tool-list reveals operator identity (e.g., `slack_send_to_<workspace>`), pursue direct operator contact via WHOIS / cert-pivot.
 
 ---
 

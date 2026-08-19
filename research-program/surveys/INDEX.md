@@ -1,6 +1,6 @@
 # Surveys
 
-Every NuClide AI/LLM infrastructure survey. Append-only at the top.
+Every  AI/LLM infrastructure survey. Append-only at the top.
 
 Entries link to case studies in `../../case-studies/`. One-line summary per survey: date, platform, dork population, finding count, rate, insight tag.
 

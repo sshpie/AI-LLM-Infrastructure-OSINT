@@ -1,6 +1,6 @@
 # Kumamoto University: Account Takeover, MiniMax Cloud Proxy (CS Architecture Lab)
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

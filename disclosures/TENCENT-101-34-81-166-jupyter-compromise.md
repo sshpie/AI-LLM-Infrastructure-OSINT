@@ -1,6 +1,6 @@
 ---
 to: abuse@tencent.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 101.34.81.166
 institution: Tencent Cloud Beijing, customer Jupyter Notebook compromised since March 2026; 50+ days of attacker artifacts including AF_ALG kernel root exploit (uid=0 confirmed) and likely-same Hilix botnet payload as Ulm Cortical Labs incident
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@tencent.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Tencent customer host 101.34.81.166 compromised since March 2026, unauth Jupyter Notebook on port 8888; AF_ALG kernel root exploit confirmed; cross-references the active Hilix botnet campaign documented at Universität Ulm
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification for a long-running compromise on a Tencent Cloud customer host.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification for a long-running compromise on a Tencent Cloud customer host.
 
 The host `101.34.81.166` runs an unauthenticated Jupyter Notebook on port 8888. The legitimate operator appears to be a Chinese developer running a personal LLM-agent workspace (the workspace contains an "OpenClaw"-class agent framework: `AGENTS.md`, `SOUL.md`, `IDENTITY.md`, `USER.md`, `MEMORY.md`, `HEARTBEAT.md`, plus `memory/`, `state/`, `skills/`, `docs/` directories, this is a benign personal AI-agent setup).
 
@@ -107,7 +107,7 @@ Cell output: `uid=0(root) gid=0(root) groups=0(root)`
 
 ## Cross-reference: same Jupyter-targeted botnet campaign as Ulm
 
-NuClide simultaneously discovered an **active compromise on `134.60.110.66` (`labdevice.medizin.uni-ulm.de`)** today, a Cortical Labs CL1 biological-computing device at Universität Ulm Medical Faculty's research lab. Both compromises share:
+ simultaneously discovered an **active compromise on `134.60.110.66` (`labdevice.medizin.uni-ulm.de`)** today, a Cortical Labs CL1 biological-computing device at Universität Ulm Medical Faculty's research lab. Both compromises share:
 
 - **Same compromise vector:** unauthenticated Jupyter Notebook on port 8888
 - **Same Hilix.x86_64 payload filename** (Mirai-derivative IoT botnet)
@@ -204,6 +204,6 @@ Verification was non-destructive: only `GET /api/contents/` listings + a small n
 I am available for verification or additional forensic detail. Given the active campaign and confirmed root, expedited customer notification is requested.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

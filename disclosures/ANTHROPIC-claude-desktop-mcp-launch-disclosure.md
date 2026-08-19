@@ -1,6 +1,6 @@
 ---
 to: security@anthropic.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: MEDIUM
 ip: n/a
 institution: "Anthropic, Claude Desktop MCP-launch path harden recommendation: claude_desktop_config.json -> npx -y <package> auto-installs and executes arbitrary npm packages with no operator confirmation, creating a typosquat-by-design surface for tutorial-authored configs"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** security@anthropic.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Claude Desktop MCP launcher, harden against tutorial-authored typosquat configs (`npx -y <unclaimed-package>`)
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith product-security recommendation under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). The finding is design-level, not a working exploit; severity MEDIUM.
+This is an unsolicited good-faith product-security recommendation under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). The finding is design-level, not a working exploit; severity MEDIUM.
 
 ---
 
@@ -88,7 +88,7 @@ This is significantly more engineering than the first three options and may be i
 
 Long-term: extend the MCP protocol to include a signature scheme where MCP server packages are signed by their publishers, and Claude Desktop verifies signatures before launch. This requires upstream MCP-protocol coordination (Anthropic + Microsoft + community) and is the most-investment / highest-value option.
 
-## What NuClide is not doing
+## What  is not doing
 
 - Not registering the unclaimed npm names speculatively.
 - Not publishing exploitation tooling.
@@ -112,6 +112,6 @@ Happy to walk through the unclaimed-name corpus, share the npm-registry probe sc
 
 Regards,
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

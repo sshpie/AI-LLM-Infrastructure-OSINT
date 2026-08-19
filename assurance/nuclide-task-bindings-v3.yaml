@@ -1,8 +1,8 @@
 # =============================================================================
-# NuClide Task Bindings — v3 (injection layer resolved)
+#  Task Bindings — v3 (injection layer resolved)
 # LLM Orchestration Security (2026)
 #
-# Produced by applying nuclide-task-bindings-inject-patch.yaml onto v2.
+# Produced by applying -task-bindings-inject-patch.yaml onto v2.
 # Patch resolved from visoragent V1 schema capture (commit fed4436).
 #
 # Three buckets (the coverage report falls out of `state`):
@@ -370,17 +370,17 @@ red_bindings:
     tool: visorlog
     invoke: ["visorlog", "query", "--json", "--since", "{engagement_start}"]
     inputs_from: [engagement_start]
-    output_format: json                 # array; dotted ECS fields incl host.ip, nuclide.source, nuclide.tags
+    output_format: json                 # array; dotted ECS fields incl host.ip, .source, .tags
     execution: passive                  # reads the ledger; no probing
     parse:
       status:
-        - when: "any event where host.ip != '' AND nuclide.source != ''"
+        - when: "any event where host.ip != '' AND .source != ''"
           set: finding                  # probes ARE attributable in the ledger (detection works)
         - else: control_held
       severity_when_finding: info
-      evidence_from: "event.{host.ip, nuclide.source, nuclide.tags, timestamp}"
+      evidence_from: "event.{host.ip, .source, .tags, timestamp}"
     state: runnable
-    resolved: "visorlog query --json fields confirmed 2026-06-01: id,timestamp,event.category,event.type,event.severity,host.ip,host.hostname,org.name,org.country,nuclide.sector,nuclide.tld,nuclide.tags,nuclide.source,vuln.ids,lifecycle.status,notes,raw."
+    resolved: "visorlog query --json fields confirmed 2026-06-01: id,timestamp,event.category,event.type,event.severity,host.ip,host.hostname,org.name,org.country,.sector,.tld,.tags,.source,vuln.ids,lifecycle.status,notes,raw."
     note: "Self-check that findings are logged with an attributable identity (host.ip + source). attribution-check is a query+diff, not a subcommand."
 
 # -----------------------------------------------------------------------------

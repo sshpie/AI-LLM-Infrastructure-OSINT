@@ -1,5 +1,5 @@
 findings-breakdown.txt — Cat-LF: Langfuse LLM Observability Platform
-NuClide Research | 2026-06-06 | Analyst: Nicholas Kloster
+ | 2026-06-06 | Analyst: 
 Tool: herald v0.1.0
 
 ════════════════════════════════════════════════════════════════════
@@ -100,7 +100,7 @@ RESEARCH CONTRIBUTION
 ════════════════════════════════════════════════════════════════════
 
 This survey adds the highest auth-permissive default rate measured in
-NuClide's 2026 survey program (88.9% Langfuse vs 68.7% Flowise, 11.8%
+'s 2026 survey program (88.9% Langfuse vs 68.7% Flowise, 11.8%
 Open WebUI, 0.9% Dify). It strengthens Candidate Insight #76 (auth-on-
 default rate is platform-cohort dependent) and supports the actionable
 hypothesis that public population surveys with upstream disclosure

@@ -10,7 +10,7 @@
 |---|---|---|
 | T0249 | Research current technology to understand capabilities of required system or network | Every Stage -1 OSINT Platoon dispatch; platform-intel research per new survey target |
 | T0250 | Identify cyber capabilities strategies for custom hardware and software development based on mission requirements | herald capability strategy: declarative YAML + Go binary, no per-survey script writing |
-| T0283 | Collaborate with stakeholders to identify and/or develop appropriate solutions technology | (research-program-internal: Nicholas Kloster as primary stakeholder; future: upstream maintainer collaboration when disclosing) |
+| T0283 | Collaborate with stakeholders to identify and/or develop appropriate solutions technology | (research-program-internal:  as primary stakeholder; future: upstream maintainer collaboration when disclosing) |
 | T0329 | Follow software and systems engineering life cycle standards and processes | SDLC discipline for herald per `roles/631-information-systems-security-developer.md` |
 | T0547 | Research and evaluate available technologies and standards to meet customer requirements | O'Reilly literature review for Go HTTP scanning patterns (Security with Go + Powerful CLI Applications + Hacking APIs) |
 | T0284 | Design and develop new tools/technologies as related to cybersecurity | herald, aimap-profile, scanner, BARE, recongraph, agent-logging-system, et al. |
@@ -52,4 +52,4 @@ Each capability gap, once identified, gets fed back through 631 (development), 6
 
 ## Off-ramps (where this role could lead)
 
-Per NICE PDF: 651 Enterprise Architect, 671 System Testing and Evaluation Specialist, 622 Secure Software Assessor, 631 Information Systems Security Developer (current adjacent role), 652 Security Architect. The 661→651 off-ramp would mean responsibility for the overall NuClide tool-family architecture as it scales beyond 19 tools.
+Per NICE PDF: 651 Enterprise Architect, 671 System Testing and Evaluation Specialist, 622 Secure Software Assessor, 631 Information Systems Security Developer (current adjacent role), 652 Security Architect. The 661→651 off-ramp would mean responsibility for the overall  tool-family architecture as it scales beyond 19 tools.

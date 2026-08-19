@@ -1,6 +1,6 @@
 # University of Southern Maine: 8-Host JupyterHub Fleet on `cs.usm.maine.edu` — Entomology-Themed Research Cluster, All Auth-Enforced
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

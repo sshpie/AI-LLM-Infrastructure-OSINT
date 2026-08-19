@@ -1,5 +1,5 @@
 findings-breakdown.txt — Cat-RF: RAGFlow Knowledge-Base Engine
-NuClide Research | 2026-06-06 | Analyst: Nicholas Kloster
+ | 2026-06-06 | Analyst: 
 Tool: herald v0.1.1
 
 ════════════════════════════════════════════════════════════════════
@@ -76,7 +76,7 @@ M-002 | LATENT | 618 hosts (unknown version distribution)
               Version is NOT externally enumerable from unauth surface.
               Of the 618 REGISTER_OPEN hosts, unknown subset is vulnerable.
               Cannot be confirmed without triggering the RCE primitive
-              (NuClide restraint: not attempted).
+              ( restraint: not attempted).
 
 ════════════════════════════════════════════════════════════════════
 SCOPE DORKS — QUERY LOG
@@ -106,7 +106,7 @@ test condition.
 TOOL CONTRIBUTION
 ════════════════════════════════════════════════════════════════════
 
-herald v0.1.1 (~/herald/, public at github.com/nuclide-research/herald).
+herald v0.1.1 (~/herald/, public at github.com/sshpie/herald).
 Fix during this survey: numeric type coercion (YAML int / JSON float64
 normalization in matchValue). RAGFlow platform config added with both
 register_enabled and config_disc probes.

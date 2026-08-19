@@ -1,6 +1,6 @@
 # University of Nicosia: DeepSeek V4 Pro Cloud Proxy, Unauthenticated Inference
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

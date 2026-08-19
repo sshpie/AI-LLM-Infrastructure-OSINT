@@ -10,11 +10,11 @@ methodology: bi-cross-survey-correlation
 
 # Pediatric medical ML operator: stacked MLflow + Metabase pre-auth admin-takeover
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
-Hetzner Helsinki host **`65.109.36.121`** runs a **pediatric medical ML operation** on three publicly-reachable services. The MLflow component (already in the NuClide ledger as event id 339) carries 224 production experiments naming sick-vs-healthy classifiers, behavioral-pediatric models, and calibration-window prediction tasks. The Metabase BI dashboard on the same host returns an **unclaimed setup-token** via the public-facing `/api/session/properties` endpoint, meaning any internet visitor can call `POST /api/setup` with that token and become the operator's Metabase administrator.
+Hetzner Helsinki host **`65.109.36.121`** runs a **pediatric medical ML operation** on three publicly-reachable services. The MLflow component (already in the  ledger as event id 339) carries 224 production experiments naming sick-vs-healthy classifiers, behavioral-pediatric models, and calibration-window prediction tasks. The Metabase BI dashboard on the same host returns an **unclaimed setup-token** via the public-facing `/api/session/properties` endpoint, meaning any internet visitor can call `POST /api/setup` with that token and become the operator's Metabase administrator.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage
@@ -71,7 +71,7 @@ That request creates an admin user on the operator's Metabase. Once admin, the a
 - **Add new database connections** (including attacker-controlled databases for data exfiltration via CVE-2023-38646-style RCE on older Metabase versions; v0.55.12 is post-fix for the H2 RCE class but the Native Query interface itself remains powerful)
 - **Read all dashboards + saved questions** which typically surface operator's KPI definitions, customer schemas, and aggregated PHI
 
-NuClide did NOT call `/api/setup` with the disclosed token. The token is reproduced as evidence; the takeover step is left to the operator's incident-response team.
+ did NOT call `/api/setup` with the disclosed token. The token is reproduced as evidence; the takeover step is left to the operator's incident-response team.
 
 Verification was non-destructive: only `GET /api/session/properties` was called (a public endpoint by Metabase design).
 
@@ -109,11 +109,11 @@ The MLflow component is post-CVE-2023-1177 patched, so the active-exploitation s
 
 ### 3. Existing ledger context
 
-NuClide ledger event id 339 (source `mlflow-cloud-survey-2026-05`) already has this host as `HIGH` severity, tagged `MEDICAL_ML, PEDIATRIC, XGBOOST, SICK_VS_HEALTHY, HIPAA_CLASS`. The Metabase finding from this BI probe **upgrades the combined severity to CRITICAL** because of the pre-auth admin-takeover vector.
+ ledger event id 339 (source `mlflow-cloud-survey-2026-05`) already has this host as `HIGH` severity, tagged `MEDICAL_ML, PEDIATRIC, XGBOOST, SICK_VS_HEALTHY, HIPAA_CLASS`. The Metabase finding from this BI probe **upgrades the combined severity to CRITICAL** because of the pre-auth admin-takeover vector.
 
 ## Disclosure routing
 
-Per `nuclide-contact`:
+Per `-contact`:
 
 - **Provider:** `abuse@hetzner.com` (Hetzner DE; ARIN/RIPE OrgAbuseEmail)
 - **Operator-direct:** opaque, no public-facing domain, no rDNS-revealing customer brand, no CT log subdomains
@@ -142,7 +142,7 @@ Step 1   bi-auth-check.py        → per-host auth posture validation
 Step 2   curl /api/session/properties → confirmed setup-token still unclaimed
 Step 3   ledger cross-check       → existing event id 339 (mlflow MEDICAL_ML PEDIATRIC HIPAA_CLASS)
 Step 4   curl /api/2.0/mlflow/experiments/search → 224 experiments confirmed
-Step 5   nuclide-contact          → abuse@hetzner.com (operator opaque)
+Step 5   -contact          → abuse@hetzner.com (operator opaque)
 Step 6   visorlog (existing entry - this case study augments via tags)
 Step 7   visorscuba (existing AI.C1 violation)
 Step 9   visorcorpus (covered in earlier mlflow-cloud-survey corpus generation)

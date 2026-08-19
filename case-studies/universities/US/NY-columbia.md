@@ -1,6 +1,6 @@
 # Columbia University: Unauthenticated Ollama + Cloud Proxy Credential Leak
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 
@@ -130,7 +130,7 @@ A third Columbia DHCP-network host surfaced during the 2026-05-19 visorgoose `.e
 
 ### Notable details — Columbia DHCP pattern
 
-This is the THIRD Columbia-attributed host in the NuClide ledger to fit the `dyn-*-dyn.columbia.edu` DHCP naming convention. The pattern:
+This is the THIRD Columbia-attributed host in the  ledger to fit the `dyn-*-dyn.columbia.edu` DHCP naming convention. The pattern:
 
 | Host | IP | Caught when | Service |
 |---|---|---|---|

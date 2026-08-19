@@ -1,6 +1,6 @@
 # Insight #86 — The disclosure pipeline is an attack surface
 
-**Status:** Candidate (1 program-wide data point: NuClide 2026-05 through 2026-06-07)
+**Status:** Candidate (1 program-wide data point:  2026-05 through 2026-06-07)
 **First evidence:** 2026-06-07 audit of `~/AI-LLM-Infrastructure-OSINT/disclosures/` (142 sent) and `research-program/disclosures/INDEX.md` (~30 QUEUED, 0 in any post-send state).
 **Author:** Mitnick-lens re-frame during Cowboy session 2026-06-07.
 
@@ -17,7 +17,7 @@ The combined signal is a researcher-built enrichment for any actor watching the 
 
 ---
 
-## Evidence (NuClide program, 2026-06-07)
+## Evidence ( program, 2026-06-07)
 
 | Bin | Count | Note |
 |---|---|---|
@@ -61,7 +61,7 @@ The attacker spends no recon budget. The reconnaissance work the researcher did 
 
 Any disclosure program with these three properties produces this surface:
 
-| Property | NuClide today | Common in industry |
+| Property |  today | Common in industry |
 |---|---|---|
 | Per-finding state machine published | yes | Increasing — many bounty programs do |
 | State machine has a `QUEUED`/pre-send state | yes | Less common; usually private until SENT |
@@ -71,7 +71,7 @@ The risk-multiplier is the *combination*. Per-finding state is fine if findings 
 
 ---
 
-## NuClide-specific remediation options
+## -specific remediation options
 
 1. **Pre-send privacy.** Strip target identity from `QUEUED` entries — list category + severity + queue position, not IP or operator name. Publish identity only after `SENT` (operator is on notice).
 2. **Post-resolution publication only.** Mirror the public bug-bounty convention: only publish the case study once the operator has had reasonable time to remediate.
@@ -79,7 +79,7 @@ The risk-multiplier is the *combination*. Per-finding state is fine if findings 
 
 The Mitnick-lens framing is option 3 + option 1: an embargo enforces honesty (the researcher cannot indefinitely hold findings), and `QUEUED` redaction denies the attacker the meta-enrichment without losing the program's transparency commitment.
 
-The trade-off is real: NuClide's transparency posture and academic-grade auditability arguably depend on publishing pipeline state. The point of the insight is to be honest about what the transparency posture costs.
+The trade-off is real: 's transparency posture and academic-grade auditability arguably depend on publishing pipeline state. The point of the insight is to be honest about what the transparency posture costs.
 
 ---
 
@@ -90,7 +90,7 @@ The 142 sent files contain implicit response patterns (which maintainers ack qui
 - **Maintainer-response cohort segmentation.** Which open-source vendors respond to direct disclosure within 7/30/90 days? Which CERTs route? Which jurisdictions accept disclosure but never confirm fix?
 - **Operator-class response delta.** Is institutional intake (universities, government) systematically slower than commercial intake? Is the inverse true?
 
-This is fertile ground because the *response* (or non-response) data is information the researcher has uniquely accumulated through running the program. It is not derivable from any public source other than NuClide's own log. It is also probably more interesting to defenders than any one platform survey.
+This is fertile ground because the *response* (or non-response) data is information the researcher has uniquely accumulated through running the program. It is not derivable from any public source other than 's own log. It is also probably more interesting to defenders than any one platform survey.
 
 ---
 
@@ -98,7 +98,7 @@ This is fertile ground because the *response* (or non-response) data is informat
 
 1. **Decide the transparency posture.** Either publish queue identity (current) or redact (proposed). The choice is a researcher-policy question, not a technical one. Default-current is fine if explicitly chosen rather than inherited.
 2. **Schedule the maintainer-response cohort analysis** as a research-program work item. Tag the 142 sent files with response-bucket metadata.
-3. **Add `QUEUED → SENT` automation** so the researcher-side bottleneck is visible to the researcher as well as to readers. The bottleneck is currently invisible to NuClide internally because there is no aging visualization.
+3. **Add `QUEUED → SENT` automation** so the researcher-side bottleneck is visible to the researcher as well as to readers. The bottleneck is currently invisible to  internally because there is no aging visualization.
 
 ---
 

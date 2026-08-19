@@ -2,7 +2,7 @@
 
 Custom DCWF outfits assembled from `~/wardrobe` (1,281 NICE Cybersecurity Workforce
 Framework atoms across 39 work-role pathways). Each outfit hand-picks atoms
-across roles to produce a lean operating posture for a specific NuClide lane.
+across roles to produce a lean operating posture for a specific  lane.
 
 Each `.json` is a wardrobe outfit definition (try-on into wardrobe to use, render
 as LLM prompt). Each `.md` is the pre-rendered LLM system prompt suitable for

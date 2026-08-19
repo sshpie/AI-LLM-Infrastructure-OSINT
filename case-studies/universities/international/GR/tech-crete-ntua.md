@@ -1,6 +1,6 @@
 # Technical University of Crete + NTUA: Unauthenticated Ollama, MiniMax Cloud, 235.7B Model
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

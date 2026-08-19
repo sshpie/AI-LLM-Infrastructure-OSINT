@@ -27,7 +27,7 @@ The Cat-Tabby + Devstral re-validation ran Stage 0 (`/api/tags` first-pass) acro
 
 ## 3. Methodology gap
 
-Methodology §3 ("Distrust your observation position") is standing advice. The canonical NuClide recongraph and VisorGraph both run a formal sandbox-MITM consistency check at startup that downgrades L7 conclusions when an intercepting environment is detected. The Stage 0 prober used here did NOT run that check — it assumed the VPN-exit was transparent and that a 200-with-data on `/api/tags` was an authoritative read of the target's actual model loadout. It was not. The single sentence that should have been a Stage 0 prerequisite (and was not):
+Methodology §3 ("Distrust your observation position") is standing advice. The canonical  recongraph and VisorGraph both run a formal sandbox-MITM consistency check at startup that downgrades L7 conclusions when an intercepting environment is detected. The Stage 0 prober used here did NOT run that check — it assumed the VPN-exit was transparent and that a 200-with-data on `/api/tags` was an authoritative read of the target's actual model loadout. It was not. The single sentence that should have been a Stage 0 prerequisite (and was not):
 
 > Before any L7 conclusion is drawn from a non-local routing layer, run the sandbox-MITM consistency check (recongraph / VisorGraph carry the reference implementation) and pair every probe with a delayed re-probe whose hash must match.
 
@@ -54,9 +54,9 @@ The contamination class is "templated response on first-pass, real response on r
 
 This is the load-bearing evidence that the Stage 0 cross-section is inner-A / outer-0. The numbers (1,217 / 434 / 117 / 66) are reproducible by re-running through the same contaminated path — they are confident and wrong.
 
-## 6. Risk assessment — prior NuClide surveys potentially similarly contaminated
+## 6. Risk assessment — prior  surveys potentially similarly contaminated
 
-Every prior NuClide survey that egressed through a VPN/proxy and did NOT run the sandbox-MITM consistency check at Stage 0 is a candidate for similar contamination. By date / category:
+Every prior  survey that egressed through a VPN/proxy and did NOT run the sandbox-MITM consistency check at Stage 0 is a candidate for similar contamination. By date / category:
 
 | Survey | Date | Routing layer | Re-probe paired? | Status |
 |---|---|---|---|---|

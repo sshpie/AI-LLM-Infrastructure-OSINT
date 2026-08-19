@@ -254,7 +254,7 @@ DISCLOSURE DISPOSITION (Lane D, DCWF 733)
   No vendor disclosure                     No vendor surface; mcp-server 1.0.1
                                            binary is operator-built
   No tools/call invocation                 Hard-refused at code level (DO_NOT_CALL)
-  No public per-host enumeration in case study  Operator OPSEC not Nuclide's
+  No public per-host enumeration in case study  Operator OPSEC not 's
                                                 concern, but public IPs of
                                                 honeypot fleet have legitimate
                                                 research-publication value
@@ -297,7 +297,7 @@ NEXT-STEP CANDIDATES (not actioned in this survey)
      fleet's signature.
   5. VisorCAS signature ingest (drafted at
      methodology/visorcas-signature-mcp-cred-theft-honeypot.yaml).
-  6. nuclide.db VisorLog ingest: ledger 66 hosts as honeypot-class with
+  6. .db VisorLog ingest: ledger 66 hosts as honeypot-class with
      cohort signature attached.
 
 ARTIFACTS (under shodan/cat-mcp-cred-fleet-2026-06-09/)

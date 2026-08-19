@@ -52,7 +52,7 @@ Hypothesis: SOC2 pressure scales with enterprise-sales motion, not with funding 
 ## Limits
 
 - n=31 known-stage validation is small; the 100% Series C+ band is 9 hosts total. The shape is right; the cell counts will move with more data.
-- "Known stage" is biased toward AI-security vendors NuClide had already disclosure-engaged. Generalizing to all AI-infra requires manual Crunchbase work the registry sweep does not do.
+- "Known stage" is biased toward AI-security vendors  had already disclosure-engaged. Generalizing to all AI-infra requires manual Crunchbase work the registry sweep does not do.
 - AegisAI flipped reject -> quarantine between the original n=7 (Cat-33 work, 2026-06-06) and the re-dug n=31. DMARC posture is not static; the signal is rolling, not frozen.
 
 ## Data

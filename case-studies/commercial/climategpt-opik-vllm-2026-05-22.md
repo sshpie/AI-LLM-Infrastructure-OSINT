@@ -280,7 +280,7 @@ JS extract:   curl assets/index-C3cW9a_k.js | grep VITE_BASE_API_URL
 Verify:       curl /api/v1/private/projects → populated 200
 Pivot:        nmap -sV + aimap-profile full → ports 9100, 8086 discovered
 Attribution:  whois 80.79.202.18 → NL-INFO-DTN-1, DTN Amsterdam
-Ledger:       visorlog add ×4 → IDs 35926-35929 (nuclide.db)
+Ledger:       visorlog add ×4 → IDs 35926-35929 (.db)
 Scoring:      visorscuba assess → 4× AI.C1 0/10
 Exploit map:  bare climategpt_bare.json → no Metasploit coverage
 Corpus:       visorcorpus build -type focused → 46 payloads

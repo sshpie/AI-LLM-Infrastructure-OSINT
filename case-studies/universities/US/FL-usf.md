@@ -1,6 +1,6 @@
 # University of South Florida: Marine Lab JupyterHubs (auth-enforced) + Adjacent Prometheus `/metrics` Public
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

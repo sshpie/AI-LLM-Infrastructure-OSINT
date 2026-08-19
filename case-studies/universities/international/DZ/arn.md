@@ -1,6 +1,6 @@
 # Algerian Academic Research Network (ARN): Unauthenticated Inference Node
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

@@ -1,6 +1,6 @@
 # Insight #88 — Scrape Topology Disclosure = Operator Org Chart
 
-_NuClide Research · 2026-06-08 · Origin: VictoriaMetrics population survey, 1,176 verified hosts._
+_ · 2026-06-08 · Origin: VictoriaMetrics population survey, 1,176 verified hosts._
 
 ---
 
@@ -45,7 +45,7 @@ This applies beyond VictoriaMetrics: Prometheus `/api/v1/targets`, Datadog Agent
 
 ## Restraint discipline
 
-We did not query any of the leaked RFC1918 endpoints. We counted them. The count is the finding. Probing inward from the leaked target list would shift posture from research to lateral reconnaissance — outside the NuClide ethic.
+We did not query any of the leaked RFC1918 endpoints. We counted them. The count is the finding. Probing inward from the leaked target list would shift posture from research to lateral reconnaissance — outside the  ethic.
 
 ## Cross-references
 

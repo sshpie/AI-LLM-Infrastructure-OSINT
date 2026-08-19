@@ -1,7 +1,7 @@
 # The MITRE ATLAS Residual Gap: Closed-Loop Oracle-Tuned Retrieval-Rank Poisoning
 
 **Date:** 2026-06-20
-**Author:** NuClide Research (Nicholas Kloster, nicholas@nuclide-research.com)
+**Author:**  (, )
 **Worked example:** Keystone (keyst.one), 43.153.169.169
 **Classification:** CWE-306 (Missing Authentication for Critical Function) mapped to AML.T0070 RAG Poisoning, with a proposed sub-technique for the closed-loop oracle-tuned variant
 **Status:** Verified 2026-06-20 against MITRE ATLAS v5.6.0 (release 2026.05, dated 2026-05-27; source github.com/mitre-atlas/atlas-data dist/ATLAS.yaml and atlas.mitre.org). The broad RAG/retrieval-context-poisoning gap is CLOSED by AML.T0070 RAG Poisoning, AML.T0071 False RAG Entry Injection, AML.T0066 Retrieval Content Crafting, AML.T0064 Gather RAG-Indexed Targets, AML.T0099, AML.T0080, and AML.T0051.001. The only residual gap is the closed-loop oracle-tuned retrieval-rank-optimization variant, which no single technique enumerates as its own method.
@@ -159,7 +159,7 @@ The stack exposes three unauthenticated ports. ChromaDB serves on its default HT
 
 A second exposed console on port 5050 acts as the retrieval-rank oracle. It is the query interface that turns the blind PoisonedRAG model into the closed-loop variant described above. The two exposures together are the full closed-loop primitive: a write path into the retrieval corpus and an oracle that confirms rank before any real query runs. That oracle-tuned loop is the part of the chain that the current matrix does not enumerate as its own method.
 
-We exercised restraint. We did not poison production. We did not inject any record that a real user would retrieve. The only write was a single canary that we marked and then deleted. No user received attacker-controlled output. We did not harm users. The point was to confirm the primitive, not to operate it. NuClide's prior disclosure work, including CVE-2025-4364 and ICSA-25-140-11, follows the same restraint ethic: confirm severity with the minimum touch, then stop.
+We exercised restraint. We did not poison production. We did not inject any record that a real user would retrieve. The only write was a single canary that we marked and then deleted. No user received attacker-controlled output. We did not harm users. The point was to confirm the primitive, not to operate it. 's prior disclosure work, including CVE-2025-4364 and ICSA-25-140-11, follows the same restraint ethic: confirm severity with the minimum touch, then stop.
 
 ## Closing
 

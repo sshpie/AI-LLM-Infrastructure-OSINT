@@ -5,7 +5,7 @@ _Companion to: [`reference/realtime-olap-architecture.md`](realtime-olap-archite
 This document describes how to:
 
 1. Bootstrap ClickHouse from existing SQLite + `~/recon`.
-2. Keep ClickHouse in sync with `nuclide.db` and `empire.db`.
+2. Keep ClickHouse in sync with `.db` and `empire.db`.
 3. Use DuckDB for ad-hoc analysis.
 4. Handle failure and correctness concerns.
 
@@ -18,7 +18,7 @@ SQLite remains the **system of record**. ClickHouse is an **analytic mirror** fo
 - Populate ClickHouse with historical findings and enrichment outputs.
 - Support the OLAP-backed tools described in [`olap-tools-spec.md`](olap-tools-spec.md) (`get_auth_off_rates`, `get_operator_exposure`, etc.).
 - Ensure we can **rebuild** ClickHouse at any time from:
-  - `nuclide.db` (VisorLog),
+  - `.db` (VisorLog),
   - `empire.db` (JAXEN, as needed),
   - Raw artifacts under `~/recon`.
 
@@ -28,7 +28,7 @@ No canonical data lives *only* in ClickHouse.
 
 ## 2. Baseline: Existing State
 
-- `nuclide.db` (SQLite):
+- `.db` (SQLite):
   - Lifecycle-tracked findings, current classification, disclosure state, timestamps, Rego scores, tags.
 
 - `empire.db` (SQLite):
@@ -60,7 +60,7 @@ Run this once against the ClickHouse cluster.
 
 Write a small CLI (e.g., `export_findings.py`) that:
 
-1. Connects to `nuclide.db`.
+1. Connects to `.db`.
 2. SELECTs all relevant fields for the `findings` table.
 3. Emits either:
    - CSV files, or
@@ -111,7 +111,7 @@ SELECT
   source_systems_json,
   survey_version,
   policy_version
-FROM findings;            -- or the appropriate table name in nuclide.db
+FROM findings;            -- or the appropriate table name in .db
 ```
 
 Then transform JSON fields into arrays during export, or let ClickHouse parse JSON.
@@ -164,7 +164,7 @@ Approach:
 Implement a periodic job (e.g. `sync_clickhouse.py`) that runs every N minutes (e.g., 5–10 min):
 
 1. Read `last_synced_updated_at` from a local state file/table.
-2. Query `nuclide.db` for rows with `updated_at > last_synced_updated_at`.
+2. Query `.db` for rows with `updated_at > last_synced_updated_at`.
 3. Export deltas to a temp file (CSV/Parquet) or in-memory.
 4. Upsert into ClickHouse.
 
@@ -253,7 +253,7 @@ Invariants:
 
 - No canonical data exists only in ClickHouse.
 - Every ClickHouse row is derivable from:
-  - `nuclide.db` + `empire.db` + artifacts under `~/recon`.
+  - `.db` + `empire.db` + artifacts under `~/recon`.
 - Sync is monotonic: we never delete or mutate SQLite based on ClickHouse.
 
 ---
@@ -274,7 +274,7 @@ The system already knows how to detect exposed ClickHouse instances; apply those
 ## 8. Implementation Checklist
 
 - [ ] Finalize ClickHouse schema ([`olap-schema-clickhouse.sql`](olap-schema-clickhouse.sql)).
-- [ ] Implement `export_findings` from `nuclide.db` to Parquet.
+- [ ] Implement `export_findings` from `.db` to Parquet.
 - [ ] Implement bootstrap loader into ClickHouse.
 - [ ] Implement periodic `sync_clickhouse` job (delta export + insert).
 - [ ] Add a high-water mark store for `updated_at`.
@@ -290,7 +290,7 @@ This is a living migration plan: adjust schema fields, sync cadence, and engine 
 
 ## 9. Reference Install: rooster (2026-05-06, decommissioned same day)
 
-> **Status: DECOMMISSIONED 2026-05-06.** Container, cron, credentials, data, and log directories were removed several hours after install. Rationale: at the current ledger scale (~600 findings, ~500 added per month), DuckDB embedded against `nuclide.db` answers every population-tier query the OLAP-tools-spec describes in milliseconds. The ClickHouse mirror was running but no read path was actually using it, `data/olap-demo.py` reads SQLite directly via DuckDB's `sqlite_scanner`, not ClickHouse. The infrastructure (schema, exporter, sync, bootstrap, cron wrapper) is preserved in the repo and is ready to redeploy when scale or use case warrants, e.g., crossing 100k findings, public-facing dashboards, or sub-second materialized-view alerting.
+> **Status: DECOMMISSIONED 2026-05-06.** Container, cron, credentials, data, and log directories were removed several hours after install. Rationale: at the current ledger scale (~600 findings, ~500 added per month), DuckDB embedded against `.db` answers every population-tier query the OLAP-tools-spec describes in milliseconds. The ClickHouse mirror was running but no read path was actually using it, `data/olap-demo.py` reads SQLite directly via DuckDB's `sqlite_scanner`, not ClickHouse. The infrastructure (schema, exporter, sync, bootstrap, cron wrapper) is preserved in the repo and is ready to redeploy when scale or use case warrants, e.g., crossing 100k findings, public-facing dashboards, or sub-second materialized-view alerting.
 >
 > The notes below remain canonical for the next install. Re-deploy effort is ~5 minutes given the gotchas are now documented.
 
@@ -302,13 +302,13 @@ ClickHouse 26.3.9.8 official image (`clickhouse/clickhouse-server:latest`). Run 
 
 ```bash
 docker run -d \
-  --name nuclide-clickhouse \
+  --name -clickhouse \
   --restart unless-stopped \
   --network host \
   -v ~/clickhouse-data:/var/lib/clickhouse \
   -v ~/clickhouse-logs:/var/log/clickhouse-server \
   -v ~/clickhouse-config/listen.xml:/etc/clickhouse-server/config.d/listen.xml:ro \
-  --env-file ~/.config/nuclide/clickhouse-credentials.env \
+  --env-file ~/.config//clickhouse-credentials.env \
   -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 \
   --ulimit nofile=262144:262144 \
   clickhouse/clickhouse-server:latest
@@ -333,13 +333,13 @@ Two gotchas resolved during this install:
 ### Credentials
 
 ```
-~/.config/nuclide/clickhouse-credentials.env  (mode 600)
+~/.config//clickhouse-credentials.env  (mode 600)
 
 CLICKHOUSE_HOST=127.0.0.1
 CLICKHOUSE_PORT=8123
 CLICKHOUSE_USER=default
 CLICKHOUSE_PASSWORD=<generated>
-CLICKHOUSE_DATABASE=nuclide
+CLICKHOUSE_DATABASE=
 ```
 
 Generate password with `openssl rand -base64 24 | tr -d '/+=' | head -c 32`.
@@ -372,7 +372,7 @@ Confirms the survey rule "no unauthenticated ClickHouse exposure on a public int
 
 ### Cron-driven delta sync
 
-`data/cron-sync-clickhouse.sh` is the documented entrypoint. It sources the credentials env, runs `sync-clickhouse.py --execute`, and appends UTC-bracketed output to `~/.config/nuclide/clickhouse-sync.log`. Suggested crontab entry (every 10 minutes):
+`data/cron-sync-clickhouse.sh` is the documented entrypoint. It sources the credentials env, runs `sync-clickhouse.py --execute`, and appends UTC-bracketed output to `~/.config//clickhouse-sync.log`. Suggested crontab entry (every 10 minutes):
 
 ```
 */10 * * * * /home/cowboy/AI-LLM-Infrastructure-OSINT/data/cron-sync-clickhouse.sh
@@ -387,4 +387,4 @@ Nothing to sync. State unchanged.
 [2026-05-06T03:21:05Z] sync finished (exit 0)
 ```
 
-When new findings land in `nuclide.db`, the next cron tick advances the watermark and inserts only the deltas. Watermark state at `~/.config/nuclide/clickhouse-sync-state.json` (mode 600). To force a full re-sync (e.g., after a schema change): `python3 data/sync-clickhouse.py --reset` then re-run.
+When new findings land in `.db`, the next cron tick advances the watermark and inserts only the deltas. Watermark state at `~/.config//clickhouse-sync-state.json` (mode 600). To force a full re-sync (e.g., after a schema change): `python3 data/sync-clickhouse.py --reset` then re-run.

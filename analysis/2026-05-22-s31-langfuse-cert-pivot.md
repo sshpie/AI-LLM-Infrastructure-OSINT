@@ -47,7 +47,7 @@ Single terminal. Orchestrator pattern — shell commands via Bash tool, files vi
 | **aimap-profile** | Target classification + ethics flags | WHOIS → Google LLC; commercial AI observability |
 | **menlohunt** | GCP EASM on 34.0.11.208 | 9 findings: Redis CRITICAL, Postgres HIGH, Prometheus MEDIUM, WireGuard MEDIUM |
 | **VisorBishop** | Platform re-probe + auth state | Both Langfuse instances `auth: auth` — tool gap logged |
-| **VisorLog** | Ledger ingest → nuclide.db | 6 events ingested (IDs 35930–35935) |
+| **VisorLog** | Ledger ingest → .db | 6 events ingested (IDs 35930–35935) |
 | **VisorScuba** | Compliance scoring | 9/10; 1 warn (AI.H1 — signup-open) |
 | **BARE** | Metasploit semantic ranking | 0/5 MSF coverage; max 0.515 (Redis port exposure) |
 | **VisorCorpus** | Adversarial corpus | Built: prompt_injection, system_prompt, kb_exfiltration, cross_tenant_leak |
@@ -124,7 +124,7 @@ The enrollment policy is read from `__NEXT_DATA__` in the Next.js SSR response �
 | ~17:32 | menlohunt on 34.0.11.208 | Redis :6379 CRITICAL (auth-enforced), Postgres :5432 HIGH, Prometheus :9090 MEDIUM (403), WireGuard MEDIUM |
 | ~17:33 | Port :3000 CSP analysis | Production S3 bucket names in CSP: prod-uk-services-*, eu-west-2. Azure AD, Stripe, Plain.com UK. |
 | ~17:34 | aimap; VisorBishop; VisorScuba; BARE; VisorCorpus; cortex; aimap-profile | Arsenal chain complete. Tool gaps logged (VisorBishop signup-open, cortex schema). |
-| ~17:35 | VisorLog ingest | 6 events → nuclide.db (IDs 35930–35935) |
+| ~17:35 | VisorLog ingest | 6 events → .db (IDs 35930–35935) |
 | ~17:38 | Case study written, committed | case-studies/commercial/langfuse-postgres-cert-pivot-2026-05-22.md |
 
 ---
@@ -413,4 +413,4 @@ RESPONSE (relevant portion of __NEXT_DATA__ SSR block):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 31 (parallel chain) · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 31 (parallel chain) · 2026-05-22*

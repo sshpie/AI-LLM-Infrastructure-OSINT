@@ -3,7 +3,7 @@
 **Date:** 2026-05-05  
 **Session:** 9  
 **Classification:** Internal / Research Use Only  
-**Toolchain:** aimap (v1.9.x → 43 fingerprints), all 14 NuClide binaries (full build), data/aisafety-probe.py (deprecated this session)  
+**Toolchain:** aimap (v1.9.x → 43 fingerprints), all 14  binaries (full build), data/aisafety-probe.py (deprecated this session)  
 **Repos updated:** AI-LLM-Infrastructure-OSINT (4affddb + multiple OLAP/taxonomy commits)
 
 ---
@@ -12,7 +12,7 @@
 
 ### Objective
 
-Two parallel objectives. First: Nick selected AI safety eval tooling as the next survey target. Investigation of session-8 probe results immediately surfaced a load-bearing methodology bug: bespoke single-word substring matching in `data/aisafety-probe.py` produced 6 false positives and 0 true positives at population scale. Second: full NuClide toolchain was partially missing locally; all 14 binaries cloned and built this session.
+Two parallel objectives. First: Nick selected AI safety eval tooling as the next survey target. Investigation of session-8 probe results immediately surfaced a load-bearing methodology bug: bespoke single-word substring matching in `data/aisafety-probe.py` produced 6 false positives and 0 true positives at population scale. Second: full  toolchain was partially missing locally; all 14 binaries cloned and built this session.
 
 Thesis question being tested: does the AI safety eval platform class (Promptfoo, Garak, DeepEval, NeMo Guardrails, LangSmith self-hosted, Inspect AI, Lakera Guard) have public cloud exposure comparable to LLM orchestration and gateway tiers?
 
@@ -47,7 +47,7 @@ Sequential orchestrator session. Three phases: (1) investigate session-8 AI safe
 | VisorSD | ASN/org dork sweep | Smoke-tested; confirmed callable |
 | VisorGoose | TLD/CT-log sweep | Smoke-tested; confirmed callable |
 | VisorGraph | Cert-pivot attribution | Smoke-tested; confirmed callable |
-| VisorLog | Ledger ingest | Smoke-tested; nuclide.db confirmed intact (579 open findings) |
+| VisorLog | Ledger ingest | Smoke-tested; .db confirmed intact (579 open findings) |
 | VisorScuba | Compliance scoring | Smoke-tested; confirmed callable |
 | VisorCorpus | Adversarial corpus | Smoke-tested; confirmed callable |
 | VisorAgent | Active LLM exploitation | [--] ethical-stop; smoke-tested only, not run against survey hosts |
@@ -60,10 +60,10 @@ Sequential orchestrator session. Three phases: (1) investigate session-8 AI safe
 
 ### Notable Configuration
 
-- nuclide.db confirmed intact at `~/AI-LLM-Infrastructure-OSINT/data/nuclide.db`: 579 open findings (74 critical + 244 high + 129 medium + 132 low)
+- .db confirmed intact at `~/AI-LLM-Infrastructure-OSINT/data/.db`: 579 open findings (74 critical + 244 high + 129 medium + 132 low)
 - AI safety eval FP probe: same 6 hosts re-probed with tightened aimap; 0/6 confirmed
 - aisafety-probe.py deprecated with `sys.exit(2)` on run; cannot accidentally re-use
-- artisan repo not found in NuClide Research org (possibly renamed/private); noted, not blocking
+- artisan repo not found in  org (possibly renamed/private); noted, not blocking
 
 ---
 
@@ -94,7 +94,7 @@ Re-probe with corrected aimap: 0/6 confirm. Methodology correction empirically v
 
 ### Safeguards
 
-No session-8 Garak disclosure sent to 149.56.22.24 (OVH abuse + NVIDIA security). Disclosure invalidated before send. nuclide.db ledger not affected — FPs were never ingested into the ledger. Visor{Log,Scuba} re-run confirmed no corrupted entries from session-8 AI safety work.
+No session-8 Garak disclosure sent to 149.56.22.24 (OVH abuse + NVIDIA security). Disclosure invalidated before send. .db ledger not affected — FPs were never ingested into the ledger. Visor{Log,Scuba} re-run confirmed no corrupted entries from session-8 AI safety work.
 
 ---
 
@@ -111,7 +111,7 @@ No session-8 Garak disclosure sent to 149.56.22.24 (OVH abuse + NVIDIA security)
 | 10:30 | Toolchain inventory: 3 repos missing locally | VisorGoose, VisorLog, VisorScuba cloned; build started |
 | 11:00 | 12 binaries built to ~/go/bin/ | visorplus, jaxen, visorsd, visorgoose, visorgraph, visorlog, visorscuba, visorcorpus, visoragent, visorhollow, menlohunt, visorrag |
 | 11:15 | Smoke test all 14 tools | All callable; visorhollow confirmed Windows-only; visoragent confirmed ethical-stop |
-| 11:30 | nuclide.db confirmed intact | 579 open findings; no corrupted entries from session-8 |
+| 11:30 | .db confirmed intact | 579 open findings; no corrupted entries from session-8 |
 | 12:00 | 7 new AI safety eval fingerprints added to aimap | Promptfoo, NeMo Guardrails, DeepEval, LangSmith self-hosted, Inspect AI, Garak REST, Lakera Guard |
 | 12:30 | 4 new deep enumerators added to aimap | enumPromptfoo, enumNeMoGuardrails, enumDeepEval, enumLangSmith |
 | 13:00 | aimap re-probe of 6 FP hosts | 0/6 confirmed; correction validated |
@@ -149,10 +149,10 @@ No session-8 Garak disclosure sent to 149.56.22.24 (OVH abuse + NVIDIA security)
 | **Name/ID** | VisorGoose, VisorLog, VisorScuba binaries |
 | **Type** | Toolchain debt |
 | **Evidence** | 3 repos not present on rooster before this session; toolchain checklist showed gap |
-| **Observed exposure** | nuclide.db ledger ingest and compliance scoring unavailable for prior sessions |
+| **Observed exposure** | .db ledger ingest and compliance scoring unavailable for prior sessions |
 | **Severity** | LOW — operational debt; no security impact. Resolved this session. |
 
-**Potential impact:** Prior session findings were not being scored via VisorScuba or ledger-synced via VisorLog at ingest time. nuclide.db still intact (579 findings) because ingests had been run manually at earlier points.
+**Potential impact:** Prior session findings were not being scored via VisorScuba or ledger-synced via VisorLog at ingest time. .db still intact (579 findings) because ingests had been run manually at earlier points.
 
 ### [9.3] AI Safety Eval Category — Confirmed Zero Population
 
@@ -180,7 +180,7 @@ Not applicable. No exposures confirmed.
 
 ### Integrity
 
-The methodology defect (substring matching) was an integrity failure in the research data: 6 false positives propagated into the session-8 case study before correction. Corrected in the same session cycle. nuclide.db ledger unaffected (FPs never ingested).
+The methodology defect (substring matching) was an integrity failure in the research data: 6 false positives propagated into the session-8 case study before correction. Corrected in the same session cycle. .db ledger unaffected (FPs never ingested).
 
 ### Availability
 
@@ -255,7 +255,7 @@ aimap -list cloud-prefixes.txt -ports 15500,5000,3000,1984,7575,8000,8080 \
 | L1 | Analysis reconstructed from session notes (SESSION.md). Execution trace timestamps are approximate. | Minor precision variance in timeline |
 | L2 | AI safety eval population result (0 confirmed) is specific to the ~1,017 tier-2 cloud prefixes scanned | Private cloud, corporate, and government deployments not covered |
 | L3 | 3 session-8 FP hosts were unreachable on re-probe; could not confirm they were FPs via manual inspection | Classified as FP by inference (same substring-matching probe, similar IP class); cannot rule out coincidental disappearance of real platforms |
-| L4 | artisan repo not found in NuClide Research org | One of 14 toolchain components unaccounted for; not blocking |
+| L4 | artisan repo not found in  org | One of 14 toolchain components unaccounted for; not blocking |
 | L5 | Session-8 RAG framework, browser-agent, and data-labeling probe scripts use per-survey bespoke logic | Same substring-FP risk as aisafety-probe.py; audit needed |
 | L6 | Compute orchestration tier survey (Ray/Spark/Airflow) deferred to session 10 | Highest-yield untouched category; ShadowRay CVE-2023-48022 active exploitation status makes it high priority |
 
@@ -313,13 +313,13 @@ def is_garak_rest(response):
 
 **Demonstrated:** The corrected pattern requires endpoint specificity and structural shape. A video clip browser at `/` returning HTML will fail on conjuncts 1, 3, and 4 simultaneously. The FP is impossible under the corrected schema.
 
-### PoC 3: nuclide.db ledger integrity check
+### PoC 3: .db ledger integrity check
 
 **Scenario:** Confirm no FP findings were ingested into the ledger during session-8.
 
 ```
 COMMAND:
-  visorlog query --db ~/AI-LLM-Infrastructure-OSINT/data/nuclide.db \
+  visorlog query --db ~/AI-LLM-Infrastructure-OSINT/data/.db \
     --filter "category=ai-safety-eval"
 
 RESPONSE:
@@ -332,8 +332,8 @@ RESPONSE:
     low: 132
 ```
 
-**Demonstrated:** AI safety eval category has zero entries in the ledger. The session-8 FPs were never ingested. nuclide.db integrity confirmed. Correction required no ledger rollback.
+**Demonstrated:** AI safety eval category has zero entries in the ledger. The session-8 FPs were never ingested. .db integrity confirmed. Correction required no ledger rollback.
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 9 · 2026-05-05*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 9 · 2026-05-05*

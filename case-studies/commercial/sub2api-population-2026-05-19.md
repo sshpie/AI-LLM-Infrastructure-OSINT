@@ -284,4 +284,4 @@ Non-run: VisorHollow (Windows-only binary), VisorAgent (controlled-target-only).
 
 ---
 
-*Survey conducted 2026-05-19 by Nuclide research (Nicholas Kloster + Claude). Methodology per `~/.claude/nuclide-internal/METHODOLOGY.md`. Tool gaps and improvement notes logged at `~/Desktop/nuclide-logs/`.*
+*Survey conducted 2026-05-19 by  ( + Claude). Methodology per `~/.claude/-internal/METHODOLOGY.md`. Tool gaps and improvement notes logged at `~/Desktop/-logs/`.*

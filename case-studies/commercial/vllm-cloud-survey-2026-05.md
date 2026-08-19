@@ -4,7 +4,7 @@ type: survey
 
 # vLLM / OpenAI-Compatible LLM Inference Servers on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -39,7 +39,7 @@ vllm-probe.py (200-thread fingerprint)
   → 44 confirmed (19 vLLM + 25 generic OpenAI-compat)
 ```
 
-NuClide did **not** submit any prompt to `/v1/chat/completions` or `/v1/completions`. Inference would have used the operator's compute (and for the reseller-proxy class, would have spent the operator's commercial-API credits). The model-list endpoint and version probe alone are sufficient to prove exposure.
+ did **not** submit any prompt to `/v1/chat/completions` or `/v1/completions`. Inference would have used the operator's compute (and for the reseller-proxy class, would have spent the operator's commercial-API credits). The model-list endpoint and version probe alone are sufficient to prove exposure.
 
 ---
 
@@ -195,17 +195,17 @@ The 10 Class-A reseller proxies are time-sensitive, every hour they remain open 
 
 The 10 Class-B operator-attributed fine-tunes have identifiable upstream operators (sipgate, Infomaniak, Red Hat AI deployment customer), direct disclosure to those organizations' security teams is the highest-bandwidth path.
 
-NuClide is not opening 44 individual disclosure threads. Same-day priority is the Class-A reseller proxies (financial bleed) and the Class-B sipgate / Infomaniak findings (operator-attributable IP exposure).
+ is not opening 44 individual disclosure threads. Same-day priority is the Class-A reseller proxies (financial bleed) and the Class-B sipgate / Infomaniak findings (operator-attributable IP exposure).
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
 | Discovery | Reused 22,765 port-8000 IPs from chromadb-cloud-survey-2026-05 |
 | Fingerprint | `vllm-probe.py`, 200-thread `/v1/models` body-match + `/version` + `/metrics` |
-| Findings ledger | To be ingested into `data/nuclide.db` via VisorLog |
+| Findings ledger | To be ingested into `data/.db` via VisorLog |
 | What was NOT done | No `/v1/chat/completions` calls, no inference performed against any operator's compute |
 
 ---

@@ -16,7 +16,7 @@ except ImportError:
 def load_key():
     if k := os.environ.get("SHODAN_API_KEY"):
         return k
-    p = Path.home() / ".config/nuclide/shodan.key"
+    p = Path.home() / ".config//shodan.key"
     if p.exists():
         return p.read_text().strip()
     sys.exit("No Shodan API key found")

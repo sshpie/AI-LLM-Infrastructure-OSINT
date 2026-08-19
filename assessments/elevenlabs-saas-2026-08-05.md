@@ -419,7 +419,7 @@ Cross-workspace BOLA probes (substituting foreign workspace_ids in path): No acc
 ## Re-assessment Pass 3 — 2026-08-05 (BFLA Endpoint Schema Mapping)
 
 **Tools:** `~/garlic/el_f1_retest.py`, `~/garlic/el_auth_bypass_deepdive.py`
-**Auth:** Free-tier account (nicholas@nuclide-research.com / user_4401kyxzezm2e7e8edx0crcmk2f4)
+**Auth:** Free-tier account ( / user_4401kyxzezm2e7e8edx0crcmk2f4)
 **Note:** Creator-tier JWT not available this pass; synthesis tests limited to free-tier
 
 ### P3-1 — F1 Re-test: 400 on All Synthesis (Not a Patch Indicator)

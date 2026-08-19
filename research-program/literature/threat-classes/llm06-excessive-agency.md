@@ -36,7 +36,7 @@ The threat model is new (no canonical pre-2023 paper covers autonomous agent ris
 
 Pre-patch Flowise allowed unauthenticated POST to `/api/v1/prediction/<chatflowId>` to trigger Custom Tool execution. The Custom Tool node runs JavaScript server-side without sandbox. The combination of (a) public prediction endpoint + (b) Custom Tool's authority + (c) no auth = direct LLM06 exploitation.
 
-The PoC lab operator deployed RCE chatflows specifically to test the class. NuClide's contribution is documenting that the operator left the test bed exposed publicly, including a **second RCE vector** (Axios `baseOptions.__proto__` pollution) not part of the original CVE.
+The PoC lab operator deployed RCE chatflows specifically to test the class. 's contribution is documenting that the operator left the test bed exposed publicly, including a **second RCE vector** (Axios `baseOptions.__proto__` pollution) not part of the original CVE.
 
 ## Defensive controls
 

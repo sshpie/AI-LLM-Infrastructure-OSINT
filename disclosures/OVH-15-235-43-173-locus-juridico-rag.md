@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.ca
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 15.235.43.173
 institution: OVH Hosting Inc. / Canada (locus-juridico-rag, Brazilian legal RAG MCP server, 31.2M chunks incl. TCEES state-audit corpus)
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@ovh.ca
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated Brazilian legal RAG MCP server (31.2M-chunk corpus incl. state-audit data) on OVH Canada, 15.235.43.173:8000
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -43,7 +43,7 @@ The MCP `initialize` handshake also returns a Portuguese-language operator instr
 
 The **TCEES** ingest is the most sensitive line item, TCE-ES (Tribunal de Contas do Estado do Espírito Santo) is the State Audit Court of Espírito Santo. A privately-indexed copy of TCEES proceedings is government-accountability data that a commercial legal-AI operator would normally protect behind authentication.
 
-Found during NuClide Research's cross-cloud MCP survey (2026-05-04). Full case study at:
+Found during 's cross-cloud MCP survey (2026-05-04). Full case study at:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F8, locus-juridico-rag")
 
 Re-verified live 2026-05-06.
@@ -131,6 +131,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/SYNTHESIS-2026-05.
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

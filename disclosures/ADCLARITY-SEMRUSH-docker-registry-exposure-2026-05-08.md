@@ -1,6 +1,6 @@
 ---
 to: security@semrush.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 67.43.236.154,67.43.236.155,67.43.236.156,67.43.236.157,67.43.236.158,67.43.236.170,67.43.236.171,67.43.236.172,67.43.236.173,67.43.236.174,173.209.62.194,173.209.62.195,173.209.62.196,173.209.62.197,173.209.62.198
 institution: "AdClarity (Semrush subsidiary). Docker Registry HTTP API v2 publicly exposed without authentication on 15-IP GloboTech Canada cluster (port 5000), serving 100 AdClarity image repositories including AI/LLM pipelines, captcha-bypass infrastructure, platform extractors, and internal ops tooling; image manifests and layers pullable by anonymous clients"
@@ -14,11 +14,11 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 2026-05-08
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). I'm reaching `security@semrush.com` because AdClarity does not publish a `security.txt` or VDP, and Semrush owns and operates the AdClarity platform since 2022.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). I'm reaching `security@semrush.com` because AdClarity does not publish a `security.txt` or VDP, and Semrush owns and operates the AdClarity platform since 2022.
 
 ---
 
@@ -118,7 +118,7 @@ adclarity/database-mediator
 ... (full list of 100 available on request)
 ```
 
-**NuClide research scope discipline:** We enumerated the catalog via `GET /v2/_catalog` only. We did not pull image manifests, layer blobs, or extract any content from image layers. The catalog listing alone is sufficient proof of the exposure class. Impact assessment regarding baked-in secrets is based on industry-standard pattern recognition for containerized workloads.
+** scope discipline:** We enumerated the catalog via `GET /v2/_catalog` only. We did not pull image manifests, layer blobs, or extract any content from image layers. The catalog listing alone is sufficient proof of the exposure class. Impact assessment regarding baked-in secrets is based on industry-standard pattern recognition for containerized workloads.
 
 ---
 
@@ -175,7 +175,7 @@ A complete evidence bundle is preserved locally with server-asserted `Date:` hea
 ---
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+Nicholas Michael Kloster / 
+
+https://
 AI-LLM-Infrastructure-OSINT

@@ -4,7 +4,7 @@ type: survey
 
 # Agent Memory Layer — First Population Survey (MemMorph attack surface)
 
-_NuClide Research · 2026-06-08 · Cat-47 (Agent Memory Layer)_
+_ · 2026-06-08 · Cat-47 (Agent Memory Layer)_
 
 > **T&E correction (mid-session, post-publication).** Initial publication claimed 23 unauth hosts based on HTTP status code 200. Post-publication body-content audit identified a 21% FP rate: hosts behind IBM DataPower or similar gateways return 200 with HTML "404 Not Found" bodies regardless of path. **Confirmed-real unauth: 11 hosts** (10 Zep with confirmed JSON array response, 1 Mem0 MCP proxy). 5 hosts are HTML-body FPs; 7 are ambiguous (empty or non-standard responses). The original "Sogei Italian government tax authority" attribution was specifically a FP — that host is IBM DataPower in front of `agenziaentrate.gov.it` services; it is NOT running Letta. The attribution is withdrawn. The Zep session-count number (27 user sessions leaked) holds because the FPs had 0 sessions on their fake responses. The verifier needs body-content validation; treat published headline numbers as bounded above by 11 (real unauth) until v0.2 of the verifier ships.
 

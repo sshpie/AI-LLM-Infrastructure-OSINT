@@ -1,6 +1,6 @@
 AI EVAL / RED-TEAM SURVEY — FINDINGS BREAKDOWN
 Survey date: 2026-05-28
-Analyst: NuClide Research
+Analyst: 
 
 === FINDING #162 ===
 

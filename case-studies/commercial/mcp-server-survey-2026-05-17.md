@@ -4,7 +4,7 @@ type: synthesis
 
 # MCP server population survey, 2026-05-17
 
-_NuClide Research, 2026-05-17 (evening pass)_
+_, 2026-05-17 (evening pass)_
 _Survey #19 in the AI infrastructure series._
 
 ---

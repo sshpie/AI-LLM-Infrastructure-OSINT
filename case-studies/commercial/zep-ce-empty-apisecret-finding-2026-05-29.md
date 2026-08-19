@@ -86,7 +86,7 @@ reproduction (code-confirmed, not exercised). Outer 0 = no live host tested.
   material gated action succeed (e.g. `GET /api/v2/sessions-ordered` returning
   data). This raises depth only; breadth stays at outer 0.
 - To raise breadth (outer 1, in-scope host; outer 2, population): point the
-  survey at real CE deployments. Held at outer 0 by choice for now (NuClide
+  survey at real CE deployments. Held at outer 0 by choice for now (
   restraint ethic: deepen validation without expanding observation scope). No
   claim of "exploitable" until inner B, and no rate until outer 2.
 

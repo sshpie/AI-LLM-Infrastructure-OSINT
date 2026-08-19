@@ -4,7 +4,7 @@ type: survey
 
 # Ollama Population Survey: Shodan-Walk (2026-05-15)
 
-_NuClide Research · 2026-05-15_
+_ · 2026-05-15_
 _Predecessors: [`ollama-cloud-survey-2026-05.md`](ollama-cloud-survey-2026-05.md) (DO/Hetzner/Vultr baseline, 342 hosts) · [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md) (Scaleway/OVH/Linode, 850 hosts post-honeypot-filter)_
 
 ---
@@ -91,8 +91,8 @@ visorgoose density                                       → 33 gov-TLD hits acr
 ### Score + corpus + ledger
 
 ```
-visorlog ingest --from events.ndjson --db nuclide.db    → 4,891 events into canonical ledger (ECS schema)
-visorscuba --db nuclide.db assess                       → AI.C1–C6 + AI.H1–H5 OPA/Rego policy run
+visorlog ingest --from events.ndjson --db .db    → 4,891 events into canonical ledger (ECS schema)
+visorscuba --db .db assess                       → AI.C1–C6 + AI.H1–H5 OPA/Rego policy run
 bare bare/findings.json                                 → CVE-2024-37032 ranked #1 across all Ollama findings
 visorcorpus build -profile strict -type hybrid -max 500 → 500 adversarial cases for VisorAgent lab use
 visoragent list                                         → enumerated; ethical-stop boundary respected
@@ -231,7 +231,7 @@ The intelligence value: **these aren't theoretical AI deployments. They are oper
 
 ## VisorScuba: Compliance Findings (Sample)
 
-OPA/Rego-policy run against the ingested nuclide.db rows produced 0/10 compliance scores for the entire confirmed-unauth corpus (every unauth Ollama trips AI.C1). Notable per-host violations beyond AI.C1:
+OPA/Rego-policy run against the ingested .db rows produced 0/10 compliance scores for the entire confirmed-unauth corpus (every unauth Ollama trips AI.C1). Notable per-host violations beyond AI.C1:
 
 - **103.107.245.11 / `sijoli-11-245-107.jatengprov.go.id`** (DINAS KOMINFO PROV. JAWA TENGAH, Indonesia), **3 violations**: AI.C4 (CRITICAL on government infrastructure) + AI.C2 (live Ollama Connect claim URL, cloud subscription takeover) + AI.H2 (unauth government RAG pipeline)
 - **103.156.110.80** (Pemerintah Provinsi Kalimantan Utara). AI.C4 + AI.C2 + AI.M1 (distilled model)
@@ -332,7 +332,7 @@ Per the [tier-2 survey precedent](ollama-tier2-cloud-survey-2026-05.md#disclosur
 - **Hosts surfacing inlined credentials** in `/api/show` Modelfile ENV (manual review of 133 customized SYSTEMs needed; `aimap` post-process flag pending)
 - **Healthcare / pediatric / counseling SYSTEM prompts**: targeted outreach (none confirmed in the 133-string sample; would require deeper search)
 
-Disclosure send pipeline: `~/.config/nuclide/` Gmail-API tokens + `send_drafts_api.py` (already operational from prior surveys).
+Disclosure send pipeline: `~/.config//` Gmail-API tokens + `send_drafts_api.py` (already operational from prior surveys).
 
 ---
 
@@ -365,7 +365,7 @@ Disclosure send pipeline: `~/.config/nuclide/` Gmail-API tokens + `send_drafts_a
 │   ├── merge_and_filter.py            dedup + AS63949 pre-filter
 │   ├── show_enrichment.py             /api/show + /api/ps side-probe
 │   ├── aimap_to_ndjson.py             aimap→ndjson event converter
-│   ├── cross_survey_diff.py           vs nuclide.db prior Ollama
+│   ├── cross_survey_diff.py           vs .db prior Ollama
 │   ├── select_confirmed.py            confirmed / no-service / high-value
 │   ├── llama_cpp_recheck.py           aimap FN coverage (per Insight #22-bis)
 │   ├── proxy_colocation_check.py      LLMjacking pattern check
@@ -406,8 +406,8 @@ Disclosure send pipeline: `~/.config/nuclide/` Gmail-API tokens + `send_drafts_a
 3. fast_enum.py (replaces aimap PHASE 3, threads=200)  → 10,183 main pass
 4. fast_enum.py (delta on country-split net-new)       → 6,290 delta pass
 5. fast_enum_to_ndjson.py (ECS schema)                 → events.ndjson
-6. visorlog ingest --db nuclide.db                     → 4,891 canonical events
-7. visorscuba --db nuclide.db assess                   → AI.C1–C6 / AI.H1–H5
+6. visorlog ingest --db .db                     → 4,891 canonical events
+7. visorscuba --db .db assess                   → AI.C1–C6 / AI.H1–H5
 8. visorgoose density                                  → 33 gov-TLD hits
 9. visorcorpus build (strict / hybrid / max=500)       → abliterated_500.json
 10. bare bare/findings.json                            → CVE-2024-37032 #1
@@ -434,5 +434,5 @@ Disclosure send pipeline: `~/.config/nuclide/` Gmail-API tokens + `send_drafts_a
 - [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md): Scaleway/OVH/Linode tier-2 (850 + AS63949)
 - [`alpha-miner-194-233-71-223-2026-05-15.md`](alpha-miner-194-233-71-223-2026-05-15.md): the llama.cpp + proxy-colocation case that prompted the aimap v1.9.4 update
 - [`SYNTHESIS-2026-05.md`](SYNTHESIS-2026-05.md): cross-survey synthesis paper
-- `~/.claude/nuclide-internal/METHODOLOGY.md`: internal canonical methodology
+- `~/.claude/-internal/METHODOLOGY.md`: internal canonical methodology
 - aimap v1.9.4 release notes. Github.com/Nicholas-Kloster/aimap, commit `a888100`

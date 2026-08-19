@@ -112,4 +112,4 @@ Data class remains demo-only based on available evidence. The namespace prefix `
 
 ---
 
-*NuClide Research — Chain B RedisInsight survey, 2026-05-26*
+* — Chain B RedisInsight survey, 2026-05-26*

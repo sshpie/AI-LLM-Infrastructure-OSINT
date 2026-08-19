@@ -1,6 +1,6 @@
 # Duke University: Unauthenticated Agentic Ollama with File Inspection Tools
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 
@@ -159,7 +159,7 @@ A second Duke-attributed Open WebUI deployment was observed during the 2026-05-1
 
 The `vcm-NNNNN.vm.duke.edu` hostname pattern identifies Duke's Virtual Compute Manager — the institutional service that lets faculty/students provision VMs on demand. A `vcm-51699` host indicates this is one of ~52,000+ assigned VM identifiers in that service. The user who provisioned this VM appears to have installed Open WebUI with signup-open + Descope OIDC enabled. The implication: Duke's institutional VCM service makes it trivial to stand up arbitrary services on the public internet — the institutional posture relies on individual VM owners to configure their services correctly.
 
-The earlier Duke case study (above) covered a different host. This is now the second Duke-attributed Open WebUI deployment in the NuClide ledger.
+The earlier Duke case study (above) covered a different host. This is now the second Duke-attributed Open WebUI deployment in the  ledger.
 
 ### Cross-tool confirmations
 

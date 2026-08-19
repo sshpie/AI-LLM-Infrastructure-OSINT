@@ -226,4 +226,4 @@ Schema delete destroys a retailer's entire AI search catalog. For a store with 1
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

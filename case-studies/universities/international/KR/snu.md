@@ -1,6 +1,6 @@
 # Seoul National University: 3-Node Cluster, Cloud Proxy + Credential Leak (user: node1)
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

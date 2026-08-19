@@ -25,12 +25,12 @@ Verify is where a candidate becomes a finding.
 
 | Stage | Tools | Role at this stage | Governing insights |
 |-------|-------|--------------------|--------------------|
-| **0 Discover** | **JAXEN** (Shodan harvest → empire.db), **VisorSD** (Shodan/ASN-org dork sweep), **VisorGoose** (gov-TLD via CT logs + Shodan + DNS), **menlohunt** (GCP EASM), **recongraph** (seed-polymorphic graph) | Produce candidate hosts. JAXEN is the spine; the rest are disjoint discovery channels. Also: the `nuclide.db` ledger itself is a discovery substrate. | #23 (coverage is multiplicative), #9 (ledger as discovery substrate), #65 (cert-dork selection bias) |
+| **0 Discover** | **JAXEN** (Shodan harvest → empire.db), **VisorSD** (Shodan/ASN-org dork sweep), **VisorGoose** (gov-TLD via CT logs + Shodan + DNS), **menlohunt** (GCP EASM), **recongraph** (seed-polymorphic graph) | Produce candidate hosts. JAXEN is the spine; the rest are disjoint discovery channels. Also: the `.db` ledger itself is a discovery substrate. | #23 (coverage is multiplicative), #9 (ledger as discovery substrate), #65 (cert-dork selection bias) |
 | **1 Fingerprint** | **aimap** (69 services / 36 deep enumerators), **VisorBishop** (12-platform observability meta-fingerprinter) | "What AI/ML service is on this port?" — identity ONLY, not auth state. | #16 (a 200 is identity, not auth state), #66 (DefaultPorts survey-driven), #6 (conjunctive matchers) |
 | **2 Verify** ⭐ | **aimap** deep enumerators, **VisorBishop** IP-direct-shadow probe, **nu-recon** (single-host passive deep-read), **Cortex** (authz-context analyzer, via VisorRAG), **JS-bundle** extraction, **category probes** (`data/*-probe.py` incl. `kubecost-opencost-probe.py`) | Candidate → finding. Speak the protocol; read the data layer; probe both UI and API surfaces. | #51/#52/#53 (per-stage precision: port 1.4%, HTTP-200-path 0%, label≠identity), #37 (asymmetric auth), #8 (auth-bypass paths), #12 (IP-direct shadow) |
-| **3 Attribute** | **VisorGraph** (cert-pivot → CT-log SAN enumeration → operator), **recongraph** (provenance graph), **nuclide-contact** (WHOIS → disclosure recipient) | Anonymous IP → named operator. | #4 (WHOIS authoritative), #17 (operators are mono-platform), #65 |
+| **3 Attribute** | **VisorGraph** (cert-pivot → CT-log SAN enumeration → operator), **recongraph** (provenance graph), **-contact** (WHOIS → disclosure recipient) | Anonymous IP → named operator. | #4 (WHOIS authoritative), #17 (operators are mono-platform), #65 |
 | **4 Classify** | **aimap-profile** (HIPAA/clinical/commercial/research/honeypot + ethics flags), **osint-platoon** (HIGH+/CRITICAL deep-dive orchestration — see §3) | Sector, sensitivity, ethics gate, honeypot discrimination. | #1/#22/#30 (honeypot discrimination), #4 (disclosure routing) |
-| **5 Ledger** | **VisorLog** (`nuclide.db`, append-only, ECS-normalized, lifecycle-tracked) | The record of work. Not a terminal print — every confirmed finding lands here. | #9 (the ledger is also Stage-0 substrate) |
+| **5 Ledger** | **VisorLog** (`.db`, append-only, ECS-normalized, lifecycle-tracked) | The record of work. Not a terminal print — every confirmed finding lands here. | #9 (the ledger is also Stage-0 substrate) |
 | **6 Score / Rank / Corpus** | **VisorScuba** (OPA/Rego compliance, 0–10, extends CISA ScubaGear), **BARE** (offline semantic exploit→module ranking), **VisorCorpus** (adversarial corpus for LLM-adjacent surface) | Severity scoring, commodity-vs-first-party exploit mapping, red-team payload generation. | — |
 | **7 Codify** | case study + numbered **Insight**; **AI-LLM-OSINT** is the published catalog | Extract the class of mistake. A survey with no insight under-delivered. | #5 (disclosure efficacy), #52 (ship insights as executable winnow signatures, not prose) |
 
@@ -50,7 +50,7 @@ efficiency. The actual step sequence:
 | 3 | aimap-profile | Classify | `--mode fast` per host |
 | 3b | **osint-platoon** | Classify→deep-dive | **CONDITIONAL** — fires only on HIGH+/CRITICAL hosts (see §3) |
 | 4 | JS-bundle | Verify | **SKIPPED in batch** — deferred to case-study-time manual extraction |
-| 5 | nuclide-contact | Attribute | WHOIS → recipient (disclosure routing) |
+| 5 | -contact | Attribute | WHOIS → recipient (disclosure routing) |
 | 6 | VisorLog | Ledger | aimap → NDJSON → `visorlog ingest` |
 | 7 | VisorScuba | Score | `visorscuba assess --db <DB>` |
 | 8 | BARE | Rank | `bare --top 3` from findings.ndjson |
@@ -121,9 +121,9 @@ dual role is the point of cert-anchored recon, not a classification error.
 | nu-recon | — | Verify | Single-host passive deep-read |
 | Cortex | Go | Verify | Authorization-context analyzer (via VisorRAG) |
 | VisorGraph | Go | Attribute/Discover | Infra mapping + cert-pivot operator attribution, gVisor sandbox |
-| nuclide-contact | Python | Attribute | WHOIS → disclosure recipient |
+| -contact | Python | Attribute | WHOIS → disclosure recipient |
 | osint-platoon | Python/agentic | Classify/orchestration | ATP 3-21.8 multi-agent squad orchestrator; HIGH+/CRITICAL deep-dive |
-| VisorLog | Go | Ledger | Append-only ECS-normalized findings ledger (nuclide.db), dashboard :8765 |
+| VisorLog | Go | Ledger | Append-only ECS-normalized findings ledger (.db), dashboard :8765 |
 | VisorScuba | Go | Score | OPA/Rego AI-infra compliance (0–10), extends CISA ScubaGear |
 | BARE | Rust | Rank | Air-gap-native semantic exploit→Metasploit-module mapping (offline) |
 | VisorCorpus | Go | Corpus | Adversarial corpus generator (6 payload classes) for LLM/RAG |
@@ -137,6 +137,6 @@ dual role is the point of cert-anchored recon, not a classification error.
 
 ## See also
 - `data/visor-chain-runner.sh` — the executable pipeline
-- `~/.claude/nuclide-internal/METHODOLOGY.md` — the 8-stage methodology (note: summary only; 60 insight files are the full corpus)
+- `~/.claude/-internal/METHODOLOGY.md` — the 8-stage methodology (note: summary only; 60 insight files are the full corpus)
 - `methodology/insight-*.md` — the codified lessons cross-referenced above
-- nuclide-research.com `/tools` (catalog) and `/stack` (per-class "How we test" restraint blocks)
+-  `/tools` (catalog) and `/stack` (per-class "How we test" restraint blocks)

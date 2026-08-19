@@ -2,7 +2,7 @@
 
 **Survey:** Population-scale OSINT of exposed Streamlit instances on public internet  
 **Engagement status:** Authorized, signed scope on file  
-**Methodology:** NuClide (OSINT Platoon → Shodan harvest → fingerprint → verify → score)  
+**Methodology:**  (OSINT Platoon → Shodan harvest → fingerprint → verify → score)  
 **Date completed:** 2026-06-27
 
 ---
@@ -257,7 +257,7 @@ This inverts the auth-on-default thesis: in the absence of a platform default, t
 
 ## REFERENCES
 
-- **Methodology:** `~/.claude/nuclide-internal/METHODOLOGY.md`
+- **Methodology:** `~/.claude/-internal/METHODOLOGY.md`
 - **CVE-2024-42468:** Path traversal, Streamlit < 1.37.0, CVSS 8.2
 - **CVE-2024-36473:** SSRF, Streamlit < 1.39.0, CVSS 6.5
 - **Streamlit GitHub:** https://github.com/streamlit/streamlit

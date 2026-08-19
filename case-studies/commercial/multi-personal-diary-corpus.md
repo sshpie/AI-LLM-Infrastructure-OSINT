@@ -4,7 +4,7 @@ type: multi-host
 
 # Multi-Tenant Personal Document SaaS: Diary, Theater Scripts, Philosophy via Unauth ChromaDB
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

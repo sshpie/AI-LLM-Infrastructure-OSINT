@@ -1,7 +1,7 @@
 ================================================================================
 CAT-LANGFLOW 2026-06-18 - FINDINGS BREAKDOWN
 http.title:"Langflow"  ·  54,685 indexed hits  ·  93 harvested  ·  2 real, 0 open
-NuClide Research · verification-stage output · all work passive
+ · verification-stage output · all work passive
 ================================================================================
 
 ONE-LINE VERDICT

@@ -1,6 +1,6 @@
 # Harvard University: Langfuse Unauthenticated User Registration
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -37,7 +37,7 @@ The Langfuse configuration ships with `enable_signup: true`, the maintainer's de
 
 ## Cohort Context
 
-This is part of the broader auth-on-default finding documented in Insight #76 of the NuClide methodology: Langfuse maintains an 88.9% (primary survey) to 87.7% (v3.x specific) signup-open rate across its deployed population. The default is maintainer-culture-driven (demo-first optimization) rather than operator-error-specific.
+This is part of the broader auth-on-default finding documented in Insight #76 of the  methodology: Langfuse maintains an 88.9% (primary survey) to 87.7% (v3.x specific) signup-open rate across its deployed population. The default is maintainer-culture-driven (demo-first optimization) rather than operator-error-specific.
 
 Harvard's instance demonstrates the pattern holding across institutional deployments where IT teams read the documentation but trust upstream defaults.
 

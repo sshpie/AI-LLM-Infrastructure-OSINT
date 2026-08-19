@@ -9,7 +9,7 @@ status: verified
 
 # Flowise Population Survey — 578/841 Open, CVE-2024-36420 PoC Lab Exposed
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 

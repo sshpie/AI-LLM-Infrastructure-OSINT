@@ -115,4 +115,4 @@
 
 ## Research-program relevance
 
-Broader than 621 — covers HW/OS/SW integration with heavy embedded-systems and multilevel-security weighting. Most relevant to NuClide when assessing GPU clusters, on-prem inference appliances, and ICS-adjacent AI deployments where embedded firmware and OS hardening matter as much as the application layer. The 23% Electronics Engineering OPM share signals this role is upstream of the device-firmware exposures NuClide's ICS/OT track surfaces. Where a 632 owns the system, expect tighter integration of identity management and access controls into the base image.
+Broader than 621 — covers HW/OS/SW integration with heavy embedded-systems and multilevel-security weighting. Most relevant to  when assessing GPU clusters, on-prem inference appliances, and ICS-adjacent AI deployments where embedded firmware and OS hardening matter as much as the application layer. The 23% Electronics Engineering OPM share signals this role is upstream of the device-firmware exposures 's ICS/OT track surfaces. Where a 632 owns the system, expect tighter integration of identity management and access controls into the base image.

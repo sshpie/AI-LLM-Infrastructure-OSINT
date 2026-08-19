@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-nuclide-contact.py — Per-target disclosure-recipient discovery.
+-contact.py — Per-target disclosure-recipient discovery.
 
 Chains authoritative sources to derive the right contacts for a coordinated-
 disclosure email, ranked by confidence:
@@ -18,9 +18,9 @@ disclosure email, ranked by confidence:
      metadata (links to disclosure pages, contact pages)
 
 Usage:
-  python3 nuclide-contact.py --ip 1.2.3.4
-  python3 nuclide-contact.py --domain example.edu
-  python3 nuclide-contact.py --ip 1.2.3.4 --domain example.edu  # combined
+  python3 -contact.py --ip 1.2.3.4
+  python3 -contact.py --domain example.edu
+  python3 -contact.py --ip 1.2.3.4 --domain example.edu  # combined
 
 Output: JSON with ranked contacts and source attribution.
 
@@ -76,7 +76,7 @@ def http_get(url: str, timeout: float = 5.0) -> tuple[int, dict, bytes]:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "nuclide-contact/0.1 (research; security@nuclide-research.com)",
+            "User-Agent": "-contact/0.1 (research; security@)",
             "Accept": "text/plain, text/html, application/json",
         },
     )

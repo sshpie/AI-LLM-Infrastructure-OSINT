@@ -1,6 +1,6 @@
 # NCU / TANet Taoyuan: Production Medical Scheduling SaaS System Prompt Fully Exposed
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

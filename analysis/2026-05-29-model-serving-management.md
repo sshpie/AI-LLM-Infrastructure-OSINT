@@ -28,7 +28,7 @@ no controlled run), VisorHollow (Windows), VisorBishop (menlohunt covered shadow
 JS-bundle (JSON API).
 
 ### Notable Configuration
-aimap v1.9.39. nuclide.db at ~/visorlog/nuclide.db. Workspace ~/recon/model-serving-2026-05-29/.
+aimap v1.9.39. .db at ~/visorlog/.db. Workspace ~/recon/model-serving-2026-05-29/.
 
 ## 3. Methodology
 

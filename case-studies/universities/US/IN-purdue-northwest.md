@@ -1,6 +1,6 @@
 # Purdue University Northwest: 3-Node Cluster, Account Takeover, Live Cloud Proxies, Claude-Distilled Model
 
-_NuClide Research · 2026-05-01, Updated 2026-05-03_
+_ · 2026-05-01, Updated 2026-05-03_
 
 ---
 

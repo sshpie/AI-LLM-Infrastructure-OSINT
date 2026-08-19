@@ -9,7 +9,7 @@ import importlib.util
 import os
 import unittest
 
-# The tool ships as ns-attribute.py (hyphen, NuClide CLI naming), which is not a
+# The tool ships as ns-attribute.py (hyphen,  CLI naming), which is not a
 # valid import name. Load it by path so the test can exercise its functions.
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _spec = importlib.util.spec_from_file_location(

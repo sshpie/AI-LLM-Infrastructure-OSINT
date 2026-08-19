@@ -1500,7 +1500,7 @@
       "confirmed": 1,
       "metric": "hardened auth-on-default",
       "status": "surveyed",
-      "note": "Category founded by NuClide; Sluice single confirmed instance, hardened auth-on-default. Salus/Clawvisor siblings queued."
+      "note": "Category founded by ; Sluice single confirmed instance, hardened auth-on-default. Salus/Clawvisor siblings queued."
     }
   ],
   "findings": [
@@ -1543,7 +1543,7 @@
       "tier": "A*",
       "category": "14",
       "sector": "commercial",
-      "note": "463-IP cryptojacking/DDoS fleet abusing the unauthenticated Ray Jobs API (CVE-2023-48022). NuClide published a 5-signal self-detect (job-count==10, dated submission IDs, balanced-thirds status, multi-port fanout, shared prefixes). Global fleet; coordinate is a representative cloud-hub anchor, not a single host.",
+      "note": "463-IP cryptojacking/DDoS fleet abusing the unauthenticated Ray Jobs API (CVE-2023-48022).  published a 5-signal self-detect (job-count==10, dated submission IDs, balanced-thirds status, multi-port fanout, shared prefixes). Global fleet; coordinate is a representative cloud-hub anchor, not a single host.",
       "links": [
         "changsha",
         "hk-meilisearch"

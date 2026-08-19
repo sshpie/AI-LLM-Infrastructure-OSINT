@@ -4,7 +4,7 @@ type: survey
 
 # Agent-Framework Stragglers Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 8 of the day's 10-category batch)_
+_ · 2026-05-16 (Survey 8 of the day's 10-category batch)_
 _Closes: category 06 (agent-frameworks) stragglers. CrewAI, LangGraph, SuperAGI, Goose, Letta_
 
 ---

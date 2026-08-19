@@ -1,6 +1,6 @@
 # Disclosure log: tweet-optimize.com / 65.108.107.240
 
-_NuClide Research · finding: 1.21M facial embeddings unauth on Milvus_
+_ · finding: 1.21M facial embeddings unauth on Milvus_
 _Case study: [`../multi-tweet-optimize-facial-recognition.md`](../multi-tweet-optimize-facial-recognition.md)_
 _Evidence pack: [`../../../evidence/tweet-optimize-2026-05-03/`](../../../evidence/tweet-optimize-2026-05-03/)_
 

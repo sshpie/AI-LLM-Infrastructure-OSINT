@@ -4,7 +4,7 @@ type: operational
 
 # Commercial AI Infrastructure Exposures
 
-_NuClide Research, ongoing · Updated 2026-05-04_
+_, ongoing · Updated 2026-05-04_
 
 Commercial / SaaS Ollama and AI infrastructure exposures discovered during OSINT sweeps. These differ from university and research-network exposures in that the operators are commercial entities with paying customers and PII pipelines.
 

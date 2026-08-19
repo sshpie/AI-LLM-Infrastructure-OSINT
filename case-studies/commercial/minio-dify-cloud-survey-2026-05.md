@@ -4,7 +4,7 @@ type: survey
 
 # MinIO + Dify on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -53,7 +53,7 @@ dify-probe.py
   → 5 confirmed Dify (all initialized)
 ```
 
-NuClide did not attempt MinIO default credentials, did not POST to the Dify setup wizard, and did not interact with any operator's data.
+ did not attempt MinIO default credentials, did not POST to the Dify setup wizard, and did not interact with any operator's data.
 
 ---
 
@@ -96,7 +96,7 @@ The cluster of 9 instances on the identical 2019-08-07 release is the most disti
 2. **Brute-force**: 747 login forms means substantial attacker dictionary surface. MinIO does have built-in rate limiting but it's per-IP and bypassable with a moderately-distributed source pool.
 3. **Information disclosure on login error pages**: some MinIO Console versions return distinguishable error messages for "user-doesn't-exist" vs "bad-password", which leaks valid usernames.
 
-NuClide did not attempt credentials.
+ did not attempt credentials.
 
 ### Cross-correlation with MLflow survey
 
@@ -159,7 +159,7 @@ The 747 Console-exposed instances are an awareness-level finding, every one has 
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|

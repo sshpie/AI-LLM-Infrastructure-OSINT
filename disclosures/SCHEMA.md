@@ -12,7 +12,7 @@ Every disclosure file in this directory must begin with:
 ```yaml
 ---
 to: recipient@example.com           # required, single email or comma-list
-cc: abuse@nuclide-research.com      # optional
+cc: abuse@      # optional
 ip: 1.2.3.4                          # if applicable
 institution: "Org Name — finding gist"  # required for context
 severity: CRITICAL | HIGH | MEDIUM | LOW   # required, one of these four

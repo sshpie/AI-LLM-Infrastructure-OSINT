@@ -1,7 +1,7 @@
 # After Action Report: K8s FinOps Cost-API Survey (Kubecost / OpenCost)
 
 **Date:** 2026-05-29
-**Operator:** NuClide Research (Nicholas Kloster)
+**Operator:**  ()
 **Category:** K8s FinOps cost-allocation. Survey slice not covered by the 2026-05-19 cost/billing work.
 **Posture:** Offline analysis of captured artifacts, then two gated outward steps under explicit authorization, run through Mullvad (us-lax-wg-608).
 
@@ -86,7 +86,7 @@ The survey surfaced real gaps because the arsenal was actually run end to end:
 - `data/finops-findings-breakdown.txt`
 - `data/finops-helmvalues-sample-18_224_144_23.redacted.txt` and the paired IP (redacted, no secret bodies)
 - `data/finops-shadow-sweep.json` (negative adjacency result)
-- `data/finops-nuclide.db` (survey-scoped ledger)
+- `data/finops-.db` (survey-scoped ledger)
 - `case-studies/commercial/kubecost-opencost-finops-cost-api-survey-2026-05-28.md`
 - `data/platform-intel/kubecost-opencost-finops-osint-2026-05-28.md` (pre-assessment intel)
 

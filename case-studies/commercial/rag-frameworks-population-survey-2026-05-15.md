@@ -4,7 +4,7 @@ type: survey
 
 # RAG Framework Servers: Population-Scale Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15_
+_ · 2026-05-15_
 _Category: 07 RAG Stacks (frameworks tier)_
 _Status: complete · 6 platforms targeted · 3 with population data · 2 confirmed Shodan-dark · auth-on-default thesis confirmed across 3 tiers simultaneously_
 
@@ -278,7 +278,7 @@ Restraint ethic: no extraction was performed. The 302/80/389 counts are derived 
 2026-05-15 16:03Z  reprobe-anyllm-strict.py (RequiresAuth from body)    → 483 UNAUTH-ANONYMOUS / 1,242 confirmed
 2026-05-15 16:04Z  reprobe-ragflow.py (/v1/llm/list code field)         → 0 UNAUTH / 485 confirmed
 2026-05-15 16:05Z  ASN/country/org enrichment from shodan metadata      → operator clusters identified
-2026-05-15 16:06Z  visorlog ingest population-findings.ndjson            → rows 1038-1041 in nuclide.db
+2026-05-15 16:06Z  visorlog ingest population-findings.ndjson            → rows 1038-1041 in .db
 2026-05-15 16:08Z  case-study writeup                                    → this document
 ```
 

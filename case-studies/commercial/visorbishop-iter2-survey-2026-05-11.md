@@ -10,7 +10,7 @@ methodology: re-running VisorBishop with 21-port IP-shadow set (vs iter-1's 15) 
 
 # VisorBishop loop-iteration #2 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

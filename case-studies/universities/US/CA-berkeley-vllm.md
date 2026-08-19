@@ -1,6 +1,6 @@
 # UC Berkeley: vLLM 4-Node Research Cluster, SecAlign + Nemotron
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

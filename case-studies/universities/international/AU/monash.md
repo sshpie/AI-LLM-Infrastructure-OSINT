@@ -1,6 +1,6 @@
 # Monash University: 3-Node Cluster, DeepSeek V3.1 671B, Cloud Proxies
 
-_NuClide Research · 2026-05-01, updated 2026-05-03_
+_ · 2026-05-01, updated 2026-05-03_
 
 ---
 

@@ -2,7 +2,7 @@
 """
 Sandbox-MITM consistency probe.
 
-NuClide methodology section 3: "Distrust your observation position."
+ methodology section 3: "Distrust your observation position."
 recongraph + VisorGraph both run this check; if response shapes from
 unrelated public IPs collapse to one digest, traffic is being rewritten
 mid-stream and L7 conclusions get downgraded to OPAQUE.
@@ -72,7 +72,7 @@ def fetch_raw(p: Probe, path: str, timeout: float = 6.0) -> tuple[int | None, di
         req = (
             f"GET {path} HTTP/1.1\r\n"
             f"Host: {p.host}\r\n"
-            f"User-Agent: nuclide-mitm-probe/1.0\r\n"
+            f"User-Agent: -mitm-probe/1.0\r\n"
             f"Accept: */*\r\n"
             f"Connection: close\r\n\r\n"
         ).encode()

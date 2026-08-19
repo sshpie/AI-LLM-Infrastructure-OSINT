@@ -14,7 +14,7 @@ public_dorks_held: yes-until-acknowledged
 
 # Anduril Industries: Lattice Monitoring Plane Exposure
 
-NuClide Research · 2026-05-08 (sent 2026-05-09)
+ · 2026-05-08 (sent 2026-05-09)
 
 > **Status:** Disclosure **sent** to `disclosures@anduril.com` on 2026-05-09 (GPG-encrypted to fingerprint `67EE B1A4 05BF 0A0A F0A7 EB35 5477 1229 1AE1 D9DF` per their published security.txt). This redacted case study is published; full IP-level operational detail (cluster inventory, per-tier cert SANs, targeted Shodan dorks for individual production tiers) is held in the disclosure pack and will be added to the public artifact only after Anduril acknowledges and a reasonable remediation window has passed.
 

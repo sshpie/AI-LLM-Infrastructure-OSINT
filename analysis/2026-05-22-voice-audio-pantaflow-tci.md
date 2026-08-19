@@ -53,7 +53,7 @@ Single-session orchestrator on `rooster`, Python venv `(security-tools)`. The tw
 | aimap-profile | Target classification + ethics routing | Pantaflow: Hetzner DE bare VPS, commercial. TCI: China, education sector, minors-data flag raised |
 | VisorGraph | Cert-pivot → operator attribution | Pantaflow: TLS CN → pantaflowai.com. TCI: no TLS on :8001, attribution from banner strings |
 | VisorBishop | Productized re-prober, adjacent-port sweep | Pantaflow: MinIO :9000 adjacent (auth required). TCI: :80 nginx default, :8000 / :8001 / :9000 mapped |
-| VisorLog | Ledger ingest → nuclide.db | Pantaflow: 2 events (IDs 35919, 35920). TCI: ingested, CRITICAL, children's-data class flagged |
+| VisorLog | Ledger ingest → .db | Pantaflow: 2 events (IDs 35919, 35920). TCI: ingested, CRITICAL, children's-data class flagged |
 | VisorScuba | Compliance scoring (OPA/Rego) | Pantaflow: pending, ECS field-mapping gap. TCI: same Rego gap, scoring deferred |
 | BARE | Metasploit semantic ranking | Pantaflow: no MSF coverage, top score 0.501 < 0.55 threshold — first-party authz class. TCI: path-traversal-via-ffmpeg-oracle has no packaged module |
 | VisorCorpus | Adversarial corpus generation | Pantaflow: 100-case focused corpus. TCI: focused corpus built |
@@ -444,4 +444,4 @@ RESPONSE B:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-05-22 · Voice/Audio AI assessment (Survey 17 follow-up)*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-05-22 · Voice/Audio AI assessment (Survey 17 follow-up)*

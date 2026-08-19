@@ -6,7 +6,7 @@ Last updated: 2026-07-02
 
 ## What ran
 
-Full NuClide assessment chain on AnythingLLM (mintplex-labs/anything-llm), port 3001.
+Full  assessment chain on AnythingLLM (mintplex-labs/anything-llm), port 3001.
 
 ## Key findings
 
@@ -59,8 +59,8 @@ Full NuClide assessment chain on AnythingLLM (mintplex-labs/anything-llm), port 
 
 ## GitHub
 
-Pushed: nuclide-research/AI-LLM-Infrastructure-OSINT @ 678c9d1
-Pushed: nuclide-research/tome @ e2e720e
+Pushed: /AI-LLM-Infrastructure-OSINT @ 678c9d1
+Pushed: /tome @ e2e720e
 
 ## Next
 

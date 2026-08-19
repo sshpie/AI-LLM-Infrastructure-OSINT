@@ -12,7 +12,7 @@ variant: Uirusu/2.0
 mb_url: https://bazaar.abuse.ch/sample/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0/
 vt_url: https://www.virustotal.com/gui/file/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0
 mb_first_seen: 2026-05-07
-reporter: nuclide
+reporter: 
 dropped_by_sha256: ee51b236e57d96521da5fb820242c23996dcc691d3df8830655801b2a516bb72
 dropped_by_malware: Hilix
 tags:
@@ -55,9 +55,9 @@ This sample is broader than the Hilix-classic build. Embedded RCE primitives:
 
 ## Public availability
 
-- **MalwareBazaar:** [bazaar.abuse.ch/sample/38dce395...](https://bazaar.abuse.ch/sample/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0/) (reporter: `nuclide`, auto-classified `Mirai` family; carries `dropped_by_sha256` link to the Hilix sample)
+- **MalwareBazaar:** [bazaar.abuse.ch/sample/38dce395...](https://bazaar.abuse.ch/sample/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0/) (reporter: ``, auto-classified `Mirai` family; carries `dropped_by_sha256` link to the Hilix sample)
 - **VirusTotal:** [virustotal.com/gui/file/38dce395...](https://www.virustotal.com/gui/file/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0)
-- **First public submission:** 2026-05-07 (NuClide). Pre-submission lookups confirmed not previously known to VT, MB, AlienVault OTX, or GitHub-indexed code.
+- **First public submission:** 2026-05-07 (). Pre-submission lookups confirmed not previously known to VT, MB, AlienVault OTX, or GitHub-indexed code.
 
 ## Source
 

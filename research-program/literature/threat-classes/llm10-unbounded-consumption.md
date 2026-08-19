@@ -3,7 +3,7 @@
 **OWASP rank 2025:** #10 (replaces LLM04:2023 Model Denial of Service)
 **OWASP rank 2023:** LLM04 Model Denial of Service
 
-The 2025 revision broadens the scope from traditional DoS (resource exhaustion) to include **cost-based attacks** — also called "Denial of Wallet." This is the class most directly demonstrated by NuClide's 2026-06-06 LiteLLM findings.
+The 2025 revision broadens the scope from traditional DoS (resource exhaustion) to include **cost-based attacks** — also called "Denial of Wallet." This is the class most directly demonstrated by 's 2026-06-06 LiteLLM findings.
 
 ## Description
 
@@ -28,7 +28,7 @@ LLM10 is more applied-security than ML-theory; the canonical literature is in pr
 
 ## Current survey instances
 
-**LLM10 is the canonical class for NuClide's LiteLLM survey findings:**
+**LLM10 is the canonical class for 's LiteLLM survey findings:**
 
 - **LiteLLM 18 CRIT findings** (`surveys/2026-06-06-litellm.md`):
   - F-001: `23.238.9.142:4000` Anthropic API direct (Claude Sonnet 4.6 + Haiku 4.5) — any internet user can issue Claude completions billed to the operator's Anthropic key
@@ -48,7 +48,7 @@ LLM10 is more applied-security than ML-theory; the canonical literature is in pr
 
 OWASP's 2023 LLM04 was named "Model Denial of Service" — focused on availability. The 2025 rename to "Unbounded Consumption" explicitly recognizes that the **economic dimension** is often more important than the availability dimension. A successful attack might not bring the service down; it might just cost the operator $50,000 quietly before they notice.
 
-NuClide's 18 LiteLLM CRIT findings empirically validate this rename. None of these instances are necessarily failing under load — they're quietly burning the operator's API budget.
+'s 18 LiteLLM CRIT findings empirically validate this rename. None of these instances are necessarily failing under load — they're quietly burning the operator's API budget.
 
 ## Defensive controls
 

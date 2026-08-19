@@ -4,13 +4,13 @@ type: host
 
 # sanctionscanner.com: Turkish AML/KYC Compliance SaaS: 79M KYB Records + Live Client Monitoring Exposed
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
 ## Summary
 
-sanctionscanner.com is a Turkish AML/KYC compliance SaaS serving financial institutions. Their production Elasticsearch cluster, three nodes, was reachable on port 9200 with `xpack.security.enabled=false` and no network firewall. The cluster holds 79 million Know Your Business (KYB) company records, 6.2 million individual sanctions/watchlist records, 877K document-number records, and two live client monitoring queries screening real persons in real time. A prior automated ransomware bot already found it, a `read_me` extortion index is present. NuClide independently confirmed full read access without credentials.
+sanctionscanner.com is a Turkish AML/KYC compliance SaaS serving financial institutions. Their production Elasticsearch cluster, three nodes, was reachable on port 9200 with `xpack.security.enabled=false` and no network firewall. The cluster holds 79 million Know Your Business (KYB) company records, 6.2 million individual sanctions/watchlist records, 877K document-number records, and two live client monitoring queries screening real persons in real time. A prior automated ransomware bot already found it, a `read_me` extortion index is present.  independently confirmed full read access without credentials.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage
@@ -132,7 +132,7 @@ This discloses: which real persons a financial institution is actively monitorin
 
 ### F4: Prior Ransomware Extortion Index Present (HIGH)
 
-The `read_me` index was written by an automated Elasticsearch ransomware bot before NuClide's discovery. NuClide did not place this index.
+The `read_me` index was written by an automated Elasticsearch ransomware bot before 's discovery.  did not place this index.
 
 Extortion note content:
 - Demanded 0.0041 BTC to `bc1q38rjul6gdamfflf6p4ukz0ymtvfgfv2j9saf6r`

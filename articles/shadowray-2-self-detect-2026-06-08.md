@@ -7,7 +7,7 @@ companion: case-studies/commercial/ray-dashboard-shadowray-survey-2026-06-08.md
 
 # Are You in the ShadowRay 2.0 Botnet? Five Things to Look For
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 Anyscale Ray ships with no authentication on its Jobs API (CVE-2023-48022, "ShadowRay"). Oligo Security documented an active exploitation campaign in 2024 and a renewed one in November 2025 — ShadowRay 2.0 — where RondoDox, MooBot, KmsdBot integrate the unauth job submission to grow self-propagating cryptojacking and DDoS botnets across the roughly 200,000 internet-visible Ray servers.
 
@@ -80,6 +80,6 @@ This is the standard incident-response sequence. Do not skip the forensic step.
 
 ## Restraint statement
 
-This advisory is derived from a metadata-only population survey conducted by NuClide Research on 2026-06-08. We did not submit any jobs, did not read driver_info bodies, did not interact with worker nodes. The survey reads the Ray-defined `/api/jobs/` endpoint exactly as a Ray operator's own management console would. The five signals are observable to any operator running the same metadata check on their own infrastructure.
+This advisory is derived from a metadata-only population survey conducted by  on 2026-06-08. We did not submit any jobs, did not read driver_info bodies, did not interact with worker nodes. The survey reads the Ray-defined `/api/jobs/` endpoint exactly as a Ray operator's own management console would. The five signals are observable to any operator running the same metadata check on their own infrastructure.
 
 Full survey: `case-studies/commercial/ray-dashboard-shadowray-survey-2026-06-08.md`

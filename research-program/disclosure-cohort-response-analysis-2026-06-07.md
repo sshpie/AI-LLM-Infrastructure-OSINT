@@ -1,6 +1,6 @@
 # Disclosure-Cohort Response Analysis (n=104, 2026-06-07)
 
-**Author:** NuClide Research (Cowboy session, 2026-06-07)
+**Author:**  (Cowboy session, 2026-06-07)
 **Source corpus:** `~/AI-LLM-Infrastructure-OSINT/disclosures/` — 133 files; 104 have YAML frontmatter (29 early-style bodies lack metadata); response classification derived from `outcome:` and `status:` fields.
 **Companion:** [[insight-86-disclosure-pipeline-is-attack-surface]] — this analysis is the second-order question that insight flagged ("which cohort responds").
 
@@ -113,7 +113,7 @@ Of the 95 disclosures classified as SENT-with-some-recorded-state:
 
 ## Actionable implications
 
-| For NuClide | Action |
+| For  | Action |
 |---|---|
 | Stop routing AI-infra findings to cloud-abuse channels first | They are not the right pipe; route to the operator directly even when the operator is a hyperscaler tenant. |
 | Use `security@<edu>` but expect ~10% bounce | Plan a `it-support@` / `csirt@` / named-CISO fallback for institutional follow-ups. |

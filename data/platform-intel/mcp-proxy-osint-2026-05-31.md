@@ -4,7 +4,7 @@ type: osint-brief
 
 # mcp-proxy — Pre-Assessment OSINT Brief (2026-05-31)
 
-_NuClide Research · 2026-05-31_
+_ · 2026-05-31_
 _Status: OSINT complete. Survey chain: pending._
 _Sources: primary source code (sparfenyuk/mcp-proxy, TBXark/mcp-proxy, punkpeye/mcp-proxy), official docs, Knostic population study, Bitsight MCP exposure report, OWASP MCP Top-10, CVE databases. Primary source beats blog framing throughout._
 

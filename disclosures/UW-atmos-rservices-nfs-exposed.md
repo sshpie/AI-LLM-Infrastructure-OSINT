@@ -1,6 +1,6 @@
 ---
 to: abuse@uw.edu
-cc: uw-noc@uw.edu, abuse@nuclide-research.com
+cc: uw-noc@uw.edu, abuse@
 severity: HIGH
 ip: 140.142.30.87
 institution: "University of Washington Atmospheric Sciences, `orca.atmos.washington.edu` exposes 1980s-era r-services (rexec/rlogin/rsh on tcp/512-514) and NFS (tcp/2049) to the public internet, plus 3 custom Tornado services on alt-ports"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** abuse@uw.edu
-**Cc:** uw-noc@uw.edu, abuse@nuclide-research.com
+**Cc:** uw-noc@uw.edu, abuse@
 **Subject:** orca.atmos.washington.edu (140.142.30.87). Berkeley r-services (rexec/rlogin/rsh) + NFS exposed to public internet
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
 
 This finding is in a different threat class than the rest of today's batch (we were sweeping for unauth-Jupyter). The atmospheric-sciences research host surfaced through the dork because it runs Tornado on alt-ports (8081/8082/8084), but it also has a much more concerning surface that warrants its own disclosure.
 
@@ -67,9 +67,9 @@ HTTP/1.1 404 Not Found
 Server: TornadoServer/6.3.3
 ```
 
-The Tornado services on 8081/8082/8084 return 404 at the root path. They are custom Python web apps, not exposed-Jupyter. We did not probe deeper paths; if your operator team can confirm what those three services are, NuClide can re-validate against any specific path you'd like checked.
+The Tornado services on 8081/8082/8084 return 404 at the root path. They are custom Python web apps, not exposed-Jupyter. We did not probe deeper paths; if your operator team can confirm what those three services are,  can re-validate against any specific path you'd like checked.
 
-NFS export rules: NuClide did not probe `showmount -e` or attempt mount, since that would cross the line from passive recon to active probing of the export config. We recommend your operator team run `showmount -e localhost` on the host itself to enumerate the export rules.
+NFS export rules:  did not probe `showmount -e` or attempt mount, since that would cross the line from passive recon to active probing of the export config. We recommend your operator team run `showmount -e localhost` on the host itself to enumerate the export rules.
 
 ## Threat model
 
@@ -111,6 +111,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-jupyterhub-e
 Happy to help characterize the Tornado services if your operator team would like a deeper probe.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

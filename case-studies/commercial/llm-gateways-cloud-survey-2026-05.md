@@ -4,7 +4,7 @@ type: survey
 
 # LLM Gateways / OpenAI-Compatible Proxies: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (in progress)_
+_ · 2026-05-04 (in progress)_
 
 > **Status:** Cross-cloud discovery + key-burnability proof complete (2026-05-04). 1,899 confirmed unauth gateways, **1,857 (97.8%) returned functional inference** when probed with a single unauthenticated `chat/completions` call, operator quota directly billed.
 
@@ -223,7 +223,7 @@ The combined "OpenAI-compat reseller proxy" population spans:
 
 ## Disclosure plan
 
-For each unauthenticated instance with high-severity threat classes (provider-key quota theft, reseller proxy fronting paid commercial accounts), draft coordinated-disclosure email per the standard NuClide template, routed via WHOIS-derived institution identification.
+For each unauthenticated instance with high-severity threat classes (provider-key quota theft, reseller proxy fronting paid commercial accounts), draft coordinated-disclosure email per the standard  template, routed via WHOIS-derived institution identification.
 
 ---
 

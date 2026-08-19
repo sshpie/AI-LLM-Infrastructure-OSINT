@@ -62,7 +62,7 @@ for cert-pivot."
    Step 1: identify the HTTPS port on the same IP. Step 2: cert-pivot on that
    port. The admin port is the finding; the HTTPS port is the attribution surface.
 4. **VisorGraph `-max-iter` cap.** The installed binary capped at 50 iterations
-   (hardcoded). `nuclide-research/VisorGraph` commit 18ea9cb exposes `-max-iter`
+   (hardcoded). `/VisorGraph` commit 18ea9cb exposes `-max-iter`
    as a CLI flag. For 187 seeds use `-max-iter 500`; the default remains 50 for
    single-host runs.
 

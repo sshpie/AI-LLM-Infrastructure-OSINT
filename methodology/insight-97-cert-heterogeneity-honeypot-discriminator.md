@@ -1,6 +1,6 @@
 # Insight #97 - Cert-Issuer Heterogeneity Across an Identical-Backend HTTPS Fleet is the Honeypot Operator Discriminator
 
-_NuClide Research · 2026-06-09 founding evidence (Cat-MCP-Cred-Fleet 66 hosts) · 2026-06-10 promoted to numbered after second-cohort reproduction (+22 hosts across two new sub-cohorts on a second port)._
+_ · 2026-06-09 founding evidence (Cat-MCP-Cred-Fleet 66 hosts) · 2026-06-10 promoted to numbered after second-cohort reproduction (+22 hosts across two new sub-cohorts on a second port)._
 
 ---
 

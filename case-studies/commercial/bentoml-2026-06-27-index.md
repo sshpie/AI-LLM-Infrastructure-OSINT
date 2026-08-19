@@ -10,7 +10,7 @@ population: 14
 verified: 14
 vulnerable: 9
 exploited: 3
-author: "NuClide Research"
+author: ""
 tags: [BentoML, model-serving, command-injection, Dockerfile, supply-chain, RCE, CVE-2026-44345]
 featured: true
 ---
@@ -94,7 +94,7 @@ All exploits are tested and working:
 - **c2-listener.py** — HTTP C2 server
 - **malicious-bento-export.tar.gz** — Compiled attack package
 
-See [nuclide-research GitHub](https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT) for code.
+See [ GitHub](https://github.com/sshpie/AI-LLM-Infrastructure-OSINT) for code.
 
 ## Remediation
 
@@ -117,12 +117,12 @@ See [nuclide-research GitHub](https://github.com/nuclide-research/AI-LLM-Infrast
 
 - **2026-06-27:** Vulnerability discovered and assessed
 - **2026-06-27:** Disclosure sent to BentoML security team
-- **2026-06-27:** Findings published to nuclide-research.com
+- **2026-06-27:** Findings published to 
 - **Pending:** CISA advisory (30-day remediation window)
 
 ## Assessment Details
 
-**Methodology:** NuClide Method (6-phase assessment: OSINT → Fingerprinting → Verification → Exploitation → Codification → Publication)
+**Methodology:**  Method (6-phase assessment: OSINT → Fingerprinting → Verification → Exploitation → Codification → Publication)
 
 **Verification Rung:** Inner-B / Outer-2 (binary tested on 14 real hosts, 64% confirmed vulnerable)
 
@@ -130,7 +130,7 @@ See [nuclide-research GitHub](https://github.com/nuclide-research/AI-LLM-Infrast
 
 ---
 
-**Published by:** NuClide Research  
+**Published by:**   
 **Date:** 2026-06-27  
 **Classification:** Tier A Critical  
 **Authorization:** Full responsible disclosure in progress

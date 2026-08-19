@@ -2,7 +2,7 @@
 
 **To:** Oligo Security (research@oligo.security) and Anyscale Security
        (security@anyscale.com) in parallel
-**From:** Nicholas Kloster <nicholas@nuclide-research.com> — NuClide Research
+**From:**  <> — 
 **Date:** 2026-06-08
 **Subject:** ShadowRay 2.0 — metadata IoC pattern from a 10,000-host /api/jobs/ population survey + 463 likely-attacker IPs
 
@@ -14,7 +14,7 @@
 
 Oligo Security's November 2025 ShadowRay 2.0 disclosure is the canonical public record of the renewed CVE-2023-48022 exploitation campaign. Your team named RondoDox, MooBot, KmsdBot as integrating the unauth Jobs API for cryptojacking and self-propagation, and observed roughly 200,000 Ray servers exposed.
 
-NuClide Research ran an independent population measurement on 2026-06-08, sampling 10,000 of the ~175,189 Shodan-visible Ray Dashboards and verifying via the unauthenticated `/api/jobs/` endpoint. We landed on a five-signal metadata IoC pattern that, when applied at scale, separates attacker-fleet nodes from clean real operators — and the population dynamics tell a different story than the raw exposure number suggests.
+ ran an independent population measurement on 2026-06-08, sampling 10,000 of the ~175,189 Shodan-visible Ray Dashboards and verifying via the unauthenticated `/api/jobs/` endpoint. We landed on a five-signal metadata IoC pattern that, when applied at scale, separates attacker-fleet nodes from clean real operators — and the population dynamics tell a different story than the raw exposure number suggests.
 
 This email hands off our delta:
 
@@ -132,7 +132,7 @@ The "A100 ROW GmbH" bucket (400 hits) is a German GPU rental front — worth a s
 
 1. **Cross-reference our 463 likely-attacker IPs against your IoC list.** Where overlap is high, the metadata IoC pattern is confirmed. Where you have IPs we missed, the pattern needs refinement.
 2. **Consider integrating the 5-signal pattern into your published IoC list.** Defender-side, the pattern is checkable with one curl + jq command (see the public advisory we drafted alongside this hand-off).
-3. **AWS abuse hand-off:** AWS Trust & Safety can be contacted with the top-20 multi-port IPs. NuClide will not duplicate that outreach; if Oligo's IR partner pipeline already covers AWS, we are content to defer.
+3. **AWS abuse hand-off:** AWS Trust & Safety can be contacted with the top-20 multi-port IPs.  will not duplicate that outreach; if Oligo's IR partner pipeline already covers AWS, we are content to defer.
 4. **Anyscale engagement:** The five signals are observable inside Ray's own job model. Anyscale could ship an in-product detector that flags `_aa[N]` submission patterns and the job-count cap. We would value Anyscale's stance on whether they consider that "user behavior data" or actionable.
 
 ---
@@ -164,8 +164,8 @@ We initially probed `/api/cluster_status` and got 0/2,000 unauth — confidently
 ---
 
 Best regards,
-Nicholas Kloster
-NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+
+
+
+https://
 CISA disclosures: CVE-2025-4364, ICSA-25-140-11

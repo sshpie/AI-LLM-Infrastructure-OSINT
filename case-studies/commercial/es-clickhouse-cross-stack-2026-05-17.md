@@ -4,7 +4,7 @@ type: survey
 
 # Cross-stack 24-hour follow-up on Elasticsearch and ClickHouse (2026-05-17)
 
-_NuClide Research · 2026-05-17_
+_ · 2026-05-17_
 _Companion to: [`elasticsearch-ai-stack-population-survey-2026-05-16.md`](elasticsearch-ai-stack-population-survey-2026-05-16.md), [`clickhouse-population-survey-2026-05-16.md`](clickhouse-population-survey-2026-05-16.md)_
 
 ---
@@ -122,7 +122,7 @@ Yesterday's 95 ES 2.9.0 hosts ran through BARE. All 95 top-rank `exploits_multi_
 - Probe outputs: `~/recon/elasticsearch-ai-stack-2026-05-17/es-v198-results.json` (17 MB), `~/recon/clickhouse-2026-05-17/ch-v198-results.json` (6 MB)
 - BARE output: `/tmp/es29x-bare-output.json` (95 ranked module matches)
 - aimap v1.9.8 source: `Nicholas-Kloster/aimap` `f586217`
-- VisorLog ingest: 3,666 events into `data/nuclide.db`. 3,597 ES hosts marked `archived` with reason `wiped-by-extortion-campaign`. 69 ES + CH AI-stack confirmations severity-upgraded.
+- VisorLog ingest: 3,666 events into `data/.db`. 3,597 ES hosts marked `archived` with reason `wiped-by-extortion-campaign`. 69 ES + CH AI-stack confirmations severity-upgraded.
 
 ---
 

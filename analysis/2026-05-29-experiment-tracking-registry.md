@@ -31,8 +31,8 @@ ethical-stop), VisorHollow (Windows), VisorBishop (menlohunt covered shadow),
 JS-bundle (React UI, no secret bundle).
 
 ### Notable Configuration
-aimap v1.9.39 (enumMLflow hardcodes CVE-2024-37052+). nuclide.db at
-~/visorlog/nuclide.db. Workspace ~/recon/experiment-tracking-2026-05-29/.
+aimap v1.9.39 (enumMLflow hardcodes CVE-2024-37052+). .db at
+~/visorlog/.db. Workspace ~/recon/experiment-tracking-2026-05-29/.
 
 ## 3. Methodology
 

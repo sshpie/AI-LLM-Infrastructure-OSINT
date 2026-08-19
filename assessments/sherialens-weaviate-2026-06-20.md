@@ -216,4 +216,4 @@ Schema delete destroys the SheriaLensChunk class and all 56,782 records in one H
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

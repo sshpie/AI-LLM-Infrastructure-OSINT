@@ -1,10 +1,10 @@
 # =============================================================================
-# NuClide Task Bindings — executor overlay for red/blue-team-tasks.yaml
+#  Task Bindings — executor overlay for red/blue-team-tasks.yaml
 # LLM Orchestration Security (2026)
 #
 # This file does NOT replace red-team-tasks.yaml / blue-team-tasks.yaml. It is the
 # wiring layer that overlays them: each `binding` references a task id and routes it
-# to a NuClide tool, with a parse contract that turns raw tool output into a
+# to a  tool, with a parse contract that turns raw tool output into a
 # result_schema-compliant object. Security semantics (procedure, decision logic,
 # CVE refs, validates/validated_by parity) stay in the task files; only wiring lives here.
 #
@@ -13,7 +13,7 @@
 # output field names could not be determined without a sample run against a real target.
 #
 # Coverage tags let the coverage report fall out of this file:
-#   covered      -> a NuClide tool runs the task today
+#   covered      -> a  tool runs the task today
 #   gap          -> needs a capability not yet in the arsenal (see requires_capability)
 #   review_only  -> config/architecture judgement; no automated executor
 # =============================================================================
@@ -498,7 +498,7 @@ red_bindings:
   - task: RED-COST-001
     tool: none
     # UNRESOLVED: visorscuba does NOT do rate probing (it is a compliance assessor).
-    # "rate-probe" subcommand does NOT exist. No current NuClide tool actively probes rate limits.
+    # "rate-probe" subcommand does NOT exist. No current  tool actively probes rate limits.
     # visorscuba assess --db {db} --json can report on rate-limit VIOLATIONS already in the ledger,
     # but cannot actively probe rate limits. Requires a separate HTTP burst tool.
     args: []
@@ -590,7 +590,7 @@ red_bindings:
   - task: RED-DET-001
     tool: visorlog
     # "attribution-check" subcommand does NOT exist. Real subcommand is `query`.
-    # This checks whether NuClide tool invocations were LOGGED in visorlog.db with identity,
+    # This checks whether  tool invocations were LOGGED in visorlog.db with identity,
     # NOT whether the blue team observed them -- that requires purple coordination.
     args: ["query", "--json", "--since", "{engagement_start}", "--source", "{probe_source_tag}"]
     inputs_from: [engagement_start, probe_source_tag]
@@ -606,7 +606,7 @@ red_bindings:
       evidence_from: "UNRESOLVED: visorlog query --json output field names"
     coverage: gap
     requires_capability: [purple_coordination]
-    # Note: visorlog captures NuClide tool LOGS, not blue-team telemetry.
+    # Note: visorlog captures  tool LOGS, not blue-team telemetry.
     # True detection validation requires coordinated confirmation with blue team (external).
 
 # -----------------------------------------------------------------------------

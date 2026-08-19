@@ -1,6 +1,6 @@
 # Purdue University (main campus): Account Takeover on n8n Workflow Automation Server
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

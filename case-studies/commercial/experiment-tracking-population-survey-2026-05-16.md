@@ -4,7 +4,7 @@ type: survey
 
 # Experiment-Tracking Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 10 of the day's 10-category batch)_
+_ · 2026-05-16 (Survey 10 of the day's 10-category batch)_
 _Closes: category 04 (training-experiments) registry-half. W&B self-hosted / ClearML / Aim Stack / Comet ML_
 
 ---

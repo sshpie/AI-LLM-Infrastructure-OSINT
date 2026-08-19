@@ -8,7 +8,7 @@ sector: Commercial
 
 # Hospital's AI chatbot exposes 270,000+ patient records.
 
-_NuClide Research · 2026-05-16 · CRITICAL · disclosure pending_
+_ · 2026-05-16 · CRITICAL · disclosure pending_
 
 A multi-tenant Chinese hospital AI assistant is running on a single Chinese-cloud-hosted IP with every layer of its AI stack reachable from the public internet without authentication. The chatbot's RAG (retrieval-augmented generation) backend stores patient records in a vector database whose collection names alone disclose what's inside: prescriptions, surgical history, inpatient and outpatient visits, billing, diagnoses, doctor names, patient names. The Elasticsearch index holding the RAG document chunks contains **214,597 entity-vector documents and 55,807 source-text chunks**.
 
@@ -73,7 +73,7 @@ The names alone disclose that the operator has indexed real patient records (pre
 
 ## How we found it
 
-NuClide ran ten parallel population-scale surveys on 2026-05-16, each targeting a different layer of the AI stack: Ollama, llama.cpp, ComfyUI, voice agents, Whisper ASR, Docker daemon, etcd, Vault, Consul, Argo CD; then a second batch covering ROS, GPU compute, ClickHouse, agent frameworks, Elasticsearch, and experiment tracking. The combined corpus across all ten surveys covered 7,206 unique IPs.
+ ran ten parallel population-scale surveys on 2026-05-16, each targeting a different layer of the AI stack: Ollama, llama.cpp, ComfyUI, voice agents, Whisper ASR, Docker daemon, etcd, Vault, Consul, Argo CD; then a second batch covering ROS, GPU compute, ClickHouse, agent frameworks, Elasticsearch, and experiment tracking. The combined corpus across all ten surveys covered 7,206 unique IPs.
 
 We then ran a cross-survey overlap check: which IPs appear in two or more surveys? Ten hosts surfaced. We ran `aimap` against those ten with a widened port set to discover adjacent unauth AI services not in the original survey corpora.
 

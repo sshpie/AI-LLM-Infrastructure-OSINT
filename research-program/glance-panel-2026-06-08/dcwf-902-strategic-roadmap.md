@@ -1,14 +1,14 @@
 # Strategic Roadmap: glance v0.1.0 → v1.0.0
 
-_DCWF AI Work Role 902 (AI Innovation Leader) audit · NuClide Research panel · Productization brief for `glance`, the schema-only sensitivity analyzer · 2026-06-08_
+_DCWF AI Work Role 902 (AI Innovation Leader) audit ·  panel · Productization brief for `glance`, the schema-only sensitivity analyzer · 2026-06-08_
 
-`glance` is the youngest tool in the NuClide arsenal but the first one to operationalize the schema-recon discipline as a binary. Its job is to answer "how sensitive is this corpus" without reading the corpus. That capability has been the missing fourth side of the verification ladder — discover, fingerprint, verify, and now **characterize without exposure**. This brief converts that capability into a productization plan.
+`glance` is the youngest tool in the  arsenal but the first one to operationalize the schema-recon discipline as a binary. Its job is to answer "how sensitive is this corpus" without reading the corpus. That capability has been the missing fourth side of the verification ladder — discover, fingerprint, verify, and now **characterize without exposure**. This brief converts that capability into a productization plan.
 
 ---
 
 ## 1. Where glance Fits in the Toolchain
 
-The standard NuClide chain produces per-host evidence JSON at population scale. By step 1b (aimap deep-enum) and 3v (VERIFY), the program has read enough of each target to confirm category and severity, and downstream steps want to *score* and *report* without re-reading raw values. That gap is glance's home.
+The standard  chain produces per-host evidence JSON at population scale. By step 1b (aimap deep-enum) and 3v (VERIFY), the program has read enough of each target to confirm category and severity, and downstream steps want to *score* and *report* without re-reading raw values. That gap is glance's home.
 
 **Chain placement: Step 3.5 — "Characterize."** Between 3v (per-host verification) and 6 (visorlog ledger ingest). After verification, glance reads the sealed evidence directory and emits an aggregate rollup. The chain does not need to crack open the corpus a second time to score it.
 
@@ -67,7 +67,7 @@ Six capability additions, ordered by priority. P0 = required for v1.0, P1 = high
 | # | Capability | Why | Complexity | Dependencies | Priority |
 |---|---|---|---|---|---|
 | 1 | **Plugin system for source profiles** | Today profiles are functions in `glance.py`. Every new category survey requires editing the binary. A profile-as-plugin loader (drop `vm-verify.py` in `~/.glance/profiles/`) means the methodology can grow without forking the tool. | M | None | **P0** |
-| 2 | **visorlog backend integration** | Glance currently emits standalone JSON. Wire `--ledger` so the rollup writes directly to nuclide.db as a row keyed by (survey, host, category). Downstream queries ("which surveys leaked PHI?") become SQL, not file-grep. | M | visorlog DB schema | **P0** |
+| 2 | **visorlog backend integration** | Glance currently emits standalone JSON. Wire `--ledger` so the rollup writes directly to .db as a row keyed by (survey, host, category). Downstream queries ("which surveys leaked PHI?") become SQL, not file-grep. | M | visorlog DB schema | **P0** |
 | 3 | **`glance compare` — multi-corpus rollup** | The program now has ten+ category surveys with rollups. Cross-survey questions ("which platform class leaks the most PHI?") are answered today by hand-merging JSON. A compare subcommand turns it into one shell command. | M | None internal; consumes own v0.1 output | **P0** |
 | 4 | **LLM-based classifier as regex backstop** | The bag-of-fields classifier has a false-negative surface (collection named `documents_2026_01_22` carries PHI but matches nothing). An optional local model pass (Ollama, configurable) classifies names that escaped every regex. Off by default (sealed discipline), opt-in via `--llm-backstop`. Names only — never values. Hashed and rate-limited. | L | Ollama local; sealed-mode contract | P1 |
 | 5 | **Differential privacy noise on rollup counts** | When a rollup is published externally (case study, advisory), the per-category counts can be themselves identifying at small N. Add Laplace noise calibrated to a per-survey privacy budget for the "public rollup" output mode. Internal rollup stays exact. | S | None | P1 |
@@ -168,7 +168,7 @@ The DCWF 902 memo of 2026-06-08 introduced the "monitors vs holds" 2×2: Q1 Data
 1. **Sealed-mode discipline.** No tool in the comparison set treats "do not read the values" as a contract.
 2. **Bag-of-fields category mix.** Seven categories from one corpus in one pass.
 3. **Statistical shape as a third channel.** Entropy bucketing distinguishes human-named from random-ID without reading content.
-4. **One-command-per-survey ergonomics.** Aligned with the NuClide chain runner pattern.
+4. **One-command-per-survey ergonomics.** Aligned with the  chain runner pattern.
 5. **Public domain license.** Auditable. Embeddable.
 
 **What glance does NOT do that competitors do — and why each is a deliberate scoping choice:**
@@ -187,7 +187,7 @@ The DCWF 902 memo of 2026-06-08 introduced the "monitors vs holds" 2×2: Q1 Data
 
 **Target users, in priority order:**
 
-1. **Security researchers** running population-scale studies. NuClide is the founding user; other red-team research groups are the natural second wave.
+1. **Security researchers** running population-scale studies.  is the founding user; other red-team research groups are the natural second wave.
 2. **Internal AI/ML platform teams** who want to characterize their own corpus before exposing it to a vendor classifier. The sealed-mode contract is the unique selling point.
 3. **Compliance auditors** doing pre-audit corpus characterization. The category-hit rollup maps directly to HIPAA / PCI / CMMC checklist items.
 4. **Journalist-investigators** working on leaked datasets. The sealed contract means they can quantify "how sensitive is this" without reading any individual record.
@@ -215,4 +215,4 @@ The kubectl one is the cheapest to build and the highest fit for target-user #2 
 
 _Roadmap horizon: 8–12 weeks to v1.0._  
 _Next checkpoint: post-v0.2 release (P0 #1 plugin system + P0 #2 visorlog backend), 2026-07-15._  
-_Falsifier: if no external research group adopts glance for their own surveys within 60 days of public launch, the OSS strategy is wrong — likely too NuClide-coupled — and the target-user reordering needs revisiting._
+_Falsifier: if no external research group adopts glance for their own surveys within 60 days of public launch, the OSS strategy is wrong — likely too -coupled — and the target-user reordering needs revisiting._

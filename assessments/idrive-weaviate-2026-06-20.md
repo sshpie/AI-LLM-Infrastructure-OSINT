@@ -180,4 +180,4 @@ One HTTP call destroys all 6,894 documentation chunks. IDrive's chatbot returns 
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

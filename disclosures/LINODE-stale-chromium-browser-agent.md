@@ -1,6 +1,6 @@
 ---
 to: abuse@akamai.com
-cc: abuse@linode.com, abuse@nuclide-research.com
+cc: abuse@linode.com, abuse@
 severity: HIGH
 ip: 139.162.36.70, 172.104.24.241
 institution: Akamai Technologies / Linode, 2 customer hosts running unauth Chrome DevTools Protocol on pre-2023 Chromium
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@akamai.com
-**Cc:** abuse@linode.com, abuse@nuclide-research.com
+**Cc:** abuse@linode.com, abuse@
 **Subject:** 2× unauthenticated browser-control endpoints on pre-2023 Chromium (browser-RCE chained-CVE surface), Linode customer hosts
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering two Linode customer hosts that share the same exposure class.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering two Linode customer hosts that share the same exposure class.
 
 A parallel notification covering 3 hosts on OVH is being sent separately to `abuse@ovh.net`.
 
@@ -41,7 +41,7 @@ Two Linode customer VPSes are running raw Chromium with the Chrome DevTools Prot
 | `139.162.36.70` | 9222 | raw Chromium CDP | **HeadlessChrome 100.0.4896.60** | **April 2022** (~4 years stale) | `139-162-36-70.ip.linodeusercontent.com` |
 | `172.104.24.241` | 9222 | raw Chromium CDP | **HeadlessChrome 89.0.4389.72** | **March 2021** (~5 years stale) | `172-104-24-241.ip.linodeusercontent.com` |
 
-Found during NuClide Research's cross-cloud browser-agent survey (2026-05-04). Full case study:
+Found during 's cross-cloud browser-agent survey (2026-05-04). Full case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/browser-agent-cloud-survey-2026-05.md (Section "F4, Multi-year-stale Chromium on 5+ exposed CDP hosts")
 
 ---
@@ -100,6 +100,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/browser-agent-clou
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

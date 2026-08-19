@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.net
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 51.75.128.16
 institution: OVH SAS (hosted operator unknown; ns3131695.ip-51-75-128.eu)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@ovh.net
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated Gmail mailbox MCP server on OVH VPS, 51.75.128.16:3000
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the NuClide Research umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
+I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the  umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
 
 ---
 
@@ -34,7 +34,7 @@ I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 an
 
 A customer of OVH at `51.75.128.16:3000` is running an unauthenticated **Gmail Model Context Protocol (MCP) server** that exposes the operator's own Gmail mailbox as a 19-tool API readable + writable + destructive by any unauthenticated internet caller.
 
-This finding was surfaced as part of NuClide Research's cross-cloud Model Context Protocol survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md
+This finding was surfaced as part of 's cross-cloud Model Context Protocol survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md
 
 ---
 
@@ -104,6 +104,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2
 I'm happy to answer questions or assist with verification. No response is required.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.net
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 15.235.109.186, 158.69.194.62
 institution: OVH SAS (brightwavess-monitor MCP server pair with Cloudflare API key baked in)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@ovh.net
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated Cloudflare-DNS-CRUD MCP servers (operator API key baked in), 15.235.109.186:3000, 158.69.194.62:3000
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -37,7 +37,7 @@ Two OVH-hosted MCP servers identified as `brightwavess-monitor v1.0.0` expose 10
 - List, create, update, or delete DNS records on whatever Cloudflare zone(s) the operator's key authorizes
 - **Domain-takeover primitive**: point A records or NS records at attacker-controlled infrastructure to intercept all traffic to the operator's domains (mail, web, API)
 
-Found during NuClide Research's MCP cross-cloud survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F12, `brightwavess-monitor`").
+Found during 's MCP cross-cloud survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F12, `brightwavess-monitor`").
 
 ## Confirmed exposure
 
@@ -83,6 +83,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

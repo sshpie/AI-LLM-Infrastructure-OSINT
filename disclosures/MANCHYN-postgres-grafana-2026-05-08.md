@@ -1,6 +1,6 @@
 ---
 to: admin@manchyn.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 152.53.82.7
 institution: "manchyn.com / na-ai.studio (Jiangsu CN). PostgreSQL 5432 publicly exposed without SSL on 152.53.82.7; Grafana 11.2.0 on port 3000 version-stale (CVE-2024-9355)"
@@ -14,8 +14,8 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 2026-05-08
 
 This is an unsolicited good-faith coordinated-disclosure notification. I was unable to find a security contact for manchyn.com or na-ai.studio (Cloudflare WHOIS privacy), so I'm reaching admin@manchyn.com. If you maintain the infrastructure at `152.53.82.7`, please review the findings below.
@@ -75,7 +75,7 @@ Server-asserted `Date:` headers preserved for both findings. Bundle held private
 ---
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+Nicholas Michael Kloster / 
+
+https://
 AI-LLM-Infrastructure-OSINT

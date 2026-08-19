@@ -1,6 +1,6 @@
 ---
 to: abuse@digitalocean.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 159.203.42.211, 178.62.225.198
 institution: DigitalOcean (159.203.42.211 chat-safety pipeline + 178.62.225.198 proplay.co workplace surveillance), 30+ days unremediated
@@ -10,30 +10,30 @@ date: 2026-05-06
 ---
 
 **To:** abuse@digitalocean.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Persistent unauth NVIDIA Triton Inference Servers (CSAM-adjacent chat-safety classifier + workplace-surveillance pipeline), 30+ days unremediated, 159.203.42.211 + 178.62.225.198
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
 **Re:** Two persistent unauthenticated NVIDIA Triton Inference Servers on DigitalOcean customer hosts
 **IPs:** 159.203.42.211 + 178.62.225.198 (proplay.co)
 **Severity:** CRITICAL
-**Original disclosure window:** 2026-04-04 (NuClide Triton survey); re-verified live 2026-05-06 (>30 days unremediated)
+**Original disclosure window:** 2026-04-04 ( Triton survey); re-verified live 2026-05-06 (>30 days unremediated)
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is a re-disclosure / escalation following the persistence of the exposure beyond the standard 30-day remediation window.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is a re-disclosure / escalation following the persistence of the exposure beyond the standard 30-day remediation window.
 
 ---
 
 ## Summary
 
-Two DigitalOcean customer hosts have been running NVIDIA Triton Inference Server `2.47.0` unauthenticated on port 8000 since at least 2026-04-04, first documented in NuClide's Triton cloud survey. Re-verification today (2026-05-06) confirms the chat-safety host is still serving the same model ensembles unauthenticated. The companion host has been silent on Mullvad-routed re-probe and may be filtering or remediated; provider verification requested.
+Two DigitalOcean customer hosts have been running NVIDIA Triton Inference Server `2.47.0` unauthenticated on port 8000 since at least 2026-04-04, first documented in 's Triton cloud survey. Re-verification today (2026-05-06) confirms the chat-safety host is still serving the same model ensembles unauthenticated. The companion host has been silent on Mullvad-routed re-probe and may be filtering or remediated; provider verification requested.
 
 ### Host 1: 159.203.42.211 (chat-safety pipeline)
 
@@ -59,7 +59,7 @@ The two minor-detection classifiers + photo-solicitation detector + sexting clas
 - The evasion is reused on the operator's downstream chat platform, where the same classifier presumably gates whether content reaches a human moderation queue
 - A counterparty exhibiting "minor" patterns evades the safety net, direct CSAM-class consequence
 
-This is the strongest-stakes finding in NuClide's 2026-05 survey series.
+This is the strongest-stakes finding in 's 2026-05 survey series.
 
 ### Host 2: 178.62.225.198 (proplay.co: workplace-surveillance pipeline)
 
@@ -145,6 +145,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/SYNTHESIS-2026-05.
 Happy to coordinate verification with the customer, or to provide a tighter exploit demonstration under a non-destructive scope. Given the CSAM-adjacent nature, expedited remediation is requested.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

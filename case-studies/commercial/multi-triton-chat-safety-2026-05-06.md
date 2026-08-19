@@ -5,16 +5,16 @@ date: 2026-05-06
 class: substrate
 category: model-serving
 status: still-live-revisit
-methodology: ledger-revisit + nuclide-chain
+methodology: ledger-revisit + -chain
 ---
 
 # Triton chat-safety / workplace-surveillance pair: re-verification + attribution
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
-Re-verification of the two NVIDIA Triton Inference Server hosts surfaced in the original [`triton-cloud-survey-2026-05.md`](triton-cloud-survey-2026-05.md). Both still hosted on DigitalOcean. **Both still serving the same model ensembles unauthenticated** as of 2026-05-06, over four weeks after the original discovery. New attribution surfaced via the NuClide chain (`visorplus assess` + passive DNS): the sister workplace-surveillance host has a confirmed operator domain.
+Re-verification of the two NVIDIA Triton Inference Server hosts surfaced in the original [`triton-cloud-survey-2026-05.md`](triton-cloud-survey-2026-05.md). Both still hosted on DigitalOcean. **Both still serving the same model ensembles unauthenticated** as of 2026-05-06, over four weeks after the original discovery. New attribution surfaced via the  chain (`visorplus assess` + passive DNS): the sister workplace-surveillance host has a confirmed operator domain.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage
@@ -72,11 +72,11 @@ This is the type of finding the synthesis paper categorised as "Class C, Adversa
 
 The original survey documented this host running NVIDIA Triton with workplace-surveillance YOLOv8 face / cellphone / clean-desk / emotion classifiers. With `proplay.co` now attributable as the operator, the disclosure routing changes substantially, direct operator-side notification is feasible (no longer "Triton operators remain anonymous" per the original survey caveat).
 
-## Disclosure routing (per `nuclide-contact`)
+## Disclosure routing (per `-contact`)
 
 Both hosts on DigitalOcean. Provider abuse channel:
 
-- **`abuse@digitalocean.com`**, primary (rank-1 from WHOIS:OrgAbuseEmail per nuclide-contact)
+- **`abuse@digitalocean.com`**, primary (rank-1 from WHOIS:OrgAbuseEmail per -contact)
 
 Operator-direct (where attributable):
 
@@ -111,7 +111,7 @@ Step 1a visorplus assess (per host)        → 6-phase passive recon (network ID
 Step 1b aimap -list                        → confirmed Triton 2.47.0 / 159.203.42.211 (severity medium, /v2 match)
 Step 2  visorgraph -ip (per host)          → cert pivots (none - no TLS)
 Step 3  aimap-profile (per host)           → no CT log subdomains, no security.txt
-Step 5  nuclide-contact (per host)         → abuse@digitalocean.com primary
+Step 5  -contact (per host)         → abuse@digitalocean.com primary
 Step 6  visorlog ingest                    → (skipped - re-verification, no new ledger entry beyond the existing event)
 Step 7  visorscuba assess                  → 743 nodes assessed (full ledger)
 Step 8  bare                               → previously ranked; same modules apply

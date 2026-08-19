@@ -2,7 +2,7 @@
 """
 export-findings.py — VisorLog SQLite → JSONL/CSV exporter for OLAP ingest
 
-Reads from the events table in nuclide.db (VisorLog's ECS-normalized schema)
+Reads from the events table in .db (VisorLog's ECS-normalized schema)
 and emits rows shaped to the OLAP fact-table target documented in
 reference/olap-schema-clickhouse.sql + reference/olap-migration.md.
 
@@ -47,11 +47,11 @@ import sqlite3
 import sys
 from pathlib import Path
 
-DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / "nuclide.db"
+DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / ".db"
 
 
 # Controlled vocabularies derived from the observed tag distribution
-# (most-common 200 tags in nuclide.db). Each tag maps to at most one
+# (most-common 200 tags in .db). Each tag maps to at most one
 # classifier axis. Tags not in any vocabulary stay in the `tags` array
 # as-is. Order matters: more-specific frameworks should come before
 # generic class tags.
@@ -233,7 +233,7 @@ def _transform_row(row: sqlite3.Row) -> dict:
         "source_systems":      [row["source"]] if row["source"] else [],
         "survey_version":      "",
         "policy_version":      "",
-        # NuClide-only — preserved for evidence-pack tracing; ClickHouse can ignore
+        # -only — preserved for evidence-pack tracing; ClickHouse can ignore
         "notes":               row["notes"] or "",
         "match_path":          match_path or "",
     }
@@ -292,7 +292,7 @@ def export(db_path: Path, out_path: Path, fmt: str, since_id: int, since_updated
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.strip().split("\n\n")[0])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB,
-                    help=f"Path to nuclide.db (default: {DEFAULT_DB})")
+                    help=f"Path to .db (default: {DEFAULT_DB})")
     ap.add_argument("--output", "-o", type=Path, default=Path("findings.jsonl"),
                     help="Output file path (default: findings.jsonl)")
     ap.add_argument("--format", choices=["jsonl", "csv"], default="jsonl",

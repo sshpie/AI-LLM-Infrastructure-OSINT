@@ -103,4 +103,4 @@ If the operator promotes this to production with real reservation data, customer
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

@@ -104,4 +104,4 @@ Strip rule: confirm with the `/api/session/properties` JSON contract at the veri
 - https://www.metabase.com/docs/latest/security (setup-token, session model)
 - https://github.com/metabase/metabase (engines, /api/session/properties, /api/setup/validate, /api/database)
 - https://nvd.nist.gov/vuln/detail/CVE-2021-41277 (GeoJSON LFI/SSRF)
-- [CANDIDATE - NuClide Cat-16 BI/Dashboard Stage -1 OSINT, Metabase squad, 2026-06-28; software-default characterization, no live host probed]
+- [CANDIDATE -  Cat-16 BI/Dashboard Stage -1 OSINT, Metabase squad, 2026-06-28; software-default characterization, no live host probed]

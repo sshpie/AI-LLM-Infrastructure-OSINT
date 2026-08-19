@@ -1,6 +1,6 @@
 # National Taiwan University: GPU Cluster g1pc2n108, Multimodal Vision Stack
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

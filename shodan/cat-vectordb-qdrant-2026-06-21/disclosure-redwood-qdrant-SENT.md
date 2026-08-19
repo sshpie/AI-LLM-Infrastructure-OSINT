@@ -1,7 +1,7 @@
 # Disclosure: Redwood qPCR Qdrant Exposure
 # Status: SENT 2026-06-21
 # To: investors@redwoodai.com
-# From: nicholas@nuclide-research.com
+# From: 
 # Gmail messageId: 19eea14910f51271
 
 ---
@@ -32,7 +32,7 @@ WRITE AND DELETE ACCESS
 
 curl -X PUT http://35.166.135.187/collections/redwood_qPCR_embeddings_v5/points \
   -H 'Content-Type: application/json' \
-  -d '{"points":[{"id":9999999,"vector":[0,0,0,0,0,0,0,0],"payload":{"nuclide_canary":true}}]}'
+  -d '{"points":[{"id":9999999,"vector":[0,0,0,0,0,0,0,0],"payload":{"_canary":true}}]}'
 -> {"result":{"operation_id":154,"status":"acknowledged"},"status":"ok"}
 
 curl -X POST http://35.166.135.187/collections/redwood_qPCR_embeddings_v5/points/delete \

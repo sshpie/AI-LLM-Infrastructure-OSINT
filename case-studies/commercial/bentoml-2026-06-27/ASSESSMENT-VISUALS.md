@@ -570,7 +570,7 @@ Day 5+: Supply chain impact
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────┐
-│                    NUCLIDE METHODOLOGY: PHASES EXECUTED                    │
+│                     METHODOLOGY: PHASES EXECUTED                    │
 └────────────────────────────────────────────────────────────────────────────┘
 
 ✓ COMPLETED (6 Phases)
@@ -715,7 +715,7 @@ REMEDIATION
 PUBLICATION STATUS
 ────────────────────────────────────────────────────────────────────
  GitHub: COMMITTED ✓ (commit 33da015)
- nuclide-research.com: READY ✓
+ : READY ✓
  CISA advisory: QUEUED ✓
  Public disclosure: PENDING (vendor patch released)
 

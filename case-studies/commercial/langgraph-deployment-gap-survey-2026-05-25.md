@@ -8,7 +8,7 @@ summary: "LangGraph's self-hosted deployment path ships with no authentication. 
 
 # LangGraph's Deployment Gap: Exposed AI Agent Infrastructure at Scale
 
-_NuClide Research · May 2026_
+_ · May 2026_
 
 ---
 

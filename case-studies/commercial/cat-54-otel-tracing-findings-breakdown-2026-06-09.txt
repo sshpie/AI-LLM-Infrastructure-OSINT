@@ -1,6 +1,6 @@
 ================================================================================
 Cat-54  OpenTelemetry / Distributed Tracing — Population Survey & Findings
-Date: 2026-06-09  |  Researcher: Nicholas Kloster (NuClide)
+Date: 2026-06-09  |  Researcher:  ()
 Wardrobe outfit: ai-infra-hunt (13 atoms)
 DCWF roles: 672 AI T&E  +  733 AI Risk/Ethics
 Hypothesis tested: auth-on-default in the substrate-monitoring tier

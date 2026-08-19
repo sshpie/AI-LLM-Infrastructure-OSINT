@@ -5,13 +5,13 @@
 **Cohort:** 491 IPs base, 619 IPs after multi-source discovery scale-up
 **Estimated true population:** ~12,577 Sub2API + Grok2API hosts (Shodan body-substring tally), 16,623 Sub2API-favicon-hash hosts (Shodan facet tally)
 **DCWF synthesis stance:** 511 Cyber Defense Analyst + 612 Security Control Assessor (final stage)
-**Authorization:** Independent NuClide research, read-only; Mullvad Phoenix exit; zero POSTs, zero `/v1/chat/completions`, zero MySQL handshake completions, zero auth attempts.
+**Authorization:** Independent , read-only; Mullvad Phoenix exit; zero POSTs, zero `/v1/chat/completions`, zero MySQL handshake completions, zero auth attempts.
 
 ---
 
 ## 1. Executive Summary
 
-NuClide ran a fourteen-stage population study on the Chinese OSS LLM-jacking proxy ecosystem (Sub2API + Grok2API + four cousin platforms). The investigation lifted off from a single Grok2API host (`137.184.42.189`) on 2026-06-08, expanded to a 491-IP cohort via Shodan UI pagination plus active TCP/TLS scan, and reached 619 unique origin IPs after a five-vector discovery scale-up (Shodan favicon-hash, CT logs, reverse-IP, GitHub leak-mining, awesome-list aggregation). The verified sample is roughly 4.9% of the estimated 12,577-host true population.
+ ran a fourteen-stage population study on the Chinese OSS LLM-jacking proxy ecosystem (Sub2API + Grok2API + four cousin platforms). The investigation lifted off from a single Grok2API host (`137.184.42.189`) on 2026-06-08, expanded to a 491-IP cohort via Shodan UI pagination plus active TCP/TLS scan, and reached 619 unique origin IPs after a five-vector discovery scale-up (Shodan favicon-hash, CT logs, reverse-IP, GitHub leak-mining, awesome-list aggregation). The verified sample is roughly 4.9% of the estimated 12,577-host true population.
 
 The driving question, per Nick: *"are these connected to anything important?"* — gov / `.edu` / `.mil` / `.bank` / hospital / healthcare / Fortune-500 / defense / critical-infrastructure. Across thirteen independent verification layers — ASN, PTR, banner content, TLS SAN, AWS GovCloud and Azure Gov CIDR, US-university ASN list, DoD ASN list, per-host classifier, OIDC discovery (RFC 8414), HTML branding (`og:` / `<meta>` / `<link rel="canonical">`), CSP allowlist (RFC 7762), `/.well-known/security.txt` (RFC 9116), Sub2API operator-config (`window.__APP_CONFIG__` + `registration_email_suffix_whitelist` + Set-Cookie SSO middleware), JS bundle deep-code scan, sourcemap mining, and WebSocket URL literals — the answer is **zero** US-side gov / edu / mil / bank / hospital / Fortune-500 attribution at the infrastructure, operator-config, and code-level layers. The only customer-side sector attribution is **CN-academic** on two unrelated IPs (`207.211.155.22` and `23.94.237.184`) via the `*.edu.cn` and `@edu.cn` registration whitelists.
 
@@ -214,7 +214,7 @@ Per `sans-community-tool-recon.md`, ten tools were evaluated for accelerating pe
 
 **6 herald YAMLs delivered as bonus:** `sub2api.yml`, `grok2api.yml`, `openclaw.yml`, `qclaw.yml`, `oxen-saferun.yml`, `eggy-ros.yml` — written during this investigation to make Class A/B/C/D classification reproducible at population scale via `herald check <ip>` rather than ad-hoc per-host probes.
 
-The investigation also confirmed a tooling gap: **no public tooling exists for OpenAI/Anthropic key-abuse detection at population scale.** Every search returned zero usable repos. NuClide is in unmapped territory; the LJP-OSS detection gap is real, not just unmeasured.
+The investigation also confirmed a tooling gap: **no public tooling exists for OpenAI/Anthropic key-abuse detection at population scale.** Every search returned zero usable repos.  is in unmapped territory; the LJP-OSS detection gap is real, not just unmeasured.
 
 ---
 
@@ -232,7 +232,7 @@ The investigation also confirmed a tooling gap: **no public tooling exists for O
 
 ## 10. Disclosure Posture
 
-Per `feedback_no_disclosure_recommendations` and the broader NuClide restraint ethic on non-engagement targets: **none**.
+Per `feedback_no_disclosure_recommendations` and the broader  restraint ethic on non-engagement targets: **none**.
 
 The PRC-resident operator + US-resident researcher + US-jurisdiction infrastructure intersection creates a credible disclosure friction (which party to disclose to, in which jurisdiction, with what evidence chain). The case-study posture is **document and codify**, not **disclose**. The methodology insights, population estimates, class distribution, and architectural-pattern findings are publishable. The operator-side attribution for `dealonhorizon.us` and the 2 Class B storefronts is reserved for a future engagement context, not surfaced publicly here.
 

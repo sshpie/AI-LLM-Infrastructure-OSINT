@@ -8,7 +8,7 @@ tags: [promptfoo, langsmith, eval, red-team, unauth, UNAUTH, ai-safety]
 
 # AI Evaluation and Red-Team Platform Survey — Promptfoo Population Pass
 
-_NuClide Research · 2026-05-28 · Population sweep of 13 AI eval/red-team platforms. Four confirmed unauthenticated Promptfoo instances. LangSmith, TruLens, Inspect AI, HELM, DeepEval, PyRIT, Garak all null at population scale._
+_ · 2026-05-28 · Population sweep of 13 AI eval/red-team platforms. Four confirmed unauthenticated Promptfoo instances. LangSmith, TruLens, Inspect AI, HELM, DeepEval, PyRIT, Garak all null at population scale._
 
 ## Summary
 

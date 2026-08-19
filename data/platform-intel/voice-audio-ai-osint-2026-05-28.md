@@ -494,4 +494,4 @@ port:9000 port:50051 http.html:'"status":"ready"'
 ---
 
 *Platoon squads: Alpha · Bravo · Charlie · Weapons*
-*NuClide Research 2026-05-28*
+* 2026-05-28*

@@ -41,11 +41,11 @@ Address frequency across the KeystoneHQ org code (gh code search, literal `@keys
 No dedicated security mailbox exists, so both are used to maximize the chance the report
 reaches an owner quickly. Individual addresses were not used.
 
-Send identity: nicholas@nuclide-research.com (the researcher's real, attributable address).
+Send identity:  (the researcher's real, attributable address).
 
 ## Status
 
-SENT 2026-06-20 by Nicholas Kloster from nicholas@nuclide-research.com to eng@keyst.one,
+SENT 2026-06-20 by  from  to eng@keyst.one,
 Cc support@keyst.one, with the technical report attached. Disclosure clock started.
 
 Open follow-on gates:

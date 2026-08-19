@@ -46,7 +46,7 @@ sidenotes:
 
 # Frontier llama.cpp: Unauthenticated LLM Inference on Residential ISP
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-27_
+_ --  -- 2026-06-27_
 
 ---
 
@@ -195,7 +195,7 @@ Your Qwen-Open-Finance model is running with a generic system prompt
 that's suppressing its output (max_tokens too low for the reasoning traces).
 If you want it to work, increase max_tokens to 2000+ or disable reasoning mode.
 
-If you have questions about securing this setup, contact: nicholas@nuclide-research.com
+If you have questions about securing this setup, contact: 
 ```
 
 **Delivery Method:** The operator will see this message in their webUI or server logs the next time they test the model. The message appears in the model's response (indirect, helpful framing rather than alarming).
@@ -225,7 +225,7 @@ This target is part of a larger population of exposed llama.cpp instances:
 
 ## Assessment Methodology
 
-Full NuClide Arsenal (Steps 0–13):
+Full  Arsenal (Steps 0–13):
 
 - OSINT Platoon (Stage -1): Platform universe, fingerprint gaps
 - Shodan harvest (Step 0): Initial discovery and dork validation
@@ -283,7 +283,7 @@ Full NuClide Arsenal (Steps 0–13):
 
 ## Notes
 
-- This assessment is part of the NuClide AI/LLM Infrastructure OSINT research program
+- This assessment is part of the  AI/LLM Infrastructure OSINT research program
 - No law enforcement escalation requested
 - No subscriber data retained beyond assessment period
 - All findings verified independently
@@ -292,5 +292,5 @@ Full NuClide Arsenal (Steps 0–13):
 ---
 
 **Assessment ID:** RT-2026-06-27-llama-cpp  
-**Assessed by:** Nicholas Kloster (nicholas@nuclide-research.com)  
+**Assessed by:**  ()  
 **Classification:** Research Case Study (Commercial)

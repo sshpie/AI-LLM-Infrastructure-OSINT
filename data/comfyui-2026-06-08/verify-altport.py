@@ -15,7 +15,7 @@ from pathlib import Path
 
 HONEYPOT_SALT = "wW0sffoqsk.EM"
 TIMEOUT = 5
-HEADERS = {"User-Agent": "NuClide-Research/comfyui-altport-2026-06-08"}
+HEADERS = {"User-Agent": "/comfyui-altport-2026-06-08"}
 
 
 def probe(ip_port: str) -> dict:

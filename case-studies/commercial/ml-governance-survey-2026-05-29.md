@@ -145,7 +145,7 @@ menlohunt    Marquez host: SSH + Marquez only, 0 chains (isolated)
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only without live key
 VisorPlus    components run individually
-VisorLog     25 events via aimap adapter -> nuclide.db
+VisorLog     25 events via aimap adapter -> .db
 VisorScuba   25 hosts passing (version-disclosure INFO; Marquez-unauth unmapped, gap)
 BARE         no MSF coverage (0.547/0.427) first-party/novel
 VisorCorpus  N/A no LLM-adjacent surface (catalogs, not inference)

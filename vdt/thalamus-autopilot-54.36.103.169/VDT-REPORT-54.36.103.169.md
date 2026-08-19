@@ -2,7 +2,7 @@
 
 **Target:** Thalamus ROS 2 Autopilot Mission Backend  
 **Assessment Date:** 2026-07-09  
-**Operator:** NuClide Research (Nick Kloster)  
+**Operator:**  (Nick Kloster)  
 **VDT Context:** Authorized penetration testing (defensive training data collection)
 
 ---

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ipmap — per-IP investigation harness for a NuClide survey.
+"""ipmap — per-IP investigation harness for a  survey.
 
 Fuses every per-host data source into one dossier and clusters hosts by operator:
   Shodan /host SSR dossier (org/isp/asn/geo/ports/cves/hostnames)

@@ -1,12 +1,12 @@
 # Red Rocks Community College: Open WebUI v0.9.2 on `datalab02.rrcc.edu` — Auth-On + LDAP (First Community College in Survey)
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 
 ## Summary
 
-Red Rocks Community College runs an Open WebUI instance at `datalab02.rrcc.edu` (164.47.99.16:8080). `/api/config` returned Open WebUI v0.9.2 with `enable_signup: false` (auth-on; no signup-open class) and `enable_ldap: true` (LDAP federation backend enabled). Properly configured closed-enrollment deployment. **First community college observed in the NuClide .edu LLM-infra ledger.**
+Red Rocks Community College runs an Open WebUI instance at `datalab02.rrcc.edu` (164.47.99.16:8080). `/api/config` returned Open WebUI v0.9.2 with `enable_signup: false` (auth-on; no signup-open class) and `enable_ldap: true` (LDAP federation backend enabled). Properly configured closed-enrollment deployment. **First community college observed in the  .edu LLM-infra ledger.**
 
 ---
 
@@ -120,6 +120,6 @@ No tier labels assigned per survey convention. Documented for sector expansion (
 
 ## Sector expansion note
 
-This is the first community college in the NuClide university ledger. Earlier sweeps focused on 4-year research universities (the population most likely to deploy LLM infrastructure). The presence of RRCC in this sweep suggests the .edu LLM-infra population extends to 2-year colleges and possibly K-12 districts (the Hungarian Szemere Bertalan Vocational High School caught by visorgoose in the same wave-2 run is the international parallel — see `WAVE2-FINDINGS.md`).
+This is the first community college in the  university ledger. Earlier sweeps focused on 4-year research universities (the population most likely to deploy LLM infrastructure). The presence of RRCC in this sweep suggests the .edu LLM-infra population extends to 2-year colleges and possibly K-12 districts (the Hungarian Szemere Bertalan Vocational High School caught by visorgoose in the same wave-2 run is the international parallel — see `WAVE2-FINDINGS.md`).
 
 A follow-up survey scoped to `hostname:.cc.*.edu` (community college subdomain convention in many state systems) and `hostname:.k12.*.us` (K-12 district convention) would extend the sector coverage and validate whether the deployment template observed here (Open WebUI 0.9.2 + LDAP) is more broadly used in lower-resource institutional contexts.

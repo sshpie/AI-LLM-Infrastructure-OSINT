@@ -252,7 +252,7 @@ it, add AI.C10 for `webhook_unauth` class findings.
 [x] recongraph     ODPC + Uludağ Elektrik — 0 passive nodes (no Shodan seed)
 [x] nu-recon       simulated mode — ODPC + payment bot; port 22 FP (simulated)
 [x] VisorPlus      assess on 2 priority targets
-[x] VisorLog       6 findings ingested to nuclide.db (#1-#6)
+[x] VisorLog       6 findings ingested to .db (#1-#6)
 [x] VisorScuba     AI.C1 FP on all 6 — "Unauthenticated Ollama" on non-Ollama (2nd instance)
 [x] BARE           RASA-1 through RASA-5: 0.377-0.481, all below 0.55 threshold — no msf coverage
 [x] VisorCorpus    baseline corpus built (50 PI + KB-exfil cases, domain=hr)
@@ -281,4 +281,4 @@ it, add AI.C10 for `webhook_unauth` class findings.
 6. **Disclose ODPC Kenya** — government data protection authority; contact surface at
    odpc.go.ke. Operator decision by Nick.
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Opus 4.7) · Session 34 · 2026-05-22*
+*Prepared by  ( + Claude Opus 4.7) · Session 34 · 2026-05-22*

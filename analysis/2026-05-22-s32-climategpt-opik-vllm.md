@@ -45,7 +45,7 @@ Single orchestrator session. No subagents dispatched. Sequential tool invocation
 | aimap v1.9.22 | Stage-1 port scan + AI service fingerprint | Default port set. Found 22 (SSH), 9100. Port 5173 absent from scan set. No Opik fingerprint. |
 | aimap-profile | Target classification, WHOIS, honeypot scoring | Full mode. NL-INFO-DTN-1, DTN Amsterdam, Ubuntu 20.04. Shodan lookup failed (key invalid). Honeypot score: 0. |
 | VisorGraph | Cert-pivot, operator attribution | 0 nodes, 0 edges. HTTP-only host, no TLS cert to pivot from. |
-| VisorLog | Ledger ingest | 4 findings added. IDs 35926-35929. nuclide.db. |
+| VisorLog | Ledger ingest | 4 findings added. IDs 35926-35929. .db. |
 | VisorScuba | Compliance scoring (OPA/Rego) | All 4 entries: AI.C1 violation, 0/10. |
 | BARE | Metasploit semantic ranking | 3 findings submitted. No coverage (vLLM 0.464, Opik 0.487, Prometheus 0.521 -- all below 0.55 threshold). Novel first-party AI authz class. |
 | VisorCorpus | Adversarial corpus generation | 46-payload focused corpus built (prompt_injection, jailbreak, system_prompt). For use against controlled targets. |
@@ -125,7 +125,7 @@ No inference requests issued. No write operations against Opik (projects, experi
 | 12:37 | `whois 80.79.202.18` | DTN Amsterdam, abuse@info.nl, 80.79.192.0/20. |
 | 12:38 | `visorlog add x4` | IDs 35926 (HIGH), 35927 (CRITICAL), 35928 (HIGH), 35929 (HIGH). |
 | 12:40 | `bare /tmp/climategpt_bare.json --top 3 --min-score 0.25` | No coverage for any finding (top scores < 0.55). Novel first-party AI authz class confirmed. |
-| 12:41 | `visorscuba assess --db nuclide.db` | 4x AI.C1, 0/10. Maximum penalty. |
+| 12:41 | `visorscuba assess --db .db` | 4x AI.C1, 0/10. Maximum penalty. |
 | 12:42 | `visorcorpus build -type focused` | 46-payload corpus: prompt_injection, jailbreak, system_prompt. |
 | 12:44 | Write case study | `case-studies/commercial/climategpt-opik-vllm-2026-05-22.md` written. |
 | 12:45 | Update SESSION.md | S31 entry appended with ClimateGPT findings. |
@@ -436,4 +436,4 @@ RESPONSE (sanitised -- project names preserved as found):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 32 · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 32 · 2026-05-22*

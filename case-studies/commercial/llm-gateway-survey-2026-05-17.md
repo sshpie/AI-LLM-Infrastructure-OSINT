@@ -4,7 +4,7 @@ type: synthesis
 
 # LLM gateway / proxy population survey, 2026-05-17
 
-_NuClide Research, 2026-05-17 (night pass)_
+_, 2026-05-17 (night pass)_
 _Survey #21 in the AI infrastructure series._
 
 ---
@@ -168,7 +168,7 @@ aimap v1.9.11   [x] new One API + NewAPI fingerprints; 391 service hits in 1h08m
 classifier      [x] Insight #30 multi-port honeypot filter: 0 OneAPI honeypots
 visorgraph      [ ] queued — cert-pivot the highest-traffic 20 for operator IDs
 visorlog        [ ] queued ingest
-nuclide-contact [ ] not run — population-scale disclosure goes upstream, not per-host
+-contact [ ] not run — population-scale disclosure goes upstream, not per-host
 ```
 
 ---

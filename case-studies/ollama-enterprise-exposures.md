@@ -1,6 +1,6 @@
 # Case Study: Ollama Unauthenticated Exposure: Enterprise Targets
 
-**Researcher:** Nicholas Kloster, Nuclide Research (nicholas@nuclide-research.com)  
+**Researcher:** ,  ()  
 **Date:** 2026-05-01  
 **Vulnerability:** Unauthenticated `/api/create` model injection, all Ollama versions  
 **CVE Reference:** CVE-2025-63389 (filed 2025-12-18, scoped ≤v0.13.5, `first_patched_version: null`, scope understated, never patched)  
@@ -149,6 +149,6 @@ All instances on all providers are affected. No Ollama version has ever shipped 
 
 ## Contact
 
-**Nicholas Kloster, Nuclide Research**  
-nicholas@nuclide-research.com  
+**, **  
+  
 Coordinated disclosure in progress with Ollama and affected parties.

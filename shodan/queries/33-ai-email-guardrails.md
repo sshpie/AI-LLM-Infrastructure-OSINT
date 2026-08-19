@@ -87,7 +87,7 @@ Frontier social-engineering / agent-side safety. Possibly relevant. Footprint sp
 | API-layer outbound guardrails | unknown; SaaS, indirect | category-adjacent §24 |
 | General Haraka MTAs (broad seed) | several thousand | Shodan `product:"Haraka"` |
 
-The category is **net-new as of 2026-06-06** for NuClide. Sluice is platform 1.
+The category is **net-new as of 2026-06-06** for . Sluice is platform 1.
 
 ---
 
@@ -102,7 +102,7 @@ The category is **net-new as of 2026-06-06** for NuClide. Sluice is platform 1.
 - Platform JSON: [`tome/platforms/sluice.json`](../../../tome/platforms/sluice.json)
 - aimap fingerprint: `~/ai-recon/aimap/fingerprints.go` ("Sluice" entry, added 2026-06-06 v1.9.53-pending)
 - Adjacent category: [§24 LLM Safety / Guardrails / Policy](24-llm-safety-guardrail-policy.md)
-- Inbound counterpart: classic AI-for-email-security (Abnormal, Sublime, Material): not in NuClide scope, all SaaS-only
+- Inbound counterpart: classic AI-for-email-security (Abnormal, Sublime, Material): not in  scope, all SaaS-only
 
 
 ---

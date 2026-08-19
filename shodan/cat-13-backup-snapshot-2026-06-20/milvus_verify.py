@@ -20,7 +20,7 @@ def get(ip,port,path):
     try: s=socket.create_connection((ip,port),timeout=CONNECT_T)
     except Exception: return None
     try:
-        s.sendall(f"GET {path} HTTP/1.1\r\nHost: {ip}\r\nUser-Agent: nuclide-cat13-verify\r\nConnection: close\r\n\r\n".encode())
+        s.sendall(f"GET {path} HTTP/1.1\r\nHost: {ip}\r\nUser-Agent: -cat13-verify\r\nConnection: close\r\n\r\n".encode())
         s.settimeout(READ_T); b=b""
         while len(b)<CAP:
             try: c=s.recv(8192)

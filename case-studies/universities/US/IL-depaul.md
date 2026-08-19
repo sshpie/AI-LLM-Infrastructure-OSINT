@@ -1,6 +1,6 @@
 # DePaul University: Campus-Wide Port-3000 Population — Live Open WebUI Auth-On, DHCP-Rotated Hosts, Mixed Student Dev Work
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

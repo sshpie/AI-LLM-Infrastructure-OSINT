@@ -1,6 +1,6 @@
 # China Telecom Tianjin: 46-Node Multi-Tenant Ollama Cluster
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

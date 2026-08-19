@@ -3,9 +3,9 @@ findings-breakdown.txt — Cat-MCP-Cred-Fleet 2026-06-10 reproduction survey
 
 Date:               2026-06-10
 Survey type:        Follow-on / Insight #97 promotion attempt
-Origin:             Live-research session under /nuclide; explicit promotion path
+Origin:             Live-research session under /; explicit promotion path
                     set in 2026-06-09 SESSION.md "What's next" item #1
-Researcher:         Nicholas Kloster (NuClide Research)
+Researcher:          ()
 Methodology:        ASSESSMENT CHAIN (CLAUDE.md, 2026-06-04 single source of truth)
                     Stage -1 (tome corpus write) -> Stage 0 (Shodan-Playwright census)
                     -> Stage 0c (active banner via mcp-initialize-probe.py)

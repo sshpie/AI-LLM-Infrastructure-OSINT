@@ -1,6 +1,6 @@
 ---
 to: abuse@hetzner.com
-cc: security@unistarthubs.gr, abuse@nuclide-research.com
+cc: security@unistarthubs.gr, abuse@
 severity: CRITICAL
 ip: 135.181.252.66
 institution: Unistart Hubs (Greek startup hub / Pharos AI Assistant, multi-platform AI stack exposure on Hetzner DE)
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@hetzner.com
-**Cc:** security@unistarthubs.gr, abuse@nuclide-research.com
+**Cc:** security@unistarthubs.gr, abuse@
 **Subject:** Multi-platform AI stack exposure, Langfuse signup-open + leaked CLIENT_SECRET + unauth Milvus + open Attu admin, 135.181.252.66 (pharos.unistarthubs.gr)
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering a Hetzner customer host that exposes a four-platform AI stack with no authentication chain.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification covering a Hetzner customer host that exposes a four-platform AI stack with no authentication chain.
 
 ---
 
@@ -51,7 +51,7 @@ The chain:
 
 Combined, the attacker has the operational logs, the persistent memory, an admin UI to the data substrate, and a backend application secret. **This is a CRITICAL operator catastrophe.**
 
-Found during NuClide Research's cross-survey-correlation Langfuse probe (2026-05-06). Verification was non-destructive: only fingerprint endpoints (`/api/public/health`, `/api/v1/heartbeat`, `/env.js`, `/static/js/main.*.js`) were called. No accounts were registered, no traces were exfiltrated, no Milvus collections were searched, no admin operations were performed. The leaked `CLIENT_SECRET` was observed in the public response and is reproduced below for evidence; it has not been used for authentication.
+Found during 's cross-survey-correlation Langfuse probe (2026-05-06). Verification was non-destructive: only fingerprint endpoints (`/api/public/health`, `/api/v1/heartbeat`, `/env.js`, `/static/js/main.*.js`) were called. No accounts were registered, no traces were exfiltrated, no Milvus collections were searched, no admin operations were performed. The leaked `CLIENT_SECRET` was observed in the public response and is reproduced below for evidence; it has not been used for authentication.
 
 Full case study with technical detail, methodology, and evidence:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/langfuse-cross-survey-2026-05-06.md
@@ -87,7 +87,7 @@ window.APP_CONFIG = {
 };
 ```
 
-> Note: the actual secret value is not committed to the public NuClide repo. It is held in NuClide's out-of-git evidence file and is transmitted to `abuse@hetzner.com` + `security@unistarthubs.gr` via a separate channel (not via the email built from this `.md`). This avoids amplifying the operator's existing public exposure through NuClide's discoverability footprint while preserving evidence integrity for the recipient.
+> Note: the actual secret value is not committed to the public  repo. It is held in 's out-of-git evidence file and is transmitted to `abuse@hetzner.com` + `security@unistarthubs.gr` via a separate channel (not via the email built from this `.md`). This avoids amplifying the operator's existing public exposure through 's discoverability footprint while preserving evidence integrity for the recipient.
 
 The secret is loaded into the React app's runtime config and is published to every visitor of port 8080. Whatever auth surface it unlocks (Pharos backend chat WebSocket, OAuth flow, or custom session issuer), an unauthenticated attacker has it in hand before any prior credential.
 
@@ -99,7 +99,7 @@ $ curl -s -X POST -H 'Content-Type: application/json' -d '{"dbName":"default"}' 
 {"code":0,"data":["experience_memory","mem0migrations","all","all_v3"]}
 ```
 
-The collection names match the Mem0 framework's standard schema for per-user persistent agent memory. This finding is also documented in NuClide's earlier Milvus survey: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/milvus-cloud-survey-2026-05.md
+The collection names match the Mem0 framework's standard schema for per-user persistent agent memory. This finding is also documented in 's earlier Milvus survey: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/milvus-cloud-survey-2026-05.md
 
 ### 4. Attu Milvus admin GUI on port 3000
 
@@ -192,6 +192,6 @@ ufw allow from <admin-IP> to any port 3000,3001,8080,19530
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

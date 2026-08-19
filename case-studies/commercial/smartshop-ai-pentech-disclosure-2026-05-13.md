@@ -12,7 +12,7 @@ host: 78.135.66.61 (PENTECH BILISIM TEKNOLOJILERI, AS48678, TR)
 
 # SmartShop AI · 78.135.66.61 · 2026-05-13
 
-NuClide Research · 2026-05-13
+ · 2026-05-13
 
 ## Summary
 
@@ -313,7 +313,7 @@ filename hash and the Vercel deployment metadata.
 - `aimap-profile/amazonrec.space.json`: domain-side classification
 - `visorgraph/amazonrec.space.json`: 13-node graph (services, certs, sibling domains)
 - `visorgraph/nadorawear.com.json`, `pendns.net.json`. Sibling-domain graphs
-- `nuclide-contact/*.json`: full disclosure-recipient resolution (4 targets)
+- `-contact/*.json`: full disclosure-recipient resolution (4 targets)
 - `js/smartshop-main.js`: SmartShop AI Vite bundle (335KB)
 - `js/http___78_135_66_61_8080_.html`: Airflow sign-in page snapshot
 - `artifacts/api-probes/openapi.json`: full SmartShop API schema

@@ -4,7 +4,7 @@ type: survey
 
 # VictoriaMetrics on the Public Internet: Auth Posture + Scrape-Topology Leak Survey
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 > **DCWF panel verification corrections (applied 2026-06-08, post-publication).** Four DCWF AI work-role agents audited this case study after first push. The panel reports (`research-program/dcwf-panel-2026-06-08/`) revised several headline numbers and one framing error. Corrections applied below; original published numbers preserved in strikethrough where the delta is material. Key corrections:
 > - Unauth rate **93.5%** (corrected) vs. ~~82.1%~~ — 134 hosts in the "OTHER" bucket are unauth-leaking vmcluster components on a different URL prefix (`/select/{accountID}/prometheus/...`) the verifier did not probe.

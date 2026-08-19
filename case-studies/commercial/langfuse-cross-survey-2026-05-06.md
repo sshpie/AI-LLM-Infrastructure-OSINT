@@ -10,7 +10,7 @@ methodology: cross-survey-correlation
 
 # Langfuse: cross-survey-correlation single-host case study
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Summary
 
@@ -43,9 +43,9 @@ The four exposures chain to give an attacker complete operational visibility int
 
 ## Discovery methodology: when Shodan dies
 
-This case study was produced under an unusual constraint: the Shodan API key tied to NuClide's research account had expired before the survey began. The canonical Shodan-driven discovery (`visorplus full <dork>`, `jaxen hunt`, `visorsd`) was unavailable. CT logs (`crt.sh`, `certspotter`) returned mostly Northflank PaaS addon backends (`langfuse-pg--<id>.addon.code.run`) but very few operator-deployed Langfuse webapp frontends, operators rarely include "langfuse" in subdomain names of self-hosted instances.
+This case study was produced under an unusual constraint: the Shodan API key tied to 's research account had expired before the survey began. The canonical Shodan-driven discovery (`visorplus full <dork>`, `jaxen hunt`, `visorsd`) was unavailable. CT logs (`crt.sh`, `certspotter`) returned mostly Northflank PaaS addon backends (`langfuse-pg--<id>.addon.code.run`) but very few operator-deployed Langfuse webapp frontends, operators rarely include "langfuse" in subdomain names of self-hosted instances.
 
-The fallback methodology applied: **probe the IPs already in the NuClide ledger from prior surveys**. The hypothesis: operators who already expose a Tier-A platform (Ollama, Qdrant, Milvus, MLflow, ChromaDB, vLLM, Streamlit, MinIO, Open WebUI, Specialty Data Layers) may also expose Langfuse on the standard port 3000, same operator, same auth-off pattern, adjacent platform.
+The fallback methodology applied: **probe the IPs already in the  ledger from prior surveys**. The hypothesis: operators who already expose a Tier-A platform (Ollama, Qdrant, Milvus, MLflow, ChromaDB, vLLM, Streamlit, MinIO, Open WebUI, Specialty Data Layers) may also expose Langfuse on the standard port 3000, same operator, same auth-off pattern, adjacent platform.
 
 ### Probe sweep: methodology insight #9
 
@@ -87,7 +87,7 @@ A full Langfuse population survey via Shodan dorks (`"Langfuse" port:3000`, `htt
 | 3000/tcp | **Attu** (Milvus admin GUI) | none on the GUI itself | medium | UI loads anonymously; can connect to the local Milvus on `127.0.0.1:19530` (which has no auth) |
 | 3001/tcp | **Langfuse v3.73.1** | password-only, **signup-open** | **critical** | `signUpDisabled:false`, `authProviders.credentials:true` (only) |
 | 8080/tcp | **Pharos** AI Assistant SPA | `env.js` leaks `CLIENT_SECRET` | **critical** | React app titled "Pharos, Your AI Assistant"; bundle exposes Langfuse public-API integration paths and a Pharos-internal `/api/query/ws/chat/query` chat WebSocket |
-| 19530/tcp | **Milvus** REST/HTTP | **none** | high | Already in NuClide ledger as event #220 (Mem0-on-Milvus deployment); collections `experience_memory`, `mem0migrations`, `all`, `all_v3` |
+| 19530/tcp | **Milvus** REST/HTTP | **none** | high | Already in  ledger as event #220 (Mem0-on-Milvus deployment); collections `experience_memory`, `mem0migrations`, `all`, `all_v3` |
 | 9091/tcp | (Milvus metrics, port closed at probe time) |, |, |, |
 | 443/tcp | (closed; main `unistarthubs.gr` is Cloudflare-fronted) |, |, |, |
 
@@ -127,7 +127,7 @@ window.APP_CONFIG = {
 };
 ```
 
-> **Why redacted here:** the secret is already published by the operator's misconfiguration, but republishing it in NuClide's case study amplifies discoverability beyond the stray JS bundle. The full value is held out-of-git at `~/recon/pharos-langfuse-2026-05-06/env-js-secret.txt` and was included in the disclosure email to `abuse@hetzner.com` + `security@unistarthubs.gr` (sent separately, not included in the disclosure draft committed to this repo). Once the operator confirms remediation (rotation), the case study can be updated to include a hash or partial fingerprint as historical evidence.
+> **Why redacted here:** the secret is already published by the operator's misconfiguration, but republishing it in 's case study amplifies discoverability beyond the stray JS bundle. The full value is held out-of-git at `~/recon/pharos-langfuse-2026-05-06/env-js-secret.txt` and was included in the disclosure email to `abuse@hetzner.com` + `security@unistarthubs.gr` (sent separately, not included in the disclosure draft committed to this repo). Once the operator confirms remediation (rotation), the case study can be updated to include a hash or partial fingerprint as historical evidence.
 
 The secret is loaded into the page as `window.APP_CONFIG.CLIENT_SECRET` and would be referenced by the bundled JS (likely the Pharos chat WebSocket initialization). It is published to every visitor of port 8080 in plain text. Whatever auth surface this secret unlocks (the Pharos backend chat WebSocket, an OAuth integration, or a custom session-issuer flow), an unauthenticated attacker has the secret in hand without any prior credential.
 
@@ -172,7 +172,7 @@ Pass 1: cross-probe.py port 3000        →   0 confirmed Langfuse from 723 ledg
 Pass 2: altports-probe.py 3001/8080/443/80 →   1 confirmed → 135.181.252.66:3001
 visorgraph -domain unistarthubs.gr      →   cert pivot (4 nodes / 1 edge), confirmed cert SANs
 aimap-profile --target 135.181.252.66 --mode fast →  full passive recon: rDNS, MX, neighbors, web surface
-nuclide-contact --ip 135.181.252.66     →   rDNS pivot pharos.unistarthubs.gr; recipient pattern resolved
+-contact --ip 135.181.252.66     →   rDNS pivot pharos.unistarthubs.gr; recipient pattern resolved
 JS extraction (curl + grep)             →   Pharos env.js CLIENT_SECRET leak; Langfuse SDK integration paths
 visorlog add (event #862)               →   ledger entry, severity critical
 visorscuba assess                       →   2 violations (AI.C1 + AI.H1); score 0/0
@@ -182,7 +182,7 @@ visorcorpus build (kb_exfil + system_prompt + config_secrets) →  46-case adver
 
 ## Methodology Insight #9: cross-survey-correlation as Shodan-free fallback
 
-When Shodan API access is unavailable, the next-best discovery vector for an additional platform-class survey is the **set of IPs already confirmed exposed in prior NuClide surveys**. This vector has three properties:
+When Shodan API access is unavailable, the next-best discovery vector for an additional platform-class survey is the **set of IPs already confirmed exposed in prior  surveys**. This vector has three properties:
 
 1. **Free**, no API credits, no rate limits.
 2. **Pre-validated targets**, every IP in the ledger is a known operator who has already shipped at least one auth-off platform; the priors for them shipping a second auth-off platform are higher than population baseline.
@@ -223,7 +223,7 @@ A third channel, Greek national CSIRT (`info@csirt.gr` for ENISA-coordinated dis
 
 ## References
 
-- VisorLog event #862, `data/nuclide.db`, source `nuclide-langfuse-cross-probe-2026-05-06`
+- VisorLog event #862, `data/.db`, source `-langfuse-cross-probe-2026-05-06`
 - VisorScuba violations, AI.C1 (auth-required default), AI.H1 (cloud-proxy paid-quota exposure)
 - VisorCorpus adversarial corpus, `/tmp/visorcorpus-langfuse-trace-exfil.json` (46 cases, kb_exfiltration + system_prompt + config_secrets categories)
 - aimap fingerprint, `fingerprints.go:291` Langfuse entry

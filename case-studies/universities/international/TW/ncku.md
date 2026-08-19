@@ -1,6 +1,6 @@
 # National Cheng Kung University (NCKU): RTX 3090 GPU Server, Non-Standard Port, Credential Leak
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

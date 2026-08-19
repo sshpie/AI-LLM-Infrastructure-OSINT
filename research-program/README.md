@@ -1,4 +1,4 @@
-# NuClide Research Program
+#  Program
 
 This directory is an **index over the entire research program**. It does not contain primary artifacts — case studies live in `../case-studies/`, tools live in their own repos, academic papers live in `~/Documents/cs*-aisecure/`, and NICE pathway PDFs live in `~/Documents/dod-cyber-pathways/`. This directory links them together so nothing falls through the cracks.
 
@@ -41,9 +41,9 @@ A single Phoenix case study, for example, is listed in:
 
 ## Repo visibility
 
-This directory is in `nuclide-research/AI-LLM-Infrastructure-OSINT`, a **public** repo. Therefore:
+This directory is in `/AI-LLM-Infrastructure-OSINT`, a **public** repo. Therefore:
 
 - **Operator names, contact details, and specific institutional identifiers** that already appear in case studies stay in case studies (they're already public there by Nick's choice).
 - **Disclosure pipeline state** is tracked here at an abstraction level — target ID, severity, status — not contact methods or sensitive coordination details.
-- **Personal contact details** for the researcher (Nicholas Kloster) are NOT placed here; the OSINT repo's contact policy is `nuclide-research.com` only.
-- **Internal methodology notes** that aren't ready for public publication go to `~/.claude/nuclide-internal/`, not here.
+- **Personal contact details** for the researcher () are NOT placed here; the OSINT repo's contact policy is `` only.
+- **Internal methodology notes** that aren't ready for public publication go to `~/.claude/-internal/`, not here.

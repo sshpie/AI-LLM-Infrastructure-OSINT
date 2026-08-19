@@ -30,7 +30,7 @@ scope), VisorCorpus/VisorAgent/VisorRAG (no LLM-adjacent surface; ethical-stop),
 VisorHollow (Windows-only), JS-bundle (catalogs serve own UI).
 
 ### Notable Configuration
-aimap v1.9.39. nuclide.db at ~/visorlog/nuclide.db (visorlog ingest --db
+aimap v1.9.39. .db at ~/visorlog/.db (visorlog ingest --db
 explicit, lesson carried from cat-17). Workspace ~/recon/ml-governance-2026-05-29/.
 
 ## 3. Methodology
@@ -71,7 +71,7 @@ No CKAN write operations. Marquez read namespace names only.
 13. aimap-profile: unclassified/commercial, no honeypot, no ethics flags
 14. menlohunt IP-shadow on Marquez host -> SSH + Marquez only, 0 chains (isolated)
 15. VisorGraph 0 nodes; VisorBishop severity=none, no ip-shadow
-16. VisorLog: 25 events via aimap adapter -> nuclide.db
+16. VisorLog: 25 events via aimap adapter -> .db
 17. VisorScuba: 25 passing/0 violations; BARE: no MSF coverage
 18. Wrote case study, query file 28-ml-governance.md, findings-breakdown, this analysis
 ```

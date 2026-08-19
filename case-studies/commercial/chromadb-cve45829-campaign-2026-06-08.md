@@ -4,7 +4,7 @@ type: post-disclosure-survey
 
 # CVE-2026-45829 (ChromaToast) — Post-Disclosure Sweep + 80 Unrelated Disclosure Candidates
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 > **Verification correction (mid-investigation):** initial framing labeled the canary deposition pattern an "adversary campaign." External-intel cross-check during Stage -1+ (Hadrian's disclosure blog, HiddenLayer's research note, CSA Labs synthesis) revealed the `/nonexistent/cve45829{rand_text_alpha(16)}` payload is **Hadrian's published detection template** for CVE-2026-45829 (ChromaToast). Per-host RAND tokens match `rand_text_alpha(16)` exactly: 50 unique characters across 7 sampled tokens, no digits, mixed-case letters only — confirming the payload formatter. The attribution shifts from "novel adversary campaign" to **"derivative scanner run by an unknown party, ~2 weeks post-public-disclosure, against the Shodan-discoverable population, leaving paired-canary collections (`probe-base-<ns>` + `probe-ef-<ns>`) per host."** The persistence finding (201/307 still carry the canaries 6 days later) stands regardless of actor intent. The actor remains unidentified; the pattern fits a researcher running a remediation-measurement sweep more than active exploitation.
 
@@ -169,7 +169,7 @@ These 80 hosts have real, non-canary collections and are the disclosure pipeline
 
 ### Insight #79 candidate — "auth-on-default ≠ exploit-immune"
 
-The campaign exploits the SAME auth-on-default thesis that drives NuClide's surveys: Chroma ships with no auth on the network listener by default. But the canary persistence (65% of hosts still carry probe collections 6 days later) reveals a deeper signal — operators are not running collection-level monitoring. The attacker created paired named collections in `default_tenant.default_database` (the well-known path), and 201 operators have not noticed.
+The campaign exploits the SAME auth-on-default thesis that drives 's surveys: Chroma ships with no auth on the network listener by default. But the canary persistence (65% of hosts still carry probe collections 6 days later) reveals a deeper signal — operators are not running collection-level monitoring. The attacker created paired named collections in `default_tenant.default_database` (the well-known path), and 201 operators have not noticed.
 
 Operators with monitoring would have alerted on:
 - New collection creation outside their deployment pipeline
@@ -186,13 +186,13 @@ If a 60-line diff finds the campaign in 24 seconds, the operators running these 
 
 ---
 
-## NuClide Posture
+##  Posture
 
 No data was read from any compromised or clean host beyond `/api/v1/collections` and `/api/v2/tenants/default_tenant/databases/default_database/collections`. No `/get`, no `/query`, no inference calls. Per the restraint ethic: the collection metadata IS the finding; the contents need not be exfiltrated to demonstrate that the host is open and that the attacker is already there.
 
-The compromised hosts are not in scope for NuClide disclosure — the campaign attacker should be reported to the hosting providers via abuse channels, and CVE-2026-45829 details should be cross-referenced with the Chroma security team. NuClide's role here is forensic attribution and pattern preservation, not patching the campaign victims.
+The compromised hosts are not in scope for  disclosure — the campaign attacker should be reported to the hosting providers via abuse channels, and CVE-2026-45829 details should be cross-referenced with the Chroma security team. 's role here is forensic attribution and pattern preservation, not patching the campaign victims.
 
-The 80 CLEAN-OPEN hosts are the standard NuClide disclosure pipeline.
+The 80 CLEAN-OPEN hosts are the standard  disclosure pipeline.
 
 ---
 

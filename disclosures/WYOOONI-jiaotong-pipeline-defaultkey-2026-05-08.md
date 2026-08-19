@@ -15,8 +15,8 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 2026-05-08
 
 This is an unsolicited good-faith coordinated-disclosure notification. I was unable to find a security contact for wyoooni.net, so I am reaching admin@wyoooni.net. Please forward to your system administrator immediately.
@@ -61,7 +61,7 @@ $ curl -s -H "Authorization: Bearer 0p3n-w3bu!" \
 {"max_tokens":2048,"temperature":0.7,"debug":false}
 ```
 
-The `0p3n-w3bu!` key is the well-known default credential for the OpenWebUI Pipelines project and is documented publicly. It is not a secret NuClide discovered. It is a factory default that was never rotated.
+The `0p3n-w3bu!` key is the well-known default credential for the OpenWebUI Pipelines project and is documented publicly. It is not a secret  discovered. It is a factory default that was never rotated.
 
 **n8n workflow automation:** `agent.wyoooni.net` serves an n8n instance (nginx reverse proxy). The `/rest/settings` endpoint is publicly accessible (no auth required) and confirms the SSO OIDC configuration. n8n workflow execution appears to require authentication; however the public settings endpoint leaks the OIDC login URL and authentication configuration details.
 
@@ -116,7 +116,7 @@ Evidence bundle preserved locally with SHA-256 manifest, server-asserted `Date:`
 ---
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+Nicholas Michael Kloster / 
+
+https://
 AI-LLM-Infrastructure-OSINT

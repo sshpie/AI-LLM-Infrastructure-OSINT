@@ -1,6 +1,6 @@
 # Binh Duong University: Account Takeover, Contabo VPS (`itu.edu.vn`)
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

@@ -432,4 +432,4 @@ RESPONSE B:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-05-10 AI observability survey (Phase 1)*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-05-10 AI observability survey (Phase 1)*

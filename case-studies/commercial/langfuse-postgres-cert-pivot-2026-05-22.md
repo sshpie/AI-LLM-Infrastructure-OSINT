@@ -324,7 +324,7 @@ The data-tier dork delivered an operator attribution surface. The finding came f
 | VisorGraph | Cert pivot on 34.0.11.208 → agenthub.dev01.cygnusalpha.one (pivotal finding) |
 | aimap-profile | Ran; WHOIS resolved Google LLC; Shodan API unavailable |
 | JS-bundle | Not applicable — Next.js SSR, no CDN-fronted SPA pattern |
-| VisorLog | 6 events ingested to nuclide.db |
+| VisorLog | 6 events ingested to .db |
 | VisorScuba | Score 9/10; 1 warn (signup-open = AI.H1 effective-unauth path) |
 | BARE | 0/5 MSF coverage; novel finding class; top score 0.515 (Redis) |
 | VisorCorpus | Focused corpus built (prompt_injection, system_prompt, kb_exfiltration, cross_tenant_leak) |
@@ -393,7 +393,7 @@ Cert-pivot: visorgraph -ip 34.0.11.208 → agenthub.dev01.cygnusalpha.one
 DNS-enum:   socket.gethostbyname * 8 subdomains
 App-probe:  urllib.request → /api/public/health, /auth/sign-up, __NEXT_DATA__
 Port-sweep: menlohunt scan -ip 34.0.11.208 → 9 findings
-Ingest:     visorlog ingest → nuclide.db (6 events)
+Ingest:     visorlog ingest → .db (6 events)
 Score:      VisorScuba 9/10 (1 warn signup-open)
 BARE:       0/5 MSF coverage (novel class)
 Corpus:     visorcorpus build -type focused

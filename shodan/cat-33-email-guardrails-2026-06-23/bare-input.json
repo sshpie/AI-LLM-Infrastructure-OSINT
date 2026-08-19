@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source": "nuclide-cat33-manual",
+  "source": "-cat33-manual",
   "findings": [
     {
       "id": "cat33-001",

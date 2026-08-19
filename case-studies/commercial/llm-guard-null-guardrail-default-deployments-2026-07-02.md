@@ -9,7 +9,7 @@ severity: low
 
 # LLM Guard Fail-Open Null-Guardrail: Unauthenticated Default Deployments With No Reachable Backend
 
-_NuClide Research · 2026-07-02 · Cat-33 AI Guardrails. Three unauthenticated Protect AI LLM Guard instances confirmed fail-open (all scanners return -1.0, is_valid=true on every input). Downgraded HIGH to LOW after a read-only downstream map found no externally reachable LLM behind any of them. Closed as a negative result with methodology gain. Host IPs redacted (last octet). LOW default-demo infrastructure._
+_ · 2026-07-02 · Cat-33 AI Guardrails. Three unauthenticated Protect AI LLM Guard instances confirmed fail-open (all scanners return -1.0, is_valid=true on every input). Downgraded HIGH to LOW after a read-only downstream map found no externally reachable LLM behind any of them. Closed as a negative result with methodology gain. Host IPs redacted (last octet). LOW default-demo infrastructure._
 
 ## Summary
 
@@ -68,4 +68,4 @@ This survey's value is process, not hosts:
 
 - Protect AI LLM Guard: https://github.com/protectai/llm-guard
 - LLM Guard docs: https://llm-guard.com
-- NuClide auth-on-default thesis (Cat-33 AI Guardrails series)
+-  auth-on-default thesis (Cat-33 AI Guardrails series)

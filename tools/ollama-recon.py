@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ollama-recon.py — persistent Ollama exposure scanner
-Nuclide / AI-LLM-Infrastructure-OSINT
+ / AI-LLM-Infrastructure-OSINT
 
 State file: ./ollama-state.json
   - Tracks every IP ever seen (live or dead)

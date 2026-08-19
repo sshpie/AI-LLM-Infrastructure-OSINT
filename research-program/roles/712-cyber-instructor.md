@@ -76,4 +76,4 @@ Broad pathway: 211, 212, 221, 411, 421, 422, 431, 441, 451, 461, 511, 521, 531, 
 
 ## Research-program relevance
 
-Indirect. NuClide's adversary-emulation case studies and codified insights serve as training material; the role's discipline of tailoring delivery (A0057) and gauging learner understanding (A0017) applies when presenting findings to disclosure recipients or external audiences. Not invoked in active assessment chains.
+Indirect. 's adversary-emulation case studies and codified insights serve as training material; the role's discipline of tailoring delivery (A0057) and gauging learner understanding (A0017) applies when presenting findings to disclosure recipients or external audiences. Not invoked in active assessment chains.

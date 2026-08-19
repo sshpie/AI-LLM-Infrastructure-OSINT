@@ -10,7 +10,7 @@ methodology: standalone Go tool productizing all Phase 1 + Phase 2 fingerprints
 
 # VisorBishop · 2026-05-11 (Phase 3)
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 
@@ -180,7 +180,7 @@ internal/output/report.go     — JSON, CSV, severity-sorted text output
 Adding a new platform means dropping a new file in `internal/fingerprint/`
 that implements the `Prober` interface. The CLI picks it up automatically.
 
-## Integration into the NuClide toolchain
+## Integration into the  toolchain
 
 - **Standalone**: `VisorBishop`. Public, MIT-licensed
 - **VisorPlus**: `visorplus bishop` subcommand wraps the binary; install via `visorplus install`
@@ -207,7 +207,7 @@ infrastructure you are authorized to assess.
 4. **Loop iteration #1**, re-run VisorBishop on the original Shodan corpus (377 Phoenix hits + 1,333 Langfuse + 96 LangSmith + 21 Helicone + 23 OpenLIT + 6 Lunary + 3 Pezzo) and compare against Phase 1 manual results
 5. **New platform additions** as discovered. Comet Opik, Phospho, AgentOps, etc.
 6. **VisorBishop dashboard**, optional web UI for population-level visualization (separate UI phase per `PHASE-PLAN.md`)
-7. **VisorLog integration**, pipe VisorBishop JSON output into the NuClide findings ledger at `nuclide.db`
+7. **VisorLog integration**, pipe VisorBishop JSON output into the  findings ledger at `.db`
 
 ## Evidence pack
 

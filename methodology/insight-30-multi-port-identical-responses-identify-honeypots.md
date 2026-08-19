@@ -24,7 +24,7 @@ For an IP that fingerprints positive for a service, also probe N ports the servi
 
 ## Empirical basis
 
-NuClide MCP server survey 2026-05-17:
+ MCP server survey 2026-05-17:
 
 - 51 of 51 hosts from yesterday's accidental MCP hits responded identically to MCP `initialize` on 6+ ports with `serverInfo: {name: "mcp-server", version: "1.0.1", protocolVersion: "2025-06-18"}`.
 - Their `/version` endpoint returns `1.13.0` (Docker-shaped but wrong format), `/info` returns Docker info JSON with `Containers: 0`, `/networks` returns an Ivanti Connect Secure login page, `/volumes` returns `POC_SUCCESS_Linux dev 5.15.0-134-generic`, `/sse` returns DrayTek VigorConnect admin or Tor exit router HTML.

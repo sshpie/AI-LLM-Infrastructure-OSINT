@@ -1,6 +1,6 @@
 # Certificate Transparency Log Catalog
 
-_NuClide Research · CT-derived hostnames, operator attribution pivots, and infrastructure naming patterns._
+_ · CT-derived hostnames, operator attribution pivots, and infrastructure naming patterns._
 
 ## How this works
 

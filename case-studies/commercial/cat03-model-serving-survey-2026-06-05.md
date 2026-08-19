@@ -8,7 +8,7 @@ tags: [llama.cpp, vllm, koboldcpp, ollama, sillytavern, one-api, newapi, comfyui
 
 # Cat-03 Model Serving & Inference — Survey 2026-06-05
 
-_NuClide Research · 2026-06-05 · Consumer OpenAI-compat inference servers. 6 verified unauthenticated exposures; a high false-positive rate in the verification sample drove most aimap CRITICAL/HIGH candidates down to FP or surface-only._
+_ · 2026-06-05 · Consumer OpenAI-compat inference servers. 6 verified unauthenticated exposures; a high false-positive rate in the verification sample drove most aimap CRITICAL/HIGH candidates down to FP or surface-only._
 
 ## Summary
 
@@ -199,7 +199,7 @@ The codify-every-survey value of this survey is the FP set. Of the actively-veri
 
 **Cand #79 — CONFIRMED (hard proof).** Ollama Connect cloud-model proxying is an unauthenticated subscription-hijack surface. Verified on 108.210.175.159:11434 (`deepseek-v4-pro:cloud` → ollama.com, unauth) and 121.153.39.157:11434 (cloud models in a 40-model listing). The `:cloud` suffix + `remote_host` field in unauth `/api/tags` is a reliable marker. Impact: paid cloud-subscription drain with zero operator awareness. Related to Insight #49 (shared Ollama Connect portfolio).
 
-**Cand #80 — RETRACTED.** The "Indonesian government AI exposure" hosts (jatengprov.go.id, kaltaraprov.go.id) are NOT in the Cat-03 corpus. They surfaced because VisorScuba `assess` scores ledger-wide over nuclide.db (all prior surveys, ~25k events) with no per-survey filter; those are prior Ollama-survey carryover. Not a Cat-03 finding. Lesson: scope VisorScuba output to the survey's own ingested events before attributing a finding to the survey.
+**Cand #80 — RETRACTED.** The "Indonesian government AI exposure" hosts (jatengprov.go.id, kaltaraprov.go.id) are NOT in the Cat-03 corpus. They surfaced because VisorScuba `assess` scores ledger-wide over .db (all prior surveys, ~25k events) with no per-survey filter; those are prior Ollama-survey carryover. Not a Cat-03 finding. Lesson: scope VisorScuba output to the survey's own ingested events before attributing a finding to the survey.
 
 **Cand #81 (new) — Framework catch-all FP class recurs in model-serving.** Three of this survey's FPs (GPT Researcher via Gradio `/api/report` 405, Lunary via generic `/api/v1/health`, TTS via ZenTao on :8000) are the same structural class as the dcm4chee ASP.NET-catchall and CVAT-IAP-200 FPs: a generic web framework echoing a truthy/non-404 status on the probed path, read by the fingerprint as "endpoint exists." Fix pattern: anchor fingerprints on a positive body marker (vendor string / real JSON shape), not a non-404 status, and add framework negative-matches (e.g. `gradio_config`, ZenTao `zentaosid` cookie).
 

@@ -4,7 +4,7 @@ type: survey
 
 # Neo4j, Elasticsearch, Supabase, Redis Stack: AI Infrastructure Exposure Survey
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 ---
 
@@ -280,6 +280,6 @@ A publicly accessible RedisInsight is equivalent to unauthenticated `redis-cli` 
 
 ## Discovery Context
 
-Survey conducted 2026-05-09 as part of NuClide Research vector database exposure series. Shodan pulls: `product:"Elastic" port:9200 version:8` (636 IPs → 958 confirmed), `product:"Neo4j"` (971 IPs), `http.title:"Supabase"` (314 IPs → 23 confirmed), `product:"RedisInsight" port:8001` (143 IPs → 112 confirmed). Asyncio probe with 2s connect / 4s read / 80 concurrent.
+Survey conducted 2026-05-09 as part of  vector database exposure series. Shodan pulls: `product:"Elastic" port:9200 version:8` (636 IPs → 958 confirmed), `product:"Neo4j"` (971 IPs), `http.title:"Supabase"` (314 IPs → 23 confirmed), `product:"RedisInsight" port:8001` (143 IPs → 112 confirmed). Asyncio probe with 2s connect / 4s read / 80 concurrent.
 
 Companion surveys: `weaviate-cloud-survey-2026-05.md`, `milvus-attu-survey-2026-05.md`, `surrealdb-typesense-lancedb-survey-2026-05.md`.

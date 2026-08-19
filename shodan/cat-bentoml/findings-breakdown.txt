@@ -1,6 +1,6 @@
 FINDINGS BREAKDOWN — cat-bentoml
 Survey date: 2026-06-26
-Surveyor: Nicholas Kloster / nuclide-research
+Surveyor:  / 
 
 === POPULATION ===
 Raw harvest (Shodan HTML dorks + cert-CN variant): 67 IPs

@@ -4,7 +4,7 @@ type: host
 
 # Watzis / Calmio: Vietnamese AI Assistant: PII Memory Store Exposed via Unauthenticated Qdrant
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

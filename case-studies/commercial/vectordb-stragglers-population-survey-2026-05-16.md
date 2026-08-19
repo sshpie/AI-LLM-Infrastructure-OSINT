@@ -4,7 +4,7 @@ type: survey
 
 # Vector-DB Stragglers Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (fourth survey in the day's 4-category batch)_
+_ · 2026-05-16 (fourth survey in the day's 4-category batch)_
 _Closes: category 02 (vector-databases) stragglers. Solr / Meilisearch / Typesense / Vespa / pgvector_
 
 ---
@@ -153,7 +153,7 @@ Typesense + Vespa land in Tier-C: framework auth-on-default, population-scale ~0
 3. Solr core enumeration → cores listed for 613 hosts (operator-attribution-rich)
 4. Meilisearch index UID extraction → 268 hosts with app-schema disclosure
 5. (queued) BARE Metasploit module ranking on Solr 7.6.0 → confirmed: solr_velocity_rce, solr_dih_rce, solr_jmx_rmi
-6. (queued) visorlog ingest → 881 events into nuclide.db source='vectordb-stragglers-survey-2026-05-16'
+6. (queued) visorlog ingest → 881 events into .db source='vectordb-stragglers-survey-2026-05-16'
 ```
 
 ---

@@ -1,6 +1,6 @@
 # DINAS KOMINFO PROV. JAWA TENGAH: Account Takeover, RAG Pipeline
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

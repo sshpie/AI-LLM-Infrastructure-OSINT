@@ -82,7 +82,7 @@ This operator isolated the host, unlike the voice-AI and guardrail stacked hosts
 the same day. The exposure is the MLflow and the bucket reference, nothing more.
 
 BARE found no Metasploit coverage for the MLflow finding class. aimap-profile
-returned commercial and no honeypot. Twelve events landed in nuclide.db.
+returned commercial and no honeypot. Twelve events landed in .db.
 
 ## Impact
 
@@ -124,7 +124,7 @@ menlohunt    34.139.85.153 IP-shadow: SSH + MLflow + 8080 only, 0 chains (isolat
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only
 VisorPlus    components individual
-VisorLog     12 events via aimap adapter -> nuclide.db
+VisorLog     12 events via aimap adapter -> .db
 VisorScuba   MLflow unauth maps to AI.C1
 BARE         no MSF coverage (0.522) first-party/novel
 VisorCorpus  N/A tracking servers not LLM-inference

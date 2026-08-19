@@ -93,7 +93,7 @@ def probe(url, method="GET", body=None, headers=None, path_for_check=None):
         url,
         method=method,
         data=body.encode() if body else None,
-        headers=headers or {"User-Agent": "nuclide-lane-c/1.0"},
+        headers=headers or {"User-Agent": "-lane-c/1.0"},
     )
     ctx = ssl.create_default_context()
     ctx.check_hostname = False

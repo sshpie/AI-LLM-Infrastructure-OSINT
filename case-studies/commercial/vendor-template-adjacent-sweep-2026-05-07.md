@@ -10,7 +10,7 @@ methodology: structural-class dorks + aimap conjunctive validation + per-vendor 
 
 # Vendor-template adjacent-vendor sweep, planning + dorks
 
-NuClide Research, 2026-05-07
+, 2026-05-07
 
 The Cortical Labs CL1 incident ([`multi-hilix-jupyter-campaign-2026-05-06.md`](multi-hilix-jupyter-campaign-2026-05-06.md)) and the standalone vendor-template study ([`vendor-template-default-no-auth-research-instruments.md`](vendor-template-default-no-auth-research-instruments.md)) named ~25 candidate vendors likely sharing the same ship-with-no-auth pattern. This doc is the planning groundwork for the follow-on fleet audits.
 
@@ -147,7 +147,7 @@ These are starting points. None has been validated. The expected yield from the 
 When IPs come back from Shodan:
 
 1. `jaxen import --no-lookup <ips>`. Ingest into the ledger without burning Shodan API quota (Shodan key has been invalid since session 8).
-2. `bash data/visor-chain-runner.sh vendor-template-adjacent-2026-05-07`. Runs the canonical 11-step chain (visorgraph → aimap → aimap-profile → JS-extract → nuclide-contact → visorlog → visorscuba → BARE → visorcorpus).
+2. `bash data/visor-chain-runner.sh vendor-template-adjacent-2026-05-07`. Runs the canonical 11-step chain (visorgraph → aimap → aimap-profile → JS-extract → -contact → visorlog → visorscuba → BARE → visorcorpus).
 3. For Dork 6 (generic web dashboards), aimap conjunctive validation is non-negotiable; the substring-match FP class (Methodology Insights #6 + #7) applies in full.
 4. Per-finding triage: vendor-template default-no-auth → vendor disclosure (route via [`vendor-template-default-no-auth-research-instruments.md`](vendor-template-default-no-auth-research-instruments.md) framework). Operator-specific compromise → CERT + abuse + vendor parallel disclosure (the Hilix / CL1 / Ulm shape).
 

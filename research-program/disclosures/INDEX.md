@@ -1,6 +1,6 @@
 # Disclosure Pipeline
 
-State tracking for findings worth disclosing. **No disclosure is ever sent autonomously.** This index tracks pipeline state; Nicholas Kloster decides what proceeds and when.
+State tracking for findings worth disclosing. **No disclosure is ever sent autonomously.** This index tracks pipeline state;  decides what proceeds and when.
 
 Disclosures from earlier surveys are referenced in `~/AI-LLM-Infrastructure-OSINT/disclosures/` (existing directory). This index extends that with research-program-relevant state.
 
@@ -53,7 +53,7 @@ See `case-studies/commercial/librechat-deep-dive-verification-2026-06-06.md` for
 
 | Target | Severity (revised) | State |
 |---|---|---|
-| **Capitol.ai** (multi-product, multi-tenant): LibreChat + Langfuse customer-tenant fleet. Confirmed customers via CT logs + probe: Ernst & Young (9+ subdomains, 3 regions), UK HMG/Plexal, Politico, Dow Jones, Advance Local, Metric Media, "eont" (unidentified). All Langfuse-customer instances SIGNUP_OPEN; LibreChat customer-tenants REG_OPEN. NuClide-discovered finding not previously published. **The largest single enterprise-SaaS finding in the 2026-06-06 corpus.** | **CRITICAL-ENTERPRISE** | QUEUED |
+| **Capitol.ai** (multi-product, multi-tenant): LibreChat + Langfuse customer-tenant fleet. Confirmed customers via CT logs + probe: Ernst & Young (9+ subdomains, 3 regions), UK HMG/Plexal, Politico, Dow Jones, Advance Local, Metric Media, "eont" (unidentified). All Langfuse-customer instances SIGNUP_OPEN; LibreChat customer-tenants REG_OPEN. -discovered finding not previously published. **The largest single enterprise-SaaS finding in the 2026-06-06 corpus.** | **CRITICAL-ENTERPRISE** | QUEUED |
 | Santé Pair (santepair.fr French mental-health nonprofit) — **2026-06-07 Mitnick-pivot refinement:** cert pivot on `51.77.213.247` confirms a second chat surface at `chat.santepair.fr`. Disclosure recommendation should bundle both chat surfaces; GDPR Art 9 risk model scales by surface count. | HIGH-SENSITIVE (GDPR Art 9) | QUEUED |
 | TruslerLegal / Lexpertcloud (white-label legal-AI SaaS) | HIGH-PRIVILEGED | QUEUED |
 | LegalMatch AI (legalmatch.com growth-RAG-MVP environment) | HIGH-PRIVILEGED | QUEUED |

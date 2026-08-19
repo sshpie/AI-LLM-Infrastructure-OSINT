@@ -47,7 +47,7 @@ ALLOWED_POSTS = {"/assistants/search", "/threads/search"}
 
 TIMEOUT = 7.0
 MAX_CONC = 12
-UA = "nuclide-stage3v/1.0 (DCWF-672 T&E; read-only verify)"
+UA = "-stage3v/1.0 (DCWF-672 T&E; read-only verify)"
 
 LANGGRAPH_PORTS = [2024, 8123, 8000, 5000, 3001, 8080]
 LANGGRAPH_PLAIN_FALLBACK = [80]
@@ -149,7 +149,7 @@ def verify_langgraph(ip: str) -> dict:
             # Catch-all/honeypot negative control: a route that must NOT exist
             # on a real LangGraph server. If it returns the same shape as a real
             # route, the host is a catch-all SPA, not the API -> refute.
-            neg = http("GET", scheme, ip, port, "/nuclide-catchall-neg-xyz")
+            neg = http("GET", scheme, ip, port, "/-catchall-neg-xyz")
             neg_html = (neg["status"] in (200, 404)) and "html" in (neg["ctype"] or "").lower()
 
             # /assistants/search (search READ, empty body).

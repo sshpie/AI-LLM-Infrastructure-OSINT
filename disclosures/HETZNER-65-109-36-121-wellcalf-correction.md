@@ -1,6 +1,6 @@
 ---
 to: abuse@hetzner.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 65.109.36.121
 institution: Hetzner DE, CORRECTION to prior disclosure; operator is WellCalf ML (livestock / veterinary AI, NOT pediatric medical)
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@hetzner.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** CORRECTION, operator at 65.109.36.121 is WellCalf ML (livestock / veterinary AI), NOT pediatric medical / HIPAA-class. Metabase setup-token finding stands.
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -66,13 +66,13 @@ The technical reproduction commands in the prior disclosure are unchanged; pleas
 
 ## Methodology note
 
-The misattribution traces back to a token-level keyword match, both NuClide's original 2026-05-04 cloud survey and my disclosure today read `beh_ped` as "behavioral pediatric (human)" when the source path `/home/avudai/avudai/code/wellcalf_ml/` makes the veterinary context unambiguous. The error was caught in deeper enumeration (pulling actual experiment runs with their full param + tag set) which surfaced the `Farm_1025` / `Olway_Adult` / `goat` / `calf` / `cow` taxonomy.
+The misattribution traces back to a token-level keyword match, both 's original 2026-05-04 cloud survey and my disclosure today read `beh_ped` as "behavioral pediatric (human)" when the source path `/home/avudai/avudai/code/wellcalf_ml/` makes the veterinary context unambiguous. The error was caught in deeper enumeration (pulling actual experiment runs with their full param + tag set) which surfaced the `Farm_1025` / `Olway_Adult` / `goat` / `calf` / `cow` taxonomy.
 
 Lesson for future disclosures: always pull at least one full run record (with `mlflow.source.name` + custom user tags) before publishing a data-class framing. Token-pattern matching on experiment names is unreliable.
 
 I apologize for the misframing in the prior message. The Metabase setup-token finding remains CRITICAL and the customer notification path is unchanged.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

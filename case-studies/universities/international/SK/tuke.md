@@ -1,6 +1,6 @@
 # Technical University of Košice: MedGemma 54GB, Abliterated Qwen3.6-35B, Turkish LLM, RAG Stack
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

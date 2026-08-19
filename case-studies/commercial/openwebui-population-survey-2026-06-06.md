@@ -9,7 +9,7 @@ status: verified
 
 # Open WebUI Population Survey — 39 Auth-Off, 564 Open Signup
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -189,7 +189,7 @@ The 0.9.x cohort shows the problem is not improving with version updates — ope
 
 ## Ollama Co-Exposure
 
-Prior NuClide survey (2026-05): 33% co-exposure rate for raw Ollama port 11434 on the same host as Open WebUI. For the AUTH_OFF cohort (24 instances), 2/24 had Ollama co-exposed with callable models including a DeepSeek cloud proxy.
+Prior  survey (2026-05): 33% co-exposure rate for raw Ollama port 11434 on the same host as Open WebUI. For the AUTH_OFF cohort (24 instances), 2/24 had Ollama co-exposed with callable models including a DeepSeek cloud proxy.
 
 Cloud proxy models (`deepseek:cloud`, `minimax:cloud`, `gemini:cloud`) via Ollama Connect have zero local disk footprint but route inference through the operator's subscription at real cost. These are the highest-severity Ollama co-exposure findings — equivalent to an open LiteLLM proxy for that provider.
 

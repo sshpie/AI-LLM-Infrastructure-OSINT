@@ -97,7 +97,7 @@ Ollama's documentation describes the signin requirement but does NOT document th
 
 ## Discovery and validation
 
-Surfaced via the .edu Stage-1+2 verification waves of the 2026-05-19 NuClide .edu LLM-infrastructure sweep. The 18-model catalog match was first observed across SDSC + UMaine ECE + RIT DISCO; UCSB MCDB confirmed as the 4th instance during the same-day validation sweep across 25 US .edu Ollama hosts.
+Surfaced via the .edu Stage-1+2 verification waves of the 2026-05-19  .edu LLM-infrastructure sweep. The 18-model catalog match was first observed across SDSC + UMaine ECE + RIT DISCO; UCSB MCDB confirmed as the 4th instance during the same-day validation sweep across 25 US .edu Ollama hosts.
 
 Restraint discipline held throughout: NO `:cloud` model was invoked on any of the 4 confirmed hosts (would consume real Ollama Cloud subscription quota AND the upstream provider's quota). Class-membership is verified via `/api/tags` enumeration alone; data-membership (a successful unauth `:cloud` invocation routing to the operator's quota) is implied by Ollama's documented architecture but not test-verified by this survey.
 

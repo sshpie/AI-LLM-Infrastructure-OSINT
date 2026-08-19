@@ -1,6 +1,6 @@
 # Candidate Insight #9X - MCP tool names are the finding; the carrier shape can mask the backend
 
-**Status:** candidate (awaits canon assignment in `~/.claude/nuclide-internal/METHODOLOGY.md` insight ledger)
+**Status:** candidate (awaits canon assignment in `~/.claude/-internal/METHODOLOGY.md` insight ledger)
 **Surfaced by:** Cat-Tabby + Devstral 2026-06-09 / Cat-MCP-Cred-Fleet 2026-06-09
 **Sample:** 66 hosts (AWS multi-region, port 9090)
 

@@ -1,6 +1,6 @@
 # SESSION — Cat-34 Self-Hosted LLM-App / RAG Builders
 
-Date: 2026-06-12 | Operator: NuClide (Nick + Claude) | Stance: ai-infra-hunt wardrobe + RAG-poison restraint
+Date: 2026-06-12 | Operator:  (Nick + Claude) | Stance: ai-infra-hunt wardrobe + RAG-poison restraint
 Emphasis (Nick's choice): depth on the unauth-default tier + VERIFY (names/schemas, no record/corpus exfil).
 
 ## What this survey founded
@@ -29,7 +29,7 @@ Vanna, Verba, Quivr, PrivateGPT, etc.). 27 platforms characterized into tome. Th
 ## NEXT (queued)
 - [3]  aimap-profile on 182.92.206.34 (HIPAA/clinical ethics gate) before anything deeper.
 - [2]  VisorGraph cert-pivot on autoinsight.com cluster (operator scope).
-- [6/7/8] VisorLog ingest aimap reports -> nuclide.db ; VisorScuba score ; BARE module rank.
+- [6/7/8] VisorLog ingest aimap reports -> .db ; VisorScuba score ; BARE module rank.
 - [0b] Censys recovery of the 10 truly-Shodan-dark platforms AFTER bucket reset (2026-07-08) or via FOFA/Quake.
 - [13] persist -> GitHub: AWAITS NICK'S GO (not pushed).
 - Tool debt: aimap Vanna body-read window (autoinsight miss); aimap Attu/Milvus-admin fingerprint (absent).

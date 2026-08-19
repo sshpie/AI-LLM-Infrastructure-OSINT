@@ -1,7 +1,7 @@
 # Candidate Insight #77 — active-banner scan is the liveness/version/FP-strip bridge
 
 **Source:** Cat-02 Vector DB virgin re-birth, scanner pass 2026-06-05 (PoC in
-`github.com/nuclide-research/scanner` → `results/poc-cat02-vectordb-2026-06-05.md`).
+`github.com/sshpie/scanner` → `results/poc-cat02-vectordb-2026-06-05.md`).
 
 **Claim:** between passive discovery (Shodan/Censys) and deep enumeration (aimap), an active
 TCP/TLS banner scan is not optional polish — it does three load-bearing things in one cheap pass that

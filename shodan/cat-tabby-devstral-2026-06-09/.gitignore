@@ -1,5 +1,5 @@
 # Raw recon data — do NOT commit to public repo (operator-identifying IPs).
-# Per memory `nuclide-public-repo-redaction` and `feedback-github-pii`.
+# Per memory `-public-repo-redaction` and `feedback-github-pii`.
 # Tracked safe-to-publish artifacts: SESSION-RETROSPECTIVE.md, lane-*.md, EVIDENCE-CONTAMINATED.txt,
 # *.py scripts, run-lane-a.sh.
 *.jsonl

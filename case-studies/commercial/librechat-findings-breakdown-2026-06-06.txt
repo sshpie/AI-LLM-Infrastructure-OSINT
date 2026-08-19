@@ -1,5 +1,5 @@
 findings-breakdown.txt — Cat-LC: LibreChat ChatGPT-alternative
-NuClide Research | 2026-06-06 | Analyst: Nicholas Kloster
+ | 2026-06-06 | Analyst: 
 Tool: herald v0.1.2
 
 ════════════════════════════════════════════════════════════════════

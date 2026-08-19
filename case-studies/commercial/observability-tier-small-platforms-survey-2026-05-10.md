@@ -10,7 +10,7 @@ methodology: shodan-driven + per-platform auth probe + IP-direct-shadow check
 
 # AI observability tier: small platforms sweep · 2026-05-10
 
-NuClide Research · 2026-05-10
+ · 2026-05-10
 
 ## Summary
 

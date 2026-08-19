@@ -9,7 +9,7 @@ status: verified
 
 # Cat-05: LiteLLM Gateway Survey — Open Proxies Exposing Commercial LLM API Keys
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 

@@ -302,7 +302,7 @@ Data Volume:
 PUBLICATION STATUS
 ========================================
 
-Ready for publication to nuclide-research.com:
+Ready for publication to :
   ✓ FINDING.md — Tier A critical finding, population-scale assessment
   ✓ chain-report-2026-06-27.md — Technical exploitation chains with PoC
   ✓ Visual summary — attack timeline, vulnerability landscape, remediation
@@ -310,7 +310,7 @@ Ready for publication to nuclide-research.com:
 Recommended disclosure timeline:
   - Immediate: Platform intelligence + findings posted to GitHub (this repo)
   - 30 days: CISA advisory preparation (bentoml.org, OpenAI contact)
-  - Public: Full findings + remediation guidance at nuclide-research.com/research/
+  - Public: Full findings + remediation guidance at /research/
 
 ========================================
 SURVEY CLASSIFICATION

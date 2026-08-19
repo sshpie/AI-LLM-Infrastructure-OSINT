@@ -16,7 +16,7 @@ This design is additive: OLAP augments the existing per-finding pipeline; it doe
 
 ### 2.1 Canonical Stores
 
-- `nuclide.db` (VisorLog)
+- `.db` (VisorLog)
   - Lifecycle-tracked findings store (statuses, disclosure state).
 - `empire.db` (JAXEN)
   - Shodan harvest staging DB.
@@ -39,7 +39,7 @@ This design is additive: OLAP augments the existing per-finding pipeline; it doe
 - Post-processing:
   - CVE links from Shodan vulns + version inference
   - Honeypot filtering
-  - `nuclide-contact` for recipient resolution
+  - `-contact` for recipient resolution
   - Country/sector tagging
   - `VisorLog` dedupe by IP
 
@@ -120,12 +120,12 @@ Must be "interactive" (sub-second to a few seconds):
    - CVE mapping, honeypot filtering, recipient resolution.
 
 3. SQLite update:
-   - `nuclide.db` (VisorLog) records:
+   - `.db` (VisorLog) records:
      - Findings, tags, scores, status, disclosure metadata, verification timestamps.
 
 4. OLAP ingestion:
    - A small ETL/sync process:
-     - Reads from `nuclide.db` (and/or JSON exports).
+     - Reads from `.db` (and/or JSON exports).
      - Writes to ClickHouse fact and dimension tables.
    - Batched updates aligned with:
      - Survey runs,
@@ -213,7 +213,7 @@ These are additive to existing per-finding tools:
 
 - `get_findings`, `get_finding_history`
 - `aimap_fingerprint`, `visorgraph_pivot`
-- `nuclide_contact`, `bare_rank`
+- `_contact`, `bare_rank`
 - `visorscuba_score`, `visorcorpus_generate`
 - `draft_disclosure`, `cluster_find`
 
@@ -235,7 +235,7 @@ LLM agents can now perform both:
 - Hourly drift:
   - OLAP-driven `get_reprobe_candidates(N_days)` → scheduler.
 - Disclosure status:
-  - Changes in `nuclide.db` mirrored into OLAP within ~10 minutes → up-to-date pipeline views.
+  - Changes in `.db` mirrored into OLAP within ~10 minutes → up-to-date pipeline views.
 
 ---
 
@@ -257,4 +257,4 @@ LLM agents can now perform both:
 
 - **[`reference/olap-schema-clickhouse.sql`](olap-schema-clickhouse.sql)**, concrete `CREATE TABLE` sketches for ClickHouse fact + dimensions. Partition keys, sort keys, optional CVE / org / framework dimension tables. Future: materialized views for the Section 6.1 query set.
 - **[`reference/olap-tools-spec.md`](olap-tools-spec.md)**, spec for each of the 8 OLAP-backed LLM tools: input schema, output schema, SLO, ClickHouse SQL sketch, fallback behavior when the OLAP layer is unavailable.
-- **[`reference/olap-migration.md`](olap-migration.md)**, bootstrap procedure for ClickHouse from `nuclide.db` + `~/recon`, change-detection sync mechanics (high-water mark on `updated_at`, ReplacingMergeTree for in-place upserts), DuckDB ad-hoc workflow, verification + invariants, security notes (self-dogfooding the survey rules on the analytic cluster), and an implementation checklist.
+- **[`reference/olap-migration.md`](olap-migration.md)**, bootstrap procedure for ClickHouse from `.db` + `~/recon`, change-detection sync mechanics (high-water mark on `updated_at`, ReplacingMergeTree for in-place upserts), DuckDB ad-hoc workflow, verification + invariants, security notes (self-dogfooding the survey rules on the analytic cluster), and an implementation checklist.

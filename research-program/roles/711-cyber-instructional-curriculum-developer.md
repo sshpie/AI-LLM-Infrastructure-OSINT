@@ -74,4 +74,4 @@ Broad: 211, 212, 221, 411, 421, 422, 431, 441, 451, 461, 511, 521, 531, 541, 612
 
 ## Research-program relevance
 
-Indirectly relevant. NuClide's research output (case studies, methodology insights, codified surveys) constitutes curriculum-grade material. The discipline of correlating training to mission requirements (T0437) and designing curriculum from learning needs assessment (T0352) maps onto how we extract numbered Insights from each survey to teach the methodology forward. Not invoked during active assessments, but relevant when packaging findings for disclosure-recipient education or external publication.
+Indirectly relevant. 's research output (case studies, methodology insights, codified surveys) constitutes curriculum-grade material. The discipline of correlating training to mission requirements (T0437) and designing curriculum from learning needs assessment (T0352) maps onto how we extract numbered Insights from each survey to teach the methodology forward. Not invoked during active assessments, but relevant when packaging findings for disclosure-recipient education or external publication.

@@ -32,4 +32,4 @@ Logged by the same standing rule. "Confirmed/Unauth" = after our verification pr
 | `host.services.port=9621` | ~1.2K | — | faceted: uvicorn 331; vs Shodan's undifferentiated 519 noise |
 | `host.services.port=9621 and host.services.software.product="uvicorn"` | 185 | 100 | LightRAG candidates → 81 confirmed, **36 UNAUTH** |
 
-**Censys recovered the Shodan-dark LightRAG tier:** Shodan HTML dork = 0; Censys = 185 candidates, 36 unauth confirmed. First NuClide finding sourced entirely from Censys. R2R (7272) and Cognita/Verba (8000) reachable the same way next.
+**Censys recovered the Shodan-dark LightRAG tier:** Shodan HTML dork = 0; Censys = 185 candidates, 36 unauth confirmed. First  finding sourced entirely from Censys. R2R (7272) and Cognita/Verba (8000) reachable the same way next.

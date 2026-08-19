@@ -58,14 +58,14 @@ Meilisearch (env var, doc-foregrounded):  ~10%
 Phoenix (env var, not foregrounded):  ~25%
 ComfyUI (no auth concept):        ~78%
 
-Full write-ups: github.com/nuclide-research/AI-LLM-Infrastructure-OSINT
+Full write-ups: github.com/sshpie/AI-LLM-Infrastructure-OSINT
 ```
 
 ## Notes on voice
 
 - No em dashes (top-priority rule).
 - Single-clause news-headline copy; no two-beat reveals.
-- "We" and "NuClide" not "I."
+- "We" and "" not "I."
 - "Names are the finding" is the doctrine line. Keep it as the kicker.
 - No emojis.
 - Numbers carry the weight; resist the urge to gloss them.

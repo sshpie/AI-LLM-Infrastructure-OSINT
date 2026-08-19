@@ -63,7 +63,7 @@ def bases_for(ip: str, port: Optional[int]):
 
 def http_get(url: str, timeout: float = TIMEOUT_S, accept: str = "application/json,text/html"):
     req = urllib.request.Request(url, headers={
-        "User-Agent": "nuclide-datalabel-probe/0.2 (research; security@nuclide-research.com)",
+        "User-Agent": "-datalabel-probe/0.2 (research; security@)",
         "Accept": accept,
     })
     try:

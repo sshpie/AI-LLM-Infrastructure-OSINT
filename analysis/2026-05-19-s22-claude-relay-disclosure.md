@@ -44,7 +44,7 @@ Orchestrator plus subagents. The upstream-pivot from LiteLLM `api_base` to the r
 | Custom Python probe | GET `/` + `/health` schema parse | `accounts`, `availableAccounts`, `totalTokens`, `successRequests`, `thirdPartyMaxConcurrent` field extraction |
 | aimap | LiteLLM Tier-3 storefront verification | `/v1/model/info` endpoint — `api_base` field disclosure |
 | VisorGraph | Cert-pivot → Aceville netblock attribution | |
-| VisorLog | Ledger ingest → nuclide.db | Six relay hosts + 30 Tier-3 instances |
+| VisorLog | Ledger ingest → .db | Six relay hosts + 30 Tier-3 instances |
 | VisorScuba | Compliance scoring | |
 | BARE | Metasploit module ranking for the relay finding class | No precise existing module — finding class warrants new module |
 | Gmail MCP | Disclosure draft creation | Draft-only; send via manual click |
@@ -53,7 +53,7 @@ Orchestrator plus subagents. The upstream-pivot from LiteLLM `api_base` to the r
 
 ### Notable Configuration
 
-Shodan Freelance-tier credits used for the conjunctive relay dork. GitHub API used for star counts, release counts, and issue enumeration on `github.com/Wei-Shaw/claude-relay-service` and `github.com/Wei-Shaw/sub2api`. Disclosure sent to `usersafety@anthropic.com` with CC to `nicholas@nuclide-research.com`; Gmail draft ID `19e3fe4c3dbf6aff` sent via manual click.
+Shodan Freelance-tier credits used for the conjunctive relay dork. GitHub API used for star counts, release counts, and issue enumeration on `github.com/Wei-Shaw/claude-relay-service` and `github.com/Wei-Shaw/sub2api`. Disclosure sent to `usersafety@anthropic.com` with CC to ``; Gmail draft ID `19e3fe4c3dbf6aff` sent via manual click.
 
 ---
 
@@ -205,7 +205,7 @@ When a LiteLLM instance's `/v1/model/info` reveals an `api_base` that is not an 
 
 ### Future automation
 
-VisorLog rule: when a LiteLLM finding includes `api_base` pointing to a non-vendor IP, auto-dispatch a relay-schema probe to that IP. Tag findings in nuclide.db with `tier:relay` and `tier:storefront` for cross-survey correlation.
+VisorLog rule: when a LiteLLM finding includes `api_base` pointing to a non-vendor IP, auto-dispatch a relay-schema probe to that IP. Tag findings in .db with `tier:relay` and `tier:storefront` for cross-survey correlation.
 
 ---
 
@@ -283,4 +283,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 22-tail · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 22-tail · 2026-05-19*

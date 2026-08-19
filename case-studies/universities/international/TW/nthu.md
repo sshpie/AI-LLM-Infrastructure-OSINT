@@ -1,6 +1,6 @@
 # National Tsing Hua University: TAIDE-NPC Model, Qwen3.6:35b
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

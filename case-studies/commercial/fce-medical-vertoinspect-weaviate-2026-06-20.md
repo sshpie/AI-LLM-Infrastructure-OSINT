@@ -38,7 +38,7 @@ sidenotes:
 
 # FCE STA. ISABEL and Verto Inspect: Unauthenticated Read, Write, and Delete on a Shared Weaviate Node
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -68,7 +68,7 @@ CONFIRMED: unauthenticated read, write, and delete.
 
 **Read:** `GET /v1/schema` returned the full class list (200 OK). `GET /v1/objects?class=DB_Schema` and `GET /v1/objects?class=ProjectArchive` returned records (200 OK).
 
-**Write:** `POST /v1/objects` inserted a marked canary object into class `DB_Schema` (200 OK). Canary UUID `90a88cf5-29f6-426a-b035-cc2a19f0d2b1`, object name `CANARY_nuclide_2026_06_20`.
+**Write:** `POST /v1/objects` inserted a marked canary object into class `DB_Schema` (200 OK). Canary UUID `90a88cf5-29f6-426a-b035-cc2a19f0d2b1`, object name `CANARY__2026_06_20`.
 
 **Delete:** `DELETE /v1/objects/DB_Schema/90a88cf5-29f6-426a-b035-cc2a19f0d2b1` returned 204 No Content. A follow-up `GET` for the same UUID returned 404 Not Found, confirming removal.
 
@@ -120,4 +120,4 @@ Data class at risk: healthcare clinical database schema (medical clinical) plus 
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

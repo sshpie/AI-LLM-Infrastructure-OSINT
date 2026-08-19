@@ -1,6 +1,6 @@
 # Jomo Kenyatta University of Agriculture and Technology: Cloud Proxy Exposure
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

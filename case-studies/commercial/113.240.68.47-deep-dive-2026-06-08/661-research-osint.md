@@ -1,6 +1,6 @@
 # 661 R&D Researcher — Public OSINT Report: 113.240.68.47
 
-**Role:** NICE 661 R&D Researcher (NuClide Research)
+**Role:** NICE 661 R&D Researcher ()
 **Target:** `113.240.68.47:8188` — confirmed unauthenticated ComfyUI host
 **Netblock:** `113.240.68.0/24` (CHINANET-HN, mnt-by MAINT-CHINANET-HN)
 **ASN:** AS63835 — CT-HuNan-Changsha-IDC
@@ -131,7 +131,7 @@ Key fields:
 
 ## Summary — Insight #N candidate
 
-**Insight (candidate):** A high-end unauthenticated ComfyUI host on a Chinese commercial IDC can be **completely OSINT-dark** outside the Shodan/Censys infrastructure indices — zero web mentions, zero GitHub mentions, zero Wayback snapshots, zero Greynoise observations, not in any public bad-IP feed. The /24 around it shows signs of prior Chinese-origin recon attention (sibling host in a port-scan list), but the target itself is invisible to every public-record source except infrastructure scanners. This is the **operator-OSINT-dark / scanner-OSINT-visible** asymmetry: defenders looking for evidence of exposure through reputation feeds or web search will find nothing; only infrastructure scanners (Shodan/Censys/aimap-class) surface the exposure. Anchors NuClide's standing argument that infrastructure-scanner-grade tooling is irreplaceable in AI-infra coverage.
+**Insight (candidate):** A high-end unauthenticated ComfyUI host on a Chinese commercial IDC can be **completely OSINT-dark** outside the Shodan/Censys infrastructure indices — zero web mentions, zero GitHub mentions, zero Wayback snapshots, zero Greynoise observations, not in any public bad-IP feed. The /24 around it shows signs of prior Chinese-origin recon attention (sibling host in a port-scan list), but the target itself is invisible to every public-record source except infrastructure scanners. This is the **operator-OSINT-dark / scanner-OSINT-visible** asymmetry: defenders looking for evidence of exposure through reputation feeds or web search will find nothing; only infrastructure scanners (Shodan/Censys/aimap-class) surface the exposure. Anchors 's standing argument that infrastructure-scanner-grade tooling is irreplaceable in AI-infra coverage.
 
 ## Open items (deferred)
 

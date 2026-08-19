@@ -98,4 +98,4 @@ RedisInsight :8001 open (no auth)
 
 ---
 
-*NuClide Research — Chain B RedisInsight survey, 2026-05-26*
+* — Chain B RedisInsight survey, 2026-05-26*

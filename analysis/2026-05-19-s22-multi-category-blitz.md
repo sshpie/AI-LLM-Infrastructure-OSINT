@@ -46,7 +46,7 @@ Orchestrator plus parallel subagents. Proactive output style enabled by operator
 |---|---|---|
 | JAXEN | Stage-0 harvest: Shodan → empire.db | ~6,400 Freelance-tier credits consumed; 250 dorks across 6 batches |
 | aimap v1.9.14-16 | Stage-1 fingerprint + Stage-2 verify | Three patch versions shipped mid-session closing FPs: tegra/mcintegration, ray/krayzdrav, dicom/adicom |
-| VisorLog | Ledger ingest → nuclide.db | |
+| VisorLog | Ledger ingest → .db | |
 | VisorScuba | Compliance scoring | |
 | BARE | Metasploit module ranking | Applied to LiteLLM UNAUTH_FUNCTIONAL finding class |
 | JS-bundle extract | Secret extraction from SPA bundles | Shodan body-dork → Dokploy webpack bundles |
@@ -353,4 +353,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 22 · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 22 · 2026-05-19*

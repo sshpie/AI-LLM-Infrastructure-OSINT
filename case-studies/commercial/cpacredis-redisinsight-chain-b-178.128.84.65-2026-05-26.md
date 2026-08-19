@@ -249,7 +249,7 @@ Single key `hwidwithbuffer` (Redis set, 1 member: `40870`). One hardware ID stag
 - nu-recon: simulated output (no Shodan key), no PTR
 - visorlog: #67, HIGH
 
-**Ledger entry:** `nuclide.db #67`
+**Ledger entry:** `.db #67`
 
 ---
 

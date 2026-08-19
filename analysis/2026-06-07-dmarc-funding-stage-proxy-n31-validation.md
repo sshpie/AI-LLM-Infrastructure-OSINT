@@ -48,6 +48,6 @@ Public (4):     proofpoint.com, checkmarx.com, sentinelone.com, darktrace.com
 
 ## Next steps
 
-- Push N higher: add ~50 more vendors at Series B specifically (smallest cohort here) before promoting to numbered NuClide Insight.
+- Push N higher: add ~50 more vendors at Series B specifically (smallest cohort here) before promoting to numbered  Insight.
 - Cross-category validation: does the same pattern hold for non-AI-security verticals (e.g., generic SaaS at the same stages)? If yes, this is a sector-agnostic SaaS-maturity heuristic.
 - File the surprises as discrete findings (Arthur.ai, Robust Intelligence, Guardrails AI) — these are enterprise vendors that customers might want to know about.

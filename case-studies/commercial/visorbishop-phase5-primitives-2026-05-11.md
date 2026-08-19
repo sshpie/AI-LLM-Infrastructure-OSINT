@@ -10,7 +10,7 @@ methodology: deriving second-order findings from the cumulative VisorBishop corp
 
 # VisorBishop Phase 5 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

@@ -40,18 +40,18 @@ Sequential Python script execution under orchestrator supervision. No subagents 
 |---|---|---|
 | disclosures/send_drafts_api.py | Gmail API send orchestrator | Modes: --auth, --test, --dry-run, --send, --limit, --only, --severity, --throttle |
 | disclosures/build_gmail_drafts.py | Draft construction | Pre-existing; generated .md drafts with To/CC/Subject/Body |
-| Gmail API (OAuth 2.0) | SMTP transport | GCP project: NuClide Disclosures; scope: gmail.send only |
+| Gmail API (OAuth 2.0) | SMTP transport | GCP project:  Disclosures; scope: gmail.send only |
 | Python asyncio | MX pre-validation | 44 addresses, 0 syntax errors, 0 MX failures pre-send |
 | JAXEN | [--] not run this session | Disclosure-focused session; no discovery |
 | aimap | [--] not run this session | No new hosts fingerprinted |
-| VisorLog | Progress stamp | nuclide.db not updated this session (no new findings) |
+| VisorLog | Progress stamp | .db not updated this session (no new findings) |
 | VisorHollow | [--] not applicable | Windows-only |
 | VisorAgent | [--] ethical-stop | Never run against operator hosts |
 
 ### Notable Configuration
 
-- Gmail OAuth Desktop client `NuClide CLI` created under Workspace org `nuclide-research.com`; Internal user type (no Google verification required)
-- `client_secret.json` at `~/.config/nuclide/client_secret.json` (mode 600); token cached at `~/.config/nuclide/nicholas-token.json`
+- Gmail OAuth Desktop client ` CLI` created under Workspace org ``; Internal user type (no Google verification required)
+- `client_secret.json` at `~/.config//client_secret.json` (mode 600); token cached at `~/.config//nicholas-token.json`
 - Scope: `gmail.send` only (no mailbox read access)
 - 4 CC addresses manually overridden to root-domain `abuse@` where slug pointed at sub-org subdomain
 - Throttle: default inter-send delay applied; total run time 4m 56s for 36 sends
@@ -88,8 +88,8 @@ Drafts only covered hosts already documented in case studies. No new probes trig
 
 | Time | Action | Outcome / Decision |
 |---|---|---|
-| 09:00 | GCP project NuClide Disclosures created under nuclide-research.com org | Gmail API enabled; OAuth consent screen configured |
-| 09:20 | OAuth Desktop client NuClide CLI created | client_secret.json saved mode 600 |
+| 09:00 | GCP project  Disclosures created under  org | Gmail API enabled; OAuth consent screen configured |
+| 09:20 | OAuth Desktop client  CLI created | client_secret.json saved mode 600 |
 | 09:35 | OAuth flow completed; token cached | gmail.send scope confirmed |
 | 09:45 | send_drafts_api.py built with full mode set | --auth, --test, --dry-run, --send, --limit, --only, --severity, --throttle |
 | 10:00 | MX pre-flight: 44 addresses checked in parallel | 0 syntax errors, 0 MX failures |
@@ -185,11 +185,11 @@ N/A — no systems probed this session.
 
 ```bash
 # Replace slug-string heuristics with authoritative ARIN lookup
-python3 data/nuclide-contact.py --ip 136.183.56.88
+python3 data/-contact.py --ip 136.183.56.88
 # Returns: ARIN OrgName=SUCBUFFALO, abuse=killiatd@buffalostate.edu
 ```
 
-Slug strings are unreliable inputs for institution identification. ARIN OrgName + abuse contact is the authoritative source. `nuclide-contact.py` should be the canonical input for all future `gen_emails.py` runs.
+Slug strings are unreliable inputs for institution identification. ARIN OrgName + abuse contact is the authoritative source. `-contact.py` should be the canonical input for all future `gen_emails.py` runs.
 
 ### R2 — Case-study frontmatter sync post-send
 
@@ -205,7 +205,7 @@ content = content.replace("disclosure_sent: false", f"disclosure_sent: {date}")
 
 ### R3 — Alternate-contact research for dead-letters
 
-Build `nuclide-contact.py` chain: WHOIS abuse + DNS SOA + `/.well-known/security.txt` + FIRST.org CSIRT directory + REN-ISAC. Takes `--ip`/`--domain`/`--ipeds-id` and emits ranked contact list. Run against the 4 dead-letter institutions before next send attempt.
+Build `-contact.py` chain: WHOIS abuse + DNS SOA + `/.well-known/security.txt` + FIRST.org CSIRT directory + REN-ISAC. Takes `--ip`/`--domain`/`--ipeds-id` and emits ranked contact list. Run against the 4 dead-letter institutions before next send attempt.
 
 ### Future automation
 
@@ -239,9 +239,9 @@ python3 disclosures/send_drafts_api.py --dry-run --validate-mx
 ```
 REQUEST:
   Gmail API: users.messages.send
-  From: nicholas@nuclide-research.com
+  From: 
   To: security@kth.se
-  Subject: [NuClide Research] Unauthenticated Ollama Instance — KTH Research Network
+  Subject: [] Unauthenticated Ollama Instance — KTH Research Network
 
 RESPONSE:
   HTTP/1.1 200 OK
@@ -253,7 +253,7 @@ RESPONSE:
 
 AUTO-TICKET RESPONSE (received ~10 min later):
   From: no-reply@kth.se
-  Subject: [KTH-INC-5245868] NuClide Research disclosure received
+  Subject: [KTH-INC-5245868]  disclosure received
   Body: "Both hosts nullrouted" (confirmed same-day remediation)
 ```
 
@@ -273,8 +273,8 @@ RESPONSE (SMTP bounce):
   Detected at pern.onmicrosoft.com
 ```
 
-**Demonstrated:** Published security contact is non-functional due to misconfigured O365 relay. Actor cannot reach the institution via standard channels. This is a class-level failure in academic institution contact hygiene, not a NuClide pipeline failure.
+**Demonstrated:** Published security contact is non-functional due to misconfigured O365 relay. Actor cannot reach the institution via standard channels. This is a class-level failure in academic institution contact hygiene, not a  pipeline failure.
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 7 · 2026-05-04*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 7 · 2026-05-04*

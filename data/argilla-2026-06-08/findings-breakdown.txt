@@ -1,5 +1,5 @@
 Argilla population survey - findings breakdown
-NuClide Research · Cat-51 · 2026-06-08
+ · Cat-51 · 2026-06-08
 Dork: http.title:"Argilla"
 
 ==============================================================================
@@ -12,7 +12,7 @@ HEADLINE
 
   Argilla edges past Label Studio (99.75 % auth-gated, 1 unauth fresh-install
   in a 407-LIVE sample) as the strictest auth-on-default platform in the
-  NuClide program. Both sit in the data-labeling / RLHF annotation domain.
+   program. Both sit in the data-labeling / RLHF annotation domain.
 
 ==============================================================================
 SAMPLE
@@ -150,7 +150,7 @@ THESIS POSITION (vs Cat-49 Label Studio)
   training corpora, annotator PII - RLHF preference data), and both
   demonstrate that the "mandatory first-run signup + auth-required
   /api/" pattern is the strongest defensive posture in the entire
-  NuClide measurement set.
+   measurement set.
 
   The 23-host sample is much smaller than Label Studio's 407 LIVE, so
   the population-level conclusion sits on weaker statistics. Two ways

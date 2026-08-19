@@ -43,7 +43,7 @@ sidenotes:
 
 # Keystone Hardware Wallet: Unauthenticated Control of the AI Customer-Service Knowledge Base
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -88,11 +88,11 @@ The highest-risk slice was small: 46 records in `guide/seed_phrase` and 54 recor
 
 **Read:** Pulled all 6,907 records without credentials.
 
-**Write:** Inserted a marked canary record (`nuclide-research-poc-001`) into the knowledge base. Wrote with a real `intfloat/multilingual-e5-large` embedding to confirm proper storage. Also confirmed that a plain zero vector writes successfully -- the operator's embedding model is not required to inject.
+**Write:** Inserted a marked canary record (`-poc-001`) into the knowledge base. Wrote with a real `intfloat/multilingual-e5-large` embedding to confirm proper storage. Also confirmed that a plain zero vector writes successfully -- the operator's embedding model is not required to inject.
 
 **Delete:** Removed the canary. Verified deletion by re-querying for the ID, which returned an empty `ids` list.
 
-**Infrastructure write:** Created a tenant (`nuclide-poc-tenant`) and database (`poc-db`), then removed both.
+**Infrastructure write:** Created a tenant (`-poc-tenant`) and database (`poc-db`), then removed both.
 
 **Live pipeline:** Queried `/api/search` on port 5050 with "seed phrase recovery." Retrieved top score 0.844. DeepSeek answered as official Keystone support: "您好，我是 Keystone 硬件钱包的官方客服" (Hello, I am the official customer service of Keystone hardware wallet).
 
@@ -164,4 +164,4 @@ ChromaDB's default configuration does not log individual writes. The attack may 
 
 ## Disclosure
 
-Disclosed to eng@keyst.one and support@keyst.one on 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Disclosed to eng@keyst.one and support@keyst.one on 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

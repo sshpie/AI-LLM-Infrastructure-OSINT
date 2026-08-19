@@ -1,5 +1,5 @@
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-17
 
@@ -9,7 +9,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated disclosure. No engagement exists with your organization. I have not queried `/runs/full` with any real entity or project value. The OpenAPI schema is the finding.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated disclosure. No engagement exists with your organization. I have not queried `/runs/full` with any real entity or project value. The OpenAPI schema is the finding.
 
 ---
 
@@ -91,5 +91,5 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/adya-ai-vanijmcp-2
 Happy to provide additional detail. No response required.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+

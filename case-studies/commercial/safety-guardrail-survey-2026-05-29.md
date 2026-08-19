@@ -90,7 +90,7 @@ same pattern as Insight #12: one service auth-off predicts more auth-off on the
 same IP. The irony is the platform class. The tool was a safety scanner, and the
 host around it was the least safe thing in the survey.
 
-Six findings landed in nuclide.db via VisorLog.
+Six findings landed in .db via VisorLog.
 
 ## Stage 6 and 7, score, codify
 
@@ -143,7 +143,7 @@ menlohunt    HEADLINE: 5.78.101.230 -> MongoDB + Redis 7.2.10 + MySQL + Postgres
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only without live key
 VisorPlus    components run individually
-VisorLog     8 aimap + 2 manual events -> nuclide.db
+VisorLog     8 aimap + 2 manual events -> .db
 VisorScuba   no control for guardrail-unauth (gap)
 BARE         no MSF coverage (0.507/0.502) first-party/novel
 VisorCorpus  136-case corpus reusable (guardrails are LLM-adjacent)

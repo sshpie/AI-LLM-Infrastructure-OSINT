@@ -1,7 +1,7 @@
 # Disclosure: Fitnessking fk_email_threads Qdrant Exposure
 # Status: SENT 2026-06-21
 # To: info@fitnessking.be
-# From: nicholas@nuclide-research.com
+# From: 
 # Gmail messageId: 19eea238fdb99f5a
 
 ---

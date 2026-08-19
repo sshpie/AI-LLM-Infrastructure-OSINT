@@ -32,12 +32,12 @@ The cs* corpora cover the relevant underlying ML reliability and adversarial rob
 
 ## Current survey instances
 
-NuClide does not directly survey LLM09 — misinformation findings require:
+ does not directly survey LLM09 — misinformation findings require:
 - Active LLM invocation (operator's budget)
 - Output evaluation (correctness ground truth)
 - Multi-query iteration
 
-Both cross NuClide restraint policy. However, NuClide surveys produce **enabling conditions** for LLM09 attacks:
+Both cross  restraint policy. However,  surveys produce **enabling conditions** for LLM09 attacks:
 
 - **LiteLLM open proxies** (`surveys/2026-06-06-litellm.md`) — anyone can invoke the operator's `claude-sonnet-4-6` / `gpt-5.4` / `gemini-2.5-pro` via the open gateway, including for misinformation generation at scale, billed to the operator.
 - **RAGFlow open registration** — registered tenants can introduce misinformation documents into knowledge bases (overlaps LLM04 poisoning).
@@ -46,7 +46,7 @@ Both cross NuClide restraint policy. However, NuClide surveys produce **enabling
 
 Unlike LLM02 (configuration disclosure) or LLM06 (deployed exploit config), LLM09 cannot be detected from the infrastructure layer. It requires output evaluation. The detection methodology is fundamentally different — it lives in evaluation frameworks (HELM, BIG-bench, FactScore, TruthfulQA) rather than in network scanning.
 
-This is a class NuClide flags as **out of scope for current population-survey methodology** while acknowledging the class exists and is enabled by the same auth-permissive-default cohort.
+This is a class  flags as **out of scope for current population-survey methodology** while acknowledging the class exists and is enabled by the same auth-permissive-default cohort.
 
 ## Defensive controls
 
@@ -59,7 +59,7 @@ This is a class NuClide flags as **out of scope for current population-survey me
 ## Related NICE roles
 
 - **541 Vulnerability Assessment Analyst** — surfaces the enabling-condition infrastructure
-- **661 R&D Specialist** — would build evaluation frameworks if NuClide expanded into LLM09 directly
+- **661 R&D Specialist** — would build evaluation frameworks if  expanded into LLM09 directly
 - **K0202 KSA: Knowledge of application firewall concepts (single point of authentication/audit/policy enforcement)** — relevant to output-filtering layers
 
 ## Insight #76 connection

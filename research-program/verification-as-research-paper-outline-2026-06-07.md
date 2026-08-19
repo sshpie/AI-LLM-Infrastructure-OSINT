@@ -24,7 +24,7 @@ No data here yet. Set up the rest of the paper.
 
 Define the pipeline: Discover → Fingerprint → **Verify** → Attribute → Classify → Ledger → Score → Codify. Emphasis on verify. Explain "200-with-data" as the verification gate: a finding requires reading something. Explain restraint: names ARE the finding; do not exfiltrate.
 
-Cite NuClide methodology canon by section number (Sections 2 and 3). Quote the one-sentence version from Section 0 of the methodology.
+Cite  methodology canon by section number (Sections 2 and 3). Quote the one-sentence version from Section 0 of the methodology.
 
 ### 3. The evidence: 21 codified insights, 18 verification-stage (~1,200 words)
 
@@ -90,7 +90,7 @@ So what?
 
 For defenders: a scanner report at population scale is a candidate set, not a finding set. The 6.5x correction in the Cat-03 worked example is not unusual. Bake verification into the workflow or the headline number lies.
 
-For vendors: when a NuClide disclosure arrives, the framing has already been re-probed. The candidate-to-finding ratio is small by design. This is not a bug-bounty firehose; it is a curated set.
+For vendors: when a  disclosure arrives, the framing has already been re-probed. The candidate-to-finding ratio is small by design. This is not a bug-bounty firehose; it is a curated set.
 
 For the field: 18-of-21 verification-stage failure rate is the methodology meta-finding. The interesting research lives at the verify step, not the scan step. Publishing scanners is easy; publishing verification rubrics is rare.
 
@@ -105,7 +105,7 @@ Honest caveats:
 
 ### 9. Conclusion (~200 words)
 
-One paragraph. The closing claim: verification is the load-bearing stage; the scan is the easy part; if you only invest in scanning, your population-scale finding rate is confident and wrong. NuClide invests in verification; that is why the candidate-to-finding ratio looks the way it does; that is why the insights bucket the way they do; that is the program.
+One paragraph. The closing claim: verification is the load-bearing stage; the scan is the easy part; if you only invest in scanning, your population-scale finding rate is confident and wrong.  invests in verification; that is why the candidate-to-finding ratio looks the way it does; that is why the insights bucket the way they do; that is the program.
 
 ---
 
@@ -136,5 +136,5 @@ Open every insight file 1-80, code each one as scanning / verification / codific
 ## Output destinations
 
 - Draft: `~/AI-LLM-Infrastructure-OSINT/research-program/papers/verification-bottleneck-DRAFT.md`
-- Final: nuclide-research.com `/papers/` (once polished) + research-program/papers/ archive
+- Final:  `/papers/` (once polished) + research-program/papers/ archive
 - Citations: per-insight `methodology/insight-NN-*.md`, per-case `case-studies/commercial/*.md`, per-matrix `data/dcwf-ksat-coverage-matrix-2026-06-07.csv`

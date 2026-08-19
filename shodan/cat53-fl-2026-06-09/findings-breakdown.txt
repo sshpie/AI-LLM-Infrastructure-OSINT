@@ -1,7 +1,7 @@
 Cat-53 Federated Learning - Findings Breakdown
 Survey date: 2026-06-09
-Operator: NuClide research program
-Methodology: NuClide assessment chain v2.5 - Stage -1 through Stage 3v complete
+Operator:  program
+Methodology:  assessment chain v2.5 - Stage -1 through Stage 3v complete
 Verification rung framing: Insight #68 (Depth A/B × Breadth 0/1/2)
 
 ==============================================================================
@@ -97,7 +97,7 @@ ACE (Xu 2024).
 T3 - Metadata leakage. The /v1/job/list and /v1/table/info endpoints (per
 OSINT) return job topology + table schemas containing PII column names
 (id_card, mobile, salary, credit_score). Names are the finding per
-NuClide restraint.
+ restraint.
 
 T5 - Eggroll exposure violates Insight #12 (operators ship adjacent
 services auth-off with the lead service). FATE assumes 4670/4671 are
@@ -120,7 +120,7 @@ Disclosure routing (Insight #4: WHOIS authoritative):
 - 39.101.x / 39.104.x: Aliyun Computing - Alibaba Cloud abuse@ + CNVD.
 - 150.129.138.81: ERENB Tech Development - CNVD intake.
 
-All four CN-located. Disclosure pipeline candidate (deferred per NuClide
+All four CN-located. Disclosure pipeline candidate (deferred per 
 process - no premature outreach).
 
 ==============================================================================
@@ -212,7 +212,7 @@ is what the auth-on-default thesis cares about, and it is verified.
 
 Severity reclassification: 150.129.138.81 -> critical (was high). The
 other three FATE hosts remain high pending the same deep probe (deferred
-per NuClide process: we have a sufficient single-host inner-B verification
+per  process: we have a sufficient single-host inner-B verification
 of the API class to publish the finding).
 
 Evidence artifacts (not committed; in shodan/cat53-fl-2026-06-09/evidence/,
@@ -436,7 +436,7 @@ platforms (NVFlare / OpenFL / FedML) for two compounding reasons:
 1. Censys Platform API blocked on free tier. cencli credit balance shows
    100 (user-level), but every `cencli search` and `cencli view` call
    returns HTTP 422 "insufficient balance" because the configured
-   organization (nuclide research, ID e9655161-...) has 0 org credits.
+   organization (, ID e9655161-...) has 0 org credits.
    Free-tier search has historically required the Platform web UI
    (reference_censys_expert memory); that is still true.
 2. Censys Platform web UI requires authentication. Playwright loaded

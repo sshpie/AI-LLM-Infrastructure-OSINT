@@ -12,12 +12,12 @@ An LLM-integrated system leaks sensitive information through:
 1. **Training-data extraction** — the model returns memorized training data verbatim (Carlini's "Extracting Training Data from Large Language Models" line of work).
 2. **Membership inference** — an attacker determines whether a specific record was in the training set.
 3. **Model extraction / theft** — model weights, fine-tuning datasets, or distilled approximations are stolen via query API.
-4. **Configuration / metadata disclosure** — the *infrastructure* leaks credentials, project names, user records, API endpoints, model identifiers. **This is the NuClide-discovered class.**
+4. **Configuration / metadata disclosure** — the *infrastructure* leaks credentials, project names, user records, API endpoints, model identifiers. **This is the -discovered class.**
 5. **Cross-session leakage** — multi-tenant deployments leak one user's data to another.
 
 ## Academic citations
 
-From the NuClide aisecure literature corpora:
+From the  aisecure literature corpora:
 
 - **Shokri et al. "Membership Inference Attacks Against Machine Learning Models" (`arxiv_1610.05820`)** — the foundational paper on inferring training-set membership. In CS 562, CS 598 Fall 2020/2021.
 - **Carlini et al. "The Secret Sharer" (`arxiv_1802.08232`)** — measures unintended memorization in generative sequence models. In CS 562, CS 598 Fall 2020/2021.
@@ -25,9 +25,9 @@ From the NuClide aisecure literature corpora:
 - **Abadi et al. "Deep Learning with Differential Privacy (DP-SGD)" (`arxiv_1607.00133`)** — the canonical defense against the above. In CS 442, CS 562, CS 598 Fall 2020/2021.
 - **Papernot et al. "PATE" (`arxiv_1610.05755`)** — alternative DP training. In CS 562, CS 598 Fall 2020.
 
-## Current survey instances — the NuClide-discovered class
+## Current survey instances — the -discovered class
 
-This is the **most common finding class in the 2026-06-06 surveys**. NuClide finds infrastructure-side configuration/metadata disclosure, not training-data extraction.
+This is the **most common finding class in the 2026-06-06 surveys**.  finds infrastructure-side configuration/metadata disclosure, not training-data extraction.
 
 - **Arize Phoenix** (`surveys/2026-06-06-phoenix.md`) — 41/55 hosts expose `/v1/projects` without auth (project names, IDs); 34/55 expose `/v1/users` (account records, timestamps). **The single cleanest LLM02 finding in the day's work.**
   - Notable: Northeastern University (Essaybot project — FERPA-class), SENAI Brazil (LGPD-class), `37.27.248.144` Hetzner with 21 projects exposed.
@@ -47,7 +47,7 @@ The 732 Privacy Officer / Privacy Compliance Manager role (see `roles/732-privac
 
 ## Why LLM02 jumped #6 → #2 in 2025
 
-Per AI-Native LLM Security (Packt, December 2025) Appendix A: the promotion reflects "documented incidents and broader deployment of LLM systems" — specifically Samsung 2023 (employees pasting proprietary code into ChatGPT), healthcare app breaches, and cross-session data leakage in multi-tenant LLM services. The NuClide research-program data point — 34/55 Phoenix instances exposing user records publicly — is consistent with the OWASP committee's empirical observation that this class is widespread.
+Per AI-Native LLM Security (Packt, December 2025) Appendix A: the promotion reflects "documented incidents and broader deployment of LLM systems" — specifically Samsung 2023 (employees pasting proprietary code into ChatGPT), healthcare app breaches, and cross-session data leakage in multi-tenant LLM services. The -program data point — 34/55 Phoenix instances exposing user records publicly — is consistent with the OWASP committee's empirical observation that this class is widespread.
 
 ## Related NICE roles
 
@@ -58,4 +58,4 @@ Per AI-Native LLM Security (Packt, December 2025) Appendix A: the promotion refl
 
 ## Insight #76 connection
 
-The cohort-default for new-gen OSS AI/LLM infrastructure (88.9% Langfuse, 87.2% RAGFlow, 74.5% Phoenix) is the **enabling condition for LLM02:2025 at population scale**. The OWASP committee's rank promotion and the NuClide same-day three-platform survey corpus are pointing at the same phenomenon from different sides.
+The cohort-default for new-gen OSS AI/LLM infrastructure (88.9% Langfuse, 87.2% RAGFlow, 74.5% Phoenix) is the **enabling condition for LLM02:2025 at population scale**. The OWASP committee's rank promotion and the  same-day three-platform survey corpus are pointing at the same phenomenon from different sides.

@@ -1,6 +1,6 @@
 # Category 30: Agent-Memory Layer
 
-_NuClide Research, 2026-05-29. Companion intel:
+_, 2026-05-29. Companion intel:
 `data/platform-intel/agent-memory-osint-2026-05-29.md`._
 
 The persistence tier of the agent stack: mem0/OpenMemory, Letta (MemGPT), Zep CE

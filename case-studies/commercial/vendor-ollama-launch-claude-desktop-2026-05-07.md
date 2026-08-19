@@ -10,7 +10,7 @@ methodology: source-code authority + npm-registry survey + community-corpus sear
 
 # `ollama launch claude-desktop`: gateway-mode MITM by default + community-tutorial typosquat surface
 
-NuClide Research, 2026-05-07
+, 2026-05-07
 
 ## TL;DR
 
@@ -162,7 +162,7 @@ Two parties should act:
    - Surface `npx -y` invocations specifically as "downloading and executing arbitrary code from npm; confirm?".
    - Optionally maintain a `mcpServers` allow-list of known-safe packages that bypass the warning.
 
-The third party (NuClide) will not register the unclaimed names. Speculatively claiming names creates registry pollution and shifts the failure mode from "silent 404" to "third-party-controlled placeholder", neither of which is the right end-state. The right end-state is vendor-side fixes from the two parties above.
+The third party () will not register the unclaimed names. Speculatively claiming names creates registry pollution and shifts the failure mode from "silent 404" to "third-party-controlled placeholder", neither of which is the right end-state. The right end-state is vendor-side fixes from the two parties above.
 
 ## Finding 3: Issue #16005 is misframed
 
@@ -206,7 +206,7 @@ Three threads:
 
 3. **Disclose to Anthropic** (`security@anthropic.com`). Recommend Claude Desktop harden its MCP-launch path: warn on first execution of new `mcpServers[*].command` entries, treat `npx -y` specifically, optionally allow-list known-safe packages.
 
-NuClide will not register the unclaimed names speculatively.
+ will not register the unclaimed names speculatively.
 
 ## IOCs
 

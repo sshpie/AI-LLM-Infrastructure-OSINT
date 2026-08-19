@@ -29,7 +29,7 @@ import urllib.error
 from pathlib import Path
 
 TIMEOUT = 6
-HEADERS = {"User-Agent": "NuClide-Research/label-studio-2026-06-08"}
+HEADERS = {"User-Agent": "/label-studio-2026-06-08"}
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE

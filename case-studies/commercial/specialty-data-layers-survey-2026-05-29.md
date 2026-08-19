@@ -74,7 +74,7 @@ aimap v1.9.40 fingerprinted all six Spark hosts as Apache Spark UI at high
 severity, the fingerprint already in the catalog. menlohunt swept the 47-job ML
 pipeline host and found it isolated, no stacked services, the host firewalled to
 the one port. Two unauthenticated Spark hosts and the ClickHouse population landed
-in nuclide.db.
+in .db.
 
 ## Impact
 
@@ -125,7 +125,7 @@ menlohunt    34.145.73.130 IP-shadow: isolated, 0 findings
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only
 VisorPlus    components individual
-VisorLog     2 Spark unauth (high) + 1 ClickHouse (info) -> nuclide.db
+VisorLog     2 Spark unauth (high) + 1 ClickHouse (info) -> .db
 VisorScuba   Spark-unauth / ClickHouse not mapped to a control (gap)
 BARE         data-layer authz first-party class
 VisorCorpus  N/A no inference surface

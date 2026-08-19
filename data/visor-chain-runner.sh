@@ -1,5 +1,5 @@
 #!/bin/bash
-# visor-chain-runner.sh — full 18-step NuClide chain over a list of IPs.
+# visor-chain-runner.sh — full 18-step  chain over a list of IPs.
 # Used after `jaxen import --no-lookup --source <slug> <shodan-export>` populates empire.db.
 #
 # Usage: bash visor-chain-runner.sh <slug>
@@ -14,7 +14,7 @@ SLUG="${1:-tei}"
 CENSYS_QUERY="${2:-}"
 HITS_FILE="/tmp/shodan-${SLUG}-hits.txt"
 RECON_DIR="$HOME/recon/${SLUG}-${DATE}"
-NUCLIDE_DB="$HOME/AI-LLM-Infrastructure-OSINT/data/nuclide.db"
+_DB="$HOME/AI-LLM-Infrastructure-OSINT/data/.db"
 AIMAP_PORTS="80,443,1984,2379,3000,3001,4000,4040,4200,5000,5001,5678,6333,7575,7576,7860,8000,8001,8080,8081,8123,8233,8265,8443,8501,8787,8888,8889,9000,9090,9091,10000,11434,15500,18080,18789,19530,30000,51000,55000"
 
 # Fail-closed footprint guard: refuse outward probing unless the Mullvad tunnel is up.
@@ -188,7 +188,7 @@ echo "  (skipped for batch; per-host JS extraction in case-study writeup)"
 echo
 echo "=== STEP 6: visorlog ingest from aimap report ==="
 # Convert aimap JSON -> VisorLog NDJSON via the shared, tested converter.
-# Emits DOTTED ECS keys (host.ip / nuclide.tags / ...) so ip + tags actually
+# Emits DOTTED ECS keys (host.ip / .tags / ...) so ip + tags actually
 # persist (the old inline heredoc emitted snake_case, which Unmarshal dropped),
 # maps enum_results[].findings[].category -> canonical tags (EXFIL-CREDENTIAL,
 # ...), and merges empire.db favicon markers (FAVICON-PRESENT / DEFAULT-FAVICON).
@@ -198,11 +198,11 @@ python3 ~/AI-LLM-Infrastructure-OSINT/tools/aimap-to-findings.py \
   --sector "$SLUG" \
   --empire-db "$RECON_DIR/empire.db" \
   -o "$RECON_DIR/findings.ndjson"
-~/go/bin/visorlog --db "$NUCLIDE_DB" ingest --format ndjson "$RECON_DIR/findings.ndjson" 2>&1 | tail -5
+~/go/bin/visorlog --db "$_DB" ingest --format ndjson "$RECON_DIR/findings.ndjson" 2>&1 | tail -5
 
 echo
 echo "=== STEP 7: visorscuba assess ==="
-~/go/bin/visorscuba assess --db "$NUCLIDE_DB" --json 2>&1 | python3 -c "
+~/go/bin/visorscuba assess --db "$_DB" --json 2>&1 | python3 -c "
 import json, sys
 d = json.load(sys.stdin)
 data = d if isinstance(d, list) else d.get('results', [])
@@ -230,7 +230,7 @@ for line in open('$RECON_DIR/findings.ndjson'):
         'severity': f['event_severity'],
         'source': f['source'],
     })
-out = {'version': 1, 'scanner': 'nuclide', 'source': 'nuclide', 'findings': findings}
+out = {'version': 1, 'scanner': '', 'source': '', 'findings': findings}
 json.dump(out, open('$RECON_DIR/bare/input.json', 'w'))
 print(f'  → BARE input prepared with {len(findings)} findings')
 EOF
@@ -261,7 +261,7 @@ echo
 echo "=== STEP 12: visor-report (drill-down HTML report from the ledger) ==="
 REPORT_HTML="$RECON_DIR/${SLUG}-report.html"
 python3 ~/AI-LLM-Infrastructure-OSINT/tools/visor-report.py from-visorlog \
-  --db "$NUCLIDE_DB" --sector "${SLUG}" -o "$REPORT_HTML" 2>&1 | tail -2 \
+  --db "$_DB" --sector "${SLUG}" -o "$REPORT_HTML" 2>&1 | tail -2 \
   || echo "  (visor-report failed; ledger may be empty for sector ${SLUG})"
 echo "  → open report: $REPORT_HTML"
 echo "  (rich drill-down: copy tools/finops_to_report.py -> tools/${SLUG}_to_report.py, tune predicates,"

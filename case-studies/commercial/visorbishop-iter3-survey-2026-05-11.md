@@ -10,7 +10,7 @@ methodology: re-running VisorBishop with 26-port IP-shadow set (added MLflow, Qd
 
 # VisorBishop loop-iteration #3 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

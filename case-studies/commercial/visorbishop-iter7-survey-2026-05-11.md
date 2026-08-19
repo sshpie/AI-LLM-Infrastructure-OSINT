@@ -10,7 +10,7 @@ methodology: extending VisorBishop fingerprint coverage from the observability +
 
 # VisorBishop iter-7 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

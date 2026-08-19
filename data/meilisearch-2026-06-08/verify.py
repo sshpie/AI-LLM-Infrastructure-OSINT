@@ -22,7 +22,7 @@ from pathlib import Path
 
 HONEYPOT_SALT = "wW0sffoqsk.EM"
 TIMEOUT = 6
-HEADERS = {"User-Agent": "NuClide-Research/meilisearch-survey-2026-06-08"}
+HEADERS = {"User-Agent": "/meilisearch-survey-2026-06-08"}
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE

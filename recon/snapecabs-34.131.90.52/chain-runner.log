@@ -27,7 +27,7 @@
 === STEP 4: JS-bundle extraction (fires only on hosts with web SPA — handled at write-up time) ===
   (skipped for batch; per-host JS extraction in case-study writeup)
 
-=== STEP 5: nuclide-contact per host ===
+=== STEP 5: -contact per host ===
   → 1 contacts resolved
 
 === STEP 6: visorlog ingest from aimap report ===
@@ -78,7 +78,7 @@ Tools fired:
   ✓ aimap -list (Step 1b)
   ✓ visorgraph -ip per host (Step 2)
   ✓ aimap-profile per host (Step 3)
-  ✓ nuclide-contact per host (Step 5)
+  ✓ -contact per host (Step 5)
   ✓ visorlog ingest (Step 6)
   ✓ visorscuba assess (Step 7)
   ✓ bare rank (Step 8)

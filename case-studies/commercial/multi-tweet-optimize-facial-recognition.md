@@ -4,7 +4,7 @@ type: multi-host
 
 # tweet-optimize.com: 1.21M Facial Embeddings (OnlyFans + Second Dataset) Exposed Unauth on Milvus
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 > **Disclosure status (2026-05-03):** Disclosed today to the operator (via tweet-optimize.com `/contact` form), to Fenix International Limited / OnlyFans (`privacy@onlyfans.com` + EU GDPR rep `fenix.eurep@dapr.pl`), to Hetzner Online GmbH (`abuse@hetzner.com`), and to the Finnish Data Protection Ombudsman (`tietosuoja@om.fi`). **Exposure was still live at the moment disclosure emails were sent** (re-probe at 2026-05-03 19:48 UTC: counts unchanged at 897,111 + 313,066, see [`evidence/raw/60-post-disclosure-check.txt`](../../evidence/tweet-optimize-2026-05-03/raw/60-post-disclosure-check.txt)). Live disclosure tracking: [`disclosure/tweet-optimize-2026-05-03-log.md`](disclosure/tweet-optimize-2026-05-03-log.md).
 
@@ -126,7 +126,7 @@ This is a face indexer over scraped or aggregated source images (one row per det
 
 ### F0: Verification Evidence (Empirical)
 
-NuClide performed the following verification probes against the live Milvus instance to confirm the search primitive works as the schema implies:
+ performed the following verification probes against the live Milvus instance to confirm the search primitive works as the schema implies:
 
 [![Search loopback, doxing primitive in action](../../evidence/tweet-optimize-2026-05-03/07-search-loopback-doxing-primitive.png)](../../evidence/tweet-optimize-2026-05-03/07-search-loopback-doxing-primitive.png)
 
@@ -329,12 +329,12 @@ The Hetzner + OnlyFans disclosure pair is the highest-signal opener because both
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
 | Discovery | Milvus cloud survey 2026-05 |
-| Ledger entry | `nuclide.db` record `host.ip = 65.108.107.240`, severity CRITICAL, tags `FACIAL_RECOGNITION,ONLYFANS,IMAGE_MATCHING` |
+| Ledger entry | `.db` record `host.ip = 65.108.107.240`, severity CRITICAL, tags `FACIAL_RECOGNITION,ONLYFANS,IMAGE_MATCHING` |
 | Operator brand | `tweet-optimize.com` (per HTTP 301) |
 | Compliance score | 0/10 (AI.C1 unauth-baseline) |
 

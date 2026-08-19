@@ -1,6 +1,6 @@
 ---
 to: it-sicherheit@uni-ulm.de
-cc: kiz@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@nuclide-research.com
+cc: kiz@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@
 severity: CRITICAL
 ip: 134.60.110.66
 institution: Universität Ulm Medical Faculty (labdevice.medizin.uni-ulm.de), ACTIVE COMPROMISE, attacker reverse shell still running
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** it-sicherheit@uni-ulm.de
-**Cc:** kiz@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@nuclide-research.com
+**Cc:** kiz@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@
 **Subject:** URGENT, ACTIVE COMPROMISE on labdevice.medizin.uni-ulm.de (134.60.110.66): unauthenticated Jupyter Notebook → attacker reverse shell to 172.233.96.208:3053 still running
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -27,7 +27,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited urgent-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited urgent-disclosure notification.
 
 A `labdevice.medizin.uni-ulm.de` host has been compromised through an unauthenticated Jupyter Notebook. An attacker has installed an active reverse shell that is currently beaconing to `172.233.96.208:3053`. The attacker first attempted to install Hilix botnet malware on 2026-04-29, failed because the binary was x86_64 and the device is ARM, then returned 2026-05-05 with a socat-based reverse shell that is still running as of probe at 2026-05-07 02:00 UTC.
 
@@ -134,7 +134,7 @@ The risk is not data exfiltration of medical research per se, it's:
 
 ## Reference
 
-Full case study (this is condensed from the post-disclosure NuClide writeup):
+Full case study (this is condensed from the post-disclosure  writeup):
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-uni-ulm-jupyter-compromise-2026-05-06.md
 
 Original Shodan dork that surfaced the host: `http.title:"Home Page - Select or create a notebook"`, token-disabled Jupyter classic UI
@@ -142,6 +142,6 @@ Original Shodan dork that surfaced the host: `http.title:"Home Page - Select or 
 I am available for verification, additional forensic detail, or to extract additional kernel-state evidence before remediation if useful for incident response. Given the active C2 connection, expedited remediation is requested.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

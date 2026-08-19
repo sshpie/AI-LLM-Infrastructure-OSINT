@@ -1,6 +1,6 @@
 # University of Dhaka: Coding Cluster, 3 Cloud Proxies, Embedding Pipeline
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

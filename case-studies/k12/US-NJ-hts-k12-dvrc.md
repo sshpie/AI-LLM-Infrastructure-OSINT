@@ -10,7 +10,7 @@ tags: [ollama, open-webui, k12, unauth, api-key-exposure, auth-bypass]
 
 # hts.k12.nj.us: NJ K-12 Open WebUI + Ollama Exposure
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 
@@ -18,7 +18,7 @@ _NuClide Research · 2026-05-01_
 
 A New Jersey K-12 school district server running Open WebUI v0.8.8 backed by Ollama v0.17.5 was found with the raw Ollama API port (11434) exposed to the public internet alongside the authenticated Open WebUI frontend (port 3000). This bypasses the authentication layer entirely. Five active cloud AI subscriptions (Google Gemini, DeepSeek, MiniMax) were confirmed accessible via unauthenticated quota hijack.
 
-**Disclosure notice planted:** `nuclide-notice:latest` model placed in server's model list. Admin will find it on next `/api/tags` review.
+**Disclosure notice planted:** `-notice:latest` model placed in server's model list. Admin will find it on next `/api/tags` review.
 
 ---
 
@@ -157,9 +157,9 @@ Operator username: `ltus`
 
 ## Proof of Concept
 
-All findings confirmed 2026-05-01. Inference executed on minimax-m2.1:cloud at operator's expense (288 tokens, immediately stopped). Model injection demonstrated via `nuclide-notice:latest` creation. No data exfiltrated. No existing models destroyed.
+All findings confirmed 2026-05-01. Inference executed on minimax-m2.1:cloud at operator's expense (288 tokens, immediately stopped). Model injection demonstrated via `-notice:latest` creation. No data exfiltrated. No existing models destroyed.
 
-**Notice planted:** `nuclide-notice:latest` appears in `/api/tags`. Model outputs security notice when queried. Admin will find it on next model list review.
+**Notice planted:** `-notice:latest` appears in `/api/tags`. Model outputs security notice when queried. Admin will find it on next model list review.
 
 ---
 
@@ -194,6 +194,6 @@ for model in $(curl -s http://localhost:11434/api/tags | jq -r '.models[].name')
 ## Disclosure
 
 - **Discovered:** 2026-05-01
-- **Notice planted:** 2026-05-01 (`nuclide-notice:latest`)
+- **Notice planted:** 2026-05-01 (`-notice:latest`)
 - **Formal disclosure:** Pending (see `../disclosures/hts-k12-nj-dvrc.md`)
 - **Public disclosure:** 2026-07-30 (90-day window from 2026-05-01)

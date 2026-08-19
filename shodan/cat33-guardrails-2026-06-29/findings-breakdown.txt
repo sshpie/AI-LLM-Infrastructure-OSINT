@@ -384,7 +384,7 @@ CHAIN COMPLETION STATUS
 [x] 3v.  VERIFY                -- G1/G2/G3/G4 verified; G5 stale (0 live Arthur instances)
 [x] 4.   JS-bundle             -- NeMo Next.js (chatbot-ui fork): 0 secrets, 0 internal endpoints
                                    serverSideApiKeyIsSet:false confirms no hardcoded key
-[x] 6.   VisorLog              -- findings #40-#44 ingested (nuclide.db)
+[x] 6.   VisorLog              -- findings #40-#44 ingested (.db)
 [x] 7.   VisorScuba            -- G4: 6/10 (AI.C1 + exposure); G1/G2/G3: 9/10 (exposure only)
                                    null-guardrail + config-enum not in baseline -- VisorScuba gap noted
 [x] 8.   BARE                  -- all 4 findings no_high_confidence_match (scores 0.47-0.51)

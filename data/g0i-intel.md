@@ -1,6 +1,6 @@
 # G0I: AI API Gateway Intelligence
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

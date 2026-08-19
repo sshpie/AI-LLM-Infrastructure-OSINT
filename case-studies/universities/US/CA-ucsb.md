@@ -1,6 +1,6 @@
 # UC Santa Barbara: Open WebUI Auth Disabled + Local Username Leak
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 
@@ -200,7 +200,7 @@ All 4 confirmed hosts are research-compute environments across 3 states (CA × 2
 - `spark-4de1.mcdb.ucsb.edu`: Ollama cloud-proxy class — OBSERVED (per visorgoose tag; independent verification pending)
 - `ResNet-10-33.resnet.ucsb.edu`: Open WebUI auth-on class — OBSERVED
 
-UCSB now has 3 distinct hosts in the NuClide ledger (AI Lab, MCDB, ResNet). Pattern observation: UCSB infrastructure surfaces frequently across dept ranges + residence-hall ranges (similar to Duke's VCM pattern — institutional networks let individual users stand up services).
+UCSB now has 3 distinct hosts in the  ledger (AI Lab, MCDB, ResNet). Pattern observation: UCSB infrastructure surfaces frequently across dept ranges + residence-hall ranges (similar to Duke's VCM pattern — institutional networks let individual users stand up services).
 
 ### Source artifacts
 

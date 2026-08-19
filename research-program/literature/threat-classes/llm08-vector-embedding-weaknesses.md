@@ -27,15 +27,15 @@ The graph-AdvML cluster in CS 598 Fall 2021 (~6 papers) is the closest direct an
 
 ## Current survey instances
 
-NuClide's prior Cat-02 Vector Database survey (2026-06-04) covered the vector-store layer extensively: 148 verified-unauth Vector DB hosts across Qdrant, Weaviate, Milvus, Chroma, Pinecone-self-hosted. Current 2026-06-06 surveys extend this:
+'s prior Cat-02 Vector Database survey (2026-06-04) covered the vector-store layer extensively: 148 verified-unauth Vector DB hosts across Qdrant, Weaviate, Milvus, Chroma, Pinecone-self-hosted. Current 2026-06-06 surveys extend this:
 
 - **Flowise FDAPineconeIndexing** (`146.190.128.73:3000`) — `pineconeIndex: "flowise"` discoverable from the open chatflow config; the operator's Pinecone API key (in Flowise credential store) gives anyone with chatflow-API access the ability to read or write to the Pinecone index. **The vector store is reachable via the chatflow proxy.**
 - **RAGFlow** (`surveys/2026-06-06-ragflow.md`) — 87.2% REGISTER_OPEN. A registered tenant can write to the vector store (RAGFlow's internal Infinity/Elasticsearch backend). Multi-tenant isolation determines whether one tenant's writes affect another's retrieval.
 - **Earlier surveys**: Weaviate 13,631 PII records publicly accessible (aimable.ai case, 2026-05-15); Qdrant 4 collections including 18,828 vectors on University of Queensland UQConnect cluster (Cat-05 finding F-006).
 
-## Why LLM08 is structurally connected to the NuClide research program
+## Why LLM08 is structurally connected to the  program
 
-NuClide's tooling (aimap with Qdrant/Weaviate/Milvus/Chroma fingerprints; herald's LLM-platform configs) was built specifically to surface this attack class. The 2025 addition of LLM08 to OWASP validates the program's focus area: the field has caught up to what the NuClide methodology has been finding for 12+ months.
+'s tooling (aimap with Qdrant/Weaviate/Milvus/Chroma fingerprints; herald's LLM-platform configs) was built specifically to surface this attack class. The 2025 addition of LLM08 to OWASP validates the program's focus area: the field has caught up to what the  methodology has been finding for 12+ months.
 
 ## Defensive controls
 

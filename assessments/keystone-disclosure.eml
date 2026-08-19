@@ -1,4 +1,4 @@
-From: Nicholas Kloster <nicholas@nuclide-research.com>
+From:  <>
 To: eng@keyst.one
 Cc: support@keyst.one
 Subject: Unauthenticated knowledge base behind your AI support chatbot
@@ -14,7 +14,7 @@ Content-Transfer-Encoding: quoted-printable
 
 Hello,
 
-We are NuClide Research, an independent security research practice. We coordi=
+We are , an independent security research practice. We coordi=
 nate vulnerability disclosures responsibly. Our prior work includes CVE-2025-=
 4364 and ICSA-25-140-11, both handled through CISA. We are writing because we=
  found an exposure on Keystone infrastructure that we believe needs attention=
@@ -41,7 +41,7 @@ etriever picks, so a poisoned entry can be tuned to win before any real user =
 is ever affected.
 
 Our restraint. We held to a read-and-confirm posture. To prove write access w=
-e inserted one clearly marked research record, nuclide-research-poc-001, then=
+e inserted one clearly marked research record, -poc-001, then=
  deleted it and confirmed it was gone. The seed-phrase-theft outcome describe=
 d above is a capability we assembled from confirmed primitives, not an attack=
  we ran against your users. Your production content and your users were left =
@@ -57,9 +57,9 @@ e are glad to help you verify the fix at no cost.
 Thank you for the work you do on self-custody. We are available to answer que=
 stions and to coordinate on timing.
 
-Nicholas Kloster
-NuClide Research
-nicholas@nuclide-research.com
+
+
+
 
 --===============2757499515416485682==
 Content-Type: text/markdown

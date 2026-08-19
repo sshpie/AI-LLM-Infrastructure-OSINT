@@ -48,9 +48,9 @@
 | Design | Channel-semaphore concurrency + declarative YAML pattern selected from O'Reilly literature review (Security with Go + Powerful CLI Applications) |
 | Implementation | `~/herald/main.go` (~280 lines Go) |
 | Testing | Python probe baseline validation; Dify 747 findings match before promotion to production use |
-| Deployment | Public release at `github.com/nuclide-research/herald` under MIT |
+| Deployment | Public release at `github.com/sshpie/herald` under MIT |
 | Maintenance | Numeric coercion fix between v0.1.0 and v0.1.1 — documented in commit message and CHANGELOG-equivalent in commit history |
 
 ## Off-ramps (where this role could lead)
 
-Per NICE PDF: 651 Enterprise Architect, 652 Security Architect. The 631→652 off-ramp aligns with the research-program tooling becoming a coherent security-architecture artifact (the NuClide arsenal) rather than a collection of independent tools.
+Per NICE PDF: 651 Enterprise Architect, 652 Security Architect. The 631→652 off-ramp aligns with the research-program tooling becoming a coherent security-architecture artifact (the  arsenal) rather than a collection of independent tools.

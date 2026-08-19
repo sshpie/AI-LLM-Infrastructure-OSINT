@@ -1,6 +1,6 @@
 ---
 to: abuse@contabo.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 37.60.255.27
 institution: "SerGoGram / gpt.sergogram.com operator — Flowise + Weaviate unauthenticated. Operator identity not confirmed (WHOIS privacy-protected). Contabo GmbH hosting abuse channel used as contact of last resort. Contains client credentials from blutspende.net (German blood donation org) and emovis-tag.co.uk (UK toll road service)."
@@ -11,13 +11,13 @@ note: "Operator contact not found — sergogram.com WHOIS privacy-protected, no 
 ---
 
 **To:** abuse@contabo.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** CRITICAL: Unauthenticated AI database on 37.60.255.27 (gpt.sergogram.com) exposes client credentials — recommend takedown or operator notification
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-25
 
@@ -57,10 +57,10 @@ We have already notified the affected client organization (blutspende.net) direc
 
 ---
 
-## About NuClide Research
+## About 
 
-NuClide Research is an independent security research organization (Denver, CO, USA). CISA disclosures: CVE-2025-4364, ICSA-25-140-11. This report is made in good faith under responsible disclosure practices.
+ is an independent security research organization (Denver, CO, USA). CISA disclosures: CVE-2025-4364, ICSA-25-140-11. This report is made in good faith under responsible disclosure practices.
 
 Nicholas Michael Kloster
-nicholas@nuclide-research.com
-nuclide-research.com
+
+

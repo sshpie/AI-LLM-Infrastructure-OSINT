@@ -2,7 +2,7 @@
 """Ray Dashboard auth verifier — corrected to /api/jobs/ (ShadowRay primitive)."""
 import concurrent.futures as cf, json, socket, ssl, sys, urllib.request, urllib.error
 from pathlib import Path
-TIMEOUT, HEADERS = 6, {"User-Agent": "NuClide-Research/ray-dashboard-2026-06-08-fixed"}
+TIMEOUT, HEADERS = 6, {"User-Agent": "/ray-dashboard-2026-06-08-fixed"}
 CTX = ssl.create_default_context(); CTX.check_hostname=False; CTX.verify_mode=ssl.CERT_NONE
 def probe(ip_port):
     ip, port = ip_port.split(":"); port = int(port)

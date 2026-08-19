@@ -432,15 +432,15 @@ The Gitea git-hooks RCE primitive (Metasploit `exploit/multi/http/gitea_git_hook
 
 The "tier" naming, Bawang / Patrick Star / Optimus Prime, is consistent with the Chinese gray-market auto-grab software market (cf. competing products "小可爱"/Little Cutie, "神话"/Mythology priced at ~880 RMB). The script payloads contain `helloSdk.js` / `didaSdk.js` per platform, `mainActivity.js` (Android activity hooks), `location.js` (GPS spoofing/manipulation primitives). These are injected into legitimate ride-share apps via Xposed/Frida or runtime injection.
 
-### Disclosure routing: `nuclide-contact`
+### Disclosure routing: `-contact`
 
 ```
-nuclide-contact --ip 154.12.63.166 --domain docker.1yidc.com
+-contact --ip 154.12.63.166 --domain docker.1yidc.com
   → soa_global@dnspod.com (DNS:SOA-RNAME)
   → abuse@1yidc.com / csirt@1yidc.com / security@1yidc.com (pattern guess)
   → hostmaster@afrinic.net / new-member@afrinic.net (NETWORK 154.12.0.0/16)
 
-nuclide-contact --ip 148.135.66.228
+-contact --ip 148.135.66.228
   → abuse@ripe.net (WHOIS:OrgAbuseEmail)
   → hostmaster@ripe.net (WHOIS:OrgTechEmail)
 ```
@@ -449,7 +449,7 @@ Note that `148.135.0.0/16` is in the RIPE-ERX-148-135 block (transferred from AR
 
 ### Visor Log entries
 
-Four finding surfaces logged to `nuclide.db`:
+Four finding surfaces logged to `.db`:
 
 | ID | IP | Severity | Tags |
 |---|---|---|---|

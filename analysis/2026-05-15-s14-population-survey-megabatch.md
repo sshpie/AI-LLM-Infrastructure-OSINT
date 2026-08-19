@@ -52,7 +52,7 @@ Two aimap fingerprints shipped mid-session as a direct product of survey finding
 | JAXEN | Stage-0 asset ingest into empire.db | Used on the alpha-miner single-host case (13 assets) |
 | aimap | Fingerprint signature source; v1.9.4 llama.cpp + v1.9.5 etcd shipped this session | PHASE 3 single-thread bug found and fixed |
 | fast_enum family | Population-scale read-only verifier (one per platform) | 80–200 threads, 6s timeout, streaming JSONL |
-| VisorLog | Ledger ingest into nuclide.db (ECS schema) | 16,099 events across the day's surveys |
+| VisorLog | Ledger ingest into .db (ECS schema) | 16,099 events across the day's surveys |
 | VisorScuba | Compliance scoring (OPA/Rego) | Rego rules are Ollama-specific; null on llama.cpp/etcd |
 | BARE | Metasploit semantic ranking | CVE-2024-37032 ranked #1 across Ollama findings |
 | VisorBishop | IP-shadow adjacent-port sweep | shadow_count=0 on every row — port set too narrow (recorded) |
@@ -140,7 +140,7 @@ Reconstructed from git commit timestamps and case-study sequencing. The trace is
 | ~17:00 | Single-host case: 194.233.71.223 handed over by Nick. Full 19-tool arsenal run. | alpha-miner FastAPI quant platform, partial-auth, plugin-loader RCE-by-design. llama.cpp colocated unauth. Commercial 3Proxy fleet colocated. Severity CRITICAL. aimap fingerprint missed llama.cpp despite `Server: llama.cpp` header. |
 | ~18:00 | Ollama re-survey selected. Shodan-walk harvest begins. Page-70 HTTP 500 hit on the html dork. | Country-faceted retry across 17 slices. 25,092 union candidate IPs. Insight #23 in formation. |
 | ~19:00 | aimap PHASE 3 found single-threaded. Projected 3–5h verification. | Pivot to `fast_enum` direct prober. 161s verification. aimap v1.9.4 fix shipped (commit a888100): llama.cpp fingerprint plus parallel PHASE 3. |
-| 21:04 | Ollama survey committed (04c7677). | 16,473 confirmed unauth. 13.8× extension over the prior 1,192. AWS ~3,720 hosts. 1,007 SYSTEM-prompt leaks, 133 operator-customized. Insights #23 and #24 codified. 4,891 events to nuclide.db. |
+| 21:04 | Ollama survey committed (04c7677). | 16,473 confirmed unauth. 13.8× extension over the prior 1,192. AWS ~3,720 hosts. 1,007 SYSTEM-prompt leaks, 133 operator-customized. Insights #23 and #24 codified. 4,891 events to .db. |
 | 21:38 | llama.cpp HTTP server survey committed (59cb40b). | 1,652 candidates → 965 confirmed unauth. HY-MT1.5 216-host single-operator fleet on AS54801. 29 hosts colocated with unauth Ollama. chat_template corpus axis. 677 events. |
 | 21:57 | Voice-cloning survey committed (da8bfce). Survey 17 batch 2. | 49 candidates, 37 FPs (82%). Gradio platforms Shodan-dark. Insight #15 re-confirmed at upper bound. 11 events. |
 | 22:07 | Voice-agent survey committed (e7e8a32). Survey 17 batch 3. | 184 LiveKit confirmed. Twirp API auth-on-default (0/184). 31/42 example-app frontends mint JWTs unauth, 74%. Tier-A* slot. 83 events. |
@@ -528,4 +528,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 14 · 2026-05-15*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 14 · 2026-05-15*

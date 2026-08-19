@@ -1,6 +1,6 @@
 # University of California, San Diego (UCSD): Large Local Models + Cloud Proxies
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

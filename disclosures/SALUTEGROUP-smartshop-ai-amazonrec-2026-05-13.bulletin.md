@@ -13,7 +13,7 @@ outcome: sent
 Security advisory. Unauthenticated production API and ML pipeline on api.amazonrec.space (78.135.66.61)
 
 ## Who we are
-NuClide Research studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.
+ studies how AI and machine-learning infrastructure gets left exposed on the public internet. When we find a host at risk, we send the owner a free advisory. This is one of those. We are not selling anything, we do not run a bug-bounty program, and we do not take payment from the people we contact. We hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11.
 
 ## What we found
 The host at `api.amazonrec.space` (`78.135.66.61`) is exposing a full AI/ML stack to the public internet: a model API branded "SmartShop AI", an experiment tracker, an in-memory store, a workflow scheduler, and a database. The inference and experiment-tracking layers accept anonymous calls. Right now, anyone on the internet can call the recommendation API and read the experiment metadata without a password.
@@ -71,7 +71,7 @@ HTTP/1.1 200 OK   # MLflow UI, no auth
 ## Verify it yourself
 You shouldn't have to take our word for any of this. Every URL in the Findings and Evidence sections is a live link to a piece of your own infrastructure. Click one and it will open the exposed dashboard or status page in your browser, with no login prompt. The two findings that aren't reachable in a browser, Redis and PostgreSQL, carry a one-line terminal command you can paste into any machine. None of those checks send anything back to us.
 
-You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on NuClide Research being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.
+You are also welcome, and we would actively encourage it, to forward this bulletin to an internal security engineer or to an outside firm. Nothing in it depends on  being involved going forward. We will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice; the published version will redact specific user IDs and any operator-customer data.
 
 ## Recommended fix
 1. Put api.amazonrec.space behind a login. Your FastAPI spec already declares a global security scope; flipping that to require an actual scheme (API key header, OAuth, or Cloudflare Access) is a small change in the app initialization.

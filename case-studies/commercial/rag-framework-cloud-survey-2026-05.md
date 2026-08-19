@@ -4,7 +4,7 @@ type: survey
 
 # RAG Framework Servers: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (in progress)_
+_ · 2026-05-04 (in progress)_
 
 > **Status:** Discovery + deep-probe complete (2026-05-04). 169 confirmed cross-cloud, **inverse auth posture vs MCP/LLM-Gateway tier, content endpoints are auth-on at population scale, but `/openapi.json` leaks the API design at 51% of hosts**.
 
@@ -271,7 +271,7 @@ Cross-host correlation candidates for the synthesis section:
 
 ## Disclosure plan
 
-For each unauthenticated instance with high-severity content classes (healthcare, legal, financial, personal), draft coordinated-disclosure email per the standard NuClide template. Where the framework reveals operator identity (collection names like `<company>_internal_kb`), pursue direct operator contact via WHOIS / cert-pivot.
+For each unauthenticated instance with high-severity content classes (healthcare, legal, financial, personal), draft coordinated-disclosure email per the standard  template. Where the framework reveals operator identity (collection names like `<company>_internal_kb`), pursue direct operator contact via WHOIS / cert-pivot.
 
 ---
 

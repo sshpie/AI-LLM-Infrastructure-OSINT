@@ -36,7 +36,7 @@ sidenotes:
 
 # Ikigai: Unauthenticated Read, No-Vector Write, and Delete on a German Job-Platform RAG Store
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -94,7 +94,7 @@ Three classes, roughly 9,513 records.
 
 **EmployerBranding class.** 27 records, all under customer_id zeiss. These are career stories that identify real Carl Zeiss AG employees by first name, with role title, project detail, and full biographical narrative. Name plus employment role plus employer identifies a natural person, which makes this GDPR-relevant personal data. Operator attribution is supported by an Azure OpenAI resource name in the module config and by the ZEISS-tagged customer_id values.
 
-Per the NuClide restraint ethic, no personal record values, employee identities beyond the class description, or biographical contents are published here. The class names, record counts, and data classes are the finding.
+Per the  restraint ethic, no personal record values, employee identities beyond the class description, or biographical contents are published here. The class names, record counts, and data classes are the finding.
 
 ---
 
@@ -122,4 +122,4 @@ Per the NuClide restraint ethic, no personal record values, employee identities 
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

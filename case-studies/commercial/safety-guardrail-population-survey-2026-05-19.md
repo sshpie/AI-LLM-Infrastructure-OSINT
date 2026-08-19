@@ -9,7 +9,7 @@ status: in-flight
 
 # LLM Safety / Guardrail / Policy Engine population survey
 
-_NuClide Research · 2026-05-19 · 9,427 unique Shodan-indexed candidates across 14 platform classes, 4-batch dork harvest (vendor-name, creative-side-channel, niche-JSON-shape, tech-architecture). Survey in flight, partial findings._
+_ · 2026-05-19 · 9,427 unique Shodan-indexed candidates across 14 platform classes, 4-batch dork harvest (vendor-name, creative-side-channel, niche-JSON-shape, tech-architecture). Survey in flight, partial findings._
 
 ## Summary
 
@@ -251,7 +251,7 @@ Stage 1 Fingerprint Shodan match shape           dork-anchored
 Stage 2 Verify      safety_probe.py (v1 then v2)  status-200 + JSON-shape strict filter
 Stage 3 Attribute   pending                      WHOIS + reverse-DNS per high-confidence hit
 Stage 4 Classify    pending                      operator class (HIPAA / commercial / honeypot)
-Stage 5 Ledger      pending                      ingest verified-real to data/nuclide.db
+Stage 5 Ledger      pending                      ingest verified-real to data/.db
 Stage 6 Score       pending                      VisorScuba against AI Security Baseline
 Stage 6 Exploit     pending                      BARE Metasploit ranking
 Stage 6 Corpus      pending                      VisorCorpus adversarial set

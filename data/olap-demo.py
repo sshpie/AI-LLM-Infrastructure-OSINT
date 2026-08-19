@@ -4,7 +4,7 @@ olap-demo.py — runnable demo of the OLAP-backed tool query set
 
 Validates the end-to-end pipeline today, no ClickHouse required:
 
-    nuclide.db (SQLite)
+    .db (SQLite)
         → export-findings.py
         → /tmp/findings.jsonl
         → DuckDB in-memory
@@ -43,7 +43,7 @@ except ImportError:
 
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / "nuclide.db"
+DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / ".db"
 DEFAULT_EXPORTER = HERE / "export-findings.py"
 
 
@@ -70,7 +70,7 @@ def print_table(rows: list[tuple], headers: list[str], widths: list[int] | None 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.strip().split("\n\n")[0])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB,
-                    help=f"Path to nuclide.db (default: {DEFAULT_DB})")
+                    help=f"Path to .db (default: {DEFAULT_DB})")
     ap.add_argument("--jsonl", type=Path, default=None,
                     help="Use this pre-exported JSONL instead of re-running export.")
     ap.add_argument("--window-days", type=int, default=90,

@@ -4,7 +4,7 @@ type: survey
 
 # etcd Population Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15 (late evening, seventh survey of the day)_
+_ · 2026-05-15 (late evening, seventh survey of the day)_
 _Category 12. Containers & orchestration; etcd leg, complements the day's earlier Docker daemon survey_
 _Built on aimap v1.9.5 fingerprint (parallel-session, shipped 2026-05-15)_
 

@@ -1,6 +1,6 @@
 # Institute for Informatics and Automation Problems, Armenia: Dual Cloud Proxy + Docker Credential Leak
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

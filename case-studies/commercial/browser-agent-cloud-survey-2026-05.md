@@ -4,7 +4,7 @@ type: survey
 
 # Browser Automation / Agent Backends: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (in progress)_
+_ · 2026-05-04 (in progress)_
 
 > **Status:** Discovery + probe complete (2026-05-04). 153 confirmed cross-cloud. Auth-off-default thesis reproduces sharply at this tier, every single confirmed host is unauth at the CDP/Selenium endpoint.
 

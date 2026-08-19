@@ -28,7 +28,7 @@ import urllib.error
 from pathlib import Path
 
 TIMEOUT = 6
-HEADERS = {"User-Agent": "NuClide-Research/kubeflow-survey-2026-06-08"}
+HEADERS = {"User-Agent": "/kubeflow-survey-2026-06-08"}
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE

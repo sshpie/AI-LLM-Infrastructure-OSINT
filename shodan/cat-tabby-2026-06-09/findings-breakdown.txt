@@ -1,6 +1,6 @@
 ================================================================================
 Cat-Tabby Survey — Findings Breakdown
-NuClide Research · 2026-06-09 · 4-platform code-assistant straggler survey
+ · 2026-06-09 · 4-platform code-assistant straggler survey
 ================================================================================
 
 Wardrobe outfit: ai-infra-hunt (13 atoms)

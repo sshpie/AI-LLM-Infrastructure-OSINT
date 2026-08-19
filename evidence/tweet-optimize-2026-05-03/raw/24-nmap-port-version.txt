@@ -2,7 +2,7 @@
 # captured_at_utc: 2026-05-03T18:55:13Z
 # captured_at_local: 2026-05-03T13:55:13-05:00
 # probe_target: 65.108.107.240
-# nuclide_research: 2026-05-03
+# _research: 2026-05-03
 # ----
 Starting Nmap 7.98 ( https://nmap.org ) at 2026-05-03 13:55 -0500
 Nmap scan report for static.240.107.108.65.clients.your-server.de (65.108.107.240)

@@ -178,4 +178,4 @@ Excluded from the survey set — these are **client libraries / CLI tools** (run
 
 ## Indexing note (extends the 2026-05-09 note)
 
-The port-first pattern (Methodology Insight #21) applies to **both raw CDP and Playwright MCP**: Shodan crawls `:9222/` and `:8931/` but does not fetch the JSON/SSE sub-paths (`/json/version`, `/sse`) where the identifying strings live. Discovery is port + generic discriminator; confirmation is a direct NuClide probe of the sub-path.
+The port-first pattern (Methodology Insight #21) applies to **both raw CDP and Playwright MCP**: Shodan crawls `:9222/` and `:8931/` but does not fetch the JSON/SSE sub-paths (`/json/version`, `/sse`) where the identifying strings live. Discovery is port + generic discriminator; confirmation is a direct  probe of the sub-path.

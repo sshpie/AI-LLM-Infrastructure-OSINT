@@ -1,6 +1,6 @@
 # University of Manitoba: CS Department GPU Server, Deep Research Stack
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

@@ -4,7 +4,7 @@ type: survey
 
 # NVIDIA Triton Inference Server on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -136,13 +136,13 @@ The DigitalOcean infrastructure (vs AWS-class cloud), English-language stack, an
 
 Bare DigitalOcean VPS, no HTTP/443 service, no reverse DNS, no co-located public brand on this IP. Certspotter / crt.sh do not allow IP-only CT lookups (results require an eTLD). Direct Google / DuckDuckGo searches on the distinctive model names (`sexting-bert-base-cased-221027-151601`, `s_minors_v3_run19`, `photo_request_detector_v2`, `contrastive_regenerations_v8`) returned zero hits, these are operator-proprietary models, not published to Hugging Face or in academic papers.
 
-Operator identification options NuClide deliberately did not pursue:
+Operator identification options  deliberately did not pursue:
 
 - **Adjacent-IP CT scan of the DigitalOcean /24 around 159.203.42.211** to find a co-located brand domain. This is straightforward but warrants explicit scope; see disclosure note.
 - **Probing the classifier with sample text** to learn what platform-specific phrasings it's tuned for. This crosses the line of using the operator's compute.
 - **Downloading the model files via Triton's repository-fetch endpoints** to inspect tokenizer configs / model cards. This would be operator-IP exfiltration.
 
-The cleanest path to operator identity is the **DigitalOcean abuse channel**: when the abuse complaint is filed, DO knows which customer owns this IP and can act under their AUP without ever revealing the customer to NuClide. The second-cleanest is vendor pattern-matching by someone familiar with the OF-creator-tooling ecosystem who would recognize this exact architectural style.
+The cleanest path to operator identity is the **DigitalOcean abuse channel**: when the abuse complaint is filed, DO knows which customer owns this IP and can act under their AUP without ever revealing the customer to . The second-cleanest is vendor pattern-matching by someone familiar with the OF-creator-tooling ecosystem who would recognize this exact architectural style.
 
 ---
 
@@ -217,7 +217,7 @@ tritonserver --http-restricted-api=<api-name> \
 
 Without these, all REST endpoints (model inventory, model config, inference, repository control, statistics, system shared memory, CUDA shared memory) are open to any client. Neither of the two confirmed instances had any `--http-restricted-*` configuration.
 
-This matches the pattern across the entire NuClide vector-DB / inference-stack survey: the data plane and inference plane of the modern AI stack ship without authentication, and operators rarely enable it before exposing the service to the public internet.
+This matches the pattern across the entire  vector-DB / inference-stack survey: the data plane and inference plane of the modern AI stack ship without authentication, and operators rarely enable it before exposing the service to the public internet.
 
 ---
 
@@ -272,7 +272,7 @@ ufw deny 8000 && ufw deny 8001 && ufw deny 8002
 
 ---
 
-## NuClide Pipeline Artifacts
+##  Pipeline Artifacts
 
 | Stage | Notes |
 |---|---|
@@ -280,7 +280,7 @@ ufw deny 8000 && ufw deny 8001 && ufw deny 8002
 | Fingerprint | `triton-probe.py`, 200-thread `/v2` body-match for `"name":"triton"` |
 | Schema enumeration | `/v2/repository/index` POST {}, `/v2/models/<name>` GET, confirmed 11 distinct loaded models across 2 hosts |
 | Telemetry leak | `:8002/metrics` Prometheus counters captured, per-model inference totals |
-| Findings ledger | To be ingested into `data/nuclide.db` via VisorLog |
+| Findings ledger | To be ingested into `data/.db` via VisorLog |
 
 ---
 

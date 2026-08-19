@@ -1,6 +1,6 @@
 # herald
 
-**Repository:** https://github.com/nuclide-research/herald
+**Repository:** https://github.com/sshpie/herald
 **Status:** v0.1.1 public, MIT licensed.
 **Built:** 2026-06-06.
 
@@ -31,7 +31,7 @@ The pattern was identical. Only the endpoint paths and field semantics differed.
 | **Dot-path JSON field traversal** | Required for nested configs like Open WebUI `features.auth` |
 | **TLS skip verify** | Necessary for self-signed certs at population scale |
 | **Body-size cap at 1MB** | Defense against silent slow drops + memory exhaustion (Insight from aimap LLaMA-Factory FP fix) |
-| **Custom User-Agent: `herald/0.1.0 (nuclide-research.com)`** | Transparency in probe identification |
+| **Custom User-Agent: `herald/0.1.0 ()`** | Transparency in probe identification |
 
 ## Platforms supported (v0.1.1)
 

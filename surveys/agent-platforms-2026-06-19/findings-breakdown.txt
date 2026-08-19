@@ -1,13 +1,13 @@
 ================================================================================
 FINDINGS BREAKDOWN — Agent Platforms survey (cat-agent-platforms)
-Date: 2026-06-19  |  Nuclide (Nick + Claude)  |  chainsaw-guided
+Date: 2026-06-19  |   (Nick + Claude)  |  chainsaw-guided
 Category source: reference/category-taxonomy.md ("Agent Platforms, Not yet surveyed standalone")
 ================================================================================
 
 SCOPE
   Self-hosted AI agent platforms: OpenHands, SuperAGI, AgentGPT, CrewAI Studio,
   AutoGen Studio, Goose, LangGraph, Letta, BabyAGI, MetaGPT, CrewAI core.
-  Method: full NuClide arsenal chain. Shodan authenticated web UI (0 credits),
+  Method: full  arsenal chain. Shodan authenticated web UI (0 credits),
   active banner scan, conjunctive marker verification with sandbox-MITM gate.
   Restraint ethic in force: metadata enumeration only, no secret exfiltration,
   no agent spawn, no code-exec sink touched.
@@ -225,7 +225,7 @@ ARTIFACTS (all in this dir)
     13 agents available unauth (incl PostgresAgent, BrowsingAgent)
     Conversations: empty (fresh instance)
 
-  VisorLog: #40100 (nuclide.db)
+  VisorLog: #40100 (.db)
   Artifacts: shodan/single-host-130.61.143.10-2026-06-19/findings-breakdown.txt
   BARE: eclipse_che_machine_exec_rce #3 (0.502) — correct semantic class
   Shodan: html_hash=-26793891, favicon=-1222104632, Last-Seen=2026-06-19

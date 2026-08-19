@@ -16,7 +16,7 @@ primary sources and, mid-stream, onboarded a newly-purchased Censys Platform acc
   BISHENG, Chainlit, Cheshire Cat, Khoj, h2oGPT); grouped-by-known-open-port sweep (timeout-avoidance).
 - **agent-logging-system** — FP monitor (Chainlit 100% FP flagged).
 - **Censys Platform** — onboarded; reference at `data/censys-platform-reference.md`; new tool
-  `censys-cache` (github.com/nuclide-research/censys-cache, PRIVATE) dedups searches.
+  `censys-cache` (github.com/sshpie/censys-cache, PRIVATE) dedups searches.
 - **VisorLog** — 2,254 events ingested. VisorScuba — scoring.
 
 ## 3. Methodology notes

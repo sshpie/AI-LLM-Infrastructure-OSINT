@@ -1,6 +1,6 @@
 ---
 to: askmikeai@gmail.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 132.145.158.151
 institution: "NextHello (nexthello.ai) — AI-powered WhatsApp CRM. All operational POST endpoints unauthenticated on port 8001. PDL, HeyGen, ElevenLabs API keys live. WhatsApp Baileys session credentials persisted. Admin signup open."
@@ -10,13 +10,13 @@ date: 2026-05-25
 ---
 
 **To:** askmikeai@gmail.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** NextHello (132.145.158.151) HIGH: Full operational API open without authentication, API keys exposed, WhatsApp session credentials persisted
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-25
 
@@ -65,13 +65,13 @@ The admin data layer is behind a tenant account lookup — contacts, messages, e
 
 ---
 
-## About NuClide Research
+## About 
 
-NuClide Research is an independent security research organization based in Denver, Colorado. This is a good-faith notification. We found the exposure, documented it, and stopped there. We did not call any of your POST endpoints against live data. No data was extracted.
+ is an independent security research organization based in Denver, Colorado. This is a good-faith notification. We found the exposure, documented it, and stopped there. We did not call any of your POST endpoints against live data. No data was extracted.
 
 Love the project — multi-agent WhatsApp CRM is a real pain point for event networking. Hope this helps.
 
 Nicholas Michael Kloster
-nicholas@nuclide-research.com
-nuclide-research.com
+
+
 CISA CVE-2025-4364, ICSA-25-140-11

@@ -1,6 +1,6 @@
 ================================================================================
  Cat-VectorDB-Qdrant  (fresh proxied population)         survey 2026-06-21
- NuClide research program  ::  per-survey findings breakdown
+  program  ::  per-survey findings breakdown
 ================================================================================
  Posture: read-only. Names + counts are the finding. Snapshot listings prove
  the primitive; bytes not fetched. Payload samples: 2 per collection, no bulk.
@@ -115,7 +115,7 @@
 --------------------------------------------------------------------------------
  8.  TOOLING
 --------------------------------------------------------------------------------
-   qdrantscan (github.com/nuclide-research/qdrantscan) ran the full probe+hunt
+   qdrantscan (github.com/sshpie/qdrantscan) ran the full probe+hunt
    chain. Catch-all detection confirmed zero decoys in the proxied population.
    Version parser handled 1.7.4 through 1.18.2 without regression.
 

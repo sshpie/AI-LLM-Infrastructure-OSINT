@@ -37,7 +37,7 @@ Details: github.com/HKUDS/LightRAG/issues/3294
 ---
 
 ## Notes
-- No em dashes (NuClide voice rule). Plain, factual, no hype.
+- No em dashes ( voice rule). Plain, factual, no hype.
 - Both options name the platform, the mechanism (whitelist), the blast radius
   (all instances incl. authed), the proof (67/67), and the fix (one upstream change).
 - Issue #3294 is the canonical reference; the post points there for detail.

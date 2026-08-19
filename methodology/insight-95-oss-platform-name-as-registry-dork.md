@@ -1,6 +1,6 @@
 # Insight #95 — OSS-Platform-Name Strings Are Docker-Registry Catalog Dorks (Candidate)
 
-_NuClide Research · 2026-06-09 · Origin: Cat-Syllabus-Leads survey, aibrix / lmdeploy / rtp-llm pivot._
+_ · 2026-06-09 · Origin: Cat-Syllabus-Leads survey, aibrix / lmdeploy / rtp-llm pivot._
 
 ---
 

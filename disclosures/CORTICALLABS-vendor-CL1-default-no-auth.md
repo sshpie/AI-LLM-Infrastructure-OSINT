@@ -1,6 +1,6 @@
 ---
 to: support@corticallabs.com
-cc: cert@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@nuclide-research.com
+cc: cert@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@
 severity: CRITICAL
 ip: 134.60.110.66
 institution: Cortical Labs (vendor), CL1 v0.28.3 ships operational dashboard + Jupyter on public ports without authentication; one customer (Ulm Med Faculty) confirmed compromised by Hilix botnet via this default; fleet-wide advisory recommended
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** support@corticallabs.com
-**Cc:** cert@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@nuclide-research.com
+**Cc:** cert@uni-ulm.de, dfn-cert@dfn-cert.de, abuse@
 **Subject:** VENDOR ADVISORY, Cortical Labs CL1 v0.28.3 ships dashboard + Jupyter without web auth; one customer (Universität Ulm Med Faculty) confirmed compromised via Hilix botnet; fleet-wide audit recommended
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -25,7 +25,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification to **Cortical Labs as the vendor** of the CL1 platform.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification to **Cortical Labs as the vendor** of the CL1 platform.
 
 A confirmed customer compromise, `134.60.110.66` (rDNS `labdevice.medizin.uni-ulm.de`, sys_id **`CL1-2544-043`**, software **v0.28.3**, Universität Ulm Medical Faculty), was reported to that customer's CERT and to DFN-CERT (German NREN CERT) earlier today. The root cause is a **CL1 default-deployment posture issue** that almost certainly affects other CL1 customers globally, so this advisory is sent to Cortical Labs to enable a fleet-wide audit.
 
@@ -73,7 +73,7 @@ Attacker bash history extracted via the same Jupyter kernel WebSocket reveals:
 - `ls /data/notebooks/ /data/recordings/` → operator's neural-recording substrate enumerated
 - An earlier Hilix.x86_64 download attempt (2026-04-29) failed because the binary was x86_64 and the CL1 is ARM (Xilinx Zynq UltraScale+), the second attempt with socat succeeded
 
-NuClide terminated the attacker's `/tmp/bash` (PID 18370) and `bash -i` (PID 18372) shells via `pkill -9` from the Jupyter kernel and dropped a marker file at `/tmp/NUCLIDE-INCIDENT-NOTICE-2026-05-06.txt`. A masquerading process `[kworker/0:2]` (PID 18352, owned by `labuser` rather than root) survived and is the suspected XMRig miner, operator-side kill required.
+ terminated the attacker's `/tmp/bash` (PID 18370) and `bash -i` (PID 18372) shells via `pkill -9` from the Jupyter kernel and dropped a marker file at `/tmp/-INCIDENT-NOTICE-2026-05-06.txt`. A masquerading process `[kworker/0:2]` (PID 18352, owned by `labuser` rather than root) survived and is the suspected XMRig miner, operator-side kill required.
 
 The full incident report was sent to `cert@uni-ulm.de` and DFN-CERT today. This vendor advisory is the parallel notification to enable Cortical Labs to audit the broader fleet.
 
@@ -120,9 +120,9 @@ Parallel disclosures already sent today:
 - `abuse@cogentco.com` for the malware-distribution server
 - `abuse@tencent.com` for the second confirmed customer (Tencent Cloud Beijing) running the same compromise pattern via unauth Jupyter
 
-NuClide is available to coordinate with Cortical Labs security/engineering for the fleet-wide audit, share the full forensic evidence pack (binary samples, notebook contents, attacker bash history, kernel state), or assist with customer notifications. The CL1 platform is genuinely interesting work and the goal here is harm-mitigation, not embarrassment, happy to coordinate the public disclosure timeline if you have a preferred coordinated-disclosure window.
+ is available to coordinate with Cortical Labs security/engineering for the fleet-wide audit, share the full forensic evidence pack (binary samples, notebook contents, attacker bash history, kernel state), or assist with customer notifications. The CL1 platform is genuinely interesting work and the goal here is harm-mitigation, not embarrassment, happy to coordinate the public disclosure timeline if you have a preferred coordinated-disclosure window.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

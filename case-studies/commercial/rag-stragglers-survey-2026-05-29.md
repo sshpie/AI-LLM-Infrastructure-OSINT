@@ -125,7 +125,7 @@ menlohunt    213.239.218.83 IP-shadow: MySQL :3306 open (real); GCS "buckets" = 
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only
 VisorPlus    components individual
-VisorLog     2 AnythingLLM browser-unauth events -> nuclide.db
+VisorLog     2 AnythingLLM browser-unauth events -> .db
 VisorScuba   AnythingLLM browser-unauth not mapped to a control (gap)
 BARE         RAG authz first-party class
 VisorCorpus  N/A no inference surface confirmed unauth

@@ -132,13 +132,13 @@ curl -s -X POST http://35.224.252.183:8080/v1/objects \
   -d '{
     "class": "Product",
     "properties": {
-      "product_id": "canary-nuclide-20260620",
-      "name": "canary-nuclide-20260620",
+      "product_id": "canary--20260620",
+      "name": "canary--20260620",
       "sku": "CANARY-001",
       "brand": "canary",
       "price": 0,
       "qty": 0,
-      "description": "nuclide security canary"
+      "description": " security canary"
     }
   }' | jq '.id'
 ```
@@ -185,4 +185,4 @@ Write access allows injecting arbitrary product records into the Weaviate index.
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan

@@ -10,7 +10,7 @@ methodology: extending VisorBishop fingerprint coverage to adjacent AI-infra tie
 
 # VisorBishop iter-5 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

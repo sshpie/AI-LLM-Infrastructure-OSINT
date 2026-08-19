@@ -46,7 +46,7 @@ DO_NOT_CALL = {
 }
 
 TIMEOUT = 8
-UA = "nuclide-verify/1.0 (read-only AI-infra exposure research; metadata-only)"
+UA = "-verify/1.0 (read-only AI-infra exposure research; metadata-only)"
 
 
 def _refuse_guard(method, path):

@@ -102,4 +102,4 @@ Written to `~/tome/platforms/lightdash.json`, status CANDIDATE. tome is a local 
 - https://docs.lightdash.com/self-host/customize-deployment/environment-variables (PORT, LIGHTDASH_SECRET, ALLOW_MULTIPLE_ORGS, AUTH_* )
 - https://www.lightdash.com/agentic-bi (AI agents + MCP over dbt semantic layer)
 - GHSA-6529-6jv3-66q2 / CVE-2024-6585 (XSS); GHSA-4h7x-6vxh-7hjf / CVE-2024-6586 (SSRF)
-- [CANDIDATE — NuClide Cat-16 BI-Dashboards Stage -1 OSINT 2026-06-28; software-default, no live host probed]
+- [CANDIDATE —  Cat-16 BI-Dashboards Stage -1 OSINT 2026-06-28; software-default, no live host probed]

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-constellation — find operators appearing across multiple NuClide rollups.
+constellation — find operators appearing across multiple  rollups.
 
 Takes N harvest hosts.json files (Shodan extractions per survey) and identifies
 operators present in 2+ corpora. Produces a multi-corpus operator ranking.

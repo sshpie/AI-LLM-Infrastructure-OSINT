@@ -15,8 +15,8 @@ date: 2026-05-04
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the NuClide Research umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
+I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the  umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
 
 **Note on prior misroute:** I sent the same finding earlier today routed to University at Buffalo (`buffalo.edu`), that was a bug in my disclosure pipeline's domain-resolution heuristic. ARIN WHOIS for `136.183.0.0/16` correctly identifies your institution (`NetName SUCBUFFALO`, `OrgName SUNY Buffalo State University`, `OrgAbuseEmail killiatd@buffalostate.edu`). Catherine Ullman at UB IT Security flagged the misroute. Corrected and resent here. Apologies for the noise.
 
@@ -106,6 +106,6 @@ Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities
 I'm happy to answer questions or assist with verification. No response is required.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

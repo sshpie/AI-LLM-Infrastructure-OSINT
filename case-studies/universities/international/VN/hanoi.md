@@ -1,6 +1,6 @@
 # Hanoi University: 18 Cloud Proxy Subscriptions + Credential Leak (Containerized Deployment)
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

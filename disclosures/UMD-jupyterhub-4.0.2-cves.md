@@ -1,6 +1,6 @@
 ---
 to: abuse@umd.edu
-cc: security@umd.edu, abuse@nuclide-research.com
+cc: security@umd.edu, abuse@
 severity: HIGH
 ip: 128.8.235.64
 institution: "University of Maryland, JupyterHub on `carrot.umd.edu` running version 4.0.2 (3 unpatched CVEs apply)"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** abuse@umd.edu
-**Cc:** security@umd.edu, abuse@nuclide-research.com
+**Cc:** security@umd.edu, abuse@
 **Subject:** JupyterHub on carrot.umd.edu (128.8.235.64). Running 4.0.2 with 3 unpatched CVEs
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
 
 ---
 
@@ -75,6 +75,6 @@ Full triage case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-jupyterhub-edu-survey-2026-05-07.md
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

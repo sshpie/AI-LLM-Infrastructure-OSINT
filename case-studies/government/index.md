@@ -1,6 +1,6 @@
 # Government AI Infrastructure Exposures
 
-_NuClide Research, ongoing · Updated 2026-05-02_
+_, ongoing · Updated 2026-05-02_
 
 Unauthenticated Ollama instances discovered on government networks. Identified via hostname TLD filtering (`.gov`, `.go.id`, `.gov.br`, `.gov.tw`, `.mil`, etc.).
 

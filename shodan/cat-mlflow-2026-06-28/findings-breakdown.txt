@@ -112,7 +112,7 @@ F6 [INFO] Security probe artifact cluster (7 hosts)
     51.68.167.70    -- ssti_${7*7}
     168.138.146.91  -- pwn_cron_root_d74b03  (F2 above)
     128.30.92.117   -- DSPy deep-research (research, not a probe)
-  NuClide is not first here -- at least 3-4 other researchers have already scanned these.
+   is not first here -- at least 3-4 other researchers have already scanned these.
 
 F7 [INFO] Shared-backend cluster (gateway/chat pattern)
   12 hosts with experiment name pattern "gateway/chat-XXXXXXXX" (e.g., gateway/chat-cc48a84b).
@@ -203,5 +203,5 @@ base58 model IDs across 12+ hosts suggests a single ML platform operator with mu
 public-facing frontend nodes. The entire cluster shares one attack surface.
 
 Cand #I-F (no prior population survey): No published count of exposed MLflow instances
-found in OSINT platoon research. NuClide is first. Estimated 62% of live indexed
+found in OSINT platoon research.  is first. Estimated 62% of live indexed
 instances are unauthenticated; ~180-200 unauth instances at any given time.

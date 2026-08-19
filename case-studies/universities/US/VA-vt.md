@@ -1,6 +1,6 @@
 # Virginia Polytechnic Institute and State University (Virginia Tech): DHCP Node
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

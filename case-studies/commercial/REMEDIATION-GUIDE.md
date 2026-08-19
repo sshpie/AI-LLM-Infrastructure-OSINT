@@ -4,7 +4,7 @@ type: operational
 
 # Operator Remediation Guide
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _If your IP appears in any of the [`case-studies/commercial/`](.) survey papers, this is your fix-it page._
 
 ---
@@ -196,27 +196,27 @@ Test from a network outside your private network (e.g., from a phone on cellular
 
 ---
 
-## What if my exposure has been catalogued in NuClide's published surveys?
+## What if my exposure has been catalogued in 's published surveys?
 
 The case studies in this folder reference operator IPs but redact operator-identifying details (TLS cert SAN, etc.) until coordinated-disclosure windows complete (typically 30 days from first contact). After remediation, operators may:
 
-1. **Reply to NuClide's disclosure email** confirming the fix. NuClide will update its disclosure log + the case study to reflect remediation.
-2. **Choose to remain redacted** even after remediation (some operators prefer not to be publicly named in connection with a prior exposure). NuClide honors this, only the redaction is lifted, never operator identity, without explicit operator consent.
+1. **Reply to 's disclosure email** confirming the fix.  will update its disclosure log + the case study to reflect remediation.
+2. **Choose to remain redacted** even after remediation (some operators prefer not to be publicly named in connection with a prior exposure).  honors this, only the redaction is lifted, never operator identity, without explicit operator consent.
 3. **Accept attribution** if the operator wants to publicly model the remediation pattern for the broader community (rare but valuable; helps shift industry defaults).
 
-Contact: `nicholas@nuclide-research.com`
+Contact: ``
 
 ---
 
 ## Upstream fix request
 
-The aggregate finding across NuClide's 2026-05 survey series is:
+The aggregate finding across 's 2026-05 survey series is:
 
 > Every modern AI/ML data-tier platform that ships with authentication off by default is, at population scale, deployed without authentication on the public internet.
 
 The most effective fix is **not per-operator remediation** (slow, never finishes, scales poorly). It's **upstream default change**: have the platform refuse to start (or auto-generate an admin credential and log it) without explicit operator opt-in to the auth-off mode.
 
-NuClide is happy to support upstream-maintainer conversations on:
+ is happy to support upstream-maintainer conversations on:
 
 - Qdrant: change `service.api_key` from "unset" to "auto-generate + log to stderr on first start"
 - ChromaDB: change `CHROMA_SERVER_AUTHN_PROVIDER` from "unset" to "token_authn with auto-generated token"

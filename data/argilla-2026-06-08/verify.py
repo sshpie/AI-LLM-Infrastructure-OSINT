@@ -40,7 +40,7 @@ OUT = Path(__file__).parent / "verify-results.json"
 
 TIMEOUT = 6
 THREADS = 50
-UA = "NuClide-Survey/1.0 (Argilla population survey 2026-06-08, contact: nicholas@nuclide-research.com)"
+UA = "-Survey/1.0 (Argilla population survey 2026-06-08, contact: )"
 HEADERS = {"User-Agent": UA, "Accept": "application/json"}
 
 DEFAULT_KEYS = ["argilla.apikey", "owner.apikey"]

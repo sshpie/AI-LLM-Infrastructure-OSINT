@@ -4,7 +4,7 @@ type: survey
 
 # Jupyter Notebook / JupyterHub on Public Cloud & University Networks: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -108,6 +108,6 @@ The 0% unauth finding indicates JupyterHub deployment (with PAM/LDAP auth) has b
 
 ## Discoverer
 
-NuClide Research, nicholas@nuclide-research.com
+, 
 
 No data was accessed. Auth check was a single unauthenticated GET to `/api/kernels`; response code only.

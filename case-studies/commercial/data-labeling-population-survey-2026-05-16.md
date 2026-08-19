@@ -4,7 +4,7 @@ type: survey
 
 # Data-Labeling Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (third survey in the day's 4-category batch)_
+_ · 2026-05-16 (third survey in the day's 4-category batch)_
 _Closes: category 22 (data-labeling). Label Studio / CVAT / Doccano / Argilla / Prodigy_
 
 ---
@@ -107,7 +107,7 @@ The data-labeling tier as a whole confirms the auth-on-default thesis. The thesi
    (Prodigy 16, others 0 unauth, 135 auth-gated, 28 shell-only, 440 dead, 56 unrelated)
 2. Label Studio re-probe (legacy /version + new /api/version) → 0 unauth, 3 real (legacy), 60 FP
 3. CVAT/Doccano spot checks → confirmed Tier-C
-4. (queued) visorlog ingest → 16 Prodigy events into nuclide.db source='data-labeling-survey-2026-05-16'
+4. (queued) visorlog ingest → 16 Prodigy events into .db source='data-labeling-survey-2026-05-16'
 ```
 
 ---

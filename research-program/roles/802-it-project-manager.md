@@ -75,4 +75,4 @@ Broad: 211, 212, 221, 411, 421, 422, 431, 441, 451, 461, 511, 521, 531, 541, 612
 
 ## Research-program relevance
 
-Indirectly relevant. The IT Project Manager owns SLA/contract language for cybersecurity requirements (T0415) and end-to-end service delivery (T0354) — meaning when a NuClide disclosure surfaces an unauth ML service the organization didn't know was running, this role typically owns the project-level remediation timeline. Supply-chain knowledge (C056) is the recipient-side discipline that should have prevented the exposure in the first place.
+Indirectly relevant. The IT Project Manager owns SLA/contract language for cybersecurity requirements (T0415) and end-to-end service delivery (T0354) — meaning when a  disclosure surfaces an unauth ML service the organization didn't know was running, this role typically owns the project-level remediation timeline. Supply-chain knowledge (C056) is the recipient-side discipline that should have prevented the exposure in the first place.

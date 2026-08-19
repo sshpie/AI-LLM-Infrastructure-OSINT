@@ -1,6 +1,6 @@
 ---
 to: abuse@akamai.com
-cc: abuse@linode.com, abuse@nuclide-research.com
+cc: abuse@linode.com, abuse@
 severity: CRITICAL
 ip: 172.233.96.208
 institution: Akamai/Linode US, confirmed botnet C2 server (Hilix-class) currently receiving reverse shell from compromised medical research device
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@akamai.com
-**Cc:** abuse@linode.com, abuse@nuclide-research.com
+**Cc:** abuse@linode.com, abuse@
 **Subject:** URGENT TAKEDOWN, botnet C2 server on Linode customer 172.233.96.208 actively receiving reverse-shell connections from compromised victims
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -27,7 +27,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited C2-takedown request.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited C2-takedown request.
 
 The host `172.233.96.208` is the active command-and-control endpoint for a Hilix-class botnet operation. Specifically, port 3053 is currently receiving a reverse-shell connection from a compromised medical research device at Universität Ulm Medical Faculty (`labdevice.medizin.uni-ulm.de`, IP `134.60.110.66`).
 
@@ -61,12 +61,12 @@ A separate disclosure is being sent to `abuse@cogentco.com` for the malware-dist
 Full case study with attack timeline, victim file content, and forensic detail:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-uni-ulm-jupyter-compromise-2026-05-06.md
 
-NuClide Research disclosure context (CISA-listed researcher):
+ disclosure context (CISA-listed researcher):
 AI-LLM-Infrastructure-OSINT
 
 Happy to provide additional forensic evidence (full notebook JSON, kernel session metadata, attack-timeline reconstruction) if needed for the customer-action investigation.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

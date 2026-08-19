@@ -3,7 +3,7 @@
 **Date:** 2026-05-08
 **Session:** 12
 **Classification:** Internal / Research Use Only
-**Toolchain:** JAXEN, aimap (v53→56 fingerprints), masscan, httpx, VisorGraph, VisorLog, subfinder, BARE, nuclide-contact, Gmail API, WebSearch, WebFetch
+**Toolchain:** JAXEN, aimap (v53→56 fingerprints), masscan, httpx, VisorGraph, VisorLog, subfinder, BARE, -contact, Gmail API, WebSearch, WebFetch
 **Repos updated:** AI-LLM-Infrastructure-OSINT (commits 7ab2274, b9136a9 to aimap)
 
 ---
@@ -49,7 +49,7 @@ Orchestrator pattern. BI/Dashboard survey ran in parallel with Glove Cloud analy
 | VisorGraph | Cert-pivot on `zvteboi.top` | CT log indexing confirmed; Multacom origin confirmed |
 | subfinder | Subdomain enum on `1yidc.com`, `tunan.cn`, `flashplatform.xyz` | 10 subdomains on 1yidc.com |
 | BARE | Metasploit semantic ranking against Gitea token finding | `exploits_multi_http_gitea_git_hooks_rce` scored 0.552 |
-| nuclide-contact | Disclosure recipient resolution: `154.12.63.166`, `148.135.66.228` | SOA-RNAME + RIPE/AfriNIC lookup |
+| -contact | Disclosure recipient resolution: `154.12.63.166`, `148.135.66.228` | SOA-RNAME + RIPE/AfriNIC lookup |
 | VisorLog | Ledger ingest: 4 new entries | 1yidc mirror, Multacom Gitea, gc_manage Docker Hub, dreamcar_agent_bot Telegram |
 | Gmail API | 8 queued disclosures sent | `_sent.json` updated to 83 sent |
 | WebSearch + WebFetch | Chinese auto-grab market research; operator OSINT | Zero public web visibility for Glove Cloud |
@@ -357,4 +357,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 12 · 2026-05-08*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 12 · 2026-05-08*

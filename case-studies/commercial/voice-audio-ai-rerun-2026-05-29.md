@@ -129,7 +129,7 @@ Kokoro on 8880, and Redis 7.4.8 on 6379, all unauthenticated, with MinIO on
 9000 locked. One operator shipped three services auth-off on one box, which is
 Insight #12 stated plainly.
 
-Six findings landed in `nuclide.db` via VisorLog, the five aimap services
+Six findings landed in `.db` via VisorLog, the five aimap services
 through the aimap adapter and the Redis through `visorlog add`.
 
 ## Stage 6-7: Score, map, codify
@@ -189,7 +189,7 @@ menlohunt    surfaced unauth Redis:6379 on 195.179.226.37 (IP-shadow win)
 recongraph   0 nodes/edges (Shodan-dependent)
 nu-recon     simulated mode (no live key)
 VisorPlus    component tools run individually (orchestrator Shodan-blocked)
-VisorLog     25 events via aimap adapter + 1 Redis -> nuclide.db
+VisorLog     25 events via aimap adapter + 1 Redis -> .db
 VisorScuba   5 hosts passing/0 violations, false-compliant (no voice-AI control)
 BARE         no MSF coverage (top 0.45-0.52 < 0.55), first-party/novel class
 VisorCorpus  136-case focused+protocol adversarial corpus (87 HIGH)

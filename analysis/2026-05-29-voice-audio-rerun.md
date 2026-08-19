@@ -32,7 +32,7 @@ VisorGoose (gov/edu scope), VisorHollow (Windows-only), VisorAgent (controlled
 target only, internal-agent blocked on API key).
 
 ### Notable Configuration
-aimap v1.9.39. nuclide.db at ~/visorlog/nuclide.db. Workspace
+aimap v1.9.39. .db at ~/visorlog/.db. Workspace
 ~/recon/voice-audio-rerun-2026-05-29/.
 
 ## 3. Methodology
@@ -76,7 +76,7 @@ were left untouched. Read only what confirms severity.
 14. Primary-source Redis: PING +PONG, INFO server (7.4.8, Linux 6.8, 23d uptime)
 15. VisorBishop -ip-shadow-all -> corroborated Redis+MinIO; :8000 chromadb = FP (verified FastAPI 404)
 16. recongraph 0 nodes; nu-recon simulated mode
-17. VisorLog: 25 aimap events + 1 Redis -> nuclide.db (after fixing stray-cwd-DB bug)
+17. VisorLog: 25 aimap events + 1 Redis -> .db (after fixing stray-cwd-DB bug)
 18. VisorScuba: 5 hosts passing/0 violations -> false-compliant (no voice control)
 19. BARE: 3 classes, all no-MSF-coverage (top 0.45-0.52)
 20. VisorCorpus: built 136-case focused+protocol corpus

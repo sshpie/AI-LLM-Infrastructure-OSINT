@@ -151,7 +151,7 @@ With 32 Qdrant collections, this is a substantial medical knowledge base. Conten
 
 ## Discovery Context
 
-Discovered during NuClide Research AI infrastructure OSINT survey (2026-05-09). Host found via Shodan query `http.html:"embedding_dimension"` and confirmed via targeted HTTP probe. Part of the broader embedding services survey documented at `case-studies/commercial/embedding-services-cloud-survey-2026-05.md`.
+Discovered during  AI infrastructure OSINT survey (2026-05-09). Host found via Shodan query `http.html:"embedding_dimension"` and confirmed via targeted HTTP probe. Part of the broader embedding services survey documented at `case-studies/commercial/embedding-services-cloud-survey-2026-05.md`.
 
 ---
 

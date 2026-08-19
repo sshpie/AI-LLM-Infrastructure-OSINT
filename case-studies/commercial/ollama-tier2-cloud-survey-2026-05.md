@@ -4,7 +4,7 @@ type: survey
 
 # Ollama on Tier-2 Cloud: Auth Posture Survey (Scope Expansion)
 
-_NuClide Research · 2026-05-04 (corrected after honeypot-fleet discovery)_
+_ · 2026-05-04 (corrected after honeypot-fleet discovery)_
 _Companion to: [`ollama-cloud-survey-2026-05.md`](ollama-cloud-survey-2026-05.md) (DO/Hetzner/Vultr baseline)_
 
 > **2026-05-04 correction note:** Initial publication of this case study reported 1,019 unauth Ollama instances on tier-2 clouds, including a "197-host Linode marketplace template cluster" (Ollama 0.1.33 + identical 5-model loadout). Subsequent cross-validation against tier-2 Milvus probe data revealed that **169 of the original 259 Linode hits, including ~188 of the 197 "0.1.33 marketplace" hosts, are part of an AS63949 (Akamai/Linode) JSON-honeypot deception fleet** that returns convincing-but-fake Ollama / Milvus / generic-AI-API responses on every probed port. The fleet's signature is documented in the new "Honeypot pollution and the AS63949 deception fleet" section below. Numbers in this survey have been **corrected to 850 real unauth Ollama instances** (Linode 90, OVH 714, Scaleway 46). The honeypot finding is methodologically significant for the survey series and is folded into the synthesis paper.
@@ -140,7 +140,7 @@ Cross-validation against the parallel tier-2 Milvus probe revealed that 169 of t
 - Random WordPress plugin readme.txt or generic IT-management-product HTML on port 80 (e.g., "Arigato Autoresponder", "Filr - Secure document library")
 - Models in the forged Ollama response stamped with `+08:00` timezone, the operator timezone is GMT+8 (Singapore / China / HK)
 
-**Detector.** The unique salt `wW0sffoqsk.EM` plus the kitchen-sink-JSON pattern (chat-completion-fields-mixed-with-models-array) are sufficient signatures. NuClide's filter pulled 169 honeypot IPs from the Ollama tier-2 dataset (-65% Linode false-positive rate) and 393 from the Milvus tier-2 dataset (-91% false-positive rate). The Qdrant probe was strict enough (required exact `"title":"qdrant - vector search engine"` JSON) that **no honeypots passed it**, Qdrant tier-2 numbers are unaffected.
+**Detector.** The unique salt `wW0sffoqsk.EM` plus the kitchen-sink-JSON pattern (chat-completion-fields-mixed-with-models-array) are sufficient signatures. 's filter pulled 169 honeypot IPs from the Ollama tier-2 dataset (-65% Linode false-positive rate) and 393 from the Milvus tier-2 dataset (-91% false-positive rate). The Qdrant probe was strict enough (required exact `"title":"qdrant - vector search engine"` JSON) that **no honeypots passed it**, Qdrant tier-2 numbers are unaffected.
 
 **Attribution.** All 393 hosts are on AS63949 (Akamai Connected Cloud, formerly Linode). Distributed across at least 8 different Linode /16 ranges (`103.3.x`, `109.74.x`, `139.144.x`, `139.162.x`, `172.234.x`, `66.228.x`, `74.207.x`, etc.). The +08:00 timezone in forged data and the SSH-banner inconsistency (HUAWEI, paramiko, MocanassH all on different hosts) suggest either **Akamai's own threat-intel research infrastructure**, a commercial honeypot-as-a-service operator, or a third-party security-research consortium hosting on Linode. The fleet is professionally maintained, the kitchen-sink template captures every common AI/ML scanner heuristic in a single response, including specific markers for ffmpeg-RCE, dizquetv passthrough, and CVE-2025-style "VULNERABLE -version" triggers.
 
@@ -217,7 +217,7 @@ The original survey's hypothesis that **"auth-on-default is load-bearing"** hold
 
 ## Disclosure Posture
 
-The aggregate exposure (1,019 unauth instances, 471 cloud-billing-exposed, 197-host marketplace cluster, 20+ uncensored finetunes) is too large for per-host disclosure. NuClide's posture:
+The aggregate exposure (1,019 unauth instances, 471 cloud-billing-exposed, 197-host marketplace cluster, 20+ uncensored finetunes) is too large for per-host disclosure. 's posture:
 
 1. **No per-host abuse reports**, the framework has no auth, the operators chose to deploy unauth on the public internet. Per-host disclosure load would scale to thousands of emails with no fix path beyond "add a firewall rule."
 

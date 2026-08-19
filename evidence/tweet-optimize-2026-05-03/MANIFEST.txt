@@ -1,4 +1,4 @@
-# === NuClide Research evidence pack manifest ===
+# ===  evidence pack manifest ===
 # pack: tweet-optimize.com / 65.108.107.240 / 2026-05-03
 # generated_at_utc: 2026-05-03T19:49:51Z
 # git_head_at_generation: 7d1403ef3da3cb76c30d06019c2b2684632c1c49

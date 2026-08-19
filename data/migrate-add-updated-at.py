@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-migrate-add-updated-at.py — one-shot SQLite migration for nuclide.db
+migrate-add-updated-at.py — one-shot SQLite migration for .db
 
 Adds an `updated_at` column to the events table for use as the OLAP-sync
 high-water mark (see reference/olap-migration.md §4.1). Idempotent: safe
@@ -38,7 +38,7 @@ import sqlite3
 import sys
 from pathlib import Path
 
-DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / "nuclide.db"
+DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / ".db"
 
 
 SQL_BACKFILL = "UPDATE events SET updated_at = timestamp WHERE updated_at IS NULL"
@@ -160,7 +160,7 @@ def migrate(db_path: Path, dry_run: bool) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.strip().split("\n\n")[0])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB,
-                    help=f"Path to nuclide.db (default: {DEFAULT_DB})")
+                    help=f"Path to .db (default: {DEFAULT_DB})")
     ap.add_argument("--dry-run", action="store_true",
                     help="Show migration plan; do not apply changes.")
     args = ap.parse_args()

@@ -1,6 +1,6 @@
 # DMARC Funding-Stage Proxy — Full-Registry Sweep N=410
 
-Date: 2026-06-07. Cohort: full NuClide AI-infrastructure vendor registry (MASTER-port-vendor-registry.csv, 435 vendor names, 410 unique apex domains resolved after dedup and OSS filtering). Probe: `dig +short TXT _dmarc.<domain>`. Fully passive otherwise.
+Date: 2026-06-07. Cohort: full  AI-infrastructure vendor registry (MASTER-port-vendor-registry.csv, 435 vendor names, 410 unique apex domains resolved after dedup and OSS filtering). Probe: `dig +short TXT _dmarc.<domain>`. Fully passive otherwise.
 
 ## Headline numbers
 
@@ -91,4 +91,4 @@ Sampling these 50 by funding stage (~5 minutes per vendor on Crunchbase) yields 
 
 ## Headline for the registry memo
 
-The DMARC funding-stage proxy hypothesis cannot yet be confirmed at the targeted N >= 100 because funding-stage data does not exist in machine-readable form for 92% of the NuClide vendor registry. The dig sweep half is complete and reproducible (410 rows, ~30 seconds wall time). The funding-stage cross-reference is the bottleneck; bridging it is a 50-vendor Crunchbase task, not an engineering task.
+The DMARC funding-stage proxy hypothesis cannot yet be confirmed at the targeted N >= 100 because funding-stage data does not exist in machine-readable form for 92% of the  vendor registry. The dig sweep half is complete and reproducible (410 rows, ~30 seconds wall time). The funding-stage cross-reference is the bottleneck; bridging it is a 50-vendor Crunchbase task, not an engineering task.

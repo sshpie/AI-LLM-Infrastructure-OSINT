@@ -125,7 +125,7 @@ The combination of these exposures means an unauthenticated caller can:
 
 ## Discovery Context
 
-Discovered during NuClide Research embedding-services OSINT survey (2026-05-09). Surfaced via asyncio targeted probe (`/tmp/embed-probe.py`) on 440 priority IPs derived from the 818-IP embedding-services survey pool. The `embed` field in the JSON root matched the embedding-API fingerprint. Subsequent port survey (8 candidate ports, no enumeration) confirmed the multi-service stacked exposure. Documented in `case-studies/commercial/embedding-services-cloud-survey-2026-05.md` as Finding F9.
+Discovered during  embedding-services OSINT survey (2026-05-09). Surfaced via asyncio targeted probe (`/tmp/embed-probe.py`) on 440 priority IPs derived from the 818-IP embedding-services survey pool. The `embed` field in the JSON root matched the embedding-API fingerprint. Subsequent port survey (8 candidate ports, no enumeration) confirmed the multi-service stacked exposure. Documented in `case-studies/commercial/embedding-services-cloud-survey-2026-05.md` as Finding F9.
 
 ---
 

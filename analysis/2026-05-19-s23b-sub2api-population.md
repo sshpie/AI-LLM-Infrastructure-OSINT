@@ -45,7 +45,7 @@ Secondary questions:
 
 Orchestrator plus subagents. Harvest and verification ran as coordinated single-pass scripts; classification and reclassification dispatched as subagent tasks. VisorGraph cert-pivot dispatched as a separate subagent. JS-bundle extraction ran on a 60-host sample with sha256 deduplication. BARE and VisorScuba ran against the combined 105-finding set (101 SETUP_OPEN + 4 DEV_MODE).
 
-Tool-gap notes from this session collected to `~/Desktop/nuclide-logs/` per operator instruction.
+Tool-gap notes from this session collected to `~/Desktop/-logs/` per operator instruction.
 
 ### Tools Used
 
@@ -59,7 +59,7 @@ Tool-gap notes from this session collected to `~/Desktop/nuclide-logs/` per oper
 | VisorGraph | Cert-pivot on 5 storefront seeds | visorgraph-*.json + cert-pivot-summary.md |
 | aimap-profile | 5 cluster representatives | aimap-profile-*.json; ethical classification of cluster cohorts |
 | JS-bundle extract (js_extract.py) | SPA bundle analysis on 60-host sample | js-bundles/ dir; sha256 dedup; js-findings.csv |
-| VisorLog | Ledger ingest → nuclide.db | 106 events via visorlog.ndjson + build_ndjson.py |
+| VisorLog | Ledger ingest → .db | 106 events via visorlog.ndjson + build_ndjson.py |
 | VisorScuba | Compliance scoring | 105 findings ingested; all scored 0/10 — rule taxonomy gaps logged |
 | BARE | Metasploit module ranking | 105 findings → bare-input.json → bare-output.json; no precise existing module |
 
@@ -134,11 +134,11 @@ JS bundles: static analysis only. No credentials were extracted (none found). De
 | ~14:35 | aimap-profile on 5 cluster representatives | Ethical classification of cohorts |
 | ~14:40 | JS-bundle extraction: 60-host sample | sha256 dedup: one stock bundle across all 60. Zero baked secrets. Insight #36 does NOT generalize to this install class |
 | ~14:50 | BARE: 105 findings → ranked Metasploit corpus | No precise existing module. Top matches: Twonky authbypass-logleak (0.539), SysAid admin-acct, APISIX default-token-RCE, HP iLO create-admin. All tangential. New module warranted |
-| ~14:55 | VisorLog: 106 events ingested to nuclide.db | visorlog.ndjson built from verify-state-v2.csv |
-| ~15:00 | VisorScuba: 105 findings scored | All 0/10, 0 violations — rule taxonomy does not include install-wizard-exposed, vite-dev-in-production, or pooled-account-public-metrics. Tool gaps logged at ~/Desktop/nuclide-logs/tool-gaps_visorscuba.txt |
+| ~14:55 | VisorLog: 106 events ingested to .db | visorlog.ndjson built from verify-state-v2.csv |
+| ~15:00 | VisorScuba: 105 findings scored | All 0/10, 0 violations — rule taxonomy does not include install-wizard-exposed, vite-dev-in-production, or pooled-account-public-metrics. Tool gaps logged at ~/Desktop/-logs/tool-gaps_visorscuba.txt |
 | ~15:10 | Operator-cluster attribution table built | ACEVILLE PTE.LTD.: 285 hosts (47× v1 cohort's 6 hosts on same provider). 16clouds.com: 175 hosts (cross-survey link to Butterfly2Sea) |
 | ~15:15 | Insight #40 drafted and committed | Auth-on-default thesis shifts rightward in successor OSS generations |
-| ~15:20 | Case study committed: case-studies/commercial/sub2api-population-2026-05-19.md | Tool-gap notes moved to ~/Desktop/nuclide-logs/ per operator instruction |
+| ~15:20 | Case study committed: case-studies/commercial/sub2api-population-2026-05-19.md | Tool-gap notes moved to ~/Desktop/-logs/ per operator instruction |
 
 ---
 
@@ -432,4 +432,4 @@ SIGNATURES = {
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 23b · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 23b · 2026-05-19*

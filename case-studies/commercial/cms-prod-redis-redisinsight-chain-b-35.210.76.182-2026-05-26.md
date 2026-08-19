@@ -754,4 +754,4 @@ CDN buckets `b2cdn.djaminn.app` and `bcdn.djaminn.app` return 403 — GCS unifor
 
 F11 and F12 are independent of everything else. `user-prod.csv` contains approximately 409,000 user records with PII plus a production admin credential in plaintext. The file has been in publicly accessible ARCHIVE-class storage since 2024-01-12: 500 days before this enumeration.
 
-*NuClide Research — 2026-05-26*
+* — 2026-05-26*

@@ -57,9 +57,9 @@ def parse_draft(path: Path) -> dict:
     #
     #   ---
     #
-    #   Nicholas Michael Kloster / NuClide Research
+    #   Nicholas Michael Kloster / 
     #   ...
-    body_start = after_fm.find('Nicholas Michael Kloster / NuClide Research')
+    body_start = after_fm.find('Nicholas Michael Kloster / ')
     if body_start < 0:
         raise ValueError(f"can't locate body start in {path}")
     body = after_fm[body_start:].rstrip() + '\n'

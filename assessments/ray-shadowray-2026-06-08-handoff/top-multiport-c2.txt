@@ -1,4 +1,4 @@
-# Top-50 attacker C2 IPs by Ray-port fanout, NuClide 2026-06-08
+# Top-50 attacker C2 IPs by Ray-port fanout,  2026-06-08
 # format: IP	distinct_ports
 51.34.20.86	102
 43.199.29.225	101

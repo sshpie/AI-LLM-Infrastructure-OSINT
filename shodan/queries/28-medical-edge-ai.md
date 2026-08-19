@@ -1,6 +1,6 @@
 # Medical & Edge AI — Shodan Query Catalog (Survey 28)
 
-_NuClide Research · 2026-05-15_
+_ · 2026-05-15_
 
 Survey target: medical imaging AI infrastructure (MONAI Label, MONAI Deploy /
 Clara, Orthanc, dcm4che) and edge-AI compute (NVIDIA NIM containers, Triton-

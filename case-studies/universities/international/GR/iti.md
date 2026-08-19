@@ -1,6 +1,6 @@
 # Informatics and Telematics Institute (ITI): Mistral Small 24B, vcl.iti.gr
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

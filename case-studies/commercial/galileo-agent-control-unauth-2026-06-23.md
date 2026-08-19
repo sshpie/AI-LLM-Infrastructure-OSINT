@@ -45,7 +45,7 @@ sidenotes:
 
 # Galileo agent-control: The Guardrail System with No Guardrails
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-23_
+_ --  -- 2026-06-23_
 
 ---
 
@@ -209,7 +209,7 @@ The evaluation engine compounds it. A working system returns `is_safe: true` for
                         12,237 UI page loads by the operator.
 2026-05-06 16:57 UTC   Second probe wave: 422 errors on agent/controls/stats endpoints
                         (scanner or researcher hit the service, failed to use correct params).
-2026-06-23             NuClide discovers via Shodan dork: port:8000 http.html:"agentcontrol"
+2026-06-23              discovers via Shodan dork: port:8000 http.html:"agentcontrol"
                         Full assessment chain run. Evaluation engine confirmed non-functional.
 ```
 
@@ -256,7 +256,7 @@ This is not a weakness unique to this deployment. It is structural: any guardrai
 
 ## Survey Context
 
-Category 33 (AI Email / Agent Guardrails), NuClide Research, 2026-06-23. 43 Shodan dorks executed. Eleven platforms surveyed. One finding. The category surface is structurally thin -- most vendors bind to loopback or deploy as pure SaaS APIs. The discoverable surface is misconfigured deployments where an operator forgot to restrict network binding before attaching production agent tools.
+Category 33 (AI Email / Agent Guardrails), , 2026-06-23. 43 Shodan dorks executed. Eleven platforms surveyed. One finding. The category surface is structurally thin -- most vendors bind to loopback or deploy as pure SaaS APIs. The discoverable surface is misconfigured deployments where an operator forgot to restrict network binding before attaching production agent tools.
 
 **Verification status:** inner-B / outer-1. Requests exercised against live artifact. All endpoints confirmed 200-with-data. Evaluation engine tested with injection phrase and SSN payload. Single in-scope host. No population rate calculable from a single Shodan result.
 

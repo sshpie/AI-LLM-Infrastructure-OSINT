@@ -1,7 +1,7 @@
 # Tabby (TabbyML/tabby) — Cat-Tabby Platform Intelligence Brief
 
 **Date:** 2026-06-09
-**Researcher:** NuClide OSINT Platoon, Squad 1 of 4
+**Researcher:**  OSINT Platoon, Squad 1 of 4
 **Stage:** -1 (intelligence gathering, no probing)
 **Status:** CANDIDATE — doc-grounded, host-unverified
 **Latest release at brief time:** v0.32.0 (2026-01-25)
@@ -94,7 +94,7 @@ No upstream-supplied cert default. Cert issuer = whatever operator chose (Let's 
 
 ### Existing nuclei templates
 
-**None.** `projectdiscovery/nuclei-templates` search returns 0 matches for "tabby" related to TabbyML. (Search hits return Eugeny/tabby terminal templates — different product.) This is a clean greenfield for NuClide tooling.
+**None.** `projectdiscovery/nuclei-templates` search returns 0 matches for "tabby" related to TabbyML. (Search hits return Eugeny/tabby terminal templates — different product.) This is a clean greenfield for  tooling.
 
 ### Population estimate
 
@@ -110,7 +110,7 @@ Shodan harvest (Step 0) will narrow this in chain run.
 
 ### Complete endpoint map
 
-| Endpoint | Method | Auth | Data returned | NuClide severity if exposed |
+| Endpoint | Method | Auth | Data returned |  severity if exposed |
 |----------|--------|------|---------------|------------------------------|
 | `/v1/health` | GET | none | `HealthState`: model id, chat_model id, device (cuda/cpu/rocm/metal), webserver enabled?, version | LOW — identity + version fingerprint |
 | `/v1beta/models` | GET | none | model registry list from server config | LOW — model enumeration |
@@ -125,7 +125,7 @@ Shodan harvest (Step 0) will narrow this in chain run.
 
 ### Restraint posture (THE DO-NOT-CALL LIST)
 
-NuClide enumerates **identity / config / version** only. The following endpoints are **compute-exfil primitives** and are NOT to be called on operator hosts:
+ enumerates **identity / config / version** only. The following endpoints are **compute-exfil primitives** and are NOT to be called on operator hosts:
 
 - `POST /v1/completions` — costs operator GPU-seconds, generates content, demonstrably LLM-jacking
 - `POST /v1/chat/completions` — same
@@ -134,7 +134,7 @@ NuClide enumerates **identity / config / version** only. The following endpoints
 - `POST /graphql` mutations — state-changing
 - Admin-creation POST on `/` first-visit — claims the admin account (impact = host takeover)
 
-**Allowed reads (NuClide standard for this platform):**
+**Allowed reads ( standard for this platform):**
 
 - `GET /v1/health`
 - `GET /v1beta/models`
@@ -163,7 +163,7 @@ The marker probe is `GET /v1/health` — Tabby-unique HealthState JSON shape (`{
 - No CISA KEV entry.
 - No academic paper specifically on TabbyML attack surface.
 
-### Research gaps NuClide can fill
+### Research gaps  can fill
 
 1. **Population census + auth-posture distribution.** What fraction of public Tabby instances run `--no-webserver` mode? What fraction have an admin account claimed vs unclaimed (the first-visit land-grab condition)? Quantitative answer.
 2. **OSS-builds-leak-server_setting characterization.** Document the indexed-repo and `git_url` leak surface visible via `/v1beta/server_setting` — internal source-control URLs are PII-adjacent.
@@ -200,7 +200,7 @@ Common service names: `tabby`, `tabbyml`, `tabby-server`, `ai-coding`. Common ne
 - **Traefik:** label-based; `traefik.http.routers.tabby.rule=Host(<domain>)`.
 - **Nginx:** `proxy_pass http://localhost:8080;`.
 
-NuClide IP-direct shadow probe: even when fronted by reverse-proxy on :443/:80, the backend often listens on :8080 reachable directly via IP without SNI — same exposure as the JAXEN Insight #12 shadow-sweep posture.
+ IP-direct shadow probe: even when fronted by reverse-proxy on :443/:80, the backend often listens on :8080 reachable directly via IP without SNI — same exposure as the JAXEN Insight #12 shadow-sweep posture.
 
 ### Cloud-PaaS one-click
 
@@ -261,7 +261,7 @@ Cert subject-CN field on :443 of the Tabby host typically `tabby.<org>` or `code
 - https://ramnode.com/guides/tabby
 - https://docs.clore.ai/guides/ai-coding-tools/tabby
 
-## 9. NuClide chain next steps (out of brief scope)
+## 9.  chain next steps (out of brief scope)
 
 - Stage 0: Shodan dork sweep via Playwright web UI (basic + strict-favicon + version tiers).
 - Stage 0b: Censys body-content dork on `/v1beta/server_setting` JSON keys, `/v1/health` HealthState shape.

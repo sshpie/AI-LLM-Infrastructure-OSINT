@@ -2,7 +2,7 @@ Khoj — Cat-52 Population Survey — Findings Breakdown
 ======================================================
 
 Date:               2026-06-08
-Surveyor:           NuClide Research (Nicholas Kloster)
+Surveyor:            ()
 Target Class:       Khoj — self-hostable personal RAG / AI assistant
 Restraint Posture:  GET only. No POST chat/search. No /api/content/file/* reads.
                     No /api/chat/history reads. Counts + keys + config-tier

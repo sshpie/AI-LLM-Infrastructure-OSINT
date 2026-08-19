@@ -1,5 +1,5 @@
 findings-breakdown.txt — Cat-PX: Arize Phoenix LLM Observability
-NuClide Research | 2026-06-06 | Analyst: Nicholas Kloster
+ | 2026-06-06 | Analyst: 
 Tool: herald v0.1.1
 
 ════════════════════════════════════════════════════════════════════
@@ -147,5 +147,5 @@ FP CATALOG
 3. USERS_UNAUTH count of 2 appears uniformly across hosts. This may
    be Phoenix's default "system" + "admin" account pair, not real
    end-user accounts. Schema verification was attempted but blocked
-   by NuClide restraint policy. The finding stands as count-based;
+   by  restraint policy. The finding stands as count-based;
    actual PII enumeration not performed.

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source": "nuclide-cat-bentoml-2026-06-10",
+  "source": "-cat-bentoml-2026-06-10",
   "findings": [
     {
       "id": "bentoml-nestle-132.220.174.201",

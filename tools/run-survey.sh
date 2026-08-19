@@ -19,7 +19,7 @@
 set -euo pipefail
 
 REPO="$HOME/AI-LLM-Infrastructure-OSINT"
-NUCLIDE_DB="${NUCLIDE_DB:-$REPO/data/nuclide.db}"
+_DB="${_DB:-$REPO/data/.db}"
 
 SLUG="${1:-}"
 [[ -z "$SLUG" || "$SLUG" == --* ]] && { echo "usage: run-survey.sh <slug> [--active] [--skip-chain] [--recon-dir DIR]" >&2; exit 1; }
@@ -55,13 +55,13 @@ echo "    recon-dir: $RECON_DIR"
 echo
 echo "### PHASE 2: binding evaluation"
 python3 "$REPO/tools/binding-runner.py" \
-  --recon-dir "$RECON_DIR" --db "$NUCLIDE_DB" $ACTIVE \
+  --recon-dir "$RECON_DIR" --db "$_DB" $ACTIVE \
   -o "$RECON_DIR/binding-results.json"
 
 # ── Phase 3: visorscuba assess (AI.* + BLUE-*) ───────────────────────────────
 echo
 echo "### PHASE 3: visorscuba assess (AI.* + BLUE-*)"
-~/go/bin/VisorScuba assess --db "$NUCLIDE_DB" --json > "$RECON_DIR/scuba-assess.json" 2>/dev/null || true
+~/go/bin/VisorScuba assess --db "$_DB" --json > "$RECON_DIR/scuba-assess.json" 2>/dev/null || true
 python3 - "$RECON_DIR/scuba-assess.json" <<'PY'
 import json, sys, collections
 try:

@@ -88,5 +88,5 @@ Open instances (41):
 - [ ] Pinot agent (31 IPs, CVE-2024-56325 test)
 - [ ] VisorGraph cert pivots on anchor hosts
 - [ ] aimap-profile classification on critical instances
-- [ ] VisorLog ingest → nuclide.db
+- [ ] VisorLog ingest → .db
 - [ ] Case studies: Snap-E Cabs, nyovenn, ClickHouse production instances

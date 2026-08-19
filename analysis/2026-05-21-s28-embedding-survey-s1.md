@@ -49,7 +49,7 @@ Single-session orchestrator. aimap batch dispatched in background (6,273 IPs × 
 | VisorPlus | Host enrichment | Hetzner AS24940, GreyNoise clean, 1 hostname (default Hetzner) |
 | VisorGraph | Cert-pivot | HTTP-only on both ports; no TLS cert; no pivot surface |
 | aimap-profile | Target classification | `unclassified`; bare VPS; research or personal deployment |
-| VisorLog | Ledger ingest | 1 host ingested; 37 total nuclide.db nodes post-run |
+| VisorLog | Ledger ingest | 1 host ingested; 37 total .db nodes post-run |
 | BARE | Metasploit semantic ranking | Port 8001: no specific embedding module (closest: 0.448). Port 9000: OVMS analogy match via Ollama RCE module (0.369) |
 | VisorCorpus | Adversarial corpus generation | 26KB corpus built (kb_exfiltration, system_prompt, config_secrets) |
 | VisorScuba | Compliance scoring | 37 nodes assessed post-ingest |
@@ -112,7 +112,7 @@ Single test vector issued to `/embed` to confirm live inference (1024-float resp
 | ~11:40 | TOME scan: 17 platforms | 0 confidence — embedding-api + openvino-model-server not in corpus |
 | ~11:45 | TOME corpus additions committed | platforms/embedding-api.json + platforms/openvino-model-server.json |
 | ~12:00 | VisorPlus, VisorGraph, aimap-profile, BARE, VisorCorpus, VisorScuba run | No pivot chains; no MSF modules; corpus built |
-| ~12:15 | VisorLog ingest | 37 nuclide.db nodes post-run |
+| ~12:15 | VisorLog ingest | 37 .db nodes post-run |
 | ~12:30 | aimap batch submitted: 6,273 IPs × 39 ports | Running in background; Session 29 will parse results |
 | ~12:45 | Shodan-dark problem documented | Embedding services return bare JSON; Shodan HTML crawler does not index it |
 | ~13:00 | Fix list written: Hetzner range + HTTPS support + TOME additions | Next steps documented; session closed |
@@ -296,4 +296,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 28 · 2026-05-21*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 28 · 2026-05-21*

@@ -10,7 +10,7 @@ abstract: "A new generation of open-source AI and LLM infrastructure tools has s
 
 # The Auth-on-Default Landscape of OSS AI/LLM Infrastructure — A Two-Day Population Survey
 
-**NuClide Research · 2026-06-07**
+** · 2026-06-07**
 
 ---
 
@@ -144,7 +144,7 @@ The auth-permissive default enables a small set of OWASP LLM Top 10 (2025) class
 
 ### LLM02:2025 Sensitive Information Disclosure (promoted #6 → #2 in 2025)
 
-This is the dominant finding class. NuClide does not find training-data extraction or membership inference at population scale; we find **infrastructure-layer configuration disclosure** — the platform itself reveals operator-side metadata without authentication. Examples:
+This is the dominant finding class.  does not find training-data extraction or membership inference at population scale; we find **infrastructure-layer configuration disclosure** — the platform itself reveals operator-side metadata without authentication. Examples:
 
 - Phoenix `/v1/users` returns user records (account IDs, creation timestamps) on 34 of 55 reachable hosts (61.8%)
 - Phoenix `/v1/projects` returns project names + IDs on 41 of 55 (74.5%) — including Northeastern University's "Essaybot" project, Hetzner Helsinki host with 21 projects, SENAI Brazil (national vocational education)
@@ -152,7 +152,7 @@ This is the dominant finding class. NuClide does not find training-data extracti
 - OpenHands `/api/settings` discloses LLM model + custom `llm_base_url` on 90.7% of reachable hosts — including operator-specific cognitive services tenants and internal LiteLLM proxy endpoints
 - Open WebUI `/api/config` discloses application names (`PLLuM dla Edukacji` — Polish National Research Institute; `SwiftRef Assistant` — SWIFT financial messaging; `Dartmouth Offshore Wind Lab AI`)
 
-The OWASP committee promoted LLM02 from #6 (2023) to #2 (2025) "following major data breaches" and "documented incidents." The empirical NuClide data is consistent with that promotion — this class is the most common finding type across the corpus.
+The OWASP committee promoted LLM02 from #6 (2023) to #2 (2025) "following major data breaches" and "documented incidents." The empirical  data is consistent with that promotion — this class is the most common finding type across the corpus.
 
 ### LLM10:2025 Unbounded Consumption ("Denial of Wallet")
 
@@ -175,7 +175,7 @@ The 25 OpenHands hosts with populated `/api/conversations` reveal:
 - One operator's 20-conversation internal corporate HR development pipeline (xrxs/project-* GitLab repos, Chinese-language conversation titles describing salary policy and AWOL rule features)
 - **Three separate hosts with visible conversation titles `"show me /proc/self/environ"`** — scripted attacker reconnaissance attempting to exfiltrate API keys from the agent's runtime environment
 
-The /proc/self/environ class is significant because it is the **first time the NuClide methodology has observed in-flight attacker activity directly from the public surface**. The same dork that NuClide walked, an attacker is walking now. Whether keys were successfully exfiltrated is not visible to NuClide's restraint-bounded methodology — that would require reading conversation content.
+The /proc/self/environ class is significant because it is the **first time the  methodology has observed in-flight attacker activity directly from the public surface**. The same dork that  walked, an attacker is walking now. Whether keys were successfully exfiltrated is not visible to 's restraint-bounded methodology — that would require reading conversation content.
 
 ### LLM07:2025 System Prompt Leakage (NEW in 2025)
 
@@ -190,9 +190,9 @@ The chatflow is publicly readable without invoking the model. This is LLM07 by c
 
 ### LLM08:2025 Vector and Embedding Weaknesses (NEW in 2025)
 
-RAGFlow's 87.2% REGISTER_OPEN rate enables this class — a registered tenant can write to the knowledge base, and depending on multi-tenant isolation configuration, can affect retrievals seen by other tenants. NuClide did not exercise the class; the survey establishes the enabling condition only.
+RAGFlow's 87.2% REGISTER_OPEN rate enables this class — a registered tenant can write to the knowledge base, and depending on multi-tenant isolation configuration, can affect retrievals seen by other tenants.  did not exercise the class; the survey establishes the enabling condition only.
 
-Earlier NuClide surveys (Cat-02, Cat-05) found Weaviate with 13,631 PII records, Qdrant exposed plant biology research vectors at University of Queensland's UQConnect, and Flowise hosts with Pinecone API keys embedded in chatflow configurations. The LLM08 class is materially enabled by the broader cohort default.
+Earlier  surveys (Cat-02, Cat-05) found Weaviate with 13,631 PII records, Qdrant exposed plant biology research vectors at University of Queensland's UQConnect, and Flowise hosts with Pinecone API keys embedded in chatflow configurations. The LLM08 class is materially enabled by the broader cohort default.
 
 ---
 
@@ -223,7 +223,7 @@ SNI-correct probing of all four customer-tenant Langfuse instances confirmed `si
 
 **The Capitol.ai finding is a textbook case of the maintainer-culture default failing at the enterprise-SaaS scale.** Capitol.ai's *own* API tier is properly auth-gated (api-v2-politico-prod returns HTTP 403). The auth-permissive default leaks through the chat-UI and observability tiers they inherited from upstream OSS, replicated across the customer-tenant template.
 
-NuClide's customer mapping is hypothesis — strongly evidenced by subdomain naming, service composition, the Plexal cross-reference, and the deployment topology — but not assertion. Capitol.ai is the only party who can self-verify. The published security contact (`security@capitol.ai`, listed in their own privacy policy) makes coordinated disclosure straightforward.
+'s customer mapping is hypothesis — strongly evidenced by subdomain naming, service composition, the Plexal cross-reference, and the deployment topology — but not assertion. Capitol.ai is the only party who can self-verify. The published security contact (`security@capitol.ai`, listed in their own privacy policy) makes coordinated disclosure straightforward.
 
 ---
 
@@ -268,7 +268,7 @@ The result is that Insight #76 is precisely defined, with explicit boundaries:
 
 ## The tool built during the survey — herald
 
-The two-day survey work produced a tool. **herald** is a declarative HTTP auth-probe tool, public under MIT at [github.com/nuclide-research/herald](https://github.com/nuclide-research/herald). It reads platform YAML configs, sweeps an IP list, and outputs NDJSON findings.
+The two-day survey work produced a tool. **herald** is a declarative HTTP auth-probe tool, public under MIT at [github.com/sshpie/herald](https://github.com/sshpie/herald). It reads platform YAML configs, sweeps an IP list, and outputs NDJSON findings.
 
 ```bash
 cat ip-port.txt | herald -platform dify -workers 50
@@ -304,7 +304,7 @@ Three directions emerge naturally from the two-day corpus.
 
 **First, the test condition for Insight #76's second clause.** The strong form ("auth-permissive persists until external pressure") was broken by LibreChat's within-platform correction. The weak form ("rate is movable in 2–3 minor-version cycles by upstream pressure, including internal-quality-driven pressure") is supported by the same finding. The full test requires re-surveying Langfuse, RAGFlow, Phoenix, and Flowise post-disclosure at v3.180+/v0.21+/v7+/post-auth-plugin-default respectively. The disclosure pipeline state is QUEUED; the test condition activates when disclosures send and the next major release cycle completes.
 
-**Second, the in-flight attacker observation deserves its own thread.** The `/proc/self/environ` conversation titles visible on three OpenHands hosts represent the first directly-observable population-scale exploitation in the program's history. The natural question is whether the pattern extends — are attackers already walking the same Shodan dorks NuClide is walking, for the other platforms? An IOC corpus from the OpenHands case could become a detection signature for future surveys: when a survey finds conversation titles, prompt logs, or task descriptions that look like reconnaissance, the operator notification becomes more urgent than the typical disclosure-pipeline cadence.
+**Second, the in-flight attacker observation deserves its own thread.** The `/proc/self/environ` conversation titles visible on three OpenHands hosts represent the first directly-observable population-scale exploitation in the program's history. The natural question is whether the pattern extends — are attackers already walking the same Shodan dorks  is walking, for the other platforms? An IOC corpus from the OpenHands case could become a detection signature for future surveys: when a survey finds conversation titles, prompt logs, or task descriptions that look like reconnaissance, the operator notification becomes more urgent than the typical disclosure-pipeline cadence.
 
 **Third, the framework-class and protocol-class categories need new tools.** CrewAI, AutoGen, LangChain, and LlamaIndex are not surveyable via the platform methodology. They require operator-attribution-first work — finding who is running them in production via GitHub corporate organizations, npm package adoption metadata, CT logs for known operator naming patterns. MCP servers will become surveyable once the ecosystem converges on canonical transport conventions (estimated 2026 H2 per the current spec roadmap). Each of these requires a different tool than herald: an operator-attribution graph for framework class, a port-scan + protocol-handshake tool for protocol class.
 
@@ -314,7 +314,7 @@ The platform-class work continues. The bounded Insight #76 hypothesis has 13 dat
 
 ## A note on the disclosure pipeline
 
-Nothing in the QUEUED state has been sent. The pipeline state — institutional findings, upstream-maintainer recommendations, the Capitol.ai customer-tenant verification request, the OpenHands `/proc/self/environ` operator notifications — exists as researcher metadata, not as autonomous action. Decisions about timing, routing, and prioritization belong to Nicholas Kloster.
+Nothing in the QUEUED state has been sent. The pipeline state — institutional findings, upstream-maintainer recommendations, the Capitol.ai customer-tenant verification request, the OpenHands `/proc/self/environ` operator notifications — exists as researcher metadata, not as autonomous action. Decisions about timing, routing, and prioritization belong to .
 
 The published security contact for Capitol.ai (`security@capitol.ai`) is the most clearly-defined path. The institutional contacts (`security@berkeley.edu`, `security@security.harvard.edu`, `cscsec@ust.hk`, `csirt@vutbr.cz`, `it-incident@iu.edu`, `oirc@northeastern.edu`, `infosec@asu.edu`) are well-established. TWCERT/CC, CERT.br, and CNIL coordination paths exist for the consolidated Taiwan / Brazil / French findings respectively. OFAC-sensitive paths require explicit legal review.
 
@@ -322,4 +322,4 @@ The upstream-maintainer recommendations (Langfuse, InfiniFlow, Arize, All-Hands-
 
 ---
 
-*The full case-study corpus, finding breakdowns, herald source, and research-program index are public at [github.com/nuclide-research/AI-LLM-Infrastructure-OSINT](https://github.com/nuclide-research/AI-LLM-Infrastructure-OSINT) and [github.com/nuclide-research/herald](https://github.com/nuclide-research/herald).*
+*The full case-study corpus, finding breakdowns, herald source, and research-program index are public at [github.com/sshpie/AI-LLM-Infrastructure-OSINT](https://github.com/sshpie/AI-LLM-Infrastructure-OSINT) and [github.com/sshpie/herald](https://github.com/sshpie/herald).*

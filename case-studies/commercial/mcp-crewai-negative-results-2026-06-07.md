@@ -9,7 +9,7 @@ status: verified
 
 # MCP Servers and CrewAI — Negative Results with Methodology Value
 
-_NuClide Research · 2026-06-07_
+_ · 2026-06-07_
 
 Two attempted same-day surveys produced no actionable findings — but the failure modes are themselves research-program-relevant. Both reveal **classes of AI/LLM infrastructure that are not surveyable with the population-Shodan methodology** that worked for the chat-UI / RAG / observability / autonomous-agent platform surveys.
 
@@ -72,7 +72,7 @@ MCP surveys at this stage require:
 2. **Active protocol probe** with the canonical MCP `initialize` method to filter false positives
 3. **CT log enumeration** of `*.mcp-server.*` subdomain patterns
 
-The current NuClide methodology (Shodan title + content dorks → herald HTTP probe) is **not the right tool for the MCP ecosystem yet**. The ecosystem will likely become surveyable as it matures and converges on standardized HTTP transport conventions — estimated 2026 H2 based on the current MCP spec roadmap.
+The current  methodology (Shodan title + content dorks → herald HTTP probe) is **not the right tool for the MCP ecosystem yet**. The ecosystem will likely become surveyable as it matures and converges on standardized HTTP transport conventions — estimated 2026 H2 based on the current MCP spec roadmap.
 
 ---
 

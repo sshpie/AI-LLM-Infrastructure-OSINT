@@ -28,7 +28,7 @@ VisorGoose (gov/edu), VisorCorpus/VisorAgent/VisorRAG (ethical-stop), VisorHollo
 (Windows), VisorBishop (menlohunt covered shadow), JS-bundle (no bundle).
 
 ### Notable Configuration
-aimap v1.9.40 (just shipped this session). nuclide.db at ~/visorlog/nuclide.db.
+aimap v1.9.40 (just shipped this session). .db at ~/visorlog/.db.
 Workspace ~/recon/specialty-data-2026-05-29/.
 
 ## 3. Methodology

@@ -4,7 +4,7 @@ type: osint-brief
 
 # FastMCP (Python MCP Server) — Pre-Assessment OSINT Brief (2026-05-31)
 
-_NuClide Research · 2026-05-31_
+_ · 2026-05-31_
 _Status: OSINT complete. Survey chain: pending._
 _Sources: primary source code (fastmcp-slim 3.3.1 wheel), official docs (gofastmcp.com), CVE databases, prior exposure research (Knostic 2026), nuclei-templates repo._
 

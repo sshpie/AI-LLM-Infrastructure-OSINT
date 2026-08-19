@@ -1,5 +1,5 @@
 Voice/Audio AI Survey — Findings Breakdown
-2026-05-28 | NuClide Research
+2026-05-28 | 
 
 ==========================================================
 FINDING 1: whisper.cpp — 16 Unauthenticated Speech-to-Text Servers

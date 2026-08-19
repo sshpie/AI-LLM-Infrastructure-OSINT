@@ -4,7 +4,7 @@ type: survey
 
 # BI/Dashboard Platforms: Auth Posture Survey
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 ---
 

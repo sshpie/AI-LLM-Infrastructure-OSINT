@@ -78,4 +78,4 @@
 
 ## Research-program relevance
 
-Indirect relevance. 431 owns the org's information-classification taxonomy (K0195, K0287) — exactly the schema-level discipline NuClide's bag-of-fields sensitivity classification operates on, but from the defender's side. When a NuClide finding surfaces a "company internal" or "customer PII" classification label inside an exposed MLflow/Weaviate metadata blob, that label originated under a 431's framework. Not a chain step, but useful framing when explaining to a target org how their own classification scheme leaked through the data plane.
+Indirect relevance. 431 owns the org's information-classification taxonomy (K0195, K0287) — exactly the schema-level discipline 's bag-of-fields sensitivity classification operates on, but from the defender's side. When a  finding surfaces a "company internal" or "customer PII" classification label inside an exposed MLflow/Weaviate metadata blob, that label originated under a 431's framework. Not a chain step, but useful framing when explaining to a target org how their own classification scheme leaked through the data plane.

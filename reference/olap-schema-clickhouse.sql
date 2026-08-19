@@ -5,7 +5,7 @@
 -- Companion to: reference/realtime-olap-architecture.md
 --
 -- ClickHouse acts as the population-scale analytical mirror over findings
--- persisted authoritatively in nuclide.db (SQLite). All authoritative state
+-- persisted authoritatively in .db (SQLite). All authoritative state
 -- lives in SQLite + raw evidence under ~/recon. This schema is read-mostly,
 -- backfillable from SQLite, and idempotent on re-ingest.
 --
@@ -29,7 +29,7 @@
 CREATE TABLE findings
 (
     -- Identity
-    finding_id         String,          -- UUID or stable ID from nuclide.db
+    finding_id         String,          -- UUID or stable ID from .db
     survey_id          String,          -- which survey run produced/confirmed it
     first_seen_at      DateTime,
     last_verified_at   DateTime,

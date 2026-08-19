@@ -53,8 +53,8 @@ Single orchestrator session on `rooster` (Linux 6.17.0, username `cowboy`). Mull
 | recongraph | Seed-polymorphic recon graph | 0 nodes, 0 edges — no passive seed without Shodan host record |
 | nu-recon | Single-host passive deep-read | Simulated mode (no Shodan); flagged port 22 — refuted by direct TCP probe |
 | VisorPlus | Orchestrator (JAXEN chain hands-off) | Hunt path Shodan-blocked; components run individually |
-| VisorLog | Ledger ingest into nuclide.db | Finding #35925 written (high, WEBHOOK-LEAK LLMJACKING SPA GCS) |
-| VisorScuba | OPA/Rego compliance scoring against nuclide.db | AI.C1 false positive codified as tool gap |
+| VisorLog | Ledger ingest into .db | Finding #35925 written (high, WEBHOOK-LEAK LLMJACKING SPA GCS) |
+| VisorScuba | OPA/Rego compliance scoring against .db | AI.C1 false positive codified as tool gap |
 | BARE | Semantic Metasploit module ranking | PL-1 webhook-leak: 0.443 (below 0.55 threshold) — no msf coverage |
 | VisorCorpus v0.2.0 | Adversarial prompt corpus for LLM-adjacent surface | 122 probes / 9 categories, baseline variant |
 | VisorAgent | Active LLM exploitation | Ethical-stop: not fired at operator hosts; controlled run blocked (no local LLM on rooster) |
@@ -68,7 +68,7 @@ Single orchestrator session on `rooster` (Linux 6.17.0, username `cowboy`). Mull
 - All HTTP probes: 6-12 second timeout, one attempt per endpoint, no retry loops
 - aimap: 20 threads, 40-port scan range
 - menlohunt: full 5-phase protocol (port sweep, WireGuard UDP, TLS cert, GCP surface, attack-chain detection)
-- visorlog: append-only ingest into `data/nuclide.db` (project-level ledger)
+- visorlog: append-only ingest into `data/.db` (project-level ledger)
 - BARE: 0.55 threshold for msf corpus coverage
 - SHODAN_API_KEY: both stored keys (`~/.shodan/api_key`, `~/.config/shodan/api_key`) returned 401 throughout
 - Mullvad VPN: active, clean sandbox-MITM check (VisorGraph)
@@ -81,7 +81,7 @@ Single orchestrator session on `rooster` (Linux 6.17.0, username `cowboy`). Mull
 
 Planned: `jaxen hunt 'http.title:"PromptLayer"'` and `jaxen hunt 'ssl.cert.subject.cn:promptlayer'` to harvest the 6-title and 10-cert-CN population into `empire.db`. Both keys returned 401. No harvest ran.
 
-Fallback: the `nuclide.db` ledger held zero PromptLayer entries, so the Insight #9 ledger-substrate path was also empty. The single host from the April 2026 prior finding (`34.95.65.63`) became the assessment corpus.
+Fallback: the `.db` ledger held zero PromptLayer entries, so the Insight #9 ledger-substrate path was also empty. The single host from the April 2026 prior finding (`34.95.65.63`) became the assessment corpus.
 
 ### Candidate Identification
 
@@ -120,7 +120,7 @@ No webhook was triggered. No Make.com POST was sent. The prior bundle was fetche
 |---|---|---|
 | 12:24 | Session start; methodology read; all 18 binaries verified | All present and executable |
 | 12:27 | `jaxen hunt 'http.title:"PromptLayer"'` | 401 Unauthorized — both API keys dead |
-| 12:27 | Checked nuclide.db for existing PromptLayer rows | 0 rows; no fallback corpus |
+| 12:27 | Checked .db for existing PromptLayer rows | 0 rows; no fallback corpus |
 | 12:28 | Confirmed marker-build mode with Nick | Proceed with 34.95.65.63 as sole corpus |
 | 12:29 | Grepped prod_bundle.js for API hosts and path fragments | 3 Make.com webhooks re-confirmed; 6 marker candidates found; 2 token FPs cleared |
 | 12:30 | Grepped prod_bundle.js for key-like tokens (sk-, pk_, phc_) | phc_ = PostHog public; pk_ = Clearbit publishable; sk- matches are CSS vars — all non-findings |
@@ -137,8 +137,8 @@ No webhook was triggered. No Make.com POST was sent. The prior bundle was fetche
 | 12:39 | `recongraph 34.95.65.63` | 0 nodes, 0 edges — no passive sources without Shodan record |
 | 12:39 | `nu-recon 34.95.65.63` | Simulated mode; flagged port 22 — refuted by direct probe |
 | 12:40 | Built BARE input schema; ran `bare --top 2 pl_findings.json` | PL-1: 0.443 < 0.55; no msf coverage; first-party design fault confirmed |
-| 12:41 | `visorlog add` — ingested finding #35925 into nuclide.db | HIGH, WEBHOOK-LEAK LLMJACKING SPA GCS |
-| 12:41 | `visorscuba assess --db data/nuclide.db --org PromptLayer` | AI.C1 FP: "Unauthenticated Ollama" — wrong service type; tool gap codified |
+| 12:41 | `visorlog add` — ingested finding #35925 into .db | HIGH, WEBHOOK-LEAK LLMJACKING SPA GCS |
+| 12:41 | `visorscuba assess --db data/.db --org PromptLayer` | AI.C1 FP: "Unauthenticated Ollama" — wrong service type; tool gap codified |
 | 12:42 | `visorcorpus build > /tmp/pl_corpus.json` | 122 probes / 9 categories |
 | 12:42 | `visoragent` + `visorrag` | Both blocked: ethical-stop (no local LLM) + embedding API 401 |
 | 12:43 | `cortex validate` on case study | Not a cortex-format auth corpus; n/a result |
@@ -223,7 +223,7 @@ Scripted volume POST to the three webhooks exhausts Make.com operations quota. T
 
 ### Systemic Patterns
 
-PL-1 is the third instance in the NuClide survey series of a CDN/cloud-fronted SPA shipping a hardcoded upstream credential in its largest JS bundle (Insight #19 class). The systemic driver: webhook URL tokens do not visually resemble `Bearer sk-...` API keys. Standard secret-scanning rulesets do not cover `hook.us1.make.com/` patterns. The misclassification is tooling-level, not operator-skill-level. Platforms shipping AI-powered UI features via Make.com/Zapier/n8n webhooks face this exposure by default if no server-side proxy pattern is enforced.
+PL-1 is the third instance in the  survey series of a CDN/cloud-fronted SPA shipping a hardcoded upstream credential in its largest JS bundle (Insight #19 class). The systemic driver: webhook URL tokens do not visually resemble `Bearer sk-...` API keys. Standard secret-scanning rulesets do not cover `hook.us1.make.com/` patterns. The misclassification is tooling-level, not operator-skill-level. Platforms shipping AI-powered UI features via Make.com/Zapier/n8n webhooks face this exposure by default if no server-side proxy pattern is enforced.
 
 ---
 
@@ -296,7 +296,7 @@ for host in $(jaxen list | awk '{print $1}'); do
   curl -s "https://$host$bundle_url" | grep -q 'organizations-with-workspace-and-invites' || continue
   echo "$host CONFIRMED"
   curl -s "https://$host$bundle_url" | grep -o 'hook\.us1\.make\.com/[a-z0-9]*' | sort -u
-done | tee promptlayer-sweep.txt | visorlog ingest --source=jaxen --db data/nuclide.db
+done | tee promptlayer-sweep.txt | visorlog ingest --source=jaxen --db data/.db
 ```
 
 ---
@@ -379,4 +379,4 @@ SECONDARY CHECK (if confirmed):
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 31 (Briefing 3) · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 31 (Briefing 3) · 2026-05-22*

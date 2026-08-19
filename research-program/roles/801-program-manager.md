@@ -63,4 +63,4 @@ T0072 monitor/measure risk; T0220 resolve policy conflicts; T0223 audit IT progr
 
 ## Research-program relevance
 
-Tangentially relevant. Supply chain RM (K0165, K0235, A0009) intersects with NuClide's findings when an unauth AI/ML service exposure traces back to a vendor in the recipient organization's supply chain — the disclosure routes through the Program Manager for contract-language remediation (T0414, T0415). Procurement-stage cybersecurity (C010) is the upstream prevention for exactly the class of failures we surface downstream.
+Tangentially relevant. Supply chain RM (K0165, K0235, A0009) intersects with 's findings when an unauth AI/ML service exposure traces back to a vendor in the recipient organization's supply chain — the disclosure routes through the Program Manager for contract-language remediation (T0414, T0415). Procurement-stage cybersecurity (C010) is the upstream prevention for exactly the class of failures we surface downstream.

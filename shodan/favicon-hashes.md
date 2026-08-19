@@ -1,6 +1,6 @@
 # Favicon Hash Catalog
 
-_NuClide Research · Shodan-compatible MurmurHash3 (32-bit signed) of RFC-2045 base64-encoded favicon bytes._
+_ · Shodan-compatible MurmurHash3 (32-bit signed) of RFC-2045 base64-encoded favicon bytes._
 
 Algorithm: `mmh3.hash(codecs.encode(favicon_bytes, 'base64'))` — newline every 76 chars + trailing newline. Negative values are valid.
 Censys uses MD5 of raw bytes (no base64).

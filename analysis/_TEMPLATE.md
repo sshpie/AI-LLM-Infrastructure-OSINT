@@ -42,7 +42,7 @@ Describe how you operated inside Claude Code. Orchestrator + subagents? Parallel
 | aimap | Stage-1 fingerprint + Stage-2 verify | Version, -scan-all-fingerprints if needed |
 | VisorBishop | Productized re-prober | -ip-shadow for adjacent-port sweep |
 | VisorGraph | Cert-pivot → operator attribution | |
-| VisorLog | Ledger ingest → nuclide.db | |
+| VisorLog | Ledger ingest → .db | |
 | VisorScuba | Compliance scoring (OPA/Rego) | |
 | BARE | Metasploit semantic ranking | |
 | VisorCorpus | Adversarial corpus generation | |
@@ -228,4 +228,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session N · YYYY-MM-DD*
+*Prepared by  ( + Claude Sonnet 4.6) · Session N · YYYY-MM-DD*

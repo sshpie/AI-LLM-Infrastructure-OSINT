@@ -36,7 +36,7 @@ sidenotes:
 
 # TransJakarta: Unauthenticated Read, Write, and Delete on the Jakarta Transit Chatbot Knowledge Base
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -119,4 +119,4 @@ Operator attribution rests on four anchors. The `Tj` class prefix names TransJak
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

@@ -1,8 +1,8 @@
 # Expansion Roadmap — Unsurveyed Platform Categories
 
-_Last updated: 2026-05-28 (reconciled against filesystem + data/nuclide.db ledger, not hand-status)_
+_Last updated: 2026-05-28 (reconciled against filesystem + data/.db ledger, not hand-status)_
 
-Status fields below are derived from artifact presence (`data/platform-intel/`, `shodan/queries/`) and ledger evidence (`data/nuclide.db`, 25,660 events), not manual tracking. Where the two disagree, the filesystem and ledger win.
+Status fields below are derived from artifact presence (`data/platform-intel/`, `shodan/queries/`) and ledger evidence (`data/.db`, 25,660 events), not manual tracking. Where the two disagree, the filesystem and ledger win.
 
 **Reconciliation note (2026-05-28):** prior versions of this file marked several existing artifacts as missing (Specialty Data Layers queries, Eval/Benchmarking intel doc + queries, auth-gateway queries) and listed completed surveys as deferred (Temporal, ML Governance). Those drifted within a day of being written. The active worklist is now the genuinely cold set only.
 

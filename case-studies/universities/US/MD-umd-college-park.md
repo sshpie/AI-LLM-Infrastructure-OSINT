@@ -1,6 +1,6 @@
 # University of Maryland College Park: Open WebUI v0.3.32 on `amorgos.umd.edu` — `enable_signup:true` OBSERVED on Very-Old Version
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

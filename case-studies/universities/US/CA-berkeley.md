@@ -1,6 +1,6 @@
 # UC Berkeley: Residential Hall Machine, qwen2.5:32b Public
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

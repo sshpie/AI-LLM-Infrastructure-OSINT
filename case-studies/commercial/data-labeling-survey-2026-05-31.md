@@ -1,7 +1,7 @@
 # Data Labeling & Annotation: the registration knob that re-opens the door
 
 _Data Labeling & Annotation survey. 2026-05-31. Label Studio / CVAT / Argilla / doccano / Prodigy._
-_Findings: nuclide.db #36217-36254. Insights #72, #73. Breakdown: data/findings-breakdown-data-labeling-2026-05-31.txt._
+_Findings: .db #36217-36254. Insights #72, #73. Breakdown: data/findings-breakdown-data-labeling-2026-05-31.txt._
 
 ## Why this category
 
@@ -66,7 +66,7 @@ LS host was checked for the `DISABLE_SIGNUP_WITHOUT_LINK=False` default: `/user/
 returns 200 with the account-creation form on 16 of 17. Anyone reaches the URL, registers,
 gets an API token, and reads `/api/projects` and `/api/tasks`, the raw labeled data and
 annotator emails. This is effective-unauth, graded **medium / inner-A**: the signup form
-is reachable (observed), but registering and reading would exercise it, and the NuClide
+is reachable (observed), but registering and reading would exercise it, and the 
 ethic stops at "signup reachable, registration not exercised." One host (192.46.220.113)
 had signup closed. One (3.219.249.249) additionally returned `Access-Control-Allow-Origin: *`.
 

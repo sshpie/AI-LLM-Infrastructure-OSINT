@@ -1,6 +1,6 @@
 # Insight #87 — Canary Persistence as Operator-Monitoring Proxy
 
-_NuClide Research · 2026-06-08 · Origin: ChromaDB CVE-2026-45829 campaign attribution._
+_ · 2026-06-08 · Origin: ChromaDB CVE-2026-45829 campaign attribution._
 
 ---
 

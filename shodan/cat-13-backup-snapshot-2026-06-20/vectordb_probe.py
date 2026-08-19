@@ -45,7 +45,7 @@ def http_get(ip, port, path, host_hdr=None):
         if use_tls:
             ctx = ssl.create_default_context(); ctx.check_hostname=False; ctx.verify_mode=ssl.CERT_NONE
             s = ctx.wrap_socket(raw, server_hostname=ip)
-        req = ("GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: nuclide-cat13-verify\r\n"
+        req = ("GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: -cat13-verify\r\n"
                "Accept: application/json\r\nConnection: close\r\n\r\n" % (path, host_hdr or ip)).encode()
         s.sendall(req)
         s.settimeout(READ_T)

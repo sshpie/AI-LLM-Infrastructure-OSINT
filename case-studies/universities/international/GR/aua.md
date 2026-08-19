@@ -1,6 +1,6 @@
 # Agricultural University of Athens: 142GB Qwen3-235B MoE, Dual-Embedding RAG
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

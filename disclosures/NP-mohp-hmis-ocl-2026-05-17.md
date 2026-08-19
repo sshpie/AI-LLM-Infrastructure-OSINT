@@ -15,8 +15,8 @@ date: 2026-05-17
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-17
 
@@ -150,7 +150,7 @@ curl -i http://103.69.124.214:9200/_cat/indices
 
 - **Elasticsearch security defaults**: Elastic ships X-Pack security available but disabled in the public Docker image (`elasticsearch:8.x`). Enabling auth is a one-line config + a password-setup command. The 71.6% campaign-wipe rate across 5,037 unauth ES hosts in the 2026-05-16 to 2026-05-17 window suggests this default is being aggressively exploited.
 - **Meow ransomware**: automated extortion family active against unauth Elasticsearch and MongoDB since 2020. Identifiers in `read_me` documents typically include a cryptocurrency address and a 48-hour wipe threat.
-- **NuClide Research methodology**: public OSINT methodology including Insight #28 (24h survey shelf-life for extortion-targeted platforms) is at `https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/methodology/insight-28-survey-shelf-life-exposure-to-extortion.md`.
+- ** methodology**: public OSINT methodology including Insight #28 (24h survey shelf-life for extortion-targeted platforms) is at `https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/methodology/insight-28-survey-shelf-life-exposure-to-extortion.md`.
 
 ---
 
@@ -159,7 +159,7 @@ I am available to assist NP-CERT and the Ministry of Health team if useful, at n
 Time-zone: I am at UTC−6 (Denver, CO, USA).
 
 Nicholas Michael Kloster
-   NuClide Research
-   nicholas@nuclide-research.com
-   PGP: https://nuclide-research.com/pgp.txt
-   research portal: https://nuclide-research.com
+   
+   
+   PGP: https:///pgp.txt
+   research portal: https://

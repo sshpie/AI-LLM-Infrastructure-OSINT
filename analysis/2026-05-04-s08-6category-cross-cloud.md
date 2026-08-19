@@ -3,7 +3,7 @@
 **Date:** 2026-05-04  
 **Session:** 8  
 **Classification:** Internal / Research Use Only  
-**Toolchain:** masscan, data/vllm-probe.py, data/rag-framework-probe.py, data/aisafety-probe.py, data/browser-agent-probe.py, data/datalabel-probe.py, aimap, nuclide-contact.py, send_drafts_api.py  
+**Toolchain:** masscan, data/vllm-probe.py, data/rag-framework-probe.py, data/aisafety-probe.py, data/browser-agent-probe.py, data/datalabel-probe.py, aimap, -contact.py, send_drafts_api.py  
 **Repos updated:** AI-LLM-Infrastructure-OSINT (bee93be, f42a52f, cde1f17, ce4fc7d, f86a374, c8561c5, ca57069, c228259, 58131e1, d7e13fa, 0abbb65, b2add26)
 
 ---
@@ -17,7 +17,7 @@ Roadmap-driven survey of 6 platform classes not yet covered: MCP servers, LLM ga
 ### Scope and Constraints
 
 - **Target domains/IPs:** ~1,017 cloud prefixes across Scaleway, OVH (192.168.x.x/Roubaix), Linode/Akamai ranges; ~6.33M IP addresses
-- **Allowed techniques:** masscan SYN discovery, safe HTTP GET, JSON-RPC protocol handshake (MCP), max_tokens=1 inference probe (LLM gateways — read-only quota burn proof), nuclide-contact WHOIS/DNS/security.txt lookup
+- **Allowed techniques:** masscan SYN discovery, safe HTTP GET, JSON-RPC protocol handshake (MCP), max_tokens=1 inference probe (LLM gateways — read-only quota burn proof), -contact WHOIS/DNS/security.txt lookup
 - **Ethical limitations:**
   - No data exfiltration — metadata and schema enumeration only
   - No destructive API calls
@@ -33,7 +33,7 @@ Roadmap-driven survey of 6 platform classes not yet covered: MCP servers, LLM ga
 
 ### Claude Code Operation
 
-Orchestrator-driven with 4 parallel masscan lanes running simultaneously in background (surveys 3-6 while surveys 1-2 were being synthesized). Sequential probe scripts per survey. nuclide-contact.py dispatched for dead-letter contact resolution. send_drafts_api.py ran the follow-up disclosure batch.
+Orchestrator-driven with 4 parallel masscan lanes running simultaneously in background (surveys 3-6 while surveys 1-2 were being synthesized). Sequential probe scripts per survey. -contact.py dispatched for dead-letter contact resolution. send_drafts_api.py ran the follow-up disclosure batch.
 
 ### Tools Used
 
@@ -46,9 +46,9 @@ Orchestrator-driven with 4 parallel masscan lanes running simultaneously in back
 | data/aisafety-probe.py | Stage-1 AI safety probe | Single-word substring matching (later found to produce 6 FP, 0 TP — see Session 9) |
 | data/browser-agent-probe.py | Stage-1 browser agent probe | CDP endpoint detection |
 | data/datalabel-probe.py | Stage-1 data labeling probe | Port 6900 Label Studio fingerprint |
-| nuclide-contact.py | Contact resolution | WHOIS abuse + DNS SOA + security.txt + FIRST.org CSIRT + REN-ISAC |
+| -contact.py | Contact resolution | WHOIS abuse + DNS SOA + security.txt + FIRST.org CSIRT + REN-ISAC |
 | disclosures/send_drafts_api.py | Gmail API send | Follow-up batch: 4 OVH/Linode, 3 MCP high-impact, 4 dead-letter resends, 2 session-6 leftovers |
-| VisorLog | Ledger ingest | nuclide.db updated: findings from MCP + gateway surveys |
+| VisorLog | Ledger ingest | .db updated: findings from MCP + gateway surveys |
 | VisorScuba | Compliance scoring | Run on MCP critical findings |
 | VisorGraph | Cert-pivot | Run on CRITICAL MCP findings for operator attribution |
 | VisorCorpus | Adversarial corpus | Generated for Gmail-MCP exposure (F0) |
@@ -63,7 +63,7 @@ Orchestrator-driven with 4 parallel masscan lanes running simultaneously in back
 - AS63949 (Akamai/Linode) honeypot fleet: Milvus survey (session 3) saw 91.6% pollution from this ASN. MCP survey saw 1.1% — protocol-strict JSON-RPC handshake is the filter (Insight #1)
 - LLM gateway probe: one `chat/completions` call per host, max_tokens=1, 10s timeout; no key strings extracted
 - Provider-key inference (functional quotas): identified by unique response format per provider, not by key extraction
-- nuclide-contact.py built this session as the canonical contact resolver for dead-letter resends
+- -contact.py built this session as the canonical contact resolver for dead-letter resends
 
 ---
 
@@ -114,11 +114,11 @@ LLM gateway probe consumed approximately $0.000006 of operator quota per host (~
 | 11:15 | LLM Gateways probe run; 1,899 confirmed | f86a374 committed |
 | 11:30 | Canned response fingerprint identified across 1,829 hosts | Single-template auth-off pattern (Insight #2) |
 | 11:45 | 172.235.117.122:4000 (87-model Anthropic-burnable proxy) isolated as headline | Disclosure draft created |
-| 12:00 | nuclide-contact.py built; dead-letter alternate contacts resolved | Tool validated against all 4 dead-letter IPs |
+| 12:00 | -contact.py built; dead-letter alternate contacts resolved | Tool validated against all 4 dead-letter IPs |
 | 12:30 | RAG + datalabel probe results in; synthesis written | ca57069 committed |
 | 13:00 | Browser-agent + AI safety snapshot committed | c228259, 58131e1 committed |
 | 13:15 | 4 OVH/Linode disclosure drafts created | Gmail-MCP, Alcy CRM, 2 Anthropic-burnable gateways |
-| 13:30 | 4 dead-letter resends sent via nuclide-contact alternates | COMSATS/FJU/IIAP/VNU Hanoi |
+| 13:30 | 4 dead-letter resends sent via -contact alternates | COMSATS/FJU/IIAP/VNU Hanoi |
 | 13:45 | Buffalo State resend + Catherine Ullman reply sent | killiatd@buffalostate.edu |
 | 14:00 | Newcastle resend to cap-d-core-technology@newcastle.edu.au | Mailman moderator hold bypassed |
 | 14:15 | 2 session-6 leftover disclosures sent | TW-ntu-csie-vllm, US-CA-berkeley-vllm |
@@ -311,8 +311,8 @@ mcp-server --host 127.0.0.1 --port 3000
 # aimap now has MCP fingerprint; run against any new cloud provider
 aimap -list cloud-prefixes.txt -ports 3000,8000,8080 -o mcp-survey.json
 
-# nuclide-contact.py for any new disclosure batch
-python3 data/nuclide-contact.py --ip <target-ip>
+# -contact.py for any new disclosure batch
+python3 data/-contact.py --ip <target-ip>
 ```
 
 ---
@@ -438,4 +438,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 8 · 2026-05-04*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 8 · 2026-05-04*

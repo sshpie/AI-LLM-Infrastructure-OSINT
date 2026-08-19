@@ -16,10 +16,10 @@ Mapping each NICE Cybersecurity Workforce Framework role (DoD-8140) to the resea
 | Role | When invoked | Detail |
 |---|---|---|
 | 461 Systems Security Analyst | Primary disclosure-recipient mirror role | [461-systems-security-analyst.md](461-systems-security-analyst.md) |
-| 511 Cyber Defense Analyst | SOC-side / internal-detection mirror to NuClide's external recon | [511-cyber-defense-analyst.md](511-cyber-defense-analyst.md) |
+| 511 Cyber Defense Analyst | SOC-side / internal-detection mirror to 's external recon | [511-cyber-defense-analyst.md](511-cyber-defense-analyst.md) |
 | 521 Cyber Defense Infrastructure Support Specialist | Hardening / IDS-IPS-VPN admin context | [521-cyber-defense-infrastructure-support-specialist.md](521-cyber-defense-infrastructure-support-specialist.md) |
 | 531 Cyber Defense Incident Responder | CERT coordination on consolidated disclosures | [531-cyber-defense-incident-responder.md](531-cyber-defense-incident-responder.md) |
-| 612 Security Control Assessor | Closest NICE analog to NuClide work (inside-the-boundary SP 800-37 assessor) | [612-security-control-assessor.md](612-security-control-assessor.md) |
+| 612 Security Control Assessor | Closest NICE analog to  work (inside-the-boundary SP 800-37 assessor) | [612-security-control-assessor.md](612-security-control-assessor.md) |
 | 622 Secure Software Assessor | Source-code review for probe validation against upstream | [622-secure-software-assessor.md](622-secure-software-assessor.md) |
 | 651 Enterprise Architect | Tool-family architecture decisions (aimap/scanner/herald separation) | [651-enterprise-architect.md](651-enterprise-architect.md) |
 | 652 Security Architect | Defense-in-depth boundaries; multilevel security model context | [652-security-architect.md](652-security-architect.md) |
@@ -34,12 +34,12 @@ Mapping each NICE Cybersecurity Workforce Framework role (DoD-8140) to the resea
 
 ## Upstream-causes roles (the source-side of the auth-on-default thesis)
 
-These are the roles whose *omissions or oversights* produce the exposures NuClide surveys discover:
+These are the roles whose *omissions or oversights* produce the exposures  surveys discover:
 
 | Role | Why upstream | Detail |
 |---|---|---|
 | 421 Database Administrator | DB-exposure findings come from operator-side admin gaps | [421-database-administrator.md](421-database-administrator.md) |
-| 441 Network Operations Specialist | Operates the network plane NuClide enumerates externally | [441-network-operations-specialist.md](441-network-operations-specialist.md) |
+| 441 Network Operations Specialist | Operates the network plane  enumerates externally | [441-network-operations-specialist.md](441-network-operations-specialist.md) |
 | 451 System Administrator | Most common operator behind unauth AI/ML exposures | [451-system-administrator.md](451-system-administrator.md) |
 | 611 Authorizing Official | Senior AO who signs ATOs; risk acceptance authority | [611-authorizing-official.md](611-authorizing-official.md) |
 | 621 Software Developer | Builds inference servers / agent platforms; **auth-on-default originates here** | [621-software-developer.md](621-software-developer.md) |
@@ -67,10 +67,10 @@ The following roles are catalogued but not actively invoked by current research-
 
 From the per-role extraction work (3 parallel agent batches, all 35 pathways indexed):
 
-- **The 611/612/641/651/652 cluster is the upstream governance/architecture chain** whose gaps produce the AI/LLM exposures NuClide surfaces externally. The 612 Security Control Assessor is the closest NICE analog to NuClide work, performed from inside the system boundary.
+- **The 611/612/641/651/652 cluster is the upstream governance/architecture chain** whose gaps produce the AI/LLM exposures  surfaces externally. The 612 Security Control Assessor is the closest NICE analog to  work, performed from inside the system boundary.
 - **The 521/531 pair is the defender-side response chain** that receives the disclosures. Per-org disclosure outreach typically routes through these roles or the 722 ISSM.
 - **The 621/622/632 developer-assessor cluster is the demographic whose default-deployment choices determine the Insight #76 outcome.** Upstream-maintainer disclosure (Langfuse / InfiniFlow / Arize) targets 621-equivalent roles inside those orgs.
-- **671 STES and 805 IT Program Auditor are the strongest methodological analogs to NuClide's verification-stage discipline.** Both define T&E rigor we approximate in restraint-bounded outer-1 verification.
+- **671 STES and 805 IT Program Auditor are the strongest methodological analogs to 's verification-stage discipline.** Both define T&E rigor we approximate in restraint-bounded outer-1 verification.
 - **732 + 731 dyad is the standard route for PII/PHI exposure disclosures.** The Phoenix `/v1/users` finding class routes here when the operator is a US enterprise; LGPD/GDPR jurisdictions route via 731 first.
 - **901 Executive Cyber Leadership terminates high-severity escalations.** Some Taiwan MoE / national-edu-infrastructure findings would route through TWCERT/CC to a 901-equivalent role in country.
 

@@ -122,5 +122,5 @@ From VDT prompt:
 3. Shodan dork mining (if Web UI auth succeeds)
 4. Cert pivot (N/A — no TLS)
 5. JS bundle extraction (N/A — no web UI)
-6. Ledger ingest (nuclide.db)
+6. Ledger ingest (.db)
 

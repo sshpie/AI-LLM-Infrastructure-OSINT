@@ -4,7 +4,7 @@ type: multi-host
 
 # Auto F&I Sales Training RAG: Customer Dialogues + Methodology IP Exposed via Unauthenticated ChromaDB
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

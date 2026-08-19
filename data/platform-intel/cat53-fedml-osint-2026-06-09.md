@@ -1,7 +1,7 @@
 # Cat-53 FedML / TensorOpera OSINT
 
 Date: 2026-06-09
-Researcher: NuClide Research
+Researcher: 
 Scope: doc + source research only, no live probing.
 
 FedML (rebranded TensorOpera) is a federated-learning + distributed-training framework. Two surfaces co-exist: the open-source coordinator (`fedml` PyPI, FedML-AI/FedML on GitHub) and the hosted MLOps platform at open.fedml.ai / TensorOpera.ai. Latest OSS release `v0.8.9` (Oct 2023); PyPI continues to publish point releases of the same line. Product lines: **Octopus** (cross-silo FL), **Beehive** (cross-device / mobile / IoT), **Parrot** (simulator), **MLOps** (orchestration overlay). Apache-2.0.

@@ -4,7 +4,7 @@ title: Code assistants — category 09 population follow-up survey 2026-05-18
 
 # Code assistants (category 09), population follow-up 2026-05-18
 
-_NuClide Research · 2026-05-18 · four-day delta against the 2026-05-14
+_ · 2026-05-18 · four-day delta against the 2026-05-14
 baseline, with a verification-stage correction late in the session._
 
 ## Summary
@@ -267,7 +267,7 @@ follow-up.
 
 ## Stage 5 ledger
 
-192 events ingested to `data/nuclide.db` via VisorLog. **The 127 FPs need
+192 events ingested to `data/.db` via VisorLog. **The 127 FPs need
 status update to `archived` with reason `fp-stage-2-anchor`**. Operator
 re-scoping is a follow-up task.
 
@@ -415,4 +415,4 @@ Codify case study + Insight #30 + Insight #31
   `verify_full_chain.jsonl`,
   `verify_sourcegraph_full.jsonl`
 - Query catalog: `shodan/queries/09-code-assistants.md`
-- Restraint ethic: nuclide-research.com `/stack` "How we test" blocks
+- Restraint ethic:  `/stack` "How we test" blocks

@@ -4,7 +4,7 @@ type: synthesis
 
 # Vector database population survey, 2026-05-17
 
-_NuClide Research, 2026-05-17 (overnight pass)_
+_, 2026-05-17 (overnight pass)_
 _Survey #22 in the AI infrastructure series._
 
 ---

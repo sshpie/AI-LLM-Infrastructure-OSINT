@@ -4,7 +4,7 @@
 **Session:** date-only (methodology-formalization arc)
 **Classification:** Internal / Research Use Only
 **Toolchain:** parallel OSINT research agents (Opus subagents), WebFetch, Go 1.26 (logic-reproduction harness), Docker (present, not used this session)
-**Repos updated:** AI-LLM-Infrastructure-OSINT (uncommitted at write time); `~/.claude/nuclide-internal/METHODOLOGY.md` (local canon)
+**Repos updated:** AI-LLM-Infrastructure-OSINT (uncommitted at write time); `~/.claude/-internal/METHODOLOGY.md` (local canon)
 
 ---
 
@@ -21,7 +21,7 @@ that the program had been applying informally, into a reusable verification-rung
 grid.
 
 This session was deliberately held at high depth, low breadth. No public host was
-scanned. The survey's harvest and arsenal phases were not run, by choice (NuClide
+scanned. The survey's harvest and arsenal phases were not run, by choice (
 restraint ethic).
 
 ### Scope and Constraints
@@ -99,7 +99,7 @@ No brute forcing, no privilege escalation, no data exfiltration, no credential
 use, no scanning. The session's defining restraint decision: confirm the Zep
 condition at the code level and stop, holding breadth at outer 0 rather than
 standing up a container (inner B) or scanning the public CE population (outer
-1/2). This is "NuClide mode" exercised on purpose.
+1/2). This is " mode" exercised on purpose.
 
 ---
 
@@ -250,4 +250,4 @@ point.
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Opus 4.8) · 2026-05-29*
+*Prepared by  ( + Claude Opus 4.8) · 2026-05-29*

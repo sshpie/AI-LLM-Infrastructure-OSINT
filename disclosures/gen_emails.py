@@ -83,8 +83,8 @@ CONTACTS = {
     "FR-emails-pro-rdv-bot": ("security@emails-pro.fr", None),
 }
 
-SENDER = "Nicholas Michael Kloster / NuClide Research"
-SENDER_EMAIL = "nicholas@nuclide-research.com"
+SENDER = "Nicholas Michael Kloster / "
+SENDER_EMAIL = ""
 REPO = "AI-LLM-Infrastructure-OSINT"
 
 CVE_NOTE = """\
@@ -245,7 +245,7 @@ date: 2026-05-01
 
 ---
 
-I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the NuClide Research umbrella. This is an unsolicited disclosure — no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
+I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the  umbrella. This is an unsolicited disclosure — no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
 
 ---
 
@@ -331,7 +331,7 @@ def main():
     header = """\
 # Disclosure Email Queue
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 Drafts generated from case studies. Send CRITICAL first, then HIGH, then LOW.
 Update Status column as emails are sent / acknowledged.

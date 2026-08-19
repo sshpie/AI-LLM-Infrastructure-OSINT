@@ -115,7 +115,7 @@ menlohunt    IP-shadow on 144.76.75.252
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only
 VisorPlus    components individual
-VisorLog     finding -> nuclide.db
+VisorLog     finding -> .db
 VisorScuba   vLLM unauth maps to AI.C1
 BARE         model-serving authz first-party class
 VisorCorpus  N/A (could test the open vLLM, controlled framing only)

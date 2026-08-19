@@ -4,7 +4,7 @@ type: synthesis
 
 # Meow / Indexrm campaign: per-actor census across 4,776 ES hosts
 
-_NuClide Research, 2026-05-17 (evening pass)_
+_, 2026-05-17 (evening pass)_
 _Companion: [`meow-multi-actor-campaign-scope-2026-05-17.md`](meow-multi-actor-campaign-scope-2026-05-17.md), [`es-clickhouse-cross-stack-2026-05-17.md`](es-clickhouse-cross-stack-2026-05-17.md)_
 
 ---
@@ -140,7 +140,7 @@ aimap v1.9.10   [x] 4,729 hosts probed in 6m14s on 50 threads, port 9200 only
                     Actor attribution via /<marker>/_search?size=1 (~64 KB cap, 1 doc)
 visorgraph      [—] not re-run; yesterday's 22 AI-stack subset is the cert-pivot set
 shodan host     [—] not re-run; yesterday's harvest is the population
-visorlog ingest [ ] queued: ingest census.json into nuclide.db
+visorlog ingest [ ] queued: ingest census.json into .db
 ```
 
 ---

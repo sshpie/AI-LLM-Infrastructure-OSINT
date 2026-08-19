@@ -1,6 +1,6 @@
 # Shiv Nadar University: 7-Node Cluster, Chest X-Ray AI + Abliterated Models + 30+ Cloud Subscriptions
 
-_NuClide Research · 2026-05-01, Updated 2026-05-03 (session 4)_
+_ · 2026-05-01, Updated 2026-05-03 (session 4)_
 
 ---
 

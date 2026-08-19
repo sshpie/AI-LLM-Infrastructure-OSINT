@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-sync-clickhouse.py — delta-sync nuclide.db -> ClickHouse
+sync-clickhouse.py — delta-sync .db -> ClickHouse
 
 Implements reference/olap-migration.md §4.2: read the high-water mark from
-state, export rows from nuclide.db where updated_at > watermark, INSERT
+state, export rows from .db where updated_at > watermark, INSERT
 into ClickHouse, advance the watermark on success.
 
 Requires the migrate-add-updated-at.py migration applied first; the
@@ -20,7 +20,7 @@ Usage:
     python3 sync-clickhouse.py --reset
 
 State file:
-    ~/.config/nuclide/clickhouse-sync-state.json
+    ~/.config//clickhouse-sync-state.json
     {
       "last_synced_updated_at": "2026-05-06T01:23:45Z",
       "last_sync_attempt_at":   "2026-05-06T01:25:00Z",
@@ -41,9 +41,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / "nuclide.db"
+DEFAULT_DB = Path.home() / "AI-LLM-Infrastructure-OSINT" / "data" / ".db"
 DEFAULT_EXPORTER = HERE / "export-findings.py"
-STATE_DIR = Path.home() / ".config" / "nuclide"
+STATE_DIR = Path.home() / ".config" / ""
 STATE_FILE = STATE_DIR / "clickhouse-sync-state.json"
 TABLE_NAME = "findings"
 
@@ -171,7 +171,7 @@ def insert_to_clickhouse(jsonl: Path, host: str, port: int, secure: bool,
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.strip().split("\n\n")[0])
     ap.add_argument("--db", type=Path, default=DEFAULT_DB,
-                    help=f"Path to nuclide.db (default: {DEFAULT_DB})")
+                    help=f"Path to .db (default: {DEFAULT_DB})")
     ap.add_argument("--execute", action="store_true",
                     help="Actually INSERT to ClickHouse. Default is dry-run.")
     ap.add_argument("--reset", action="store_true",
@@ -182,7 +182,7 @@ def main() -> int:
                     help="Use HTTPS (default true)")
     ap.add_argument("--no-secure", dest="secure", action="store_false",
                     help="Use plain HTTP (override --secure)")
-    ap.add_argument("--database", default=os.environ.get("CLICKHOUSE_DATABASE", "nuclide"))
+    ap.add_argument("--database", default=os.environ.get("CLICKHOUSE_DATABASE", ""))
     ap.add_argument("--table", default=TABLE_NAME)
     ap.add_argument("--username", default=os.environ.get("CLICKHOUSE_USER", "default"))
     ap.add_argument("--password", default=os.environ.get("CLICKHOUSE_PASSWORD", ""))

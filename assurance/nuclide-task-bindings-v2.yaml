@@ -1,8 +1,8 @@
 # =============================================================================
-# NuClide Task Bindings — v2 (RESOLVED against real tool schemas)
+#  Task Bindings — v2 (RESOLVED against real tool schemas)
 # LLM Orchestration Security (2026)
 #
-# Supersedes nuclide-task-bindings.yaml. Reconciled with Claude Code's resolution
+# Supersedes -task-bindings.yaml. Reconciled with Claude Code's resolution
 # report (branch task-bindings-resolve, commit 89a5cf0). Placeholder subcommands that
 # do NOT exist have been removed; parse rules are written against the REAL output
 # fields confirmed in that report.

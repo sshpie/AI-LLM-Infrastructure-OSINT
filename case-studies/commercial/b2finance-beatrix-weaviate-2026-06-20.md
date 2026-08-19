@@ -38,7 +38,7 @@ sidenotes:
 
 # B2Finance BeATrix: Unauthenticated Read, Write, and Delete on the SAP B1 Client Document RAG
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -91,7 +91,7 @@ The data class is confidential business data. The specifications contain custom 
 
 Client document names reference major Brazilian and multinational firms across private equity, banking, pharmaceuticals, and medical devices. The Sapb1dbdocs class is generic SAP documentation and not client specific.
 
-Per NuClide restraint practice, individual client records, named personnel, CNPJ values, and credentials are not reproduced here. The class names, file counts, record counts, and data classes are the finding.
+Per  restraint practice, individual client records, named personnel, CNPJ values, and credentials are not reproduced here. The class names, file counts, record counts, and data classes are the finding.
 
 ---
 
@@ -117,4 +117,4 @@ Per NuClide restraint practice, individual client records, named personnel, CNPJ
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

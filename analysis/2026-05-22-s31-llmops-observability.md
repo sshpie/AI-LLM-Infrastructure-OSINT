@@ -12,7 +12,7 @@
 
 ### Objective
 
-This session continued the NuClide Research ongoing survey program: systematic discovery and verification of exposed AI/ML infrastructure on the public internet. The specific objectives were:
+This session continued the  ongoing survey program: systematic discovery and verification of exposed AI/ML infrastructure on the public internet. The specific objectives were:
 
 1. Resume the LLMOps observability stragglers thread from Session 30 (Agenta survey), which left four unworked targets.
 2. Dispatch three parallel assessments (Langfuse `:5432` Postgres data-tier, Opik backend, PromptLayer) to independent Claude Code terminals.
@@ -51,7 +51,7 @@ The session ran inside Claude Code (CLI), executing shell commands via the Bash 
 | **aimap v1.9.24** | Stage-1 fingerprint + Stage-2 verify. Gap confirmed (no Evidently fingerprint); new fingerprint shipped. |
 | **Docker** | Safe local fingerprinting of `evidently/evidently-service:latest` without probing any operator host. |
 | **Python urllib** | Inline HTTP probes inside `docker exec` context to map Evidently's API surface. |
-| **VisorLog** | Ledger (`nuclide.db`). Not invoked this session — no new confirmed findings reached ledger stage. |
+| **VisorLog** | Ledger (`.db`). Not invoked this session — no new confirmed findings reached ledger stage. |
 | **git / GitHub** | Version control. Two repos updated: OSINT repo (case studies + dork catalog) and aimap (fingerprint + CHANGELOG). |
 
 ### Notable Configuration
@@ -64,7 +64,7 @@ The session ran inside Claude Code (CLI), executing shell commands via the Bash 
 
 ## 3. Methodology
 
-The NuClide pipeline: **Discover → Fingerprint → Verify → Attribute → Classify → Ledger → Score → Codify.**
+The  pipeline: **Discover → Fingerprint → Verify → Attribute → Classify → Ledger → Score → Codify.**
 
 This session covered the **Fingerprint** stage (building the tool) and prepared for the Discover → Verify chain (blocked on API key). The three parallel sessions cover Discover → Verify on their respective targets.
 
@@ -151,7 +151,7 @@ All probes were HTTP GET against known diagnostic endpoints (not path-fuzzed), a
 | Time | Action | Outcome |
 |---|---|---|
 | 12:15 | Session start; loaded METHODOLOGY.md + SESSION.md | Session 30 carry-forward identified: 4 targets, uncommitted artifacts |
-| 12:16 | `git add` + commit + push to OSINT repo | da68959: Pantaflow/NTU/MIT case studies + edu sweep data + nuclide.db |
+| 12:16 | `git add` + commit + push to OSINT repo | da68959: Pantaflow/NTU/MIT case studies + edu sweep data + .db |
 | 12:17 | Wrote 3 parallel briefing prompts | Dispatched to operator for Langfuse :5432, Opik, PromptLayer |
 | 12:18 | Confirmed aimap has no Evidently fingerprint | Gap documented; proceeding to fingerprint |
 | 12:19 | `docker run -d evidently/evidently-service:latest -p 8900:8000` | Container started; uvicorn on :8000 confirmed |
@@ -426,4 +426,4 @@ STEP 3 — Authenticated API access:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 31 · 2026-05-22*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 31 · 2026-05-22*

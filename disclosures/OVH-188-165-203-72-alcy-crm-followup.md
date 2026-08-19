@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.net
-cc: security@alcy.fr, abuse@nuclide-research.com
+cc: security@alcy.fr, abuse@
 severity: CRITICAL
 ip: 188.165.203.72
 institution: Alcy SAS / OVH SAS (alcy.fr field-service CRM exposed via MCP server), FOLLOW-UP after 2026-05-04 cc bounce
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@ovh.net
-**Cc:** security@alcy.fr, abuse@nuclide-research.com
+**Cc:** security@alcy.fr, abuse@
 **Subject:** Follow-up, Unauthenticated Alcy CRM MCP server still live (188.165.203.72:8000); 2026-05-04 cc to contact@alcy.fr bounced
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -81,6 +81,6 @@ If a web-form submission is required to advance customer notification, please in
 I'm available for any clarification or verification questions.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

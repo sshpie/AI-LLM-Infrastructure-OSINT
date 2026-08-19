@@ -40,7 +40,7 @@ and doccano's defaults kept it shut.
 - The verification rung differs accordingly. A literal-no-auth read is inner-B/outer-1
   the moment you GET the data. Open-signup is **inner-A/outer-1 by restraint**: the
   signup form is reachable (observed), but you must register and then read to reach
-  the data, and the NuClide ethic stops at "signup reachable, registration not
+  the data, and the  ethic stops at "signup reachable, registration not
   exercised." The finding is real and the severity is medium, not high: it is one
   exercised step from data, and that step (creating an account on someone else's
   system) is exactly the line restraint does not cross.

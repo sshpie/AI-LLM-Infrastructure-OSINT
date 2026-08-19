@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source": "nuclide-manual",
+  "source": "-manual",
   "findings": [
     {
       "id": "vt-1",

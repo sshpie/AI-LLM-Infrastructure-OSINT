@@ -62,7 +62,7 @@ Note: `MCP-Protocol-Version` header is NOT sent on the initialize request itself
     "protocolVersion": "2025-11-25",
     "capabilities": {},
     "clientInfo": {
-      "name": "nuclide-scanner",
+      "name": "-scanner",
       "version": "1.0.0"
     }
   }
@@ -93,7 +93,7 @@ Step 3: POST /messages?sessionId=abc123 HTTP/1.1
         {"jsonrpc":"2.0","id":1,"method":"initialize","params":{
           "protocolVersion":"2024-11-05",
           "capabilities":{},
-          "clientInfo":{"name":"nuclide-scanner","version":"1.0.0"}
+          "clientInfo":{"name":"-scanner","version":"1.0.0"}
         }}
 
 Step 4: Response arrives as SSE message event on the GET /sse stream:

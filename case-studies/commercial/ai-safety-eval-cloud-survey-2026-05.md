@@ -4,7 +4,7 @@ type: survey
 
 # AI Safety Evaluation / Red-Team Self-Hosted: Cross-Cloud Survey (2026-05)
 
-_NuClide Research · 2026-05-04 (initial), **2026-05-05 (methodology correction)**_
+_ · 2026-05-04 (initial), **2026-05-05 (methodology correction)**_
 
 > **Status:** Initial probe (2026-05-04) reported 6 confirmed hosts. **2026-05-05 re-probe with tightened fingerprints invalidates all 6, they were substring-match false positives.** Corrected total: **0 confirmed AI safety eval / red-team self-host on the tier-2 cloud sample**. The methodology lesson from this survey is the load-bearing finding; it propagates to every future probe in the catalogue.
 

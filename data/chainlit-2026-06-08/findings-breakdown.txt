@@ -1,8 +1,8 @@
 ================================================================
-NUCLIDE SURVEY — Cat-50 / Chainlit (LLM chat framework, FastAPI/uvicorn)
+ SURVEY — Cat-50 / Chainlit (LLM chat framework, FastAPI/uvicorn)
 ================================================================
 Date:                2026-06-08
-Researcher:          Nicholas Kloster / NuClide Research
+Researcher:           / 
 Dork (Shodan):       "chainlit"
 Population (Shodan): 19  (alt `http.title:"Chainlit"` returned 0)
 Active live hosts:   13/19  (68% — 6 dead, ports closed or stale Shodan cache)
@@ -149,7 +149,7 @@ Assistant", "Gefühlsfreund") were taken from the public HTML
 <title> tag — the same string Shodan already indexed.
 
 The 4 unauth findings would be appropriate disclosure candidates
-under the standard NuClide protocol. No disclosure is being
+under the standard . No disclosure is being
 initiated from this survey per the policy of leaving disclosure
 decisions to the principal researcher.
 

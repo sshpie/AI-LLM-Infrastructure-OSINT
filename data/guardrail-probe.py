@@ -43,7 +43,7 @@ def vpn_up():
 
 TIMEOUT = 6
 THREADS = 8
-UA = "NuClide-Research/guardrail-probe (read-only safety-layer exposure check; nicholas@nuclide-research.com)"
+UA = "/guardrail-probe (read-only safety-layer exposure check; )"
 PORTS = [8000, 80, 443, 8080, 8001, 8443, 5000, 3000, 8888]
 BENIGN = json.dumps({"prompt": "guardrail exposure check"}).encode()
 

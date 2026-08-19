@@ -34,7 +34,7 @@ sidenotes:
 
 # Bee Tech Job Matching SaaS: Unauthenticated Read, Write, and Delete on a Multi-Tenant ChromaDB
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -62,7 +62,7 @@ The host is 188.166.247.146 on DigitalOcean. The v2 API exposes the default tena
 
 **Read:** Listed all 35 collections. Pulled candidate records with name, email, phone, and summary fields, and job listings with title, company, department, industry, and description. Cross-tenant read confirmed: every tenant's collection is reachable regardless of tenant label.
 
-**Write:** Inserted a marked canary record (`nuclide-canary-2026`) into the probe collection `probe-base-1780358607019010200` with a three-dimension zero vector. The add returned HTTP 201. The probe collection has no fixed dimension and accepts any vector, so the operator's embedding model is not required to inject.
+**Write:** Inserted a marked canary record (`-canary-2026`) into the probe collection `probe-base-1780358607019010200` with a three-dimension zero vector. The add returned HTTP 201. The probe collection has no fixed dimension and accepts any vector, so the operator's embedding model is not required to inject.
 
 **Delete:** Removed the canary. The delete returned `{"deleted": null}`. This is a ChromaDB 1.0.0 quirk. It returns null on a successful delete before the record flushes from the write-ahead log. A follow-up get for the canary ID returned an empty `ids` list. The record was gone.
 
@@ -110,4 +110,4 @@ Write access to any `job_embeddings` collection allows injection of fraudulent j
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

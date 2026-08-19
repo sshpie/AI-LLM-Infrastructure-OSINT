@@ -4,7 +4,7 @@ Subject: Security advisory — unauthenticated ML pipeline and production API on
 
 Hello PENTECH BILISIM security / abuse team,
 
-I'm an independent security researcher (NuClide Research). On
+I'm an independent security researcher (). On
 2026-05-13 my external research identified that the host 78.135.66.61
 on your network exposes a customer operator's full MLOps pipeline
 without authentication, including the production API of a
@@ -91,16 +91,16 @@ with their preferred attribution; I'll accommodate reasonable
 requests.
 
 Reply-to for any clarifying questions:
-nicholas@nuclide-research.com.
+.
 
 Full technical case study:
-https://nuclide-research.com/case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13
+https:///case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13
 (currently in our private staging — will be published after the
 disclosure window).
 
 Thank you for your time, and for any forwarding you can do to the
 operator.
 
-Nicholas Kloster
-NuClide Research
-https://nuclide-research.com
+
+
+https://

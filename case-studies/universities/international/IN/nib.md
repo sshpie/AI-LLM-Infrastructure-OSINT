@@ -1,6 +1,6 @@
 # India NIB (National Internet Backbone / BSNL): 2-Node Cluster, 32B Coder
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

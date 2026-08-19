@@ -1,13 +1,13 @@
 contact:
-  name: Nicholas Kloster (NuClide Research)
-  emails: nicholas@nuclide-research.com
+  name:  ()
+  emails: 
 additional-info: >-
   Proposed as a sub-technique of AML.T0070 RAG Poisoning. The parent technique
   and its two current case studies (AML.CS0026, AML.CS0035) cover blind indirect
   injection, where content is placed in an indexed location and later retrieved.
   Neither involves a query-time ranking oracle. This sub-technique names the
   iterative oracle-feedback loop that makes targeted retrieval deterministic
-  rather than probabilistic. NuClide observed this method against an
+  rather than probabilistic.  observed this method against an
   internet-exposed RAG stack and can provide a sanitized case study under
   responsible disclosure once the affected operator is notified and the exposure
   closed. A paired mitigation (Restrict and Authenticate RAG Index Read and

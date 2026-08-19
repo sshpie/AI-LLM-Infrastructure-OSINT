@@ -137,7 +137,7 @@ Direct SQLite access to the backend DB required to clean up.
 ```
 Model: PwnModel_1782709980
   source: http://45.153.102.179:9998/external_model/
-  Note: 45.153.102.179 = NuClide egress IP (Mullvad VPN exit us-sfo-wg-001)
+  Note: 45.153.102.179 =  egress IP (Mullvad VPN exit us-sfo-wg-001)
   Purpose: SSRF probe (no callback -- egress blocked)
 
 Model: RCE_PoC_1782710409

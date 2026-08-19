@@ -1,6 +1,6 @@
 # University of Maine: 69GB Uncensored 122B Model + 18 Cloud Subscriptions, ECE Server
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

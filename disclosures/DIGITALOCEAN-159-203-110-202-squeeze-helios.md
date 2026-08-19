@@ -1,6 +1,6 @@
 ---
 to: abuse@digitalocean.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 159.203.110.202
 institution: DigitalOcean, Squeeze/Helios short-squeeze trading platform; MLflow 2.9.2 actively exploited (CVE-2023-1177) + Vault dev-mode + Prometheus full architecture leak
@@ -10,13 +10,13 @@ date: 2026-05-06
 ---
 
 **To:** abuse@digitalocean.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** DigitalOcean droplet running short-squeeze trading platform, MLflow 2.9.2 actively exploited (CVE-2023-1177), Vault dev-mode unsealed, Prometheus full architecture leak, 159.203.110.202
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-06
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -102,7 +102,7 @@ $ curl -s 'http://159.203.110.202:8200/v1/sys/seal-status' | jq '{
 
 Most admin endpoints (`/v1/sys/mounts`, `/v1/sys/auth`, `/v1/sys/policies`) return 403 unauth, so the Vault auth gate IS in place at the API layer. The exposure is the dev-mode anti-pattern + the architectural disclosure (`cluster_id`, `version`, `storage_type`), not a direct secrets read.
 
-If the root token is the dev-mode default (`root`) or guessable, an attacker has full secrets access. NuClide DID NOT attempt to authenticate to Vault.
+If the root token is the dev-mode default (`root`) or guessable, an attacker has full secrets access.  DID NOT attempt to authenticate to Vault.
 
 ## Why this matters
 
@@ -166,6 +166,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mlflow-cloud-surve
 Happy to coordinate verification, or to extract the additional attacker UUIDs and timestamps needed for incident response.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

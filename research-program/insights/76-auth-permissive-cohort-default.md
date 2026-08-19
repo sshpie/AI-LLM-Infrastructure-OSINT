@@ -47,7 +47,7 @@ LibreChat is the first 2026-06-06 survey to show **within-platform version-cohor
 | LibreChat older / no buildInfo | 26.2% | Population-at-large baseline |
 | LibreChat overall | 26.3% | Weighted by cohort distribution |
 
-This is direct evidence for the **second clause of #76** — that the rate is movable — and adds a nuance: **the pressure can be internal-quality-driven rather than external-disclosure-driven**. The LibreChat maintainer (danny-avila) tightened the default in v0.8.x without (as far as known) external NuClide-class disclosure pressure. This suggests internal security review can produce the same correction we predicted would require external pressure.
+This is direct evidence for the **second clause of #76** — that the rate is movable — and adds a nuance: **the pressure can be internal-quality-driven rather than external-disclosure-driven**. The LibreChat maintainer (danny-avila) tightened the default in v0.8.x without (as far as known) external -class disclosure pressure. This suggests internal security review can produce the same correction we predicted would require external pressure.
 
 The strong form of #76 ("auth-permissive defaults persist until external pressure") is broken by LibreChat. The weak form ("auth-permissive defaults are the cohort norm; the rate is movable") is supported.
 

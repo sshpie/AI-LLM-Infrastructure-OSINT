@@ -32,7 +32,7 @@ Usage of aimap:
   ██║  ██║██║██║ ╚═╝ ██║██║  ██║██║
   ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝[0m
 [2m  AI Infrastructure Mapper v1.9.53[0m
-[2m  by NuClide[0m
+[2m  by [0m
 
   [1mPHASE 1: PORT DISCOVERY[0m
   [2m──────────────────────────────────────────────────────────[0m

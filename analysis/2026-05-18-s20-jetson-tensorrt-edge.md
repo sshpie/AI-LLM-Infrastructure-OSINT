@@ -43,7 +43,7 @@ Orchestrator + subagent pattern. Six parallel JAXEN dork batches in Stage 0. Sta
 | aimap v1.9.12 | Stage-1 fingerprint + Stage-2 verify + Docker Registry attribution | Jetson classifier added this session; 9 fixture-driven tests pass |
 | VisorBishop | Re-prober + IP-shadow | Adjacent-port sweep for stacked services on edge hosts |
 | VisorGraph | Cert-pivot + operator attribution | 11 named operators re-verified same-day |
-| VisorLog | Ledger ingest | 894 events ingested to nuclide.db; 0 deduped against prior |
+| VisorLog | Ledger ingest | 894 events ingested to .db; 0 deduped against prior |
 | VisorScuba | Compliance scoring | 894/894 "passing" — Rego baseline has no NVR/camera-feed policy class; methodology gap noted |
 | BARE | Metasploit semantic ranking | Max 0.598 (motionEye → Bavision IP camera login scanner); below 0.6 threshold |
 | VisorCorpus | Adversarial corpus generation | 137 cases built (77 HIGH, 26 MED, 19 LOW, 15 CRIT) against controlled target |
@@ -123,7 +123,7 @@ RTSP credentials observed in 15 Frigate `/api/config` responses — recorded as 
 | ~22:20 | BARE run | Max 0.598 (motionEye → Bavision scanner) — below 0.6 threshold |
 | ~22:25 | VisorScuba run | 894/894 "passing" — NVR/camera-feed policy class absent; gap flagged |
 | ~22:30 | VisorCorpus: 137 cases built | Controlled target only; categories logged |
-| ~22:35 | VisorLog ingest | 894 events in nuclide.db |
+| ~22:35 | VisorLog ingest | 894 events in .db |
 | ~22:40 | Frigate RTSP disclosure batch built | 15 per-host files + routing-table.csv + disclose-template.md |
 | ~23:00 | aimap v1.9.12 built + shipped | classifyJetsonRepos() added; 9 tests pass; live-verified on F4 |
 | ~23:20 | aimap v1.9.13 shipped | Healthcare (PACS/DICOM) + Finance classifiers added; shared classifyRepos engine factored out |
@@ -394,4 +394,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 20 · 2026-05-18*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 20 · 2026-05-18*

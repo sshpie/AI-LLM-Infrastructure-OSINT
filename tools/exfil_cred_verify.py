@@ -175,11 +175,11 @@ def run_chain(vendor, max_step):
         verify_url = endpoint + cfg["verify_path"]
         if cfg["auth_scheme"] == "basic_pk_sk":
             auth = base64.b64encode(f"{pk}:{sk}".encode()).decode()
-            headers = {"Authorization": f"Basic {auth}", "User-Agent": "nuclide-exfil-cred-verify/2026-05-19"}
+            headers = {"Authorization": f"Basic {auth}", "User-Agent": "-exfil-cred-verify/2026-05-19"}
         elif cfg["auth_scheme"] == "bearer_sk":
-            headers = {"Authorization": f"Bearer {sk}", "User-Agent": "nuclide-exfil-cred-verify/2026-05-19"}
+            headers = {"Authorization": f"Bearer {sk}", "User-Agent": "-exfil-cred-verify/2026-05-19"}
         elif cfg["auth_scheme"] == "x_api_key":
-            headers = {"x-api-key": sk, "User-Agent": "nuclide-exfil-cred-verify/2026-05-19"}
+            headers = {"x-api-key": sk, "User-Agent": "-exfil-cred-verify/2026-05-19"}
         else:
             continue
         sc, body = http_get(verify_url, headers=headers)

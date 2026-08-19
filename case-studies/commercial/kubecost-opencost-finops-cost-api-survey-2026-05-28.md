@@ -8,7 +8,7 @@ tags: [kubecost, opencost, finops, cost-model, kubernetes, topology-disclosure, 
 
 # Unauthenticated FinOps Cost APIs Hand Attackers a Free Cluster Recon Map
 
-_NuClide Research · 2026-05-28 · 67 internet-exposed Kubecost/OpenCost/cost-model APIs answering with no authentication. The cost number is the bait; the cluster topology it ships alongside is the prize._
+_ · 2026-05-28 · 67 internet-exposed Kubecost/OpenCost/cost-model APIs answering with no authentication. The cost number is the bait; the cluster topology it ships alongside is the prize._
 
 ## Summary
 
@@ -220,7 +220,7 @@ These cross the offline line and were NOT performed:
 ```
 JAXEN (Shodan harvest) -> aimap v1.9.38 (fingerprint, 67 targets, 95 service-hits)
   -> kubecost-opencost-probe.py (verify: /model/allocation + /model/clusterInfo + /model/helmValues presence)
-  -> finops-visorlog-adapter.py + visorlog ingest (ledger: nuclide.db, 67 rows)
+  -> finops-visorlog-adapter.py + visorlog ingest (ledger: .db, 67 rows)
   -> visorscuba assess (134 nodes, 0/10 — policy-class mismatch noted)
   -> BARE --min-score 0.4 (coverage gap confirmed for pure cost-API exposure)
   -> offline verification pass (this document)

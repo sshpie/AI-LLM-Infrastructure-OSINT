@@ -77,7 +77,7 @@ instances and names the default-credential exposure class. It does not log in.
 menlohunt swept the thirteen-policy OPA host and found only port 80, no stacked
 data tier, the host isolated. aimap has no OPA or Casdoor fingerprint, a tool gap,
 so the manual verification carried the survey. The five unauthenticated OPA hosts
-landed in nuclide.db.
+landed in .db.
 
 ## Impact
 
@@ -124,7 +124,7 @@ menlohunt    35.202.178.170 IP-shadow: port 80 only, 0 chains (isolated)
 recongraph   N/A Shodan-dependent
 nu-recon     N/A simulated-only
 VisorPlus    components individual
-VisorLog     5 unauth OPA events -> nuclide.db
+VisorLog     5 unauth OPA events -> .db
 VisorScuba   OPA policy-leak not mapped to a control (gap)
 BARE         OPA authz first-party class
 VisorCorpus  N/A no inference surface

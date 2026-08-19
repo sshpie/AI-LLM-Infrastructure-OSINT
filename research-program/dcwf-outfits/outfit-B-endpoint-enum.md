@@ -11,7 +11,7 @@ piece as a thinking scaffold for the work in front of you.
   - _core vuln assess of infrastructure_
   - _541/Advanced:_ and operations) risk and vulnerability assessments of relevant technology focus areas (e.g., local computing environment, network and infrastructure, enclave boundary, supporting infrastructure, and a
 - **T0028** — Conduct and/or support authorized penetration testing on enterprise network assets.  _(at Advanced level)_
-  - _authorized pentest (we have scope = NuClide engagement)_
+  - _authorized pentest (we have scope =  engagement)_
 - **T0432** — configuration) and use discovered data to enable mitigation of potential cyber defense incidents within the enterprise. Create a forensically sound duplicate of the evidence (i.e., forensic image) that ensures the original evidence is not unintentionally modified, to use for data  _(at Advanced level)_
   - _configuration scan + discovered data mitigation_
   - _212/Advanced:_ vulnerability or event remediation, define procedures and processes for the enterprise.

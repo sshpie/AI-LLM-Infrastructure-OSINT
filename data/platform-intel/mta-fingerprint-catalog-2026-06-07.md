@@ -1,7 +1,7 @@
 # MTA Fingerprint Catalog: Operator-Attribution Leak Surface
 
 **Date:** 2026-06-07
-**Lane:** 1B of 9-item NuClide research plan
+**Lane:** 1B of 9-item  plan
 **Origin:** Sluice survey (2026-06-06) found Haraka leaks Docker Compose project/service/network names via EHLO greeting + uses "421 You talk too soon" for early_talker rejects. This catalog extends the question to the wider MTA universe: does the leak class generalize, or is it Haraka-specific?
 
 ## TL;DR

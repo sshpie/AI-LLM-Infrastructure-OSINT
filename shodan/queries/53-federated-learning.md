@@ -2,7 +2,7 @@
 
 **Survey date:** 2026-06-09
 **Population sweep window:** 06:35–06:42 UTC
-**Operator:** NuClide / Cat-53 Federated Learning research program
+**Operator:**  / Cat-53 Federated Learning research program
 
 ## Verified dorks
 

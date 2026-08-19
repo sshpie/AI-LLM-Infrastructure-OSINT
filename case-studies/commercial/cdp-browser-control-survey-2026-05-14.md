@@ -10,7 +10,7 @@ methodology: port-first discovery (port:9222 JSON) then custom CDP /json confirm
 
 # Chrome DevTools Protocol: browser-automation backend cloud survey 2026-05-14
 
-NuClide Research
+
 
 ## Summary
 

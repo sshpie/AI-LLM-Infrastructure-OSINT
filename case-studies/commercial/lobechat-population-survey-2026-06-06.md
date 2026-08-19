@@ -10,7 +10,7 @@ toolchain: herald v0.1.3
 
 # LobeChat Population Survey — 10/12 Fully Open (83.3%, small population)
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 

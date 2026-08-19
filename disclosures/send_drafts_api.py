@@ -2,10 +2,10 @@
 """
 send_drafts_api.py — Send disclosure emails from _gmail_drafts.json via Gmail API (OAuth).
 
-Identity: From: Nicholas Michael Kloster <nicholas@nuclide-research.com>
+Identity: From: Nicholas Michael Kloster <>
 Auth: OAuth 2.0 client (Desktop app), token cached locally.
-  Client secret: ~/.config/nuclide/client_secret.json
-  Token cache:   ~/.config/nuclide/nicholas-token.json
+  Client secret: ~/.config//client_secret.json
+  Token cache:   ~/.config//nicholas-token.json
 Scope: gmail.send (write-only — least privilege; can't read mailbox).
 
 Modes:
@@ -32,11 +32,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DRAFTS_JSON = ROOT / "_gmail_drafts.json"
 SENT_LOG = ROOT / "_sent.json"
-CONFIG_DIR = Path.home() / ".config" / "nuclide"
+CONFIG_DIR = Path.home() / ".config" / ""
 CLIENT_SECRET = CONFIG_DIR / "client_secret.json"
 TOKEN_PATH = CONFIG_DIR / "nicholas-token.json"
 
-FROM_ADDR = "nicholas@nuclide-research.com"
+FROM_ADDR = ""
 FROM_NAME = "Nicholas Michael Kloster"
 # gmail.compose covers BOTH drafts().create() and messages().send().
 # (gmail.send alone cannot create drafts.) Changing the scope invalidates
@@ -95,7 +95,7 @@ def build_raw(to_addr: str, cc: str | None, subject: str, body: str,
         msg["Cc"] = cc
     msg["Subject"] = subject
     msg["Date"] = formatdate(localtime=True)
-    msg["Message-ID"] = make_msgid(domain="nuclide-research.com")
+    msg["Message-ID"] = make_msgid(domain="")
     msg["Reply-To"] = FROM_ADDR
     # multipart/alternative: plaintext part first, HTML part last — mail
     # clients render the last part they understand.
@@ -161,10 +161,10 @@ def send_test(addr: str):
     msg = build_raw(
         addr,
         None,
-        "[NuClide test] Gmail API verification",
+        "[ test] Gmail API verification",
         "This is a test message confirming the Gmail API path for "
-        "nicholas@nuclide-research.com is working.\n\n"
-        "If you see this with From: Nicholas Michael Kloster <nicholas@nuclide-research.com>, "
+        " is working.\n\n"
+        "If you see this with From: Nicholas Michael Kloster <>, "
         "the OAuth + send-as configuration is correct.\n\n"
         "Safe to delete.\n",
     )

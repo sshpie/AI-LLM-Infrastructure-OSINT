@@ -1,13 +1,13 @@
 # Lane C — Corpus Contamination Audit (LBot deception fleet)
 
-_NuClide Research · 2026-06-19 · read-only audit, no corpus files modified_
+_ · 2026-06-19 · read-only audit, no corpus files modified_
 
 ## Question
 
 The Cat-Langflow LBot fleet poisons two things at once: `http.title:` population dorks
 (rotating fake titles per request) AND scanner success-matchers (catch-all 200 JSON stuffed
 with `code`/`data`/`message`/`registerEnabled`-class fields, fake versions, fake tokens,
-`uid=0(root)`, `proof_file=/tmp/a`). How much of the existing NuClide corpus inherited
+`uid=0(root)`, `proof_file=/tmp/a`). How much of the existing  corpus inherited
 counts from this poison without a functional verification step?
 
 ## Headline

@@ -1,6 +1,6 @@
 # University of Arizona: Branded "U of A GenAI" — Open WebUI v0.7.2 with University-OIDC + Auth-On
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

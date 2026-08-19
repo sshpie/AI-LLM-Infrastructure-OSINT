@@ -1,6 +1,6 @@
 # University of Alberta: CS Dept GPU Server, gpt-oss:120b, Coding Stack
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

@@ -9,7 +9,7 @@ Attachments:
 
 Hello ATLAS team,
 
-We are NuClide Research, an independent security research practice. Our prior
+We are , an independent security research practice. Our prior
 coordinated disclosures include CVE-2025-4364 and ICSA-25-140-11, both handled
 through CISA. We work on the security of exposed AI and LLM infrastructure, and we
 have two contributions for AML.T0070 RAG Poisoning.
@@ -39,6 +39,6 @@ sanitized case study so the technique has a documented real-world example.
 We are happy to revise framing, IDs, or scope to fit the ATLAS data model. Thank you
 for maintaining ATLAS.
 
-Nicholas Kloster
-NuClide Research
-nicholas@nuclide-research.com
+
+
+

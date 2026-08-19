@@ -1,5 +1,5 @@
 CAT-34 — SELF-HOSTED LLM-APP / RAG BUILDERS — FINDINGS BREAKDOWN
-Survey date: 2026-06-12 | Operator: NuClide (Nick + Claude) | Emphasis: depth on unauth-default tier + VERIFY
+Survey date: 2026-06-12 | Operator:  (Nick + Claude) | Emphasis: depth on unauth-default tier + VERIFY
 Wardrobe: ai-infra-hunt (T0028/T0188/K0342/S0001/S0051/T0247/K0118/K0107)
 Restraint posture (PoisonedRAG '25): read names + schemas, never records; SQL/poison primitives present but NOT exercised.
 

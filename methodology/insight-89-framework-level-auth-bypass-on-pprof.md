@@ -1,6 +1,6 @@
 # Insight #89 — Framework-Level Auth Bypass Propagates to Population Scale
 
-_NuClide Research · 2026-06-08 · Origin: VictoriaMetrics survey + upstream issue #3060._
+_ · 2026-06-08 · Origin: VictoriaMetrics survey + upstream issue #3060._
 
 ---
 
@@ -66,7 +66,7 @@ A framework-level patch would be a strict subset of this surgery, applied once u
 
 ## Research-program implication
 
-This is the first Insight in the program that escalates a finding from operator-error to framework-error. Most NuClide findings live at the operator-deployment tier. This one is structural. It changes who the disclosure target is: not the operator (they cannot fix it), but the framework maintainer.
+This is the first Insight in the program that escalates a finding from operator-error to framework-error. Most  findings live at the operator-deployment tier. This one is structural. It changes who the disclosure target is: not the operator (they cannot fix it), but the framework maintainer.
 
 ## Tooling
 

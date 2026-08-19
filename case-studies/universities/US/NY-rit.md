@@ -1,6 +1,6 @@
 # Rochester Institute of Technology: 4-Node Cluster, DGX with 18 Cloud Subscriptions, Student Machine with Abliterated Models
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 
@@ -186,7 +186,7 @@ The notable combination: **OW correctly closed-enrollment AT THE FRONT-DOOR, but
 
 ### Notable details — RIT cohort
 
-RIT now has 6 hosts across multiple departments in the NuClide ledger (4 from earlier survey + these 2 new). Pattern: RIT's DISCO group runs cloud-proxy-class Ollama; SE dept runs auth-on OW. Different operators, different postures, same institution.
+RIT now has 6 hosts across multiple departments in the  ledger (4 from earlier survey + these 2 new). Pattern: RIT's DISCO group runs cloud-proxy-class Ollama; SE dept runs auth-on OW. Different operators, different postures, same institution.
 
 The `disco-dgx-spark` hostname rotation between Stage-0 capture and wave-2 verification (the `.wireless.rit.edu` subnet uses DHCP) is a recurring issue for tracking DHCP-assigned institutional hosts. Direct-IP probing (`129.21.25.95:8080` and `:11434`) is the resilient identifier.
 

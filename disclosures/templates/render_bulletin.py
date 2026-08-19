@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-render_bulletin.py — render a disclosure into the NuClide Security
+render_bulletin.py — render a disclosure into the  Security
 Disclosure Bulletin format (the claude.ai/design email-handoff template).
 
 Input: a disclosure .md with YAML frontmatter + `## Section` blocks.
@@ -42,8 +42,8 @@ TEMPLATE = Path(__file__).resolve().parent / "bulletin_template.html"
 RENDERED = ROOT / "_rendered"
 DRAFTS_JSON = ROOT / "_gmail_drafts.json"
 
-SENDER_EMAIL = "contact@nuclide-research.com"
-SENDER_DOMAIN = "nuclide-research.com"
+SENDER_EMAIL = "contact@"
+SENDER_DOMAIN = ""
 
 # Severity → the dossier palette (matches the React prototype's SEV map).
 SEV = {
@@ -305,10 +305,10 @@ def render(md_path: Path):
 
     # ---- plaintext fallback ----
     lines = []
-    lines.append("NUCLIDE RESEARCH — SECURITY DISCLOSURE BULLETIN")
+    lines.append(" — SECURITY DISCLOSURE BULLETIN")
     lines.append(f"Issued: {issued}")
     lines.append("")
-    lines.append(f"FROM  NuClide Research · {SENDER_DOMAIN}")
+    lines.append(f"FROM   · {SENDER_DOMAIN}")
     lines.append(f"TO    {to}")
     lines.append(f"KIND  {kind}")
     lines.append(f"RE    {target}")
@@ -341,10 +341,10 @@ def render(md_path: Path):
     lines.append(render_fix_rows_text(sec.get("recommended fix", "")))
     lines.append("")
     lines.append("Thanks for your time,")
-    lines.append("NuClide Research")
+    lines.append("")
     lines.append("")
     lines.append("--")
-    lines.append(f"NuClide Research · {SENDER_EMAIL} · {SENDER_DOMAIN}")
+    lines.append(f" · {SENDER_EMAIL} · {SENDER_DOMAIN}")
     lines.append("END OF BULLETIN · PRIVATE CORRESPONDENCE")
     text_out = "\n".join(lines) + "\n"
 

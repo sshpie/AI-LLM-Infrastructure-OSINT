@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ollama-recon.py — persistent Ollama exposure scanner
-Nuclide / AI-LLM-Infrastructure-OSINT
+ / AI-LLM-Infrastructure-OSINT
 
 State file: ./ollama-state.json
   - Tracks every IP ever seen (live or dead)
@@ -52,7 +52,7 @@ except ImportError:
 def _load_shodan_key():
     if k := os.environ.get("SHODAN_API_KEY"):
         return k
-    p = os.path.expanduser("~/.config/nuclide/shodan.key")
+    p = os.path.expanduser("~/.config//shodan.key")
     if os.path.exists(p):
         return open(p).read().strip()
     return "ZFjLDcJe9Jb5W1iQeZiNrDVu0HyBRSt8"

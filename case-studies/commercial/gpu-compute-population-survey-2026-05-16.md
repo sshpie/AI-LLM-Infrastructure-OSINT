@@ -4,7 +4,7 @@ type: survey
 
 # GPU-Compute Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 6 of the day's 10-category batch)_
+_ · 2026-05-16 (Survey 6 of the day's 10-category batch)_
 _Closes: category 14 (gpu-compute). Run:ai / DCGM-exporter / NVIDIA Fleet / cluster managers_
 
 ---

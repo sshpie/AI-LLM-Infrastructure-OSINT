@@ -3,7 +3,7 @@
 **Target:** 113.240.68.47:8188 (ComfyUI 0.23.0, 8x NVIDIA A100-SXM4-80GB, 634 GB VRAM aggregate, 1.08 TB system RAM)
 **Operator:** unknown (no rDNS, no TLS cert on 8188, no banner-disclosed identity)
 **Netblock:** CHINANET HUNAN PROVINCE NETWORK (China Telecom, AS4134/AS4837 family), Changsha, Hunan
-**Researcher:** NuClide Research / Nicholas Kloster, nicholas@nuclide-research.com
+**Researcher:**  / , 
 **Date:** 2026-06-08
 **Lane:** DCWF 733 — AI Risk & Ethics Specialist
 **Sibling artifact:** `672-tne-enumeration.md` (DCWF 672 T&E, metadata enumeration)
@@ -34,7 +34,7 @@ Relevance:
 - **Article 21**: data must be classified and graded per its importance to national security, public interest, and lawful rights; "important data" and "core data" carry heightened obligations.
 - **Article 27**: data-processing activities must establish a full-lifecycle security management system, security training, and technical safeguards proportionate to the grade. An unauthenticated 8x A100 inference cluster fails the technical-safeguard test on its face.
 - **Article 31** (cross-border) interacts with CSL: if the operator is later classified as a Critical Information Infrastructure operator (see CSL below), data localization and cross-border transfer security assessment kick in.
-- **Article 35** — data requests by foreign authorities require PRC approval. Not relevant to NuClide (we are not requesting data); flagged for completeness.
+- **Article 35** — data requests by foreign authorities require PRC approval. Not relevant to  (we are not requesting data); flagged for completeness.
 
 ### 1.3 CSL — Cybersecurity Law (effective 2017-06-01; major amendment effective 2026-01-01)
 
@@ -79,9 +79,9 @@ The A100-SXM4-80GB itself has never been exportable to PRC end-users since 2022-
 
 We **do not assert** which of (1)–(3) is the case. We document that all three are open, and that the export-control posture is a real and undetermined risk variable independent of the data-protection posture.
 
-### 2.3 NuClide posture on the export-control angle
+### 2.3  posture on the export-control angle
 
-NuClide is a US-based independent research entity. The presence of restricted-class hardware in a foreign jurisdiction is a finding to **document, not investigate**. We do not contact BIS. We do not contact Department of Commerce. We do not contact the FBI. The export-control posture is included here for full risk characterization of the case study — disclosure routing in §5 stays inside the cyber-incident channels.
+ is a US-based independent research entity. The presence of restricted-class hardware in a foreign jurisdiction is a finding to **document, not investigate**. We do not contact BIS. We do not contact Department of Commerce. We do not contact the FBI. The export-control posture is included here for full risk characterization of the case study — disclosure routing in §5 stays inside the cyber-incident channels.
 
 ---
 
@@ -167,10 +167,10 @@ This host is reachable and unauthenticated. We treat it as **inviolate**. The fo
 | `GET /queue` body — read live in-flight prompts | NEVER | Same logic as `/history`. The shape of the queue is metadata; queue contents are user data. |
 | `POST /upload/image` — write to operator disk | NEVER | Active write. PRC CL 286 (intentional damage / unauthorized modification), US CFAA §1030(a)(5) (damage / modification without authorization). Even a benign image upload is a write to a third-party system. |
 | SSH (port 22) probing beyond banner | NEVER | Authentication attempt against a foreign government-adjacent telco line. Banner fingerprint already collected (OpenSSH 8.9p1 Ubuntu 3ubuntu0.15). |
-| CVE exploitation (any) against this host | NEVER | Out of scope for any NuClide engagement on a third-party PRC host with no authorization. |
+| CVE exploitation (any) against this host | NEVER | Out of scope for any  engagement on a third-party PRC host with no authorization. |
 | Re-probe at any cadence | NEVER (single read pass only) | Repeated probing approaches "monitoring" which is a different legal class than a one-time external observation. |
 | Naming the operator publicly before disclosure | NEVER | Operator is not yet identified. If identified later (via cert pivot, JS bundle, image-tag pattern in `/object_info`), naming is deferred until after the CNCERT / abuse-channel notification window closes. |
-| Contacting BIS / Commerce / FBI re: A100 sourcing | NEVER | Out of NuClide's lane. We are a cyber-incident researcher, not an export-control enforcement agency. The export-control posture is documented in §2 for the case-study record; routing is §5. |
+| Contacting BIS / Commerce / FBI re: A100 sourcing | NEVER | Out of 's lane. We are a cyber-incident researcher, not an export-control enforcement agency. The export-control posture is documented in §2 for the case-study record; routing is §5. |
 
 ### 4.1 What we DID do (for the record, to close the loop)
 
@@ -212,7 +212,7 @@ The operator is unidentified at the time of this writeup. Routing therefore has 
 
 ### 5.2 Operating posture on send
 
-**This template is a DRAFT. Do not send today.** Per NuClide protocol, disclosure goes through Nick. The draft is staged so the case study has a complete artifact; the send decision is separate.
+**This template is a DRAFT. Do not send today.** Per , disclosure goes through Nick. The draft is staged so the case study has a complete artifact; the send decision is separate.
 
 ---
 
@@ -221,14 +221,14 @@ The operator is unidentified at the time of this writeup. Routing therefore has 
 ```
 To: cncert@cert.org.cn
 Cc: anti-spam@chinatelecom.cn
-From: Nicholas Kloster <nicholas@nuclide-research.com>
+From:  <>
 Subject: Coordinated disclosure — unauthenticated AI inference cluster on
          CHINANET-HN, 113.240.68.47, 8x NVIDIA A100 exposed
 
 Dear CNCERT/CC,
 
 I am an independent security researcher based in the United States
-(NuClide Research, https://nuclide-research.com). I am writing to
+(, https://). I am writing to
 report an exposed AI compute cluster on a CHINANET Hunan Province
 Network address, in accordance with coordinated-disclosure practice.
 
@@ -288,17 +288,17 @@ ninety (90) days from the date of this notification or until the
 exposure is remediated, whichever is sooner.
 
 Respectfully,
-Nicholas Kloster
-NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+
+
+
+https://
 ```
 
 ---
 
 ## 7. 733-lane summary line for the case study top sheet
 
-> The host sits inside three overlapping PRC regulatory regimes (PIPL / DSL / CSL) and the exposure pattern fails the technical-safeguard floor of all three. The hardware (8x A100-SXM4-80GB) is BIS-restricted; acquisition path is undetermined and out of NuClide's lane. The capability-layer data-class profile confirms image-gen, face-identity, audio, video, and LLM classes; prompt-content classes are not read by restraint discipline. Disclosure routes to CNCERT/CC as primary, with CHINANET abuse as parallel CC. Draft staged; send decision deferred.
+> The host sits inside three overlapping PRC regulatory regimes (PIPL / DSL / CSL) and the exposure pattern fails the technical-safeguard floor of all three. The hardware (8x A100-SXM4-80GB) is BIS-restricted; acquisition path is undetermined and out of 's lane. The capability-layer data-class profile confirms image-gen, face-identity, audio, video, and LLM classes; prompt-content classes are not read by restraint discipline. Disclosure routes to CNCERT/CC as primary, with CHINANET abuse as parallel CC. Draft staged; send decision deferred.
 
 ---
 

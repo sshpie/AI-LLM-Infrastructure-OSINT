@@ -4,7 +4,7 @@ type: survey
 
 # Flowise on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -113,6 +113,6 @@ The empirical result here, 0 of 43 cloud-hosted instances exposed, is a directio
 
 ## Discoverer
 
-NuClide Research, nicholas@nuclide-research.com
+, 
 
 No data was accessed, modified, or exfiltrated. All 43 confirmed instances were probed only on documented unauthenticated endpoints (`/api/v1/ping`, `/api/v1/version`) and on data endpoints to determine auth posture (response code only, no payload extraction attempted on 401 returns).

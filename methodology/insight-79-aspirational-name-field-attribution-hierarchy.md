@@ -45,7 +45,7 @@ hierarchy. The original case study took Tier 5 (`name` field) at face value.
 
 Disclosure pipelines route by attributed organization. Sending a "CUNY AI Lab signup
 open" disclosure to CUNY central IT when the deployment is a grad student's personal
-qzz.io EC2 wastes a CISO's attention and damages NuClide's signal-to-noise reputation.
+qzz.io EC2 wastes a CISO's attention and damages 's signal-to-noise reputation.
 Sending a "SwiftRef Assistant auth-off" disclosure to SWIFT's CISO when the box is a
 random EC2 in someone's personal AWS account is worse — it asserts a SWIFT compromise
 that doesn't exist.

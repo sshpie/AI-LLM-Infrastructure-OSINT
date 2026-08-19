@@ -1,6 +1,6 @@
 # Insight #94 — Hybrid Tier-A*/C Platforms Escape Existing Tier Vocabulary (Candidate)
 
-_NuClide Research · 2026-06-09 · Origin: Cat-Tabby survey, Tabby webserver-mode auth posture._
+_ · 2026-06-09 · Origin: Cat-Tabby survey, Tabby webserver-mode auth posture._
 
 ---
 

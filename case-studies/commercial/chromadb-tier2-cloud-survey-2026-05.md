@@ -4,7 +4,7 @@ type: survey
 
 # ChromaDB on Tier-2 Cloud: Auth Posture Survey (Scope Expansion)
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Companion to: [`chromadb-cloud-survey-2026-05.md`](chromadb-cloud-survey-2026-05.md) (DO/Hetzner/Vultr baseline, 48 instances)_
 _Sibling tier-2 expansions: [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](qdrant-tier2-cloud-survey-2026-05.md), [`milvus-tier2-cloud-survey-2026-05.md`](milvus-tier2-cloud-survey-2026-05.md)_
 
@@ -25,7 +25,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 <!-- ksat-tag:auto-generated:end -->
 
-Combined with the original DO/Hetzner/Vultr baseline (48 instances), total ChromaDB count across NuClide surveys is **92 instances, 100% unauthenticated**, the auth-off-default thesis reproduces cleanly.
+Combined with the original DO/Hetzner/Vultr baseline (48 instances), total ChromaDB count across  surveys is **92 instances, 100% unauthenticated**, the auth-off-default thesis reproduces cleanly.
 
 The notable findings are not the auth state itself (ChromaDB ships auth-off; that's now well-documented) but the **branded enterprise tenant content** appearing in unauth ChromaDB collections at population scale:
 
@@ -67,7 +67,7 @@ Strict heartbeat-signature probe filters out the 99.9% non-ChromaDB hits on port
 | API version split | v2: 40, v1: 4 |
 | Top ChromaDB version | 1.0.0 (30 hosts), 0.6.3 (6) |
 
-### Combined ChromaDB across all NuClide surveys
+### Combined ChromaDB across all  surveys
 
 | Survey | Confirmed | 100% unauth |
 |---|---|---|

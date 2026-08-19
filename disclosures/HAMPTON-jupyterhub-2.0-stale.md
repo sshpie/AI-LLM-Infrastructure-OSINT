@@ -1,6 +1,6 @@
 ---
 to: barbara.tibbs@hamptonu.edu
-cc: cas-it@hamptonu.edu, abuse@nuclide-research.com
+cc: cas-it@hamptonu.edu, abuse@
 severity: HIGH
 ip: 137.198.56.13
 institution: "Hampton University, JupyterHub on `jupyter.cas.hamptonu.edu` running version 2.0.0 (released early 2022, multi-year-old, many CVEs apply)"
@@ -10,17 +10,17 @@ date: 2026-05-07
 ---
 
 **To:** barbara.tibbs@hamptonu.edu
-**Cc:** cas-it@hamptonu.edu, abuse@nuclide-research.com
+**Cc:** cas-it@hamptonu.edu, abuse@
 **Subject:** JupyterHub on jupyter.cas.hamptonu.edu (137.198.56.13). Running 2.0.0 from early 2022, multi-year version-currency exposure
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-07
 
-This is an unsolicited good-faith coordinated-disclosure notification under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
+This is an unsolicited good-faith coordinated-disclosure notification under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). Severity: HIGH.
 
 The contact email is the ARIN-listed OrgAbuseEmail for Hampton University's IP block. If there is a more appropriate handler for academic-network security notifications at Hampton (CAS IT, CIO office, Information Security), please forward.
 
@@ -93,6 +93,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-jupyterhub-e
 Happy to coordinate on disclosure timeline.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

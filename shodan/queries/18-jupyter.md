@@ -10,7 +10,7 @@ Port 8888 is heavily shared (Adminer, Chronograf, Spring Boot Config Server). Ti
 - `CVE-2019-10255` — JupyterLab/Notebook < 5.7.8: open redirect; combined with XSRF token bypass enables session-token theft.
 - `CVE-2022-24757` — Jupyter Server < 1.15.4: open redirect.
 - `CVE-2024-35048` — JupyterHub < 4.1.0: SSRF via hub-login redirect parameter.
-- `CVE-2026-33709` — JupyterHub 1.5–4.0.x pre-CVE-2024-35048 patch: auth bypass on `/hub/api/` when using `LocalAuthenticator` + specific PAM config (confirmed in NuClide NCSU + UIC disclosures 2026-05-06).
+- `CVE-2026-33709` — JupyterHub 1.5–4.0.x pre-CVE-2024-35048 patch: auth bypass on `/hub/api/` when using `LocalAuthenticator` + specific PAM config (confirmed in  NCSU + UIC disclosures 2026-05-06).
 
 ---
 

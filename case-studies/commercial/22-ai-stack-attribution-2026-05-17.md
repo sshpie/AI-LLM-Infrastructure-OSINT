@@ -4,7 +4,7 @@ type: synthesis
 
 # 22 unauthenticated AI-stack Elasticsearch operators (2026-05-17)
 
-_NuClide Research · 2026-05-17_
+_ · 2026-05-17_
 _Companion to: [`es-clickhouse-cross-stack-2026-05-17.md`](es-clickhouse-cross-stack-2026-05-17.md), [`meow-multi-actor-campaign-scope-2026-05-17.md`](meow-multi-actor-campaign-scope-2026-05-17.md)_
 
 ---
@@ -171,7 +171,7 @@ shodan host       [x] 22 hosts. org, country, vulns.
 crt.sh            [x] manual pivot on hmis.gov.np (10 SAN), gxota.com (53 SAN).
 whois             [x] cymru bulk and per-IP for routing.
 aimap v1.9.8      [—] used earlier today for the ES schema probe.
-nuclide-contact   [—] queued for the next batch of named operators.
+-contact   [—] queued for the next batch of named operators.
 ```
 
 ---

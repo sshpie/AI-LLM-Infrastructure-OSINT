@@ -44,4 +44,4 @@ Secondary confirmation: VisorSD ran successfully against single-ASN targets in t
 
 - `case-studies/commercial/llm-orchestration-rerun-2026-05-19.md` §10 (Stage 7 arsenal coverage, VisorSD row)
 - `methodology/insight-07-shodan-facet-bucketing-fp-class.md`: complementary failure mode (over-broad)
-- VisorSD source: `github.com/nuclide-research/VisorSD` — query-template construction in the ASN-OR branch
+- VisorSD source: `github.com/sshpie/VisorSD` — query-template construction in the ASN-OR branch

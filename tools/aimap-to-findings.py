@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """aimap-to-findings.py — convert an aimap report into VisorLog NDJSON.
 
-This is the single point where a survey's nuclide.db event tags are minted.
+This is the single point where a survey's .db event tags are minted.
 It replaces the embedded heredoc converter in visor-chain-runner.sh and fixes
 a latent bug + closes the favicon/credential tag bridge:
 
   1. BUG FIX: VisorLog's Event struct uses DOTTED ECS json keys
-     (host.ip, nuclide.tags, event.severity, ...). The old converter emitted
+     (host.ip, .tags, event.severity, ...). The old converter emitted
      snake_case (host_ip, tags, ...), which json.Unmarshal silently dropped —
      every chain-ingested event landed with NO ip and NO tags. This emits the
      dotted keys, so ip + tags actually persist.
@@ -242,9 +242,9 @@ def _event(ip, port, severity, tags, source, sector, notes, favicon) -> dict:
         "event.type": "created",
         "event.severity": severity,
         "host.ip": ip,
-        "nuclide.sector": sector,
-        "nuclide.tags": uniq,
-        "nuclide.source": source,
+        ".sector": sector,
+        ".tags": uniq,
+        ".source": source,
         "lifecycle.status": "open",
         "notes": notes,
     }
@@ -258,8 +258,8 @@ def _now() -> str:
 def main():
     ap = argparse.ArgumentParser(description="aimap report -> VisorLog NDJSON (dotted ECS keys)")
     ap.add_argument("--aimap", required=True, help="aimap report JSON")
-    ap.add_argument("--source", required=True, help="nuclide.source value")
-    ap.add_argument("--sector", required=True, help="nuclide.sector value (survey slug)")
+    ap.add_argument("--source", required=True, help=".source value")
+    ap.add_argument("--sector", required=True, help=".sector value (survey slug)")
     ap.add_argument("--empire-db", default="", help="JAXEN empire.db for favicon markers")
     ap.add_argument("--favicon-table",
                     default=os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/assurance/data/product-favicon-hashes.yaml"),
@@ -278,8 +278,8 @@ def main():
     else:
         with open(args.out, "w") as f:
             f.write(lines)
-    matched = sum(1 for e in events if any(t.startswith("DEFAULT-FAVICON") for t in e["nuclide.tags"]))
-    cred = sum(1 for e in events if "EXFIL-CREDENTIAL" in e["nuclide.tags"])
+    matched = sum(1 for e in events if any(t.startswith("DEFAULT-FAVICON") for t in e[".tags"]))
+    cred = sum(1 for e in events if "EXFIL-CREDENTIAL" in e[".tags"])
     print(f"  -> {len(events)} findings ({cred} exfil_credential, {matched} default-favicon)", file=sys.stderr)
 
 

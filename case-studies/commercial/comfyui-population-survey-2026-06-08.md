@@ -3,13 +3,13 @@ type: survey
 category: generative-ai-workflow-ui
 platform: comfyui
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 predecessor: comfyui-cloud-survey-2026-05.md
 ---
 
 # ComfyUI Default-Port Population Survey: 186 Unauth Hosts, 6.6 TB VRAM
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 _Predecessor: [`comfyui-cloud-survey-2026-05.md`](comfyui-cloud-survey-2026-05.md)_
 
 ---
@@ -220,7 +220,7 @@ operator-tenant is now part of the GHOST fleet.
 The methodology directive that comes out of this is hard: **before
 publishing a population-scale finding on a known surface, search the
 public record for the disclosed campaign first.** Our case study was
-written with the predecessor 2026-05-04 NuClide internal survey but
+written with the predecessor 2026-05-04  internal survey but
 without checking external publications. The hemingway pass on the next
 survey will lead with the public-record search.
 

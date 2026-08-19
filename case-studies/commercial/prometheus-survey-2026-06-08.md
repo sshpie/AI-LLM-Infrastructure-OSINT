@@ -4,7 +4,7 @@ type: survey
 
 # Prometheus on the Public Internet: Falsifier Test for the VictoriaMetrics Finding
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 > **Why this survey exists.** The VictoriaMetrics survey shipped earlier today produced two insights (#88 scrape-topology disclosure as operator org chart, #89 framework-level pprof bypass propagates to population scale). The DCWF 902 strategic roadmap flagged Prometheus as the load-bearing falsifier test: same Q4 quadrant, 10x larger population, direct architectural twin. The thesis prediction was 75–85% unauth + comparable pprof-open rate. If Prometheus came back at <50% unauth, the VM finding would have been operator-anomalous and the program would have re-targeted toward maintainer-side disclosure instead of operator-side. Survey result: thesis confirmed and sharpened.
 
@@ -70,7 +70,7 @@ The version distribution is broader than VM's (which clustered on 1.0.0 + 0.5.x)
 | Fully gated (all return 401/403) | 0 | 0% |
 | Other states | 0 | 0% |
 
-This is the cleanest auth-off-default signal in the entire NuClide research program to date. There is no partial-auth tier. Either Prometheus is fully open or it is behind a reverse proxy (the 903-host "Other" cohort).
+This is the cleanest auth-off-default signal in the entire  program to date. There is no partial-auth tier. Either Prometheus is fully open or it is behind a reverse proxy (the 903-host "Other" cohort).
 
 ## What gets leaked from open Prometheus
 

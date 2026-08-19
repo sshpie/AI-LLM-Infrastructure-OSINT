@@ -1,6 +1,6 @@
 # Georgia State University: Streamlit app on `gluon.gsu.edu:8501` (framework confirmed; app content WebSocket-only)
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

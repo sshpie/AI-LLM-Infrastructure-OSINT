@@ -34,7 +34,7 @@ The Haraka-specific class-marker (`mtacat_default` literal) catches one operator
 
 The MTA category is auth-irrelevant at the EHLO stage by design: SMTP banner exchange happens before any AUTH. So the leak is not an authentication failure. It is a deployment-attribution failure that surfaces in the protocol layer below auth. This is structurally similar to TLS-CN attribution surfaces (Insight #46): an information leak that does not break confidentiality but does break operator anonymity.
 
-For NuClide methodology: when the population is MTAs, fingerprinting at the EHLO layer is high-yield AND auth-irrelevant. Verification of the leak itself is a one-shot HELO probe; verification of the *consequence* (correlating the leaked Compose name with the operator) is the harder step and lives at the attribution stage.
+For  methodology: when the population is MTAs, fingerprinting at the EHLO layer is high-yield AND auth-irrelevant. Verification of the leak itself is a one-shot HELO probe; verification of the *consequence* (correlating the leaked Compose name with the operator) is the harder step and lives at the attribution stage.
 
 ## How to apply
 

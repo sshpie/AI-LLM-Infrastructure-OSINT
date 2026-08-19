@@ -41,7 +41,7 @@ sidenotes:
 
 # Kenya's Data Protection Regulator: Three Years of Citizen Conversations Behind a Single Unauthenticated Request
 
-_NuClide Research -- Nicholas Kloster -- 2026-05-22_
+_ --  -- 2026-05-22_
 
 ---
 
@@ -138,4 +138,4 @@ The data-tier read confirmed exposure by status code and event counts. No citize
 
 ## Disclosure
 
-Finding documented 2026-05-22 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-05-22 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

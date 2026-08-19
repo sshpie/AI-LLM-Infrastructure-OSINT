@@ -14,7 +14,7 @@ source: case-studies/commercial/SYNTHESIS-2026-05.md
 
 # Methodology Insight #9: Cross-survey-correlation is a Shodan-free discovery vector with stacked-finding bias
 
-**The existing nuclide.db ledger of confirmed exposures is itself a discovery substrate. Every IP NuClide has previously confirmed running an unauth Tier-A platform is a candidate for additional unauth platforms on adjacent ports. Cross-survey-correlation probes must always sweep alt-ports, not just defaults.**
+**The existing .db ledger of confirmed exposures is itself a discovery substrate. Every IP  has previously confirmed running an unauth Tier-A platform is a candidate for additional unauth platforms on adjacent ports. Cross-survey-correlation probes must always sweep alt-ports, not just defaults.**
 
 ## Evidence
 
@@ -30,7 +30,7 @@ The single 2026-05-06 hit demonstrated this: the operator already exposed Mem0/M
 
 When Shodan API is unavailable and masscan is operationally inappropriate (residential-IP exposure risk):
 
-1. **Use the ledger of confirmed exposures as your candidate set.** Pull `data/nuclide.db` IPs from the existing ledger.
+1. **Use the ledger of confirmed exposures as your candidate set.** Pull `data/.db` IPs from the existing ledger.
 2. **Sweep alt-ports for platforms whose defaults conflict with another popular platform on the same host.** Langfuse's default 3000 conflicts with frontend/Node.js dev servers; operators move it to 3001/8080. Never assume default-port presence.
 3. **Apply a strict conjunctive matcher** (Insight #6). Cross-survey rates are low; false positives swamp signal.
 4. **Expect operator-catastrophe shapes.** Hits are rare but high-value because they're stacked on existing Tier-A confirmations.

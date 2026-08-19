@@ -4,7 +4,7 @@ type: survey
 
 # Milvus on Tier-2 Cloud: Auth Posture Survey (Scope Expansion)
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Companion to: [`milvus-cloud-survey-2026-05.md`](milvus-cloud-survey-2026-05.md) (DO/Hetzner/Vultr baseline)_
 _Sibling tier-2 expansions: [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](qdrant-tier2-cloud-survey-2026-05.md)_
 
@@ -65,7 +65,7 @@ Real Milvus: 36
 
 The honeypot-detector pulls the full 393-host AS63949 fleet that was masquerading as Milvus on tier-2 cloud. Cross-reference with the Ollama survey's 169 honeypot pollution: **188 of those Linode IPs are simultaneously spoofing Ollama 0.1.33 AND Milvus 22-collection responses on the same machine**, same fleet, different fake services.
 
-Read-only metadata only. NuClide:
+Read-only metadata only. :
 - Did NOT submit `/v2/vectordb/entities/insert` writes
 - Did NOT submit `/v2/vectordb/entities/search` semantic queries against operator indexes
 - DID enumerate collection names and (via separate probes for case-study writeup) sample 1-2 entity payloads on 3 hosts to characterize data class

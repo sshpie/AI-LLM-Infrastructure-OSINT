@@ -1,6 +1,6 @@
 # Forskningsnettet (Danish Research and Education Network): Two Nodes, v0.3.0 Ancient + v0.22.0 Current
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

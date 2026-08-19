@@ -40,7 +40,7 @@ DO_NOT_CALL = {
 # Read-only enumeration primitives.
 # (path, method, label, conjunctive_markers[]) - markers ALL act as JSON-field anchors.
 TIMEOUT = 6
-UA = "nuclide-verify/1.0 (read-only AI-infra exposure research; metadata-only)"
+UA = "-verify/1.0 (read-only AI-infra exposure research; metadata-only)"
 
 # Ports to also try if the listed agent port is non-web / dead.
 FALLBACK_WEB_PORTS = [443, 80]

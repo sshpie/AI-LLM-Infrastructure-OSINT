@@ -1,6 +1,6 @@
 # Taiwan Academic Network (TANet): 18-Node Cluster, 1 Account Takeover, Multi-Institution
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

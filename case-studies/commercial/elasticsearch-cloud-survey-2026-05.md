@@ -4,7 +4,7 @@ type: survey
 
 # Elasticsearch / OpenSearch on Public Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 
@@ -176,6 +176,6 @@ The consequence: the production database of an AML/KYC platform with 79 million 
 
 ## Discoverer
 
-NuClide Research, nicholas@nuclide-research.com
+, 
 
 No data was modified or exfiltrated. Search queries used `size=2` to confirm data accessibility only.

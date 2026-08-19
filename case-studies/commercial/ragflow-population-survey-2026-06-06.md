@@ -10,7 +10,7 @@ toolchain: herald v0.1.1
 
 # RAGFlow Population Survey — 618/709 Open Registration (87.2%)
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 
@@ -37,7 +37,7 @@ Auto-derived from DCWF AI work-role rule files (`ksat-tag`).
 
 Anyone with an internet connection can register an account on these instances. Once registered, the user can create a tenant workspace and ingest documents into a vector store — but more significantly, in RAGFlow's tenant model, an authenticated user can enumerate tenant structure, knowledge base names, and assistant configurations of other tenants depending on workspace isolation configuration.
 
-The 87.2% rate sits between Langfuse (88.9%) and Flowise (68.7%) and is the second-highest auth-permissive default measured in the 2026 NuClide survey program. Combined with the prior survey note that the **CVE-2024-12433 pre-auth RCE class applies to RAGFlow <0.14.0** and the version is not externally confirmable from the unauth surface, this is a high-priority population for upstream disclosure.
+The 87.2% rate sits between Langfuse (88.9%) and Flowise (68.7%) and is the second-highest auth-permissive default measured in the 2026  survey program. Combined with the prior survey note that the **CVE-2024-12433 pre-auth RCE class applies to RAGFlow <0.14.0** and the version is not externally confirmable from the unauth surface, this is a high-priority population for upstream disclosure.
 
 Notable institutional findings: Hong Kong University of Science and Technology, Brno University of Technology, Indiana University, Taiwan Ministry of Education Computer Center (two instances).
 
@@ -130,7 +130,7 @@ The prior Cat-07 survey (2026-05-28) noted that **CVE-2024-12433 (RAGFlow pre-au
 
 Consequence: of the 618 REGISTER_OPEN hosts, an unknown subset is also vulnerable to CVE-2024-12433. The version cannot be enumerated remotely; it requires either source-code provenance (rare for self-hosted instances) or authenticated access. The recommended posture: treat the entire 618-host REGISTER_OPEN population as having an additional latent RCE risk weighted by the InfiniFlow release-version distribution at time of deployment.
 
-NuClide restraint: no CVE-2024-12433 exploitation was attempted. The remote version check that would confirm vulnerability requires triggering the RCE primitive itself.
+ restraint: no CVE-2024-12433 exploitation was attempted. The remote version check that would confirm vulnerability requires triggering the RCE primitive itself.
 
 ---
 
@@ -196,7 +196,7 @@ Step 12b:  This document
 Step 13:   Commit to OSINT repo + push to GitHub
 ```
 
-Tool: **herald** v0.1.1 (`github.com/nuclide-research/herald`) — added numeric type coercion (YAML int / JSON float64 normalization) during this survey. RAGFlow platform config added.
+Tool: **herald** v0.1.1 (`github.com/sshpie/herald`) — added numeric type coercion (YAML int / JSON float64 normalization) during this survey. RAGFlow platform config added.
 
 ---
 

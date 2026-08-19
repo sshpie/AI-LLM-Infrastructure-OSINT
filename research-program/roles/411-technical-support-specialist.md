@@ -87,4 +87,4 @@
 
 ## Research-program relevance
 
-Entry-tier IT support role; not invoked in NuClide's AI/LLM assessment chain. Indexed for completeness as it sits at the bottom of the OPM 2210 cyber career lattice — useful to recognize when an exposed admin interface (e.g., open Ollama, MLflow with default creds) maps back to a help-desk-managed deployment rather than an engineering-managed one. The trend-analysis tasks (T0308, T0482, T0530) parallel VisorLog ledger discipline at a much lower scope but share the underlying pattern of "incidents accumulate into signal."
+Entry-tier IT support role; not invoked in 's AI/LLM assessment chain. Indexed for completeness as it sits at the bottom of the OPM 2210 cyber career lattice — useful to recognize when an exposed admin interface (e.g., open Ollama, MLflow with default creds) maps back to a help-desk-managed deployment rather than an engineering-managed one. The trend-analysis tasks (T0308, T0482, T0530) parallel VisorLog ledger discipline at a much lower scope but share the underlying pattern of "incidents accumulate into signal."

@@ -191,7 +191,7 @@ Prepare findings NDJSON:
 ```
 
 ```bash
-~/go/bin/visorlog --db ~/AI-LLM-Infrastructure-OSINT/nuclide.db \
+~/go/bin/visorlog --db ~/AI-LLM-Infrastructure-OSINT/.db \
   ingest --format ndjson $RECON_DIR/findings.ndjson
 ```
 
@@ -213,7 +213,7 @@ Prepare findings NDJSON:
 
 ```bash
 ~/go/bin/visorscuba assess \
-  --db ~/AI-LLM-Infrastructure-OSINT/nuclide.db --json
+  --db ~/AI-LLM-Infrastructure-OSINT/.db --json
 ```
 
 ---

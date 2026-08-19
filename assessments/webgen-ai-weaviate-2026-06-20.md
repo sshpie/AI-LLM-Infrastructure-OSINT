@@ -103,7 +103,7 @@ curl -s -X POST http://202.66.151.79:8080/v1/objects \
     "class": "DesignFixPattern",
     "id": "3f81599b-e47e-4c15-aaec-e4450bd0fb7d",
     "properties": {
-      "title": "canary-nuclide-20260620",
+      "title": "canary--20260620",
       "problem_signature": "canary",
       "severity": "low",
       "expected_score_gain": 0
@@ -162,4 +162,4 @@ This host previously confirmed to run Qdrant with 12 exposed snapshots (Cat-13 s
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan

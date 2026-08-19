@@ -1,7 +1,7 @@
 # MITRE ATLAS Contribution Plan
 
 Date: 2026-06-20
-Author: Nicholas Kloster / NuClide Research
+Author:  / 
 Source material: `analysis/2026-06-20-atlas-gap-inference-time-rag-poisoning.md`,
 `assessments/keystone-keyst.one-disclosure-report-2026-06-20.md`
 
@@ -60,5 +60,5 @@ attribution). Draft case study is NOT written yet by design; it follows disclosu
 - [ ] (post-disclosure) Author + submit Keystone case study
 
 Contact block for the forms (Nick's public researcher identity):
-- Contact Name: Nicholas Kloster (NuClide Research)
-- Contact Email: nicholas@nuclide-research.com
+- Contact Name:  ()
+- Contact Email: 

@@ -13,8 +13,8 @@ date: 2026-05-03
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-03
 
@@ -23,7 +23,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the NuClide Research umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
+I'm an independent security researcher. I hold CISA disclosures CVE-2025-4364 and ICSA-25-140-11 and conduct good-faith AI infrastructure research under the  umbrella. This is an unsolicited disclosure, no engagement exists with your organization, and I have not accessed, modified, or exfiltrated any data beyond what was necessary to confirm the exposure.
 
 ---
 
@@ -129,6 +129,6 @@ I have not invoked `/pause`, modified any models, accessed stored data, or taken
 
 This disclosure is made under responsible disclosure principles. I am happy to discuss these findings in detail. Please acknowledge receipt so I know this reached the appropriate team.
 
-Nicholas Kloster  
-nicholas@nuclide-research.com  
-nuclide-research.com
+  
+  
+

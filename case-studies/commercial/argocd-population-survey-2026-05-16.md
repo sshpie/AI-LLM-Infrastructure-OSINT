@@ -4,7 +4,7 @@ type: survey
 
 # Argo CD Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16_
+_ · 2026-05-16_
 _Category 12. Containers & orchestration; k8s CD-pipeline tier_
 
 ---

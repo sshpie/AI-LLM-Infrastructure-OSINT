@@ -1,6 +1,6 @@
 # INHA University: Ollama Stack + vLLM Node
 
-_NuClide Research · 2026-05-01 (updated 2026-05-03)_
+_ · 2026-05-01 (updated 2026-05-03)_
 
 ---
 

@@ -32,14 +32,14 @@ Most LLM05 references come from OWASP itself and from production-engineering lit
 
 The CVE-2024-36420 case is **LLM05 + LLM06** — improper output handling combined with excessive agency (the LLM has authority to invoke server-side code execution).
 
-## Why this class is harder for NuClide to find than LLM02
+## Why this class is harder for  to find than LLM02
 
 LLM05 findings require:
 - Active LLM invocation (consumes operator's inference budget)
 - Multi-turn interaction to confirm the exploit path
-- Crossing NuClide restraint boundary
+- Crossing  restraint boundary
 
-The Flowise case is unusual because the operator deployed exploit chatflows **publicly** as part of their CVE research, so NuClide can confirm the class from configuration inspection alone.
+The Flowise case is unusual because the operator deployed exploit chatflows **publicly** as part of their CVE research, so  can confirm the class from configuration inspection alone.
 
 ## Defensive controls
 

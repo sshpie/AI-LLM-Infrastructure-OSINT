@@ -1,6 +1,6 @@
 # Fu Jen Catholic University: Medical Public Health GPU Server, 75GB + 60GB Local Models
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

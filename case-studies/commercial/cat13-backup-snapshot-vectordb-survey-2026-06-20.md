@@ -96,7 +96,7 @@ The exposure is the full content of RAG corpora and their backups, reachable una
 
 - PoisonedRAG, USENIX Security 2025: the read-to-write proximity that grounds our names-only restraint.
 - CVE-2026-45829 (Chroma): the vuln the scanner fleet is mass-testing on the contaminated hosts.
-- Prior NuClide scanner-poisoning fleet write-ups (Insight #107 / #108 family): the deception pattern the Milvus cohort matches.
+- Prior  scanner-poisoning fleet write-ups (Insight #107 / #108 family): the deception pattern the Milvus cohort matches.
 
 <!-- ksat-tag:auto-generated:start -->
 ## DCWF KSAT coverage

@@ -3,7 +3,7 @@
 verify_vm_unauth — verifier for VictoriaMetrics auth posture + data-exposure
 class across vmsingle / vmagent / vmcluster / vmalert.
 
-Restraint ethic (per NuClide doctrine):
+Restraint ethic (per  doctrine):
   - Read-only probes ONLY. No POSTs.
   - No /api/v1/import (that's a write surface).
   - No /api/v1/admin/tsdb/delete_series.

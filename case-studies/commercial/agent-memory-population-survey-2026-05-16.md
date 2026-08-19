@@ -4,7 +4,7 @@ type: survey
 
 # Agent-Memory Population Survey: Falsification-Confirmation Result (2026-05-16)
 
-_NuClide Research · 2026-05-16 (second survey in the day's 4-category batch)_
+_ · 2026-05-16 (second survey in the day's 4-category batch)_
 _Closes: category 26 (mem0-agent-memory). Mem0 / Zep / Letta (MemGPT) / Motorhead / Argilla_
 
 ---

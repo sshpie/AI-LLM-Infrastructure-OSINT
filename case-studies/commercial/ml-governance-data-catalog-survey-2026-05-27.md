@@ -144,7 +144,7 @@ Secondary matches: `exploits_linux_http_opentsdb_*` at 0.553 (metric-collection 
 | VisorGraph | [x] | 0 nodes/edges: raw IPs, no domain seeds available |
 | aimap-profile | [—] | no output on plain-IP targets |
 | JS-bundle (vampire) | [—] | not run: React SPA bundles deferred |
-| VisorLog | [x] | 4 events ingested to nuclide.db |
+| VisorLog | [x] | 4 events ingested to .db |
 | VisorScuba | [x] | 0 violations: auth-enforced population passes AI.C1 |
 | BARE | [x] | exploits_linux_http_openmetadata_auth_bypass_rce 0.605, population post-patch |
 | VisorCorpus | [—] | N/A: neither platform is LLM-adjacent |
@@ -167,7 +167,7 @@ Secondary matches: `exploits_linux_http_opentsdb_*` at 0.553 (metric-collection 
 
 56 confirmed ML governance platform instances. 56 auth-enforced. Zero auth-off.
 
-ML Governance is the first category in the NuClide survey series to return no auth-off instances. The thesis holds: both platforms enforce authentication by default. This is positive-thesis evidence, not a null result.
+ML Governance is the first category in the  survey series to return no auth-off instances. The thesis holds: both platforms enforce authentication by default. This is positive-thesis evidence, not a null result.
 
 Two factors explain the difference from Tier-A categories (Ollama, Ray, Whisper):
 
@@ -215,4 +215,4 @@ Apache Atlas, Amundsen, Marquez, OpenLineage: zero Shodan hits across all dorks.
 - `/tmp/ml-gov-verify.json` — full verification results
 - `/tmp/bare-ml-gov-out.json` — BARE module ranking output
 - `/tmp/menlohunt-om-sample.json`, `/tmp/menlohunt-om2.json` — menlohunt scans on GCP hosts
-- `data/nuclide.db` — 4 events ingested (source: ml-governance-2026-05-27)
+- `data/.db` — 4 events ingested (source: ml-governance-2026-05-27)

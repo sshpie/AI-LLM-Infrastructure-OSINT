@@ -33,8 +33,8 @@ data/ollama-state.json
 disclosures/_gmail_drafts.json
 
 # DB backup rotation files (operational state, not for tracking)
-data/nuclide.db.bak.*
-data/nuclide.db.bak-*
+data/.db.bak.*
+data/.db.bak-*
 
 # Stray output dirs from running tooling with the repo as cwd
 # - visorplus assess writes to ./<IP-with-dots-as-underscores>/ when -out

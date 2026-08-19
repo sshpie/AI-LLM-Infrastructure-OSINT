@@ -4,7 +4,7 @@ type: survey
 
 # Medical / Edge AI Survey: DICOM Protocol Exposure at Population Scale
 
-_NuClide Research · 2026-05-15_
+_ · 2026-05-15_
 _Survey 28. First published audit of medical imaging AI infrastructure (NVIDIA Clara / MONAI / Orthanc / DICOM) on tier-2 commodity cloud._
 
 ---
@@ -174,7 +174,7 @@ Two honeypot fleets contaminate the medical port set on tier-2 cloud:
 1. **OVH default-deploy nginx fleet**, hundreds of OVH IPs return byte-identical nginx 404 on ports 8042/8043. Likely a misconfigured platform-tier default, not an active deception, but indistinguishable from one at the response layer.
 2. **Linode fake-Citrix fleet (AS63949)**. 7 IPs serve a static "Citrix Login" page on port 443 while accepting DICOM A-ASSOCIATE-RQ with default AE on 4242/11112. Multi-protocol deception; harder to spot than the single-fingerprint fleets the methodology has previously documented (AS63949 `wW0sffoqsk.EM` salt didn't match; this fleet's discriminator is the shared body-hash on 443).
 
-The thesis-relevant negative result: **medical AI infrastructure is largely NOT on tier-2 commodity cloud.** Real hospital / clinic / vendor DICOM deployments live in healthcare-specialized hosting (HIPAA-compliant clouds), on-prem hospital networks, and university medical centers. Surfaces NuClide's tier-2 corpus does not cover. The 39 hosts found are mostly small / individual / SaaS-style deployments and one developer test server.
+The thesis-relevant negative result: **medical AI infrastructure is largely NOT on tier-2 commodity cloud.** Real hospital / clinic / vendor DICOM deployments live in healthcare-specialized hosting (HIPAA-compliant clouds), on-prem hospital networks, and university medical centers. Surfaces 's tier-2 corpus does not cover. The 39 hosts found are mostly small / individual / SaaS-style deployments and one developer test server.
 
 ---
 

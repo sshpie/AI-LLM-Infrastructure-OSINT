@@ -1,6 +1,6 @@
 # UC Berkeley: Course AI Assistant, Unauthenticated Memory Injection
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

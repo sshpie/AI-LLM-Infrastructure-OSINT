@@ -1,6 +1,6 @@
 # Hilix-classic + Uirusu/2.0 Jupyter-targeting IoT botnet campaigns
 
-NuClide Research evidence pack · 2026-05-06 / 2026-05-07
+ evidence pack · 2026-05-06 / 2026-05-07
 
 This directory contains the public-facing forensic evidence from a multi-victim, multi-actor IoT botnet operation that exploits **unauthenticated Jupyter Notebook on port 8888** as a Linux-foothold vector. Two confirmed victims (Universität Ulm Med Faculty CL1 + Tencent Cloud Beijing customer), two distinct Mirai-derivative botnet families compromising the same population.
 
@@ -60,14 +60,14 @@ Reasons:
 
 ### Public sample availability
 
-NuClide submitted both samples to **VirusTotal** and **MalwareBazaar** on 2026-05-07. Pre-submission lookups confirmed both were not previously known to either platform, AlienVault OTX, or GitHub-indexed code, these were the **first public submissions** of both samples to any industry sharing platform.
+ submitted both samples to **VirusTotal** and **MalwareBazaar** on 2026-05-07. Pre-submission lookups confirmed both were not previously known to either platform, AlienVault OTX, or GitHub-indexed code, these were the **first public submissions** of both samples to any industry sharing platform.
 
 **MalwareBazaar** (abuse.ch, direct ELF download for verified researchers, `infected`-password ZIP):
 
 - **Hilix.x86_64:** https://bazaar.abuse.ch/sample/ee51b236e57d96521da5fb820242c23996dcc691d3df8830655801b2a516bb72/
 - **Uirusu/2.0** (`vcimanagement.x64`): https://bazaar.abuse.ch/sample/38dce395aa82fea8b4ea00de17e14f3b7db9a5ebb28e82529ed66aa2b0f44eb0/
 
-Reporter: `nuclide`. Tags applied: `Mirai`, `Hilix`/`Uirusu`, `IoT-Botnet`, `Linux`, `ELF`, `Jupyter` (foothold), plus `Huawei-HG532` + `ThinkPHP` for the Uirusu sample. The Uirusu entry carries a `dropped_by_sha256` relationship to Hilix to preserve the multi-actor-convergence link in MalwareBazaar's graph.
+Reporter: ``. Tags applied: `Mirai`, `Hilix`/`Uirusu`, `IoT-Botnet`, `Linux`, `ELF`, `Jupyter` (foothold), plus `Huawei-HG532` + `ThinkPHP` for the Uirusu sample. The Uirusu entry carries a `dropped_by_sha256` relationship to Hilix to preserve the multi-actor-convergence link in MalwareBazaar's graph.
 
 **VirusTotal** (broad AV/EDR detection coverage, propagates into industry telemetry feeds):
 
@@ -76,7 +76,7 @@ Reporter: `nuclide`. Tags applied: `Mirai`, `Hilix`/`Uirusu`, `IoT-Botnet`, `Lin
 
 Researchers can pull samples directly from MalwareBazaar (free Auth-Key from `auth.abuse.ch`) or VirusTotal (with appropriate API tier). AV/EDR vendors pick up the hashes through their normal VT-feed and MalwareBazaar daily-batch integrations.
 
-For direct researcher-to-researcher transfer (e.g., Cortical Labs vendor team for fleet-audit purposes), email `nicholas@nuclide-research.com`.
+For direct researcher-to-researcher transfer (e.g., Cortical Labs vendor team for fleet-audit purposes), email ``.
 
 **Tencent operator's personal AI-agent context files** are NOT included:
 
@@ -90,7 +90,7 @@ Tencent attacker files retrieved via `GET /api/contents/<path>` only (the Tencen
 
 ## Disclosure status
 
-All disclosures sent 2026-05-06 / 2026-05-07 from `nicholas@nuclide-research.com`:
+All disclosures sent 2026-05-06 / 2026-05-07 from ``:
 
 | Recipient | Subject |
 |---|---|
@@ -106,5 +106,5 @@ Pull responses will trickle in over 7-30 days; outcomes will be tracked separate
 ## Contact
 
 Nicholas Michael Kloster
-nicholas@nuclide-research.com
+
 AI-LLM-Infrastructure-OSINT

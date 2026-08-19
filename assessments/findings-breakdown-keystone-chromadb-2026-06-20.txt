@@ -1,7 +1,7 @@
 FINDINGS BREAKDOWN -- Keystone Hardware Wallet (keyst.one)
 43.153.169.169 | Tencent Cloud | 2026-06-20
 Tool: chromascan + manual
-Assessor: NuClide Research
+Assessor: 
 
 =============================================================
 SURFACE MAP
@@ -68,7 +68,7 @@ the tenant existed before. Additionally, unauthenticated POST can create
 databases within any tenant.
 
 Confirmed:
-  GET  /api/v2/tenants/nuclide-probe-1781999/databases -> 200 []  (auto-created)
+  GET  /api/v2/tenants/-probe-1781999/databases -> 200 []  (auto-created)
   POST /api/v2/tenants/keystone/databases {"name":"probe"}  -> 200 {}  (created)
   GET  /api/v2/tenants/keystone/databases -> [{"name":"probe","tenant":"keystone"}]
   DELETE /api/v2/tenants/keystone/databases/probe -> 200 {}  (cleaned)
@@ -189,5 +189,5 @@ REMEDIATION
 TOOL
 =============================================================
 
-chromascan -- https://github.com/nuclide-research/chromascan
-weavscan    -- https://github.com/nuclide-research/weavscan (category reference)
+chromascan -- https://github.com/sshpie/chromascan
+weavscan    -- https://github.com/sshpie/weavscan (category reference)

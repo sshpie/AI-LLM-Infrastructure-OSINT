@@ -1,6 +1,6 @@
 # Biometric Data Exposure — Unauthenticated Facial Recognition Database
 **Finding date:** 2026-06-20  
-**Verified by:** NuClide Research (nicholas@nuclide-research.com)  
+**Verified by:**  ()  
 **Classification:** CRITICAL — Biometric PII, unauth read access  
 **Regulatory scope:** GDPR Art. 9 (special category), BIPA, CCPA/CPRA biometric provisions
 
@@ -147,7 +147,7 @@ POST http://51.222.138.139:8080/v1/graphql
 
 The second query lets an attacker submit an arbitrary face photo and identify who it matches in the corpus — the complete facial recognition capability, unauthenticated.
 
-**NuClide did not execute either of these requests.** The proof above (schema + count + IDs) establishes access without downloading images or identity labels.
+** did not execute either of these requests.** The proof above (schema + count + IDs) establishes access without downloading images or identity labels.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 to: abuse@akamai.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 173.255.226.61
 institution: Akamai Technologies (Linode customer; 173-255-226-61.ip.linodeusercontent.com)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@akamai.com
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated LiteLLM Proxy fronting OpenAI + Anthropic + Mistral keys, 173.255.226.61:4000
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -34,7 +34,7 @@ I'm an independent security researcher conducting good-faith AI infrastructure r
 
 A Linode customer at `173.255.226.61:4000` is running an unauthenticated **LiteLLM Proxy** fronting commercial API keys for at least three providers (Anthropic, OpenAI, Mistral). An unauthenticated `POST /v1/chat/completions` call to `openai/gpt-4o-mini` returned 14 tokens of completion, confirming the operator's OpenAI API key is functional and burnable by any unauthenticated internet caller. The Anthropic and Mistral keys are similarly exposed and likely functional.
 
-Found during NuClide Research's cross-cloud LLM Gateway survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud-survey-2026-05.md
+Found during 's cross-cloud LLM Gateway survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud-survey-2026-05.md
 
 ---
 
@@ -56,7 +56,7 @@ LiteLLM Proxy is designed as a multi-provider OpenAI-compatibility router. When 
 - OpenAI GPT-4o + GPT-4o-mini, premium + budget tiers
 - Mistral La Plateforme, additional commercial quota
 
-The exposure pattern is identical to the **10 commercial-API reseller proxies** documented in NuClide's vLLM cross-cloud survey (e.g., Grok2API, Kiro-Go, AgentBar) and the **1,857 functional unauth gateways** documented in the LLM Gateway survey. This instance is one of the 2 verified Anthropic-key-burnable hosts in that population.
+The exposure pattern is identical to the **10 commercial-API reseller proxies** documented in 's vLLM cross-cloud survey (e.g., Grok2API, Kiro-Go, AgentBar) and the **1,857 functional unauth gateways** documented in the LLM Gateway survey. This instance is one of the 2 verified Anthropic-key-burnable hosts in that population.
 
 ---
 
@@ -94,6 +94,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/evidence/llm-gateway-tier2-2026-05-04/llm-
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

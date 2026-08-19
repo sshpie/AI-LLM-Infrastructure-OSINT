@@ -1,9 +1,9 @@
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-17
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated disclosure. No engagement exists with your organization. I have not attempted to create accounts on any of the affected ClearML instances; the auth posture is fingerprintable without sending credentials.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated disclosure. No engagement exists with your organization. I have not attempted to create accounts on any of the affected ClearML instances; the auth posture is fingerprintable without sending credentials.
 
 **Re:** Unauthenticated-by-misconfig ClearML server, `61.245.156.102`
 **Severity:** HIGH

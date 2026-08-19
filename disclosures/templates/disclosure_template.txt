@@ -1,4 +1,4 @@
-NUCLIDE RESEARCH · FIELD ADVISORY · {{date}}
+ · FIELD ADVISORY · {{date}}
 Independent AI-infrastructure security research
 
 ================================================================
@@ -52,7 +52,7 @@ public research repository:
 
 
 Reply-to for any clarifying questions or coordination:
-nicholas@nuclide-research.com. No response is required.
+. No response is required.
 
 Regards,
 
@@ -61,8 +61,8 @@ Nicholas Michael Kloster
 
 --
 Nicholas Michael Kloster
-NuClide Research
-nicholas@nuclide-research.com
-https://nuclide-research.com
+
+
+https://
 
 CISA disclosures: CVE-2025-4364, ICSA-25-140-11

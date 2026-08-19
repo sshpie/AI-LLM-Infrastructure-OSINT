@@ -2,14 +2,14 @@
 """Add auth_posture + auth_evidence columns to the master registry.
  - auth_posture : codified label from the curated vendor-port-registry.csv
                   default_auth field (OFF/MIXED/ON/...), aggregated per vendor.
- - auth_evidence: empirical unauth/total counts from the nuclide.db event ledger
+ - auth_evidence: empirical unauth/total counts from the .db event ledger
                   (tags UNAUTH/AUTH + raw.auth_status + raw.service)."""
 import csv, re, json, sqlite3, os
 from collections import defaultdict
 
 MASTER  = os.path.expanduser("~/github-analysis/port-vendor-registry/MASTER-port-vendor-registry.csv")
 CURATED = os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/data/vendor-port-registry.csv")
-DB      = os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/data/nuclide.db")
+DB      = os.path.expanduser("~/AI-LLM-Infrastructure-OSINT/data/.db")
 
 def norm(name):
     n = name.lower().strip()

@@ -1,6 +1,6 @@
 # Umeå University: GPU Research Server (gpuhost02)
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

@@ -1,6 +1,6 @@
 # Cornell University: Open WebUI v0.6.14 on `onepl.aap.cornell.edu` — Auth-On + API Keys Enabled
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 
@@ -66,7 +66,7 @@ Cornell University runs an Open WebUI instance at `onepl.aap.cornell.edu` (128.2
 
 - **WHOIS OrgName**: Cornell University (Cornell holds `128.253.0.0/16`)
 - **Hostname**: `onepl.aap.cornell.edu` — AAP (Architecture, Art, and Planning) college subdomain
-- **Distinct from prior Cornell finds**: the existing NuClide baseline doesn't have a Cornell case study (Cornell is a NEW institution surfaced by this 2026-05-19 sweep at the institutional level, though they have prior unrelated infrastructure surveyed)
+- **Distinct from prior Cornell finds**: the existing  baseline doesn't have a Cornell case study (Cornell is a NEW institution surfaced by this 2026-05-19 sweep at the institutional level, though they have prior unrelated infrastructure surveyed)
 
 ---
 

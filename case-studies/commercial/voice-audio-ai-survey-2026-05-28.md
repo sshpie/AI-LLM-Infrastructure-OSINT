@@ -222,5 +222,5 @@ Affects all FastAPI-wrapped voice AI servers running Starlette < 1.0.1 without a
 
 ---
 
-_Survey: 2026-05-28 | NuClide Research_
+_Survey: 2026-05-28 | _
 _Read-only throughout. No RCE paths invoked. No CVE paths exercised._

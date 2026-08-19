@@ -10,7 +10,7 @@ methodology: per-framework structural dorks + aimap conjunctive validation + per
 
 # Agent frameworks cross-survey, planning + dorks
 
-NuClide Research, 2026-05-07
+, 2026-05-07
 
 The Langfuse cross-survey ([`langfuse-cross-survey-2026-05-06.md`](langfuse-cross-survey-2026-05-06.md)) covered the **observability layer** of the agent stack. The browser-agent cloud survey ([`browser-agent-cloud-survey-2026-05.md`](browser-agent-cloud-survey-2026-05.md)) covered the **browsing-tool layer**. This survey covers the **orchestration layer** itself. The agent framework servers that schedule LLM calls, dispatch tools, and persist agent state.
 

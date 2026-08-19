@@ -1,6 +1,6 @@
 # ITMO University, Russia: 24 Models, gpt-oss:20b + gpt-oss:120b Cloud Proxies
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

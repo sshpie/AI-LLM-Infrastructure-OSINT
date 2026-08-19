@@ -6,7 +6,7 @@ Decision log + survey queue. Append-only at the top; never rewrite past entries.
 
 ### Done today
 
-- [x] PAT secret set; auto-rebuild workflow operational (`nuclide-research.com` repo)
+- [x] PAT secret set; auto-rebuild workflow operational (`` repo)
 - [x] Mitnick-lens reframe: cert-pivot on disclosure-queue seeds → 3 sharpened findings + Insight #86 (disclosure pipeline as attack surface)
 - [x] Disclosure-cohort response analysis (n=104, 7.4% closed-loop rate; institutional/academic carries the responsiveness)
 - [x] Disclosure `outcome:` controlled vocabulary (`disclosures/SCHEMA.md`) + migration (7 files normalized)
@@ -40,7 +40,7 @@ Honest scope: the survey queue items below each need a focused half-day session 
 - [x] Cat-LF Langfuse (1,140 swept; 816 SIGNUP_OPEN; 88.9% rate) — herald
 - [x] Cat-RF RAGFlow (1,905 swept; 618 REGISTER_OPEN; 87.2% rate) — herald + numeric coercion fix
 - [x] Cat-PX Arize Phoenix (89 swept; 41/34 PROJECTS/USERS_UNAUTH) — herald
-- [x] herald v0.1.1 public at github.com/nuclide-research/herald
+- [x] herald v0.1.1 public at github.com/sshpie/herald
 - [x] Research-program directory scaffolded
 
 ### In progress

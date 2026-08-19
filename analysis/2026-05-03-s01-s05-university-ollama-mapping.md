@@ -60,7 +60,7 @@ A standing tool, `ollama-recon.py`, was extended during Session 1 and Session 2.
 
 Null results, recorded honestly: no dedicated university JAXEN run was created during the arc. The general Ollama cohort run and the 93.123.109.107 deep dive existed; a university-scoped JAXEN run did not. This is carried as a limitation, not a silent gap.
 
-The fuller NuClide arsenal (aimap, VisorGraph, VisorScuba, BARE, recongraph, VisorLog) was not yet wired into this workflow. The arc predates the canonical 19-tool chain. The toolchain here is the five tools above. Section 8 records this.
+The fuller  arsenal (aimap, VisorGraph, VisorScuba, BARE, recongraph, VisorLog) was not yet wired into this workflow. The arc predates the canonical 19-tool chain. The toolchain here is the five tools above. Section 8 records this.
 
 ### Notable Configuration
 
@@ -291,7 +291,7 @@ Wired into a weekly cron job, this surfaces a new exposed host within a week of 
 | L3 | Shodan basic-plan API page 70 returns HTTP 500 on high-population dorks; deep result pages were not fully walked. | Some live hosts on deep pages were never enumerated. The 76-live figure undercounts. |
 | L4 | Shodan May credits exhausted at the end of Session 5. The arc stopped on a budget limit, not on completion. | The catalogue is a snapshot of one credit cycle, not a finished survey of the population. |
 | L5 | No dedicated university JAXEN run was created. Only a general Ollama cohort run and a single deep-dive existed. | JAXEN-stage attribution and pivoting were not applied at university scope; some operator-attribution depth was not reached. |
-| L6 | The arc predates the canonical 19-tool NuClide arsenal. Five tools ran; aimap, VisorGraph, VisorScuba, BARE, and recongraph did not. | Cert-pivot operator attribution, compliance scoring, and exploit ranking were not performed. The arc is a discovery-and-catalogue pass, not a full-arsenal assessment. |
+| L6 | The arc predates the canonical 19-tool  arsenal. Five tools ran; aimap, VisorGraph, VisorScuba, BARE, and recongraph did not. | Cert-pivot operator attribution, compliance scoring, and exploit ranking were not performed. The arc is a discovery-and-catalogue pass, not a full-arsenal assessment. |
 | L7 | Write-tier operations were never tested per the restraint ethic. CVE-2025-63389 injection and account-claim impact are analysed, not verified. | The integrity impact is OBSERVED platform behaviour, not a verified compromise on any catalogued host. |
 | L8 | One host (130.49.190.86) was misattributed by the sweep as a university and corrected mid-arc. Automated org-tag attribution is imperfect. | Other catalogued hosts may carry minor attribution error. The correction discipline was applied where caught; uncaught cases may remain. |
 | L9 | Reprobe found 4 of 226 dead nodes came back live. Host liveness is volatile. | The 76-live count is a probe-time snapshot. The true live population at any later moment differs. |
@@ -342,7 +342,7 @@ RESPONSE:
    the admin role automatically — Open WebUI's documented first-run behaviour.]
 ```
 
-**Demonstrated:** On an Open WebUI instance where no account has yet been created, the signup screen is the front door to administrator access — Open WebUI grants the admin role to the first account by design. An outsider reaching that screen before the legitimate operator can register as admin. NuClide confirmed only that the unauthenticated signup screen rendered. No account was created. No admin role was claimed. The boundary: this PoC shows the claimable state exists. It does not cross it.
+**Demonstrated:** On an Open WebUI instance where no account has yet been created, the signup screen is the front door to administrator access — Open WebUI grants the admin role to the first account by design. An outsider reaching that screen before the legitimate operator can register as admin.  confirmed only that the unauthenticated signup screen rendered. No account was created. No admin role was claimed. The boundary: this PoC shows the claimable state exists. It does not cross it.
 
 ### PoC 3: Account-takeover signal in the Ollama Connect 401 body
 
@@ -363,8 +363,8 @@ RESPONSE:
   }
 ```
 
-**Demonstrated:** The `signin_url` is a live, unclaimed Ollama Connect claim link. The `name=` field alone leaks deployment intelligence — a bare `ollama` means an unconfigured install, a 12-hex-character value is a Docker container ID, a `bsp-server-N` pattern reveals a numbered cluster. NuClide recorded the presence of the URL and the `name=` value as evidence. The link was never visited. The `key=` was never decoded or used. No account was claimed. The boundary: this PoC confirms a claimable-admin state is exposed in a public response body. Claiming the account would be the impact; the impact was not taken.
+**Demonstrated:** The `signin_url` is a live, unclaimed Ollama Connect claim link. The `name=` field alone leaks deployment intelligence — a bare `ollama` means an unconfigured install, a 12-hex-character value is a Docker container ID, a `bsp-server-N` pattern reveals a numbered cluster.  recorded the presence of the URL and the `name=` value as evidence. The link was never visited. The `key=` was never decoded or used. No account was claimed. The boundary: this PoC confirms a claimable-admin state is exposed in a public response body. Claiming the account would be the impact; the impact was not taken.
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Sessions 1-5 · 2026-04-30 to 2026-05-03*
+*Prepared by  ( + Claude Sonnet 4.6) · Sessions 1-5 · 2026-04-30 to 2026-05-03*

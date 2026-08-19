@@ -1,6 +1,6 @@
 ---
 to: arsaeed@comsats.net.pk
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: CRITICAL
 ip: 203.124.40.57
 institution: COMSATS University (resend per session-7 dead-letter; using RIPE-registered abuse contact)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** arsaeed@comsats.net.pk
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated AI inference endpoint, COMSATS University (203.124.40.57) [resend, contact via RIPE abuse-mailbox]
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend.
 
 **Note on previous attempts:** I sent this disclosure on 2026-05-04 to `security@comsats.edu.pk` and `abuse@comsats.edu.pk`; both addresses bounced with `554 5.4.14 hop-count exceeded` (Microsoft 365 mail-loop misconfiguration at `pern.onmicrosoft.com`). RIPE WHOIS for the IP block lists `arsaeed@comsats.net.pk` as the registered abuse-mailbox, resending here. Apologies for the noise if this reaches the wrong inbox.
 
@@ -74,6 +74,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/disclosures/outcomes-2026-05-04.md
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

@@ -1,6 +1,6 @@
 # Stanford University: Streamlit app on `sr24-0915fd81a9.stanford.edu:8501` (DHCP / dynamic host; framework confirmed)
 
-_NuClide Research · 2026-05-19_
+_ · 2026-05-19_
 
 ---
 

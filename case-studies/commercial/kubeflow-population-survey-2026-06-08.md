@@ -3,12 +3,12 @@ type: survey
 category: ml-pipeline-orchestration
 platform: kubeflow-pipelines
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 ---
 
 # Kubeflow Pipelines at Population Scale: 0.8 Percent Unauth, and the Long Tail is a Fortune-500 Customer Book
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 ---
 
@@ -123,7 +123,7 @@ The operator is identifiable only from the experiment names. The names form a B2
 
 The cluster reads as a **B2B retail-execution / shelf-audit / planogram AI SaaS** with global Fortune-500 brand coverage. The geographic concentration (Mexican retail anchors Tienda Neto + Alsuper + Peñafiel + SIGMA) and "POC / Pilot / Prod / AI_Training" lifecycle suffixes are characteristic of a LatAm-headquartered or LatAm-specialist retail-AI vendor. The Eurpac entry is the DOD-adjacent surface (military commissary distributor).
 
-The operator is not identified by NuClide. The naming-based attribution stops at "approximately 15 to 25 Fortune-500 consumer-goods brands as a global B2B AI customer book."
+The operator is not identified by . The naming-based attribution stops at "approximately 15 to 25 Fortune-500 consumer-goods brands as a global B2B AI customer book."
 
 ---
 
@@ -185,7 +185,7 @@ This is the deploy-friction story from the inverse direction. Where Meilisearch 
 
 ## Disclosure routing
 
-NuClide does not directly contact the operator. Routing:
+ does not directly contact the operator. Routing:
 
 1. **GCP abuse@google.com** for the two `35.212.x` hosts, with a sanitized customer-count description. GCP will route to their tenant.
 2. **Huawei Cloud Indonesia** abuse channel for `110.239.88.22`.

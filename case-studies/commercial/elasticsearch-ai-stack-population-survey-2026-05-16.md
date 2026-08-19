@@ -4,7 +4,7 @@ type: survey
 
 # Elasticsearch AI-Stack Population Survey (2026-05-16)
 
-_NuClide Research · 2026-05-16 (Survey 9 of the day's 10-category batch)_
+_ · 2026-05-16 (Survey 9 of the day's 10-category batch)_
 _Closes: category 25 (elasticsearch) with AI-stack focus_
 
 ---
@@ -124,7 +124,7 @@ Elasticsearch operators are mostly distinct from the AI-tier-direct operator pop
 1. fast_enum_es.py (threads=120) → 9,263 probed in ~12 min
 2. /_cat/indices?format=json on each unauth host → 5,037 confirmed unauth, 12 with AI-stack markers
 3. /_cluster/health follow-up sampling (deferred)
-4. (queued) visorlog ingest → 5,037 events into nuclide.db source='elasticsearch-ai-stack-survey-2026-05-16'
+4. (queued) visorlog ingest → 5,037 events into .db source='elasticsearch-ai-stack-survey-2026-05-16'
 ```
 
 ---

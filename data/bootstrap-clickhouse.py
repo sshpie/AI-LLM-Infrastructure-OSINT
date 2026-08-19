@@ -4,7 +4,7 @@ bootstrap-clickhouse.py — one-shot ClickHouse setup + initial load
 
 Implements reference/olap-migration.md §3:
     1. Apply the schema from reference/olap-schema-clickhouse.sql.
-    2. Load the full historical export from nuclide.db (via export-findings.py
+    2. Load the full historical export from .db (via export-findings.py
        or a pre-existing JSONL) into the findings table.
     3. Run a sanity-check row-count comparison against SQLite.
 
@@ -39,10 +39,10 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
-DEFAULT_DB = REPO_ROOT / "data" / "nuclide.db"
+DEFAULT_DB = REPO_ROOT / "data" / ".db"
 DEFAULT_SCHEMA = REPO_ROOT / "reference" / "olap-schema-clickhouse.sql"
 DEFAULT_EXPORTER = HERE / "export-findings.py"
-DEFAULT_DATABASE = "nuclide"
+DEFAULT_DATABASE = ""
 
 
 def split_sql_statements(sql: str) -> list[str]:

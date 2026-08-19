@@ -1,6 +1,6 @@
 # Mitnick-Lens Pivot — 2026-06-07
 
-**Author:** NuClide Research (Cowboy session)
+**Author:**  (Cowboy session)
 **Trigger:** The recurring question "what would Kevin Mitnick do with this queue?" forced a reframe from researcher-mode (re-survey to falsify the auth-on-default thesis) to attacker-mode (operator-graph the unactioned queue). Two concrete moves executed; one finding sharpened, three confirmed, one new meta-insight codified.
 
 ---
@@ -63,7 +63,7 @@ A 14-domain cluster (`amazon.offidocs.com`, `temu.offidocs.com`, `ebay.offidocs.
 - An LLM-themed subdomain (`gogpt`)
 - Document-handling subdomains (`pdf`, `xls`, `doc`)
 
-This is not a NuClide disclosure-queue finding. It is a separately notable operator-graph signal worth follow-up because the subdomain pattern is consistent with consumer-facing reputation laundering. **Not actionable here — flagged for a future Cat-X investigation if NuClide opens a brand-mimicry category.**
+This is not a  disclosure-queue finding. It is a separately notable operator-graph signal worth follow-up because the subdomain pattern is consistent with consumer-facing reputation laundering. **Not actionable here — flagged for a future Cat-X investigation if  opens a brand-mimicry category.**
 
 ### Cluster 5 — Traefik default fallback CNs
 

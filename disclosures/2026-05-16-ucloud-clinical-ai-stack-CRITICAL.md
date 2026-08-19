@@ -12,7 +12,7 @@ institution: "Multi-tenant Chinese hospital AI assistant SaaS on UCloud"
 
 # CRITICAL Disclosure: Multi-tenant clinical AI assistant fully exposed on `106.75.127.240`
 
-_Drafted 2026-05-16 by NuClide Research. Hold sending until contact channel verified + translated to Mandarin._
+_Drafted 2026-05-16 by . Hold sending until contact channel verified + translated to Mandarin._
 
 ## Subject (English)
 
@@ -27,7 +27,7 @@ URGENT: Multi-tenant hospital AI assistant on 106.75.127.240 has all data expose
 
 Dear UCloud Abuse Team,
 
-NuClide Research conducted a population-scale survey of AI/LLM infrastructure on 2026-05-16. We identified a UCloud-hosted customer instance at **106.75.127.240** that exposes a multi-tenant clinical AI assistant platform with apparent patient-record data fully reachable from the public internet without authentication.
+ conducted a population-scale survey of AI/LLM infrastructure on 2026-05-16. We identified a UCloud-hosted customer instance at **106.75.127.240** that exposes a multi-tenant clinical AI assistant platform with apparent patient-record data fully reachable from the public internet without authentication.
 
 ### What is exposed
 
@@ -82,13 +82,13 @@ The case for severity is made on collection names + index document counts + serv
 
 We are happy to provide screenshots, raw probe outputs, or repeat the enumeration in your presence over a video call.
 
-Our public methodology is at https://nuclide-research.com/research/. The cross-survey case study where this finding surfaced is held in our private repository until disclosure is acknowledged.
+Our public methodology is at https:///research/. The cross-survey case study where this finding surfaced is held in our private repository until disclosure is acknowledged.
 
 ---
 
-NuClide Research
-disclosures@nuclide-research.com
-PGP key: https://nuclide-research.com/pgp.txt
+
+disclosures@
+PGP key: https:///pgp.txt
 
 ---
 
@@ -101,7 +101,7 @@ PGP key: https://nuclide-research.com/pgp.txt
 ## Internal notes (NOT for outbound copy)
 
 - **Disclosure channel:** UCloud abuse contact is `jacky.jia@ucloud.cn`. Per [[feedback_disclosure_contact_resolver]] WHOIS is authoritative for routing; the contact is set in the WHOIS for the /16 range `106.75.0.0 - 106.75.255.255` (UCLOUD-NET).
-- **PGP key for `disclosures@nuclide-research.com`:** ensure published key is current. Alternative: send unsigned and offer encrypted-channel handoff once UCloud responds.
+- **PGP key for `disclosures@`:** ensure published key is current. Alternative: send unsigned and offer encrypted-channel handoff once UCloud responds.
 - **Translation:** Chinese-language outreach is more effective for CN cloud providers. Use the English version as the source-of-truth, append a Mandarin translation.
 - **Operator identity:** unknown. WHOIS gives UCloud (hoster), not the customer. Qdrant collection names `长济门诊部` (Changji Outpatient Clinic) and clinic-specific `AI_ask_advice_shamen` etc. suggest the operator is an AI medical-assistant SaaS vendor with named clinic clients. UCloud should be able to identify the customer from the IP.
 - **Hold-cluster-detail rule:** per [[feedback_defense_contractor_disclosure_handling]]. Clinical-data adjacent is the same handling tier as defense/ITAR. Hold per-clinic detail until UCloud acknowledges.

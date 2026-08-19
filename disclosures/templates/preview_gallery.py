@@ -5,7 +5,7 @@ emit a single HTML index page that frames all five side-by-side for visual revie
 
 Usage:
     python3 preview_gallery.py
-    # opens /tmp/nuclide-disclosure-preview/index.html in your browser
+    # opens /tmp/-disclosure-preview/index.html in your browser
 """
 import shutil
 import subprocess
@@ -24,7 +24,7 @@ SEVERITY_COLORS = {
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE_DIR = Path(__file__).resolve().parent
 TPL = TEMPLATE_DIR / "disclosure_template.html"
-OUT = Path("/tmp/nuclide-disclosure-preview")
+OUT = Path("/tmp/-disclosure-preview")
 
 SAMPLE_FRONTMATTER_BASE = """---
 to: triage@example.com
@@ -45,7 +45,7 @@ ip: 198.51.100.42
 Security advisory — sample {severity} disclosure for template preview
 
 ## Summary
-This is a sample render of the NuClide Research disclosure template at {severity} severity. The text below is placeholder content, used to show how each severity tier renders in the routing-header slab and in the findings table.
+This is a sample render of the  disclosure template at {severity} severity. The text below is placeholder content, used to show how each severity tier renders in the routing-header slab and in the findings table.
 
 ## Infrastructure
 | Field | Value |
@@ -112,7 +112,7 @@ def main():
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NuClide Disclosure Template · Preview Gallery</title>
+<title> Disclosure Template · Preview Gallery</title>
 <style>
   :root {{
     --bg: #1a1814;
@@ -203,7 +203,7 @@ def main():
 </head>
 <body>
 <header>
-  <h1>NuClide · Disclosure Template Preview Gallery</h1>
+  <h1> · Disclosure Template Preview Gallery</h1>
   <p>Five severity tiers rendered through the same template. Tab between them to compare. Each preview is the actual HTML email body — the only thing that changes between severities is the routing-header slab color and the in-table severity label.</p>
 </header>
 <nav class="tabs">

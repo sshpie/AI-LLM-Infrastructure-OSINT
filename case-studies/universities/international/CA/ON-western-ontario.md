@@ -1,6 +1,6 @@
 # University of Western Ontario: 2-Node Cluster, Account Takeover on Node 2
 
-_NuClide Research · 2026-05-01, Updated 2026-05-03_
+_ · 2026-05-01, Updated 2026-05-03_
 
 ---
 

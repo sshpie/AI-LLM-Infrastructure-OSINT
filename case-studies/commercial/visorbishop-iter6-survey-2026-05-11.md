@@ -10,7 +10,7 @@ methodology: full population sweep of the largest single-platform corpus surveye
 
 # VisorBishop iter-6 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

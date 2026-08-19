@@ -1,6 +1,6 @@
 # === Internet Archive Wayback Machine snapshots ===
 # captured_at_utc: 2026-05-03T19:12:01Z
-# nuclide_research: third-party tamper-resistant archive of all primary sources
+# _research: third-party tamper-resistant archive of all primary sources
 # ----
 
 Six URLs submitted via https://web.archive.org/save/. Each returned an HTTP 302
@@ -26,7 +26,7 @@ deletion of the original content):
   Brand /contact (operator direct-contact channel):
     https://web.archive.org/web/20260503191114/https://tweet-optimize.com/contact
 
-  NuClide case study (full empirical writeup):
+   case study (full empirical writeup):
     https://web.archive.org/web/20260503190148/https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-tweet-optimize-facial-recognition.md
 
 These snapshots provide third-party witnessing of:

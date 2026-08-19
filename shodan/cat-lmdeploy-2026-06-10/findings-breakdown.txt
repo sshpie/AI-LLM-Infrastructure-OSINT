@@ -103,7 +103,7 @@ Next-dispatch recommendation: designate ONE browser-holder lane (Lane A as recon
 owns the singleton, produces ips.txt; B/C/D consume the file). Or serialize
 Stage 0 phase ahead of the 4-lane parallel block.
 
-Will amend ~/.claude/skills/nuclide-stance/lane-prompts/ to encode this.
+Will amend ~/.claude/skills/-stance/lane-prompts/ to encode this.
 
 
 CENSYS BLOCKER (separate methodology note)

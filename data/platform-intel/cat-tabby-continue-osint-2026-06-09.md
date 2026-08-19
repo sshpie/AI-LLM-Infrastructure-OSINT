@@ -1,6 +1,6 @@
 # Continue.dev — Cat-Tabby Stage -1 Intelligence Brief
 
-Researcher: NuClide research squad 2 of 4
+Researcher:  squad 2 of 4
 Date: 2026-06-09
 Status: CANDIDATE (doc-grounded, host-unverified)
 Scope: Continue.dev self-hosted server surface (Continue Hub, workspace server, proxy/agent components)
@@ -67,7 +67,7 @@ No first-party Continue server = no first-party Shodan fingerprint. The only Con
 - `vllm` (port 8000, OpenAI-compatible)
 - `tgi` (HuggingFace Text Generation Inference, port 80/3000)
 
-aimap fingerprint check: `/home/cowboy/go/pkg/mod/github.com/nuclide-research/aimap@v1.9.39/fingerprints.go` — only `continue` matches in source are Go `continue` keywords. No "Continue.dev" fingerprint exists. Correct outcome — there is no server to fingerprint.
+aimap fingerprint check: `/home/cowboy/go/pkg/mod/github.com/sshpie/aimap@v1.9.39/fingerprints.go` — only `continue` matches in source are Go `continue` keywords. No "Continue.dev" fingerprint exists. Correct outcome — there is no server to fingerprint.
 
 nuclei templates: no `continuedev` / `continue.dev` templates found in projectdiscovery/nuclei-templates index search.
 

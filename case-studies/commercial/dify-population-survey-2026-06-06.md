@@ -9,7 +9,7 @@ status: verified
 
 # Dify Population Survey — 939 Config-Disclosure, 9 Open Auth Findings
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 ---
 

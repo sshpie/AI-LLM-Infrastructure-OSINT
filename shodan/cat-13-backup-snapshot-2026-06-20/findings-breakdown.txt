@@ -1,6 +1,6 @@
 ================================================================================
  Cat-13  Backup + Snapshot  (AI/LLM data-at-rest exposure)        survey 2026-06-20
- NuClide research program  ::  per-survey findings breakdown
+  program  ::  per-survey findings breakdown
 ================================================================================
  Posture: read-only. Names + counts are the finding. No object/vector/snapshot
  content was downloaded. No setup/restore/POST issued. 401/403 recorded as
@@ -101,7 +101,7 @@
      (attack_path flowise_to_weaviate_pii_dump, platform Weaviate, category
      leaky_data_stores). Packet mapping step 4 recommends GET /v1/objects?limit=5
      to sample PII -> the ACT step NOT performed. Packet describes the adversary
-     path; NuClide restraint stops at the read-only surface.
+     path;  restraint stops at the read-only surface.
 
 --------------------------------------------------------------------------------
  5.  CANDIDATE INSIGHTS (codify-every-survey)

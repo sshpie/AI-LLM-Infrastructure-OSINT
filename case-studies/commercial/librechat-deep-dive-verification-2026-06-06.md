@@ -9,7 +9,7 @@ status: verified
 
 # LibreChat Verification Deep-Dive — Notable Findings Re-Profiled
 
-_NuClide Research · 2026-06-06_
+_ · 2026-06-06_
 
 Deeper verification on the six notable finding clusters surfaced in the LibreChat population survey. **Restraint maintained throughout: no registration, no LLM invocation, no account creation.** Methods used: `/api/config`, `/api/endpoints`, PTR lookup, TLS cert inspection, WHOIS, marketing-site cross-reference.
 
@@ -168,7 +168,7 @@ openAI(SERVER_KEY), agents(SERVER_KEY), LM Atlas(SERVER_KEY)
 
 ## ADDENDUM (added post-initial verification) — Capitol.ai customer-tenant fleet expanded via CT logs + probed
 
-**After Nicholas Kloster's explicit authorization to extend verification beyond the original Shodan-indexed survey set**, certificate transparency log enumeration via certspotter.com revealed **64 distinct `*.capitol.ai` subdomains** issued in publicly-logged certificates. Subsequent SNI-correct GET probes against the customer-tenant subdomains confirmed:
+**After 's explicit authorization to extend verification beyond the original Shodan-indexed survey set**, certificate transparency log enumeration via certspotter.com revealed **64 distinct `*.capitol.ai` subdomains** issued in publicly-logged certificates. Subsequent SNI-correct GET probes against the customer-tenant subdomains confirmed:
 
 ### All 4 customer-tenant Langfuse instances: SIGNUP_OPEN confirmed
 
@@ -235,7 +235,7 @@ The `security@capitol.ai` address is published in their own privacy policy — i
 
 ### Important disclosure-handling notes for Capitol.ai
 
-1. **NuClide's customer mapping is hypothesis, not assertion**. The subdomain prefix → customer-identity mapping is strongly evidenced but requires Capitol.ai's confirmation. The disclosure pathway should let Capitol.ai self-verify and self-route.
+1. **'s customer mapping is hypothesis, not assertion**. The subdomain prefix → customer-identity mapping is strongly evidenced but requires Capitol.ai's confirmation. The disclosure pathway should let Capitol.ai self-verify and self-route.
 
 2. **No actual customer data was accessed.** All probes returned only configuration metadata (registration flag, version string, app title). No user accounts were created. No LLM completions were invoked. No trace records were viewed.
 
@@ -251,7 +251,7 @@ The `security@capitol.ai` address is published in their own privacy policy — i
 
 **Operator confirmation:** `capitol.ai` resolves to `www.capitol.ai` (Framer-hosted marketing site). Self-description: "Capitol is the agentic AI platform that transforms structured data, live research, and internal knowledge into high-quality content, reports, and artifacts in moments – not months."
 
-**Capitol.ai is a real US AI-platform startup** (not a NuClide hallucination from the title alone).
+**Capitol.ai is a real US AI-platform startup** (not a  hallucination from the title alone).
 
 **Server-domain enumeration across the fleet reveals customer-tenant naming pattern:**
 
@@ -285,7 +285,7 @@ This is the most significant LibreChat finding of the day. Capitol.ai has deploy
 
 3. **LLM10 at customer-tenant scale**: every customer-tenant instance burns Capitol.ai's (or the customer's) SERVER_KEY budget on every registered user's queries.
 
-4. **Suspected enterprise customers**: If `ey-` and `hmg-` prefixes truly map to Ernst & Young and the UK Government, this is a finding with substantial reputational and regulatory implications for Capitol.ai. **Verification of the customer mapping by Capitol.ai itself is the responsible disclosure step — NuClide does not claim the EY/HMG identification, only flags the suspected pattern.**
+4. **Suspected enterprise customers**: If `ey-` and `hmg-` prefixes truly map to Ernst & Young and the UK Government, this is a finding with substantial reputational and regulatory implications for Capitol.ai. **Verification of the customer mapping by Capitol.ai itself is the responsible disclosure step —  does not claim the EY/HMG identification, only flags the suspected pattern.**
 
 **Disclosure path:**
 - **Direct to Capitol.ai security contact**: capitol.ai marketing site → security/contact page → coordinated disclosure with the customer-tenant mapping confirmation request
@@ -325,7 +325,7 @@ The class is testable against other LibreChat-based commercial SaaS — searchin
 
 Six of six profiled hosts had attributable operator information via PTR, server_domain, and marketing-site cross-reference. **Direct restraint-bounded operator-attribution is fully sufficient for disclosure-grade findings** at LibreChat scale. No registration was required for any of these identifications.
 
-This validates the NuClide methodology: high-confidence finding identification from the metadata layer alone, with the data layer left untouched per the restraint ethic.
+This validates the  methodology: high-confidence finding identification from the metadata layer alone, with the data layer left untouched per the restraint ethic.
 
 ---
 

@@ -36,7 +36,7 @@ sidenotes:
 
 # Router-switch.com B2B AI Sales CRM: Unauthenticated Read, Write, and Delete on an Exposed Weaviate Store
 
-_NuClide Research -- Nicholas Kloster -- 2026-06-20_
+_ --  -- 2026-06-20_
 
 ---
 
@@ -64,7 +64,7 @@ The host responds to the Weaviate REST API with no token, no API key, and no net
 
 **Read:** Pulled the `Cmf_ai_data_message_history` class without credentials. 839 objects returned, HTTP 200.
 
-**Write:** Inserted a marked canary object (UUID `a86e334e-277f-4b9b-a17f-bf5bc3cb542b`, history field `NUCLIDE-CANARY-2026-06-20`) via `POST /v1/objects`. Object created, HTTP 200.
+**Write:** Inserted a marked canary object (UUID `a86e334e-277f-4b9b-a17f-bf5bc3cb542b`, history field `-CANARY-2026-06-20`) via `POST /v1/objects`. Object created, HTTP 200.
 
 **Delete:** Removed the canary via `DELETE /v1/objects/Cmf_ai_data_message_history/<uuid>`. HTTP 204. Re-queried the same UUID and got HTTP 404, confirming the object was gone.
 
@@ -118,4 +118,4 @@ Names, classes, and counts are the finding. No personal records, customer rows, 
 
 ## Disclosure
 
-Finding documented 2026-06-20 under NuClide Research responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.
+Finding documented 2026-06-20 under  responsible-disclosure practice. Prior coordinated disclosures from this researcher include CVE-2025-4364 and ICSA-25-140-11, both through CISA.

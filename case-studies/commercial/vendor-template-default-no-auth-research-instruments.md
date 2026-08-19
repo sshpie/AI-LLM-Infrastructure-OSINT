@@ -10,7 +10,7 @@ methodology: vendor-fingerprint + adjacent-population audit
 
 # Vendor-template default-no-auth on research-instrument web stacks
 
-NuClide Research · 2026-05-06
+ · 2026-05-06
 
 ## Thesis
 
@@ -37,7 +37,7 @@ This note generalizes the **Cortical Labs CL1** finding from 2026-05-06 (one cus
 
 ## The CL1 finding in one paragraph
 
-`134.60.110.66` (`labdevice.medizin.uni-ulm.de`, sys_id `CL1-2544-043`, software `v0.28.3`) was a Cortical Labs CL1 "biological computer", a $35K research instrument with cultured human neurons on a Xilinx Zynq UltraScale+ FPGA microelectrode array, running publicly-accessible at the operator's Med Faculty lab. The default deployment exposed: (a) full operational web dashboard on port 80 (life-support set points editable, Pong/Symbol-Classification application launchers, neural recording downloads), (b) embedded Jupyter Notebook on port 8888 with token-disabled, (c) `Support VPN: Enabled` + `Admin Access: Enabled` toggles defaulted ON. A Hilix botnet operator landed via the unauth Jupyter on 2026-04-29, established a reverse-shell foothold, ran reconnaissance, attempted an x86_64 cryptominer (failed: device is ARM), came back 6 days later with a working socat reverse shell (lived 24h), and was setting up a Miniforge-based ARM64 cryptominer when NuClide intervened by terminating the attacker process via the same unauth Jupyter API the attacker used. Full case at [`multi-hilix-jupyter-campaign-2026-05-06.md`](multi-hilix-jupyter-campaign-2026-05-06.md). Vendor disclosure sent to `support@corticallabs.com` recommending fleet-wide audit + firmware push.
+`134.60.110.66` (`labdevice.medizin.uni-ulm.de`, sys_id `CL1-2544-043`, software `v0.28.3`) was a Cortical Labs CL1 "biological computer", a $35K research instrument with cultured human neurons on a Xilinx Zynq UltraScale+ FPGA microelectrode array, running publicly-accessible at the operator's Med Faculty lab. The default deployment exposed: (a) full operational web dashboard on port 80 (life-support set points editable, Pong/Symbol-Classification application launchers, neural recording downloads), (b) embedded Jupyter Notebook on port 8888 with token-disabled, (c) `Support VPN: Enabled` + `Admin Access: Enabled` toggles defaulted ON. A Hilix botnet operator landed via the unauth Jupyter on 2026-04-29, established a reverse-shell foothold, ran reconnaissance, attempted an x86_64 cryptominer (failed: device is ARM), came back 6 days later with a working socat reverse shell (lived 24h), and was setting up a Miniforge-based ARM64 cryptominer when  intervened by terminating the attacker process via the same unauth Jupyter API the attacker used. Full case at [`multi-hilix-jupyter-campaign-2026-05-06.md`](multi-hilix-jupyter-campaign-2026-05-06.md). Vendor disclosure sent to `support@corticallabs.com` recommending fleet-wide audit + firmware push.
 
 ## Why this generalizes
 
@@ -113,7 +113,7 @@ The above is a candidate list for **vendor-fingerprint surveying**, where the go
 
 ## Methodology for surveying the vendor-template class
 
-Standard NuClide cloud-platform surveys probe by *platform* (e.g., Qdrant, MLflow, Milvus). The vendor-template class needs a different methodology because the discoverable signature is the **vendor's web stack**, not the underlying tool:
+Standard  cloud-platform surveys probe by *platform* (e.g., Qdrant, MLflow, Milvus). The vendor-template class needs a different methodology because the discoverable signature is the **vendor's web stack**, not the underlying tool:
 
 1. **Enumerate vendor candidates**, publicly-listed product catalogs, scientific-instrument review databases, university procurement lists.
 2. **Vendor-fingerprint the default-deployment signature**, install the default vendor image in a controlled lab (or borrow a customer's screenshot), capture the exact HTTP signature of the management UI:
@@ -149,7 +149,7 @@ Concrete recommendations for vendors of research/lab-instrument web stacks:
 
 1. **What's the true CL1 fleet size?** Cortical Labs has shipped some number of CL1s globally, what fraction are on public IPs? `https://corticallabs.com/cl1.html` doesn't disclose. Vendor disclosure response will tell us.
 2. **Is the second confirmed victim (Tencent Cloud Beijing customer at `101.34.81.166`) also a CL1?** That host has the OpenClaw AI-agent framework running but the operator's `lightclawbot` agent wasn't a Cortical Labs identity. Probably not, same Hilix campaign, different operator class. Worth confirming.
-3. **What's the cross-vendor sweep methodology yield?** Pick one adjacent vendor (e.g., Intan RHX, Open Ephys), build a vendor-fingerprint, sweep IPv4. NuClide doesn't have the resources for full cross-vendor work; this is a roadmap for future research.
+3. **What's the cross-vendor sweep methodology yield?** Pick one adjacent vendor (e.g., Intan RHX, Open Ephys), build a vendor-fingerprint, sweep IPv4.  doesn't have the resources for full cross-vendor work; this is a roadmap for future research.
 4. **How does the vendor-template threat class compare to the supply-chain threat class?** Supply-chain compromise (vendor pushes malicious firmware) and vendor-template default-config (vendor's defaults are insecure) are both vendor-amplified, but defensible differently. Worth a separate write-up.
 
 ## References

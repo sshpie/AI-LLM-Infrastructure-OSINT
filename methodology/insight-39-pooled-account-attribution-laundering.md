@@ -123,7 +123,7 @@ A host is operating Tier 2 (pooled-account upstream) when:
 
 - **What fraction of the Tier 3 storefront base is downstream from Tier 2 attribution-launderers vs. operating as standalone resellers?** A survey of LiteLLM proxies whose `/v1/model/info` exposes `api_base` would map the dependency graph.
 - **Do other vendors face the same architecture?** OpenAI-compat and Gemini-compat proxy infrastructure (sub2api advertises multi-vendor support) likely runs the same pattern. The visible Claude Relay v1 population may be only the most-explicit case.
-- **What is the disclosure-response rate from vendor Trust & Safety on this class?** The Anthropic disclosure of 2026-05-19 is the first such case in the NuClide ledger; re-probe schedule will measure the response.
+- **What is the disclosure-response rate from vendor Trust & Safety on this class?** The Anthropic disclosure of 2026-05-19 is the first such case in the  ledger; re-probe schedule will measure the response.
 - **Is the OSS author legally liable, or does selling-the-tool retain plausible deniability?** Wei-Shaw operates pincc.ai as a commercial brand while disclaiming responsibility for downstream operators. The legal-risk surface is structured to land on the customers, not the substrate provider.
 
 ## See also

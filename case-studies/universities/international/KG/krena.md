@@ -1,6 +1,6 @@
 # KRENA (Kyrgyz Research and Education Network): 433GB GLM-5.1, DeepSeek Cloud Proxy
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

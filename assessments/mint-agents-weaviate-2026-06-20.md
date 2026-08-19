@@ -217,4 +217,4 @@ Five-class schema wipe destroys all 1,432 records plus vector indexes. Mint Agen
 ## Tool Reference
 
 Found with **weavscan**.
-https://github.com/nuclide-research/weavscan
+https://github.com/sshpie/weavscan

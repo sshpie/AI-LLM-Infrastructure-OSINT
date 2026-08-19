@@ -4,7 +4,7 @@ type: synthesis
 
 # Meow / Indexrm Elasticsearch extortion. Three actors. (2026-05-17)
 
-_NuClide Research · 2026-05-17_
+_ · 2026-05-17_
 _Companion to: [`22-ai-stack-attribution-2026-05-17.md`](22-ai-stack-attribution-2026-05-17.md), [`es-clickhouse-cross-stack-2026-05-17.md`](es-clickhouse-cross-stack-2026-05-17.md)_
 
 ---

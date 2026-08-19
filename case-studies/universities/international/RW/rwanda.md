@@ -1,6 +1,6 @@
 # University of Rwanda: Qwen3.5 + Qwen3.6 27B, College of Education Campus
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

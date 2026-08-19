@@ -1,6 +1,6 @@
 # Meriwether Lewis Electric Cooperative: 235B-Parameter Model on Unauthenticated Ollama
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

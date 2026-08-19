@@ -3,12 +3,12 @@ type: survey
 category: data-labeling-platform
 platform: label-studio
 date: 2026-06-08
-researcher: NuClide Research
+researcher: 
 ---
 
 # Label Studio at Population Scale: 99.8 Percent Auth-Gated, the New Anchor on the Auth-Friction Gradient
 
-_NuClide Research · 2026-06-08_
+_ · 2026-06-08_
 
 ---
 
@@ -16,7 +16,7 @@ _NuClide Research · 2026-06-08_
 
 Population-scale survey of Heartex/Humansignal **Label Studio** (the open-source data-labeling and RLHF annotation platform) via the Shodan dork `http.title:"Label Studio"`. 1,646 total hits; 500 sampled.
 
-**The thesis-class result.** **1 of 500 sampled hosts (0.2 percent) returned an unauthenticated `/api/projects/` list.** 404 hosts (80.8 percent) returned 401, 72 were dead, 23 had non-LS shape. Of LIVE Label Studio hosts in the sample, **99.75 percent are auth-gated.** This is the strongest auth-by-default measurement across the entire NuClide program.
+**The thesis-class result.** **1 of 500 sampled hosts (0.2 percent) returned an unauthenticated `/api/projects/` list.** 404 hosts (80.8 percent) returned 401, 72 were dead, 23 had non-LS shape. Of LIVE Label Studio hosts in the sample, **99.75 percent are auth-gated.** This is the strongest auth-by-default measurement across the entire  program.
 
 Label Studio ships with a mandatory account-creation flow on first run. The Django backend will not serve `/api/projects/` until an authenticated session or API token is provided. Operators almost universally retain this default. The 1 unauth in the sample is an empty fresh install (0 projects, 1 user, Alibaba Cloud) that the operator has not finished setting up.
 

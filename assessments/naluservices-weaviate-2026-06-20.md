@@ -148,6 +148,6 @@ Eight classes with randomized names have not been fully scrolled. ZDUXL includes
 
 ## Tool Reference
 
-**weavscan** -- https://github.com/nuclide-research/weavscan
+**weavscan** -- https://github.com/sshpie/weavscan
 
 Unauthenticated Weaviate enumeration: schema walk, class object extraction, GraphQL query execution, RWD surface confirmation.

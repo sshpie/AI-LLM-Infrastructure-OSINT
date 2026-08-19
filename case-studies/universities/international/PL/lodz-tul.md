@@ -1,6 +1,6 @@
 # Technical University of Łódź (TUL): DeepSeek-R1:32B, Cross-Network Custom Model
 
-_NuClide Research · 2026-05-01_
+_ · 2026-05-01_
 
 ---
 

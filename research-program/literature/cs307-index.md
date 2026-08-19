@@ -20,7 +20,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022 (course)
 **Topic tag:** foundations
 **Summary:** Lecture deck on probabilistic classification — background of classifiers (discriminative vs generative), probability basics, Naive Bayes with the Play Tennis worked example. Standard intro-ML treatment.
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### aisecure.github.io_cs307-dimension-reduction.pdf
 
@@ -29,7 +29,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lecture deck on dimension reduction and representation learning — motivation, Sammon mapping, t-SNE, autoencoders and denoising autoencoders (Forsyth textbook chapter 19).
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### aisecure.github.io_CS_307_Labs.pdf
 
@@ -38,7 +38,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lab handout — leave-one-out cross-validated nearest-neighbor classifier on a Turkish raisin dataset, with and without feature normalization, plus a k-NN sweep. One page.
-**Relevance to NuClide research program:** Not directly relevant — intro lab exercise.
+**Relevance to  program:** Not directly relevant — intro lab exercise.
 
 ### aisecure.github.io_cs307-logistic.pdf
 
@@ -47,7 +47,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lecture deck — recap of Naive Bayes, then logistic regression and Kalman filtering as probabilistic / state-estimation models.
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### aisecure.github.io_cs307-vae.pdf
 
@@ -56,7 +56,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lecture deck on generative models — recap of Sammon / t-SNE / autoencoders, then variational autoencoders and generative adversarial networks.
-**Relevance to NuClide research program:** Foundational AI/ML background; VAEs/GANs are the architectural family behind many model-server payloads we fingerprint, but the deck is pure pedagogy.
+**Relevance to  program:** Foundational AI/ML background; VAEs/GANs are the architectural family behind many model-server payloads we fingerprint, but the deck is pure pedagogy.
 
 ### aisecure.github.io_cs307-word-bert.pdf
 
@@ -65,7 +65,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lecture deck covering image autoencoder recap, simple word embeddings, encoder-decoder models, attention, Transformers, then BERT and GPT. Intro-level Transformer/LLM pipeline.
-**Relevance to NuClide research program:** Foundational AI/ML background — the BERT/GPT pipeline this teaches is exactly the class of model sitting behind the inference endpoints we fingerprint with aimap.
+**Relevance to  program:** Foundational AI/ML background — the BERT/GPT pipeline this teaches is exactly the class of model sitting behind the inference endpoints we fingerprint with aimap.
 
 ### aisecure.github.io_cs307-word-embeddings.pdf
 
@@ -74,7 +74,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Earlier-in-sequence companion to the BERT/GPT deck — image autoencoder recap, word embedding construction, encoder-decoder, attention mechanism, Transformer architecture (stops before BERT/GPT).
-**Relevance to NuClide research program:** Foundational AI/ML background.
+**Relevance to  program:** Foundational AI/ML background.
 
 ### aisecure.github.io_LinearStart.pdf
 
@@ -83,7 +83,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022 (course)
 **Topic tag:** foundations
 **Summary:** Lecture deck on linear classifiers — feature vector x with label y in {-1, +1}, prediction sign(aᵀx + b), then derivation toward the linear SVM.
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### aisecure.github.io_MDPS-RL-daf-1.pdf
 
@@ -92,7 +92,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022 (course)
 **Topic tag:** foundations
 **Summary:** Lecture deck — "scamper through" basic reinforcement learning ideas, then imitation learning and its variants framed as structure learning.
-**Relevance to NuClide research program:** Not directly relevant — pure RL foundations.
+**Relevance to  program:** Not directly relevant — pure RL foundations.
 
 ### aisecure.github.io_nnstart.pdf
 
@@ -101,7 +101,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022 (course)
 **Topic tag:** foundations
 **Summary:** Lecture deck — what classification is (feature vector to label), binary vs multiclass, evaluation, and the central problem of estimating accuracy on unlabeled data. Sets up KNN.
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### aisecure.github.io_RandomForest.pdf
 
@@ -110,7 +110,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Lecture deck — decision trees, random forests, RF hyperparameter tuning, feature importance / interpretation.
-**Relevance to NuClide research program:** Not directly relevant — pure ML foundations.
+**Relevance to  program:** Not directly relevant — pure ML foundations.
 
 ### dropbox_CS307_Finals.pdf
 
@@ -119,7 +119,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022 (May 11 due date)
 **Topic tag:** misc
 **Summary:** One-page final project handout. Four suggested topics: (1) MDP tic-tac-toe via value/policy iteration, (2) RL tic-tac-toe, (3) denoising autoencoder for MNIST, (4) train a small DNN on MNIST and generate adversarial attacks against it. NeurIPS format, ≥3-page report.
-**Relevance to NuClide research program:** Topic 4 (DNN + adversarial attack) is the only direct touch point with our threat-class taxonomy — the canonical undergraduate entry into evasion attacks against image classifiers.
+**Relevance to  program:** Topic 4 (DNN + adversarial attack) is the only direct touch point with our threat-class taxonomy — the canonical undergraduate entry into evasion attacks against image classifiers.
 
 ### dropbox_cs307-real.pdf
 
@@ -128,7 +128,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** adversarial (mixed — also covers ViT and POMDPs)
 **Summary:** 69-page capstone deck stitching three real-world ML topics together. Section 1 is a Vision Transformer walkthrough (patch tokenization, class token, positional embeddings, MLP head) with CIFAR-10/100 benchmarks comparing ViT, Hybrid ViT, ResNet34, and pretrained ViT. Section 2 ("Trustworthy ML") is the security content — adversarial environments around TensorFlow/PyTorch/H2O/AWS ML, the perils of the stationary-data assumption, and the adversarial perturbation formulation max_ε J(θ, x+ε, y) solved via local search / combinatorial opt / convex relaxation. Section 3 covers reinforcement learning and POMDPs.
-**Relevance to NuClide research program:** Threat class enabling LLM03/LLM04 lineage — establishes the classical adversarial-perturbation framing for inference-time evasion that later evolved into prompt-injection and jailbreaking against LLMs. Useful as background for any case study discussing evasion vs. extraction vs. poisoning taxonomy.
+**Relevance to  program:** Threat class enabling LLM03/LLM04 lineage — establishes the classical adversarial-perturbation framing for inference-time evasion that later evolved into prompt-injection and jailbreaking against LLMs. Useful as background for any case study discussing evasion vs. extraction vs. poisoning taxonomy.
 
 ### dropbox_MDPS-RL429.pdf
 
@@ -137,7 +137,7 @@ CS 307 ("Modeling and Learning in Data Science") is an undergraduate-level UIUC 
 **Year:** 2022
 **Topic tag:** foundations
 **Summary:** Duplicate / later revision of `aisecure.github.io_MDPS-RL-daf-1.pdf` — same outline (RL basics, imitation learning as structure learning), expanded body (8.1MB vs 3.1MB).
-**Relevance to NuClide research program:** Not directly relevant — pure RL foundations.
+**Relevance to  program:** Not directly relevant — pure RL foundations.
 
 ## Lecture videos (skipped from indexing)
 
@@ -151,4 +151,4 @@ These are the live-lecture recordings; January videos almost certainly cover the
 
 ## Topic distribution
 
-Of 13 indexed PDFs: 11 are pure ML foundations (classification, KNN, linear/SVM, Naive Bayes, logistic regression, random forests, dimension reduction, VAE/GAN, word embeddings/attention/Transformers/BERT/GPT, MDP/RL/imitation x2, the Week-1 lab), 1 (`dropbox_cs307-real.pdf`) is mixed — Vision Transformer + Trustworthy ML + RL/POMDP — and is the only deck containing the adversarial-perturbation formulation, and 1 (`dropbox_CS307_Finals.pdf`) is the final-project handout, misc, whose topic #4 (DNN + adversarial attacks on MNIST) is the only other adversarial touch point. There are 0 papers in this corpus on extraction, model inversion, membership inference, data poisoning, backdoor / Trojan attacks, watermarking, differential privacy, or LLM-specific threats (prompt injection, jailbreaking, RAG poisoning). The course title — "Modeling and Learning in Data Science" — is the honest one; "aisecure" in the GitHub Pages slug overstates the security content, which is one capstone deck and one final-project option. For NuClide threat-class taxonomy work, only `dropbox_cs307-real.pdf` (adversarial perturbation lineage) and `dropbox_CS307_Finals.pdf` (the MNIST-adversarial project prompt) are directly cite-worthy; the rest are useful only as foundational ML background context.
+Of 13 indexed PDFs: 11 are pure ML foundations (classification, KNN, linear/SVM, Naive Bayes, logistic regression, random forests, dimension reduction, VAE/GAN, word embeddings/attention/Transformers/BERT/GPT, MDP/RL/imitation x2, the Week-1 lab), 1 (`dropbox_cs307-real.pdf`) is mixed — Vision Transformer + Trustworthy ML + RL/POMDP — and is the only deck containing the adversarial-perturbation formulation, and 1 (`dropbox_CS307_Finals.pdf`) is the final-project handout, misc, whose topic #4 (DNN + adversarial attacks on MNIST) is the only other adversarial touch point. There are 0 papers in this corpus on extraction, model inversion, membership inference, data poisoning, backdoor / Trojan attacks, watermarking, differential privacy, or LLM-specific threats (prompt injection, jailbreaking, RAG poisoning). The course title — "Modeling and Learning in Data Science" — is the honest one; "aisecure" in the GitHub Pages slug overstates the security content, which is one capstone deck and one final-project option. For  threat-class taxonomy work, only `dropbox_cs307-real.pdf` (adversarial perturbation lineage) and `dropbox_CS307_Finals.pdf` (the MNIST-adversarial project prompt) are directly cite-worthy; the rest are useful only as foundational ML background context.

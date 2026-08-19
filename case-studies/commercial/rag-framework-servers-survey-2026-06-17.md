@@ -6,7 +6,7 @@ date: 2026-06-17
 
 # RAG Framework Servers: First Population Survey (LlamaIndex / Haystack / LightRAG / Microsoft GraphRAG)
 
-_NuClide Research · 2026-06-17 · Cat-RAG-Framework-Servers_
+_ · 2026-06-17 · Cat-RAG-Framework-Servers_
 
 ## Result
 
@@ -178,7 +178,7 @@ The refuted leads bound the impact honestly. The catastrophe scenario (stacked R
 | 3v | verify workflow (adversarial re-probe; 200-with-data earns the label) | confirmed F1-F7; refuted R1, R2; vhost Host-header recovery of F7 |
 | 2 | attribution workflow (WHOIS + cert CN/SAN + rDNS + CT pivot) | 5 operator attributions; Hanssen, Babbid, Mobee, Qdrant pair, OVH gap |
 | 4 | JS-bundle pass | F6 framework correction (Laravel/Inertia/Vue, not LlamaIndex SPA) |
-| 6 | ledger ingest (nuclide.db) | findings persisted |
+| 6 | ledger ingest (.db) | findings persisted |
 | 7 | scuba (compliance scoring) | severity/data-class scored |
 | 8 | BARE (semantic exploit-module ranking) | modules ranked against findings |
 

@@ -45,7 +45,7 @@ INIT_BODY = {
     "params": {
         "protocolVersion": "2024-11-05",
         "capabilities": {},
-        "clientInfo": {"name": "nuclide-probe", "version": "0.1"},
+        "clientInfo": {"name": "-probe", "version": "0.1"},
     },
     "id": 1,
 }
@@ -72,7 +72,7 @@ def http_post(url: str, body: dict, accept: str = "application/json, text/event-
     headers = {
         "Content-Type": "application/json",
         "Accept": accept,
-        "User-Agent": "nuclide-mcp-probe/0.1 (research; security@nuclide-research.com)",
+        "User-Agent": "-mcp-probe/0.1 (research; security@)",
     }
     if extra_headers:
         headers.update(extra_headers)

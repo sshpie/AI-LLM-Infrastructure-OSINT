@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-31
 **Type:** Cross-reference pass (Stage 0b feeding the existing corpus), not a fresh survey.
-**Operator:** Nuclide (Nick + Claude)
+**Operator:**  (Nick + Claude)
 **Credits:** 17 of 24 Free-tier weekly (24 -> 7, resets 2026-06-08)
 
 ## 1. Overview
@@ -16,7 +16,7 @@ and a confirmed-unauth RAG sample. All reads passive; no host was connected to.
 ## 2. Tooling
 
 - cencli (Censys Platform CLI, Go, ~/go/bin) `view` and `credits`. 1 credit per host view.
-- nuclide.db `events` ledger (25,810 events) for the confirmed corpus.
+- .db `events` ledger (25,810 events) for the confirmed corpus.
 - jq for record parsing. No bespoke probe loops written (none needed; cencli covers it).
 - Non-runs: cencli `search` (403 on Free, needs paid org-id) -> population lane deferred to
   web-UI/Playwright. VisorAgent (controlled-target only). VisorHollow (Windows).

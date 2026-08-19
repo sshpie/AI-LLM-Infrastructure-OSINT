@@ -222,7 +222,7 @@ async def main():
     counters = {"done": 0, "stable": 0, "unstable": 0, "dead": 0, "total": len(targets)}
 
     connector = aiohttp.TCPConnector(limit=args.workers * 2, ssl=False, force_close=True)
-    headers = {"User-Agent": "nuclide-paired-probe/1.0 (+nuclide-research.com)"}
+    headers = {"User-Agent": "-paired-probe/1.0 (+)"}
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 

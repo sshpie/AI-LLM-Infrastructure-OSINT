@@ -1,6 +1,6 @@
 ---
 to: abuse@ovh.net
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 92.222.230.219
 institution: OVH SAS (hindsight-mcp v3.1.1 personal-AI-memory CRUD fully exposed)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** abuse@ovh.net
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated personal-AI-memory MCP server (29-tool CRUD incl. clear_memories/delete_bank), 92.222.230.219:8888
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -26,7 +26,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure notification.
 
 ---
 
@@ -34,7 +34,7 @@ I'm an independent security researcher conducting good-faith AI infrastructure r
 
 An OVH customer at `92.222.230.219:8888` is running `hindsight-mcp-server v3.1.1`, a personal-AI-cognition / memory MCP server. The server exposes **29 tools** without authentication, covering full CRUD on the operator's AI memory state, including destructive operations (`clear_memories`, `delete_bank`, `delete_mental_model`).
 
-Found during NuClide Research's MCP cross-cloud survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F6, `hindsight-mcp-server` cluster").
+Found during 's MCP cross-cloud survey (2026-05-04). Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2026-05.md (search for "F6, `hindsight-mcp-server` cluster").
 
 ## Confirmed exposure
 
@@ -87,6 +87,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/mcp-cloud-survey-2
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

@@ -100,7 +100,7 @@ The 9/10 score (only BLUE-EXP-001 fires) reflects that the VisorLog entry was in
 
 ## 5. Infrastructure Map (Internal Reference)
 
-Omitted from public case study. See VisorLog nuclide.db for operator identity fields.
+Omitted from public case study. See VisorLog .db for operator identity fields.
 
 ---
 
@@ -127,5 +127,5 @@ Omitted from public case study. See VisorLog nuclide.db for operator identity fi
 
 - `case-studies/commercial/velutina-service-ch-unauth-ml-training-server-2026-06-01.md`
 - `recon/velutina-swiss-ml-2026-06-01/findings-breakdown.txt`
-- VisorLog nuclide.db: 3 findings, IDs logged (185.66.109.62, Swiss citizen science AI project)
+- VisorLog .db: 3 findings, IDs logged (185.66.109.62, Swiss citizen science AI project)
 - `disclosures/_gmail_drafts.json`: slug `velutina-service-ch-185-66-109-62-unauth-homedir-2026-06-01`, sent 2026-06-01

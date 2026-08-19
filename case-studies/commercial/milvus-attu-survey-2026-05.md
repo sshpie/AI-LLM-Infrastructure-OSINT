@@ -4,7 +4,7 @@ type: survey
 
 # Milvus/Attu on Public Cloud: Auth Posture and Multi-Tenant SaaS Exposure Survey
 
-_NuClide Research · 2026-05-09_
+_ · 2026-05-09_
 
 ---
 
@@ -128,6 +128,6 @@ And creating a root user + per-collection grants. Without this, any connection t
 
 ## Discovery Context
 
-Survey conducted 2026-05-09 as part of NuClide Research vector database exposure series. Shodan pull on `http.title:"Attu" "Milvus"` (1,418 hits, 1,389 downloadable). Asyncio probe of port 3000 (Attu) and port 19530 (Milvus REST).
+Survey conducted 2026-05-09 as part of  vector database exposure series. Shodan pull on `http.title:"Attu" "Milvus"` (1,418 hits, 1,389 downloadable). Asyncio probe of port 3000 (Attu) and port 19530 (Milvus REST).
 
 Companion surveys: `weaviate-cloud-survey-2026-05.md`, `milvus-cloud-survey-2026-05.md`, `milvus-tier2-cloud-survey-2026-05.md`.

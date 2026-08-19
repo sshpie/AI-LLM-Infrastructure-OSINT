@@ -1,6 +1,6 @@
 
 ────────────────────────────────────────────────────────────────────────────────
-  NuClide AI Security Baseline — Assessment Results
+   AI Security Baseline — Assessment Results
 ────────────────────────────────────────────────────────────────────────────────
 
   Nodes assessed: 272

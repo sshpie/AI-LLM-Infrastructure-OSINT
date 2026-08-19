@@ -10,7 +10,7 @@ methodology: 60-platform triage then per-platform read-only confirmation probe
 
 # Browser-automation backend tier: cloud survey 2026-05-14
 
-NuClide Research
+
 
 ## Summary
 

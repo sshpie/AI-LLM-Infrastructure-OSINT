@@ -32,7 +32,7 @@ def http_get(url: str, timeout: float = TIMEOUT_S) -> tuple[int, bytes]:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "nuclide-rag-deep-probe-v2/0.1 (research; security@nuclide-research.com)",
+            "User-Agent": "-rag-deep-probe-v2/0.1 (research; security@)",
             "Accept": "application/json,text/html",
         },
     )

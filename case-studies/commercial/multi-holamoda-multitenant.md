@@ -4,7 +4,7 @@ type: multi-host
 
 # HolaModa + Delta701: Multi-Tenant Fashion Retail RAG with Dev/Prod Co-Located on Unauth ChromaDB
 
-_NuClide Research · 2026-05-03_
+_ · 2026-05-03_
 
 ---
 

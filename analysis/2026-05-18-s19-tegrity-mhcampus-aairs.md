@@ -294,4 +294,4 @@ curl --resolve selfreg.tegrity.com:443:3.91.114.169 \
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 19 · 2026-05-18*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 19 · 2026-05-18*

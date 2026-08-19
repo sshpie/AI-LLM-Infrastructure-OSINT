@@ -4,7 +4,7 @@ type: survey
 
 # Unauth Docker Daemon Population Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15 (late evening, fifth survey of the day)_
+_ · 2026-05-15 (late evening, fifth survey of the day)_
 _Category 12. Containers & orchestration; Docker daemon leg_
 
 ---

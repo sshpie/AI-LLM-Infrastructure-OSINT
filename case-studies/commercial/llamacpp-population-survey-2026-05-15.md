@@ -4,7 +4,7 @@ type: survey
 
 # llama.cpp HTTP Server Population Survey (2026-05-15)
 
-_NuClide Research · 2026-05-15 (evening)_
+_ · 2026-05-15 (evening)_
 _Companion to:_
 - [`ollama-population-survey-2026-05-15.md`](ollama-population-survey-2026-05-15.md): the day's earlier Shodan-walk survey of Ollama
 - [`alpha-miner-194-233-71-223-2026-05-15.md`](alpha-miner-194-233-71-223-2026-05-15.md): the single-host case that drove the aimap llama.cpp fingerprint addition
@@ -150,8 +150,8 @@ Without the Zillion Network single-operator cluster (216), the distribution look
 0. shodan_paginate.py 'product:"llama.cpp"'         →  1,652 unique IPs (32s, 1 dork)
 1. fast_enum_llamacpp.py (threads=150, timeout=6s)  →  965 confirmed in 32.5s
 2. aimap v1.9.4 -ports 11434,8080,8000 -threads 100 →  cross-validation (50-host sample, 3m2s, 5 services)
-3. fast_enum_to_ndjson → visorlog ingest --db nuclide.db   →  677 events landed (288 deduped vs Ollama corpus)
-4. visorscuba --db nuclide.db assess                →  AI.C1 fires; AI.C2/C4/H2 are Ollama-specific (rule gap)
+3. fast_enum_to_ndjson → visorlog ingest --db .db   →  677 events landed (288 deduped vs Ollama corpus)
+4. visorscuba --db .db assess                →  AI.C1 fires; AI.C2/C4/H2 are Ollama-specific (rule gap)
 5. visorbishop -ip-shadow-all                       →  shadow_unauth_count=0 on every row (Bishop's IP-shadow port set is narrow); 186 misclassified as 'promptfoo' (Bishop FP class — /v1/models endpoint shared with promptfoo)
 6. cross-survey diff vs ollama-confirmed.ips        →  29 IPs running BOTH unauth llama.cpp AND unauth Ollama
 7. chat_template corpus analysis                    →  61 distinct prefixes; 33 operator-customized (≤2 freq) — the discovery axis

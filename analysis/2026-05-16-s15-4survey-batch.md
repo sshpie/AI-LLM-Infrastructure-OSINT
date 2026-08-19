@@ -48,7 +48,7 @@ Single session. Orchestrator + bespoke Python scripts dispatched from the sessio
 | aimap v1.9.5→v1.9.6 | Stage-1 fingerprint + Stage-2 verify | 5 new image-gen fingerprints shipped mid-session; v1.9.6 pushed before re-run |
 | fast_enum_imagegen.py | ComfyUI mass-probe | threads=200, ~70 min, /system_stats endpoint |
 | fast_enum_vectordb.py | Solr / Meilisearch / Typesense / Vespa mass-probe | Platform-specific endpoints per class |
-| VisorLog | Ledger ingest → nuclide.db | 1,807 events ingested across 4 surveys |
+| VisorLog | Ledger ingest → .db | 1,807 events ingested across 4 surveys |
 | BARE | Metasploit semantic ranking | Solr 7.6.0 fleet: Velocity RCE top match (score 0.727) |
 | VisorGraph | Cert-pivot → operator attribution | L40S fleet operator (103.192.253.237/.238) queued for future session |
 | VisorAgent | Active LLM exploitation | Ethical-stop. Not run. |
@@ -112,7 +112,7 @@ No brute forcing. No privilege escalation. No data exfiltration. No document or 
 | ~16:00 | Data-labeling survey: Prodigy / Label Studio / CVAT / Doccano | 772 candidates, 16 Prodigy unauth (auth-free by design). Label Studio 99.8% FP rate on dork |
 | ~16:30 | Vector-DB stragglers: Solr / Meilisearch / Typesense / Vespa | 16,704 candidates. 613 unauth Solr, 268 unauth Meilisearch, 0 Typesense, 0 Vespa |
 | ~17:00 | BARE on Solr 7.6.0 fleet | Velocity RCE top match (score 0.727). CVE-2019-17558 confirmed as commodity chain |
-| ~17:20 | VisorLog ingest | 1,807 events into nuclide.db across 4 surveys |
+| ~17:20 | VisorLog ingest | 1,807 events into .db across 4 surveys |
 | ~17:40 | Insights #25 + #26 codified, SESSION.md updated | 3bd3901 pushed to Nicholas-Kloster/AI-LLM-Infrastructure-OSINT |
 
 ---
@@ -369,4 +369,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 15 · 2026-05-16*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 15 · 2026-05-16*

@@ -4,7 +4,7 @@ type: survey
 
 # Speech & Audio AI on Tier-2 Cloud: Auth Posture Survey
 
-_NuClide Research · 2026-05-04_
+_ · 2026-05-04_
 _Sibling tier-2 expansions: [`ollama-tier2-cloud-survey-2026-05.md`](ollama-tier2-cloud-survey-2026-05.md), [`qdrant-tier2-cloud-survey-2026-05.md`](qdrant-tier2-cloud-survey-2026-05.md), [`milvus-tier2-cloud-survey-2026-05.md`](milvus-tier2-cloud-survey-2026-05.md), [`chromadb-tier2-cloud-survey-2026-05.md`](chromadb-tier2-cloud-survey-2026-05.md)_
 
 ---
@@ -48,7 +48,7 @@ audio-probe.py (200-thread fingerprint)
   → 6 confirmed Speech & Audio AI instances
 ```
 
-Read-only metadata enumeration only. NuClide:
+Read-only metadata enumeration only. :
 - Did NOT submit any audio file to `/asr` or `/v1/audio/transcriptions`
 - Did NOT submit any text to `/api/tts`
 - Did NOT exercise `/api/pull/{model_name}` (which would write to operator disk)

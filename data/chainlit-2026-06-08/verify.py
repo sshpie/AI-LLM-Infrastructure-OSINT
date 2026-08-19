@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Chainlit population verifier — NuClide Cat-50 survey (2026-06-08).
+Chainlit population verifier —  Cat-50 survey (2026-06-08).
 
 RESTRAINT POSTURE (LOAD-BEARING):
 - GET requests ONLY.
@@ -35,7 +35,7 @@ import requests
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 HEADERS = {
-    "User-Agent": "NuClide-survey/1.0 (chainlit-cat50; nicholas@nuclide-research.com)",
+    "User-Agent": "-survey/1.0 (chainlit-cat50; )",
     "Accept": "*/*",
 }
 TIMEOUT = 10

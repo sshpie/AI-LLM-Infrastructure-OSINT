@@ -17,7 +17,7 @@ Bo Li's Fall 2021 graduate seminar on Advanced Topics in Security, Privacy and M
 **Year:** 2021
 **Topic tag:** misc
 **Summary:** Course syllabus — grading breakdown, prereqs, 15 candidate project topics centered on attacks, defenses, certified robustness, privacy, and GAN theory.
-**Relevance:** Frames the canonical AdvML topic taxonomy NuClide assesses against in the wild.
+**Relevance:** Frames the canonical AdvML topic taxonomy  assesses against in the wild.
 
 ### aisecure.github.io_TEACHING_CS598_Fall2021_files_lecture0825.pdf
 

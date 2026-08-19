@@ -1,6 +1,6 @@
 ---
 to: disclosures@anduril.com
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 targets: "Telefonica ARO Grafana (lattice monitoring plane); andurildev.com Route53 zone (44+ subdomains leaking RFC-1918 IPs)"
 status: DRAFT
@@ -14,8 +14,8 @@ outcome: pending
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 2026-05-08
 
 This is a coordinated good-faith disclosure. Findings were identified through observation of publicly accessible HTTP endpoints (`/api/datasources` on a Grafana instance referenced in your Backstage CSP) and passive DNS resolution. No credentials were obtained or used; no systems were modified.
@@ -218,8 +218,8 @@ The Armory app's bundled JS contains a redirect rule: `{"from":"/voyager-support
 ## Researcher
 
 **Nicholas Michael Kloster**
-NuClide Research | https://nuclide-research.com
-nicholas@nuclide-research.com
+ | https://
+
 CISA disclosure history: CVE-2025-4364, ICSA-25-140-11
 
 This disclosure is submitted under good faith per your published security.txt. No bounty requested.

@@ -4,7 +4,7 @@ type: synthesis
 
 # The Modern AI Stack Ships Open: Cross-Survey Synthesis
 
-_NuClide Research · 2026-05-03 (updated 2026-05-04 with tier-2 cloud expansion)_
+_ · 2026-05-03 (updated 2026-05-04 with tier-2 cloud expansion)_
 _A synthesis of 14 platform-class surveys covering ~4,300 confirmed unique deployments across DigitalOcean, Hetzner, Vultr, Scaleway, OVH, and Linode cloud /16 ranges._
 
 ---
@@ -95,7 +95,7 @@ Behind the cleanly-summarized auth-state numbers is the actual content the opera
 
 - **2 of 11 MLflow instances are already actively exploited** via CVE-2023-1177 path traversal, same attacker spraying the same payload UUIDs across vulnerable hosts, harvesting `/etc/` and `/root/.ssh/` *(mlflow survey, Class A)*
 - 1 MLflow showing `rce_test_<unix-timestamp>` experiment, attacker probing for CVE-2024-37052 RCE on a now-patched version
-- Sanctionscanner.com Elasticsearch had a ransomware bot's `read_me` extortion index already present at NuClide's discovery time
+- Sanctionscanner.com Elasticsearch had a ransomware bot's `read_me` extortion index already present at 's discovery time
 
 ---
 
@@ -120,7 +120,7 @@ Most observable in: Milvus, Qdrant, MongoDB siblings of the Milvus deployments, 
 
 ### 2.5 Positive control: when auth-on-default actually holds
 
-The MinIO and Dify surveys provide the cleanest negative findings in the series. **MinIO at 852 instances has 0 anonymous-bucket-listable hosts**, operators DID configure auth even on otherwise-exposed cloud VPSes. **Dify at 5 confirmed instances has 0 setup-wizard-takeover-possible**, every operator completed the initial admin setup before NuClide found them.
+The MinIO and Dify surveys provide the cleanest negative findings in the series. **MinIO at 852 instances has 0 anonymous-bucket-listable hosts**, operators DID configure auth even on otherwise-exposed cloud VPSes. **Dify at 5 confirmed instances has 0 setup-wizard-takeover-possible**, every operator completed the initial admin setup before  found them.
 
 These are the same operator audience that leaks Qdrant / Milvus / MLflow at 100% unauth. They are not a different population. They are simply running platforms whose upstream maintainers shipped:
 
@@ -338,7 +338,7 @@ Eight discoveries about *how to do this kind of research at scale* (insights #6 
 
 8. **Auth-bypass-via-misconfiguration is missed by entry-point-only fingerprints (added 2026-05-06).** The compute-orchestration survey caught Apache Airflow instances configured with `AUTH_ROLE_PUBLIC = "Admin"` (anonymous public role enabled), the dashboard reachable at `/home` while `/login/` still serves the login template. A probe that only checks `/` (returns 302 to `/home`) reports "login-gated"; following the redirect surfaces the actual auth posture. **For application-tier surveys (RAG framework, LLM orchestration, BI dashboards, anything with a documented public-role config), entry-point fingerprints are insufficient. The probe must follow redirects and check for authenticated-state-only tokens (e.g., Airflow's `is_scheduler_running` meta tag) on the post-redirect target.** Eight of 36 confirmed-Airflow hosts in the 2026-05-06 sample were unauth-via-`/home` despite `/` returning a redirect that looked like a login flow. Captured in [`compute-orchestration-cloud-survey-2026-05.md`](compute-orchestration-cloud-survey-2026-05.md).
 
-9. **Cross-survey-correlation is a Shodan-free discovery vector with stacked-finding bias (added 2026-05-06).** When Shodan API is unavailable and masscan is operationally inappropriate (residential-IP exposure risk), the existing nuclide.db ledger of confirmed exposures is itself a discovery substrate: every IP NuClide has previously confirmed running an unauth Tier-A platform is a candidate for *additional* unauth platforms on adjacent ports. The 2026-05-06 Langfuse cross-probe ran across **723 ledger IPs × 5 ports (3000, 3001, 8080, 443, 80)** with a strict matcher (HTTP 200 + JSON `status:OK` + `version` field, Methodology Insight #6 conjunctive) and returned **1 confirmed Langfuse hit** at `135.181.252.66:3001` (`pharos.unistarthubs.gr`). Hit rate is low (0.14%, two orders of magnitude below dedicated tier-2 cloud survey rates), but every hit is *guaranteed to be a stacked exposure on an already-confirmed unauth-Tier-A operator*, a methodology bias toward operator-catastrophe findings over single-platform findings. The single 2026-05-06 hit demonstrated this: the operator already exposed Mem0/Milvus on the standard Milvus port; the Langfuse find chained into an Attu admin GUI + a leaked `CLIENT_SECRET` in the Pharos webapp's `env.js` for a four-platform AI stack catastrophe. **The default-port-only sweep found 0 hits**; only the alt-port expansion (3001, 8080) found the operator-shifted instance, a corollary insight: cross-survey-correlation probes must always sweep alt-ports for platforms whose defaults conflict with another popular platform on the same host. Captured in [`langfuse-cross-survey-2026-05-06.md`](langfuse-cross-survey-2026-05-06.md).
+9. **Cross-survey-correlation is a Shodan-free discovery vector with stacked-finding bias (added 2026-05-06).** When Shodan API is unavailable and masscan is operationally inappropriate (residential-IP exposure risk), the existing .db ledger of confirmed exposures is itself a discovery substrate: every IP  has previously confirmed running an unauth Tier-A platform is a candidate for *additional* unauth platforms on adjacent ports. The 2026-05-06 Langfuse cross-probe ran across **723 ledger IPs × 5 ports (3000, 3001, 8080, 443, 80)** with a strict matcher (HTTP 200 + JSON `status:OK` + `version` field, Methodology Insight #6 conjunctive) and returned **1 confirmed Langfuse hit** at `135.181.252.66:3001` (`pharos.unistarthubs.gr`). Hit rate is low (0.14%, two orders of magnitude below dedicated tier-2 cloud survey rates), but every hit is *guaranteed to be a stacked exposure on an already-confirmed unauth-Tier-A operator*, a methodology bias toward operator-catastrophe findings over single-platform findings. The single 2026-05-06 hit demonstrated this: the operator already exposed Mem0/Milvus on the standard Milvus port; the Langfuse find chained into an Attu admin GUI + a leaked `CLIENT_SECRET` in the Pharos webapp's `env.js` for a four-platform AI stack catastrophe. **The default-port-only sweep found 0 hits**; only the alt-port expansion (3001, 8080) found the operator-shifted instance, a corollary insight: cross-survey-correlation probes must always sweep alt-ports for platforms whose defaults conflict with another popular platform on the same host. Captured in [`langfuse-cross-survey-2026-05-06.md`](langfuse-cross-survey-2026-05-06.md).
 
 10. **Research/lab-instrument vendors ship web stacks with auth-disabled defaults, vendor-template means population-scale exposure (added 2026-05-06).** A token-disabled-Jupyter Shodan dork on 2026-05-06 surfaced 7 candidate hosts; of the 2 reachable from the research VPN, **both were already compromised** (100% rate at this small sample). One, `134.60.110.66` (`labdevice.medizin.uni-ulm.de`), turned out to be a **Cortical Labs CL1** "biological computer" (lab-grown neurons on a Xilinx Zynq microelectrode array, $35K research instrument) at Universität Ulm Medical Faculty. The CL1's default v0.28.3 deployment ships with: (a) the operational web dashboard reachable on port 80 with **no authentication** (`/dashboard`, `/applications/{symbol-classification,pong}/`, `/recordings`, `/system`, `/jupyter/`); (b) the embedded Jupyter Notebook on port 8888 with **token disabled** by default; (c) `Support VPN: Enabled` and `Admin Access: Enabled` toggles defaulted ON, exposing a vendor-administered remote-access channel. A Hilix-class IoT botnet exploited the unauth Jupyter on 2026-04-29 → reverse shell to `172.233.96.208:3053` (Akamai/Linode US) → 24h of attacker presence → cryptominer setup in progress + Cortical Labs support-VPN public config exfiltrated via attacker `sudo /usr/sbin/support-vpn-show-public-config`. **The compromise vector isn't the operator's fault, it's the vendor's choice to ship the default systemd unit with `jupyter notebook --no-token`.** Whatever fraction of Cortical Labs' global CL1 customer fleet has the device on a public port is, by vendor-template policy, automatically internet-reachable shell-equivalent. The pattern almost certainly recurs across other research-instrument vendors with embedded Linux + web management, neuroscience MEAs, bioreactors, mass-spec controllers, microscopy automation, edge-AI inference appliances. **Population-scale exposure is the default-config decision of the vendor, not a misconfiguration by the operator.** Disclosure routed to `support@corticallabs.com` for fleet audit + firmware push. Captured in [`multi-hilix-jupyter-campaign-2026-05-06.md`](multi-hilix-jupyter-campaign-2026-05-06.md).
 
@@ -365,18 +365,18 @@ For regulators and security researchers:
 
 ---
 
-## NuClide Pipeline
+##  Pipeline
 
 All 13 surveys were produced by the same pipeline:
 
 1. **Discovery**, `masscan` of cloud /16 ranges on each platform's default port (or reuse of prior port-class hits where a port serves multiple platforms)
 2. **Fingerprint**, Python multi-thread probe identifying each platform via its distinctive endpoint shape (e.g., `/v2/vectordb/collections/list`, `/api/version`, `/_stcore/host-config`)
 3. **Enumeration**, schema describe, model list, collection list, version, model registry, metadata only, no payload exfil where avoidable
-4. **Ingest**, VisorLog (`data/nuclide.db`) for centralized findings tracking
+4. **Ingest**, VisorLog (`data/.db`) for centralized findings tracking
 5. **Score**, VisorScuba OPA-policy compliance scoring
 6. **Adversarial corpus**, VisorCorpus seeds for downstream RAG/LLM red-team validation by affected operators
 
-Tooling: NuClide Research/{VisorPlus,VisorSD,VisorLog,VisorScuba,VisorCorpus}
+Tooling: /{VisorPlus,VisorSD,VisorLog,VisorScuba,VisorCorpus}
 
 ---
 
@@ -448,7 +448,7 @@ The 2026-05 series covers vector DBs, inference servers, MLOps tracking, image g
 - **Robotics:** ROS interfaces (port 11311)
 - **Edge AI:** TensorRT inference servers, Jetson endpoints
 
-The pattern across all of these is identical to what the 2026-05 series has established: **frameworks that ship without auth-on-default deploy without auth at population scale.** Adding any of these to the survey series is incremental confirmation of the auth-on-default thesis with new platform classes. NuClide will continue to expand the survey horizon as time and scope permit.
+The pattern across all of these is identical to what the 2026-05 series has established: **frameworks that ship without auth-on-default deploy without auth at population scale.** Adding any of these to the survey series is incremental confirmation of the auth-on-default thesis with new platform classes.  will continue to expand the survey horizon as time and scope permit.
 
 ---
 
@@ -499,7 +499,7 @@ The negative findings are useful in two ways:
 | **Embedding Services** | **818 unique IPs (Shodan-driven) / 93 live-confirmed (asyncio probe, 440-IP priority subset)** | **144 Shodan queries (3 rounds) surfaced 818 unique IPs; 667 with ≥1 open port active. Asyncio probe on 440 priority IPs (AI-tagged + port-7997 + EU/US) confirmed 93 services live (21% live rate): 41 OpenAI-compat gateways, 28 LocalAI, 19 Ollama, 3 custom Embedding APIs, 2 Jina. Shodan-dark pattern confirmed: zero infinity-embedding live on port 7997 across 440 IPs — Shodan visibility ≠ population scale.** **Two HIGH-severity disclosure findings:** (1) **Klinikken.ai** (Danish medical AI) — FastAPI proxy at 37.27.185.38:8001 bypasses Qdrant API key (32 collections, full CRUD unauth, Danish GDPR/Databeskyttelsesloven, CVR 45899071). (2) **GraphRAG Process Safety** (Scaleway FR, 51.159.4.28) — full multi-stack auth-off (orchestrator + Ollama qwen2.5:7b + Qdrant + WebUI + MinIO), French industrial process safety knowledge corpus, operator path leaked in JSON root. 307/818 IPs carry known CVEs; CVE-2023-44487 on 209 hosts enables auth-free DoS. Aliyun 28% of pool. **Methodology pivot**: aimap Phase 2 hung on slow-trickle-response hosts despite 1s timeout (Go HTTP client cancellation didn't fire reliably); replaced with focused asyncio probe (1.5s connect / 2s read / 10s host-deadline) — finished 6,160 probes in ~3 min vs aimap's 10+ min hang. | [embedding-services-cloud-survey-2026-05.md](embedding-services-cloud-survey-2026-05.md) |
 | **Service mesh / cluster introspection planes** | **17 findings (console tier, 2026-05-31)** | **New class: planes with NO authentication layer. Kiali anonymous strategy 4/4 reachable = full namespace topology unauth via /kiali/api/namespaces (one host 479 ns = a Brazilian AI chatbot platform's PR-review surface, Censys Sao Paulo / GCP). Cilium Hubble metrics unauth; Hubble UI 9 exposed (CVE-2025-23047 CORS on one). The in-band discriminator: kube-apiserver RBAC held 3/3 under identical exposure, so control TYPE (network-position vs authentication) predicts the outcome, not operator skill or cloud. Hubble Relay 4245 flow-tap internal 0/12 = console tier exposed, data-plane tier internal. Insight #71.** | [service-mesh-survey-2026-05-31.md](service-mesh-survey-2026-05-31.md) |
 
-Total ingested into `data/nuclide.db`: **548 open findings** across all severity tiers, all with VisorScuba compliance scoring.
+Total ingested into `data/.db`: **548 open findings** across all severity tiers, all with VisorScuba compliance scoring.
 
 ---
 

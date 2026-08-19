@@ -1,5 +1,5 @@
 CHROMA CVE-2026-45829 MASS-EXPLOITATION CAMPAIGN — FINDINGS BREAKDOWN
-2026-06-08 · NuClide Research
+2026-06-08 · 
 
 ================================================================================
 CORPUS
@@ -100,7 +100,7 @@ CLEAN-OPEN DISCLOSURE CANDIDATES (top by collection count — IPs redacted pendi
      7  [REDACTED]  Azure        ai_knowledge_base + qre_D001_<uuid>  (Azure dev/staging)
      7  [REDACTED]  Aliyun CN    knowledge_point_collection_* + teaching_plan_*_kp  (education)
 
-(Full host list with IPs retained in NuClide private records pending operator
+(Full host list with IPs retained in  private records pending operator
 notification. RealTruck and similarly-identifiable brand attribution is in the
 public record because the collection-name pattern is itself the disclosure tell;
 the IP is still withheld until contact has been made.)

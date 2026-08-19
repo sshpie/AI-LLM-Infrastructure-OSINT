@@ -46,7 +46,7 @@ Orchestrator pattern. Stage-0 Shodan harvest produced seven platform IP lists. A
 | `probe.py` (custom) | Stage-1 confirm-live: asyncio HTTP prober across all seven lists | 150-concurrent semaphore, 5s timeout, per-platform confirm string + status<400 fallback, dedupe by IP |
 | aimap v1.0 | Stage-2 port + AI-service fingerprint on NATS deep set | Run on `141.148.212.34`, `176.31.46.240`, `98.67.138.91`. 5 open ports on the ParamWallet host |
 | NATS protocol probe (custom) | Raw `CONNECT` handshake + stream/consumer listing | Confirms whether `auth_required` advertised in `/varz` is enforced on the wire |
-| VisorLog | Ledger ingest → nuclide.db | CouchDB telecom finding + ParamWallet NATS finding recorded |
+| VisorLog | Ledger ingest → .db | CouchDB telecom finding + ParamWallet NATS finding recorded |
 | VisorAgent | Active LLM exploitation | Not run — ethical-stop. Survey set, never controlled targets |
 | VisorHollow | Windows process-injection benchmark | Not run — Windows-only binary, cannot execute on this host |
 
@@ -396,4 +396,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · 2026-05-09 storage-platform survey*
+*Prepared by  ( + Claude Sonnet 4.6) · 2026-05-09 storage-platform survey*

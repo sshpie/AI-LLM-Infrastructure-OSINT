@@ -4,7 +4,7 @@ category: 29-workflow-orchestration
 target: Argo Workflows (global Shodan population)
 date: 2026-05-27
 status: updated-2026-05-28
-author: NuClide Research
+author: 
 ---
 
 # Argo Workflows: K8s-Native Workflow Orchestration Survey
@@ -174,7 +174,7 @@ ASSESSMENT CHAIN — Argo Workflows (Category 29)
 [x] VisorGraph    — 0 graph nodes/edges (raw IPs, no domain seeds; passive max-iter hit)
 [x] aimap-profile — 43.163.57.197 → ACEVILLEPTELTD-SG (Aceville Singapore)
 [—] JS-bundle     — N/A: SPA confirmed but all API routes 401; extraction would yield no auth bypass
-[x] VisorLog      — 114 events ingested to nuclide.db (67 INFO, 1 MEDIUM CORS)
+[x] VisorLog      — 114 events ingested to .db (67 INFO, 1 MEDIUM CORS)
 [x] VisorScuba    — 0 violations (auth-enforced population; no AI.C1 triggers)
 [x] BARE          — No MSF coverage for Argo (top score 0.475); CVE-exposed finding matched
                     n8n_workflow_expression_rce (0.559) + apache_airflow_dag_rce (0.547)

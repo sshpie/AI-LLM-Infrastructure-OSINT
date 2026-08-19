@@ -10,7 +10,7 @@ methodology: re-running the productized fingerprints (Phase 3) against the origi
 
 # VisorBishop loop-iteration #1 · 2026-05-11
 
-NuClide Research · 2026-05-11
+ · 2026-05-11
 
 ## Summary
 

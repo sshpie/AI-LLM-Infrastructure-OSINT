@@ -97,4 +97,4 @@ Codified into menlohunt, commit `63b8bf1` (2026-05-21):
 
 ---
 
-*Codified by Nuclide Research (Nicholas Kloster + Claude) 2026-05-21 from the global university LLM-exposure map service-verification pass. Methodology per `~/.claude/nuclide-internal/METHODOLOGY.md`.*
+*Codified by  ( + Claude) 2026-05-21 from the global university LLM-exposure map service-verification pass. Methodology per `~/.claude/-internal/METHODOLOGY.md`.*

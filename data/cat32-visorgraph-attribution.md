@@ -1,5 +1,5 @@
 # Cat-32: VisorGraph Cert-Pivot & Operator Attribution
-NuClide Research | 2026-06-01
+ | 2026-06-01
 
 ## Method
 

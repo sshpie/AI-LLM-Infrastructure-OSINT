@@ -68,4 +68,4 @@ Broad: 211, 212, 221, 411, 421, 422, 431, 441, 451, 461, 511, 521, 531, 541, 611
 
 ## Research-program relevance
 
-Tangentially relevant. The role's discipline of leveraging external best practices (A0037) and tracking emerging tech for exploitation (K0309) maps onto NuClide's own posture — our published case studies and codified insights inform exactly the policy artifacts this role produces. When NuClide findings reach a recipient organization, the Cyber Policy Planner is the role that translates them into updated SOPs, threat-modeling guidance, and procurement language. Not invoked in active assessment chains.
+Tangentially relevant. The role's discipline of leveraging external best practices (A0037) and tracking emerging tech for exploitation (K0309) maps onto 's own posture — our published case studies and codified insights inform exactly the policy artifacts this role produces. When  findings reach a recipient organization, the Cyber Policy Planner is the role that translates them into updated SOPs, threat-modeling guidance, and procurement language. Not invoked in active assessment chains.

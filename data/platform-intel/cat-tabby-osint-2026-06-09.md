@@ -3,14 +3,14 @@ type: pre-assessment-intelligence
 category: cat-tabby
 slug: cat-tabby-stragglers
 date: 2026-06-09
-researcher: nuclide
+researcher: 
 stage: -1
 status: complete
 ---
 
 # Cat-Tabby — Code-Assistant Stragglers — Stage -1 Master OSINT
 
-_NuClide Research · 2026-06-09 · Stage -1 pre-assessment platform intelligence_
+_ · 2026-06-09 · Stage -1 pre-assessment platform intelligence_
 
 Four parallel research squads ran the methodology §2 Stage -1 brief in parallel — one per platform. This doc synthesizes them into the master intelligence brief that drives Stage 0 dork selection, Stage 0d fingerprint scaffolding, and Stage 3v verification primitive choice.
 
@@ -63,7 +63,7 @@ The scanner step is **standing and non-skippable** after every Shodan/Censys har
 - Tabby identity: `GET /v1/health` returns the unique HealthState JSON shape `{"model":..., "chat_model":..., "device":..., "webserver":...}` — high-confidence-low-FP identity. This is the **marker probe** the methodology requires (Insight #6 conjunctive marker-anchored matchers).
 - Sourcegraph identity: `GET /.api/graphql` schema introspection enabled by default (Sourcegraph treats it as a "debug API"). Pure metadata leak — restraint-clean. The single safe verify-rung probe: `POST {"query":"{ site { productVersion } }"}` returns semver unauth on most installs.
 
-Shadow ports (Insight #12 IP-direct-shadow): per Devstral cat-coherence finding, when an exposed Ollama on 11434 advertises `devstral` on a /32, Tabby/OpenHands on the same host (ports 8080, 3000) is a strong predictor — prioritize `11434, 8000, 8080, 3000, 4000` on every confirmed Tabby/Cody host. Standard NuClide IP-direct shadow set (5432, 6379, 9000, 9090, 3000, 5601, 8025) still applies.
+Shadow ports (Insight #12 IP-direct-shadow): per Devstral cat-coherence finding, when an exposed Ollama on 11434 advertises `devstral` on a /32, Tabby/OpenHands on the same host (ports 8080, 3000) is a strong predictor — prioritize `11434, 8000, 8080, 3000, 4000` on every confirmed Tabby/Cody host. Standard  IP-direct shadow set (5432, 6379, 9000, 9090, 3000, 5601, 8025) still applies.
 
 ## Stage 0d aimap fingerprint debt
 
@@ -82,12 +82,12 @@ GraphQL mutation requests are state-changing — all GraphQL traffic restricted 
 
 ## CVE / prior-research baseline
 
-| Platform | Published CVEs | NuClide research-gap finding |
+| Platform | Published CVEs | -gap finding |
 |---|---|---|
 | Tabby | **0** CVEs, **0** GHSAs on TabbyML/tabby | No aimap FP, no nuclei templates, no prior public Shodan/Censys census. Greenfield. **Do not cross-attribute Eugeny/tabby terminal CVEs (CVE-2024-55950, CVE-2024-48460) — different product.** |
 | Continue.dev | CVE-2026-8770 (lsTool path traversal, local AV) | CLI-only verdict means a Continue JSON-RPC channel ever reachable across the network is itself the finding (CVE-2026-8770 becomes remotely exploitable). |
 | Sourcegraph + Cody | CVE-2022-23642 + scattered. **2023-08 admin-token leak → LLM-billing-theft chain** is the canonical Cody-era class. No CVE issued, but the impact class (leaked-admin → free LLM proxy off victim's billing) is the unauth-on-misconfig hunt for Stage 3v. | The `auth.public:true` cohort + first-admin-race-window cohort have no prior public census. |
-| Devstral | CVEs inherited from serving stack (Ollama CVE-2024-37032 / 39719–22, vLLM CVEs, llama.cpp CVEs). | No prior NuClide-style population survey of *which model families* are loaded across exposed Ollama/vLLM. Devstral is the clean test case (unique vendor string, stable id). |
+| Devstral | CVEs inherited from serving stack (Ollama CVE-2024-37032 / 39719–22, vLLM CVEs, llama.cpp CVEs). | No prior -style population survey of *which model families* are loaded across exposed Ollama/vLLM. Devstral is the clean test case (unique vendor string, stable id). |
 
 ## Insight candidates surfaced at Stage -1
 

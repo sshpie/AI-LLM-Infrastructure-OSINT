@@ -1,6 +1,6 @@
 # Insight #96 — Paired-Probe + Sandbox-MITM Check Are Stage 0 PREREQUISITES Under Non-Local Routing (Candidate)
 
-_NuClide Research · 2026-06-09 · Origin: Cat-Tabby + Devstral re-validation, Stage 0 VPN-exit response-rewriting contamination._
+_ · 2026-06-09 · Origin: Cat-Tabby + Devstral re-validation, Stage 0 VPN-exit response-rewriting contamination._
 
 ---
 

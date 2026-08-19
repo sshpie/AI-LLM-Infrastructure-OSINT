@@ -14,7 +14,7 @@
 
 Map exposed LLM infrastructure at every university worldwide. Scope: 10,224 institutions across 202 countries (Hipo world-universities dataset). The framing is the hunt, not a checklist: find what is actually reachable and visible, produce a public artifact from the research, and build a pipeline that can be resumed.
 
-The session built a full pipeline from scratch, completed Lane A (academic-TLD harvest + verify + attribute), started Lane B (per-institution domain sweep for plain-ccTLD universities not caught by `hostname:.edu/.ac.*`), and deployed a live 3D globe at `nuclide-research.com/map/universities/`.
+The session built a full pipeline from scratch, completed Lane A (academic-TLD harvest + verify + attribute), started Lane B (per-institution domain sweep for plain-ccTLD universities not caught by `hostname:.edu/.ac.*`), and deployed a live 3D globe at `/map/universities/`.
 
 ### Scope and Constraints
 
@@ -109,7 +109,7 @@ Public-feed anonymizer strips all operator-identifying data before publishing. L
 | ~22:30 | Globe.gl Astro page built in portfolio repo | 3D globe with country dropdown, pause-rotation, click-dot detail |
 | ~22:40 | Astro build failure — insight-38 unquoted YAML colon | Identified parse error in OSINT submodule content |
 | ~22:45 | c7590ac: quote insight-38 title field | Portfolio site build restored |
-| ~23:00 | Globe deployed at nuclide-research.com/map/universities/ | Live |
+| ~23:00 | Globe deployed at /map/universities/ | Live |
 | ~23:05 | Lane B started: per-institution sweep | ~2,200/10,224 at session pause; resumable via STATE.md |
 | ~23:15 | STATE.md written with full resume instructions | Session closed with documented continuation point |
 
@@ -292,4 +292,4 @@ RESPONSE:
 
 ---
 
-*Prepared by NuClide Research (Nicholas Kloster + Claude Sonnet 4.6) · Session 26 · 2026-05-19*
+*Prepared by  ( + Claude Sonnet 4.6) · Session 26 · 2026-05-19*

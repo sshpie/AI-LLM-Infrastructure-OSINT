@@ -13,8 +13,8 @@ Critical findings on `34.60.153.0` (VeroTX, Inc., AI procurement platform).
 | `raw/cap-*.http` | Full HTTP responses with server-asserted `Date:` headers + `X-Kong-Request-Id` / `X-Request-Id` / `X-Trace-Id` IDs that exist in the operator's own logs. |
 | `raw/tls-*.txt` | TLS handshake transcripts with full cert chain (independently verifiable via crt.sh CT logs). |
 | `raw/evidence-*.json` | Parsed JSON responses from Kong admin API + Keycloak OIDC discovery + FastAPI health/openapi. |
-| `raw/visorgraph-*.json` | NuClide VisorGraph passive-recon graph nodes (cert pivots + service nodes). |
-| `raw/bare-input.json` / `raw/bare-output.json` | NuClide BARE semantic exploit-module match (corpus 3,904 Metasploit modules). |
+| `raw/visorgraph-*.json` |  VisorGraph passive-recon graph nodes (cert pivots + service nodes). |
+| `raw/bare-input.json` / `raw/bare-output.json` |  BARE semantic exploit-module match (corpus 3,904 Metasploit modules). |
 
 ## Witness chain — five independent timestamp witnesses
 
@@ -59,6 +59,6 @@ If both pass, the bundle is authentic and the timestamps are real. If either fai
 
 ## Researcher
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 ICS/OT specialist; CISA disclosures: CVE-2025-4364, ICSA-25-140-11.

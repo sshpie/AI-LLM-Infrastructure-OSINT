@@ -10,7 +10,7 @@ methodology: port-first discovery (uvicorn:8081) then aimap fingerprint classifi
 
 # AutoGen Studio: agent-platform tier cloud survey 2026-05-14
 
-NuClide Research
+
 
 ## Summary
 
@@ -139,7 +139,7 @@ The cert-pivot attributed 4 of the 9 hosts to identifiable operators:
   same credentials as production.
 - **`green-amazon.us` operator** (`149.28.78.116`), the `.us` domain
   with `amazon`/`tiktok` subdomains matches the Chinese-commercial-
-  operator non-tell documented in prior NuClide work (a `.us` TLD forces
+  operator non-tell documented in prior  work (a `.us` TLD forces
   WHOIS exposure that the operator's home-jurisdiction TLD would not).
 - **VBarco** (`45.190.20.91`), Brazilian company, `eta.` subdomain.
 - **NeuroGen** (`50.116.8.185`), the highest-impact host. The cert

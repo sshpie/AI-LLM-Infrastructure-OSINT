@@ -1,17 +1,17 @@
 ---
-title: "Samples, NuClide Research"
+title: "Samples, "
 date: 2026-05-07
 ---
 
 # Samples
 
-Public malware samples submitted by NuClide to industry sample-sharing platforms (MalwareBazaar + VirusTotal). Reporter handle on submissions: `nuclide`.
+Public malware samples submitted by  to industry sample-sharing platforms (MalwareBazaar + VirusTotal). Reporter handle on submissions: ``.
 
 This directory is the index layer. Each sample has a standalone permalink page with full IOCs, attribution context, and links to the originating incident case study.
 
 ## Public availability policy
 
-NuClide submits novel samples to public sample-sharing platforms after:
+ submits novel samples to public sample-sharing platforms after:
 
 1. **Confirming novelty**, the sample is not already in VirusTotal, MalwareBazaar, AlienVault OTX, or GitHub-indexed code.
 2. **Verifying it's malware**, not legitimate operator software (admin panels, AI agent state files, vendor management tools).
@@ -30,4 +30,4 @@ Live malware binaries are **not** committed to this repo (GitHub AUP), but the h
 
 Samples are retrievable from MalwareBazaar with a free `Auth-Key` from [auth.abuse.ch](https://auth.abuse.ch/), or from VirusTotal with an API tier that permits downloads.
 
-For direct researcher-to-researcher transfer (vendor fleet-audit teams, AV/EDR vendors, academic security research), email `nicholas@nuclide-research.com`.
+For direct researcher-to-researcher transfer (vendor fleet-audit teams, AV/EDR vendors, academic security research), email ``.

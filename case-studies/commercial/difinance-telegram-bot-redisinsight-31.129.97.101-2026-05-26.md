@@ -160,4 +160,4 @@ Chain-B pattern: RedisInsight credential leak grants Redis access. The difinance
 - crt.sh: bot.difinance.online + difinance.online
 - WHOIS: Beget LLC registrar, RU nameservers confirmed
 
-**Ledger entry:** `nuclide.db` — MEDIUM, tags: telegram-bot,FSM,aiogram,DeFi,celery,redisinsight,chain-b,RU
+**Ledger entry:** `.db` — MEDIUM, tags: telegram-bot,FSM,aiogram,DeFi,celery,redisinsight,chain-b,RU

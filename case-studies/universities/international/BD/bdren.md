@@ -1,6 +1,6 @@
 # Bangladesh Research and Education Network (BdREN): Unauthenticated Inference Node
 
-_NuClide Research · 2026-05-02_
+_ · 2026-05-02_
 
 ---
 

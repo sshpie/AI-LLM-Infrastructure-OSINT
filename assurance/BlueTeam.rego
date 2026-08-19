@@ -1,8 +1,8 @@
-package nuclide_ai_baseline
+package _ai_baseline
 
 import future.keywords.in
 
-# NuClide Blue-Team LLM Orchestration Hardening Baseline v1.0
+#  Blue-Team LLM Orchestration Hardening Baseline v1.0
 # CC0 — public domain, freely reusable.
 #
 # 71 BLUE-* controls across 13 domains. 14 are always-applicable auto+telemetry
@@ -20,7 +20,7 @@ import future.keywords.in
 #   is_indexed, authenticated, service_class,
 #   no_hitl_approval, no_rate_limit, missing_attribution, no_runtime_detection
 #
-# Scoring contribution to nuclide_ai_baseline package:
+# Scoring contribution to _ai_baseline package:
 #   deny  → Critical (-3 per violation on the AI baseline score)
 #   warn  → High     (-1 per violation)
 #   info  → tracked, not scored

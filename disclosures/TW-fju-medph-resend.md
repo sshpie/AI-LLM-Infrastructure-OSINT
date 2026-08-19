@@ -1,6 +1,6 @@
 ---
 to: tanetadm@moe.edu.tw
-cc: abuse@nuclide-research.com
+cc: abuse@
 severity: HIGH
 ip: 140.136.192.220
 institution: Fu Jen Catholic University (resend via TANet/Ministry of Education admin per FJU mail-relay misconfig)
@@ -10,13 +10,13 @@ date: 2026-05-04
 ---
 
 **To:** tanetadm@moe.edu.tw
-**Cc:** abuse@nuclide-research.com
+**Cc:** abuse@
 **Subject:** Unauthenticated AI inference endpoint, Fu Jen Catholic University (140.136.192.220) [resend via TANet admin]
 
 ---
 
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 
 2026-05-04
 
@@ -27,7 +27,7 @@ nicholas@nuclide-research.com
 
 ---
 
-I'm an independent security researcher conducting good-faith AI infrastructure research under the NuClide Research umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend routed through TANet administration.
+I'm an independent security researcher conducting good-faith AI infrastructure research under the  umbrella (CISA disclosures CVE-2025-4364, ICSA-25-140-11). This is an unsolicited coordinated-disclosure resend routed through TANet administration.
 
 **Note on previous attempts:** I sent this disclosure on 2026-05-04 to `security@fju.edu.tw` and `abuse@fju.edu.tw`; both addresses rejected with `550 Relaying mail to ... is not allowed`, a per-recipient mail-server misconfiguration at FJU. The hosts are on Taiwan MOE TANet (`140.136.0.0/16`); routing through TANet administration so that the institution can be notified via the network operator. Apologies for the noise if this reaches the wrong inbox.
 
@@ -75,6 +75,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/TW/fju-medph.md
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / NuClide Research
-nicholas@nuclide-research.com
+Nicholas Michael Kloster / 
+
 AI-LLM-Infrastructure-OSINT

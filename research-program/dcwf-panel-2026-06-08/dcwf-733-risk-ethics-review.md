@@ -1,6 +1,6 @@
 # Risk & Ethics Review: VictoriaMetrics Survey 2026-06-08
 
-_DCWF AI Work Role 733 audit · NuClide Research panel_
+_DCWF AI Work Role 733 audit ·  panel_
 
 ## 1. Sensitivity Classification of Leaked Targets
 

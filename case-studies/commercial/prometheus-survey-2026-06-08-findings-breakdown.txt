@@ -1,5 +1,5 @@
 PROMETHEUS POPULATION SURVEY — FINDINGS BREAKDOWN
-2026-06-08 · NuClide Research
+2026-06-08 · 
 Falsifier test for the VictoriaMetrics findings (Insights #88 + #89)
 
 ================================================================================

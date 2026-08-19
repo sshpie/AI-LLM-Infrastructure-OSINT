@@ -6,13 +6,13 @@ survey_date: 2026-06-01
 status: complete
 findings: 87 confirmed-unauth (Envoy admin) + 1,699 surface-open across 5 platforms
 verification_rung: inner-A / outer-1 (banner-confirmed unauth on Envoy and Kong Admin; default-cred probe Depth-A negative on one-api/new-api; per-platform host samples, no population-wide active probe)
-ledger: nuclide.db (visorlog) source tag survey-ai-gateways-2026-06-01, 1,786 events, 87 critical / 618 high / 1,081 medium
+ledger: .db (visorlog) source tag survey-ai-gateways-2026-06-01, 1,786 events, 87 critical / 618 high / 1,081 medium
 insights: 74, 75
 ---
 
 # AI Gateways Population Survey: Cat-32 (2026-06-01)
 
-_NuClide Research · 2026-06-01 (closed 2026-06-02)_
+_ · 2026-06-01 (closed 2026-06-02)_
 
 ---
 
@@ -155,7 +155,7 @@ The new-api population is the scale headline. 13,456 instances, mostly Chinese-r
 | aimap v1.9.46 | fingerprint | 4 new gateway fingerprints (Kong Admin, Bifrost, Portkey, Envoy Admin) |
 | default-cred probe | verify | `cat32-defaultcred-probe.py`, 0/40 one-api and new-api |
 | VisorGraph | attribution | 0 graph nodes (HTTP-only admin ports, Insight #75); fell back to Shodan dossiers |
-| VisorLog | ledger | 1,786 events ingested to nuclide.db after severity correction |
+| VisorLog | ledger | 1,786 events ingested to .db after severity correction |
 
 We patched VisorGraph during the survey to expose a `-max-iter` flag. The engine capped at 50 fixed-point iterations and truncated a 187-seed run. The patch is committed. The cert-pivot still returned 0 here for the HTTP-only-port reason, not the iteration cap.
 

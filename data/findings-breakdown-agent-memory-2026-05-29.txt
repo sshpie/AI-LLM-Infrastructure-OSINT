@@ -1,5 +1,5 @@
 FINDINGS BREAKDOWN — Agent-Memory Layer pre-assessment
-NuClide Research · 2026-05-29
+ · 2026-05-29
 Session type: pre-assessment + methodology formalization. Held at inner-A / outer-0 (no scan).
 
 ========================================================================
@@ -39,7 +39,7 @@ NONE verified live. No population claim made (outer 0 by choice).
 
 METHODOLOGY PRODUCT
 ------------------------------------------------------------------------
-  Insight #68: verification-rung GRID (Depth A/B x Breadth 0/1/2) + NuClide
+  Insight #68: verification-rung GRID (Depth A/B x Breadth 0/1/2) + 
   restraint ethic (high-depth/low-breadth by design). Wired into canon, repo
   Insight file, finding template, Zep finding.
 

@@ -6,7 +6,7 @@ Per case-studies/commercial/comfyui-cloud-survey-2026-05.md:
   - AS63949 honeypot salt: "wW0sffoqsk.EM"
   - 5-second timeout, read-only metadata only
 
-NuClide restraint: names + counts only. No /history reads, no /prompt submits,
+ restraint: names + counts only. No /history reads, no /prompt submits,
 no /upload/image, no /view/<file> downloads.
 """
 import concurrent.futures as cf
@@ -19,7 +19,7 @@ from pathlib import Path
 
 HONEYPOT_SALT = "wW0sffoqsk.EM"
 TIMEOUT = 6
-HEADERS = {"User-Agent": "NuClide-Research/comfyui-survey-2026-06-08"}
+HEADERS = {"User-Agent": "/comfyui-survey-2026-06-08"}
 
 def probe(ip: str) -> dict:
     url = f"http://{ip}:8188/system_stats"
