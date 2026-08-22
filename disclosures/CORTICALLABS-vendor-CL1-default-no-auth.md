@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -123,6 +123,6 @@ Parallel disclosures already sent today:
  is available to coordinate with Cortical Labs security/engineering for the fleet-wide audit, share the full forensic evidence pack (binary samples, notebook contents, attacker bash history, kernel state), or assist with customer notifications. The CL1 platform is genuinely interesting work and the goal here is harm-mitigation, not embarrassment, happy to coordinate the public disclosure timeline if you have a preferred coordinated-disclosure window.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

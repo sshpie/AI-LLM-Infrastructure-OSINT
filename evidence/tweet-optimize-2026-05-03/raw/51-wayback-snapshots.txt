@@ -27,7 +27,7 @@ deletion of the original content):
     https://web.archive.org/web/20260503191114/https://tweet-optimize.com/contact
 
    case study (full empirical writeup):
-    https://web.archive.org/web/20260503190148/https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-tweet-optimize-facial-recognition.md
+    https://web.archive.org/web/20260503190148/https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-tweet-optimize-facial-recognition.md
 
 These snapshots provide third-party witnessing of:
   - The operator's marketing copy at time of writing (text/account-stats only,

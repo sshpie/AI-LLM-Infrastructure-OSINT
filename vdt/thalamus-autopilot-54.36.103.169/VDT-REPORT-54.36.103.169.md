@@ -2,7 +2,7 @@
 
 **Target:** Thalamus ROS 2 Autopilot Mission Backend  
 **Assessment Date:** 2026-07-09  
-**Operator:**  (Nick Kloster)  
+**Operator:**  (Nick sshpie)  
 **VDT Context:** Authorized penetration testing (defensive training data collection)
 
 ---

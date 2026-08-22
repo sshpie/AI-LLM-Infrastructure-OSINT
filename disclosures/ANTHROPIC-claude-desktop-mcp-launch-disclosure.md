@@ -15,7 +15,7 @@ date: 2026-05-07
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-07
@@ -112,6 +112,6 @@ Happy to walk through the unclaimed-name corpus, share the npm-registry probe sc
 
 Regards,
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

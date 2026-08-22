@@ -338,7 +338,7 @@ Disclosure send pipeline: `~/.config//` Gmail-API tokens + `send_drafts_api.py` 
 
 ## Tool-Update Tracker
 
-- **aimap v1.9.4**: released this session at github.com/Nicholas-Kloster/aimap (commit `a888100`): `llama.cpp server` fingerprint + parallel PHASE 3 deep-enum. The PHASE-3-was-single-threaded discovery directly drove the pivot to `fast_enum.py` here; aimap is now usable at population scale.
+- **aimap v1.9.4**: released this session at github.com/sshpie/aimap (commit `a888100`): `llama.cpp server` fingerprint + parallel PHASE 3 deep-enum. The PHASE-3-was-single-threaded discovery directly drove the pivot to `fast_enum.py` here; aimap is now usable at population scale.
 
 ---
 
@@ -423,7 +423,7 @@ Disclosure send pipeline: `~/.config//` Gmail-API tokens + `send_drafts_api.py` 
 [caveat] visorrag                                      → 401 embeddings
 [caveat] cortex                                        → schema mismatch
 [caveat] JS-bundle                                     → no Bishop input
-17. aimap v1.9.4 PUSHED to github.com/Nicholas-Kloster/aimap  (a888100)
+17. aimap v1.9.4 PUSHED to github.com/sshpie/aimap  (a888100)
 ```
 
 ---
@@ -435,4 +435,4 @@ Disclosure send pipeline: `~/.config//` Gmail-API tokens + `send_drafts_api.py` 
 - [`alpha-miner-194-233-71-223-2026-05-15.md`](alpha-miner-194-233-71-223-2026-05-15.md): the llama.cpp + proxy-colocation case that prompted the aimap v1.9.4 update
 - [`SYNTHESIS-2026-05.md`](SYNTHESIS-2026-05.md): cross-survey synthesis paper
 - `~/.claude/-internal/METHODOLOGY.md`: internal canonical methodology
-- aimap v1.9.4 release notes. Github.com/Nicholas-Kloster/aimap, commit `a888100`
+- aimap v1.9.4 release notes. github.com/sshpie/aimap, commit `a888100`

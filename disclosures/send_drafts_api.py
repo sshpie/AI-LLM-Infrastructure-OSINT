@@ -2,7 +2,7 @@
 """
 send_drafts_api.py — Send disclosure emails from _gmail_drafts.json via Gmail API (OAuth).
 
-Identity: From: Nicholas Michael Kloster <>
+Identity: From: sshpie Michael sshpie <>
 Auth: OAuth 2.0 client (Desktop app), token cached locally.
   Client secret: ~/.config//client_secret.json
   Token cache:   ~/.config//nicholas-token.json
@@ -37,7 +37,7 @@ CLIENT_SECRET = CONFIG_DIR / "client_secret.json"
 TOKEN_PATH = CONFIG_DIR / "nicholas-token.json"
 
 FROM_ADDR = ""
-FROM_NAME = "Nicholas Michael Kloster"
+FROM_NAME = "sshpie Michael sshpie"
 # gmail.compose covers BOTH drafts().create() and messages().send().
 # (gmail.send alone cannot create drafts.) Changing the scope invalidates
 # the cached token — the next run does a fresh OAuth consent.
@@ -164,7 +164,7 @@ def send_test(addr: str):
         "[ test] Gmail API verification",
         "This is a test message confirming the Gmail API path for "
         " is working.\n\n"
-        "If you see this with From: Nicholas Michael Kloster <>, "
+        "If you see this with From: sshpie Michael sshpie <>, "
         "the OAuth + send-as configuration is correct.\n\n"
         "Safe to delete.\n",
     )

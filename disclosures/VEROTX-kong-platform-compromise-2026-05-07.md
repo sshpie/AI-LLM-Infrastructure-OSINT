@@ -15,7 +15,7 @@ date: 2026-05-07
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-07
@@ -184,7 +184,7 @@ The bundle is held privately pending your remediation; we are not publishing it.
 P.S.. I noticed Rick Bradley wears one of Jerry Garcia's silk neckties (the Grateful Dead-licensed line). Good taste. If your team prefers an out-of-band channel for the evidence handoff, that's the visual recognition cue we can use; otherwise plain email at `` is fine.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 https://
 AI-LLM-Infrastructure-OSINT

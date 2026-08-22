@@ -15,7 +15,7 @@ date: 2026-05-04
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-04
@@ -90,6 +90,6 @@ Full case study:
 AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/AM/armenian-academy.md
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

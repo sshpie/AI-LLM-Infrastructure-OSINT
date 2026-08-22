@@ -15,7 +15,7 @@ date: 2026-05-25
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-25
@@ -85,7 +85,7 @@ If you cannot reach the service provider, Contabo GmbH (the hosting provider at 
 
  is an independent security research organization based in Denver, Colorado, USA. We publish responsible disclosures and work with organizations to resolve exposures. This notification is sent in good faith with no commercial intent. We have not shared or published this data and will not do so while remediation is in progress.
 
-Nicholas Michael Kloster
+sshpie Michael sshpie
 
 
 CISA CVE-2025-4364, ICSA-25-140-11

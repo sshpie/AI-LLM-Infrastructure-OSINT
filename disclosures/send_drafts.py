@@ -2,7 +2,7 @@
 """
 send_drafts.py — Send disclosure emails from _gmail_drafts.json via Gmail SMTP.
 
-Identity: From: Nicholas Michael Kloster <>
+Identity: From: sshpie Michael sshpie <>
 Auth: Gmail App Password (16-char) read from ~/.config//nicholas-gmail-app-password
 Transport: smtp.gmail.com:587 STARTTLS
 
@@ -31,7 +31,7 @@ SENT_LOG = ROOT / "_sent.json"
 APP_PW_PATH = Path.home() / ".config" / "" / "nicholas-gmail-app-password"
 
 FROM_ADDR = ""
-FROM_NAME = "Nicholas Michael Kloster"
+FROM_NAME = "sshpie Michael sshpie"
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 
@@ -140,7 +140,7 @@ def send_test(addr: str):
         "[ test] SMTP relay verification",
         "This is a test message confirming the Gmail SMTP relay for "
         " is working.\n\n"
-        "If you see this with From: Nicholas Michael Kloster <> "
+        "If you see this with From: sshpie Michael sshpie <> "
         "and no 'via gmail.com' indicator, the alias and app-password setup is correct.\n\n"
         "Safe to delete.\n",
     )

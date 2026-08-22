@@ -15,7 +15,7 @@ date: 2026-05-25
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-25
@@ -71,7 +71,7 @@ The admin data layer is behind a tenant account lookup — contacts, messages, e
 
 Love the project — multi-agent WhatsApp CRM is a real pain point for event networking. Hope this helps.
 
-Nicholas Michael Kloster
+sshpie Michael sshpie
 
 
 CISA CVE-2025-4364, ICSA-25-140-11

@@ -206,4 +206,4 @@ To codify: needs a second cross-platform observation (one more LLM-runtime with 
 - [`ollama-population-survey-2026-05-15.md`](ollama-population-survey-2026-05-15.md): the larger sibling survey of the day (Ollama, 16,473 confirmed)
 - [`alpha-miner-194-233-71-223-2026-05-15.md`](alpha-miner-194-233-71-223-2026-05-15.md): the single-host case that drove aimap v1.9.4
 - [`methodology/insight-24-operator-workload-visibility-via-api-show.md`](../../methodology/insight-24-operator-workload-visibility-via-api-show.md): the Ollama-side discovery axis this survey mirrors on llama.cpp
-- aimap v1.9.4 release at github.com/Nicholas-Kloster/aimap (commit `a888100`)
+- aimap v1.9.4 release at github.com/sshpie/aimap (commit `a888100`)

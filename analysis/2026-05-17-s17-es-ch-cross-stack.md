@@ -4,7 +4,7 @@
 **Session:** 17
 **Classification:** Internal / Research Use Only
 **Toolchain:** aimap v1.9.8 · VisorLog · BARE · fast_enum_es.py · fast_enum_clickhouse.py (retired after aimap productization)
-**Repos updated:** Nicholas-Kloster/aimap (`f586217`) · Nicholas-Kloster/AI-LLM-Infrastructure-OSINT (`e48753e`, `02d18ac`)
+**Repos updated:** sshpie/aimap (`f586217`) · sshpie/AI-LLM-Infrastructure-OSINT (`e48753e`, `02d18ac`)
 
 ---
 

@@ -15,7 +15,7 @@ date: 2026-05-07
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-07
@@ -107,6 +107,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/methodology/insight-04-whois-driven-contac
 Happy to coordinate on disclosure timeline or hand off the chain output for VT IT's records.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

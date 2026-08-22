@@ -8,14 +8,14 @@ The full 19-tool arsenal is canonical in `~/.claude/CLAUDE.md` Tool Inventory se
 
 | Tool | Layer | Repo | Detail |
 |---|---|---|---|
-| **aimap** | L4 TCP/TLS fingerprinting + service deep enum | `github.com/Nicholas-Kloster/aimap` | [aimap.md](aimap.md) |
-| **aimap-profile** | L7 target classification + ethics flags | `github.com/Nicholas-Kloster/aimap` (subpath) | [aimap-profile.md](aimap-profile.md) |
+| **aimap** | L4 TCP/TLS fingerprinting + service deep enum | `github.com/sshpie/aimap` | [aimap.md](aimap.md) |
+| **aimap-profile** | L7 target classification + ethics flags | `github.com/sshpie/aimap` (subpath) | [aimap-profile.md](aimap-profile.md) |
 | **scanner** | L5 liveness + banner + version | ( internal) | [scanner.md](scanner.md) |
 | **herald** | L7 HTTP application-layer auth probe | `github.com/sshpie/herald` | [herald.md](herald.md) |
 | **VisorLog** | Ledger ingest (.db) | ( internal) | [visorlog.md](visorlog.md) |
 | **VisorCAS** | False-positive ledger (CAS + bloom) | `~/visorcas/` | [visorcas.md](visorcas.md) |
 | **VisorGraph** | Cert pivot + operator attribution | `~/go-engine/` | [visorgraph.md](visorgraph.md) |
-| **BARE** | Semantic exploit module ranking | `github.com/Nicholas-Kloster/BARE` | [bare.md](bare.md) |
+| **BARE** | Semantic exploit module ranking | `github.com/sshpie/BARE` | [bare.md](bare.md) |
 | **VisorPlus** | 6-phase passive recon per host | ( internal) | (tbd) |
 | **VisorRAG** | Prior findings recall per host | ( internal) | (tbd) |
 | **VisorCorpus** | Adversarial prompt corpus build | ( internal) | (tbd) |

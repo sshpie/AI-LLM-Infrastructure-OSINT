@@ -81,8 +81,8 @@ The lesson also ships as code, the same day it was codified, in the verification
 
 - Survey: global university LLM-exposure map, per-host arsenal run, slug `univ-llm-2026-05-hosts`
 - Finding set: 147 `gcp_metadata` findings across 37 hosts in `~/recon/global-university-llm-map/results/univ-llm-2026-05-hosts/*/menlohunt.json`, evidence body HTML on all 147
-- menlohunt fix: commit `b335dea`, github.com/Nicholas-Kloster/menlohunt
-- Screening signature: `gcp-metadata-html` in `winnow`, github.com/Nicholas-Kloster/winnow
+- menlohunt fix: commit `b335dea`, github.com/sshpie/menlohunt
+- Screening signature: `gcp-metadata-html` in `winnow`, github.com/sshpie/winnow
 
 ---
 

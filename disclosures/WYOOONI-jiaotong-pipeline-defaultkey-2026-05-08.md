@@ -15,7 +15,7 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 2026-05-08
 
@@ -116,7 +116,7 @@ Evidence bundle preserved locally with SHA-256 manifest, server-asserted `Date:`
 ---
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 https://
 AI-LLM-Infrastructure-OSINT

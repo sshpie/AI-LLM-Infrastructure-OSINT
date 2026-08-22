@@ -16,7 +16,7 @@ note: "Contact email unconfirmed — no public email found for cjjohanson. Try c
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-25
@@ -60,7 +60,7 @@ Set `LANGFUSE_DISABLE_REGISTRATION=true` in your Langfuse environment variables 
 
 Independent security research, Denver CO. Good faith only. We confirmed the registration surface and stopped.
 
-Nicholas Michael Kloster
+sshpie Michael sshpie
 
 
 CISA CVE-2025-4364, ICSA-25-140-11

@@ -289,7 +289,7 @@ pattern.
 - `iter1/lunary-shadow.json`: 6-host Lunary sweep
 - `iter1/pezzo-shadow.json`: 3-host Pezzo sweep
 
-Source: Nicholas-Kloster/VisorBishop@bb067e8
+Source: sshpie/VisorBishop@bb067e8
 
 Cross-references:
 - [VisorBishop Phase 3 case study](visorbishop-phase3-survey-2026-05-11.md)

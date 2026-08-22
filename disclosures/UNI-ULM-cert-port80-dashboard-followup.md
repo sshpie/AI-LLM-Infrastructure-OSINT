@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -124,6 +124,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-hilix-jupyte
 Available for verification, additional probing under your direction, or coordination with Cortical Labs support / DFN-CERT for a vendor-fleet disclosure.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

@@ -24,7 +24,7 @@ Frontmatter schema (additive to existing build_gmail_drafts.py schema):
     recipient_name: Salute Group team
     disclosure_window_days: 14
     date: 2026-05-13
-    repo_url: https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT
+    repo_url: https://github.com/sshpie/AI-LLM-Infrastructure-OSINT
     case_study_url: case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13.md
     status: DRAFT
     institution: Salute Group, SmartShop AI / amazonrec.space
@@ -310,7 +310,7 @@ def render(md_path: Path, output_dir: Path) -> tuple[Path, Path]:
     fix_md = sections.get("recommended fix", "").strip()
     evidence_md = sections.get("evidence", "").strip()
 
-    repo_url = fm.get("repo_url", "https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT")
+    repo_url = fm.get("repo_url", "https://github.com/sshpie/AI-LLM-Infrastructure-OSINT")
     case_study = fm.get("case_study_url", "").strip()
     if case_study:
         if not case_study.startswith("http"):

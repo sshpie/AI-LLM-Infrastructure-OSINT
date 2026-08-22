@@ -3,16 +3,16 @@
 # method: HTTP HEAD to https://web.archive.org/save/<url>
 # ----
 
-=== submitting: https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-tweet-optimize-facial-recognition.md ===
+=== submitting: https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-tweet-optimize-facial-recognition.md ===
 curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received
 
-=== submitting: https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03 ===
+=== submitting: https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03 ===
 HTTP/2 302 
 server: nginx
 date: Sun, 03 May 2026 19:00:59 GMT
 content-type: text/html; charset=utf-8
 content-length: 462
-location: https://web.archive.org/web/20260503190043/https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03
+location: https://web.archive.org/web/20260503190043/https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03
 x-app-server: wwwb-app223-dc8
 x-ts: 302
 x-tr: 18134
@@ -30,7 +30,7 @@ permissions-policy: interest-cohort=()
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <title>Redirecting...</title>
 <h1>Redirecting...</h1>
-<p>You should be redirected automatically to target URL: <a href="/web/20260503190043/https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03">/web/20260503190043/https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03</a>. If not click the link.
+<p>You should be redirected automatically to target URL: <a href="/web/20260503190043/https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03">/web/20260503190043/https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/tree/main/evidence/tweet-optimize-2026-05-03</a>. If not click the link.
 
 === submitting: https://tweet-optimize.com/ ===
 HTTP/2 302 

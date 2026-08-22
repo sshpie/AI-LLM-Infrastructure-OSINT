@@ -8,7 +8,7 @@
 #   cd evidence/tweet-optimize-2026-05-03 && sha256sum --check MANIFEST.txt
 #
 # Tamper resistance:
-#  - This manifest is committed to a public git repo (Nicholas-Kloster/AI-LLM-Infrastructure-OSINT)
+#  - This manifest is committed to a public git repo (sshpie/AI-LLM-Infrastructure-OSINT)
 #  - The git commit hash above pins the state of the entire pack at generation time
 #  - Internet Archive Wayback snapshots in raw/51-wayback-snapshots.txt provide third-party witnessing
 #  - Cert Transparency entries in raw/40-ct-certspotter.json are signed by Google + Sectigo CT logs

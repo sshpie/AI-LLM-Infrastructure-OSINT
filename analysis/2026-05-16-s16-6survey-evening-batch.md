@@ -4,7 +4,7 @@
 **Session:** 16
 **Classification:** Internal / Research Use Only
 **Toolchain:** JAXEN · aimap v1.9.6→v1.9.7 · VisorLog · BARE · fast_enum_*.py (bespoke)
-**Repos updated:** Nicholas-Kloster/aimap (`27c91c0`) · Nicholas-Kloster/AI-LLM-Infrastructure-OSINT (`bc64efd`)
+**Repos updated:** sshpie/aimap (`27c91c0`) · sshpie/AI-LLM-Infrastructure-OSINT (`bc64efd`)
 
 ---
 

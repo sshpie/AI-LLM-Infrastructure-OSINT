@@ -15,7 +15,7 @@ date: 2026-05-04
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-04
@@ -106,6 +106,6 @@ Full case study: AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities
 I'm happy to answer questions or assist with verification. No response is required.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

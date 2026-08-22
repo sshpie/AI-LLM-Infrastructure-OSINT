@@ -14,7 +14,7 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 2026-05-08
 
@@ -75,7 +75,7 @@ Server-asserted `Date:` headers preserved for both findings. Bundle held private
 ---
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 https://
 AI-LLM-Infrastructure-OSINT

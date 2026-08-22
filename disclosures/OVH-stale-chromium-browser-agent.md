@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -110,6 +110,6 @@ The `fo-design.com` cert pivot on `146.59.207.61` may be the operator-attributio
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

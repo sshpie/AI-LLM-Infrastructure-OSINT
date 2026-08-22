@@ -1,4 +1,4 @@
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-17
@@ -91,5 +91,5 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/adya-ai-vanijmcp-2
 Happy to provide additional detail. No response required.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 

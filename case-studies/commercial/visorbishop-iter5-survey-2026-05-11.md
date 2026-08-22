@@ -256,7 +256,7 @@ The LiteLLM prober makes 3-4 probes per host (root for title check, optional `/.
 - `promptfoo-noshadow.json` / `.csv`. 17-host Promptfoo sweep
 - `litellm-noshadow.json` / `.csv`. 500-host LiteLLM sample (in progress)
 
-Source: Nicholas-Kloster/VisorBishop@v0.1.5
+Source: sshpie/VisorBishop@v0.1.5
 
 Cross-references:
 - [iter-4 case study](visorbishop-iter4-survey-2026-05-11.md)

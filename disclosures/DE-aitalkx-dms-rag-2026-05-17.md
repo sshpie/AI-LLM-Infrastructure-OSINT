@@ -1,4 +1,4 @@
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-17
@@ -80,5 +80,5 @@ Companion methodology notes:
 Happy to provide additional forensic detail if useful. No response is required.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 

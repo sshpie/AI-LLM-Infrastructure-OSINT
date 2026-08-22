@@ -59,6 +59,6 @@ If both pass, the bundle is authentic and the timestamps are real. If either fai
 
 ## Researcher
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 ICS/OT specialist; CISA disclosures: CVE-2025-4364, ICSA-25-140-11.

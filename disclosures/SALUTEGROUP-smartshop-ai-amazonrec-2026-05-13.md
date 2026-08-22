@@ -15,7 +15,7 @@ outcome: pending
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-13
@@ -88,11 +88,11 @@ Even with synthetic-looking user IDs, the unauthenticated API enables three conc
 I will publish a redacted technical writeup on 2026-05-27 per standard coordinated-disclosure practice (14 days). The published version will redact specific user IDs and any operator-customer data. If you'd prefer a different timeline or want to coordinate the disclosure language, I'm happy to discuss.
 
 Full technical detail and remediation notes are in the public research repository:
-https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13.md
+https://github.com/sshpie/AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/smartshop-ai-pentech-disclosure-2026-05-13.md
 
 Reply-to for any clarifying questions or coordination: .
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 https://

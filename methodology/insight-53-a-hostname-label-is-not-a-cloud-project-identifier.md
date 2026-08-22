@@ -83,8 +83,8 @@ The lesson also ships as `winnow` signatures, `firebase-name-from-hostname-label
 - Findings: 4 `firebase_public` CRITICAL across `163_1_22_119_{80,443}` and `131_247_{136_183,139_171}_8000` in `results/univ-llm-2026-05-hosts/*/menlohunt.json`
 - Marker reads: `earth.firebaseio.com/.json?shallow=true` returned `{"music":true}`; `marine.firebaseio.com/.json?shallow=true` returned 7 unrelated top-level keys
 - GCS verification: 12-of-12 sampled `gcs_public` buckets misattributed (`marine`, `uconn`, `euclid`, `registrar`, `mercury`, `auth-dev`, `media-prod`, `dashboard-prod`, `guppy-data`, `mamut-dev`, `hpc1`, `web12`)
-- menlohunt fix: `isBareLabel` applied in `checkFirebase`, `checkGCS`, `checkCloudRunFunctions`, github.com/Nicholas-Kloster/menlohunt
-- Screening signatures: `firebase-name-from-hostname-label`, `gcs-name-from-hostname-label` in `winnow`, github.com/Nicholas-Kloster/winnow
+- menlohunt fix: `isBareLabel` applied in `checkFirebase`, `checkGCS`, `checkCloudRunFunctions`, github.com/sshpie/menlohunt
+- Screening signatures: `firebase-name-from-hostname-label`, `gcs-name-from-hostname-label` in `winnow`, github.com/sshpie/winnow
 
 ---
 

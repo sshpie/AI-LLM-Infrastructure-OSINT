@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -134,6 +134,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-hilix-jupyte
 I am available for verification, additional forensic detail, or coordination with DFN-CERT. Given the active campaign and the not-yet-killed PID 18352 masquerade on your host, expedited operator response is requested.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

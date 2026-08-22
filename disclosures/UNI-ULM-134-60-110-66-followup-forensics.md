@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -180,6 +180,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/multi-uni-ulm-jupy
 I am available for verification or any forensic detail. Given the active state and the not-yet-killed PID 18352 masquerade, expedited operator response is requested.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

@@ -86,4 +86,4 @@ See `case-studies/commercial/librechat-deep-dive-verification-2026-06-06.md` for
 
 ## Disclosure-preparation discipline
 
-Per CLAUDE.md and feedback memory: **never offer, prep, or recommend disclosure**. This index tracks state when Nicholas decides to act on a finding. The analyst's role here is metadata management, not pipeline operation.
+Per CLAUDE.md and feedback memory: **never offer, prep, or recommend disclosure**. This index tracks state when sshpie decides to act on a finding. The analyst's role here is metadata management, not pipeline operation.

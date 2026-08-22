@@ -34,7 +34,7 @@ target: example-target.example.com / 198.51.100.42
 recipient_name: Example team
 disclosure_window_days: 14
 date: 2026-05-13
-repo_url: https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT
+repo_url: https://github.com/sshpie/AI-LLM-Infrastructure-OSINT
 case_study_url: case-studies/commercial/example-2026-05-13.md
 status: PREVIEW
 institution: Example operator, sample disclosure used for template preview

@@ -16,7 +16,7 @@ note: "Operator contact not found — sergogram.com WHOIS privacy-protected, no 
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-25
@@ -61,6 +61,6 @@ We have already notified the affected client organization (blutspende.net) direc
 
  is an independent security research organization (Denver, CO, USA). CISA disclosures: CVE-2025-4364, ICSA-25-140-11. This report is made in good faith under responsible disclosure practices.
 
-Nicholas Michael Kloster
+sshpie Michael sshpie
 
 

@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -204,6 +204,6 @@ Verification was non-destructive: only `GET /api/contents/` listings + a small n
 I am available for verification or additional forensic detail. Given the active campaign and confirmed root, expedited customer notification is requested.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

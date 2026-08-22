@@ -4,7 +4,7 @@
 **Session:** 15
 **Classification:** Internal / Research Use Only
 **Toolchain:** JAXEN · aimap v1.9.5→v1.9.6 · VisorLog · BARE · fast_enum_*.py (bespoke)
-**Repos updated:** Nicholas-Kloster/AI-LLM-Infrastructure-OSINT (`3bd3901`) · Nicholas-Kloster/aimap (`be7cd8f`)
+**Repos updated:** sshpie/AI-LLM-Infrastructure-OSINT (`3bd3901`) · sshpie/aimap (`be7cd8f`)
 
 ---
 
@@ -107,13 +107,13 @@ No brute forcing. No privilege escalation. No data exfiltration. No document or 
 | ~13:30 | fast_enum_imagegen.py at threads=200 | 70-minute run. 548 confirmed unauth ComfyUI, 1 A1111, 2 InvokeAI |
 | ~14:40 | ComfyUI results analyzed | Multi-GPU L40S operator surfaced at 103.192.253.237/.238 (10 instances). argv discloses intent |
 | ~15:00 | ComfyUI fingerprint built; aimap v1.9.6 cut | 5 image-gen fingerprints + 3 deep enumerators. Field-validated on L40S host |
-| ~15:20 | aimap v1.9.6 re-run against corpus | Confirmed findings. be7cd8f pushed to Nicholas-Kloster/aimap |
+| ~15:20 | aimap v1.9.6 re-run against corpus | Confirmed findings. be7cd8f pushed to sshpie/aimap |
 | ~15:40 | Agent-memory survey: Mem0 / Zep / Letta / Argilla | 910 candidates, 0 unauth. Tier-C confirmed |
 | ~16:00 | Data-labeling survey: Prodigy / Label Studio / CVAT / Doccano | 772 candidates, 16 Prodigy unauth (auth-free by design). Label Studio 99.8% FP rate on dork |
 | ~16:30 | Vector-DB stragglers: Solr / Meilisearch / Typesense / Vespa | 16,704 candidates. 613 unauth Solr, 268 unauth Meilisearch, 0 Typesense, 0 Vespa |
 | ~17:00 | BARE on Solr 7.6.0 fleet | Velocity RCE top match (score 0.727). CVE-2019-17558 confirmed as commodity chain |
 | ~17:20 | VisorLog ingest | 1,807 events into .db across 4 surveys |
-| ~17:40 | Insights #25 + #26 codified, SESSION.md updated | 3bd3901 pushed to Nicholas-Kloster/AI-LLM-Infrastructure-OSINT |
+| ~17:40 | Insights #25 + #26 codified, SESSION.md updated | 3bd3901 pushed to sshpie/AI-LLM-Infrastructure-OSINT |
 
 ---
 

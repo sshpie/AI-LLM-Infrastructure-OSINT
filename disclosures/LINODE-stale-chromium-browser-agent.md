@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -100,6 +100,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/browser-agent-clou
 Happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

@@ -15,7 +15,7 @@ date: 2026-05-04
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-04
@@ -95,6 +95,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/evidence/llm-gateway-tier2-2026-05-04/llm-
 I'm happy to answer questions or assist with verification.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

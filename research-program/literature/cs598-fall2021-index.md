@@ -397,7 +397,7 @@ Student presentation slides — each is a class-presentation deck on an assigned
 ### arxiv_1608.04644.pdf
 
 **Title:** Towards Evaluating the Robustness of Neural Networks
-**Authors:** Nicholas Carlini, David Wagner
+**Authors:** sshpie Carlini, David Wagner
 **Year:** 2016
 **Topic tag:** adversarial
 **Summary:** The Carlini-Wagner (C&W) L_2/L_inf/L_0 attacks; breaks defensive distillation and sets the bar for robustness eval.
@@ -541,7 +541,7 @@ Student presentation slides — each is a class-presentation deck on an assigned
 ### arxiv_1801.01944.pdf
 
 **Title:** Audio Adversarial Examples: Targeted Attacks on Speech-to-Text
-**Authors:** Nicholas Carlini, David Wagner
+**Authors:** sshpie Carlini, David Wagner
 **Year:** 2018
 **Topic tag:** adversarial
 **Summary:** White-box iterative optimization attack on DeepSpeech producing near-imperceptible audio that transcribes to attacker-chosen phrases (100% success).
@@ -757,7 +757,7 @@ Student presentation slides — each is a class-presentation deck on an assigned
 ### arxiv.org_pdf_1608.02257.pdf
 
 **Title:** Hidden Voice Commands
-**Authors:** Nicholas Carlini, Pratyush Mishra, Tavish Vaidya, Yuankai Zhang, Micah Sherr, Clay Shields, David Wagner, Wenchao Zhou
+**Authors:** sshpie Carlini, Pratyush Mishra, Tavish Vaidya, Yuankai Zhang, Micah Sherr, Clay Shields, David Wagner, Wenchao Zhou
 **Year:** 2016 (USENIX Security)
 **Topic tag:** adversarial
 **Summary:** Crafts obfuscated audio that humans hear as noise but ASR systems interpret as commands.
@@ -847,7 +847,7 @@ Student presentation slides — each is a class-presentation deck on an assigned
 ### arxiv.org_pdf_1802.08232.pdf
 
 **Title:** The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks
-**Authors:** Nicholas Carlini, Chang Liu, Úlfar Erlingsson, Jernej Kos, Dawn Song
+**Authors:** sshpie Carlini, Chang Liu, Úlfar Erlingsson, Jernej Kos, Dawn Song
 **Year:** 2018
 **Topic tag:** privacy
 **Summary:** Exposure metric quantifying that generative LMs memorize and leak secret-style training inputs.

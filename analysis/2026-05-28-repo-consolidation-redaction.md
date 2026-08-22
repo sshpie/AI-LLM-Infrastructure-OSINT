@@ -4,7 +4,7 @@
 
 ## What was done
 
-Moved the  repo estate from the `Nicholas-Kloster` personal account to the
+Moved the  repo estate from the `sshpie` personal account to the
 `` account, redacted sensitive data that had been committed to public
 repos, and made the Go toolchain `go install`-able under the new owner.
 
@@ -16,13 +16,13 @@ repos, and made the Go toolchain `go install`-able under the new owner.
 - Arsenal (6): `BARE`, `recongraph`, `menlohunt`, `nu-recon`, `cortex-framework`, `tiptoe`
 - Transfers from a User account (not an org) create PENDING transfers that the recipient
   account must accept. Nick accepted them.
-- Left in place deliberately: `Nicholas-Kloster.github.io` (live website, separate repo,
-  serves ), `Nicholas-Kloster` (profile README), `jaxen-blindbox`
+- Left in place deliberately: `sshpie.github.io` (live website, separate repo,
+  serves ), `sshpie` (profile README), `jaxen-blindbox`
   (private gift app).
 
 ### Security redaction (the load-bearing work)
 - **OSINT repo made PRIVATE.** It had been public for weeks carrying real third-party
-  data. Token-scope note: the `Nicholas-Kloster` gh login here is a COLLABORATOR (push,
+  data. Token-scope note: the `sshpie` gh login here is a COLLABORATOR (push,
   not admin) on the transferred repos — visibility changes and transfers needed the owner
   account or the browser. Nick flipped visibility himself.
 - Purged 91 raw-data artifacts from full OSINT history (git-filter-repo): `ollama-*-state.json`
@@ -38,7 +38,7 @@ repos, and made the Go toolchain `go install`-able under the new owner.
   the repo's own `shodan_to_bare.py`. Verified 0 real IPs on fresh clone.
 
 ### Go module paths + installability
-- Repointed `go.mod` module path on 13 Go repos: `github.com/Nicholas-Kloster/X` ->
+- Repointed `go.mod` module path on 13 Go repos: `github.com/sshpie/X` ->
   `github.com/sshpie/X`. All build clean.
 - Made all Go tools `go install`-able (aimap + 13). Required per-repo tagging since the
   path-fix commits were untagged (so `@latest` would otherwise resolve to a pre-fix tag).
@@ -57,7 +57,7 @@ repos, and made the Go toolchain `go install`-able under the new owner.
   data-artifact flags (BARE sample, recongraph runs) were target lists, not credentials.
 
 ## What changed (infra)
-- Owner of 21 repos: Nicholas-Kloster ->  (old paths redirect).
+- Owner of 21 repos: sshpie ->  (old paths redirect).
 - OSINT repo visibility: public -> private.
 - 14 Go tools now `go install`-able under .
 
@@ -89,7 +89,7 @@ VisorCorpus ships 5 commands: visorcorpus, attack-sim, corpus-dump, visorfail, v
    AND an older bare_output.json AND would've survived if only the 2 audited paths were purged.
    Use --replace-text on the value set (the IPs), not just --invert-paths on filenames, when
    the same data is scattered.
-3. **Owner-transfer != name-fix.** Rewriting `Nicholas-Kloster -> ` in go.mod
+3. **Owner-transfer != name-fix.** Rewriting `sshpie -> ` in go.mod
    fixes the owner segment but not name-segment mismatches (visorgoose vs VisorGoose). Both
    must match the actual repo path for `go install`.
 4. **main-in-cmd/ repos need the subpath** in the install command; bare-repo install fails

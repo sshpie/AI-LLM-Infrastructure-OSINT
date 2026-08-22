@@ -83,7 +83,7 @@ CONTACTS = {
     "FR-emails-pro-rdv-bot": ("security@emails-pro.fr", None),
 }
 
-SENDER = "Nicholas Michael Kloster / "
+SENDER = "sshpie Michael sshpie / "
 SENDER_EMAIL = ""
 REPO = "AI-LLM-Infrastructure-OSINT"
 

@@ -4,7 +4,7 @@
 **Session:** 17b
 **Classification:** Internal / Research Use Only
 **Toolchain:** VisorGraph · aimap-profile · crt.sh · Shodan · blockchain explorer · paste.sh PBKDF2 decryption (manual)
-**Repos updated:** Nicholas-Kloster/AI-LLM-Infrastructure-OSINT (`ca85973`, `3167193`, `72b2faf`, `8f86a7f`)
+**Repos updated:** sshpie/AI-LLM-Infrastructure-OSINT (`ca85973`, `3167193`, `72b2faf`, `8f86a7f`)
 
 ---
 

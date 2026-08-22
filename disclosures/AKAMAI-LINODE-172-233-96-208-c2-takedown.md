@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -67,6 +67,6 @@ AI-LLM-Infrastructure-OSINT
 Happy to provide additional forensic evidence (full notebook JSON, kernel session metadata, attack-timeline reconstruction) if needed for the customer-action investigation.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

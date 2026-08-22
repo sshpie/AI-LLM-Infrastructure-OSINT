@@ -229,7 +229,7 @@ the Langfuse 381-host sweep. Both well within iteration-cadence budget.
 - `helicone-shadow.json` / `.csv`. 21-host Helicone iter-2 sweep
 - `openlit-shadow.json` / `.csv`. 23-host OpenLIT iter-2 sweep
 
-Source: Nicholas-Kloster/VisorBishop. 21-port `ShadowPorts` list at `internal/probe/ipshadow.go`
+Source: sshpie/VisorBishop. 21-port `ShadowPorts` list at `internal/probe/ipshadow.go`
 
 Cross-references:
 - [iter-1 case study](visorbishop-iter1-survey-2026-05-11.md): what we found before adding these 6 ports

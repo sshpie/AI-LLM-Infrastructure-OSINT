@@ -154,4 +154,4 @@ aimap v1.9.5 fingerprint for etcd (shipped 2026-05-15 by parallel session) was u
 - [`docker-daemon-population-survey-2026-05-15.md`](docker-daemon-population-survey-2026-05-15.md): the day's Docker daemon survey (4 hosts overlap with this etcd survey)
 - [`ollama-population-survey-2026-05-15.md`](ollama-population-survey-2026-05-15.md): 14 hosts overlap + the parallel 1,072-victim `205.237.106.117` attacker-spray on Ollama (same class of pre-staged write-test pattern, different layer)
 - `shodan/queries/12-containers.md`: the catalog this survey extends
-- aimap v1.9.5 release at github.com/Nicholas-Kloster/aimap (commit `b157c86`). The etcd fingerprint shipped today
+- aimap v1.9.5 release at github.com/sshpie/aimap (commit `b157c86`). The etcd fingerprint shipped today

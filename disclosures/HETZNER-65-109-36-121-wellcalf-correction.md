@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -73,6 +73,6 @@ Lesson for future disclosures: always pull at least one full run record (with `m
 I apologize for the misframing in the prior message. The Metabase setup-token finding remains CRITICAL and the customer notification path is unchanged.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

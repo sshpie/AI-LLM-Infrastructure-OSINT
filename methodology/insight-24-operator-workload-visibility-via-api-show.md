@@ -155,7 +155,7 @@ what they *installed*.
 - `case-studies/commercial/ollama-population-survey-2026-05-15.md`:   the survey this insight was extracted from. Section
   "Discovery Axis. `/api/show` SYSTEM-Prompt Corpus" includes the
   verbatim singleton samples.
-- aimap v1.9.4 release notes (github.com/Nicholas-Kloster/aimap).
+- aimap v1.9.4 release notes (github.com/sshpie/aimap).
   The llama.cpp fingerprint + parallel PHASE 3 changes were also
   shipped in this session. A follow-up aimap enumOllama patch should
   add `/api/show` probing to surface this axis natively.

@@ -216,7 +216,7 @@ All within iteration-cadence budget. VisorBishop v0.1.4 builds clean and runs ag
 - `opik-shadow.json`, `agentops-shadow.json`. IP-shadow on confirmed instances
 - `agenticorc-lf-shadow.json`: IP-shadow on the agenticorc-disclosed Langfuse host
 
-Source: Nicholas-Kloster/VisorBishop@v0.1.4
+Source: sshpie/VisorBishop@v0.1.4
 
 Cross-references:
 - [iter-3 case study](visorbishop-iter3-survey-2026-05-11.md)

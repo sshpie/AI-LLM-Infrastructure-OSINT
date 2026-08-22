@@ -19,7 +19,7 @@ visorlog_id: 22106
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-01
@@ -117,6 +117,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/universities/OVERVIEW.md
 I'm happy to answer questions or assist with verification. No response is required.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

@@ -215,7 +215,7 @@ infrastructure you are authorized to assess.
 - `phoenix-no-shadow.json` + `.csv`. 94-host re-sweep with platform detection only
 - `phoenix-shadow.json` + `.csv`. Same with IP-direct-shadow enabled
 
-Source: Nicholas-Kloster/VisorBishop
+Source: sshpie/VisorBishop
 
 Cross-references:
 - [SYNTHESIS-ai-observability-2026-05-10.md](SYNTHESIS-ai-observability-2026-05-10.md): Phase 1 synthesis (now references VisorBishop)

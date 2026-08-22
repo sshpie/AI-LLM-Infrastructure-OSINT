@@ -105,6 +105,6 @@ Pull responses will trickle in over 7-30 days; outcomes will be tracked separate
 
 ## Contact
 
-Nicholas Michael Kloster
+sshpie Michael sshpie
 
 AI-LLM-Infrastructure-OSINT

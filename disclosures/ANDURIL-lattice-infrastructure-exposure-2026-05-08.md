@@ -14,7 +14,7 @@ outcome: pending
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 2026-05-08
 
@@ -217,7 +217,7 @@ The Armory app's bundled JS contains a redirect rule: `{"from":"/voyager-support
 
 ## Researcher
 
-**Nicholas Michael Kloster**
+**sshpie Michael sshpie**
  | https://
 
 CISA disclosure history: CVE-2025-4364, ICSA-25-140-11
@@ -226,4 +226,4 @@ This disclosure is submitted under good faith per your published security.txt. N
 
 Preferred timeline: 90 days standard. Happy to coordinate a longer window if Telefonica remediation requires it.
 
-A **redacted** case study will be pushed to my public OSINT repo after this email lands (path: `case-studies/commercial/anduril-lattice-dev-infrastructure-2026-05-08.md` at https://github.com/Nicholas-Kloster/AI-LLM-Infrastructure-OSINT). The public form references this disclosure by file path and contains only what is already public via Certificate Transparency / Shodan. No IP-level cluster inventory, no per-tier cert SANs, no targeted operational dorks. The full cluster topology, IP fleet inventory, and tier-specific Shodan queries are held in this disclosure pack and will be added to the public artifact only after you acknowledge and a remediation window has passed. If you would prefer the redacted case study not be published at all, say so and I will hold it.
+A **redacted** case study will be pushed to my public OSINT repo after this email lands (path: `case-studies/commercial/anduril-lattice-dev-infrastructure-2026-05-08.md` at https://github.com/sshpie/AI-LLM-Infrastructure-OSINT). The public form references this disclosure by file path and contains only what is already public via Certificate Transparency / Shodan. No IP-level cluster inventory, no per-tier cert SANs, no targeted operational dorks. The full cluster topology, IP fleet inventory, and tier-specific Shodan queries are held in this disclosure pack and will be added to the public artifact only after you acknowledge and a remediation window has passed. If you would prefer the redacted case study not be published at all, say so and I will hold it.

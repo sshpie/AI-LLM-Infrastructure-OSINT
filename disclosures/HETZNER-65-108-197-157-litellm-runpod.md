@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -145,6 +145,6 @@ AI-LLM-Infrastructure-OSINT/blob/main/case-studies/commercial/llm-gateways-cloud
 Happy to coordinate verification or extract additional traffic-pattern detail if Hetzner abuse needs it for the customer notification.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

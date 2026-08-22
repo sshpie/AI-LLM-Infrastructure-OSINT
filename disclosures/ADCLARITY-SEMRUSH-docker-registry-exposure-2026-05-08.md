@@ -14,7 +14,7 @@ date: 2026-05-08
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 2026-05-08
 
@@ -175,7 +175,7 @@ A complete evidence bundle is preserved locally with server-asserted `Date:` hea
 ---
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 https://
 AI-LLM-Infrastructure-OSINT

@@ -4,7 +4,7 @@
 **Session:** 26
 **Classification:** Internal / Research Use Only
 **Toolchain:** Custom pipeline (harvest.py · institution-sweep.py · attribute.py · verify.py · geo-enrich.py · build-findings-json.py · build-findings-public.py) · julius (63-service LLM fingerprinter) · globe.gl (3D visualization) · Shodan CLI · Astro (site build)
-**Repos updated:** AI-LLM-Infrastructure-OSINT (AF25c80, c7590ac, 4575c2d, fd60c81) · portfolio (Nicholas-Kloster.github.io, c7590ac build fix)
+**Repos updated:** AI-LLM-Infrastructure-OSINT (AF25c80, c7590ac, 4575c2d, fd60c81) · portfolio (sshpie.github.io, c7590ac build fix)
 
 ---
 

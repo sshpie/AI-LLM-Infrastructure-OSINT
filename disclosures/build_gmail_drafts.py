@@ -49,7 +49,7 @@ def parse_draft(path: Path) -> dict:
     subject = subj_match.group(1).strip() if subj_match else f"Unauthenticated AI inference endpoint — {fm.get('institution', '')}"
 
     # Body: drop the "**To:** ... **Subject:** ..." header block (everything before the
-    # first standalone "---" separator that precedes "Nicholas Michael Kloster")
+    # first standalone "---" separator that precedes "sshpie Michael sshpie")
     # The case-study draft has structure:
     #   **To:** ...
     #   [**Cc:** ...]
@@ -57,9 +57,9 @@ def parse_draft(path: Path) -> dict:
     #
     #   ---
     #
-    #   Nicholas Michael Kloster / 
+    #   sshpie Michael sshpie / 
     #   ...
-    body_start = after_fm.find('Nicholas Michael Kloster / ')
+    body_start = after_fm.find('sshpie Michael sshpie / ')
     if body_start < 0:
         raise ValueError(f"can't locate body start in {path}")
     body = after_fm[body_start:].rstrip() + '\n'

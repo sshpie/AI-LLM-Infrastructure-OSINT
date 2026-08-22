@@ -15,7 +15,7 @@ date: 2026-05-06
 
 ---
 
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 
 2026-05-06
@@ -142,6 +142,6 @@ Original Shodan dork that surfaced the host: `http.title:"Home Page - Select or 
 I am available for verification, additional forensic detail, or to extract additional kernel-state evidence before remediation if useful for incident response. Given the active C2 connection, expedited remediation is requested.
 
 Regards,
-Nicholas Michael Kloster / 
+sshpie Michael sshpie / 
 
 AI-LLM-Infrastructure-OSINT

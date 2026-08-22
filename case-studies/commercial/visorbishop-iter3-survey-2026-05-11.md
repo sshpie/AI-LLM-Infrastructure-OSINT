@@ -215,7 +215,7 @@ ports are mostly TCP-only banners that complete fast.
 - `helicone-shadow.json` / `.csv`. 21-host Helicone iter-3 sweep
 - `openlit-shadow.json` / `.csv`. 23-host OpenLIT iter-3 sweep
 
-Source: Nicholas-Kloster/VisorBishop@v0.1.3. 26-port `ShadowPorts` list at `internal/probe/ipshadow.go`.
+Source: sshpie/VisorBishop@v0.1.3. 26-port `ShadowPorts` list at `internal/probe/ipshadow.go`.
 
 Cross-references:
 - [iter-1 case study](visorbishop-iter1-survey-2026-05-11.md)

@@ -93,7 +93,7 @@ Codified into menlohunt, commit `63b8bf1` (2026-05-21):
 - Verifier: `~/recon/svc-verify.py`
 - Result set: `~/recon/global-university-llm-map/results/univ-llm-2026-05-hosts/svc-verify-results.json` (74 candidates, 722 menlohunt scans)
 - The one finding: 140.112.107.222:6379, Redis 7.4.9, unauthenticated (`PING -> +PONG`, no AUTH). National Taiwan University.
-- menlohunt fix: commit `63b8bf1`, github.com/Nicholas-Kloster/menlohunt
+- menlohunt fix: commit `63b8bf1`, github.com/sshpie/menlohunt
 
 ---
 
